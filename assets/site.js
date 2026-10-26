@@ -14,6 +14,35 @@
     [].slice.call(tr.children).forEach(function(n){tr.appendChild(n.cloneNode(true))});
     [].slice.call(tr.querySelectorAll('img')).forEach(function(im,k,a){if(k>=a.length/2){im.setAttribute('alt','');im.setAttribute('aria-hidden','true')}});
   }
+
+  var brandTrack=document.getElementById('brandMarquee');
+  if(brandTrack){
+    [].slice.call(document.querySelectorAll('[data-scroll]')).forEach(function(btn){
+      btn.addEventListener('click',function(){
+        var direction=btn.getAttribute('data-scroll')==='right'?1:-1;
+        brandTrack.scrollBy({left:direction*Math.max(240,brandTrack.clientWidth*.75),behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+      });
+    });
+    var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var paused=false;
+    brandTrack.addEventListener('mouseenter',function(){paused=true});
+    brandTrack.addEventListener('mouseleave',function(){paused=false});
+    brandTrack.addEventListener('focusin',function(){paused=true});
+    brandTrack.addEventListener('focusout',function(){paused=false});
+    if(!reduce){
+      var last=0;
+      function moveBrands(now){
+        if(!last)last=now;
+        var dt=Math.min(now-last,40);last=now;
+        if(!paused && !document.hidden && brandTrack.scrollWidth>brandTrack.clientWidth){
+          brandTrack.scrollLeft+=dt*.025;
+          if(brandTrack.scrollLeft+brandTrack.clientWidth>=brandTrack.scrollWidth-2)brandTrack.scrollLeft=0;
+        }
+        requestAnimationFrame(moveBrands);
+      }
+      requestAnimationFrame(moveBrands);
+    }
+  }
   var cp=document.getElementById('copy');
   if(cp){cp.addEventListener('click',function(){
     var el=document.getElementById('mail'),b=this;
