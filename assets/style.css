@@ -224,3 +224,14 @@ footer p{font-size:13.5px;color:var(--fg)}
   .entry{grid-template-columns:1fr;gap:6px}
   .ctbox{grid-template-columns:1fr}
 }
+
+
+/* Branded contact and social icon links */
+.social-links{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:18px 0 8px}
+.social-link{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:42px;padding:9px 13px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--fg);text-decoration:none;font:500 12.5px/1.2 var(--display);transition:transform .18s ease,border-color .18s ease,background .18s ease}
+.social-link svg{display:block;width:19px;height:19px;flex:0 0 19px}
+.social-link:hover,.social-link:focus-visible{transform:translateY(-2px);border-color:var(--accent);background:var(--bg2);outline-offset:3px}
+.social-whatsapp svg{color:#25D366}.social-facebook svg{color:#1877F2}.social-instagram svg{color:#C13584}.social-linkedin svg{color:#0A66C2}.social-email svg{color:var(--accent)}
+footer .social-links{margin-top:20px;gap:8px}
+footer .social-link{min-height:40px;padding:8px 11px}
+@media(max-width:520px){.social-links{gap:8px}.social-link{padding:8px 11px;min-height:40px}.social-link span{font-size:12px}}
