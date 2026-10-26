@@ -235,3 +235,16 @@ footer p{font-size:13.5px;color:var(--fg)}
 footer .social-links{margin-top:20px;gap:8px}
 footer .social-link{min-height:40px;padding:8px 11px}
 @media(max-width:520px){.social-links{gap:8px}.social-link{padding:8px 11px;min-height:40px}.social-link span{font-size:12px}}
+
+
+/* Brand portfolio showcase */
+.brand-showcase{margin:0 0 34px;padding:26px;border:1px solid var(--line,rgba(128,128,128,.24));border-radius:18px;background:var(--surface,rgba(128,128,128,.04))}
+.brand-showcase>p{max-width:72ch;color:var(--muted)}
+.brand-logo-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:20px}
+.brand-logo-card{margin:0;min-width:0;padding:16px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;gap:12px;border:1px solid var(--line,rgba(128,128,128,.2));border-radius:14px;background:#fff;color:#202033;text-align:center;box-shadow:0 5px 20px rgba(20,20,40,.05)}
+.brand-logo-card img{display:block;width:100%;height:112px;object-fit:contain}
+.brand-logo-card figcaption{display:flex;flex-direction:column;gap:5px}
+.brand-logo-card figcaption strong{font-size:1rem}
+.brand-logo-card figcaption span{font-size:.82rem;color:#626273;line-height:1.45}
+@media(max-width:800px){.brand-logo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.brand-showcase{padding:18px}}
+@media(max-width:420px){.brand-logo-grid{gap:10px}.brand-logo-card{padding:10px}.brand-logo-card img{height:90px}}
