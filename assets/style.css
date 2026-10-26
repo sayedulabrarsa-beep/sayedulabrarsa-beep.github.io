@@ -248,3 +248,33 @@ footer .social-link{min-height:40px;padding:8px 11px}
 .brand-logo-card figcaption span{font-size:.82rem;color:#626273;line-height:1.45}
 @media(max-width:800px){.brand-logo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.brand-showcase{padding:18px}}
 @media(max-width:420px){.brand-logo-grid{gap:10px}.brand-logo-card{padding:10px}.brand-logo-card img{height:90px}}
+
+
+/* Product portfolio carousel: animated cards; never redraw or alter brand artwork */
+.brand-showcase{margin:0 0 36px;padding:26px;border:1px solid var(--line,rgba(128,128,128,.24));border-radius:20px;background:linear-gradient(135deg,rgba(34,58,145,.08),rgba(0,160,130,.07))}
+.brand-showcase-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:18px}
+.brand-showcase-heading .sec-h{margin-top:4px}
+.brand-showcase-heading p:not(.eyebrow){max-width:65ch;color:var(--muted)}
+.brand-scroll-controls{display:flex;gap:8px;flex-shrink:0}
+.brand-scroll-btn{width:42px;height:42px;border:1px solid var(--line,rgba(128,128,128,.3));border-radius:50%;background:var(--card,#fff);color:var(--text,#202033);font-size:22px;cursor:pointer}
+.brand-marquee{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:12px 2px 18px;margin-top:12px;scrollbar-width:thin}
+.brand-product-card{scroll-snap-align:start;flex:0 0 clamp(220px,27%,290px);min-height:220px;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-end;gap:12px;padding:24px;border-radius:18px;border:1px solid rgba(40,57,128,.16);text-decoration:none!important;color:#20243b!important;background:linear-gradient(145deg,#fff 0%,#f4f6ff 55%,#e9fbf5 100%);box-shadow:0 10px 26px rgba(25,40,90,.08);transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease}
+.brand-product-card:hover,.brand-product-card:focus-visible{transform:translateY(-4px);box-shadow:0 16px 34px rgba(25,40,90,.14);border-color:#283991}
+.brand-owner{font-size:.72rem;letter-spacing:.13em;font-weight:700;color:#008f78}
+.brand-name{font-size:2rem;font-weight:800;line-height:1.12;letter-spacing:-.04em;color:#202b78}
+.brand-name b{color:#e51e2a}
+.brand-kind{font-size:.9rem;color:#555b70}
+.brand-card-action{margin-top:4px;font-size:.88rem;font-weight:700;color:#1b6b60}
+.brand-disclaimer{font-size:.8rem;line-height:1.55;color:var(--muted);margin-top:4px}
+.product-brand-banner{padding:28px;border-radius:18px;background:linear-gradient(120deg,#25368c,#27325d 58%,#008f78);color:#fff;margin-bottom:28px}
+.product-brand-banner h2{font-size:clamp(2rem,5vw,3.2rem);margin:8px 0}
+.product-brand-banner p{margin:0;opacity:.9}
+.product-brand-kicker{font-size:.75rem;text-transform:uppercase;letter-spacing:.16em;font-weight:700}
+.product-info>ul{padding-left:1.3rem;line-height:1.8}
+.product-info>ul li{padding-left:.25rem;margin:.35rem 0}
+.medical-note{margin:26px 0;padding:18px 20px;border-left:4px solid #008f78;background:rgba(0,143,120,.08);border-radius:0 12px 12px 0}
+.medical-note p{margin:8px 0 0}
+.product-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.product-actions .secondary{background:transparent;color:var(--text,#202033);border:1px solid var(--line,rgba(128,128,128,.35))}
+@media(max-width:600px){.brand-showcase{padding:16px}.brand-showcase-heading{align-items:flex-start}.brand-product-card{flex-basis:82%;min-height:205px}.brand-scroll-controls{padding-top:10px}.product-actions{flex-direction:column}.product-actions .btn{width:100%;text-align:center}}
+@media(prefers-reduced-motion:reduce){.brand-marquee{scroll-behavior:auto}.brand-product-card{transition:none}}
