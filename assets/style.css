@@ -278,3 +278,18 @@ footer .social-link{min-height:40px;padding:8px 11px}
 .product-actions .secondary{background:transparent;color:var(--text,#202033);border:1px solid var(--line,rgba(128,128,128,.35))}
 @media(max-width:600px){.brand-showcase{padding:16px}.brand-showcase-heading{align-items:flex-start}.brand-product-card{flex-basis:82%;min-height:205px}.brand-scroll-controls{padding-top:10px}.product-actions{flex-direction:column}.product-actions .btn{width:100%;text-align:center}}
 @media(prefers-reduced-motion:reduce){.brand-marquee{scroll-behavior:auto}.brand-product-card{transition:none}}
+
+
+/* Refined product-brand lockups: authentic employer logos, product names kept clear */
+.brand-product-card{align-items:stretch;justify-content:flex-start;gap:0;padding:22px 22px 20px;min-height:276px;background:linear-gradient(160deg,#fff 0%,#f7f8fc 72%,#edf6f4 100%);border-color:#e0e4ee;}
+.brand-company-mark{height:66px;display:flex;align-items:center;justify-content:flex-start;gap:10px;padding-bottom:14px;border-bottom:1px solid #e6e9f1;color:#62687b;font-size:.62rem;font-weight:700;letter-spacing:.12em;line-height:1.3;}
+.brand-company-mark img{display:block;width:64px;height:44px;object-fit:contain;flex:0 0 64px;}
+.brand-wordmark{display:flex;align-items:baseline;gap:7px;justify-content:center;min-height:92px;padding:18px 0 10px;font-size:clamp(2.3rem,4vw,3.2rem);font-weight:800;letter-spacing:-.065em;line-height:1;color:#ed1c2e;}
+.brand-wordmark small{font-size:.45em;letter-spacing:-.01em;vertical-align:baseline;color:#293d9a;font-weight:800;}
+.finix-mups-wordmark{gap:9px;white-space:nowrap;}
+.finix-mups-wordmark b{font-size:.47em;letter-spacing:-.02em;color:#293d9a;font-weight:800;}
+.finix-wordmark{color:#ed1c2e;}
+.malifa-wordmark{color:#24846f;letter-spacing:-.045em;}
+.brand-kind{margin-top:auto;padding-top:8px;}
+.brand-card-action{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #e6e9f1;margin-top:15px;padding-top:13px;}
+@media(max-width:600px){.brand-product-card{min-height:260px;padding:19px}.brand-company-mark{height:60px}.brand-wordmark{min-height:84px;font-size:2.7rem}}
