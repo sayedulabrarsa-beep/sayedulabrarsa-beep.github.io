@@ -1,4 +1,21 @@
 User-agent: *
 Allow: /
 
+# Allow search crawlers to discover public profile and portfolio pages
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# ChatGPT search access is separate from model-training crawling
+User-agent: GPTBot
+Disallow: /
+
 Sitemap: https://sayedulabrar.site/sitemap.xml

@@ -69,7 +69,7 @@ def nice_date(iso):
 THEME_BOOT = "<script>try{var t=localStorage.getItem('sa-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>"
 
 NAV = [("/", "Home"), ("/about/", "About"), ("/experience/", "Experience"), ("/achievements/", "Achievements"),
-       ("/education/", "Education"), ("/publications/", "Publications"), ("/community/", "Community"),
+       ("/education/", "Education"), ("/learning/", "Learning"), ("/publications/", "Publications"), ("/community/", "Community"),
        ("/blog/", "Pharma Blog"), ("/vlog/", "Daily Vlog"), ("/contact/", "Contact"), ("/portfolio/", "Portfolio")]
 
 
@@ -102,6 +102,7 @@ FOOTER = f"""<footer>
         <ul>
           <li><a href="/about/">About</a></li><li><a href="/experience/">Experience</a></li>
           <li><a href="/achievements/">Achievements</a></li><li><a href="/education/">Education</a></li>
+          <li><a href="/learning/">Learning</a></li>
           <li><a href="/publications/">Publications &amp; Certifications</a></li>
         </ul>
       </div>
@@ -114,7 +115,7 @@ FOOTER = f"""<footer>
         </ul>
       </div>
     </div>
-    <div class="cr">Copyright@sayedulabrar_2026</div>
+    <div class="cr">Copyright@sayedulabrar_<span id="year">2026</span></div>
   </div>
 </footer>
 <script src="/assets/site.js" defer></script>"""
@@ -558,22 +559,45 @@ add("/contact/", page("/contact/", "Contact Sayedul Abrar (Abrar) | Pharmacist &
                       ct_body, ld=[crumb_ld([("Home", "/"), ("Contact", "/contact/")])]))
 
 
-# ---------- HAND-WRITTEN PAGES (portfolio + brand pages) ----------
-# These pages keep their own content; only the header, footer and script tag are
-# refreshed here so the menu and footer always match the rest of the site.
+# ---------- PAGES EDITED BY HAND ----------
+# Every page except the ones this script owns (about, achievements, blog, vlog) is
+# edited directly in its index.html. For those, the script only refreshes the shared
+# header, footer and script tag so the menu and footer are identical everywhere, and
+# lists them in the sitemap. Hand-edited pages therefore always win over the older
+# builders above.
 import re as _re
-STATIC_PAGES = ["/portfolio/", "/brands/finix-mups/", "/brands/finix/", "/brands/finix-hp/", "/brands/malifa/"]
-for sp in STATIC_PAGES:
-    fp = os.path.join(IMG_ROOT, sp.strip("/"), "index.html")
-    if not os.path.exists(fp):
+OWNED = {"/about/", "/achievements/"}
+old_lastmod = {}
+_sm = os.path.join(IMG_ROOT, "sitemap.xml")
+if os.path.exists(_sm):
+    with open(_sm, encoding="utf-8") as fh:
+        for loc, lm in _re.findall(r"<loc>https://sayedulabrar\.site(.*?)</loc><lastmod>(.*?)</lastmod>", fh.read()):
+            old_lastmod[loc] = lm
+static = ["/"]
+for fp in sorted(glob.glob(os.path.join(IMG_ROOT, "**", "index.html"), recursive=True)):
+    rel = "/" + os.path.relpath(os.path.dirname(fp), IMG_ROOT).replace(os.sep, "/").strip(".") 
+    rel = "/" if rel in ("/", "//") else rel.rstrip("/") + "/"
+    if rel == "/":
+        pass
+    if rel in OWNED or rel.startswith(("/blog/", "/vlog/", "/_src/")) or rel in ("/blog/", "/vlog/"):
         continue
+    if rel != "/" and rel not in static:
+        static.append(rel)
+for sp in static:
+    fp = os.path.join(IMG_ROOT, "index.html" if sp == "/" else os.path.join(sp.strip("/"), "index.html"))
     with open(fp, encoding="utf-8") as fh:
         t = fh.read()
-    t = _re.sub(r'<a class="skip".*?</header>', lambda m: header("/portfolio/"), t, count=1, flags=_re.S)
-    t = _re.sub(r'<footer.*?</footer>\s*<script src="/assets/site.js" defer></script>', lambda m: FOOTER, t, count=1, flags=_re.S)
-    t = t.replace('content="en_US"', 'content="en_BD"')
-    add(sp, t, sitemap=True, lastmod="2026-10-27")
-
+    cur = sp if sp in dict(NAV) else ("/portfolio/" if sp.startswith("/brands/") else sp)
+    t = _re.sub(r'<a class="skip".*?</header>', lambda m: header(cur), t, count=1, flags=_re.S)
+    t = _re.sub(r'<footer.*?</footer>\s*<script src="/assets/site.js" defer></script>|<footer.*?</footer>', lambda m: FOOTER, t, count=1, flags=_re.S)
+    if sp == "/":
+        # blended sunset hero photo and the blog / vlog cards
+        t = _re.sub(r'<div class="arch"><img [^>]*></div>',
+                    '<div class="hero-photo"><img src="/assets/img/hero-sayedul-abrar.jpg" alt="%s" width="800" height="1000" fetchpriority="high"></div>' % HERO_ALT, t, count=1)
+        if 'href="/blog/"' not in t.split("<h2 class=\"h\">Explore</h2>")[-1]:
+            t = t.replace('<b>View achievements →</b></a>\n',
+                '<b>View achievements →</b></a>\n        <a class="card link" href="/blog/"><h3>Medical &amp; Pharma Blog</h3><p>Written articles with pictures and explanations on medicine and pharmacy.</p><b>Read the blog →</b></a>\n        <a class="card link" href="/vlog/"><h3>Daily Vlog</h3><p>Day-by-day moments from work, learning and life.</p><b>Watch the vlog →</b></a>\n', 1)
+    add(sp, t, sitemap=True, lastmod=old_lastmod.get(sp, TODAY))
 
 # ---------- BLOG + VLOG ----------
 def load_posts(kind):
@@ -728,8 +752,12 @@ nf = page("/404.html", "Page not found | Sayedul Abrar", "This page could not be
 with open(os.path.join(OUT, "404.html"), "w", encoding="utf-8") as f:
     f.write(nf)
 
-with open(os.path.join(OUT, "robots.txt"), "w") as f:
-    f.write(f"User-agent: *\nAllow: /\n\nSitemap: {BASE}/sitemap.xml\n")
+if not os.path.exists(os.path.join(IMG_ROOT, "robots.txt")):
+    with open(os.path.join(OUT, "robots.txt"), "w") as f:
+        f.write(f"User-agent: *\nAllow: /\n\nSitemap: {BASE}/sitemap.xml\n")
+elif OUT != IMG_ROOT:
+    import shutil
+    shutil.copy(os.path.join(IMG_ROOT, "robots.txt"), os.path.join(OUT, "robots.txt"))
 
 urls = "".join(f"  <url><loc>{BASE}{p}</loc><lastmod>{m}</lastmod></url>\n" for p, (_, s, m) in pages.items() if s)
 with open(os.path.join(OUT, "sitemap.xml"), "w") as f:
