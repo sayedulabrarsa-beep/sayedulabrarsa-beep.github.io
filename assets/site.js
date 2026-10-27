@@ -124,41 +124,26 @@
       var svg=document.createElementNS('http://www.w3.org/2000/svg','svg');svg.setAttribute('viewBox','0 0 24 24');svg.setAttribute('aria-hidden','true');svg.classList.add('nav-icon');svg.innerHTML=shape;
       a.insertBefore(svg,a.firstChild);a.dataset.iconApplied='true';
     });
-    if(!menu.dataset.marqueeReady){
-      menu.dataset.marqueeReady='true';
-      var originals=Array.prototype.slice.call(menu.children),baseWidth=0,pausedUntil=0,last=0;
-      originals.forEach(function(li){li.dataset.originalNav='true'});
-      originals.forEach(function(li){var copy=li.cloneNode(true);copy.setAttribute('aria-hidden','true');copy.querySelectorAll('a,button').forEach(function(el){el.setAttribute('tabindex','-1')});menu.appendChild(copy)});
-      function measure(){
-        var first=originals[0],firstClone=menu.children[originals.length];
-        baseWidth=first&&firstClone?firstClone.getBoundingClientRect().left-first.getBoundingClientRect().left:0;
-        var active=menu.querySelector('a[aria-current="page"]');
-        var activeItem=active&&active.closest('li');
-        if(activeItem){
-          nav.scrollLeft=Math.max(0,activeItem.offsetLeft-(nav.clientWidth-activeItem.offsetWidth)/2);
-        }else{nav.scrollLeft=0}
-      }
-      measure();
-      window.addEventListener('resize',measure,{passive:true});
-      window.addEventListener('load',measure,{once:true});
-      if(document.fonts&&document.fonts.ready){document.fonts.ready.then(measure).catch(function(){});}
-      function pause(){pausedUntil=performance.now()+4500}
-      nav.addEventListener('touchstart',pause,{passive:true});
-      nav.addEventListener('wheel',pause,{passive:true});
-      nav.addEventListener('pointerdown',pause,{passive:true});
-      nav.addEventListener('keydown',pause);
-      if(!matchMedia('(prefers-reduced-motion: reduce)').matches){
-        function animate(now){
-          if(!last)last=now;
-          var dt=Math.min(40,now-last);last=now;
-          if(!document.hidden&&now>pausedUntil&&baseWidth>nav.clientWidth+5){
-            nav.scrollLeft+=dt*.045;
-            if(nav.scrollLeft>=baseWidth)nav.scrollLeft-=baseWidth;
-          }
-          requestAnimationFrame(animate);
+    if(!menu.dataset.navStableReady){
+      menu.dataset.navStableReady='true';
+      /* Keep the menu as one real, swipeable row. Do not clone links or auto-scroll:
+         clones can steal taps and continuous motion makes the selected page jump. */
+      var active=menu.querySelector('a[aria-current="page"]');
+      function revealActive(){
+        if(!active)return;
+        var navRect=nav.getBoundingClientRect(),linkRect=active.getBoundingClientRect();
+        if(linkRect.left<navRect.left||linkRect.right>navRect.right){
+          nav.scrollLeft+=linkRect.left-navRect.left-(nav.clientWidth-linkRect.width)/2;
         }
-        requestAnimationFrame(animate);
       }
+      requestAnimationFrame(revealActive);
+      window.addEventListener('load',revealActive,{once:true});
+      if(document.fonts&&document.fonts.ready){document.fonts.ready.then(revealActive).catch(function(){});}
+      /* Preserve the user's scroll position on resize instead of returning to Home. */
+      var previousWidth=window.innerWidth;
+      window.addEventListener('resize',function(){
+        if(Math.abs(window.innerWidth-previousWidth)>80){previousWidth=window.innerWidth;}
+      },{passive:true});
     }
   })();
 
