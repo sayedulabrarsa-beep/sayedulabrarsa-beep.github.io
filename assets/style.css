@@ -1524,3 +1524,12 @@ header .site-search-form button{flex:0 0 auto;padding:10px 14px;border:0;border-
  header .menu>li>a{padding:8px 10px;font-size:12.5px}
 }
 @media(prefers-reduced-motion:reduce){header nav{scroll-behavior:auto}}
+
+/* Universal bilingual article switch and reading aids */
+.language-switch{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 8px}
+.language-switch a{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:9px 16px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--fg);text-decoration:none;font-size:13px;font-weight:600}
+.language-switch a[aria-current=page],.language-switch a:hover{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.article-related{margin:28px 0;padding:20px;border:1px solid var(--line);border-radius:14px;background:var(--bg2)}
+.article-related h2{margin-top:0}
+.article-related ul{margin-bottom:0;padding-left:22px}
+@media(max-width:600px){.language-switch a{flex:1 1 auto}}
