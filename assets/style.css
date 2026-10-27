@@ -427,3 +427,7 @@ header .nav-icon{width:19px;height:19px;display:block;fill:none;stroke:currentCo
 .hero .hr{background:#fff}
 .hero .hero-photo{background:#fff}
 @media(max-width:520px){.hero .wrap{padding-top:30px}}
+
+/* Transparent cutout: remove all decorative masks and let the portrait sit on pure white. */
+.hero-photo img{width:100%;height:auto;max-height:540px;aspect-ratio:auto;object-fit:contain;border-radius:0!important;background:transparent;-webkit-mask-image:none!important;mask-image:none!important;-webkit-mask-composite:initial!important;mask-composite:initial!important;filter:none}
+.hero-photo::before{display:none!important}
