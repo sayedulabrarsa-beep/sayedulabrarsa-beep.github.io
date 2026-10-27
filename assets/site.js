@@ -5,6 +5,15 @@
   /* light / dark button */
   var tg=document.getElementById('tgl');
   if(tg){tg.addEventListener('click',function(){
+    if(matchMedia('(max-width: 700px)').matches){
+      var hd=document.querySelector('header');
+      if(hd){
+        var opened=hd.classList.toggle('mobile-menu-open');
+        tg.setAttribute('aria-expanded',String(opened));
+        tg.setAttribute('aria-label',opened?'Close navigation menu':'Open navigation menu');
+      }
+      return;
+    }
     var cur=root.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');
     var nx=cur==='dark'?'light':'dark';root.setAttribute('data-theme',nx);
     try{localStorage.setItem('sa-theme',nx)}catch(e){}});}
@@ -128,6 +137,31 @@
         requestAnimationFrame(animate);
       }
     }
+  })();
+
+  /* On narrow screens place the focus icons after the quote/details row.
+     Restore the original parent on wider screens so desktop layout remains intact. */
+  (function(){
+    var mq=window.matchMedia('(max-width: 700px)');
+    var shell=document.querySelector('.hero-redesign .hero-shell');
+    var copy=shell&&shell.querySelector('.hero-copy');
+    var pillars=copy&&copy.querySelector('.hero-pillars');
+    var detail=shell&&shell.querySelector('.hero-details');
+    if(!shell||!copy||!pillars||!detail)return;
+    function arrange(){
+      if(mq.matches){
+        if(pillars.parentElement!==shell)shell.appendChild(pillars);
+      }else{
+        if(pillars.parentElement!==copy)copy.appendChild(pillars);
+        var header=document.querySelector('header');
+        if(header)header.classList.remove('mobile-menu-open');
+        var toggle=document.getElementById('tgl');
+        if(toggle){toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Switch light or dark theme');}
+      }
+    }
+    arrange();
+    if(mq.addEventListener)mq.addEventListener('change',arrange);
+    else if(mq.addListener)mq.addListener(arrange);
   })();
 
   /* copy email */
