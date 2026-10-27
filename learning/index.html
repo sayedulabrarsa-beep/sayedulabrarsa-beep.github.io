@@ -60,6 +60,7 @@
 .workshop-card{display:flex;gap:14px;align-items:center;padding:17px;background:var(--card);border:1px solid var(--line);border-radius:12px;min-height:100px}
 .workshop-logo{width:60px;height:60px;flex:0 0 60px;object-fit:contain;border-radius:10px;background:#fff;padding:5px;border:1px solid var(--line)}
 .workshop-card h3{font-size:14px;line-height:1.35;margin:0 0 5px}.workshop-card p{font-size:12px;color:var(--muted);margin:0}
+.workshop-fallback{display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;color:#26314a;background:#f0f2f8!important;letter-spacing:.03em}
 .rolling-zone{padding:32px 0 16px;overflow:hidden}
 .rolling-head{display:flex;justify-content:space-between;align-items:end;gap:18px;margin-bottom:18px}
 .rolling-head h2{font-size:clamp(24px,3vw,32px);margin:4px 0}
@@ -290,6 +291,7 @@ const t=document.getElementById('tgl');if(t)t.addEventListener('click',()=>{cons
 const burger=document.getElementById('burger'),menu=document.getElementById('menu');if(burger&&menu){burger.addEventListener('click',()=>{const open=burger.getAttribute('aria-expanded')!=='true';burger.setAttribute('aria-expanded',String(open));menu.classList.toggle('open',open)})}
 document.getElementById('year').textContent=new Date().getFullYear();
 document.querySelectorAll('.course-row').forEach(row=>{const img=document.createElement('img');img.className='provider-logo';img.src=row.dataset.provider==='Coursera'?'https://cdn.simpleicons.org/coursera/0056D2':'https://cdn.simpleicons.org/linkedin/0A66C2';img.alt=row.dataset.provider+' logo';img.loading='lazy';const label=row.querySelector('.course-source');if(label)label.prepend(img)});
+document.querySelectorAll('.workshop-logo').forEach(img=>{img.addEventListener('error',()=>{const card=img.closest('.workshop-card');if(!card)return;img.remove();const mark=document.createElement('span');mark.className='workshop-logo workshop-fallback';mark.setAttribute('aria-hidden','true');mark.textContent=(card.querySelector('h3')?.textContent||'ORG').split(/\\s+/).filter(Boolean).slice(0,2).map(w=>w[0]).join('').toUpperCase();card.prepend(mark)},{once:true})});
 const cards=[...document.querySelectorAll('.course-row')],search=document.getElementById('courseSearch'),category=document.getElementById('categoryFilter'),provider=document.getElementById('providerFilter'),count=document.getElementById('courseCount'),empty=document.getElementById('emptyState');
 function filter(){let shown=0;const q=search.value.toLowerCase().trim();cards.forEach(c=>{const match=(!q||c.dataset.search.includes(q))&&(category.value==='all'||c.dataset.category===category.value)&&(provider.value==='all'||c.dataset.provider===provider.value);c.hidden=!match;if(match)shown++});count.textContent=shown+' course'+(shown===1?'':'s')+' shown';empty.style.display=shown?'none':'block'}
 [search,category,provider].forEach(el=>el.addEventListener(el===search?'input':'change',filter));filter();
