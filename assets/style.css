@@ -1385,3 +1385,114 @@ header .nav-icon { width:19px; height:19px; color:inherit; }
 :root[data-theme="dark"] .finix-mups-wordmark b { color:#bdc9ff; }
 :root[data-theme="dark"] .brand-product-card:hover,
 :root[data-theme="dark"] .brand-product-card:focus-visible { border-color:#8c9cff; }
+
+
+/* === Final mobile/desktop-site header and portrait compositing fix === */
+/* Keep the navigation in normal document flow: never overlay article content. */
+header { position:sticky; top:0; z-index:100; }
+header .bar {
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr) auto minmax(0,1fr)!important;
+  grid-template-rows:auto auto auto;
+  align-items:center;
+  gap:0 10px;
+  padding:10px 18px 0;
+}
+header .bar>.site-search-toggle { grid-column:1; grid-row:1; justify-self:start; order:initial; }
+header .bar>.logo {
+  grid-column:2; grid-row:1; justify-self:center; order:initial;
+  margin:0; max-width:100%; white-space:nowrap;
+}
+header .bar>.tgl {
+  grid-column:3; grid-row:1; justify-self:end; order:initial;
+  position:relative!important; inset:auto!important;
+}
+header nav {
+  display:block!important; position:relative!important;
+  top:auto!important; right:auto!important; left:auto!important; bottom:auto!important;
+  grid-column:1/-1; grid-row:2; order:initial;
+  flex:initial!important; width:100%!important; min-width:0;
+  max-height:none!important; height:auto; margin:8px 0 0!important;
+  padding:0!important; overflow-x:auto!important; overflow-y:hidden!important;
+  background:transparent!important; border:0!important; border-top:1px solid var(--line)!important;
+  box-shadow:none!important; transform:none!important; overscroll-behavior-x:contain;
+  scrollbar-width:none; touch-action:pan-x;
+}
+header nav::-webkit-scrollbar { display:none; }
+header .menu {
+  display:flex!important; flex-flow:row nowrap!important; align-items:stretch;
+  justify-content:flex-start; width:max-content!important; min-width:max-content!important;
+  grid-template-columns:none!important; gap:7px!important;
+  padding:6px 2px 8px!important; margin:0!important; white-space:nowrap!important;
+}
+header .menu>li { display:flex!important; flex:0 0 auto!important; min-width:0; }
+header .menu>li[aria-hidden="true"] { display:flex!important; visibility:visible!important; pointer-events:none; }
+header .menu>li>a, header .menu>li>button {
+  display:flex!important; flex-direction:column!important; align-items:center; justify-content:center;
+  gap:3px; min-width:64px!important; width:auto!important; min-height:46px;
+  padding:6px 8px 7px!important; border-radius:11px;
+  color:var(--fg)!important; background:transparent!important;
+  font-size:10px!important; font-weight:600; line-height:1.15!important;
+  text-align:center; white-space:nowrap!important; overflow:visible;
+}
+header .menu>li>a[aria-current="page"] {
+  color:var(--accent)!important; background:var(--card)!important;
+  box-shadow:inset 0 -2px 0 var(--accent)!important;
+}
+header .nav-icon { display:block!important; width:18px!important; height:18px!important; flex:0 0 18px; }
+header .site-search-form { grid-column:1/-1; grid-row:3; width:100%; margin:0; }
+header .site-search-form[hidden] { display:none!important; }
+@media (max-width:700px) {
+  header .bar { padding:8px 12px 0!important; gap:0 8px!important; }
+  header .bar>.logo { font-size:clamp(22px,6vw,28px)!important; line-height:1.2; }
+  header .bar>.site-search-toggle, header .bar>.tgl { width:38px!important; height:38px!important; flex-basis:38px; }
+  header .bar>.tgl { display:grid!important; place-items:center; font-size:20px!important; color:var(--fg)!important; border:1px solid var(--line)!important; border-radius:50%!important; background:var(--card)!important; }
+  header .bar>.tgl::before { content:none!important; display:none!important; }
+  header nav { grid-row:2; margin-top:7px!important; }
+  header .menu { gap:5px!important; padding:5px 1px 7px!important; }
+  header .menu>li>a, header .menu>li>button { min-width:59px!important; min-height:43px; padding:5px 6px!important; font-size:9px!important; }
+  header .nav-icon { width:17px!important; height:17px!important; flex-basis:17px; }
+  header .site-search-form { grid-row:3; padding:9px 0 12px!important; }
+}
+@media (min-width:701px) and (max-width:1180px) {
+  header .bar { padding-inline:20px; }
+  header .menu { gap:6px!important; }
+  header .menu>li>a, header .menu>li>button { min-width:61px!important; padding-inline:6px!important; font-size:9px!important; }
+}
+
+/* Lift and enlarge the portrait so the head sits naturally inside its orbit.
+   A warm radial backing and darken blend remove the white rectangular edge of the PNG. */
+.hero-redesign .hero-portrait-column { isolation:isolate; overflow:hidden; }
+.hero-redesign .portrait-orbit {
+  z-index:0!important; top:5%!important; width:108%!important; height:68%!important;
+  background:radial-gradient(ellipse at 50% 48%,#fff0dc 0%,#fff5e9 58%,transparent 78%)!important;
+}
+.hero-redesign .portrait-orbit::before { z-index:1; }
+.hero-redesign .hero-photo {
+  position:relative!important; z-index:1!important; overflow:hidden;
+  background:radial-gradient(ellipse at 50% 58%,#fff2e2 0%,#f6e7d4 55%,transparent 78%)!important;
+}
+.hero-redesign .hero-photo img {
+  position:relative; z-index:2;
+  object-fit:contain!important; object-position:center bottom!important;
+  transform:scale(2.22)!important; transform-origin:50% 76%!important;
+  mix-blend-mode:darken;
+  background:transparent!important; filter:none!important;
+}
+:root[data-theme="dark"] .hero-redesign .portrait-orbit {
+  background:radial-gradient(ellipse at 50% 48%,#fff0dc 0%,#fff5e9 58%,transparent 78%)!important;
+}
+:root[data-theme="dark"] .hero-redesign .hero-photo {
+  background:radial-gradient(ellipse at 50% 58%,#fff2e2 0%,#f6e7d4 55%,transparent 78%)!important;
+}
+@media (max-width:900px) {
+  .hero-redesign .portrait-orbit { top:3%!important; height:62%!important; width:110%!important; }
+  .hero-redesign .hero-photo img { transform:scale(2.05)!important; transform-origin:50% 76%!important; }
+}
+@media (max-width:560px) {
+  .hero-redesign .portrait-orbit { top:2%!important; height:60%!important; width:108%!important; }
+  .hero-redesign .hero-photo img { transform:scale(1.68)!important; transform-origin:50% 76%!important; }
+}
+@media (prefers-reduced-motion:reduce) {
+  .hero-redesign .hero-photo img { transform:none!important; }
+}
