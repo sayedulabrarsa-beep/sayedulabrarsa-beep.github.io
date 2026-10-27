@@ -126,8 +126,8 @@
     });
     if(!menu.dataset.navStableReady){
       menu.dataset.navStableReady='true';
-      /* Keep one real, swipeable row. Move gently right-to-left, pause for people,
-         and never clone links or interfere with manual scrolling and taps. */
+      /* Keep the menu as one real, swipeable row. Do not clone links or auto-scroll:
+         clones can steal taps and continuous motion makes the selected page jump. */
       var active=menu.querySelector('a[aria-current="page"]');
       function revealActive(){
         if(!active)return;
@@ -166,26 +166,6 @@
       window.addEventListener('resize',function(){
         if(Math.abs(window.innerWidth-previousWidth)>80){previousWidth=window.innerWidth;}
       },{passive:true});
-      var reduced=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      var navPaused=false,navLast=0;
-      nav.addEventListener('pointerenter',function(){navPaused=true});
-      nav.addEventListener('pointerleave',function(){navPaused=false});
-      nav.addEventListener('focusin',function(){navPaused=true});
-      nav.addEventListener('focusout',function(){navPaused=false});
-      nav.addEventListener('touchstart',function(){navPaused=true},{passive:true});
-      nav.addEventListener('touchend',function(){window.setTimeout(function(){navPaused=false},1400)},{passive:true});
-      if(!reduced){
-        function scrollMenu(now){
-          if(!navLast)navLast=now;
-          var dt=Math.min(now-navLast,40);navLast=now;
-          if(!navPaused&&!document.hidden&&nav.scrollWidth>nav.clientWidth){
-            nav.scrollLeft+=dt*.012;
-            if(nav.scrollLeft+nav.clientWidth>=nav.scrollWidth-2)nav.scrollLeft=0;
-          }
-          requestAnimationFrame(scrollMenu);
-        }
-        requestAnimationFrame(scrollMenu);
-      }
     }
   })();
 
