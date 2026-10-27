@@ -677,11 +677,11 @@ for kind, cfg in KINDS.items():
     path = cfg["path"]
     items = [{"src": p["cover"], "alt": p.get("cover_alt", p["title"]), "caption": p["title"], "href": f"/{kind}/{p['slug']}/"}
              for p in posts if p.get("cover")]
-    if kind == "vlog":
-        items = items + MOMENTS
+    if kind == "vlog" or not items:
+        items = items + MOMENTS  # blog shows these until it has posts with cover pictures
     strip_html = ""
     if items:
-        strip_html = f"""<section class="band deep" aria-label="Pictures"><div class="wrap"><h2 class="sec-h">{'Topic pictures' if kind == 'blog' else 'Recent moments'}</h2></div>{strip(items, cfg['strip_label'])}</section>"""
+        strip_html = f"""<section class="band deep" aria-label="Pictures"><div class="wrap"><h2 class="sec-h">{'Featured pictures' if kind == 'blog' else 'Recent moments'}</h2></div>{strip(items, cfg['strip_label'])}</section>"""
     note = f'<p class="note">{esc(cfg["note"], quote=False)}</p>' if cfg["note"] else ""
     if posts:
         listing = '<div class="posts">' + "".join(post_card(p, kind) for p in posts) + "</div>"
