@@ -1496,3 +1496,31 @@ header .site-search-form[hidden] { display:none!important; }
 @media (prefers-reduced-motion:reduce) {
   .hero-redesign .hero-photo img { transform:none!important; }
 }
+
+
+/* Navigation reliability patch: preserve icon marquee, but make the menu truly swipeable and clickable. */
+header .bar{min-width:0}
+header nav{display:block;min-width:0;max-width:100%;overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scrollbar-width:thin;scrollbar-color:var(--accent) transparent;touch-action:pan-x;scroll-behavior:auto}
+header nav::-webkit-scrollbar{height:3px}
+header nav::-webkit-scrollbar-thumb{background:var(--accent);border-radius:10px}
+header .menu{display:flex;flex-wrap:nowrap;align-items:center;gap:2px;width:max-content;min-width:max-content;padding:3px 8px 7px;white-space:nowrap}
+header .menu>li{flex:0 0 auto}
+header .menu>li>a,header .menu>li>button{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:40px;padding:8px 10px;border-radius:8px;line-height:1.25;white-space:nowrap}
+header .menu>li>a:hover,header .menu>li>a:focus-visible{background:var(--card)}
+header .nav-icon{display:block;width:16px;height:16px;flex:0 0 16px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+header .menu a[aria-current=page]{color:var(--accent);background:color-mix(in srgb,var(--accent) 10%,transparent);box-shadow:inset 0 -2px 0 var(--accent)}
+header .site-search-toggle{display:grid;place-items:center;flex:0 0 38px;width:38px;height:38px;border:1px solid var(--line);border-radius:50%;background:var(--card);color:var(--fg);cursor:pointer}
+header .site-search-toggle svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round}
+header .site-search-toggle[aria-expanded=true]{border-color:var(--accent);color:var(--accent)}
+header .site-search-form{display:flex;align-items:center;gap:8px;flex:1 1 100%;padding:10px 0 12px}
+header .site-search-form[hidden]{display:none}
+header .site-search-form input{min-width:0;flex:1 1 auto;width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font:inherit}
+header .site-search-form button{flex:0 0 auto;padding:10px 14px;border:0;border-radius:10px;background:var(--accent);color:var(--accent-ink);font:600 13px var(--display);cursor:pointer}
+@media(max-width:1180px){
+ header .bar{flex-wrap:wrap;gap:0 10px;padding-block:10px 0}
+ header .logo{flex:1 1 auto;min-width:0}
+ header nav{order:3;flex:0 0 100%;margin:8px 0 0;border-top:1px solid var(--line)}
+ header .menu{flex-wrap:nowrap;width:max-content}
+ header .menu>li>a{padding:8px 10px;font-size:12.5px}
+}
+@media(prefers-reduced-motion:reduce){header nav{scroll-behavior:auto}}
