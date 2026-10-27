@@ -20,6 +20,20 @@ OUT = os.environ.get("SITE_OUT") or os.path.dirname(HERE)
 CONTENT = os.environ.get("SITE_CONTENT") or os.path.join(HERE, "content")
 IMG_ROOT = os.path.dirname(HERE)  # images always come from the repo itself
 
+import hashlib
+
+
+def asset_ver(name):
+    """Short content hash so browsers fetch fresh CSS/JS whenever they change."""
+    try:
+        with open(os.path.join(IMG_ROOT, "assets", name), "rb") as fh:
+            return hashlib.md5(fh.read()).hexdigest()[:8]
+    except OSError:
+        return "0"
+
+
+CSS_V, JS_V = asset_ver("style.css"), asset_ver("site.js")
+
 BASE = "https://sayedulabrar.site"
 TODAY = "2026-10-26"
 NAME = "Sayedul Abrar"
@@ -118,7 +132,7 @@ FOOTER = f"""<footer>
     <div class="cr">Copyright@sayedulabrar_<span id="year">2026</span></div>
   </div>
 </footer>
-<script src="/assets/site.js" defer></script>"""
+<script src="/assets/site.js?v={JS_V}" defer></script>"""
 
 
 # ---------- structured data ----------
@@ -195,7 +209,7 @@ def page(path, title, desc, body, ld=None, og_type="website", noindex=False, nav
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,600&family=Dancing+Script:wght@700&display=swap">
-<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="/assets/style.css?v={CSS_V}">
 {THEME_BOOT}
 {ld_html}
 </head>
@@ -589,7 +603,9 @@ for sp in static:
         t = fh.read()
     cur = sp if sp in dict(NAV) else ("/portfolio/" if sp.startswith("/brands/") else sp)
     t = _re.sub(r'<a class="skip".*?</header>', lambda m: header(cur), t, count=1, flags=_re.S)
-    t = _re.sub(r'<footer.*?</footer>\s*<script src="/assets/site.js" defer></script>|<footer.*?</footer>', lambda m: FOOTER, t, count=1, flags=_re.S)
+    t = _re.sub(r'<footer.*?</footer>\s*<script src="/assets/site.js[^"]*" defer></script>|<footer.*?</footer>', lambda m: FOOTER, t, count=1, flags=_re.S)
+    t = _re.sub(r'href="/assets/style\.css[^"]*"', 'href="/assets/style.css?v=%s"' % CSS_V, t)
+    t = _re.sub(r'src="/assets/site\.js[^"]*"', 'src="/assets/site.js?v=%s"' % JS_V, t)
     if sp == "/":
         # blended sunset hero photo and the blog / vlog cards
         t = _re.sub(r'<div class="arch"><img [^>]*></div>',
