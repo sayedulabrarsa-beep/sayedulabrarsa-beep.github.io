@@ -1534,3 +1534,12 @@ header .site-search-form button{flex:0 0 auto;padding:10px 14px;border:0;border-
 .article-related ul{margin-bottom:0;padding-left:22px}
 @media(max-width:600px){.language-switch a{flex:1 1 auto}}
 \n/* Clear, accessible language toggle for every bilingual Pharma Blog article */\n.language-switch{align-items:center;justify-content:flex-start;padding:10px 12px;border:1px solid var(--line);border-radius:16px;background:var(--bg2);width:fit-content;max-width:100%;box-sizing:border-box}\n.language-switch .language-switch-label{font-size:12px;font-weight:700;color:var(--muted);padding:0 4px}\n.language-switch a{min-width:86px;transition:transform .18s ease,background .18s ease,border-color .18s ease}\n.language-switch a:hover{transform:translateY(-1px)}\n@media(max-width:480px){.language-switch{width:100%;justify-content:stretch}.language-switch .language-switch-label{flex:0 0 auto}.language-switch a{flex:1 1 0;min-width:0}}\n@media(prefers-reduced-motion:reduce){.language-switch a{transition:none}}\n
+/* Visual explanation cards used in the bilingual Pharma Blog articles */
+.concept-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:22px 0 14px}
+.concept-card{min-width:0;padding:18px 16px;border:1px solid var(--line);border-radius:14px;background:var(--card);box-shadow:0 8px 22px rgba(25,30,55,.045)}
+.concept-number{display:inline-grid;place-items:center;width:32px;height:32px;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-size:11px;font-weight:800;letter-spacing:.04em}
+.concept-card h3{margin:13px 0 7px;font-size:16px;line-height:1.35;color:var(--fg)}
+.concept-card p{margin:0 0 12px;color:var(--muted);font-size:14px;line-height:1.65}
+.concept-card strong{display:block;font-size:13px;line-height:1.5;color:var(--fg)}
+.concept-note{margin:0 0 24px;padding:13px 16px;border-left:3px solid var(--accent);border-radius:0 10px 10px 0;background:var(--bg2);font-size:14px;color:var(--muted)}
+@media(max-width:650px){.concept-grid{grid-template-columns:1fr;gap:10px}.concept-card{padding:16px}.concept-card h3{margin-top:10px}}
