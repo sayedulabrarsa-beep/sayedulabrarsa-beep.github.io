@@ -79,6 +79,15 @@
 @media(max-width:850px){.workshop-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.workshop-grid{grid-template-columns:1fr}.rolling-head{display:block}.rolling-card{width:245px}}
 
+
+/* Mobile carousel repair: reduced-motion settings must not turn the marquee into a vertical list. */
+@media(prefers-reduced-motion:reduce){
+  .rolling-track{animation:none!important;flex-wrap:nowrap!important;width:max-content!important}
+  .rolling-window{overflow-x:auto!important;overflow-y:hidden!important;mask-image:none!important;-webkit-mask-image:none!important;scrollbar-width:thin}
+  .rolling-card{flex:0 0 245px!important;width:245px!important}
+}
+.provider-fallback{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;flex:0 0 26px;font-size:8px;font-weight:800;line-height:1;background:#fff;color:#0a66c2;border:1px solid var(--line);border-radius:5px;padding:2px}
+
 </style>
 </head>
 <body>
@@ -290,7 +299,7 @@ const root=document.documentElement, saved=(()=>{try{return localStorage.getItem
 const t=document.getElementById('tgl');if(t)t.addEventListener('click',()=>{const next=root.getAttribute('data-theme')==='light'?'dark':'light';root.setAttribute('data-theme',next);try{localStorage.setItem('sa-theme',next)}catch(e){}});
 const burger=document.getElementById('burger'),menu=document.getElementById('menu');if(burger&&menu){burger.addEventListener('click',()=>{const open=burger.getAttribute('aria-expanded')!=='true';burger.setAttribute('aria-expanded',String(open));menu.classList.toggle('open',open)})}
 document.getElementById('year').textContent=new Date().getFullYear();
-document.querySelectorAll('.course-row').forEach(row=>{const img=document.createElement('img');img.className='provider-logo';img.src=row.dataset.provider==='Coursera'?'https://cdn.simpleicons.org/coursera/0056D2':'https://cdn.simpleicons.org/linkedin/0A66C2';img.alt=row.dataset.provider+' logo';img.loading='lazy';const label=row.querySelector('.course-source');if(label)label.prepend(img)});
+document.querySelectorAll('.course-row').forEach(row=>{const img=document.createElement('img');img.className='provider-logo';img.src=row.dataset.provider==='Coursera'?'https://cdn.simpleicons.org/coursera/0056D2':'https://cdn.simpleicons.org/linkedin/0A66C2';img.alt=row.dataset.provider+' logo';img.loading='lazy';img.addEventListener('error',()=>{const mark=document.createElement('span');mark.className='provider-logo provider-fallback';mark.setAttribute('aria-label',row.dataset.provider);mark.textContent=row.dataset.provider==='Coursera'?'C':'in';img.replaceWith(mark)},{once:true});const label=row.querySelector('.course-source');if(label)label.prepend(img)});
 document.querySelectorAll('.workshop-logo').forEach(img=>{img.addEventListener('error',()=>{const card=img.closest('.workshop-card');if(!card)return;img.remove();const mark=document.createElement('span');mark.className='workshop-logo workshop-fallback';mark.setAttribute('aria-hidden','true');mark.textContent=(card.querySelector('h3')?.textContent||'ORG').split(/\\s+/).filter(Boolean).slice(0,2).map(w=>w[0]).join('').toUpperCase();card.prepend(mark)},{once:true})});
 const cards=[...document.querySelectorAll('.course-row')],search=document.getElementById('courseSearch'),category=document.getElementById('categoryFilter'),provider=document.getElementById('providerFilter'),count=document.getElementById('courseCount'),empty=document.getElementById('emptyState');
 function filter(){let shown=0;const q=search.value.toLowerCase().trim();cards.forEach(c=>{const match=(!q||c.dataset.search.includes(q))&&(category.value==='all'||c.dataset.category===category.value)&&(provider.value==='all'||c.dataset.provider===provider.value);c.hidden=!match;if(match)shown++});count.textContent=shown+' course'+(shown===1?'':'s')+' shown';empty.style.display=shown?'none':'block'}
