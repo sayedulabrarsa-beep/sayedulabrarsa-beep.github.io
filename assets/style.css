@@ -529,3 +529,39 @@ header .menu>li[aria-hidden="true"]{pointer-events:none}
  .hero-redesign .hero-portrait-column{height:390px}
 }
 @media(prefers-reduced-motion:reduce){.hero-redesign .hero-actions a,.hero-redesign .hero-socials a{transition:none}}
+
+
+/* Final reference-match tuning: balanced 3-column composition at desktop widths */
+.hero-redesign .hero-shell{max-width:1720px;min-height:min(864px,calc(100svh - 70px));padding:48px clamp(30px,5.9vw,96px) 38px;grid-template-columns:minmax(0,1.03fr) minmax(0,1.15fr) minmax(0,.82fr);gap:clamp(20px,2.3vw,40px)}
+.hero-redesign .hero-copy{align-self:center;padding-top:8px}
+.hero-redesign .hero-eyebrow{font-size:clamp(9px,.72vw,11px);letter-spacing:.19em;margin-bottom:22px}
+.hero-redesign .hero-copy h1{font-size:clamp(58px,5.55vw,90px);line-height:.96}
+.hero-redesign .hero-role{font-size:clamp(11px,.92vw,14px);line-height:1.65;letter-spacing:.13em}
+.hero-redesign .hero-bio{font-size:clamp(13px,1vw,16px);line-height:1.65;max-width:39ch}
+.hero-redesign .hero-portrait-column{min-height:0;height:100%;align-self:stretch;align-items:flex-end}
+.hero-redesign .portrait-orbit{width:112%;height:70%;top:12%;background:radial-gradient(ellipse at 50% 48%,#fff0dc 0%,#fff5e9 57%,#fff 73%)}
+.hero-redesign .hero-photo{width:100%;height:min(690px,calc(100svh - 130px));max-width:520px}
+.hero-redesign .hero-photo img{object-fit:contain;object-position:center bottom}
+.hero-redesign .hero-details{padding-top:0;max-width:370px;width:100%;justify-self:end}
+.hero-redesign .hero-quote-mark{font-size:58px;margin-bottom:-10px}
+.hero-redesign .hero-details blockquote{font-size:clamp(15px,1.15vw,19px);line-height:1.62}
+.hero-redesign .hero-signature{margin-bottom:34px}
+.hero-redesign .hero-detail-list{gap:20px}
+.hero-redesign .hero-detail{grid-template-columns:44px minmax(0,1fr);gap:12px}
+.hero-redesign .hero-detail p{font-size:clamp(10px,.8vw,12px)}
+.hero-redesign .hero-detail b{font-size:clamp(12px,.94vw,14px)}
+.hero-redesign .hero-detail strong{font-size:clamp(11px,.82vw,12px)}
+.hero-redesign .hero-socials{margin-top:28px;padding-top:20px}
+@media(max-width:1180px) and (min-width:701px){
+ .hero-redesign .hero-shell{min-height:0;grid-template-columns:minmax(0,1fr) minmax(0,.95fr);padding:42px 30px 34px;gap:26px}
+ .hero-redesign .hero-portrait-column{grid-column:2;grid-row:1;min-height:550px;height:550px}
+ .hero-redesign .hero-photo{height:550px}
+ .hero-redesign .hero-details{grid-column:1/-1;max-width:none;display:grid;grid-template-columns:1fr 1.1fr;gap:10px 28px;padding-top:24px;border-top:1px solid #eceef3}
+}
+@media(max-width:700px){
+ .hero-redesign .hero-shell{min-height:0;padding:30px 22px 28px;gap:22px}
+ .hero-redesign .hero-copy h1{font-size:clamp(52px,13vw,76px)}
+ .hero-redesign .hero-portrait-column{height:430px;min-height:0}
+ .hero-redesign .hero-photo{height:430px}
+ .hero-redesign .hero-details{max-width:none}
+}
