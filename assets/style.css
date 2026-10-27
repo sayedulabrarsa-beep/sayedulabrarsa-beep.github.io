@@ -301,3 +301,9 @@ footer .social-link{min-height:40px;padding:8px 11px}
 .contact-details a{color:var(--accent);overflow-wrap:anywhere;text-decoration:none}
 .contact-details a:hover,.contact-details a:focus-visible{text-decoration:underline}
 @media(max-width:420px){.contact-details p{align-items:flex-start;flex-direction:column;gap:5px}.contact-details strong{min-width:0}}
+
+/* Employer and institution marks: aligned left of each entry, responsive and accessible. */
+.entry:has(.org-logo){grid-template-columns:170px minmax(0,1fr)}
+.entry .org-logo{display:block;width:84px;height:64px;object-fit:contain;object-position:left center;padding:5px;background:#fff;border:1px solid var(--line);border-radius:10px;margin:8px 0 12px}
+.entry .org-logo + .entry-copy{margin-top:0}
+@media(max-width:700px){.entry{grid-template-columns:1fr;gap:8px}.entry .org-logo{width:76px;height:58px}}
