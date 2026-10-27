@@ -139,6 +139,28 @@
       requestAnimationFrame(revealActive);
       window.addEventListener('load',revealActive,{once:true});
       if(document.fonts&&document.fonts.ready){document.fonts.ready.then(revealActive).catch(function(){});}
+      /* Gentle right-to-left movement requested for the icon navigation.
+         Pause for touch, keyboard focus and pointer hover; respect reduced motion. */
+      var navAutoScrollEnabled=!(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+      var navAutoPaused=false,navAutoLast=0;
+      nav.addEventListener('pointerenter',function(){navAutoPaused=true});
+      nav.addEventListener('pointerleave',function(){navAutoPaused=false});
+      nav.addEventListener('focusin',function(){navAutoPaused=true});
+      nav.addEventListener('focusout',function(){navAutoPaused=false});
+      nav.addEventListener('touchstart',function(){navAutoPaused=true},{passive:true});
+      nav.addEventListener('touchend',function(){window.setTimeout(function(){navAutoPaused=false},1600)},{passive:true});
+      if(navAutoScrollEnabled){
+        function autoScrollNavigation(now){
+          if(!navAutoLast)navAutoLast=now;
+          var elapsed=Math.min(now-navAutoLast,40);navAutoLast=now;
+          if(!navAutoPaused&&!document.hidden&&nav.scrollWidth>nav.clientWidth){
+            nav.scrollLeft+=elapsed*0.012;
+            if(nav.scrollLeft+nav.clientWidth>=nav.scrollWidth-2)nav.scrollLeft=0;
+          }
+          window.requestAnimationFrame(autoScrollNavigation);
+        }
+        window.requestAnimationFrame(autoScrollNavigation);
+      }
       /* Preserve the user's scroll position on resize instead of returning to Home. */
       var previousWidth=window.innerWidth;
       window.addEventListener('resize',function(){
