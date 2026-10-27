@@ -307,3 +307,9 @@ footer .social-link{min-height:40px;padding:8px 11px}
 .entry .org-logo{display:block;width:84px;height:64px;object-fit:contain;object-position:left center;padding:5px;background:#fff;border:1px solid var(--line);border-radius:10px;margin:8px 0 12px}
 .entry .org-logo + .entry-copy{margin-top:0}
 @media(max-width:700px){.entry{grid-template-columns:1fr;gap:8px}.entry .org-logo{width:76px;height:58px}}
+
+/* Place organisation marks beside entry headings, not underneath them. */
+.org-heading{display:flex;align-items:center;gap:16px;margin:0 0 8px;min-height:64px}
+.org-heading h2{margin:0;min-width:0}
+.entry .org-heading .org-logo{flex:0 0 84px;width:84px;height:64px;margin:0;object-fit:contain;object-position:center;padding:5px;background:#fff;border:1px solid var(--line);border-radius:10px}
+@media(max-width:700px){.org-heading{align-items:flex-start;gap:12px}.entry .org-heading .org-logo{flex-basis:70px;width:70px;height:56px}}
