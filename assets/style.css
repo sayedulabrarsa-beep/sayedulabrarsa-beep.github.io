@@ -575,3 +575,32 @@ header .menu>li[aria-hidden="true"]{pointer-events:none}
 .hero-redesign .portrait-orbit{left:50%;transform:translateX(-50%);pointer-events:none}
 @media(max-width:1180px) and (min-width:701px){.hero-redesign .hero-photo{height:560px;max-width:460px}}
 @media(max-width:700px){.hero-redesign .hero-portrait-column{width:100%;height:440px;min-height:0;justify-content:center}.hero-redesign .hero-photo{width:min(100%,390px);height:440px}.hero-redesign .hero-photo img{object-position:center bottom}}
+
+
+/* Final correction: use the user's supplied original portrait and keep the hero responsive */
+.hero-redesign .hero-photo{background:transparent!important;overflow:hidden}
+.hero-redesign .hero-photo img{object-fit:contain!important;object-position:center bottom!important;background:transparent!important}
+@media(max-width:900px) and (min-width:701px){
+ .hero-redesign .hero-shell{grid-template-columns:minmax(0,1fr) minmax(0,.95fr);padding:32px 24px 28px;gap:18px;min-height:0}
+ .hero-redesign .hero-copy{align-self:center}
+ .hero-redesign .hero-copy h1{font-size:clamp(48px,7.2vw,66px)}
+ .hero-redesign .hero-eyebrow{white-space:normal;font-size:9px;letter-spacing:.12em;gap:5px}
+ .hero-redesign .hero-portrait-column{grid-column:2;grid-row:1;min-height:0;height:450px}
+ .hero-redesign .hero-photo{height:450px;width:100%}
+ .hero-redesign .portrait-orbit{height:75%;top:9%}
+ .hero-redesign .hero-details{grid-column:1/-1;display:grid;grid-template-columns:1fr 1.1fr;gap:8px 22px;padding-top:22px;border-top:1px solid #eceef3;max-width:none}
+ .hero-redesign .hero-quote-mark{grid-column:1}
+ .hero-redesign .hero-details blockquote,.hero-redesign .hero-signature{grid-column:1}
+ .hero-redesign .hero-signature{margin-bottom:0}
+ .hero-redesign .hero-detail-list{grid-column:2;grid-row:1/span 3;gap:10px}
+ .hero-redesign .hero-socials{grid-column:1/-1;margin-top:12px}
+}
+@media(max-width:700px){
+ .hero-redesign .hero-shell{display:flex;flex-direction:column;align-items:stretch;gap:18px;padding:26px 20px 26px}
+ .hero-redesign .hero-copy{order:1}
+ .hero-redesign .hero-portrait-column{order:2;height:420px;min-height:0;margin-top:0}
+ .hero-redesign .hero-photo{height:420px;width:min(100%,390px);margin-inline:auto}
+ .hero-redesign .hero-details{order:3;display:block;border-top:1px solid #eceef3;padding-top:20px}
+ .hero-redesign .hero-detail-list{display:grid;gap:14px}
+ .hero-redesign .hero-socials{justify-content:flex-start}
+}
