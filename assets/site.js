@@ -122,7 +122,6 @@
       var pausedUntil=0,last=0;
       function pause(){pausedUntil=performance.now()+4500}
       nav.addEventListener('touchstart',pause,{passive:true});nav.addEventListener('wheel',pause,{passive:true});nav.addEventListener('pointerdown',pause,{passive:true});nav.addEventListener('keydown',pause);
-      nav.addEventListener('scroll',function(){if(performance.now()>pausedUntil)pause()},{passive:true});
       if(!matchMedia('(prefers-reduced-motion: reduce)').matches){
         function animate(now){if(!last)last=now;var dt=Math.min(40,now-last);last=now;
           if(!document.hidden&&now>pausedUntil&&baseWidth>nav.clientWidth+5){nav.scrollLeft+=dt*.035;if(nav.scrollLeft>=baseWidth)nav.scrollLeft=0}
