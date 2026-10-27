@@ -140,6 +140,8 @@
       }
       measure();
       window.addEventListener('resize',measure,{passive:true});
+      window.addEventListener('load',measure,{once:true});
+      if(document.fonts&&document.fonts.ready){document.fonts.ready.then(measure).catch(function(){});}
       function pause(){pausedUntil=performance.now()+4500}
       nav.addEventListener('touchstart',pause,{passive:true});
       nav.addEventListener('wheel',pause,{passive:true});
