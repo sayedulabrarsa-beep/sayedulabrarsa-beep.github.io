@@ -88,7 +88,7 @@
       form.innerHTML='<label class="visually-hidden" for="site-search-input">Search this website</label><input id="site-search-input" type="search" placeholder="Search Sayedul Abrar…" autocomplete="off"><button type="submit">Search</button>';
       bar.appendChild(form);
       searchBtn.addEventListener('click',function(){var open=form.hidden;form.hidden=!open;searchBtn.setAttribute('aria-expanded',String(open));if(open)form.querySelector('input').focus()});
-      form.addEventListener('submit',function(e){e.preventDefault();var q=form.querySelector('input').value.trim();if(q)location.href='https://www.google.com/search?q='+encodeURIComponent('site:sayedulabrar.site '+q)});
+      form.addEventListener('submit',function(e){e.preventDefault();var q=form.querySelector('input').value.trim();if(q)location.href='/search/?q='+encodeURIComponent(q)});
     }
     if(logo)logo.setAttribute('aria-label','Sayedul Abrar home');
     var icons={
@@ -113,18 +113,15 @@
       a.insertBefore(svg,a.firstChild);a.dataset.iconApplied='true';
     });
     if(!menu.dataset.marqueeReady){
-      var originals=Array.prototype.slice.call(menu.children),baseWidth=0;
-      originals.forEach(function(li){li.dataset.originalNav='true'});
-      originals.forEach(function(li){var copy=li.cloneNode(true);copy.setAttribute('aria-hidden','true');copy.querySelectorAll('a,button').forEach(function(el){el.setAttribute('tabindex','-1')});menu.appendChild(copy)});
       menu.dataset.marqueeReady='true';
-      function measure(){baseWidth=0;originals.forEach(function(li){baseWidth+=li.getBoundingClientRect().width});}
+      var baseWidth=0,pausedUntil=0,last=0;
+      function measure(){baseWidth=menu.scrollWidth;nav.scrollLeft=0;}
       measure();window.addEventListener('resize',measure,{passive:true});
-      var pausedUntil=0,last=0;
       function pause(){pausedUntil=performance.now()+4500}
       nav.addEventListener('touchstart',pause,{passive:true});nav.addEventListener('wheel',pause,{passive:true});nav.addEventListener('pointerdown',pause,{passive:true});nav.addEventListener('keydown',pause);
       if(!matchMedia('(prefers-reduced-motion: reduce)').matches){
         function animate(now){if(!last)last=now;var dt=Math.min(40,now-last);last=now;
-          if(!document.hidden&&now>pausedUntil&&baseWidth>nav.clientWidth+5){nav.scrollLeft+=dt*.035;if(nav.scrollLeft>=baseWidth)nav.scrollLeft=0}
+          if(!document.hidden&&now>pausedUntil&&baseWidth>nav.clientWidth+5){nav.scrollLeft+=dt*.045;if(nav.scrollLeft>=baseWidth-nav.clientWidth)nav.scrollLeft=0}
           requestAnimationFrame(animate)}
         requestAnimationFrame(animate);
       }
