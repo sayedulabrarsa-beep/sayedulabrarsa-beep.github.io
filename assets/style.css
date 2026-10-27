@@ -807,3 +807,70 @@ header .menu>li[aria-hidden="true"]{pointer-events:none}
  .hero-redesign .hero-portrait-column{height:440px}
 }
 @media(prefers-reduced-motion:reduce){.hero-redesign .hero-photo img{transform:none}}
+
+
+/* Latest requested refinement: portrait aligned to the backdrop mark and a compact first-screen hero */
+.hero-redesign .hero-shell{
+  height:65vh;min-height:520px;max-height:740px;
+  padding-bottom:0;overflow:hidden;
+  grid-template-columns:minmax(0,1fr) minmax(0,1.12fr) minmax(240px,.86fr);
+  align-items:stretch;
+}
+.hero-redesign .hero-copy{align-self:center;padding-bottom:12px}
+.hero-redesign .hero-portrait-column{height:100%;min-height:0;align-items:stretch;align-self:stretch}
+.hero-redesign .portrait-orbit{height:76%;top:7%;width:116%}
+.hero-redesign .hero-photo{height:100%;width:100%;max-width:600px;overflow:hidden;align-self:stretch}
+.hero-redesign .hero-photo img{height:100%;width:100%;object-fit:contain!important;object-position:center bottom!important;transform:scale(1.94);transform-origin:50% 70%}
+.hero-redesign .hero-details{align-self:center}
+@media(min-width:901px){
+ .hero-redesign .hero-shell{height:65vh;min-height:520px;max-height:740px}
+ .hero-redesign .hero-copy h1{font-size:clamp(58px,5.1vw,84px)}
+ .hero-redesign .hero-portrait-column{grid-column:2;grid-row:1}
+ .hero-redesign .hero-photo img{transform:scale(1.94);transform-origin:50% 70%}
+ .hero-redesign .hero-details{grid-column:3;grid-row:1}
+}
+@media(max-width:900px){
+ .hero-redesign .hero-shell{
+   display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.88fr);
+   grid-template-rows:minmax(0,1fr);gap:8px;
+   height:65svh;min-height:480px;max-height:600px;
+   padding:18px 18px 0;overflow:hidden;align-items:stretch;
+ }
+ .hero-redesign .hero-copy{display:contents}
+ .hero-redesign .hero-eyebrow{grid-column:1;grid-row:1;align-self:start;margin:0 0 8px;font-size:8px;letter-spacing:.08em;line-height:1.35;white-space:normal}
+ .hero-redesign .hero-copy h1{grid-column:1;grid-row:1;align-self:start;margin:24px 0 0;font-size:clamp(42px,7.8vw,64px);line-height:.93;letter-spacing:-.05em}
+ .hero-redesign .hero-rule,.hero-redesign .hero-role,.hero-redesign .hero-bio{display:none!important}
+ .hero-redesign .hero-pillars{grid-column:1;grid-row:1;align-self:center;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px 6px;margin:35px 0 0;max-width:none}
+ .hero-redesign .hero-pillars>div{display:grid;grid-template-columns:28px minmax(0,1fr);align-items:center;text-align:left;justify-items:start;font-size:9px;line-height:1.25;gap:5px}
+ .hero-redesign .pillar-icon{width:27px;height:27px;font-size:14px}
+ .hero-redesign .hero-actions{grid-column:1;grid-row:1;align-self:end;display:flex;flex-direction:column;gap:6px;margin:0 0 16px}
+ .hero-redesign .hero-actions a{width:100%;box-sizing:border-box;min-height:36px;padding:7px 8px;font-size:10px;gap:6px;border-radius:8px}
+ .hero-redesign .hero-portrait-column{grid-column:2;grid-row:1;display:flex;height:100%;min-height:0;width:100%;align-self:stretch;align-items:stretch;margin:0}
+ .hero-redesign .portrait-orbit{width:130%;height:67%;top:12%;left:50%}
+ .hero-redesign .hero-photo{height:100%;width:100%;max-width:none;margin:0;overflow:hidden}
+ .hero-redesign .hero-photo img{height:100%;width:100%;object-fit:contain!important;object-position:center bottom!important;transform:scale(1.92);transform-origin:50% 70%}
+ .hero-redesign .hero-details{display:none!important}
+}
+@media(max-width:560px){
+ .hero-redesign .hero-shell{height:65svh;min-height:440px;max-height:560px;padding:14px 12px 0;gap:5px}
+ .hero-redesign .hero-eyebrow{font-size:7px;letter-spacing:.04em;margin-top:3px}
+ .hero-redesign .hero-eyebrow span{width:15px}
+ .hero-redesign .hero-copy h1{margin-top:24px;font-size:clamp(36px,9.5vw,50px)}
+ .hero-redesign .hero-pillars{margin-top:28px;gap:9px 4px}
+ .hero-redesign .hero-pillars>div{font-size:8px;grid-template-columns:24px minmax(0,1fr);gap:4px}
+ .hero-redesign .pillar-icon{width:23px;height:23px;font-size:12px}
+ .hero-redesign .hero-actions{margin-bottom:12px;gap:6px}
+ .hero-redesign .hero-actions a{font-size:9px;min-height:34px;padding:6px 5px}
+ .hero-redesign .hero-portrait-column{height:100%;min-height:0}
+ .hero-redesign .portrait-orbit{width:145%;height:65%;top:12%}
+ .hero-redesign .hero-photo{height:100%;width:100%}
+ .hero-redesign .hero-photo img{transform:scale(2.02);transform-origin:50% 70%}
+}
+@media(max-width:380px){
+ .hero-redesign .hero-shell{min-height:420px;padding-inline:10px}
+ .hero-redesign .hero-copy h1{font-size:35px}
+ .hero-redesign .hero-eyebrow{font-size:6px}
+ .hero-redesign .hero-pillars>div{font-size:7px}
+ .hero-redesign .hero-actions a{font-size:8px}
+ .hero-redesign .hero-photo img{transform:scale(1.96);transform-origin:50% 70%}
+}
