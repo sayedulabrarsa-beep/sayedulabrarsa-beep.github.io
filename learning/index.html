@@ -73,8 +73,8 @@
 .rolling-top{display:flex;justify-content:space-between;align-items:center}
 .rolling-card a{font-size:12px;font-weight:600;color:var(--accent)}
 .all-courses{display:inline-flex;align-items:center;gap:8px;padding:10px 15px;border:1px solid var(--accent);border-radius:999px;font-weight:600;white-space:nowrap}.all-courses:hover{background:var(--accent);color:#fff}
-@keyframes courseRoll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-@media(prefers-reduced-motion:reduce){.rolling-track{animation:none;flex-wrap:wrap;width:auto}.rolling-window{mask-image:none}}
+@keyframes courseRoll{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+@media(prefers-reduced-motion:reduce){.rolling-track{animation:none;flex-wrap:wrap;width:auto}.rolling-window{mask-image:none}.rolling-card{width:min(100%,280px)}}
 @media(max-width:850px){.workshop-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.workshop-grid{grid-template-columns:1fr}.rolling-head{display:block}.rolling-card{width:245px}}
 
@@ -104,7 +104,7 @@
 <article class="workshop-card"><img class="workshop-logo" src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Daffodil_International_University_Logo.svg" alt="Daffodil International University logo" loading="lazy"><div><h3>Daffodil International University</h3><p>University and student-development activities</p></div></article>
 <article class="workshop-card"><img class="workshop-logo" src="https://upload.wikimedia.org/wikipedia/commons/8/8e/BSHRM_logo.png" alt="Bangladesh Society for Human Resource Management logo" loading="lazy"><div><h3>BSHRM</h3><p>Human resource management community</p></div></article>
 <article class="workshop-card"><img class="workshop-logo" src="https://briddhi.org/wp-content/uploads/2022/08/briddhi-logo.png" alt="Briddhi logo" loading="lazy"><div><h3>Briddhi</h3><p>Professional growth and development</p></div></article>
-<article class="workshop-card"><img class="workshop-logo" src="https://daffodilvarsity.edu.bd/images/logo.png" alt="Pharmacia Club logo placeholder" loading="lazy"><div><h3>Pharmacia Club</h3><p>Daffodil International University · pharmacy community</p></div></article>
+<article class="workshop-card"><img class="workshop-logo" src="https://daffodilvarsity.edu.bd/images/logo.png" alt="Daffodil International University logo; Pharmacia Club identity awaiting local logo asset" loading="lazy"><div><h3>Pharmacia Club</h3><p>Daffodil International University · pharmacy community</p></div></article>
 <article class="workshop-card"><img class="workshop-logo" src="https://www.hrdibd.org/wp-content/uploads/2020/01/hrdi-logo.png" alt="Human Resource Development Institute logo" loading="lazy"><div><h3>Human Resource Development Institute</h3><p>Professional learning and development</p></div></article>
 <article class="workshop-card"><img class="workshop-logo" src="https://admission.ac/wp-content/uploads/2020/01/logo.png" alt="Admission.ac logo" loading="lazy"><div><h3>Admission.ac</h3><p>Education and career-related engagement</p></div></article>
 </div></div></section>
