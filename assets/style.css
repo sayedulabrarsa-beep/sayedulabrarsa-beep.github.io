@@ -293,3 +293,11 @@ footer .social-link{min-height:40px;padding:8px 11px}
 .brand-kind{margin-top:auto;padding-top:8px;}
 .brand-card-action{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #e6e9f1;margin-top:15px;padding-top:13px;}
 @media(max-width:600px){.brand-product-card{min-height:260px;padding:19px}.brand-company-mark{height:60px}.brand-wordmark{min-height:84px;font-size:2.7rem}}
+
+/* Contact details: clear, readable and mobile-friendly */
+.contact-details{display:grid;gap:10px;margin:18px 0 8px;max-width:440px}
+.contact-details p{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin:0;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--card);min-width:0}
+.contact-details strong{color:var(--fg);min-width:88px;font-weight:600}
+.contact-details a{color:var(--accent);overflow-wrap:anywhere;text-decoration:none}
+.contact-details a:hover,.contact-details a:focus-visible{text-decoration:underline}
+@media(max-width:420px){.contact-details p{align-items:flex-start;flex-direction:column;gap:5px}.contact-details strong{min-width:0}}
