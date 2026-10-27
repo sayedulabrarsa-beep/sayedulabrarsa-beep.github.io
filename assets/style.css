@@ -214,14 +214,12 @@ footer p{font-size:13.5px;color:var(--fg)}
 .skip:focus{left:8px;top:8px}
 /* phone and tablet header: logo and theme button on top, every page link in a swipeable row below */
 @media(max-width:1180px){
-  html{scroll-padding-top:108px}
+  html{scroll-padding-top:150px}
   .bar{flex-wrap:wrap;gap:0 12px;padding-block:10px 0}
   .logo{flex:1 1 auto}
-  nav{order:3;flex:0 0 100%;margin:8px 0 0;overflow-x:auto;overflow-y:hidden;scrollbar-width:none;border-top:1px solid var(--line);
-    -webkit-mask-image:linear-gradient(90deg,#000 92%,transparent);mask-image:linear-gradient(90deg,#000 92%,transparent)}
-  nav::-webkit-scrollbar{display:none}
-  .menu{width:max-content;padding-right:28px}
-  .menu>li>a{padding:11px 12px}
+  nav{order:3;flex:0 0 100%;margin:8px 0 0;border-top:1px solid var(--line)}
+  .menu{flex-wrap:wrap;width:100%;padding:2px 0 4px}
+  .menu>li>a{padding:8px 11px;font-size:13px}
   .menu a[aria-current="page"]{box-shadow:inset 0 -2px 0 var(--accent)}
 }
 @media(max-width:700px){
@@ -233,10 +231,11 @@ footer p{font-size:13.5px;color:var(--fg)}
 .hero-photo{position:relative;width:min(100%,440px)}
 .hero-photo::before{content:"";position:absolute;inset:14% -16% 10% -16%;background:radial-gradient(closest-side,rgba(255,169,31,.34),transparent 72%);filter:blur(6px);pointer-events:none}
 .hero-photo img{position:relative;display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;
-  -webkit-mask-image:linear-gradient(180deg,transparent 0,#000 9%,#000 70%,transparent 100%),linear-gradient(90deg,transparent 0,#000 15%,#000 85%,transparent 100%);
+  -webkit-mask-image:linear-gradient(180deg,transparent 0,#000 20%,#000 62%,transparent 98%),linear-gradient(90deg,transparent 0,#000 26%,#000 74%,transparent 100%);
   -webkit-mask-composite:source-in;
-  mask-image:linear-gradient(180deg,transparent 0,#000 9%,#000 70%,transparent 100%),linear-gradient(90deg,transparent 0,#000 15%,#000 85%,transparent 100%);
+  mask-image:linear-gradient(180deg,transparent 0,#000 20%,#000 62%,transparent 98%),linear-gradient(90deg,transparent 0,#000 26%,#000 74%,transparent 100%);
   mask-composite:intersect}
+@media(max-width:860px){.hero-photo+.pioneer{position:absolute;right:0;bottom:8px;margin:0}}
 @media(max-width:520px){.hero-photo{width:min(100%,360px)}}
 
 /* about page: formal portrait on top, medium size on phones */
