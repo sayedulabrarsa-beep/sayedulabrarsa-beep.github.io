@@ -7,7 +7,7 @@
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://sayedulabrar.site/learning/">
 <meta name="author" content="Sayedul Abrar"><meta name="theme-color" content="#2B2D3F">
-<link rel="stylesheet" href="/assets/style.css?v=learning-fix-20261027">
+<link rel="stylesheet" href="/assets/style.css?v=learning-carousel-20261027">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Dancing+Script:wght@700&display=swap">
 <style>
@@ -66,7 +66,7 @@
 .rolling-head{display:flex;justify-content:space-between;align-items:end;gap:18px;margin-bottom:18px}
 .rolling-head h2{font-size:clamp(24px,3vw,32px);margin:4px 0}
 .rolling-head p{color:var(--muted);margin:0;font-size:13px}
-.rolling-window{display:block;width:100%;max-width:100%;overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
+.rolling-window{display:block;width:100%;max-width:100%;overflow-x:auto;overflow-y:hidden;scrollbar-width:thin;touch-action:pan-x;mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
 .rolling-track{display:flex!important;flex-flow:row nowrap!important;align-items:stretch;gap:14px;width:max-content!important;min-width:max-content;animation:courseRoll 55s linear infinite}
 .rolling-window:hover .rolling-track,.rolling-window:focus-within .rolling-track{animation-play-state:paused}
 .rolling-card{box-sizing:border-box;flex:0 0 280px;width:280px;min-width:280px;min-height:176px;display:flex;flex-direction:column;justify-content:space-between;padding:20px;border-radius:13px;border:1px solid var(--line);background:var(--card)}
@@ -75,7 +75,7 @@
 .rolling-top{display:flex;justify-content:space-between;align-items:center}
 .rolling-card a{font-size:12px;font-weight:600;color:var(--accent)}
 .all-courses{display:inline-flex;align-items:center;gap:8px;padding:10px 15px;border:1px solid var(--accent);border-radius:999px;font-weight:600;white-space:nowrap}.all-courses:hover{background:var(--accent);color:#fff}
-@keyframes courseRoll{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+@keyframes courseRoll{from{transform:translateX(0)}to{transform:translateX(-50%)}}\n.rolling-window.manual .rolling-track{animation-play-state:paused!important}\n.rolling-window{scrollbar-color:var(--accent) transparent}\n.rolling-window::-webkit-scrollbar{height:5px}\n.rolling-window::-webkit-scrollbar-thumb{background:var(--accent);border-radius:9px}
 @media(prefers-reduced-motion:reduce){.rolling-track{animation:none!important;display:flex!important;flex-flow:row nowrap!important;width:max-content!important;min-width:max-content}.rolling-window{overflow-x:auto!important;overflow-y:hidden!important;mask-image:none!important;-webkit-mask-image:none!important;scrollbar-width:thin}.rolling-card{flex:0 0 245px!important;width:245px!important;min-width:245px!important}}
 @media(max-width:850px){.workshop-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.workshop-grid{grid-template-columns:1fr}.rolling-head{display:block}.rolling-card{width:245px}}
@@ -335,7 +335,7 @@ const burger=document.getElementById('burger'),menu=document.getElementById('men
 document.getElementById('year').textContent=new Date().getFullYear();
 document.querySelectorAll('.course-row').forEach(row=>{const img=document.createElement('img');img.className='provider-logo';img.src=row.dataset.provider==='Coursera'?'https://cdn.simpleicons.org/coursera/0056D2':'https://cdn.simpleicons.org/linkedin/0A66C2';img.alt=row.dataset.provider+' logo';img.loading='lazy';img.addEventListener('error',()=>{const mark=document.createElement('span');mark.className='provider-logo provider-fallback';mark.setAttribute('aria-label',row.dataset.provider);mark.textContent=row.dataset.provider==='Coursera'?'C':'in';img.replaceWith(mark)},{once:true});const label=row.querySelector('.course-source');if(label)label.prepend(img)});
 document.querySelectorAll('.workshop-logo').forEach(img=>{img.addEventListener('error',()=>{const card=img.closest('.workshop-card');if(!card)return;img.remove();const mark=document.createElement('span');mark.className='workshop-logo workshop-fallback';mark.setAttribute('aria-hidden','true');mark.textContent=(card.querySelector('h3')?.textContent||'ORG').split(/\\s+/).filter(Boolean).slice(0,2).map(w=>w[0]).join('').toUpperCase();card.prepend(mark)},{once:true})});
-const cards=[...document.querySelectorAll('.course-row')],search=document.getElementById('courseSearch'),category=document.getElementById('categoryFilter'),provider=document.getElementById('providerFilter'),count=document.getElementById('courseCount'),empty=document.getElementById('emptyState');
+const rolling=document.querySelector('.rolling-window');if(rolling){['touchstart','pointerdown','wheel','keydown'].forEach(evt=>rolling.addEventListener(evt,()=>rolling.classList.add('manual'),{passive:true}));}\nconst cards=[...document.querySelectorAll('.course-row')],search=document.getElementById('courseSearch'),category=document.getElementById('categoryFilter'),provider=document.getElementById('providerFilter'),count=document.getElementById('courseCount'),empty=document.getElementById('emptyState');
 function filter(){let shown=0;const q=search.value.toLowerCase().trim();cards.forEach(c=>{const match=(!q||c.dataset.search.includes(q))&&(category.value==='all'||c.dataset.category===category.value)&&(provider.value==='all'||c.dataset.provider===provider.value);c.hidden=!match;if(match)shown++});count.textContent=shown+' course'+(shown===1?'':'s')+' shown';empty.style.display=shown?'none':'block'}
 [search,category,provider].forEach(el=>el.addEventListener(el===search?'input':'change',filter));filter();
 })();
