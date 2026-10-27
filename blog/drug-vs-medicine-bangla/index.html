@@ -9,6 +9,9 @@
 <meta name="author" content="Sayedul Abrar">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://sayedulabrar.site/blog/drug-vs-medicine-bangla/">
+<link rel="alternate" hreflang="bn" href="https://sayedulabrar.site/blog/drug-vs-medicine-bangla/">
+<link rel="alternate" hreflang="en" href="https://sayedulabrar.site/blog/drug-vs-medicine/">
+<link rel="alternate" hreflang="x-default" href="https://sayedulabrar.site/blog/drug-vs-medicine-bangla/">
 <meta name="theme-color" content="#2B2D3F">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="article">
@@ -39,7 +42,11 @@
 .article-title{font-size:clamp(30px,5vw,48px);line-height:1.3;letter-spacing:-.025em;margin:0 0 14px;color:var(--fg)}
 .article-subtitle{font-size:clamp(17px,2.5vw,21px);line-height:1.8;color:var(--muted);margin-bottom:20px}
 .article-meta{display:flex;flex-wrap:wrap;gap:10px 18px;color:var(--muted);font:13px Poppins,sans-serif;margin:18px 0 26px}
-.hero-figure{margin:22px 0 30px}.hero-figure figcaption{font-size:13px;line-height:1.6;color:var(--muted);margin:10px 3px 0}.article-hero{display:block;width:100%;aspect-ratio:16/8.5;object-fit:cover;object-position:center;border-radius:18px;margin:0;box-shadow:0 14px 34px rgba(0,0,0,.18)}
+.hero-figure{margin:22px 0 30px}.hero-figure figcaption{font-size:13px;line-height:1.6;color:var(--muted);margin:10px 3px 0}.article-hero{display:block;width:100%;height:auto;aspect-ratio:auto;object-fit:contain;object-position:center;border-radius:18px;margin:0;background:#232536;box-shadow:0 14px 34px rgba(0,0,0,.18);animation:heroFloat 7s ease-in-out infinite}
+@keyframes heroFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+.article-image{height:auto;max-height:none;aspect-ratio:auto;object-fit:contain;background:var(--bg2)}
+.language-switch{display:flex;align-items:center;justify-content:flex-end;gap:6px;margin:0 0 18px;flex-wrap:wrap;font:600 13px Poppins,sans-serif}.language-switch a{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:8px 15px;border:1px solid var(--line);border-radius:999px;color:var(--fg);text-decoration:none;background:var(--card);transition:transform .2s ease,border-color .2s ease}.language-switch a:hover{transform:translateY(-2px);border-color:var(--accent)}.language-switch a[aria-current=page]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+@media(prefers-reduced-motion:reduce){.article-hero{animation:none}.language-switch a{transition:none}}
 .article-body{font-size:17px;line-height:1.9;color:var(--fg);max-width:76ch;margin-inline:auto}.article-body p{max-width:74ch}.article-body h2{scroll-margin-top:90px}.table-scroll{max-width:100%;overflow-x:auto;border-radius:12px;margin:18px 0 26px}.table-scroll .compare{margin:0;min-width:540px}.answer-first{background:var(--bg2);border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:14px;padding:20px 22px;margin:0 0 28px}.answer-first h2{font-size:22px;margin:0 0 8px;color:var(--accent)}.answer-first p{margin-bottom:10px}.answer-first ul{margin-bottom:0}
 .article-body h2{font-size:clamp(23px,3.5vw,30px);line-height:1.45;margin:38px 0 14px;color:var(--accent);letter-spacing:0}
 .article-body h3{font-size:20px;line-height:1.5;margin:24px 0 10px}
@@ -52,7 +59,7 @@
 .author-card{display:flex;gap:18px;align-items:flex-start;border:1px solid var(--line);border-radius:16px;padding:22px;margin-top:40px;background:var(--bg2)}.author-avatar{width:70px;height:70px;border-radius:50%;object-fit:cover;flex:0 0 70px}.author-card h2{font-size:21px;margin:0 0 5px;color:var(--fg)}.author-card p{font-size:14px;line-height:1.75;margin:0 0 6px}
 .disclaimer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:18px;margin-top:28px}
 .related{margin-top:38px}.related h2{font-size:24px;color:var(--accent)}.related-track{display:flex;gap:14px;overflow-x:auto;padding:4px 2px 14px;scroll-snap-type:x mandatory}.related-card{flex:0 0 230px;border:1px solid var(--line);border-radius:14px;padding:16px;background:var(--card);color:var(--fg);text-decoration:none;scroll-snap-align:start}.related-card span{display:block;color:var(--muted);font-size:13px;margin-top:6px}.related-card:hover{border-color:var(--accent)}
-@media(max-width:600px){.article-wrap{padding:24px 16px 50px}.article-body{font-size:16px;line-height:1.85}.article-hero{aspect-ratio:4/3}.article-image{aspect-ratio:4/3;max-height:380px}.compare{font-size:13px}.compare th,.compare td{padding:8px 7px}.author-card{padding:16px;gap:12px}.author-avatar{width:54px;height:54px;flex-basis:54px}.answer-first{padding:16px}.hero-figure figcaption{font-size:12px}}
+@media(max-width:600px){.article-wrap{padding:24px 16px 50px}.article-body{font-size:16px;line-height:1.85}.article-hero{width:100%;height:auto;aspect-ratio:auto;border-radius:12px}.article-image{width:100%;height:auto;aspect-ratio:auto;max-height:none;border-radius:12px}.compare{font-size:13px}.compare th,.compare td{padding:8px 7px}.author-card{padding:16px;gap:12px}.author-avatar{width:54px;height:54px;flex-basis:54px}.answer-first{padding:16px}.hero-figure figcaption{font-size:12px}}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Drug আর Medicine কি একই জিনিস?","acceptedAnswer":{"@type":"Answer","text":"দুটি শব্দের মধ্যে অর্থগত পার্থক্য রয়েছে, যদিও অনেক চিকিৎসাবৈজ্ঞানিক প্রসঙ্গে এগুলো পরস্পরের বিকল্প হিসেবে ব্যবহৃত হয়। Drug সাধারণত ঔষধি পদার্থকে বোঝাতে পারে, আর Medicine চিকিৎসায় ব্যবহারের জন্য প্রস্তুত ঔষধি পণ্যকে বোঝাতে পারে।"}},{"@type":"Question","name":"Drug-এর বাংলা অর্থ কী?","acceptedAnswer":{"@type":"Answer","text":"প্রসঙ্গ অনুযায়ী Drug-এর বাংলা অর্থ ঔষধি পদার্থ, ওষুধ বা মাদকদ্রব্য হতে পারে। Pharmacology-তে শব্দটি চিকিৎসায় ব্যবহৃত ঔষধি উপাদানসহ বিভিন্ন জৈবিক কার্যসম্পন্ন পদার্থ বোঝাতে ব্যবহৃত হয়।"}},{"@type":"Question","name":"Medicine-এর বাংলা অর্থ কী?","acceptedAnswer":{"@type":"Answer","text":"Medicine-এর সাধারণ বাংলা অর্থ ওষুধ বা ঔষধ। চিকিৎসার উদ্দেশ্যে ব্যবহৃত Tablet, Capsule, Syrup এবং অন্যান্য ঔষধি প্রস্তুতিকে Medicine বলা হয়।"}},{"@type":"Question","name":"Generic name আর Brand name-এর মধ্যে পার্থক্য কী?","acceptedAnswer":{"@type":"Answer","text":"Generic name হলো সক্রিয় ঔষধি উপাদানের স্বীকৃত নাম, আর Brand name হলো কোনো কোম্পানির দেওয়া বাণিজ্যিক নাম।"}}]}</script>
 </head>
@@ -64,6 +71,7 @@
 <button class="tgl" id="tgl" type="button" aria-label="Switch light or dark theme">&#9788;</button>
 </div></header>
 <main id="main" class="article-wrap">
+<nav class="language-switch" aria-label="Article language"><a href="/blog/drug-vs-medicine-bangla/" aria-current="page" lang="bn">বাংলা</a><a href="/blog/drug-vs-medicine/" lang="en">English</a></nav>
 <p class="article-crumbs"><a href="/">Home</a> / <a href="/blog/">Pharma Blog</a> / Drug vs Medicine</p>
 <article itemscope itemtype="https://schema.org/Article">
 <header style="position:static;background:transparent;border:0">
@@ -156,13 +164,13 @@
 <p>ওষুধ সম্পর্কে সঠিক জ্ঞান অর্জন শুরু হোক পরিচিত শব্দগুলোর অর্থ বোঝার মাধ্যমে।</p>
 <blockquote>পরবর্তী পর্ব: Generic Name vs Brand Name—একই সক্রিয় উপাদান বিভিন্ন ব্র্যান্ডে পাওয়া যায় কেন?</blockquote>
 <section class="source-list" aria-labelledby="sources-title">
-<h2 id="sources-title">নির্ভরযোগ্য তথ্যের জন্য আরও পড়ুন</h2>
+<h2 id="sources-title">References</h2>
 <ul>
-<li><a href="https://medlineplus.gov/druginformation.html" target="_blank" rel="noopener noreferrer">MedlinePlus — Drug Information</a></li>
-<li><a href="https://www.fda.gov/drugs" target="_blank" rel="noopener noreferrer">U.S. Food and Drug Administration — Drugs</a></li>
-<li><a href="https://www.ncbi.nlm.nih.gov/books/" target="_blank" rel="noopener noreferrer">NCBI Bookshelf — Biomedical and Pharmacology References</a></li>
+<li><a href="https://medlineplus.gov/druginformation.html" target="_blank" rel="noopener noreferrer">MedlinePlus</a></li>
+<li><a href="https://www.fda.gov/drugs" target="_blank" rel="noopener noreferrer">U.S. Food and Drug Administration (FDA)</a></li>
+<li><a href="https://www.ncbi.nlm.nih.gov/books/" target="_blank" rel="noopener noreferrer">NCBI Bookshelf</a></li>
 </ul>
-<p>এই রেফারেন্সগুলো সাধারণ শিক্ষামূলক তথ্য যাচাই ও আরও পড়ার জন্য দেওয়া হয়েছে। স্থানীয় অনুমোদিত পণ্যের তথ্যের জন্য প্যাকেজ ইনসার্ট ও সংশ্লিষ্ট নিয়ন্ত্রক কর্তৃপক্ষের তথ্য দেখুন।</p>
+<p>For product-specific details, check the approved package insert and the relevant local regulator.</p>
 </section>
 <div class="disclaimer"><strong>Medical Education Disclaimer:</strong> এই লেখাটি সাধারণ শিক্ষামূলক উদ্দেশ্যে তৈরি। এটি ব্যক্তিগত চিকিৎসা, রোগ নির্ণয় বা চিকিৎসকের পরামর্শের বিকল্প নয়। কোনো ওষুধ শুরু, বন্ধ বা তার মাত্রা পরিবর্তন করার আগে চিকিৎসক বা নিবন্ধিত ফার্মাসিস্টের পরামর্শ নিন।</div>
 </div>
