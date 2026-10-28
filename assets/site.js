@@ -88,7 +88,8 @@
       searchBtn.addEventListener('click',function(){var open=form.hidden;form.hidden=!open;searchBtn.setAttribute('aria-expanded',String(open));if(open)form.querySelector('input').focus()});
       form.addEventListener('submit',function(e){e.preventDefault();var q=form.querySelector('input').value.trim();if(q)location.href='/search/?q='+encodeURIComponent(q)});
     }
-    if(logo)logo.setAttribute('aria-label','Sayedul Abrar home');\n    menu.querySelectorAll('a').forEach(function(a){if(new URL(a.getAttribute('href'),location.origin).pathname==='/community/'){var li=a.closest('li');if(li)li.remove();}});
+    if(logo)logo.setAttribute('aria-label','Sayedul Abrar home');
+    menu.querySelectorAll('a').forEach(function(a){if(new URL(a.getAttribute('href'),location.origin).pathname==='/community/'){var li=a.closest('li');if(li)li.remove();}});
     var icons={
       '/':'<path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9M9 20v-6h6v6"></path>',
       '/about/':'<circle cx="12" cy="8" r="4"></circle><path d="M4 21a8 8 0 0 1 16 0"></path>',
@@ -196,7 +197,8 @@
     var search=bar.querySelector('.site-search-toggle');if(search&&search.parentNode===bar)search.insertAdjacentElement('afterend',btn);else bar.appendChild(btn);
     var overlay=document.createElement('div');overlay.className='site-nav-overlay';overlay.id='site-nav-overlay';overlay.setAttribute('aria-hidden','true');
     var close=document.createElement('button');close.type='button';close.className='site-nav-overlay-close';close.setAttribute('aria-label','Close navigation menu');close.innerHTML='&times;';
-    var card=document.createElement('div');card.className='site-nav-card';\n    var profile=document.createElement('div');profile.className='site-nav-overlay-profile';
+    var card=document.createElement('div');card.className='site-nav-card';
+    var profile=document.createElement('div');profile.className='site-nav-overlay-profile';
     var img=document.createElement('img');img.src='/assets/img/sayedul-abrar.jpg';img.alt='Sayedul Abrar';img.loading='lazy';
     var h=document.createElement('h2');h.textContent="Hello, I'm Sayedul Abrar";
     var p=document.createElement('p');p.textContent='Pharmacist · Product Executive · Lifelong learner. Explore my professional journey, pharmacy articles and work.';
