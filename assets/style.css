@@ -1957,3 +1957,6 @@ header .site-search-form[hidden]{display:none!important}header .site-search-form
 body.nav-overlay-open{overflow:hidden}
 @media(max-width:560px){.site-nav-overlay{padding:70px 10px 10px}.site-nav-card{width:min(350px,calc(100vw - 20px));grid-template-columns:82px minmax(0,1fr);max-height:calc(100dvh - 82px)}.site-nav-overlay-profile{padding:42px 7px 12px}.site-nav-overlay-profile img{width:58px;height:70px}.site-nav-overlay-profile h2{font-size:12px}.site-nav-overlay-profile p{font-size:9px}.site-nav-overlay-links{padding:38px 20px 14px}.site-nav-overlay-links>a{font-size:13px;padding:4px 0}}
 @media(prefers-reduced-motion:reduce){.site-nav-overlay,.site-nav-overlay-links>a{transition:none}}
+
+/* Community is already covered inside About; keep it out of the primary navigation. */
+header nav a[href="/community/"]{display:none!important}
