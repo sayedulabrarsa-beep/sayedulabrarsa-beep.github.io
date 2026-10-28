@@ -176,6 +176,31 @@
     else if(mq.addListener)mq.addListener(arrange);
   })();
 
+  /* Requested full-screen navigation overlay, using the existing navigation links */
+  (function(){
+    var header=document.querySelector('header'),bar=header&&header.querySelector('.bar'),nav=header&&header.querySelector('nav'),menu=nav&&nav.querySelector('.menu');
+    if(!header||!bar||!menu||document.querySelector('.site-menu-toggle'))return;
+    var btn=document.createElement('button');btn.type='button';btn.className='site-menu-toggle';btn.setAttribute('aria-label','Open navigation menu');btn.setAttribute('aria-expanded','false');btn.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"></path></svg>';
+    var search=bar.querySelector('.site-search-toggle');if(search&&search.parentNode===bar)search.insertAdjacentElement('afterend',btn);else bar.appendChild(btn);
+    var overlay=document.createElement('div');overlay.className='site-nav-overlay';overlay.id='site-nav-overlay';overlay.setAttribute('aria-hidden','true');
+    var close=document.createElement('button');close.type='button';close.className='site-nav-overlay-close';close.setAttribute('aria-label','Close navigation menu');close.innerHTML='&times;';
+    var profile=document.createElement('div');profile.className='site-nav-overlay-profile';
+    var img=document.createElement('img');img.src='/assets/img/sayedul-abrar.jpg';img.alt='Sayedul Abrar';img.loading='lazy';
+    var h=document.createElement('h2');h.textContent="Hello, I'm Sayedul Abrar";
+    var p=document.createElement('p');p.textContent='Pharmacist · Product Executive · Lifelong learner. Explore my professional journey, pharmacy articles and work.';
+    profile.appendChild(img);profile.appendChild(h);profile.appendChild(p);
+    var links=document.createElement('nav');links.className='site-nav-overlay-links';links.setAttribute('aria-label','Expanded navigation');
+    Array.prototype.forEach.call(menu.querySelectorAll('a'),function(a){var clone=a.cloneNode(true);clone.removeAttribute('data-icon-applied');clone.querySelectorAll('.nav-icon').forEach(function(i){i.remove()});clone.removeAttribute('style');if(a.hasAttribute('aria-current'))clone.setAttribute('aria-current','page');links.appendChild(clone)});
+    var contact=document.createElement('a');contact.href='/contact/';contact.className='overlay-contact';contact.textContent='Get in touch ↗';links.appendChild(contact);
+    overlay.appendChild(close);overlay.appendChild(profile);overlay.appendChild(links);document.body.appendChild(overlay);
+    function open(){overlay.classList.add('is-open');overlay.setAttribute('aria-hidden','false');document.body.classList.add('nav-overlay-open');btn.setAttribute('aria-expanded','true');btn.setAttribute('aria-label','Close navigation menu');close.focus()}
+    function shut(){overlay.classList.remove('is-open');overlay.setAttribute('aria-hidden','true');document.body.classList.remove('nav-overlay-open');btn.setAttribute('aria-expanded','false');btn.setAttribute('aria-label','Open navigation menu');btn.focus()}
+    btn.addEventListener('click',function(){overlay.classList.contains('is-open')?shut():open()});close.addEventListener('click',shut);
+    overlay.addEventListener('click',function(e){if(e.target===overlay)shut()});
+    overlay.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){overlay.classList.remove('is-open');overlay.setAttribute('aria-hidden','true');document.body.classList.remove('nav-overlay-open')})});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'&&overlay.classList.contains('is-open'))shut()});
+  })();
+
   /* copy email */
   var cp=document.getElementById('copy');
   if(cp){cp.addEventListener('click',function(){
