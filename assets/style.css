@@ -2284,3 +2284,32 @@ header nav a[href="/community/"]{display:none!important}
  .about-link-grid small{font-size:10px}
 }
 @media(prefers-reduced-motion:reduce){.about-editorial *{scroll-behavior:auto!important;transition:none!important}}
+
+
+/* About page university and community experience section */
+.about-community{background:#fff9ef;padding:88px 0}
+.about-community-head{display:grid;grid-template-columns:1fr .8fr;gap:60px;align-items:end;margin-bottom:34px}
+.about-community-head h2{font:500 clamp(38px,5.3vw,70px)/.99 Georgia,"Times New Roman",serif;letter-spacing:-.045em;margin:0}
+.about-community-head h2 em{color:#286b5b}
+.about-community-head>p{font-size:14px;line-height:1.8;color:#53645d;margin:0 0 5px}
+.about-community-grid{display:grid;grid-template-columns:1.08fr 1fr 1fr;gap:12px}
+.about-community-card{position:relative;display:flex;flex-direction:column;align-items:flex-start;min-height:270px;padding:25px 23px 22px;background:#f4d8c8;border-top:3px solid #e66b56}
+.about-community-card:nth-child(2){background:#e7eee5;border-color:#286b5b}
+.about-community-card:nth-child(3){background:#f7f0cd;border-color:#d4b83f}
+.about-community-main{background:#286b5b;color:#fff;border-color:#f4d86e}
+.about-community-index{font:italic 38px/1 Georgia,serif;opacity:.75}
+.about-community-type{font-size:9px;letter-spacing:.15em;font-weight:800;margin:20px 0 8px!important}
+.about-community-card h3{font:500 25px/1.1 Georgia,serif;margin:0 0 12px}
+.about-community-card>p:not(.about-community-type){font-size:12px;line-height:1.75;color:#53645d;margin-bottom:25px}
+.about-community-main>p:not(.about-community-type){color:#e2eee7}
+.about-community-date{font-size:10px;letter-spacing:.1em;font-weight:800;margin-top:auto}
+.about-community-note{font:italic 18px/1.5 Georgia,serif;color:#286b5b;margin:26px 0 0;max-width:750px}
+@media(max-width:760px){
+ .about-community{padding:62px 0}
+ .about-community-head{grid-template-columns:1fr;gap:14px;margin-bottom:24px}
+ .about-community-grid{grid-template-columns:1fr;gap:10px}
+ .about-community-card{min-height:0;padding:21px 19px}
+ .about-community-type{margin-top:14px!important}
+ .about-community-card>p:not(.about-community-type){margin-bottom:20px}
+ .about-community-note{font-size:16px}
+}
