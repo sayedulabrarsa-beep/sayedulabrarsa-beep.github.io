@@ -112,46 +112,59 @@
     });
     if(!menu.dataset.navStableReady){
       menu.dataset.navStableReady='true';
-      /* Keep the menu as one real, swipeable row. Do not clone links or auto-scroll:
-         clones can steal taps and continuous motion makes the selected page jump. */
-      var active=menu.querySelector('a[aria-current="page"]');
-      function revealActive(){
-        if(!active)return;
-        var navRect=nav.getBoundingClientRect(),linkRect=active.getBoundingClientRect();
-        if(linkRect.left<navRect.left||linkRect.right>navRect.right){
-          nav.scrollLeft+=linkRect.left-navRect.left-(nav.clientWidth-linkRect.width)/2;
+      /* Start at the right edge, then move steadily right-to-left and loop seamlessly. */
+      var navMotionOK=!(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+      var originalItems=Array.prototype.slice.call(menu.children);
+      if(navMotionOK&&originalItems.length){
+        originalItems.forEach(function(item){
+          var clone=item.cloneNode(true);
+          clone.setAttribute('aria-hidden','true');
+          clone.querySelectorAll('a,button').forEach(function(el){el.setAttribute('tabindex','-1');el.removeAttribute('aria-current');});
+          menu.appendChild(clone);
+        });
+        menu.style.willChange='transform';
+        menu.style.width='max-content';
+        menu.style.flexWrap='nowrap';
+        nav.style.overflow='hidden';
+        nav.style.scrollBehavior='auto';
+        var navStartTime=null,navBaseWidth=0,navStartOffset=0,navLoopDistance=0,navLastFrame=0;
+        function measureNavigation(){
+          navBaseWidth=0;
+          originalItems.forEach(function(item){navBaseWidth+=item.getBoundingClientRect().width;});
+          navLoopDistance=navBaseWidth;
+          navStartOffset=nav.clientWidth;
+          menu.style.transform='translate3d('+navStartOffset+'px,0,0)';
+          navStartTime=null;navLastFrame=0;
         }
-      }
-      requestAnimationFrame(revealActive);
-      window.addEventListener('load',revealActive,{once:true});
-      if(document.fonts&&document.fonts.ready){document.fonts.ready.then(revealActive).catch(function(){});}
-      /* Gentle right-to-left movement requested for the icon navigation.
-         Pause for touch, keyboard focus and pointer hover; respect reduced motion. */
-      var navAutoScrollEnabled=!(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches);
-      var navAutoPaused=false,navAutoLast=0;
-      nav.addEventListener('pointerenter',function(){navAutoPaused=true});
-      nav.addEventListener('pointerleave',function(){navAutoPaused=false});
-      nav.addEventListener('focusin',function(){navAutoPaused=true});
-      nav.addEventListener('focusout',function(){navAutoPaused=false});
-      nav.addEventListener('touchstart',function(){navAutoPaused=true},{passive:true});
-      nav.addEventListener('touchend',function(){window.setTimeout(function(){navAutoPaused=false},1600)},{passive:true});
-      if(navAutoScrollEnabled){
-        function autoScrollNavigation(now){
-          if(!navAutoLast)navAutoLast=now;
-          var elapsed=Math.min(now-navAutoLast,40);navAutoLast=now;
-          if(!navAutoPaused&&!document.hidden&&nav.scrollWidth>nav.clientWidth){
-            nav.scrollLeft+=elapsed*0.012;
-            if(nav.scrollLeft+nav.clientWidth>=nav.scrollWidth-2)nav.scrollLeft=0;
+        function moveNavigation(now){
+          if(!navStartTime)navStartTime=now;
+          var elapsed=Math.min(now-(navLastFrame||now),40);
+          navLastFrame=now;
+          if(!document.hidden&&!navAutoPaused&&navBaseWidth>0){
+            var x;
+            var initialDuration=nav.clientWidth/24*1000;
+            var t=now-navStartTime;
+            if(t<initialDuration){
+              x=nav.clientWidth-(t/1000)*24;
+            }else{
+              var loopT=(t-initialDuration)/1000;
+              x=-(loopT*24)%navLoopDistance;
+            }
+            menu.style.transform='translate3d('+x+'px,0,0)';
           }
-          window.requestAnimationFrame(autoScrollNavigation);
+          window.requestAnimationFrame(moveNavigation);
         }
-        window.requestAnimationFrame(autoScrollNavigation);
+        var navAutoPaused=false;
+        nav.addEventListener('pointerenter',function(){navAutoPaused=true});
+        nav.addEventListener('pointerleave',function(){navAutoPaused=false});
+        nav.addEventListener('focusin',function(){navAutoPaused=true});
+        nav.addEventListener('focusout',function(){navAutoPaused=false});
+        nav.addEventListener('touchstart',function(){navAutoPaused=true},{passive:true});
+        nav.addEventListener('touchend',function(){window.setTimeout(function(){navAutoPaused=false},1600)},{passive:true});
+        measureNavigation();
+        window.addEventListener('resize',measureNavigation,{passive:true});
+        window.requestAnimationFrame(moveNavigation);
       }
-      /* Preserve the user's scroll position on resize instead of returning to Home. */
-      var previousWidth=window.innerWidth;
-      window.addEventListener('resize',function(){
-        if(Math.abs(window.innerWidth-previousWidth)>80){previousWidth=window.innerWidth;}
-      },{passive:true});
     }
   })();
 
