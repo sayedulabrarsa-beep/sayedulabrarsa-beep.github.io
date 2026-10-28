@@ -116,6 +116,14 @@
       /* Seamless right-to-left marquee: start at the right edge, then repeat the full menu without a blank gap. */
       var navMotionOK=!(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches);
       var originalItems=Array.prototype.slice.call(menu.children);
+      /* Continue the menu from the current page, instead of resetting every page to Home. */
+      var activeIndex=originalItems.findIndex(function(item){return !!item.querySelector('a[aria-current="page"]')});
+      if(activeIndex>0){
+        originalItems=originalItems.slice(activeIndex).concat(originalItems.slice(0,activeIndex));
+        var reordered=document.createDocumentFragment();
+        originalItems.forEach(function(item){reordered.appendChild(item)});
+        menu.appendChild(reordered);
+      }
       if(navMotionOK&&originalItems.length){
         originalItems.forEach(function(item){
           var clone=item.cloneNode(true);
