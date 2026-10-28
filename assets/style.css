@@ -2472,3 +2472,10 @@ header nav{overflow:hidden!important;scroll-behavior:auto!important;scrollbar-wi
 header nav::-webkit-scrollbar{display:none!important}
 header nav .menu{justify-content:flex-start!important;will-change:transform}
 @media(prefers-reduced-motion:reduce){header nav .menu{transform:none!important;will-change:auto!important}}
+
+
+/* Navigation marquee must show the repeated links continuously without horizontal scrollbars */
+header nav{overflow:hidden!important;position:relative}
+header nav .menu{display:flex!important;flex-wrap:nowrap!important;justify-content:flex-start!important;transform:translate3d(0,0,0)}
+header nav .menu>li{flex:0 0 auto}
+@media(prefers-reduced-motion:reduce){header nav .menu{transform:none!important}}
