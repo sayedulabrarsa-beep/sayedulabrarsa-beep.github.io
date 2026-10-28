@@ -2375,3 +2375,34 @@ img,svg,video,canvas,iframe{max-width:100%}
   .about-final-cta .about-actions{align-items:stretch;flex-direction:column}
   .about-final-cta .about-actions>*{align-self:center}
 }
+
+
+/* Header hierarchy requested: name first, navigation beneath, search at the side */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:100;background:var(--bg2,#fff);isolation:isolate}
+header .bar{
+ display:grid!important;
+ grid-template-columns:48px minmax(0,1fr) 48px;
+ grid-template-rows:auto auto auto;
+ align-items:center;gap:0 12px;
+ padding:10px clamp(12px,3vw,28px) 0!important;
+ width:100%;box-sizing:border-box;
+}
+header .bar>.site-search-toggle{grid-column:1;grid-row:1;justify-self:start;align-self:center}
+header .bar>.logo{grid-column:2;grid-row:1;justify-self:center;align-self:center;text-align:center;white-space:nowrap;z-index:2;margin:0;font-size:clamp(24px,3.2vw,34px);line-height:1.25}
+header .bar>.tgl{grid-column:3;grid-row:1;justify-self:end;align-self:center}
+header nav{grid-column:1/-1;grid-row:2;width:100%;min-width:0;margin:10px 0 0!important;border-top:1px solid var(--line,#e8eaf0);position:relative;z-index:1}
+header nav:before{content:"";position:absolute;inset:0;z-index:-1;background:var(--bg2,#fff)}
+header .menu{display:flex!important;flex-flow:row nowrap!important;align-items:center;justify-content:flex-start;gap:4px;width:max-content;min-width:max-content;padding:7px 2px 9px;margin:0;white-space:nowrap}
+header .menu>li{flex:0 0 auto}
+header .menu>li>a,header .menu>li>button{min-width:68px}
+header .bar>.site-search-form{grid-column:1/-1;grid-row:3;min-width:0;box-sizing:border-box}
+@media(max-width:600px){
+ header .bar{grid-template-columns:42px minmax(0,1fr) 42px;gap:0 8px;padding:8px 12px 0!important}
+ header .bar>.logo{font-size:clamp(22px,6vw,29px);max-width:100%;overflow:hidden;text-overflow:ellipsis}
+ header .bar>.site-search-toggle,header .bar>.tgl{width:40px;height:40px}
+ header nav{margin-top:8px!important}
+ header .menu{gap:2px;padding:6px 0 8px}
+ header .menu>li>a,header .menu>li>button{min-width:60px;padding:6px 8px;font-size:9px}
+ header .nav-icon{width:17px;height:17px}
+}
+@media(prefers-reduced-motion:reduce){header .menu{scroll-behavior:auto}}
