@@ -2,29 +2,9 @@
   var root=document.documentElement;
   var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* Apply saved theme consistently on every page and viewport. */
-  var tg=document.getElementById('tgl');
-  function applyTheme(theme){
-    if(theme!=='light'&&theme!=='dark')return;
-    root.setAttribute('data-theme',theme);
-    if(tg){
-      tg.textContent=theme==='dark'?'☾':'☼';
-      tg.setAttribute('aria-label',theme==='dark'?'Switch to light mode':'Switch to dark mode');
-      tg.setAttribute('title',theme==='dark'?'Switch to light mode':'Switch to dark mode');
-    }
-  }
-  var initialTheme='';
-  try{initialTheme=localStorage.getItem('sa-theme')||''}catch(e){}
-  if(initialTheme!=='light'&&initialTheme!=='dark'){
-    initialTheme=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';
-  }
-  applyTheme(initialTheme);
-  if(tg){tg.addEventListener('click',function(){
-    var current=root.getAttribute('data-theme')||initialTheme;
-    var next=current==='dark'?'light':'dark';
-    applyTheme(next);
-    try{localStorage.setItem('sa-theme',next)}catch(e){}
-  });}
+  /* The site uses one fixed light theme. Drop any theme saved by older versions. */
+  root.removeAttribute('data-theme');
+  try{localStorage.removeItem('sa-theme')}catch(e){}
 
   /* Header height is used to size the first screen (70% home hero, 30% next section). */
   var hdr=document.querySelector('header');
