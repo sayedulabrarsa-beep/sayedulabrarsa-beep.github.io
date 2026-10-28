@@ -1,10 +1,16 @@
 /* Sayedul Abrar site styles */
 :root{
-  --bg:#F3F4F9; --bg2:#E8EAF2; --card:#FFFFFF; --fg:#1C1E2D; --muted:#5A5F78; --line:#D3D6E4;
-  --accent:#C26E00; --accent-ink:#FFFFFF; --soft:#DCDFEB;
+  --bg:#2B2D3F; --bg2:#232536; --card:#363950; --fg:#F2F3F8; --muted:#A9ADC2; --line:#44476A;
+  --accent:#FFA91F; --accent-ink:#1B1C27; --soft:#4A4D68;
   --display:"Poppins",system-ui,sans-serif; --script:"Dancing Script","Brush Script MT",cursive;
-  color-scheme:light;
 }
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){
+  --bg:#F3F4F9; --bg2:#E8EAF2; --card:#FFFFFF; --fg:#1C1E2D; --muted:#5A5F78; --line:#D3D6E4;
+  --accent:#C26E00; --accent-ink:#FFFFFF; --soft:#DCDFEB; color-scheme:light}}
+:root[data-theme="light"]{
+  --bg:#F3F4F9; --bg2:#E8EAF2; --card:#FFFFFF; --fg:#1C1E2D; --muted:#5A5F78; --line:#D3D6E4;
+  --accent:#C26E00; --accent-ink:#FFFFFF; --soft:#DCDFEB; color-scheme:light}
+:root{color-scheme:dark}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:76px}
 body{margin:0;background:var(--bg);color:var(--fg);font:400 15px/1.7 var(--display)}
@@ -1586,25 +1592,6 @@ header .site-search-form button{flex:0 0 auto;padding:10px 14px;border:0;border-
   .hero-redesign .hero-copy h1{font-size:clamp(46px,min(8vw,8svh),76px)}
 }
 
-/* Phone: name + photo side by side in the first 70%, pillars and details just below */
-@media(max-width:700px){
-  .hero-redesign .hero-shell{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr);grid-auto-rows:auto;column-gap:6px;row-gap:0;padding:clamp(14px,3svh,24px) 16px 26px;align-items:start;min-height:0;height:auto}
-  .hero-redesign .hero-copy{display:contents}
-  .hero-redesign .hero-copy>*{grid-column:1}
-  .hero-redesign .hero-eyebrow{grid-row:1;margin:0 0 6px;font-size:8px;letter-spacing:.07em;white-space:normal;line-height:1.5;gap:5px;flex-wrap:wrap}
-  .hero-redesign .hero-eyebrow span{width:16px}
-  .hero-redesign .hero-copy h1{grid-row:2;font-size:clamp(38px,12vw,56px);margin:0}
-  .hero-redesign .hero-rule{grid-row:3;width:64px;margin:12px 0 10px}
-  .hero-redesign .hero-role{grid-row:4;font-size:9.5px;letter-spacing:.09em;margin:0 0 8px;line-height:1.6}
-  .hero-redesign .hero-bio{grid-row:5;font-size:12px;line-height:1.55;margin:0 0 12px;max-width:none}
-  .hero-redesign .hero-actions{grid-row:6;flex-direction:column;align-items:stretch;gap:8px}
-  .hero-redesign .hero-actions a{min-height:40px;padding:8px 10px;font-size:12px;gap:8px;width:100%}
-  .hero-redesign .hero-portrait-column{grid-column:2;grid-row:1 / span 6;height:max(330px,calc(var(--fold) - var(--hdr) - 40px));min-height:0;width:100%;margin:0;align-self:stretch;order:0}
-  .hero-redesign .hero-photo{height:100%;width:100%;max-width:none;margin:0}
-  .hero-redesign .portrait-orbit{width:140%;height:62%;top:22%}
-  .hero-redesign .hero-pillars{grid-column:1 / -1;grid-row:7;margin-top:22px}
-  .hero-redesign .hero-details{grid-column:1 / -1;grid-row:8;order:0;margin-top:22px}
-}
 
 /* fine-tuning: nothing clipped, true circle behind the portrait */
 .hero-redesign .hero-portrait-column{overflow:visible}
@@ -1645,37 +1632,82 @@ header .site-search-form button{flex:0 0 auto;padding:10px 14px;border:0;border-
   .hero.hero-redesign .hero-socials{display:flex!important}
   .hero.hero-redesign .hero-pillars{display:grid!important}
 }
-@media(max-width:700px){
-  .hero.hero-redesign .hero-details{display:block!important;grid-column:1/-1;grid-row:8}
-  .hero.hero-redesign .hero-socials{justify-content:flex-start;margin-top:20px}
-  .hero.hero-redesign .hero-detail-list{margin-top:6px}
-}
 
 /* older fixed max-heights must never clip the hero */
 @media(max-width:1180px){.hero.hero-redesign .hero-shell{max-height:none!important;overflow:visible}}
 @media(min-width:1181px){.hero.hero-redesign .hero-shell{max-height:none}}
 
-/* Tall wide-ish screens (Chrome "Desktop site" on a phone, tablets in portrait):
-   text on top, portrait below, together filling exactly the first 70% of the screen */
-@media(min-width:701px) and (max-aspect-ratio:11/20){
-  .hero.hero-redesign .hero-shell{display:flex;flex-direction:column;align-items:stretch;gap:0;height:auto;min-height:0;padding:4vw 5vw 5vw;max-width:none}
-  .hero.hero-redesign .hero-copy{display:contents}
-  .hero.hero-redesign .hero-eyebrow{order:1;font-size:max(11px,1.9vw);margin:0 0 2.2vw;white-space:normal}
-  .hero.hero-redesign .hero-eyebrow span{width:5vw}
-  .hero.hero-redesign .hero-copy h1{order:2;font-size:13vw;line-height:.96}
-  .hero.hero-redesign .hero-rule{order:3;width:12vw;height:.6vw;margin:2.4vw 0 2vw}
-  .hero.hero-redesign .hero-role{order:4;font-size:max(11px,1.9vw);margin:0 0 1.6vw}
-  .hero.hero-redesign .hero-bio{order:5;font-size:max(13px,2.3vw);max-width:52ch;margin:0 0 3vw}
-  .hero.hero-redesign .hero-actions{order:6;flex-direction:row;justify-content:flex-start;align-self:flex-start}
-  .hero.hero-redesign .hero-actions a{width:auto;min-height:7vw;padding:0 3vw;font-size:max(13px,2.2vw)}
-  .hero.hero-redesign .hero-portrait-column{order:7;grid-column:auto;grid-row:auto;width:100%;height:max(380px,calc(var(--fold) - var(--hdr) - 66vw));min-height:0;margin-top:2vw;align-self:stretch}
-  .hero.hero-redesign .hero-photo{height:100%;width:100%;max-width:none}
-  .hero.hero-redesign .portrait-orbit{width:min(95%,calc(var(--fold) - var(--hdr) - 66vw));bottom:3%}
-  .hero.hero-redesign .hero-pillars{order:8;margin-top:4vw}
-  .hero.hero-redesign .hero-pillars>div{font-size:max(11px,1.8vw)}
-  .hero.hero-redesign .pillar-icon{width:7vw;height:7vw;font-size:3.4vw}
-  .hero.hero-redesign .hero-details{order:9;display:grid!important;grid-template-columns:1fr 1.1fr;gap:6px 4vw;margin-top:4vw;padding-top:3vw;border-top:1px solid #eceef3;max-width:none}
-  .hero.hero-redesign .hero-details blockquote{font-size:max(14px,2.4vw)}
-  .hero.hero-redesign .hero-detail p{font-size:max(11px,1.8vw)}
-  .hero.hero-redesign .hero-detail b{font-size:max(13px,2vw)}
+
+
+/* ===== Mobile home hero (phones and Chrome "Desktop site" on a phone) =====
+   Compact: tagline, name, portrait, Explore button. Light and dark themes.
+   Desktop (wide screens) and tablets keep their own layouts. */
+@media (max-width:700px), (min-width:701px) and (max-aspect-ratio:11/20){
+  :root{--u:.25641vw}
+  :root .hero.hero-redesign{background:linear-gradient(180deg,#ffffff 0%,#fff7ec 100%)!important;color:#17263b!important;overflow:hidden}
+  :root .hero.hero-redesign .hero-shell{display:block!important;position:relative;height:max(calc(var(--u)*330),min(calc(var(--fold) - var(--hdr)),calc(var(--u)*410)))!important;min-height:0!important;max-height:none!important;padding:calc(var(--u)*26) calc(var(--u)*18) calc(var(--u)*22)!important;overflow:hidden!important;gap:0}
+  :root .hero.hero-redesign .hero-copy{display:flex!important;flex-direction:column;justify-content:space-between;position:relative;z-index:3;height:100%;width:62%;max-width:none;padding:0;align-self:auto}
+  :root .hero.hero-redesign .hero-rule,
+  :root .hero.hero-redesign .hero-role,
+  :root .hero.hero-redesign .hero-bio,
+  :root .hero.hero-redesign .hero-pillars,
+  :root .hero.hero-redesign .hero-details,
+  :root .hero.hero-redesign .hero-socials,
+  :root .hero.hero-redesign .hero-secondary{display:none!important}
+  :root .hero.hero-redesign .hero-eyebrow{order:1;display:flex;flex-wrap:wrap;align-items:center;gap:calc(var(--u)*5) calc(var(--u)*6);font-size:calc(var(--u)*7.8);letter-spacing:.08em;line-height:1.5;margin:0;white-space:normal;color:#26354b}
+  :root .hero.hero-redesign .hero-eyebrow span{width:calc(var(--u)*18);height:2px}
+  :root .hero.hero-redesign .hero-copy h1{order:2;font-size:calc(var(--u)*47);line-height:.95;letter-spacing:-.05em;margin:calc(var(--u)*14) 0 auto;color:#17263b}
+  :root .hero.hero-redesign .hero-copy h1 span{color:inherit}
+  :root .hero.hero-redesign .hero-copy h1 em{color:#d88908}
+  :root .hero.hero-redesign .hero-actions{order:3;display:flex;margin:0}
+  :root .hero.hero-redesign .hero-primary{width:auto;min-height:calc(var(--u)*46);padding:0 calc(var(--u)*18);font-size:calc(var(--u)*14);border-radius:calc(var(--u)*12);gap:calc(var(--u)*10);white-space:nowrap;color:#fff}
+  :root .hero.hero-redesign .hero-portrait-column{position:absolute!important;top:0;right:0;bottom:0;width:60%;height:auto!important;min-height:0!important;margin:0;display:flex;align-items:flex-end;justify-content:flex-end;z-index:2;overflow:visible;grid-column:auto;grid-row:auto}
+  :root .hero.hero-redesign .hero-photo{width:100%!important;height:100%!important;max-width:none!important;margin:0!important;overflow:visible}
+  :root .hero.hero-redesign .hero-photo img{width:100%!important;height:100%!important;object-fit:contain!important;object-position:right bottom!important;filter:drop-shadow(0 10px 18px rgba(23,38,59,.18))}
+  :root .hero.hero-redesign .portrait-orbit{position:absolute;left:auto;bottom:auto;top:calc(var(--u)*30);right:calc(var(--u)*-8);width:calc(var(--u)*250);height:calc(var(--u)*250);aspect-ratio:1/1;transform:none;border-radius:50%;background:radial-gradient(circle,#ffe6c6 0%,#ffeed9 52%,rgba(255,255,255,0) 72%);opacity:1;z-index:-1}
+  :root .hero.hero-redesign .portrait-orbit:before{content:"";position:absolute;inset:calc(var(--u)*-12);border:1.5px solid #e8a12c;border-left-color:transparent;border-bottom-color:transparent;border-radius:50%;transform:rotate(18deg)}
+
+  /* dark theme */
+  :root[data-theme="dark"] .hero.hero-redesign{background:linear-gradient(180deg,#0c1731 0%,#09112a 100%)!important;color:#fff!important}
+  :root[data-theme="dark"] .hero.hero-redesign .hero-eyebrow{color:#e9edf8}
+  :root[data-theme="dark"] .hero.hero-redesign .hero-eyebrow i{color:#ffa91f}
+  :root[data-theme="dark"] .hero.hero-redesign .hero-eyebrow span{background:#ffa91f}
+  :root[data-theme="dark"] .hero.hero-redesign .hero-copy h1{color:#fff}
+  :root[data-theme="dark"] .hero.hero-redesign .hero-copy h1 em{color:#ffa91f}
+  :root[data-theme="dark"] .hero.hero-redesign .hero-photo img{filter:drop-shadow(0 10px 22px rgba(0,0,0,.45))}
+  :root[data-theme="dark"] .hero.hero-redesign .portrait-orbit{background:radial-gradient(circle,rgba(255,169,31,.62) 0%,rgba(255,169,31,.28) 46%,rgba(255,169,31,0) 72%)!important}
+  :root[data-theme="dark"] .hero.hero-redesign .hero-photo{background:transparent!important}
+  :root[data-theme="dark"] .hero.hero-redesign .portrait-orbit:before{border-color:#ffa91f;border-left-color:transparent;border-bottom-color:transparent}
+
+  /* header like the reference: name on the left, search and theme buttons on the right */
+  header .bar{grid-template-columns:1fr auto auto!important;column-gap:10px}
+  header .bar>.logo{grid-column:1!important;justify-self:start!important;text-align:left;font-size:26px}
+  header .bar>.site-search-toggle{grid-column:2!important;grid-row:1;justify-self:end!important}
+  header .bar>.tgl{grid-column:3!important;grid-row:1}
 }
+
+
+/* Light theme: the section under the hero must be light too (the navy panels are for dark mode only) */
+@media (max-width:900px){
+  :root[data-theme="light"] .hero-redesign~.band{background:#ffffff!important;color:#17263b}
+  :root[data-theme="light"] .hero-redesign~.band.deep{background:#f3f4f9!important}
+  :root[data-theme="light"] .hero-redesign~.band .h{color:#c26e00}
+  :root[data-theme="light"] .hero-redesign~.band .lead{color:#17263b!important}
+  :root[data-theme="light"] .hero-redesign~.band .two p{color:#5a5f78!important}
+  :root[data-theme="light"] .hero-redesign~.band .more{color:#c26e00;border-color:#c26e00}
+  :root[data-theme="light"] .hero-redesign~.band .stats>div{border-right-color:#d3d6e4}
+  :root[data-theme="light"] .hero-redesign~.band .stats>div::before{background:#fff1de;color:#c77a00}
+  :root[data-theme="light"] .hero-redesign~.band .stats b{color:#c26e00}
+  :root[data-theme="light"] .hero-redesign~.band .stats span{color:#3d4a5e}
+  :root[data-theme="light"] .hero-redesign~.band .tile{background:#ffffff;border-color:#e3e6ee;color:#17263b}
+  :root[data-theme="light"] .hero-redesign~.band .tile::before{background:#fff1de;color:#c77a00}
+  :root[data-theme="light"] .hero-redesign~.band .tile.on{background:#ffa91f;color:#172238;border-color:#ffa91f}
+  :root[data-theme="light"] .hero-redesign~.band .tile.on::before{background:#ffbb47;color:#172238}
+}
+
+/* Dark theme on desktop and tablet: readable tagline and an amber glow behind the portrait */
+:root[data-theme="dark"] .hero-redesign .hero-eyebrow{color:#e9edf8}
+:root[data-theme="dark"] .hero-redesign .hero-eyebrow i{color:#ffa91f}
+:root[data-theme="dark"] .hero-redesign .hero-eyebrow span{background:#ffa91f}
+:root[data-theme="dark"] .hero.hero-redesign .portrait-orbit{background:radial-gradient(circle,rgba(255,169,31,.5) 0%,rgba(255,169,31,.22) 46%,rgba(255,169,31,0) 72%)!important}
+:root[data-theme="dark"] .hero.hero-redesign .hero-photo{background:transparent!important}
