@@ -112,7 +112,7 @@
     });
     if(!menu.dataset.navStableReady){
       menu.dataset.navStableReady='true';
-      /* Start at the right edge, then move steadily right-to-left and loop seamlessly. */
+      /* Seamless right-to-left marquee: start at the right edge, then repeat the full menu without a blank gap. */
       var navMotionOK=!(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches);
       var originalItems=Array.prototype.slice.call(menu.children);
       if(navMotionOK&&originalItems.length){
@@ -125,13 +125,20 @@
         menu.style.willChange='transform';
         menu.style.width='max-content';
         menu.style.flexWrap='nowrap';
+        menu.style.justifyContent='flex-start';
         nav.style.overflow='hidden';
         nav.style.scrollBehavior='auto';
-        var navBaseWidth=0,navStartOffset=0,navLastFrame=0,navOffset=0;
+        var navBaseWidth=0,navLastFrame=0,navOffset=0;
         function measureNavigation(){
-          navBaseWidth=menu.scrollWidth;
-          navStartOffset=nav.clientWidth;
-          navOffset=navStartOffset;
+          var children=menu.children;
+          if(children.length>originalItems.length){
+            var first=children[0].getBoundingClientRect();
+            var firstClone=children[originalItems.length].getBoundingClientRect();
+            navBaseWidth=firstClone.left-first.left;
+          }else{
+            navBaseWidth=menu.scrollWidth;
+          }
+          navOffset=nav.clientWidth;
           menu.style.transform='translate3d('+navOffset+'px,0,0)';
           navLastFrame=0;
         }
@@ -139,11 +146,9 @@
           if(!navLastFrame)navLastFrame=now;
           var elapsed=Math.min(now-navLastFrame,40);navLastFrame=now;
           if(!document.hidden&&!navAutoPaused&&navBaseWidth>0){
-            navOffset-=elapsed*0.024; /* slow, smooth motion to the left */
-            if(navOffset < -navBaseWidth){
-              /* Every new pass begins at the far right edge again. */
-              navOffset=nav.clientWidth;
-            }
+            navOffset-=elapsed*0.035;
+            /* Shift by exactly one menu width so the next set follows the last item seamlessly. */
+            while(navOffset<=-navBaseWidth)navOffset+=navBaseWidth;
             menu.style.transform='translate3d('+navOffset+'px,0,0)';
           }
           window.requestAnimationFrame(moveNavigation);
