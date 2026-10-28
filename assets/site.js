@@ -88,7 +88,7 @@
       searchBtn.addEventListener('click',function(){var open=form.hidden;form.hidden=!open;searchBtn.setAttribute('aria-expanded',String(open));if(open)form.querySelector('input').focus()});
       form.addEventListener('submit',function(e){e.preventDefault();var q=form.querySelector('input').value.trim();if(q)location.href='/search/?q='+encodeURIComponent(q)});
     }
-    if(logo)logo.setAttribute('aria-label','Sayedul Abrar home');
+    if(logo)logo.setAttribute('aria-label','Sayedul Abrar home');\n    menu.querySelectorAll('a').forEach(function(a){if(new URL(a.getAttribute('href'),location.origin).pathname==='/community/'){var li=a.closest('li');if(li)li.remove();}});
     var icons={
       '/':'<path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9M9 20v-6h6v6"></path>',
       '/about/':'<circle cx="12" cy="8" r="4"></circle><path d="M4 21a8 8 0 0 1 16 0"></path>',
@@ -184,15 +184,15 @@
     var search=bar.querySelector('.site-search-toggle');if(search&&search.parentNode===bar)search.insertAdjacentElement('afterend',btn);else bar.appendChild(btn);
     var overlay=document.createElement('div');overlay.className='site-nav-overlay';overlay.id='site-nav-overlay';overlay.setAttribute('aria-hidden','true');
     var close=document.createElement('button');close.type='button';close.className='site-nav-overlay-close';close.setAttribute('aria-label','Close navigation menu');close.innerHTML='&times;';
-    var profile=document.createElement('div');profile.className='site-nav-overlay-profile';
+    var card=document.createElement('div');card.className='site-nav-card';\n    var profile=document.createElement('div');profile.className='site-nav-overlay-profile';
     var img=document.createElement('img');img.src='/assets/img/sayedul-abrar.jpg';img.alt='Sayedul Abrar';img.loading='lazy';
     var h=document.createElement('h2');h.textContent="Hello, I'm Sayedul Abrar";
     var p=document.createElement('p');p.textContent='Pharmacist · Product Executive · Lifelong learner. Explore my professional journey, pharmacy articles and work.';
     profile.appendChild(img);profile.appendChild(h);profile.appendChild(p);
     var links=document.createElement('nav');links.className='site-nav-overlay-links';links.setAttribute('aria-label','Expanded navigation');
-    Array.prototype.forEach.call(menu.querySelectorAll('a'),function(a){var clone=a.cloneNode(true);clone.removeAttribute('data-icon-applied');clone.querySelectorAll('.nav-icon').forEach(function(i){i.remove()});clone.removeAttribute('style');if(a.hasAttribute('aria-current'))clone.setAttribute('aria-current','page');links.appendChild(clone)});
+    Array.prototype.forEach.call(menu.querySelectorAll('a'),function(a){if(new URL(a.getAttribute('href'),location.origin).pathname==='/community/')return;var clone=a.cloneNode(true);clone.removeAttribute('data-icon-applied');clone.querySelectorAll('.nav-icon').forEach(function(i){i.remove()});clone.removeAttribute('style');if(a.hasAttribute('aria-current'))clone.setAttribute('aria-current','page');links.appendChild(clone)});
     var contact=document.createElement('a');contact.href='/contact/';contact.className='overlay-contact';contact.textContent='Get in touch ↗';links.appendChild(contact);
-    overlay.appendChild(close);overlay.appendChild(profile);overlay.appendChild(links);document.body.appendChild(overlay);
+    card.appendChild(close);card.appendChild(profile);card.appendChild(links);overlay.appendChild(card);document.body.appendChild(overlay);
     function open(){overlay.classList.add('is-open');overlay.setAttribute('aria-hidden','false');document.body.classList.add('nav-overlay-open');btn.setAttribute('aria-expanded','true');btn.setAttribute('aria-label','Close navigation menu');close.focus()}
     function shut(){overlay.classList.remove('is-open');overlay.setAttribute('aria-hidden','true');document.body.classList.remove('nav-overlay-open');btn.setAttribute('aria-expanded','false');btn.setAttribute('aria-label','Open navigation menu');btn.focus()}
     btn.addEventListener('click',function(){overlay.classList.contains('is-open')?shut():open()});close.addEventListener('click',shut);
