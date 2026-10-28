@@ -116,14 +116,9 @@
       /* Seamless right-to-left marquee: start at the right edge, then repeat the full menu without a blank gap. */
       var navMotionOK=!(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches);
       var originalItems=Array.prototype.slice.call(menu.children);
-      /* Keep the original Home-to-Portfolio order on every page. */
+      /* One real menu only: Home starts at the left, moves right-to-left, then restarts from the right.
+         Do not clone links; this prevents duplicated Home-to-Portfolio navigation items. */
       if(navMotionOK&&originalItems.length){
-        originalItems.forEach(function(item){
-          var clone=item.cloneNode(true);
-          clone.setAttribute('aria-hidden','true');
-          clone.querySelectorAll('a,button').forEach(function(el){el.setAttribute('tabindex','-1');el.removeAttribute('aria-current');});
-          menu.appendChild(clone);
-        });
         menu.style.willChange='transform';
         menu.style.width='max-content';
         menu.style.flexWrap='nowrap';
@@ -132,16 +127,9 @@
         nav.style.scrollBehavior='auto';
         var navBaseWidth=0,navLastFrame=0,navOffset=0;
         function measureNavigation(){
-          var children=menu.children;
-          if(children.length>originalItems.length){
-            var first=children[0].getBoundingClientRect();
-            var firstClone=children[originalItems.length].getBoundingClientRect();
-            navBaseWidth=firstClone.left-first.left;
-          }else{
-            navBaseWidth=menu.scrollWidth;
-          }
-          navOffset=nav.clientWidth;
-          menu.style.transform='translate3d('+navOffset+'px,0,0)';
+          navBaseWidth=menu.scrollWidth;
+          navOffset=0;
+          menu.style.transform='translate3d(0px,0,0)';
           navLastFrame=0;
         }
         function moveNavigation(now){
@@ -149,7 +137,7 @@
           var elapsed=Math.min(now-navLastFrame,40);navLastFrame=now;
           if(!document.hidden&&!navAutoPaused&&navBaseWidth>0){
             navOffset-=elapsed*0.035;
-            /* Finish the full Home-to-Portfolio pass, then restart at the far-right edge. */
+            /* After the single Home-to-Portfolio menu has fully exited left, restart Home at the right edge. */
             if(navOffset<=-navBaseWidth)navOffset=nav.clientWidth;
             menu.style.transform='translate3d('+navOffset+'px,0,0)';
           }
