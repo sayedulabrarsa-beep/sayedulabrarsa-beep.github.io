@@ -2406,3 +2406,62 @@ header .bar>.site-search-form{grid-column:1/-1;grid-row:3;min-width:0;box-sizing
  header .nav-icon{width:17px;height:17px}
 }
 @media(prefers-reduced-motion:reduce){header .menu{scroll-behavior:auto}}
+
+
+/* Header hierarchy requested: name first, navigation immediately underneath, search at the side */
+header{position:sticky;top:0;z-index:100;background:#fff;isolation:isolate}
+header .bar{
+ display:grid!important;
+ grid-template-columns:44px minmax(0,1fr) 44px;
+ grid-template-rows:58px auto;
+ align-items:center;
+ gap:0 10px;
+ padding:5px clamp(12px,3vw,30px) 0;
+ width:100%;
+ box-sizing:border-box;
+}
+header .bar>.logo{
+ grid-column:2;grid-row:1;justify-self:center;align-self:center;
+ font-size:clamp(25px,3vw,34px);line-height:1.05;
+ text-align:center;white-space:nowrap;
+}
+header .bar>.site-search-toggle{
+ grid-column:1;grid-row:1;justify-self:start;align-self:center;
+ width:42px;height:42px;flex:none;
+}
+header .bar>.tgl{
+ grid-column:3;grid-row:1;justify-self:end;align-self:center;
+ width:42px;height:42px;
+}
+header nav{
+ grid-column:1/-1;grid-row:2;
+ width:100%;min-width:0;margin:0!important;
+ border-top:1px solid #eceef3;
+ overflow-x:auto;overflow-y:hidden;
+ scrollbar-width:none;overscroll-behavior-x:contain;
+}
+header nav::-webkit-scrollbar{display:none}
+header .menu{
+ display:flex!important;flex-flow:row nowrap!important;
+ align-items:stretch;justify-content:flex-start;
+ width:max-content;min-width:100%;gap:5px;
+ margin:0;padding:6px 2px 8px;
+ white-space:nowrap;
+}
+header .menu>li{flex:0 0 auto}
+header .menu>li>a,header .menu>li>button{
+ min-width:68px;padding:6px 9px 7px;
+ display:flex;flex-direction:column;align-items:center;justify-content:center;
+ gap:4px;font-size:10px;line-height:1.15;white-space:nowrap;
+}
+header .bar>.site-search-form{
+ grid-column:1/-1;grid-row:3;width:100%;box-sizing:border-box;
+}
+@media(max-width:600px){
+ header .bar{grid-template-columns:40px minmax(0,1fr) 40px;grid-template-rows:52px auto;padding:4px 10px 0;gap:0 7px}
+ header .bar>.logo{font-size:clamp(23px,6vw,29px)}
+ header .bar>.site-search-toggle,header .bar>.tgl{width:38px;height:38px}
+ header .menu{gap:2px;padding:5px 0 7px}
+ header .menu>li>a,header .menu>li>button{min-width:59px;padding:6px 7px;font-size:9px}
+ header .nav-icon{width:17px;height:17px}
+}
