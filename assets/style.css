@@ -1654,3 +1654,28 @@ header .site-search-form button{flex:0 0 auto;padding:10px 14px;border:0;border-
 /* older fixed max-heights must never clip the hero */
 @media(max-width:1180px){.hero.hero-redesign .hero-shell{max-height:none!important;overflow:visible}}
 @media(min-width:1181px){.hero.hero-redesign .hero-shell{max-height:none}}
+
+/* Tall wide-ish screens (Chrome "Desktop site" on a phone, tablets in portrait):
+   text on top, portrait below, together filling exactly the first 70% of the screen */
+@media(min-width:701px) and (max-aspect-ratio:11/20){
+  .hero.hero-redesign .hero-shell{display:flex;flex-direction:column;align-items:stretch;gap:0;height:auto;min-height:0;padding:4vw 5vw 5vw;max-width:none}
+  .hero.hero-redesign .hero-copy{display:contents}
+  .hero.hero-redesign .hero-eyebrow{order:1;font-size:max(11px,1.9vw);margin:0 0 2.2vw;white-space:normal}
+  .hero.hero-redesign .hero-eyebrow span{width:5vw}
+  .hero.hero-redesign .hero-copy h1{order:2;font-size:13vw;line-height:.96}
+  .hero.hero-redesign .hero-rule{order:3;width:12vw;height:.6vw;margin:2.4vw 0 2vw}
+  .hero.hero-redesign .hero-role{order:4;font-size:max(11px,1.9vw);margin:0 0 1.6vw}
+  .hero.hero-redesign .hero-bio{order:5;font-size:max(13px,2.3vw);max-width:52ch;margin:0 0 3vw}
+  .hero.hero-redesign .hero-actions{order:6;flex-direction:row;justify-content:flex-start;align-self:flex-start}
+  .hero.hero-redesign .hero-actions a{width:auto;min-height:7vw;padding:0 3vw;font-size:max(13px,2.2vw)}
+  .hero.hero-redesign .hero-portrait-column{order:7;grid-column:auto;grid-row:auto;width:100%;height:max(380px,calc(var(--fold) - var(--hdr) - 66vw));min-height:0;margin-top:2vw;align-self:stretch}
+  .hero.hero-redesign .hero-photo{height:100%;width:100%;max-width:none}
+  .hero.hero-redesign .portrait-orbit{width:min(95%,calc(var(--fold) - var(--hdr) - 66vw));bottom:3%}
+  .hero.hero-redesign .hero-pillars{order:8;margin-top:4vw}
+  .hero.hero-redesign .hero-pillars>div{font-size:max(11px,1.8vw)}
+  .hero.hero-redesign .pillar-icon{width:7vw;height:7vw;font-size:3.4vw}
+  .hero.hero-redesign .hero-details{order:9;display:grid!important;grid-template-columns:1fr 1.1fr;gap:6px 4vw;margin-top:4vw;padding-top:3vw;border-top:1px solid #eceef3;max-width:none}
+  .hero.hero-redesign .hero-details blockquote{font-size:max(14px,2.4vw)}
+  .hero.hero-redesign .hero-detail p{font-size:max(11px,1.8vw)}
+  .hero.hero-redesign .hero-detail b{font-size:max(13px,2vw)}
+}
