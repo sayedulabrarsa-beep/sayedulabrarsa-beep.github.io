@@ -1,1 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="#050505"/><circle cx="32" cy="32" r="27" fill="none" stroke="#E6B83F" stroke-width="2.7"/><text x="32" y="43" font-family="Georgia,serif" font-size="25" font-weight="700" fill="#E6B83F" text-anchor="middle" letter-spacing="-3">SA</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 472 464">
+<rect width="472" height="464" fill="#000"/>
+<circle cx="267" cy="230" r="190" fill="none" stroke="#e9bb45" stroke-width="13"/>
+<path d="M280 99c-28-19-67-18-91 3-26 23-25 61-5 84 15 18 42 27 71 40l35 15c36 16 57 35 57 63 0 42-37 69-83 69-41 0-74-19-98-50l-19 19c29 36 68 57 119 57 67 0 116-37 116-93 0-43-28-69-77-90l-39-17c-38-16-59-31-59-57 0-25 21-43 49-43 24 0 44 10 61 28z" fill="#e9bb45"/>
+<path d="M164 363 251 164 272 164 359 363 321 363 299 310 215 310 193 363z M228 278h58l-30-76z" fill="#e9bb45"/>
+<path d="M72 155C33 210 43 298 87 347" fill="none" stroke="#e9bb45" stroke-width="7" stroke-linecap="round"/>
+</svg>
