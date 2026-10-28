@@ -116,14 +116,7 @@
       /* Seamless right-to-left marquee: start at the right edge, then repeat the full menu without a blank gap. */
       var navMotionOK=!(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches);
       var originalItems=Array.prototype.slice.call(menu.children);
-      /* Continue the menu from the current page, instead of resetting every page to Home. */
-      var activeIndex=originalItems.findIndex(function(item){return !!item.querySelector('a[aria-current="page"]')});
-      if(activeIndex>0){
-        originalItems=originalItems.slice(activeIndex).concat(originalItems.slice(0,activeIndex));
-        var reordered=document.createDocumentFragment();
-        originalItems.forEach(function(item){reordered.appendChild(item)});
-        menu.appendChild(reordered);
-      }
+      /* Keep the original Home-to-Portfolio order on every page. */
       if(navMotionOK&&originalItems.length){
         originalItems.forEach(function(item){
           var clone=item.cloneNode(true);
@@ -156,8 +149,8 @@
           var elapsed=Math.min(now-navLastFrame,40);navLastFrame=now;
           if(!document.hidden&&!navAutoPaused&&navBaseWidth>0){
             navOffset-=elapsed*0.035;
-            /* Shift by exactly one menu width so the next set follows the last item seamlessly. */
-            while(navOffset<=-navBaseWidth)navOffset+=navBaseWidth;
+            /* Finish the full Home-to-Portfolio pass, then restart at the far-right edge. */
+            if(navOffset<=-navBaseWidth)navOffset=nav.clientWidth;
             menu.style.transform='translate3d('+navOffset+'px,0,0)';
           }
           window.requestAnimationFrame(moveNavigation);
