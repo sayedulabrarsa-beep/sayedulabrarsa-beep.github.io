@@ -2479,3 +2479,67 @@ header nav{overflow:hidden!important;position:relative}
 header nav .menu{display:flex!important;flex-wrap:nowrap!important;justify-content:flex-start!important;transform:translate3d(0,0,0)}
 header nav .menu>li{flex:0 0 auto}
 @media(prefers-reduced-motion:reduce){header nav .menu{transform:none!important}}
+
+
+/* ===== Final polish (home first screen 70/30, compact mobile hero, header contrast, light/dark switch) ===== */
+header nav:before{background:#fffaf0!important}
+header nav{border-top-color:#ead9ca!important}
+header .bar>.site-search-toggle,header .bar>.site-menu-toggle{color:#126b56!important}
+header .bar>.tgl{display:grid!important;place-items:center;width:38px;height:38px;border:0!important;border-radius:50%;background:transparent!important;color:#126b56!important;font-size:21px;line-height:1;cursor:pointer;padding:0}
+header .bar>.tgl:hover{color:#e95b4d!important}
+
+/* Desktop and tablet: header + hero = 70% of the screen, next section = 30% */
+@media(min-width:701px) and (min-aspect-ratio:11/20){
+ .ed-hero{height:max(400px,calc(var(--fold) - var(--hdr)));display:flex;flex-direction:column}
+ .ed-hero-inner{flex:1 1 auto;min-height:0!important;height:auto;width:100%;box-sizing:border-box;padding-block:clamp(10px,2.6svh,30px)!important;align-items:center}
+ .ed-hero-copy{padding-bottom:0}
+ .ed-script{font-size:clamp(17px,min(2.5vw,3.4svh),30px);margin-bottom:clamp(5px,1.4svh,16px)}
+ .ed-kicker{margin-bottom:clamp(6px,1.6svh,16px)}
+ .ed-hero h1{font-size:clamp(26px,min(5.2vw,6.2svh),68px)}
+ .ed-intro{font-size:clamp(12.5px,1.7svh,15px);margin:clamp(8px,2svh,22px) 0 clamp(10px,2.4svh,24px)}
+ .ed-btn{min-height:clamp(38px,5.4svh,48px);padding-block:clamp(8px,1.6svh,15px)}
+ .ed-signoff{display:none}
+ .ed-collage{align-self:stretch;height:100%;min-height:0}
+ .ed-hero-bottom{flex:0 0 auto;padding-block:clamp(9px,1.5svh,15px)}
+}
+@media(min-width:701px) and (min-aspect-ratio:11/20) and (max-height:780px){.ed-intro{display:none}}
+
+/* Award photos keep their full 3:2 shape (no cropping) */
+.ed-photo-award,.ed-photo-detail{height:auto!important}
+.ed-photo-award img,.ed-photo-detail img{height:auto;aspect-ratio:3/2;object-fit:cover}
+
+/* Phones and Chrome "Desktop site" on a phone: compact hero (tagline, name, picture, Explore button) */
+.ed-mobile-name{display:none}
+@media(max-width:700px),(min-width:701px) and (max-aspect-ratio:11/20){
+ :root{--u:.25641vw}
+ .ed-hero{display:block;height:auto;background:linear-gradient(180deg,#fffaf0,#fff1e0)}
+ .ed-hero-inner{position:relative;display:block!important;max-width:none;box-sizing:border-box;overflow:hidden;min-height:0!important;height:clamp(calc(var(--u)*330),calc(var(--fold) - var(--hdr)),calc(var(--u)*520));padding:calc(var(--u)*22) calc(var(--u)*20) calc(var(--u)*20)!important}
+ .ed-hero-copy{position:relative;z-index:3;height:100%;width:100%;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;padding:0!important}
+ .ed-script,.ed-intro,.ed-signoff,.ed-text-link,.ed-hero-bottom,.ed-photo-award,.ed-photo-detail,.ed-sticker,.ed-collage-caption,.ed-collage:after{display:none!important}
+ .ed-hero h1{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+ .ed-hero .ed-kicker{order:1;font-size:0!important;letter-spacing:0;margin:0;white-space:nowrap}
+ .ed-hero .ed-kicker span{display:none}
+ .ed-hero .ed-kicker:after{content:"Pharmacist | Learner | Contributor";font:700 calc(var(--u)*8.2)/1.4 var(--display);letter-spacing:.1em;text-transform:uppercase;color:#126b56}
+ .ed-mobile-name{order:2;display:block;max-width:60%;margin:0;font:700 calc(var(--u)*46)/1.02 Georgia,'Times New Roman',serif;letter-spacing:-.035em;color:#126b56}
+ .ed-mobile-name em{display:block;font-style:normal;color:#e95b4d}
+ .ed-actions{order:3;gap:0}
+ .ed-btn{min-height:calc(var(--u)*44);padding:calc(var(--u)*10) calc(var(--u)*16);font-size:calc(var(--u)*10);gap:calc(var(--u)*12)}
+ .ed-collage{position:absolute;right:0;top:0;bottom:0;width:60%;height:auto;min-height:0!important;margin:0;z-index:1;align-self:auto}
+ .ed-collage:before{width:calc(var(--u)*250);height:calc(var(--u)*250);right:calc(var(--u)*-20);left:auto;top:auto;bottom:calc(var(--u)*18);border-radius:50%;transform:none;background:#f3d2bd}
+ .ed-photo-main{width:100%;height:100%;right:0;top:0;padding:0;background:transparent;box-shadow:none;transform:none}
+ .ed-photo-main img{object-fit:contain;object-position:right bottom}
+}
+
+/* Light / dark switch: whole-page colour inversion with media kept natural (pages are hand-coloured, so tokens alone can't cover them) */
+html[data-theme="dark"]{filter:invert(.9) hue-rotate(180deg);background:#fff}
+html[data-theme="dark"] img,html[data-theme="dark"] video,html[data-theme="dark"] iframe,html[data-theme="dark"] canvas,html[data-theme="dark"] [style*="background-image"],html[data-theme="dark"] .ed-photo-main:before{filter:invert(1) hue-rotate(180deg)}
+/* Header: search | name | theme | menu on one row, links underneath */
+header .bar{grid-template-columns:44px minmax(0,1fr) 40px 40px!important}
+header .bar>.logo{grid-column:2!important;grid-row:1!important}
+header .bar>.tgl{grid-column:3!important;grid-row:1!important;justify-self:center!important}
+header .bar>.site-menu-toggle{grid-column:4!important;grid-row:1!important;justify-self:end!important;order:0!important}
+header .bar>.site-search-toggle{grid-column:1!important;grid-row:1!important}
+header .bar>.tgl svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+@media(max-width:600px){header .bar{grid-template-columns:40px minmax(0,1fr) 38px 38px!important;gap:0 4px!important}header .bar>.tgl,header .bar>.site-menu-toggle{width:38px!important;height:38px!important}}
+header .bar>.logo{justify-self:center!important}
+@media(min-width:701px) and (min-aspect-ratio:11/20){.ed-actions{margin-top:clamp(10px,2.2svh,22px)}.ed-intro{margin-bottom:0}}
