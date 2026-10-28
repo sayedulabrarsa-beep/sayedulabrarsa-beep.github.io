@@ -127,30 +127,24 @@
         menu.style.flexWrap='nowrap';
         nav.style.overflow='hidden';
         nav.style.scrollBehavior='auto';
-        var navStartTime=null,navBaseWidth=0,navStartOffset=0,navLoopDistance=0,navLastFrame=0;
+        var navBaseWidth=0,navStartOffset=0,navLastFrame=0,navOffset=0;
         function measureNavigation(){
-          navBaseWidth=0;
-          originalItems.forEach(function(item){navBaseWidth+=item.getBoundingClientRect().width;});
-          navLoopDistance=navBaseWidth;
+          navBaseWidth=menu.scrollWidth;
           navStartOffset=nav.clientWidth;
-          menu.style.transform='translate3d('+navStartOffset+'px,0,0)';
-          navStartTime=null;navLastFrame=0;
+          navOffset=navStartOffset;
+          menu.style.transform='translate3d('+navOffset+'px,0,0)';
+          navLastFrame=0;
         }
         function moveNavigation(now){
-          if(!navStartTime)navStartTime=now;
-          var elapsed=Math.min(now-(navLastFrame||now),40);
-          navLastFrame=now;
+          if(!navLastFrame)navLastFrame=now;
+          var elapsed=Math.min(now-navLastFrame,40);navLastFrame=now;
           if(!document.hidden&&!navAutoPaused&&navBaseWidth>0){
-            var x;
-            var initialDuration=nav.clientWidth/24*1000;
-            var t=now-navStartTime;
-            if(t<initialDuration){
-              x=nav.clientWidth-(t/1000)*24;
-            }else{
-              var loopT=(t-initialDuration)/1000;
-              x=-(loopT*24)%navLoopDistance;
+            navOffset-=elapsed*0.024; /* slow, smooth motion to the left */
+            if(navOffset < -navBaseWidth){
+              /* Every new pass begins at the far right edge again. */
+              navOffset=nav.clientWidth;
             }
-            menu.style.transform='translate3d('+x+'px,0,0)';
+            menu.style.transform='translate3d('+navOffset+'px,0,0)';
           }
           window.requestAnimationFrame(moveNavigation);
         }
