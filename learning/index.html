@@ -7,7 +7,7 @@
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://sayedulabrar.site/learning/">
 <meta name="author" content="Sayedul Abrar"><meta name="theme-color" content="#2B2D3F">
-<link rel="stylesheet" href="/assets/style.css?v=nav-fix-20261027b">
+<link rel="stylesheet" href="/assets/style.css?v=d7e4d398">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Dancing+Script:wght@700&display=swap">
 <style>
@@ -103,7 +103,6 @@
   <div class="wrap bar">
     <a class="logo" href="/">Sayedul Abrar</a>
     <nav aria-label="Main"><ul class="menu" id="menu"><li><a href="/">Home</a></li><li><a href="/about/">About</a></li><li><a href="/experience/">Experience</a></li><li><a href="/achievements/">Achievements</a></li><li><a href="/education/">Education</a></li><li><a href="/learning/" aria-current="page">Learning</a></li><li><a href="/publications/">Publications</a></li><li><a href="/community/">Community</a></li><li><a href="/blog/">Pharma Blog</a></li><li><a href="/vlog/">Daily Vlog</a></li><li><a href="/contact/">Contact</a></li><li><a href="/portfolio/">Portfolio</a></li></ul></nav>
-    <button class="tgl" id="tgl" type="button" aria-label="Switch light or dark theme">&#9788;</button>
   </div>
 </header>
 <main id="main">
@@ -327,11 +326,9 @@
     <div class="cr">Copyright@sayedulabrar_<span id="year">2026</span></div>
   </div>
 </footer>
-<script src="/assets/site.js?v=nav-stable-20261027c" defer></script>
+<script src="/assets/site.js?v=d7e4d398" defer></script>
 <script>
 (function(){
-const root=document.documentElement, saved=(()=>{try{return localStorage.getItem('sa-theme')}catch(e){return null}})();if(saved)root.setAttribute('data-theme',saved);
-const t=document.getElementById('tgl');if(t)t.addEventListener('click',()=>{const next=root.getAttribute('data-theme')==='light'?'dark':'light';root.setAttribute('data-theme',next);try{localStorage.setItem('sa-theme',next)}catch(e){}});
 const burger=document.getElementById('burger'),menu=document.getElementById('menu');if(burger&&menu){burger.addEventListener('click',()=>{const open=burger.getAttribute('aria-expanded')!=='true';burger.setAttribute('aria-expanded',String(open));menu.classList.toggle('open',open)})}
 document.getElementById('year').textContent=new Date().getFullYear();
 document.querySelectorAll('.course-row').forEach(row=>{const img=document.createElement('img');img.className='provider-logo';img.src=row.dataset.provider==='Coursera'?'/assets/img/coursera-mark.svg':'/assets/img/linkedin-learning-mark.svg';img.alt=row.dataset.provider+' logo';img.loading='lazy';img.addEventListener('error',()=>{const mark=document.createElement('span');mark.className='provider-logo provider-fallback';mark.setAttribute('aria-label',row.dataset.provider);mark.textContent=row.dataset.provider==='Coursera'?'C':'in';img.replaceWith(mark)},{once:true});const label=row.querySelector('.course-source');if(label)label.prepend(img)});

@@ -15,6 +15,10 @@ import html
 import json
 import os
 
+import sys
+if os.environ.get("ALLOW_OLD_GENERATOR") != "1":
+    sys.exit("_src/build.py is retired: pages are edited directly now. Running it would overwrite the current home hero, menu and blog pages.")
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.environ.get("SITE_OUT") or os.path.dirname(HERE)
 CONTENT = os.environ.get("SITE_CONTENT") or os.path.join(HERE, "content")
