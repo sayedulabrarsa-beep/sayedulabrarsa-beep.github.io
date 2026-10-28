@@ -113,93 +113,120 @@
     });
     if(!menu.dataset.navStableReady){
       menu.dataset.navStableReady='true';
-      /* Seamless single-list marquee: recycle existing list items instead of cloning links. */
+      /* Seamless marquee: recycle the existing links, preserve their order/offset across page navigation,
+         and let pointer dragging track the user's finger or mouse exactly. */
       var navMotionOK=!(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches);
       if(navMotionOK&&menu.children.length){
+        var navStateKey='sa-nav-marquee-v2';
+        var navItems=Array.prototype.slice.call(menu.children);
+        function itemHref(item){
+          var a=item.querySelector('a');
+          return a?new URL(a.getAttribute('href'),location.origin).pathname:'';
+        }
+        var savedNav=null;
+        try{savedNav=JSON.parse(sessionStorage.getItem(navStateKey)||'null')}catch(err){}
+        if(savedNav&&Array.isArray(savedNav.order)){
+          var byHref={};
+          navItems.forEach(function(item){byHref[itemHref(item)]=item});
+          savedNav.order.forEach(function(href){
+            if(byHref[href]){menu.appendChild(byHref[href]);delete byHref[href]}
+          });
+          Object.keys(byHref).forEach(function(href){menu.appendChild(byHref[href])});
+        }
         menu.style.willChange='transform';
         menu.style.width='max-content';
         menu.style.flexWrap='nowrap';
         menu.style.justifyContent='flex-start';
+        menu.style.gap=menu.style.gap||'0px';
         nav.style.overflow='hidden';
         nav.style.scrollBehavior='auto';
         nav.style.touchAction='pan-y';
-        var navOffset=0,navLastFrame=0,navAutoPaused=false,dragging=false,dragMoved=false;
-        var pointerStartX=0,pointerLastX=0,offsetAtPointerStart=0;
+        var navOffset=(savedNav&&Number.isFinite(savedNav.offset))?savedNav.offset:0;
+        var navLastFrame=0,dragging=false,dragMoved=false,navAutoPaused=false;
+        var pointerStartX=0,offsetAtPointerStart=0,dragPointerId=null;
         function gapSize(){
           var cs=window.getComputedStyle(menu);
           return parseFloat(cs.columnGap||cs.gap)||0;
         }
         function firstStep(){
           var first=menu.children[0];
-          if(!first)return 0;
-          return first.getBoundingClientRect().width+gapSize();
+          return first?first.getBoundingClientRect().width+gapSize():0;
         }
         function lastStep(){
           var kids=menu.children;
-          if(!kids.length)return 0;
-          return kids[kids.length-1].getBoundingClientRect().width+gapSize();
+          return kids.length?kids[kids.length-1].getBoundingClientRect().width+gapSize():0;
+        }
+        function saveNavigation(){
+          try{
+            sessionStorage.setItem(navStateKey,JSON.stringify({
+              offset:navOffset,
+              order:Array.prototype.map.call(menu.children,itemHref)
+            }));
+          }catch(err){}
         }
         function normalizeOffset(){
-          var guard=0;
-          while(menu.children.length>1&&navOffset<=-firstStep()&&guard++<menu.children.length+2){
-            var step=firstStep();
+          var guard=0,step;
+          while(menu.children.length>1&&(step=firstStep())>0&&navOffset<=-step&&guard++<menu.children.length+2){
             menu.appendChild(menu.children[0]);
             navOffset+=step;
           }
           guard=0;
-          while(menu.children.length>1&&navOffset>0&&guard++<menu.children.length+2){
-            var step=lastStep();
+          while(menu.children.length>1&&(step=lastStep())>0&&navOffset>0&&guard++<menu.children.length+2){
             menu.insertBefore(menu.children[menu.children.length-1],menu.children[0]);
             navOffset-=step;
           }
         }
-        function paintNavigation(){
+        function paintNavigation(save){
           normalizeOffset();
           menu.style.transform='translate3d('+navOffset+'px,0,0)';
+          if(save)saveNavigation();
         }
         function moveNavigation(now){
           if(!navLastFrame)navLastFrame=now;
           var elapsed=Math.min(now-navLastFrame,40);navLastFrame=now;
           if(!document.hidden&&!navAutoPaused&&!dragging){
             navOffset-=elapsed*0.035;
-            paintNavigation();
+            paintNavigation(true);
           }
           window.requestAnimationFrame(moveNavigation);
         }
-        nav.addEventListener('pointerenter',function(){if(!dragging)navAutoPaused=true});
-        nav.addEventListener('pointerleave',function(){if(!dragging)navAutoPaused=false});
-        nav.addEventListener('focusin',function(){navAutoPaused=true});
-        nav.addEventListener('focusout',function(){navAutoPaused=false});
+        /* Do not pause merely because the pointer is hovering; only active dragging pauses motion. */
         nav.addEventListener('pointerdown',function(e){
           if(e.pointerType==='mouse'&&e.button!==0)return;
-          dragging=true;dragMoved=false;navAutoPaused=true;
-          pointerStartX=e.clientX;pointerLastX=e.clientX;offsetAtPointerStart=navOffset;
+          dragging=true;dragMoved=false;navAutoPaused=true;dragPointerId=e.pointerId;
+          pointerStartX=e.clientX;offsetAtPointerStart=navOffset;
           try{nav.setPointerCapture(e.pointerId)}catch(err){}
         });
         nav.addEventListener('pointermove',function(e){
-          if(!dragging)return;
+          if(!dragging||e.pointerId!==dragPointerId)return;
           var dx=e.clientX-pointerStartX;
-          if(Math.abs(dx)>5)dragMoved=true;
+          if(Math.abs(dx)>6)dragMoved=true;
           navOffset=offsetAtPointerStart+dx;
-          paintNavigation();
-          pointerLastX=e.clientX;
+          paintNavigation(true);
         });
         function endNavigationDrag(e){
-          if(!dragging)return;
+          if(!dragging||(e&&e.pointerId!==undefined&&e.pointerId!==dragPointerId))return;
           dragging=false;
+          if(e&&e.pointerId!==undefined){try{nav.releasePointerCapture(e.pointerId)}catch(err){}}
+          dragPointerId=null;
+          saveNavigation();
           if(dragMoved){
             navAutoPaused=true;
-            window.setTimeout(function(){navAutoPaused=false},900);
+            window.setTimeout(function(){navAutoPaused=false},120);
           }else navAutoPaused=false;
-          if(e&&e.pointerId!==undefined){try{nav.releasePointerCapture(e.pointerId)}catch(err){}}
         }
         nav.addEventListener('pointerup',endNavigationDrag);
         nav.addEventListener('pointercancel',endNavigationDrag);
         nav.addEventListener('click',function(e){
-          if(dragMoved){e.preventDefault();e.stopPropagation();dragMoved=false;}
+          if(dragMoved){
+            e.preventDefault();e.stopPropagation();dragMoved=false;
+          }else{
+            /* Save the exact visual position before the clicked page loads. */
+            saveNavigation();
+          }
         },true);
-        window.addEventListener('resize',function(){paintNavigation()},{passive:true});
-        paintNavigation();
+        window.addEventListener('resize',function(){paintNavigation(true)},{passive:true});
+        paintNavigation(false);
         window.requestAnimationFrame(moveNavigation);
       }
     }
