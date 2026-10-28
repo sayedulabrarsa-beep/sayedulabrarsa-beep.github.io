@@ -2465,3 +2465,10 @@ header .bar>.site-search-form{
  header .menu>li>a,header .menu>li>button{min-width:59px;padding:6px 7px;font-size:9px}
  header .nav-icon{width:17px;height:17px}
 }
+
+
+/* Navigation marquee: begin at the right edge on each pass */
+header nav{overflow:hidden!important;scroll-behavior:auto!important;scrollbar-width:none!important}
+header nav::-webkit-scrollbar{display:none!important}
+header nav .menu{justify-content:flex-start!important;will-change:transform}
+@media(prefers-reduced-motion:reduce){header nav .menu{transform:none!important;will-change:auto!important}}
