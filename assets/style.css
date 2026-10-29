@@ -2892,3 +2892,12 @@ header .bar>.logo{justify-self:center!important}
  .awards-closing h2{font-size:39px}
 }
 @media(prefers-reduced-motion:reduce){.award-feature{transition:none}}
+
+
+/* Global header refinement: keep the name visually above the moving navigation ribbon. */
+header .bar{position:relative;grid-template-rows:50px auto!important;row-gap:0!important}
+header .bar>.logo{position:relative!important;z-index:20!important;padding:0 10px!important;background:#fff!important;border-radius:7px!important;box-shadow:0 1px 0 rgba(36,48,43,.035)}
+header nav{position:relative;z-index:1;margin-top:-16px!important}
+header .bar>.site-search-toggle,header .bar>.tgl,header .bar>.site-menu-toggle{position:relative;z-index:22}
+header .menu{padding-top:14px!important}
+@media(max-width:600px){header .bar{grid-template-rows:46px auto!important}header nav{margin-top:-12px!important}header .menu{padding-top:12px!important}}
