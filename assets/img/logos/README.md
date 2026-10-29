@@ -15,5 +15,10 @@
 | diu-career-development-center-cdc-logo.png | DIU Career Development Center (CDC) logo |
 | bshrm-bangladesh-society-for-human-resources-management-logo.png | Bangladesh Society for Human Resources Management (BSHRM) logo |
 | hrdi-human-resource-development-institute-logo.png | Human Resource Development Institute (HRDI) logo |
+| malifa-30-ferric-maltol-capsule-logo.png | Malifa 30 (Ferric Maltol INN 30 mg Capsule) logo with the line "Avoid injectable, avoid hazards", first time in Bangladesh, Opsonin Pharma Ltd. |
+| pharmacia-club-daffodil-international-university-logo.png | Pharmacia Club logo, Pharmacy Department, Daffodil International University |
+| coach-kamrul-hasan-ckh-network-logo.png | Coach Kamrul Hasan (CKH) Network logo |
+| briddhi-we-help-to-grow-logo.png | Briddhi "We help to grow" logo |
+| admission-ac-logo.png | Admission.ac logo |
 
 Logos are trademarks of their owners; use them only to identify the brands.
