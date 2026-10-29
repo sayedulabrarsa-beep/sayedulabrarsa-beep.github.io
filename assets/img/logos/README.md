@@ -20,5 +20,7 @@
 | coach-kamrul-hasan-ckh-network-logo.png | Coach Kamrul Hasan (CKH) Network logo |
 | briddhi-we-help-to-grow-logo.png | Briddhi "We help to grow" logo |
 | admission-ac-logo.png | Admission.ac logo |
+| sunna-sammilita-alim-madrasah-tangail-logo.png | Sunna Sammilita Alim Madrasah (সুন্না সম্মিলিত আলিম মাদ্রাসা) logo, Basail, Tangail, established 1975 |
 
 Logos are trademarks of their owners; use them only to identify the brands.
+| sunna-sammilita-alim-madrasah-tangail-logo.png | Sunna Sammilita Alim Madrasah logo, Basail, Tangail (established 1975) |
