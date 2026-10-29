@@ -188,14 +188,20 @@
     var total=cards.length;
     count.textContent=shown+' of '+total+' stories · English + বাংলা';
     empty.hidden=shown>0;
+    return shown;
   }
-  if(form)form.addEventListener('submit',function(e){e.preventDefault();apply();document.getElementById('vlog-recent').scrollIntoView({behavior:'smooth'});});
+  function scrollToResults(){
+    var featured=document.querySelector('.vlog-featured-card');
+    var target=featured&&!featured.hidden&&active!=='heritage'?'vlog-featured-title':'vlog-recent';
+    document.getElementById(target).scrollIntoView({behavior:'smooth',block:'start'});
+  }
+  if(form)form.addEventListener('submit',function(e){e.preventDefault();apply();scrollToResults();});
   input.addEventListener('input',apply);
   buttons.forEach(function(button){button.addEventListener('click',function(){
     active=button.dataset.vlogFilter;
     buttons.forEach(function(b){b.classList.toggle('is-active',b===button);});
     apply();
-    document.getElementById('vlog-recent').scrollIntoView({behavior:'smooth',block:'start'});
+    scrollToResults();
   });});
   if(reset)reset.addEventListener('click',function(){input.value='';active='all';buttons.forEach(function(b){b.classList.toggle('is-active',b.dataset.vlogFilter==='all');});apply();});
   apply();
