@@ -2,17 +2,12 @@
   var root=document.documentElement;
   var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* Light by default; the visitor can switch to dark with the header button (choice is remembered). */
-  (function(){
-    var saved=null;try{saved=localStorage.getItem('sa-theme')}catch(e){}
-    var SUN='<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"></circle><path d="M12 2.5v2.3M12 19.2v2.3M2.5 12h2.3M19.2 12h2.3M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"></path></svg>',MOON='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"></path></svg>';
-    function paint(t){if(t==='dark')root.setAttribute('data-mode','dark');else root.removeAttribute('data-mode');
-      var b=document.getElementById('tgl');if(b){b.innerHTML=t==='dark'?MOON:SUN;b.setAttribute('aria-label',t==='dark'?'Switch to light theme':'Switch to dark theme');b.setAttribute('aria-pressed',String(t==='dark'))}}
-    var bar0=document.querySelector('header .bar');
-    if(bar0&&!document.getElementById('tgl')){var b=document.createElement('button');b.type='button';b.id='tgl';b.className='tgl';bar0.appendChild(b);
-      b.addEventListener('click',function(){var n=root.getAttribute('data-mode')==='dark'?'light':'dark';try{localStorage.setItem('sa-theme',n)}catch(e){}paint(n)})}
-    paint(saved==='dark'?'dark':'light');
-  })();
+  /* Keep the site's established light appearance; no theme-switch control. */
+  root.removeAttribute('data-theme');
+  root.removeAttribute('data-mode');
+  try { localStorage.removeItem('sa-theme'); } catch(e) {}
+  var oldThemeButton=document.getElementById('tgl');
+  if(oldThemeButton)oldThemeButton.remove();
 
   /* Header height is used to size the first screen (70% home hero, 30% next section). */
   var hdr=document.querySelector('header');
