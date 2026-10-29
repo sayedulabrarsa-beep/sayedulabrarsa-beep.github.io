@@ -2907,3 +2907,17 @@ header .bar>.site-search-toggle,header .bar>.tgl,header .bar>.site-menu-toggle{p
 header .menu{padding-top:14px!important}
 @media(max-width:600px){header .bar{grid-template-rows:46px auto!important}header nav{margin-top:-28px!important}header .menu{padding-top:12px!important}}
 html[data-mode="dark"] header .bar>.logo{background:transparent!important;box-shadow:none!important}
+
+
+/* Compact global footer: keep identity, essential contact links and copyright. */
+footer { padding-block: 22px 12px; }
+footer .fc { grid-template-columns: minmax(0,1fr); gap: 8px; }
+footer .fc > div:not(:first-child) { display: none; }
+footer .fc > div:first-child > p:first-of-type { margin: 5px 0 3px !important; font-size: 12px; }
+footer .fc > div:first-child > p:nth-of-type(2) { margin: 0; font-size: 12px; }
+footer .fc .logo { font-size: 20px !important; }
+footer .social-links { margin: 9px 0 0 !important; gap: 7px; }
+footer .social-link { min-height: 32px; padding: 5px 8px; }
+footer .social-link svg { width: 15px; height: 15px; }
+footer .social-link span { font-size: 11px; }
+footer .cr { margin-top: 12px; padding-top: 10px; font-size: 11px; }
