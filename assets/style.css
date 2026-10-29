@@ -2807,3 +2807,88 @@ header .bar>.logo{justify-self:center!important}
 .vlog-memory-spark-one{top:2%;left:5%;font-size:clamp(28px,5vw,52px)}
 .vlog-memory-spark-two{right:5%;bottom:8%;font-size:clamp(34px,6vw,65px);color:rgba(49,81,61,.24)}
 @media(max-width:680px){.vlog-memory-banner{padding:76px 0 82px}.vlog-memory-banner h2{font-size:clamp(48px,13vw,70px)}.vlog-memory-bn{margin:20px 0 22px}.vlog-memory-caption{font-size:7px;letter-spacing:.12em}.vlog-memory-spark-one{left:7px;top:-28px}.vlog-memory-spark-two{right:9px;bottom:-28px}}
+
+
+/* Awards page — restrained, editorial and light */
+.awards-page{background:#fff;color:#202a27}
+.awards-page .awards-hero{padding:clamp(64px,10vw,120px) 0 35px;background:#fff}
+.awards-hero-inner{max-width:1040px}
+.awards-eyebrow,.awards-kicker{display:flex;align-items:center;gap:10px;margin:0 0 22px;color:#64756b;font-size:9px;font-weight:700;letter-spacing:.19em}
+.awards-eyebrow span{color:#bc755d}
+.awards-eyebrow i{width:24px;height:1px;background:#bc755d}
+.awards-hero h1{max-width:950px;margin:0;color:#202a27;font:500 clamp(48px,8.4vw,96px)/.98 Georgia,'Times New Roman',serif;letter-spacing:-.065em}
+.awards-hero h1 em,.awards-section-heading h2 em,.awards-closing h2 em{font-weight:400;font-style:italic;color:#a66d56}
+.awards-intro{max-width:620px;margin:25px 0 38px;color:#68736d;font-size:clamp(14px,1.6vw,17px);line-height:1.9}
+.awards-hero-foot{display:flex;justify-content:space-between;gap:15px;padding:17px 0;border-top:1px solid #e9ece7;border-bottom:1px solid #e9ece7;color:#78837c;font-size:8px;font-weight:700;letter-spacing:.16em}
+.awards-highlights{padding:75px 0 90px;background:#fff}
+.awards-section-heading{display:grid;grid-template-columns:1fr minmax(230px,.55fr);align-items:end;gap:35px;margin-bottom:34px}
+.awards-kicker{margin-bottom:16px;color:#a66d56}
+.awards-section-heading h2,.awards-photo-heading h2{margin:0;color:#202a27;font:500 clamp(36px,5.2vw,60px)/1.05 Georgia,'Times New Roman',serif;letter-spacing:-.045em}
+.awards-section-heading>p,.awards-photo-heading>p{max-width:340px;margin:0 0 4px;color:#68736d;font-size:12px;line-height:1.9}
+.awards-professional-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.award-feature{position:relative;min-width:0;padding:27px 28px 25px;border:1px solid #e5e9e3;background:#fff;transition:border-color .2s ease,transform .2s ease}
+.award-feature:hover{transform:translateY(-3px);border-color:#b7c4b9}
+.award-feature-top{display:flex;justify-content:space-between;gap:12px;padding-bottom:17px;border-bottom:1px solid #edf0eb;color:#7b857e;font-size:8px;font-weight:700;letter-spacing:.14em}
+.award-medallion{display:grid;place-items:center;width:56px;height:56px;margin:25px 0 17px;border:1px solid #d8e0d6;border-radius:50%;color:#55745f}
+.award-medallion svg{width:32px;height:32px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.award-medallion-innovation{color:#ad765d;border-color:#ead8ce}
+.award-rank{margin:0 0 9px;color:#a66d56;font-size:9px;font-weight:700;letter-spacing:.18em}
+.award-feature h3{margin:0 0 12px;color:#26332d;font:500 clamp(24px,3vw,34px)/1.12 Georgia,'Times New Roman',serif;letter-spacing:-.025em}
+.award-feature h3 span{font-size:.65em;color:#68736d;white-space:nowrap}
+.award-description{min-height:46px;margin:0;color:#68736d;font-size:12px;line-height:1.8}
+.award-meta{display:flex;justify-content:space-between;gap:12px;margin-top:23px;padding-top:15px;border-top:1px solid #edf0eb;color:#5f6c63;font-size:10px}
+.awards-photo-section{padding:68px 0 86px;background:#f8f9f6}
+.awards-photo-heading{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:27px}
+.awards-photo-heading h2{font-size:clamp(30px,4vw,46px)}
+.awards-photo-heading h2 span{color:#a66d56}
+.awards-photo-grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);align-items:start;gap:20px}
+.awards-photo-grid figure{margin:0;min-width:0}
+.awards-photo-grid img{display:block;width:100%;height:clamp(240px,37vw,430px);object-fit:cover;object-position:center;border:1px solid #e5e9e3}
+.awards-photo-grid figure:first-child img{object-position:center 35%}
+.awards-photo-grid figcaption{padding:13px 0 0;color:#5f6c63;font-size:11px;line-height:1.7}
+.awards-photo-grid figcaption span{display:block;margin-bottom:5px;color:#a66d56;font-size:8px;font-weight:700;letter-spacing:.14em}
+.awards-academic-section{padding:85px 0 100px;background:#fff}
+.awards-timeline{border-top:1px solid #e6eae4}
+.awards-timeline-item{position:relative;display:grid;grid-template-columns:100px 1fr 25px;gap:22px;align-items:start;padding:25px 0;border-bottom:1px solid #e6eae4}
+.awards-timeline-year{padding-top:4px;color:#a66d56;font:italic 24px Georgia,'Times New Roman',serif}
+.awards-timeline-content{display:grid;grid-template-columns:62px 1fr;gap:20px;align-items:start}
+.awards-org-logo{display:grid;place-items:center;width:60px;height:60px;border:1px solid #e8ece6;background:#fff;padding:7px}
+.awards-org-logo img{display:block;width:100%;height:100%;object-fit:contain}
+.awards-org-monogram{color:#6a7b6d;font:italic 22px Georgia,'Times New Roman',serif}
+.awards-type{margin:0 0 7px;color:#a66d56;font-size:8px;font-weight:700;letter-spacing:.15em}
+.awards-timeline-content h3{margin:0 0 7px;color:#26332d;font:500 clamp(21px,2.7vw,29px)/1.2 Georgia,'Times New Roman',serif}
+.awards-org{margin:0 0 8px;color:#596a5f;font-size:11px;font-weight:600}
+.awards-timeline-content p:last-child{margin:0;color:#68736d;font-size:12px;line-height:1.8}
+.awards-timeline-mark{padding-top:4px;color:#a66d56;font-size:17px}
+.awards-closing{padding:74px 0 80px;background:#f8f9f6;text-align:center}
+.awards-closing .awards-kicker{justify-content:center}
+.awards-closing h2{margin:0 auto 27px;color:#202a27;font:500 clamp(35px,6vw,65px)/1.06 Georgia,'Times New Roman',serif;letter-spacing:-.05em}
+.awards-closing a{display:inline-flex;align-items:center;gap:15px;padding:12px 0;border-bottom:1px solid #a66d56;color:#394b40;font-size:12px;font-weight:600;text-decoration:none}
+.awards-page>.cta{background:#fff}
+@media(max-width:700px){
+ .awards-page .awards-hero{padding:55px 0 25px}
+ .awards-hero h1{font-size:clamp(43px,12vw,66px)}
+ .awards-intro{font-size:13px;margin:21px 0 28px}
+ .awards-hero-foot{flex-direction:column;font-size:7px;gap:8px}
+ .awards-highlights,.awards-academic-section{padding:60px 0 68px}
+ .awards-section-heading{grid-template-columns:1fr;gap:15px;margin-bottom:25px}
+ .awards-section-heading h2{font-size:43px}
+ .awards-section-heading>p{font-size:11px}
+ .awards-professional-grid{grid-template-columns:1fr;gap:13px}
+ .award-feature{padding:22px 20px}
+ .award-feature h3{font-size:29px}
+ .awards-photo-section{padding:58px 0 65px}
+ .awards-photo-heading{align-items:flex-start;flex-direction:column;gap:13px}
+ .awards-photo-heading h2{font-size:34px}
+ .awards-photo-grid{grid-template-columns:1fr;gap:22px}
+ .awards-photo-grid img{height:auto;max-height:480px;aspect-ratio:4/3}
+ .awards-timeline-item{grid-template-columns:54px minmax(0,1fr) 15px;gap:10px;padding:20px 0}
+ .awards-timeline-year{font-size:19px;overflow-wrap:anywhere}
+ .awards-timeline-content{grid-template-columns:43px minmax(0,1fr);gap:12px}
+ .awards-org-logo{width:42px;height:42px;padding:4px}
+ .awards-timeline-content h3{font-size:22px}
+ .awards-timeline-content p:last-child{font-size:11px}
+ .awards-closing{padding:61px 0 65px}
+ .awards-closing h2{font-size:39px}
+}
+@media(prefers-reduced-motion:reduce){.award-feature{transition:none}}
