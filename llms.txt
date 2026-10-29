@@ -18,3 +18,20 @@ Profile pages:
 - https://www.linkedin.com/in/sayedulabrar
 
 This is an independent personal professional portfolio, not an official pharmaceutical manufacturer website. Product and organization names describe professional experience and belong to their respective owners. Verify current roles, qualifications, and product information on the linked primary sources.
+
+Content hubs:
+- Pharma Blog: https://sayedulabrar.site/blog/
+  - Drug vs Medicine — English: https://sayedulabrar.site/blog/drug-vs-medicine/
+  - Drug vs Medicine — বাংলা: https://sayedulabrar.site/blog/drug-vs-medicine-bangla/
+  - Generic Name vs Brand Name — English: https://sayedulabrar.site/blog/generic-name-vs-brand-name/
+  - Generic Name vs Brand Name — বাংলা: https://sayedulabrar.site/blog/generic-name-vs-brand-name-bangla/
+  - Expiry Date vs Manufacturing Date — English: https://sayedulabrar.site/blog/expiry-date-vs-manufacturing-date-medicine/
+  - Expiry Date vs Manufacturing Date — বাংলা: https://sayedulabrar.site/blog/expiry-date-vs-manufacturing-date-medicine-bangla/
+- Daily Vlog and travel diary: https://sayedulabrar.site/vlog/
+  - Mirinja Valley travel diary: https://sayedulabrar.site/vlog/mirinja-valley-december-2024/
+  - Chapainawabganj and Sona Masjid travel guide: https://sayedulabrar.site/vlog/chapainawabganj-sona-masjid-travel-guide/
+- Awards and achievements: https://sayedulabrar.site/achievements/
+- Contact and public social profiles: https://sayedulabrar.site/contact/
+
+The Pharma Blog and travel diary contain English and Bangla educational/travel content. This personal website is distinct from Opsonin Pharma Ltd. and any other organization mentioned.
+
