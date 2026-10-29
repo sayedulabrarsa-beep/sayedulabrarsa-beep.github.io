@@ -2531,8 +2531,8 @@ header .bar>.tgl:hover{color:#e95b4d!important}
 }
 
 /* Light / dark switch: whole-page colour inversion with media kept natural (pages are hand-coloured, so tokens alone can't cover them) */
-html[data-theme="dark"]{filter:invert(.9) hue-rotate(180deg);background:#fff}
-html[data-theme="dark"] img,html[data-theme="dark"] video,html[data-theme="dark"] iframe,html[data-theme="dark"] canvas,html[data-theme="dark"] [style*="background-image"],html[data-theme="dark"] .ed-photo-main:before{filter:invert(1) hue-rotate(180deg)}
+html[data-mode="dark"]{filter:invert(.92) hue-rotate(180deg) saturate(.6);background:#1b1813}
+html[data-mode="dark"] img,html[data-mode="dark"] video,html[data-mode="dark"] iframe,html[data-mode="dark"] canvas,html[data-mode="dark"] [style*="background-image"],html[data-mode="dark"] .ed-photo-main:before{filter:invert(1) hue-rotate(180deg)}
 /* Header: search | name | theme | menu on one row, links underneath */
 header .bar{grid-template-columns:44px minmax(0,1fr) 40px 40px!important}
 header .bar>.logo{grid-column:2!important;grid-row:1!important}
@@ -2562,3 +2562,9 @@ header .bar>.logo{justify-self:center!important}
 .pw-grid img{display:block;width:100%;height:68px;object-fit:contain}
 .pw-grid span{font-size:11px;line-height:1.4;font-weight:600;color:#3c4a45}
 @media(max-width:560px){.pw-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.partner-wall{padding:48px 0}.org-mark{height:38px}}
+
+/* Blog thumbnails: fixed 1200x630 ratio, never cropped, identical on every screen */
+.ed-blog-image,.ed-blog-card:not(.ed-blog-card-feature) .ed-blog-image,.pb-card-image,.pb-feature-card-main .pb-card-image{aspect-ratio:1200/630!important;height:auto!important;min-height:0!important}
+.ed-blog-image img,.pb-card-image img{object-fit:contain!important;transform:none!important;transition:none!important}
+@media(max-width:800px){.pb-feature-card-main{display:flex!important;grid-column:1/-1}}
+.pb-image-label,.ed-image-chip{display:none!important}
