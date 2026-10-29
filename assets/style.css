@@ -2793,3 +2793,17 @@ header .bar>.logo{justify-self:center!important}
  .vlog-start-doodle{right:0;bottom:-28px;font-size:48px}
 }
 @media(prefers-reduced-motion:reduce){.vlog-category,.vlog-featured-image img,.vlog-story-image img,.vlog-story-card,.vlog-read-link span,.vlog-start-links a{transition:none!important}}
+
+
+/* Daily Vlog closing memory banner */
+.vlog-memory-banner{position:relative;overflow:hidden;padding:clamp(76px,10vw,132px) 0;background:var(--vlog-peach);text-align:center}
+.vlog-memory-inner{position:relative;max-width:900px;margin:0 auto;padding:0 22px}
+.vlog-memory-banner .vlog-script{margin-bottom:18px;color:var(--vlog-coral)}
+.vlog-memory-banner h2{margin:0;color:var(--vlog-forest);font:700 clamp(48px,8.8vw,100px)/.98 Georgia,'Times New Roman',serif;letter-spacing:-.065em}
+.vlog-memory-banner h2 em{font-style:italic;color:var(--vlog-coral)}
+.vlog-memory-bn{margin:23px 0 25px;font:500 clamp(13px,1.6vw,16px)/1.9 'Noto Sans Bengali',sans-serif;color:#59685b}
+.vlog-memory-caption{display:inline-block;padding-top:15px;border-top:1px solid rgba(43,65,49,.24);font-size:8px;font-weight:700;letter-spacing:.19em;color:var(--vlog-forest)}
+.vlog-memory-spark{position:absolute;display:block;color:rgba(231,93,75,.38);pointer-events:none}
+.vlog-memory-spark-one{top:2%;left:5%;font-size:clamp(28px,5vw,52px)}
+.vlog-memory-spark-two{right:5%;bottom:8%;font-size:clamp(34px,6vw,65px);color:rgba(49,81,61,.24)}
+@media(max-width:680px){.vlog-memory-banner{padding:76px 0 82px}.vlog-memory-banner h2{font-size:clamp(48px,13vw,70px)}.vlog-memory-bn{margin:20px 0 22px}.vlog-memory-caption{font-size:7px;letter-spacing:.12em}.vlog-memory-spark-one{left:7px;top:-28px}.vlog-memory-spark-two{right:9px;bottom:-28px}}
