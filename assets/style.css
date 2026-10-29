@@ -2543,3 +2543,22 @@ header .bar>.tgl svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke
 @media(max-width:600px){header .bar{grid-template-columns:40px minmax(0,1fr) 38px 38px!important;gap:0 4px!important}header .bar>.tgl,header .bar>.site-menu-toggle{width:38px!important;height:38px!important}}
 header .bar>.logo{justify-self:center!important}
 @media(min-width:701px) and (min-aspect-ratio:11/20){.ed-actions{margin-top:clamp(10px,2.2svh,22px)}.ed-intro{margin-bottom:0}}
+
+/* ===== Logos: organisation marks, card logos, brand chips, portfolio logo wall ===== */
+.org-mark{display:block;height:44px;max-width:150px;width:auto;object-fit:contain;object-position:left center;padding:6px 10px;background:#fff;border:1px solid #d9e1db;border-radius:10px;margin:0 0 12px}
+.card-logo{display:block;height:34px;max-width:150px;width:auto;object-fit:contain;object-position:left center;margin:0 0 12px}
+.card-logo-sq{height:46px}
+.brand-logo-chip{display:block;height:64px;width:auto;max-width:min(100%,260px);object-fit:contain;padding:10px 16px;background:#fff;border-radius:12px;margin:0 0 16px}
+.entry .org-heading .org-logo[src*="tamirul"],.entry .org-heading .org-logo[src*="cdc"],.entry .org-heading .org-logo[src*="hrdi"]{padding:4px}
+.about-event-photo{margin:26px 0 0;max-width:520px}
+.about-event-photo img{display:block;width:100%;height:auto;border-radius:6px;box-shadow:0 10px 28px rgba(30,40,30,.14)}
+.about-event-photo figcaption{font-size:12px;line-height:1.6;color:#566960;margin-top:10px}
+.partner-wall{padding:72px 0;background:#fffaf0;border-top:1px solid #ead9ca}
+.partner-wall h2{font:700 clamp(26px,3.4vw,38px)/1.15 Georgia,serif;color:#126b56;margin:6px 0 10px}
+.partner-wall h3{font:700 12px var(--display);letter-spacing:.14em;text-transform:uppercase;color:#e95b4d;margin:34px 0 14px}
+.pw-note{font-size:12px;color:#62665f;max-width:70ch;margin:0}
+.pw-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px}
+.pw-grid li{display:flex;flex-direction:column;align-items:center;justify-content:space-between;gap:12px;background:#fff;border:1px solid #ead9ca;padding:18px 14px 14px;text-align:center}
+.pw-grid img{display:block;width:100%;height:68px;object-fit:contain}
+.pw-grid span{font-size:11px;line-height:1.4;font-weight:600;color:#3c4a45}
+@media(max-width:560px){.pw-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.partner-wall{padding:48px 0}.org-mark{height:38px}}
