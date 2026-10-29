@@ -2583,3 +2583,71 @@ header .bar>.logo{justify-self:center!important}
 .ed-world-footnote{max-width:1160px;margin:5px auto 0;color:var(--muted);font-size:11px;padding:0 2px}
 @media(max-width:700px){.ed-world-section{padding:42px 0 46px}.ed-world-heading{align-items:flex-start;flex-direction:column;gap:12px;padding:0 17px;margin-bottom:18px}.ed-world-heading h2{font-size:30px}.ed-world-intro{font-size:13px}.ed-world-heading>.ed-arrow-link{margin:0}.ed-world-track{gap:12px;padding-left:17px;padding-right:17px}.ed-world-card{flex-basis:78vw;width:78vw;max-width:290px;border-radius:15px}.ed-world-card img{height:300px}.ed-world-card figcaption{padding:11px 13px 13px}.ed-world-footnote{padding:0 17px;margin-top:4px}}
 @media(prefers-reduced-motion:reduce){.ed-world-card,.ed-world-card img{transition:none!important}.ed-world-viewport{scroll-behavior:auto}}
+
+
+/* Abrar site refresh: logo belt, real-photo Contact gallery, and editorial interaction polish */
+.home-logo-belt{background:var(--ed-paper,#fffdf8);border-top:1px solid #eee2d3;border-bottom:1px solid #eee2d3;padding:34px 0 30px;overflow:hidden}
+.home-logo-belt-heading{max-width:1160px;padding:0 24px;margin:0 auto 12px}
+.home-logo-belt-heading h2{font:700 clamp(25px,3.5vw,38px)/1.15 Georgia,'Times New Roman',serif;letter-spacing:-.03em;color:var(--ed-teal,#126b56);margin:0 0 8px}
+.home-logo-belt-heading h2 em{font-style:normal;color:var(--ed-coral,#e95b4d)}
+.home-logo-belt-heading>p:last-child{font-size:12px;line-height:1.7;color:var(--ed-muted,#52625d);max-width:65ch;margin:0}
+.home-logo-strip{padding:13px 0 9px}
+.home-logo-track{align-items:center;gap:18px}
+.home-logo-track figure{width:174px;height:112px;display:flex;flex:0 0 174px;flex-direction:column;align-items:center;justify-content:center;gap:6px;margin:0;padding:12px;background:#fff;border:1px solid #e9e4d9;border-radius:15px;box-shadow:0 7px 20px rgba(30,47,42,.07)}
+.home-logo-track figure a{width:100%;height:72px;display:flex;align-items:center;justify-content:center}
+.home-logo-track img{display:block;width:100%;height:62px;max-width:148px;object-fit:contain;border:0;margin:0}
+.home-logo-track figcaption{width:100%;min-height:16px;font-size:9px;line-height:1.25;letter-spacing:.02em;text-align:center;color:#5a655f;font-weight:600}
+.home-logo-strip:hover .strip-track,.home-logo-strip:focus-within .strip-track{animation-play-state:paused}
+@media(max-width:700px){.home-logo-belt{padding:28px 0 24px}.home-logo-belt-heading{padding:0 18px}.home-logo-belt-heading h2{font-size:28px}.home-logo-track{gap:12px}.home-logo-track figure{width:150px;flex-basis:150px;height:105px;padding:10px}.home-logo-track figure a{height:66px}.home-logo-track img{height:56px}.home-logo-track figcaption{font-size:8.5px}}
+
+/* Contact photo ribbon: real pictures already uploaded to the site, moving right-to-left */
+.contact-photo-strip{padding:10px 0 15px}
+.contact-photo-track{align-items:stretch;gap:14px}
+.contact-photo-track .contact-photo-card{width:clamp(218px,24vw,280px);flex:0 0 clamp(218px,24vw,280px);margin:0;overflow:hidden;border:1px solid #e8dfd1;border-radius:17px;background:#fff;box-shadow:0 8px 24px rgba(36,42,35,.09);transition:transform .25s ease,box-shadow .25s ease}
+.contact-photo-track .contact-photo-card:hover{transform:translateY(-4px);box-shadow:0 15px 32px rgba(36,42,35,.15)}
+.contact-photo-card>a{display:block;position:relative;overflow:hidden;color:#fff!important;text-decoration:none;background:#e4e8df}
+.contact-photo-card img{display:block;width:100%;height:280px;object-fit:cover;border:0;transition:transform .55s ease}
+.contact-photo-card:hover img{transform:scale(1.045)}
+.contact-photo-overlay{position:absolute;inset:auto 0 0;display:flex;align-items:center;justify-content:center;padding:12px 8px;background:linear-gradient(transparent,rgba(16,32,27,.76));font-size:9px;font-weight:700;letter-spacing:.12em;color:#fff;opacity:0;transform:translateY(6px);transition:opacity .2s ease,transform .2s ease}
+.contact-photo-card:hover .contact-photo-overlay,.contact-photo-card a:focus-visible .contact-photo-overlay{opacity:1;transform:translateY(0)}
+.contact-photo-card figcaption{min-height:48px;padding:12px 14px 14px;font-size:12px;line-height:1.45;font-weight:600;color:#293d35}
+.contact-gallery-note{max-width:1160px;margin:9px auto 0;padding:0 2px;font-size:11px;line-height:1.6;color:#70776f}
+@media(max-width:760px){.contact-photo-track{gap:12px;padding-left:17px;padding-right:17px}.contact-photo-track .contact-photo-card{width:76vw;max-width:275px;flex-basis:76vw}.contact-photo-card img{height:280px}.contact-gallery-note{padding:0 18px;margin-top:7px}}
+@media(prefers-reduced-motion:reduce){.contact-photo-track .contact-photo-card,.contact-photo-card img,.contact-photo-overlay{transition:none!important}}
+
+/* Achievement photos: reversed from the previous left-to-right movement plus a subtle photo drift */
+.achievements-award-strip .strip-track figure{overflow:hidden;border-radius:8px}
+.achievements-award-strip .strip-track img{animation:achievement-photo-drift 9s ease-in-out infinite alternate;transform-origin:center}
+.achievements-award-strip .strip-track figure:nth-child(even) img{animation-delay:-4.5s}
+@keyframes achievement-photo-drift{from{transform:scale(1.015) translateY(0)}to{transform:scale(1.055) translateY(-3px)}}
+@media(prefers-reduced-motion:reduce){.achievements-award-strip .strip-track img{animation:none!important;transform:none!important}}
+
+/* Pharma Blog: polished thumbnail proportions and persistent bilingual actions */
+.pb-list-toolbar{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin:-8px 0 22px;padding:12px 14px;border:1px solid #e8e0d4;border-radius:13px;background:#fffdf8}
+.pb-list-toolbar p{margin:0;color:#53675e;font-size:11px;font-weight:700;letter-spacing:.02em}
+.pb-list-toolbar label{display:flex;align-items:center;gap:9px;color:#53675e;font-size:10px;font-weight:700}
+.pb-list-toolbar select{max-width:100%;padding:9px 28px 9px 10px;border:1px solid #d8d9d0;border-radius:8px;background:#fff;color:#243c33;font:600 11px var(--display)}
+.pb-card-image{aspect-ratio:16/10!important}
+.pb-card-image img{object-position:center;min-height:0}
+.pb-read-link,.pb-bangla-link{min-height:28px}
+.pb-bangla-link{display:inline-flex;align-items:center;margin-top:7px}
+.pb-feature-card[hidden]{display:none!important}
+.pb-topic-bar a{transition:transform .18s ease,background .18s ease,color .18s ease}
+.pb-topic-bar a:hover{transform:translateY(-2px)}
+@media(max-width:540px){.pb-list-toolbar{align-items:stretch;padding:11px 12px}.pb-list-toolbar label{justify-content:space-between}.pb-list-toolbar select{flex:1;min-width:0}.pb-card-image{aspect-ratio:16/10!important}}
+
+/* Daily Vlog: searchable bilingual travel journal with topic chips */
+.vlog-tools{display:grid;grid-template-columns:minmax(180px,1fr) auto;align-items:end;gap:14px;margin:18px 0 25px;padding:17px;background:var(--card);border:1px solid var(--line);border-radius:16px}
+.vlog-search{display:flex;flex-direction:column;gap:7px;font-size:11px;font-weight:700;color:var(--muted)}
+.vlog-search input{width:100%;min-width:0;padding:12px 14px;border:1px solid var(--line);border-radius:9px;background:var(--bg);color:var(--fg);font:500 13px var(--display)}
+.vlog-filter-group{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:7px}
+.vlog-filter-group button{border:1px solid var(--line);border-radius:999px;background:var(--bg);color:var(--fg);padding:10px 12px;font:600 10px var(--display);cursor:pointer;transition:background .18s ease,color .18s ease,transform .18s ease}
+.vlog-filter-group button:hover{transform:translateY(-1px)}
+.vlog-filter-group button.is-active{background:var(--accent);border-color:var(--accent);color:#fff}
+#vlog-count{grid-column:1/-1;margin:0;font-size:10px;color:var(--muted)}
+.vlog-card[hidden]{display:none!important}
+.vlog-empty{margin:18px 0;padding:25px;border:1px dashed var(--line);border-radius:14px;text-align:center;background:var(--bg2)}
+.vlog-empty strong{display:block;font-size:17px;margin-bottom:5px}
+.vlog-empty p{margin:0;color:var(--muted);font-size:12px}
+@media(max-width:760px){.vlog-tools{grid-template-columns:1fr;padding:14px}.vlog-filter-group{justify-content:flex-start}.vlog-filter-group button{padding:9px 11px}#vlog-count{grid-column:auto}}
+@media(prefers-reduced-motion:reduce){.vlog-filter-group button,.pb-topic-bar a{transition:none!important}}
