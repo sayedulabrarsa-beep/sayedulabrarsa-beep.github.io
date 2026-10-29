@@ -176,6 +176,37 @@
     <div class="cr">Copyright@sayedulabrar_<span id="year">2026</span></div>
   </div>
 </footer>
+<script>
+(function(){
+  var viewport=document.querySelector('.ed-world-viewport');
+  var track=document.querySelector('.ed-world-track');
+  if(!viewport||!track||window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var timer=null, paused=false;
+  function stepSize(){
+    var card=track.querySelector('.ed-world-card');
+    if(!card)return 260;
+    var gap=parseFloat(getComputedStyle(track).gap)||0;
+    return card.getBoundingClientRect().width+gap;
+  }
+  function advance(){
+    if(paused)return;
+    var max=viewport.scrollWidth-viewport.clientWidth;
+    if(max<=4)return;
+    if(viewport.scrollLeft>=max-8){viewport.scrollTo({left:0,behavior:'smooth'});}
+    else{viewport.scrollBy({left:stepSize(),behavior:'smooth'});}
+  }
+  function start(){if(!timer)timer=window.setInterval(advance,3200);}
+  function stop(){if(timer){window.clearInterval(timer);timer=null;}}
+  viewport.addEventListener('mouseenter',function(){paused=true;});
+  viewport.addEventListener('mouseleave',function(){paused=false;});
+  viewport.addEventListener('focusin',function(){paused=true;});
+  viewport.addEventListener('focusout',function(){paused=false;});
+  viewport.addEventListener('touchstart',function(){paused=true;},{passive:true});
+  viewport.addEventListener('touchend',function(){window.setTimeout(function(){paused=false;},1800);},{passive:true});
+  document.addEventListener('visibilitychange',function(){if(document.hidden)stop();else start();});
+  start();
+})();
+</script>
 <script src="/assets/site.js?v=final-polish-20261029" defer></script>
 </body>
 </html>
