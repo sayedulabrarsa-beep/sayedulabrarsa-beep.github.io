@@ -25,7 +25,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,600&family=Dancing+Script:wght@700&display=swap">
-<link rel="stylesheet" href="/assets/style.css?v=logos-20261029">
+<link rel="stylesheet" href="/assets/style.css?v=abrar-refresh-20261029">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://sayedulabrar.site/"}, {"@type": "ListItem", "position": 2, "name": "Daily Vlog", "item": "https://sayedulabrar.site/vlog/"}]}</script>
 <script>try{if(localStorage.getItem('sa-theme')==='dark')document.documentElement.setAttribute('data-theme','dark')}catch(e){}</script>
@@ -49,8 +49,13 @@
   <section class="band">
     <div class="wrap">
       
-      <h2 class="sec-h">Travel diary & latest vlogs</h2>
-      <article class="vlog-feature" style="display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:26px;align-items:center;background:var(--card);border:1px solid var(--line);padding:clamp(16px,3vw,30px);margin-top:24px">
+      <h2 class="sec-h">Travel diary &amp; latest vlogs</h2>
+      <div class="vlog-tools" aria-label="Search and filter travel stories">
+        <label class="vlog-search" for="vlog-query"><span>Find a story</span><input id="vlog-query" type="search" placeholder="Search Mirinja, heritage, river…" autocomplete="off"></label>
+        <div class="vlog-filter-group" role="group" aria-label="Filter stories"><button type="button" class="is-active" data-vlog-filter="all">All stories</button><button type="button" data-vlog-filter="nature">Nature &amp; travel</button><button type="button" data-vlog-filter="heritage">History &amp; heritage</button></div>
+        <p id="vlog-count" role="status">Showing 2 stories · English + বাংলা</p>
+      </div>
+      <article class="vlog-feature vlog-card" data-vlog-topics="travel nature" data-search="mirinja valley bandarban travel nature hills river viewpoint photo memories মিরিঞ্জা ভ্যালি বান্দরবান ভ্রমণ পাহাড় নদী" style="display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:26px;align-items:center;background:var(--card);border:1px solid var(--line);padding:clamp(16px,3vw,30px);margin-top:24px">
         <a href="/vlog/mirinja-valley-december-2024/" aria-label="Read Mirinja Valley travel diary" style="display:block;overflow:hidden;background:linear-gradient(135deg,#dfe7db,#f3e8d5 55%,#c8d5c8);aspect-ratio:4/3;color:var(--fg);text-decoration:none">
           <img src="/assets/img/mirinja-valley/mirinja-viewpoint-01.jpg" alt="Sayedul Abrar smiling while sitting on a red and white wooden viewpoint railing above Mirinja Valley, Bandarban, with a winding river between forested green hills" width="1536" height="1152" loading="lazy" style="display:block;width:100%;height:100%;object-fit:cover;object-position:center">
         </a>
@@ -61,7 +66,7 @@
           <p style="display:flex;gap:14px;flex-wrap:wrap;margin-top:18px"><a class="btn" href="/vlog/mirinja-valley-december-2024/">Read the story / গল্পটি পড়ুন ↗</a></p>
         </div>
       </article>
-      <article class="vlog-feature" style="display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:26px;align-items:center;background:var(--card);border:1px solid var(--line);padding:clamp(16px,3vw,30px);margin-top:24px">
+      <article class="vlog-feature vlog-card" data-vlog-topics="travel heritage" data-search="chapainawabganj sona masjid history heritage architecture travel guide darasbari mosque tahkhana চাঁপাইনবাবগঞ্জ ছোট সোনা মসজিদ ইতিহাস ঐতিহ্য ভ্রমণ গাইড" style="display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:26px;align-items:center;background:var(--card);border:1px solid var(--line);padding:clamp(16px,3vw,30px);margin-top:24px">
         <a href="/vlog/chapainawabganj-sona-masjid-travel-guide/" aria-label="Read Chapainawabganj Sona Masjid travel guide" style="display:block;overflow:hidden;background:linear-gradient(135deg,#e9e0d2,#f4eadc 55%,#c8d4ca);aspect-ratio:4/3;color:var(--fg);text-decoration:none">
           <img src="/assets/img/chapainawabganj/sona-masjid-domes-wide-view.jpg" alt="Historic multi-domed Sona Masjid in Chapainawabganj, Bangladesh" width="1600" height="900" loading="lazy" style="display:block;width:100%;height:100%;object-fit:cover;object-position:center">
         </a>
@@ -72,6 +77,7 @@
           <p style="display:flex;gap:14px;flex-wrap:wrap;margin-top:18px"><a class="btn" href="/vlog/chapainawabganj-sona-masjid-travel-guide/">Read the guide / গাইডটি পড়ুন ↗</a></p>
         </div>
       </article>
+      <div class="vlog-empty" id="vlog-empty" hidden><strong>No matching stories yet.</strong><p>Try another word or choose “All stories”.</p></div>
       <style>@media(max-width:680px){.vlog-feature{grid-template-columns:1fr!important;gap:18px!important}.vlog-feature a[aria-label]{aspect-ratio:4/3}}</style>
     </div>
   </section>
@@ -108,5 +114,33 @@
   </div>
 </footer>
 <script src="/assets/site.js?v=final-polish-20261029" defer></script>
+<script>
+(function(){
+  var input=document.getElementById('vlog-query');
+  var cards=Array.from(document.querySelectorAll('.vlog-card'));
+  var buttons=Array.from(document.querySelectorAll('[data-vlog-filter]'));
+  var count=document.getElementById('vlog-count');
+  var empty=document.getElementById('vlog-empty');
+  var active='all';
+  function apply(){
+    var q=input.value.trim().toLocaleLowerCase(),shown=0;
+    cards.forEach(function(card){
+      var haystack=(card.innerText+' '+(card.dataset.search||'')).toLocaleLowerCase();
+      var topics=(card.dataset.vlogTopics||'').split(/\s+/);
+      card.hidden=!((!q||haystack.includes(q))&&(active==='all'||topics.includes(active)));
+      if(!card.hidden)shown++;
+    });
+    count.textContent='Showing '+shown+' of '+cards.length+' stories · English + বাংলা';
+    empty.hidden=shown>0;
+  }
+  input.addEventListener('input',apply);
+  buttons.forEach(function(button){button.addEventListener('click',function(){
+    active=button.dataset.vlogFilter;
+    buttons.forEach(function(b){b.classList.toggle('is-active',b===button);});
+    apply();
+  });});
+  apply();
+})();
+</script>
 </body>
 </html>
