@@ -2976,3 +2976,22 @@ footer .cr { margin-top: 12px; padding-top: 10px; font-size: 11px; }
 .aw2-strip img{display:block;height:min(300px,62vw);width:auto;border:0;border-radius:14px;box-shadow:0 8px 22px rgba(30,47,42,.14)}
 .aw2-strip figcaption{width:auto;min-width:0;margin-top:8px;font-size:11px;font-weight:600;letter-spacing:.04em;color:#5f6c63}
 @media(max-width:600px){.aw2-chip{min-width:250px}.aw2-org img{height:40px}}
+
+/* ===== Reference-style blocks (brand tiles, tag chips, next links) ===== */
+.awards-page>.cta{background:var(--accent)!important}
+.rf-chips{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 4px;padding:0}
+.rf-chips li{font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#7a4b00;background:#fdf0d8;border:1px solid #f0d9ab;border-radius:999px;padding:6px 12px}
+.rf-next{margin:12px 0 0}.rf-next a{font-size:12px;font-weight:700;color:var(--accent,#c26e00);text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:2px}
+.rf-sub{max-width:62ch;color:#68736d;font-size:14px;line-height:1.7;margin:0 0 24px}
+.rf-jump{display:inline-block;margin-left:6px;font-weight:700}
+.rf-tiles{list-style:none;margin:22px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.rf-tiles a{display:flex;flex-direction:column;align-items:flex-start;gap:6px;height:100%;padding:18px 16px 16px;background:#fff;border:1px solid #e5e0d5;border-radius:16px;text-decoration:none;color:#1f2d27;transition:transform .2s,box-shadow .2s}
+.rf-tiles a:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(30,47,42,.1)}
+.rf-tiles img{height:56px;width:auto;max-width:150px;object-fit:contain;margin-bottom:8px}
+.rf-tiles b{font-size:14px;line-height:1.3}.rf-tiles span{font-size:12px;line-height:1.55;color:#68736d}
+.rf-tiles-sec,.rf-learn{padding:60px 0 54px;background:#faf7f0}
+.rf-tiles-sec h2,.rf-learn h2{margin:6px 0 4px;font:600 clamp(26px,3.6vw,40px)/1.15 Georgia,'Times New Roman',serif}
+@media(max-width:560px){.rf-tiles{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.rf-tiles a{padding:14px 12px}.rf-tiles img{height:46px}}
+.vlog-memory-strip{padding:6px 0 26px!important;margin-top:8px}
+.vlog-memory-strip .strip-track{gap:14px;align-items:flex-end}
+.vlog-memory-strip img{height:min(260px,60vw);width:auto;border:0;border-radius:14px;box-shadow:0 8px 22px rgba(0,0,0,.18)}
