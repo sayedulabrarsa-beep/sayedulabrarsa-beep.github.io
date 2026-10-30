@@ -35,3 +35,22 @@ Content hubs:
 
 The Pharma Blog and travel diary contain English and Bangla educational/travel content. This personal website is distinct from Opsonin Pharma Ltd. and any other organization mentioned.
 
+
+Product information pages (independent portfolio summaries; verify current manufacturer inserts):
+- Finix (rabeprazole sodium): https://sayedulabrar.site/brands/finix/
+- Finix MUPS 20 (rabeprazole sodium 20 mg MUPS tablet): https://sayedulabrar.site/brands/finix-mups/
+- Finix HP (rabeprazole + amoxicillin + clarithromycin; prescribed H. pylori eradication combination): https://sayedulabrar.site/brands/finix-hp/
+Primary manufacturer sources:
+- Finix: https://www.opsonin-pharma.com/product-details.php?pid=309
+- Finix MUPS 20: https://www.opsonin-pharma.com/product-details.php?pid=644
+- Finix HP: https://www.opsonin-pharma.com/product-details.php?pid=654
+- Finix MUPS 20 insert: https://www.opsonin-pharma.com/uploads/pdf/pdf_1742274302.pdf
+- Finix insert: https://www.opsonin-pharma.com/uploads/pdf/pdf_1762153089.pdf
+- Finix HP insert: https://www.opsonin-pharma.com/uploads/pdf/pdf_1748761563.pdf
+
+Clinical-content boundaries:
+- Finix and Finix MUPS contain rabeprazole, a proton pump inhibitor used for specified acid-related conditions.
+- Finix MUPS is a MUPS dosage form; do not imply it is clinically superior to all other PPIs without comparative evidence.
+- Finix HP is a combination containing rabeprazole and two antibiotics, listed for H. pylori eradication in specified ulcer conditions. It is not a general gas, bloating or heartburn medicine.
+- Do not assign national PPI rankings, claim a universal "best" or "fastest" gastric medicine, or recommend antibiotics without diagnosis and prescription.
+- Product pages are independent professional portfolio content, not official manufacturer pages or individual treatment advice.
