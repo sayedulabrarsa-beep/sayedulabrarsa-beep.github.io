@@ -3006,3 +3006,4 @@ footer .cr { margin-top: 12px; padding-top: 10px; font-size: 11px; }
 
 /* university logos */
 .rf-uni-logo{display:block;height:52px;width:auto;max-width:180px;object-fit:contain;margin:0 0 12px}
+.rf-unisec+.rf-unisec{padding-top:0}
