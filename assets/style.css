@@ -2995,3 +2995,11 @@ footer .cr { margin-top: 12px; padding-top: 10px; font-size: 11px; }
 .vlog-memory-strip{padding:6px 0 26px!important;margin-top:8px}
 .vlog-memory-strip .strip-track{gap:14px;align-items:flex-end}
 .vlog-memory-strip img{height:min(260px,60vw);width:auto;border:0;border-radius:14px;box-shadow:0 8px 22px rgba(0,0,0,.18)}
+.rf-uni{list-style:none;margin:22px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px}
+.rf-uni-card{position:relative;background:#fff;border:1px solid #e5e0d5;border-radius:16px;padding:18px 18px 16px}
+.rf-mono{display:inline-grid;place-items:center;min-width:44px;height:44px;padding:0 10px;border-radius:12px;background:#14291f;color:#fff;font:700 13px Poppins,sans-serif;letter-spacing:.04em;margin-bottom:10px}
+.rf-uni-card>b{display:block;font-size:15px;line-height:1.35;color:#1f2d27;margin-bottom:8px}
+.rf-uni-card ul{list-style:none;margin:0;padding:0}
+.rf-uni-card li{font-size:12.5px;line-height:1.5;color:#4b5a53;padding:7px 0;border-top:1px dashed #e5e0d5}
+.rf-uni-card li em{display:block;font-style:normal;font-size:11px;color:#a66d56;font-weight:600;margin-top:2px}
+@media(max-width:560px){.rf-uni{grid-template-columns:1fr}}
