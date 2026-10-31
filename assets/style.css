@@ -3014,3 +3014,5 @@ footer .cr { margin-top: 12px; padding-top: 10px; font-size: 11px; }
 .rf-stats b{display:block;font-size:1.8rem;line-height:1.1}
 .rf-stats span{font-size:.78rem}
 @media(max-width:640px){.rf-stats{grid-template-columns:repeat(2,1fr)}}
+.rf-uni-logos{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin:0 0 12px}
+.rf-uni-logos .rf-uni-logo{margin:0;height:44px}
