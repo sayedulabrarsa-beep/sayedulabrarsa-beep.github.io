@@ -3020,3 +3020,7 @@ footer .cr { margin-top: 12px; padding-top: 10px; font-size: 11px; }
 .expiry-fig img,.expiry-hero img{display:block;width:100%;height:auto;border-radius:18px}
 .expiry-fig.narrow img{max-width:560px;margin:0 auto}
 .expiry-fig figcaption{font-size:.85rem;opacity:.75;margin-top:8px}
+.gb-fig{margin:22px 0;text-align:center}
+.gb-fig img{display:block;width:100%;height:auto;border-radius:18px;margin:0 auto}
+.gb-fig.narrow img{max-width:520px}
+.gb-fig figcaption{font-size:.85rem;opacity:.75;margin-top:8px}
