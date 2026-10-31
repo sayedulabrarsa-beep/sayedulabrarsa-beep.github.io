@@ -3016,3 +3016,7 @@ footer .cr { margin-top: 12px; padding-top: 10px; font-size: 11px; }
 @media(max-width:640px){.rf-stats{grid-template-columns:repeat(2,1fr)}}
 .rf-uni-logos{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin:0 0 12px}
 .rf-uni-logos .rf-uni-logo{margin:0;height:44px}
+.expiry-fig{margin:22px 0;text-align:center}
+.expiry-fig img,.expiry-hero img{display:block;width:100%;height:auto;border-radius:18px}
+.expiry-fig.narrow img{max-width:560px;margin:0 auto}
+.expiry-fig figcaption{font-size:.85rem;opacity:.75;margin-top:8px}
