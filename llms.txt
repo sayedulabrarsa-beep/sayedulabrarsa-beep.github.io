@@ -21,8 +21,7 @@ This is an independent personal professional portfolio, not an official pharmace
 
 Content hubs:
 - Pharma Blog: https://sayedulabrar.site/blog/
-  - Drug vs Medicine — English: https://sayedulabrar.site/blog/drug-vs-medicine/
-  - Drug vs Medicine — বাংলা: https://sayedulabrar.site/blog/drug-vs-medicine-bangla/
+  - Drug vs Medicine — English and বাংলা (bilingual article): https://sayedulabrar.site/blog/drug-vs-medicine/
   - Generic Name vs Brand Name — English: https://sayedulabrar.site/blog/generic-name-vs-brand-name/
   - Generic Name vs Brand Name — বাংলা: https://sayedulabrar.site/blog/generic-name-vs-brand-name-bangla/
   - Expiry Date vs Manufacturing Date — English: https://sayedulabrar.site/blog/expiry-date-vs-manufacturing-date-medicine/
