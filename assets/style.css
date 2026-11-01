@@ -3024,3 +3024,4 @@ footer .cr { margin-top: 12px; padding-top: 10px; font-size: 11px; }
 .gb-fig img{display:block;width:100%;height:auto;border-radius:18px;margin:0 auto}
 .gb-fig.narrow img{max-width:520px}
 .gb-fig figcaption{font-size:.85rem;opacity:.75;margin-top:8px}
+.medical-note-src{font-size:14px;color:var(--muted);margin:18px 0;line-height:1.7}
