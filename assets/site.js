@@ -118,119 +118,63 @@
       menu.dataset.navStableReady='true';
       /* Seamless marquee: recycle the existing links, preserve their order/offset across page navigation,
          and let pointer dragging track the user's finger or mouse exactly. */
-      var navMotionOK=false;
+      var navMotionOK=!(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches);
       if(navMotionOK&&menu.children.length){
-        var navStateKey='sa-nav-marquee-v2';
-        var navItems=Array.prototype.slice.call(menu.children);
-        function itemHref(item){
-          var a=item.querySelector('a');
-          return a?new URL(a.getAttribute('href'),location.origin).pathname:'';
+        /* Seamless right-to-left marquee. The original links are never reordered: the set is repeated with
+           clones until it always covers the visible width, and the offset wraps by exactly one set width.
+           Links stay clickable: the pointer is captured only after a real drag (>6px). */
+        var navKey='sa-nav-marquee-v3';
+        var origItems=Array.prototype.slice.call(menu.children);
+        menu.style.willChange='transform';menu.style.width='max-content';menu.style.flexWrap='nowrap';
+        menu.style.justifyContent='flex-start';menu.style.gap=menu.style.gap||'0px';
+        nav.style.overflow='hidden';nav.style.touchAction='pan-y';nav.style.scrollBehavior='auto';
+        var setW=0,navOffset=0,navLast=0,dragging=false,dragMoved=false,pid=null,startX=0,startOff=0,pressed=false;
+        try{var sv=JSON.parse(sessionStorage.getItem(navKey)||'null');if(sv&&isFinite(sv.o))navOffset=sv.o}catch(err){}
+        function measure(){
+          Array.prototype.slice.call(menu.querySelectorAll('[data-nav-clone]')).forEach(function(n){n.remove()});
+          var first=origItems[0],last=origItems[origItems.length-1];
+          if(!first||!last)return;
+          var cs=getComputedStyle(menu),gap=parseFloat(cs.columnGap||cs.gap)||0;
+          setW=last.getBoundingClientRect().right-first.getBoundingClientRect().left+gap;
+          if(setW<=0)return;
+          var need=Math.ceil((nav.clientWidth+setW)/setW)+1;
+          for(var r=0;r<need;r++){origItems.forEach(function(it){
+            var c=it.cloneNode(true);c.setAttribute('data-nav-clone','1');c.setAttribute('aria-hidden','true');
+            c.querySelectorAll('a').forEach(function(a){a.tabIndex=-1;a.removeAttribute('aria-current')});
+            menu.appendChild(c)})}
         }
-        var savedNav=null;
-        try{savedNav=JSON.parse(sessionStorage.getItem(navStateKey)||'null')}catch(err){}
-        if(savedNav&&Array.isArray(savedNav.order)){
-          var byHref={};
-          navItems.forEach(function(item){byHref[itemHref(item)]=item});
-          savedNav.order.forEach(function(href){
-            if(byHref[href]){menu.appendChild(byHref[href]);delete byHref[href]}
-          });
-          Object.keys(byHref).forEach(function(href){menu.appendChild(byHref[href])});
+        function wrap(){if(setW>0){navOffset=-(((-navOffset)%setW)+setW)%setW}}
+        function paint(){wrap();menu.style.transform='translate3d('+navOffset+'px,0,0)'}
+        function save(){try{sessionStorage.setItem(navKey,JSON.stringify({o:navOffset}))}catch(err){}}
+        function tick(now){
+          if(!navLast)navLast=now;var dt=Math.min(now-navLast,40);navLast=now;
+          if(!document.hidden&&!dragging){navOffset-=dt*0.035;paint()}
+          requestAnimationFrame(tick);
         }
-        menu.style.willChange='transform';
-        menu.style.width='max-content';
-        menu.style.flexWrap='nowrap';
-        menu.style.justifyContent='flex-start';
-        menu.style.gap=menu.style.gap||'0px';
-        nav.style.overflow='hidden';
-        nav.style.scrollBehavior='auto';
-        nav.style.touchAction='pan-y';
-        var navOffset=(savedNav&&Number.isFinite(savedNav.offset))?savedNav.offset:0;
-        var navLastFrame=0,dragging=false,dragMoved=false,navAutoPaused=false;
-        var pointerStartX=0,offsetAtPointerStart=0,dragPointerId=null;
-        function gapSize(){
-          var cs=window.getComputedStyle(menu);
-          return parseFloat(cs.columnGap||cs.gap)||0;
-        }
-        function firstStep(){
-          var first=menu.children[0];
-          return first?first.getBoundingClientRect().width+gapSize():0;
-        }
-        function lastStep(){
-          var kids=menu.children;
-          return kids.length?kids[kids.length-1].getBoundingClientRect().width+gapSize():0;
-        }
-        function saveNavigation(){
-          try{
-            sessionStorage.setItem(navStateKey,JSON.stringify({
-              offset:navOffset,
-              order:Array.prototype.map.call(menu.children,itemHref)
-            }));
-          }catch(err){}
-        }
-        function normalizeOffset(){
-          var guard=0,step;
-          while(menu.children.length>1&&(step=firstStep())>0&&navOffset<=-step&&guard++<menu.children.length+2){
-            menu.appendChild(menu.children[0]);
-            navOffset+=step;
-          }
-          guard=0;
-          while(menu.children.length>1&&(step=lastStep())>0&&navOffset>0&&guard++<menu.children.length+2){
-            menu.insertBefore(menu.children[menu.children.length-1],menu.children[0]);
-            navOffset-=step;
-          }
-        }
-        function paintNavigation(save){
-          normalizeOffset();
-          menu.style.transform='translate3d('+navOffset+'px,0,0)';
-          if(save)saveNavigation();
-        }
-        function moveNavigation(now){
-          if(!navLastFrame)navLastFrame=now;
-          var elapsed=Math.min(now-navLastFrame,40);navLastFrame=now;
-          if(!document.hidden&&!navAutoPaused&&!dragging){
-            navOffset-=elapsed*0.035;
-            paintNavigation(true);
-          }
-          window.requestAnimationFrame(moveNavigation);
-        }
-        /* Do not pause merely because the pointer is hovering; only active dragging pauses motion. */
         nav.addEventListener('pointerdown',function(e){
           if(e.pointerType==='mouse'&&e.button!==0)return;
-          dragging=true;dragMoved=false;navAutoPaused=true;dragPointerId=e.pointerId;
-          pointerStartX=e.clientX;offsetAtPointerStart=navOffset;
-          try{nav.setPointerCapture(e.pointerId)}catch(err){}
+          pressed=true;dragMoved=false;pid=e.pointerId;startX=e.clientX;startOff=navOffset;
         });
         nav.addEventListener('pointermove',function(e){
-          if(!dragging||e.pointerId!==dragPointerId)return;
-          var dx=e.clientX-pointerStartX;
-          if(Math.abs(dx)>6)dragMoved=true;
-          navOffset=offsetAtPointerStart+dx;
-          paintNavigation(true);
+          if(!pressed||e.pointerId!==pid)return;
+          var dx=e.clientX-startX;
+          if(!dragging&&Math.abs(dx)>6){dragging=true;dragMoved=true;try{nav.setPointerCapture(pid)}catch(err){}}
+          if(dragging){navOffset=startOff+dx;paint()}
         });
-        function endNavigationDrag(e){
-          if(!dragging||(e&&e.pointerId!==undefined&&e.pointerId!==dragPointerId))return;
-          dragging=false;
-          if(e&&e.pointerId!==undefined){try{nav.releasePointerCapture(e.pointerId)}catch(err){}}
-          dragPointerId=null;
-          saveNavigation();
-          if(dragMoved){
-            navAutoPaused=true;
-            window.setTimeout(function(){navAutoPaused=false},120);
-          }else navAutoPaused=false;
+        function end(e){
+          if(e&&e.pointerId!==undefined&&e.pointerId!==pid)return;
+          if(dragging){try{nav.releasePointerCapture(pid)}catch(err){}}
+          dragging=false;pressed=false;pid=null;save();
         }
-        nav.addEventListener('pointerup',endNavigationDrag);
-        nav.addEventListener('pointercancel',endNavigationDrag);
+        nav.addEventListener('pointerup',end);nav.addEventListener('pointercancel',end);
         nav.addEventListener('click',function(e){
-          if(dragMoved){
-            e.preventDefault();e.stopPropagation();dragMoved=false;
-          }else{
-            /* Save the exact visual position before the clicked page loads. */
-            saveNavigation();
-          }
+          if(dragMoved){e.preventDefault();e.stopPropagation();dragMoved=false}else save();
         },true);
-        window.addEventListener('resize',function(){paintNavigation(true)},{passive:true});
-        paintNavigation(false);
-        window.requestAnimationFrame(moveNavigation);
+        function init(){measure();paint()}
+        init();
+        window.addEventListener('load',init);window.addEventListener('resize',init,{passive:true});
+        if(document.fonts&&document.fonts.ready)document.fonts.ready.then(init);
+        requestAnimationFrame(tick);
       }
     }
   })();
@@ -271,7 +215,7 @@
     var p=document.createElement('p');p.textContent='Pharmacist · Product Executive · Lifelong learner. Explore my professional journey, pharmacy articles and work.';
     profile.appendChild(img);profile.appendChild(h);profile.appendChild(p);
     var links=document.createElement('nav');links.className='site-nav-overlay-links';links.setAttribute('aria-label','Expanded navigation');
-    Array.prototype.forEach.call(menu.querySelectorAll('a'),function(a){if(new URL(a.getAttribute('href'),location.origin).pathname==='/community/')return;var clone=a.cloneNode(true);clone.removeAttribute('data-icon-applied');clone.querySelectorAll('.nav-icon').forEach(function(i){i.remove()});clone.removeAttribute('style');if(a.hasAttribute('aria-current'))clone.setAttribute('aria-current','page');links.appendChild(clone)});
+    Array.prototype.forEach.call(menu.querySelectorAll('a'),function(a){if(a.closest('[data-nav-clone]'))return;if(new URL(a.getAttribute('href'),location.origin).pathname==='/community/')return;var clone=a.cloneNode(true);clone.removeAttribute('data-icon-applied');clone.querySelectorAll('.nav-icon').forEach(function(i){i.remove()});clone.removeAttribute('style');if(a.hasAttribute('aria-current'))clone.setAttribute('aria-current','page');links.appendChild(clone)});
     var contact=document.createElement('a');contact.href='/contact/';contact.className='overlay-contact';contact.textContent='Get in touch ↗';links.appendChild(contact);
     card.appendChild(close);card.appendChild(profile);card.appendChild(links);overlay.appendChild(card);document.body.appendChild(overlay);
     function open(){overlay.classList.add('is-open');overlay.setAttribute('aria-hidden','false');document.body.classList.add('nav-overlay-open');btn.setAttribute('aria-expanded','true');btn.setAttribute('aria-label','Close navigation menu');close.focus()}
