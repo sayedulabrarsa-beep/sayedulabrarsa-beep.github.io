@@ -118,7 +118,7 @@
       menu.dataset.navStableReady='true';
       /* Seamless marquee: recycle the existing links, preserve their order/offset across page navigation,
          and let pointer dragging track the user's finger or mouse exactly. */
-      var navMotionOK=!(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+      var navMotionOK=false;
       if(navMotionOK&&menu.children.length){
         var navStateKey='sa-nav-marquee-v2';
         var navItems=Array.prototype.slice.call(menu.children);

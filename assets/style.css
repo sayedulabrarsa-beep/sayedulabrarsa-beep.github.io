@@ -3025,3 +3025,18 @@ footer .cr { margin-top: 12px; padding-top: 10px; font-size: 11px; }
 .gb-fig.narrow img{max-width:520px}
 .gb-fig figcaption{font-size:.85rem;opacity:.75;margin-top:8px}
 .medical-note-src{font-size:14px;color:var(--muted);margin:18px 0;line-height:1.7}
+
+/* v-nav-static: static, clickable navigation (no moving strip) + single-photo home hero */
+header .menu{transform:none!important;will-change:auto!important}
+header nav{scroll-snap-type:none}
+@media(min-width:900px){
+  header .bar{grid-template-columns:1fr auto 1fr;grid-template-rows:auto auto}
+  header nav{display:flex!important;justify-content:center;overflow:visible!important;margin-top:4px!important}
+  header .menu{width:auto!important;min-width:0!important;margin-inline:auto!important;flex-wrap:wrap!important;justify-content:center;gap:6px!important}
+  header .menu>li>a{min-width:72px!important}
+}
+@media(min-width:701px){
+  .ed-collage{display:flex;align-items:flex-end;justify-content:center}
+  .ed-photo-main{position:relative!important;width:min(86%,440px)!important;height:100%!important;max-height:100%;right:auto!important;left:auto!important;top:auto!important;transform:none!important;padding:0!important;background:transparent!important;box-shadow:none!important;border:0!important}
+  .ed-photo-main img{width:100%;height:100%!important;object-fit:contain!important;object-position:center bottom!important;border-radius:0}
+}
