@@ -3039,3 +3039,4 @@ header nav{grid-column:1/-1!important;grid-row:2!important;width:100%!important;
 /* current page shade on its own navigation button */
 header .menu a.is-current,header .menu a[aria-current="page"],.site-nav-overlay a[aria-current="page"],.site-nav-links a[aria-current="page"]{background:rgba(194,110,0,.16)!important;color:var(--accent)!important;border-radius:12px;box-shadow:inset 0 -2px 0 var(--accent)!important}
 header .menu>li>a.is-current,header .menu>li>a[aria-current="page"]{background:rgba(194,110,0,.18)!important;color:var(--accent)!important;border-radius:12px}
+.article-hero.hero-wide{height:auto!important;aspect-ratio:1600/305!important;object-fit:cover!important;background:none!important;width:100%}
