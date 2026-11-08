@@ -82,11 +82,49 @@ tr = ''.join(cell(i + 3, 'hg-card--uni', logos_row(c['logos']) + f'<h4>{esc(c["n
 parts.append(part('workshops', 'A', '#e5566d', '#9e2a40', 'Hands-on experience', 'Workshops & professional development',
     'Practical workshops and professional communities. The trainings line holds participation and completion certificates.', '',
     [rail('Communities &amp; professional growth', com, 'communities'), rail('Trainings, workshops &amp; short courses', tr, 'trainings')]))
-# B. featured learning
-fe = ''.join(cell(i, 'hg-card--feat', f'<span class="hg-pill">{esc(c["topic"])}</span><h4>{esc(c["title"])}</h4><div class="hg-src"><img src="{esc(PM.get(c["provider"], c["logo"]))}" alt="" width="18" height="18" loading="lazy"><span>{esc(c["provider"])}</span></div>') for i, c in enumerate(D['featured']))
-parts.append(part('featured', 'B', '#2f9be0', '#145e9b', 'Featured learning', 'Courses worth exploring',
-    'Highlights from the full record. Nothing moves on its own: scroll or swipe along the line at your own pace.',
-    '<a class="hg-open" href="#timeline">Browse all courses <span aria-hidden="true">↓</span></a>', [rail('', fe, 'featured courses')]))
+# B. featured learning: every specialization, learning path / professional certificate, master course and 5 h+ course in the record
+AFF = [(r'Duke University', 'Duke University', 'universities/duke-university-logo.png'), (r'IE Business School', 'IE Business School', 'universities/ie-business-school-logo.png'),
+ (r'University of California San Diego', 'UC San Diego', 'universities/university-of-california-san-diego-ucsd-logo.png'),
+ (r'American Marketing Association|Generative AI for Marketing', 'American Marketing Association', 'institutions/american-marketing-association-ama-logo.png'),
+ (r'Toastmasters', 'Toastmasters International', 'institutions/toastmasters-international-logo.png'),
+ (r'Microsoft and LinkedIn|Career Essentials in Project Management', 'Microsoft', 'institutions/microsoft-logo.png'),
+ (r'Sales Management Foundations', 'Sales Management Association', 'institutions/sales-management-association-logo.png'),
+ (r'Zendesk', 'Zendesk', 'institutions/zendesk-logo.png')]
+DUR = {'master microsoft excel': '14 h 54 min', 'master microsoft powerpoint': '9 h 32 min', 'presentation tips': '5 h 11 min'}
+MON = {m: i + 1 for i, m in enumerate('Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec'.split())}
+import datetime
+FE = []
+for m in re.finditer(r'<article class="course-row" data-category="([^"]*)" data-provider="([^"]*)".*?<h3>(.*?)</h3>.*?<div class="date">(.*?)</div>', src, re.S):
+    cat, prov, title, dl = (html.unescape(x) for x in m.groups())
+    isp = dl.startswith('Learning path') or 'Professional Certificate' in title
+    dk = next((v for k, v in DUR.items() if title.lower().startswith(k)), None)
+    if not (isp or dk or re.match(r'Master ', title)): continue
+    dm = re.search(r'(\d+) (\w{3})\w* (\d{4})', dl)
+    dt = datetime.date(int(dm.group(3)), MON[dm.group(2)], int(dm.group(1))) if dm else None
+    key = re.sub(r'\s+by .*$|\s*\(.*\)$', '', title).lower().replace(' professional certificate', '')
+    if any(f['key'] == key for f in FE): continue
+    kind = 'Learning path' if isp else ('Master course' if title.startswith('Master ') else 'Course · 5 h+')
+    FE.append(dict(key=key, title=title, prov=prov, cat=cat, dt=dt, dur=dk, kind=kind))
+FE.sort(key=lambda f: (f['dt'] is None, -(f['dt'].toordinal() if f['dt'] else 0)))
+SPEC = [dict(key='spec1', title='Marketing Strategy Specialization', prov='Coursera', cat='Marketing & Brand Strategy', dt=None, dur=None, kind='Specialization · 5 courses', org='IE Business School', logo='universities/ie-business-school-logo.png', when='Jan 2023'),
+        dict(key='spec2', title='Drug Development Product Management Specialization', prov='Coursera', cat='Pharmaceutical & Product Management', dt=None, dur=None, kind='Specialization · 3 courses', org='UC San Diego', logo='universities/university-of-california-san-diego-ucsd-logo.png', when='Oct 2020')]
+def fe_card(i, f):
+    if 'org' not in f:
+        for pat, nm, lg in AFF:
+            if re.search(pat, f['title'], re.I): f['org'], f['logo'] = nm, lg; break
+    when = f.get('when') or (f['dt'].strftime('%b %Y') if f['dt'] else '')
+    h = f'<span class="hg-pill">{esc(f["cat"])}</span><h4>{esc(f["title"])}</h4>'
+    if f.get('dur'): h += f'<div class="hg-dur">{CLOCK}{esc(f["dur"])}</div>'
+    h += f'<div class="hg-src"><img src="{esc(PM.get(f["prov"], ""))}" alt="" width="18" height="18" loading="lazy"><span>{esc(f["prov"])}</span></div>'
+    if f.get('org'): h += '<div class="hg-aff">' + (f'<img src="/assets/img/logos/{f["logo"]}" alt="" width="34" height="34" loading="lazy">' if f.get('logo') else '') + f'<span>{esc(f["org"])}</span></div>'
+    h += f'<div class="hg-foot"><span class="hg-path">{esc(f["kind"])}</span>' + (f'<time>{esc(when)}</time>' if when else '') + '</div>'
+    return cell(i, 'hg-card--feat', h)
+ALLF = SPEC + FE
+fe = ''.join(fe_card(i, f) for i, f in enumerate(ALLF))
+parts.append(part('featured', 'B', '#2f9be0', '#145e9b', 'Featured learning', 'Specializations, paths & master courses',
+    'Every specialization, learning path, professional certificate and master course, plus the courses over five hours, hanging in one line. Nothing moves on its own: scroll or swipe at your own pace.',
+    f'<div class="hg-tags"><span class="hg-tag">{len(ALLF)} credentials &amp; paths</span></div><a class="hg-open" href="#timeline">Browse all courses <span aria-hidden="true">↓</span></a>',
+    [rail('', fe, 'featured learning')], 'Learning time is shown only where a certificate states it.'))
 # C. universities behind Coursera
 un = ''.join(uni_card(i, c) for i, c in enumerate(D['universities']))
 parts.append(part('universities', 'C', '#1fae7b', '#0b6f4d', 'Coursera · online certificates', 'Universities behind my Coursera certificates',
@@ -96,25 +134,6 @@ pr = ''.join(uni_card(i, c) for i, c in enumerate(D['professional']))
 stats = '<ul class="hg-stats">' + ''.join(f'<li><b>{esc(s["n"])}</b><span>{esc(s["l"])}</span></li>' for s in D['stats']) + '</ul>'
 parts.append(part('professional', 'D', '#ee8a22', '#9c4c00', 'LinkedIn Learning · professional bodies', 'Specialised institutions behind my skill courses',
     D['prof_lead'], stats, [rail('', pr, 'professional bodies')], D['prof_note']))
-# E. long-form (>5 h): hours printed on certificates only
-LONG = []
-for c in D['professional']:
-    for it in c['items']:
-        t, chip, k = split_item(it['t'])
-        if k == 'dur':
-            m = re.match(r'(\d+)\s*h(?:\s*(\d+)\s*min)?', chip); mins = int(m.group(1)) * 60 + int(m.group(2) or 0) if m else 0
-            if mins > 300: LONG.append((mins, t, chip, it['d'], c['name']))
-LONG.sort(reverse=True)
-lc = ''
-for i, (mins, t, chip, dt, org) in enumerate(LONG):
-    ln = int(34 + mins / 60 * 5)  # longer course hangs lower
-    lc += cell(i, 'hg-card--long', f'<div class="hg-big">{esc(chip.replace(" min", "m").replace(" h ", "h "))}</div><h4>{esc(t)}</h4><div class="hg-src"><img src="{PM["LinkedIn Learning"]}" alt="" width="18" height="18" loading="lazy"><span>LinkedIn Learning</span></div><div class="hg-foot"><span class="hg-path">{ "Learning path" if "path" in t.lower() else "Course"}</span><time>{esc(dt)}</time></div>', ln)
-m = re.search(r'about (\d+ h \d+ min)', D['prof_note'])
-if m: lc += cell(len(LONG), 'hg-card--long hg-card--sum', f'<div class="hg-big">≈{esc(m.group(1).replace(" min", "m").replace(" h ", "h "))}</div><h4>Total across the 7 specialised paths</h4><p>As counted on the certificates.</p>', int(34 + 60 * 5 / 2.2))
-parts.append(part('long-form', 'E', '#b04fd3', '#76288f', 'Long-form learning · 5 h and more', 'Courses over five hours',
-    'The longer paths, with the learning time printed on the certificate. The longer the course, the lower it hangs.', '',
-    [rail('', lc, 'long courses')], 'Durations are shown only where a certificate states them. PDUs, CDUs and CPE credits are credit units, not hours.'))
-
 block = ('<!--LD-PARTS-->\n<section class="hg hg--x" id="learningParts" aria-label="Workshops, certificates and long courses"><div class="hg-xwrap">' + ''.join(parts) + '</div></section>\n<!--/LD-PARTS-->')
 if '<!--LD-PARTS-->' not in src:
     a = src.index('<section class="workshop-zone"'); b = src.index('<section class="band">')
@@ -128,4 +147,4 @@ if '<!--LD-PARTS-->' not in src:
 else:
     src = re.sub(r'<!--LD-PARTS-->.*?<!--/LD-PARTS-->', lambda m: block, src, flags=re.S)
 open(IDX, 'w', encoding='utf-8').write(src)
-print('parts', len(parts), 'long', len(LONG), {k: len(v) for k, v in D.items() if isinstance(v, list)})
+print('parts', len(parts), 'featured', len(ALLF), {k: len(v) for k, v in D.items() if isinstance(v, list)})

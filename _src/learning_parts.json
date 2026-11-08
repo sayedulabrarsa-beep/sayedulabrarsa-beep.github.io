@@ -470,6 +470,20 @@
  "trainings": [
   {
    "logos": [
+    "/assets/img/logos/opsonin-pharma-ltd-logo.png",
+    "/assets/img/logos/briddhi-we-help-to-grow-logo.png"
+   ],
+   "name": "Opsonin Pharma & Briddhi",
+   "items": [
+    {
+     "t": "Mastering Presentation Skills for Effective Brand Communication (conducted by Briddhi, organised by Opsonin Pharma)",
+     "d": ""
+    }
+   ],
+   "skills": []
+  },
+  {
+   "logos": [
     "/assets/img/logos/navana-pharmaceuticals-plc-logo.png",
     "/assets/img/logos/institutions/toss-talent-optimisation-strategic-solution-logo.png"
    ],
@@ -533,6 +547,10 @@
     {
      "t": "Suicide Prevention, a 2-hour participatory workshop",
      "d": "11 Sep 2021"
+    },
+    {
+     "t": "Failures Talk DIU Edition, learning session as organiser and volunteer",
+     "d": ""
     }
    ],
    "skills": []
@@ -546,6 +564,58 @@
     {
      "t": "Course Evaluation, online course",
      "d": "15 Feb 2024"
+    }
+   ],
+   "skills": []
+  },
+  {
+   "logos": [
+    "/assets/img/logos/bshrm-bangladesh-society-for-human-resources-management-logo.png"
+   ],
+   "name": "Bangladesh Society for Human Resources Management (BSHRM)",
+   "items": [
+    {
+     "t": "Unleash Your True Potential, training session",
+     "d": ""
+    }
+   ],
+   "skills": []
+  },
+  {
+   "logos": [
+    "/assets/img/logos/hrdi-human-resource-development-institute-logo.png"
+   ],
+   "name": "Human Resource Development Institute (HRDI)",
+   "items": [
+    {
+     "t": "Dynamic Professional: Mastering Impression Management",
+     "d": ""
+    }
+   ],
+   "skills": []
+  },
+  {
+   "logos": [
+    "/assets/img/logos/diu-career-development-center-cdc-logo.png"
+   ],
+   "name": "DIU Career Development Center",
+   "items": [
+    {
+     "t": "Road To Corporate workshop",
+     "d": ""
+    }
+   ],
+   "skills": []
+  },
+  {
+   "logos": [
+    "/assets/img/logos/coach-kamrul-hasan-ckh-network-logo.png"
+   ],
+   "name": "CKH Network",
+   "items": [
+    {
+     "t": "Campus ambassador and volunteer learning",
+     "d": ""
     }
    ],
    "skills": []

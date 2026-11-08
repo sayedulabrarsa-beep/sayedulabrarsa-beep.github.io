@@ -162,7 +162,7 @@ els.forEach(function(el,i){el.classList.add('lt-rv');el.style.setProperty('--d',
 /* skill-by-skill hanging lines: arrows, mouse drag, reveal */
 (function(){
   var parts=[].slice.call(document.querySelectorAll('.hg-part'));if(!parts.length)return;
-  parts.forEach(function(part){
+  [].slice.call(document.querySelectorAll('.hg-rail')).forEach(function(part){
     var tr=part.querySelector('.hg-track'),pv=part.querySelector('.hg-prev'),nx=part.querySelector('.hg-next');if(!tr)return;
     function upd(){var max=tr.scrollWidth-tr.clientWidth-2;if(pv)pv.disabled=tr.scrollLeft<=2;if(nx)nx.disabled=tr.scrollLeft>=max}
     function go(d){tr.scrollBy({left:d*Math.max(260,tr.clientWidth*.72),behavior:'smooth'})}
