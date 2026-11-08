@@ -1,23 +1,43 @@
 (function(){
   var cab=document.getElementById('cab');if(!cab)return;
-  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
   var dlgs=[].slice.call(document.querySelectorAll('.cab-dlg'));
+  var dws=[].slice.call(cab.querySelectorAll('.dw'));
+  var allBtn=document.getElementById('cab-all');
   var cur=-1,lastBtn=null;
 
-  /* doors: closed until the cabinet scrolls into view, then swing open */
-  cab.classList.add('cab-js');
-  function openDoors(){
-    if(cab.classList.contains('is-open'))return;
-    cab.classList.add('is-open');
-    setTimeout(function(){cab.classList.add('cab-ready');},reduce?0:2400);
+  /* ---- drawers ---- */
+  function setOpen(dw,on){
+    dw.classList.toggle('is-open',on);
+    dw.querySelector('.dw-toggle').setAttribute('aria-expanded',on?'true':'false');
+    dw.querySelector('.dw-view').tabIndex=on?0:-1;
+    var cta=dw.querySelector('.dw-cta'),t=dw.querySelector('.dw-cta-t');
+    cta.tabIndex=on?-1:0;
+    cta.setAttribute('aria-hidden',on?'true':'false');
+    if(t)t.textContent='Open to see my portfolio';
   }
-  if(reduce||!('IntersectionObserver' in window)){openDoors();}
-  else{
-    var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){openDoors();io.disconnect();}});},{threshold:.35});
-    io.observe(cab);
-    setTimeout(openDoors,6000);
+  dws.forEach(function(dw){setOpen(dw,false);});
+  function syncAll(){
+    var all=dws.every(function(d){return d.classList.contains('is-open');});
+    if(allBtn){allBtn.setAttribute('aria-pressed',all?'true':'false');allBtn.textContent=all?'Close all drawers':'Open all drawers';}
   }
+  cab.addEventListener('click',function(ev){
+    var dw=ev.target.closest('.dw');if(!dw)return;
+    if(ev.target.closest('.dw-x')){setOpen(dw,false);var tg=dw.querySelector('.dw-toggle');if(tg)tg.focus({preventScroll:true});syncAll();return;}
+    if(ev.target.closest('.dw-view')){lastBtn=dw.querySelector('.dw-view');show(dws.indexOf(dw));return;}
+    if(ev.target.closest('.dw-toggle')||ev.target.closest('.dw-cta')||ev.target.closest('.dw-front')){
+      var open=dw.classList.contains('is-open');
+      if(!open){
+        setOpen(dw,true);syncAll();
+        setTimeout(function(){var v=dw.querySelector('.dw-view');if(v)v.focus({preventScroll:true});},650);
+      }else if(ev.target.closest('.dw-toggle')){setOpen(dw,false);syncAll();}
+    }
+  });
+  if(allBtn)allBtn.addEventListener('click',function(){
+    var on=allBtn.getAttribute('aria-pressed')!=='true';
+    dws.forEach(function(d,i){setTimeout(function(){setOpen(d,on);syncAll();},i*140);});
+  });
 
+  /* ---- detail dialog ---- */
   function show(i){
     var d=dlgs[i];if(!d)return;cur=i;
     if(typeof d.showModal==='function'){if(!d.open)d.showModal();}else{d.setAttribute('open','');}
@@ -25,19 +45,12 @@
     var s=d.querySelector('.cab-dlg-side'),m=d.querySelector('.cab-dlg-main');
     if(s)s.scrollTop=0;if(m)m.scrollTop=0;
   }
-  function hide(d){
-    if(d.open&&typeof d.close==='function')d.close();else d.removeAttribute('open');
-  }
+  function hide(d){if(d.open&&typeof d.close==='function')d.close();else d.removeAttribute('open');}
   function go(step){
-    var from=cur;if(from<0)return;
-    var n=(from+step+dlgs.length)%dlgs.length;
+    if(cur<0)return;var from=cur,n=(from+step+dlgs.length)%dlgs.length;
+    if(dws[n])setOpen(dws[n],true);syncAll();
     hide(dlgs[from]);show(n);
   }
-
-  cab.addEventListener('click',function(ev){
-    var b=ev.target.closest('[data-cab-open]');if(!b)return;
-    lastBtn=b;show(dlgs.indexOf(document.getElementById(b.getAttribute('data-cab-open'))));
-  });
   dlgs.forEach(function(d){
     d.addEventListener('click',function(ev){
       if(ev.target===d){hide(d);return;}
@@ -46,7 +59,6 @@
       else if(ev.target.closest('[data-cab-next]'))go(1);
     });
     d.addEventListener('close',function(){
-      /* a plain close (not prev/next) releases the page scroll and returns focus */
       setTimeout(function(){
         if(!dlgs.some(function(x){return x.open;})){
           document.documentElement.style.overflow='';cur=-1;
@@ -55,7 +67,7 @@
       },0);
     });
     d.addEventListener('keydown',function(ev){
-      if(ev.key==='ArrowLeft'){go(-1);}else if(ev.key==='ArrowRight'){go(1);}
+      if(ev.key==='ArrowLeft')go(-1);else if(ev.key==='ArrowRight')go(1);
     });
   });
 })();

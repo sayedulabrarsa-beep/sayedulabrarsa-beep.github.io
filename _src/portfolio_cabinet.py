@@ -243,11 +243,18 @@ def dialog(p, idx, total):
 </div></div></dialog>'''
 
 def bay(p, n):
-    logo = " cab-slot--logo" if p.get("logo") else ""
-    return f'''<li class="cab-bay" style="--ac:{p["ac"]};--i:{n}"><button type="button" class="cab-hit" data-cab-open="cab-{p["id"]}" aria-haspopup="dialog" aria-label="Open {e(p["name"])} details">
-<span class="cab-slot{logo}"><img src="{p["img"]}" alt="{e(p["alt"])}" loading="lazy" decoding="async"><i class="cab-shadow"></i></span>
-<span class="cab-plate"><b>{e(p["name"])}</b><small>{e(p["form"])}</small></span>
-<span class="cab-go">Open drawer <i>+</i></span></button></li>'''
+    logo = " dw-shot--logo" if p.get("logo") else ""
+    nm = e(p["name"])
+    return f'''<li class="dw" style="--ac:{p["ac"]};--i:{n}">
+<div class="dw-cavity"><i class="dw-led" aria-hidden="true"></i>
+<button type="button" class="dw-x" aria-label="Close the {nm} drawer">✕</button>
+<button type="button" class="dw-view" data-cab-open="cab-{p["id"]}" aria-haspopup="dialog" aria-label="View full details of {nm}" tabindex="-1">
+<span class="dw-shot{logo}"><img src="{p["img"]}" alt="{e(p["alt"])}" loading="lazy" decoding="async"><i class="dw-shadow"></i></span>
+<span class="dw-more">View full details <i>→</i></span></button></div>
+<div class="dw-front"><button type="button" class="dw-toggle" aria-expanded="false" aria-label="Open the {nm} drawer"><span class="dw-handle" aria-hidden="true"></span></button>
+<span class="dw-plate"><b>{nm}</b><small>{e(p["form"])}</small></span>
+<span class="dw-mid" aria-hidden="true"><em>{n+1:02d}</em><span>{e(p["co"])}</span></span>
+<button type="button" class="dw-cta" tabindex="-1"><span class="dw-cta-t">Open to see my portfolio</span><i>+</i></button></div></li>'''
 
 def build():
     order = [P[0], P[1], P[2], P[3], HP, MALIFA]
@@ -255,14 +262,14 @@ def build():
     dlgs = "\n".join(dialog(p, i, len(order)) for i, p in enumerate(order))
     block = f'''<!--PC-START-->
 <section class="cab-sec" id="cabinet" aria-labelledby="cab-h"><div class="wrap">
-<div class="portfolio-section-heading cab-head"><p class="eyebrow">Product cabinet</p><h2 id="cab-h">The packs I have worked on, on the shelf</h2>
-<p>Six products across two companies. Tap any pack to open its drawer with the box, the composition and the full reference details.</p></div>
+<div class="portfolio-section-heading cab-head"><p class="eyebrow">Product portfolio · Opsonin Pharma &amp; Navana Pharmaceuticals</p><h2 id="cab-h">Portfolio I’m proud to be part of</h2>
+<p>Six pharmaceutical brands, each one built through planning, positioning and teamwork. Every pack sits in its own drawer. Open a drawer to see the product, then step inside for the full reference.</p>
+<button type="button" class="cab-all" id="cab-all" aria-pressed="false">Open all drawers</button></div>
 <div class="cab" id="cab">
-<div class="cab-cornice"><span class="cab-lamp" aria-hidden="true"></span><span class="cab-title">Product cabinet</span><span class="cab-lamp" aria-hidden="true"></span></div>
+<div class="cab-cornice"><span class="cab-lamp" aria-hidden="true"></span><span class="cab-title">Portfolio cabinet</span><span class="cab-lamp" aria-hidden="true"></span></div>
 <div class="cab-body">
-<div class="cab-tier" data-t="1"><p class="cab-tag"><b>Opsonin Pharma</b> · Gastro portfolio · current</p><ul class="cab-row">{"".join(bays[:3])}</ul></div>
-<div class="cab-tier" data-t="2"><p class="cab-tag"><b>Opsonin Pharma</b> · MUPS &amp; H. pylori pack · current <span class="cab-sep">|</span> <b>Navana Pharmaceuticals</b> · Malifa · previous</p><ul class="cab-row">{"".join(bays[3:])}</ul></div>
-<div class="cab-doors" aria-hidden="true"><i class="cab-door cab-door--l"><s></s></i><i class="cab-door cab-door--r"><s></s></i></div>
+<div class="cab-tier"><p class="cab-tag"><b>Opsonin Pharma</b> · Gastro portfolio · current</p><ul class="cab-row">{"".join(bays[:3])}</ul></div>
+<div class="cab-tier"><p class="cab-tag"><b>Opsonin Pharma</b> · MUPS &amp; H. pylori pack · current <span class="cab-sep">|</span> <b>Navana Pharmaceuticals</b> · Malifa · previous</p><ul class="cab-row">{"".join(bays[3:])}</ul></div>
 </div>
 <div class="cab-base" aria-hidden="true"><i></i><i></i></div>
 </div>
@@ -272,11 +279,9 @@ def build():
 </section>
 <!--PC-END-->'''
     s = PAGE.read_text(encoding="utf-8")
-    if "<!--PC-START-->" in s:
-        s = re.sub(r"<!--PC-START-->.*?<!--PC-END-->", lambda m: block, s, flags=re.S)
-    else:
-        k = s.index('<section class="portfolio-projects')
-        s = s[:k] + block + "\n" + s[k:]
+    s = re.sub(r"<!--PC-START-->.*?<!--PC-END-->\n?", "", s, flags=re.S)
+    k = s.index('<section class="partner-wall')
+    s = s[:k] + block + "\n" + s[k:]
     PAGE.write_text(s, encoding="utf-8")
     print("ok", len(block))
 
