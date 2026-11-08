@@ -211,7 +211,6 @@ def sec_malifa(p):
         ])),
         ("Pregnancy, lactation & special populations", "<p>After oral use ferric maltol is not absorbed systemically as an intact complex, so fetal exposure and infant exposure through milk are not expected. There are no data on human milk presence, effects on the breastfed child or on milk production. No well-established dose change is defined for renal or hepatic impairment, so use physician oversight.</p>"),
         ("Overdose & storage", "<p><b>Overdose.</b> No overdose data are available for Malifa. Early signs of iron overload include nausea, vomiting, abdominal pain and diarrhoea, and serious cases can progress to systemic toxicity. Seek immediate help.</p><p><b>Storage.</b> Cool place below 25 °C (listing), dry and protected from light. Some references quote below 30 °C, so follow the pack. Keep out of reach of children.</p>"),
-        ("Listed price (MedEx)", "<p>Unit ৳11.00 · strip ৳110.00 · pack of 6 × 10 ৳660.00. Prices change, so confirm at the pharmacy.</p>"),
     ]
 
 def body_malifa(p):
@@ -234,7 +233,7 @@ def dialog(p, idx, total):
         body = body_malifa(p)
         rows = [("Brand", "Malifa 30 mg Capsule"), ("Generic", "Ferric maltol 30 mg"), ("Form", p["form"]), ("Pack", p["pack"]),
                 ("Class", "Oral iron preparation"), ("Company", p["co"])]
-        src = "Sources: Bangladesh drug listing (MedEx) as used on the Malifa brand page, plus a general ferric maltol monograph. Not a manufacturer insert."
+        src = "Sources: official Navana Pharmaceuticals product information, plus a general ferric maltol monograph. Not a manufacturer insert."
         links = ""
     img = (f'<img src="{p["img"]}" alt="{e(p["alt"])}" loading="lazy" decoding="async"'
            f'{" class=cab-logo" if p.get("logo") else ""}>')

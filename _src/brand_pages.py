@@ -8,7 +8,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "_src"))
 import portfolio_cabinet as C
 e = html.escape
-TOK = "pc3-20261108"
+TOK = "pc5-20261108"
 
 PAGES = {
  "finix": dict(ac="#1d9a5b", imgs=[("finix-10-capsule-box", C.P[0]["alt"]), ("finix-20-capsule-box", C.P[1]["alt"]), ("finix-20-tablet-box", C.P[2]["alt"])],
@@ -35,6 +35,19 @@ PAGES = {
 SIZES = {"finix-10-capsule-box": (689, 320), "finix-20-capsule-box": (900, 397), "finix-20-tablet-box": (385, 308),
          "finix-mups-20-tablet-box": (804, 673), "finix-hp-pack-box": (940, 594), "malifa-30-capsule-box": (692, 403)}
 
+ALL = [("finix", "Finix", "Rabeprazole · capsule & tablet", "finix-20-capsule-box", None),
+       ("finix-mups", "Finix MUPS 20", "Rabeprazole 20 mg · MUPS tablet", "finix-mups-20-tablet-box", None),
+       ("finix-hp", "Finix HP", "H. pylori combination pack", "finix-hp-pack-box", None),
+       ("malifa", "Malifa 30", "Ferric maltol 30 mg · Capsule", "malifa-30-capsule-box", None),
+       ("prev-megamag", "Megamag", "Navana Pharmaceuticals", None, "navana-pharmaceuticals-plc-logo.png"),
+       ("prev-loxodol", "Loxodol", "Navana Pharmaceuticals", None, "navana-pharmaceuticals-plc-logo.png")]
+STRIP = {"finix": [("Company", "Opsonin Pharma"), ("Generic", "Rabeprazole sodium"), ("Presentations", "3 packs"), ("Role", "Product Executive")],
+         "finix-mups": [("Company", "Opsonin Pharma"), ("Generic", "Rabeprazole 20 mg"), ("Form", "MUPS tablet"), ("Role", "Product Executive")],
+         "finix-hp": [("Company", "Opsonin Pharma"), ("Regimen", "3-drug kit"), ("Supply", "Rx only"), ("Role", "Product Executive")],
+         "malifa": [("Company", "Navana Pharmaceuticals"), ("Generic", "Ferric maltol"), ("Pack", "6 × 10 capsules"), ("Role", "Brand Executive")]}
+def facts_strip(key):
+    return f'<ul class="bt-strip" style="--ac:{PAGES[key]["ac"]}">' + "".join(f'<li><small>{e(a)}</small><b>{e(b)}</b></li>' for a, b in STRIP[key]) + '</ul>'
+
 def drawer(n, title, body, open_=False):
     return (f'<details class="mdr"{" open" if open_ else ""}><summary><span class="mdr-no">{n:02d}</span>'
             f'<span class="mdr-t">{title}</span><span class="mdr-pull" aria-hidden="true"><i></i></span></summary><div class="mdr-b">{body}</div></details>')
@@ -49,6 +62,9 @@ def hero(key, cfg, logo):
 def build(key):
     cfg = PAGES[key]
     src = (ROOT / "_src" / "brand_orig" / f"{key}.html").read_text(encoding="utf-8")
+    if key == "malifa":
+        src = re.sub(r', "citation": "https://medex[^"]*"', '', src)
+        src = re.sub(r'<tr><th>Listed price \(MedEx\)</th>.*?</tr>\n?', '', src, flags=re.S)
     a = src.index('<div class="wrap product-info">') + len('<div class="wrap product-info">')
     z = src.index("</div></section>", a)
     info = src[a:z]
@@ -112,12 +128,33 @@ def build(key):
         secs.append(("Frequently asked questions", faq + "".join(f"<p><b>{e(q)}</b><br>{e(a_)}</p>" for q, a_ in C.FX_FAQ), False))
     drawers = "".join(drawer(i + 1, t, b, o) for i, (t, b, o) in enumerate(secs))
 
-    back = '<a class="btn secondary" href="/portfolio/#cabinet">← Back to the portfolio cabinet</a>'
-    if 'class="product-actions">' in tail:
-        tail = tail.replace('<div class="product-actions">', '<div class="product-actions">' + back, 1)
+    links = re.findall(r'<a class="btn[^"]*" href="(https://[^"]+)"', tail)
+    official, insert = links[0], links[1]
+    note_m = re.search(r'<p class="medical-note">(.*?)</p>', tail, re.S)
+    if note_m:
+        note = note_m.group(1).split("<br>", 1)[1]
     else:
-        tail += f'<div class="product-actions">{back}</div>'
-    new_info = (hero(key, cfg, logo) + f'<div class="mdr-wrap" style="--ac:{cfg["ac"]}">{drawers}</div>' + tail + related)
+        note = "This page is a summary of public manufacturer information, not medical advice. Consult the current official label and a qualified healthcare professional for clinical decisions."
+    reading = ('<p class="bt-read">Related reading: <a href="/blog/iron-deficiency-vs-anemia/">Iron Deficiency vs Anemia: What Is the Difference?</a></p>'
+               if key == "malifa" else "")
+    off_label = "Official Navana product page" if key == "malifa" else "Official Opsonin product page"
+    dock = (f'<div class="bt-dock" style="--ac:{cfg["ac"]}"><div class="bt-note"><span class="bt-tag">Medical information notice</span><p>{e(note)}</p>{reading}</div>'
+            f'<div class="bt-btns"><a class="bt-btn is-main" href="{official}" target="_blank" rel="noopener"><i>↗</i><b>{off_label}</b><small>Opens the manufacturer site</small></a>'
+            f'<a class="bt-btn" href="{insert}" target="_blank" rel="noopener"><i>PDF</i><b>Manufacturer insert</b><small>Official leaflet, new tab</small></a>'
+            f'<a class="bt-btn" href="/portfolio/#cabinet"><i>←</i><b>Back to the cabinet</b><small>See every pack in the portfolio</small></a></div></div>')
+    cards = []
+    for k2, nm, sub, img, lgf in ALL:
+        if k2 == key: continue
+        pic = f'<img src="/assets/img/products/{img}.webp" alt="{e(nm)} pack" loading="lazy" decoding="async">' if img else f'<img class="bt-lg" src="/assets/img/logos/{lgf}" alt="Navana Pharmaceuticals logo" loading="lazy" decoding="async">'
+        inner = f'<span class="bt-pic">{pic}</span><b>{e(nm)}</b><small>{e(sub)}</small>'
+        if k2.startswith("prev-"):
+            cards.append(f'<div class="bt-card is-static" style="--ac:#8a7a66">{inner}<em>Previous portfolio</em></div>')
+        else:
+            cards.append(f'<a class="bt-card" style="--ac:{PAGES[k2]["ac"]}" href="/brands/{k2}/">{inner}<em>Open details →</em></a>')
+    shelf = ('<div class="bt-shelf"><div class="bt-head"><span class="product-brand-kicker">The wider portfolio</span><h2>More from the cabinet</h2>'
+             '<p>Other brands I have worked on, current at Opsonin Pharma and previous at Navana Pharmaceuticals.</p></div>'
+             f'<div class="bt-row">{"".join(cards)}</div><div class="bt-rail"></div></div>')
+    new_info = (hero(key, cfg, logo) + facts_strip(key) + f'<div class="mdr-wrap" style="--ac:{cfg["ac"]}">{drawers}</div>' + dock + shelf)
     out = src[:a] + new_info + src[z:]
     out = out.replace("</main>", '<a class="mf-float" href="/portfolio/#cabinet" aria-label="Back to the portfolio cabinet">← Portfolio</a></main>', 1)
     out = re.sub(r'/assets/style\.css\?v=[^"]*', f'/assets/style.css?v={TOK}', out)
