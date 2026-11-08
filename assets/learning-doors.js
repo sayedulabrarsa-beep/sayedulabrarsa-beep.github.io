@@ -158,3 +158,23 @@ if(!els.length)return;
 var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -6% 0px'});
 els.forEach(function(el,i){el.classList.add('lt-rv');el.style.setProperty('--d',(i%4)*80+'ms');io.observe(el)});
 })();
+
+/* skill-by-skill hanging lines: arrows, mouse drag, reveal */
+(function(){
+  var parts=[].slice.call(document.querySelectorAll('.hg-part'));if(!parts.length)return;
+  parts.forEach(function(part){
+    var tr=part.querySelector('.hg-track'),pv=part.querySelector('.hg-prev'),nx=part.querySelector('.hg-next');if(!tr)return;
+    function upd(){var max=tr.scrollWidth-tr.clientWidth-2;if(pv)pv.disabled=tr.scrollLeft<=2;if(nx)nx.disabled=tr.scrollLeft>=max}
+    function go(d){tr.scrollBy({left:d*Math.max(260,tr.clientWidth*.72),behavior:'smooth'})}
+    if(pv)pv.addEventListener('click',function(){go(-1)});if(nx)nx.addEventListener('click',function(){go(1)});
+    tr.addEventListener('scroll',function(){window.requestAnimationFrame(upd)},{passive:true});window.addEventListener('resize',upd);upd();
+    tr.addEventListener('keydown',function(e){if(e.key==='ArrowRight'){go(1);e.preventDefault()}else if(e.key==='ArrowLeft'){go(-1);e.preventDefault()}});
+    var down=false,sx=0,sl=0,moved=false;
+    tr.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse'||e.button!==0)return;down=true;moved=false;sx=e.clientX;sl=tr.scrollLeft});
+    window.addEventListener('pointermove',function(e){if(!down)return;var dx=e.clientX-sx;if(!moved&&Math.abs(dx)>6){moved=true;tr.classList.add('is-drag')}if(moved)tr.scrollLeft=sl-dx});
+    window.addEventListener('pointerup',function(){if(!down)return;down=false;tr.classList.remove('is-drag');window.setTimeout(upd,60)});
+  });
+  if(!('IntersectionObserver' in window)||window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  parts.forEach(function(p){p.classList.add('hg-rv');io.observe(p)});
+})();

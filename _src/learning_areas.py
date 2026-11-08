@@ -8,7 +8,7 @@ from collections import OrderedDict
 
 SITE = 'https://sayedulabrar.site'
 TODAY = datetime.date.today().isoformat()
-CSSV = 'ld9-20261107'
+CSSV = 'ld12-20261107'
 P = 'learning/index.html'
 
 AREAS = OrderedDict([
@@ -57,7 +57,9 @@ for cat, prov, b in rows:
     sub = re.sub(r'^(Coursera|LinkedIn Learning)\s*·\s*', '', sub)
     m = re.search(r'(\d{1,2}) ([A-Z][a-z]{2}) (\d{4})', dl)
     date = datetime.date(int(m.group(3)), MON[m.group(2)], int(m.group(1))) if m else None
-    courses.append(dict(cat=cat, prov=prov, title=title, sub=sub, path=is_path, date=date))
+    dm = re.search(r'<p class="desc">(.*?)</p>', b)
+    desc = html.unescape(dm.group(1)).strip() if dm else ''
+    courses.append(dict(cat=cat, prov=prov, title=title, sub=sub, path=is_path, date=date, desc=desc))
 by = OrderedDict((c, []) for c in AREAS)
 for c in courses: by[c['cat']].append(c)
 order = sorted(AREAS, key=lambda c: -len(by[c]))
@@ -94,6 +96,76 @@ if '<!--LD-DOORS-->' not in src:
     src = re.sub(r'<section class="ld-zone".*?</section>\s*', '', src, flags=re.S)
     src = src.replace('<script src="/assets/learning-doors.js?v=ld4-20261107" defer></script>', '')
     src = src.replace('<script src="/assets/site.js?', '<script src="/assets/learning-doors.js?v=' + CSSV + '" defer></script><script src="/assets/site.js?', 1)
+# ------------------------------------------------------------------ hanging-lines section (by skill)
+LG = '/assets/img/logos/'
+AFF = [  # (pattern searched in title + date line + description, display name, logo file or None) - only affiliations the record itself states
+ (r'Duke University', 'Duke University', 'universities/duke-university-logo.png'),
+ (r'IE Business School', 'IE Business School', 'universities/ie-business-school-logo.png'),
+ (r'Indian School of Business', 'Indian School of Business', None),
+ (r'Johns Hopkins', 'Johns Hopkins University', 'universities/johns-hopkins-university-logo.png'),
+ (r'Stanford Online', 'Stanford Online', 'universities/stanford-online-logo.png'),
+ (r'UC San Diego', 'UC San Diego', 'universities/university-of-california-san-diego-ucsd-logo.png'),
+ (r'University of California, Irvine', 'UC Irvine', 'universities/uc-irvine-division-of-continuing-education-logo.png'),
+ (r'University of Pennsylvania', 'University of Pennsylvania', 'universities/wharton-online-university-of-pennsylvania-logo.png'),
+ (r'University of Toronto', 'University of Toronto', None),
+ (r'Yale University', 'Yale University', 'universities/yale-university-logo.png'),
+ (r'Toastmasters International', 'Toastmasters International', 'institutions/toastmasters-international-logo.png'),
+ (r'American Marketing Association', 'American Marketing Association', 'institutions/american-marketing-association-ama-logo.png'),
+ (r'Microsoft and LinkedIn|Microsoft career essentials|Microsoft learning path', 'Microsoft', 'institutions/microsoft-logo.png'),
+]
+PROV_MARK = {'LinkedIn Learning': '/assets/img/linkedin-learning-mark.svg', 'Coursera': '/assets/img/coursera-mark.svg'}
+LENS = [30, 58, 42, 70, 36, 52]
+def affil(c):
+    t = ' '.join([c['title'], c['sub'], c.get('desc', '')])
+    for pat, name, logo in AFF:
+        if re.search(pat, t, re.I): return name, logo
+    return None
+def lastem(t):
+    w = esc(t).rsplit(' ', 1)
+    return (w[0] + ' <em>' + w[1] + '</em>') if len(w) == 2 else '<em>' + w[0] + '</em>'
+def hang_card(c, i, cat):
+    a = AREAS[cat]; af = affil(c)
+    h = f'<li class="hg-cell"><div class="hg-card" style="--len:{LENS[i % len(LENS)]}px;--d:{(i % 7) * 0.45:.2f}s;--r:{(-0.9, 0.7, -0.5, 1.0, -0.7, 0.5)[i % 6]}deg">'
+    h += '<i class="hg-peg" aria-hidden="true"></i>'
+    h += f'<span class="hg-ico" aria-hidden="true">{ICONS[a["icon"]]}</span>'
+    h += f'<h4>{esc(c["title"])}</h4>'
+    h += f'<div class="hg-src"><img src="{PROV_MARK[c["prov"]]}" alt="" width="18" height="18" loading="lazy"><span>{esc(c["prov"])}</span></div>'
+    if af:
+        name, logo = af
+        h += ('<div class="hg-aff">' + (f'<img src="{LG}{logo}" alt="" width="34" height="34" loading="lazy">' if logo else '<span class="hg-aff-dot" aria-hidden="true"></span>') + f'<span>{esc(name)}</span></div>')
+    foot = ('<span class="hg-path">Learning path</span>' if c['path'] else '') + (f'<time>{c["date"].strftime("%b %Y")}</time>' if c['date'] else '')
+    if foot: h += f'<div class="hg-foot">{foot}</div>'
+    return h + '</div></li>'
+def hang_part(cat, n):
+    a = AREAS[cat]; cs = sorted(by[cat], key=lambda c: (c['date'] is None, -(c['date'].toordinal() if c['date'] else 0), c['title']))
+    pc = OrderedDict()
+    for c in cs: pc[c['prov']] = pc.get(c['prov'], 0) + 1
+    tags = ''.join(f'<span class="hg-tag"><img src="{PROV_MARK[k]}" alt="" width="14" height="14" loading="lazy">{esc(k)} <b>{v}</b></span>' for k, v in pc.items())
+    seen_a = OrderedDict()
+    for c in cs:
+        af = affil(c)
+        if af and af[1] and af[0] not in seen_a: seen_a[af[0]] = af[1]
+    logos = ''.join(f'<img src="{LG}{l}" alt="{esc(nm)}" title="{esc(nm)}" width="30" height="30" loading="lazy">' for nm, l in list(seen_a.items())[:8])
+    if logos: logos = f'<div class="hg-logos"><small>With</small>{logos}</div>'
+    cells = ''.join(hang_card(c, i, cat) for i, c in enumerate(cs))
+    return (f'<article class="hg-part" id="skill-{a["slug"]}" style="--c1:{a["c"][0]};--c2:{a["c"][1]}">'
+            f'<div class="hg-meta"><span class="hg-num">{n:02d}</span><span class="hg-cat">Skill · {len(cs)} courses</span>'
+            f'<h3>{lastem(cat)}</h3><p>{esc(a["lead"])}</p><div class="hg-tags">{tags}</div>{logos}'
+            f'<a class="hg-open" href="/learning/{a["slug"]}/">Open the full page <span aria-hidden="true">→</span></a></div>'
+            f'<div class="hg-rail"><button type="button" class="hg-arrow hg-prev" aria-label="Scroll {esc(cat)} back">←</button>'
+            f'<button type="button" class="hg-arrow hg-next" aria-label="Scroll {esc(cat)} forward">→</button>'
+            f'<div class="hg-track" tabindex="0" role="region" aria-label="{esc(cat)} courses, scroll sideways"><ol class="hg-line">{cells}</ol></div></div>'
+            f'<p class="hg-hint">Scroll to walk the line <span aria-hidden="true">→</span></p></article>')
+def hang_html():
+    jump = ''.join(f'<a href="#skill-{AREAS[c]["slug"]}" style="--c1:{AREAS[c]["c"][0]};--c2:{AREAS[c]["c"][1]}"><span>{ICONS[AREAS[c]["icon"]]}</span>{esc(c)}<b>{AREAS[c]["n"]}</b></a>' for c in order)
+    parts = ''.join(hang_part(c, i + 1) for i, c in enumerate(order))
+    return ('<section class="hg" id="bySkill" aria-label="Courses by skill"><div class="wrap"><header class="hg-head"><span class="hg-kick">By skill</span>'
+            '<h2>Every skill, <em>hanging on its own line.</em></h2>'
+            '<p>The same record, grouped by what I learned instead of when. Each skill is one line; every course hangs from it with the platform and, where the record names one, the university or organization behind it. Scroll along a line to walk through it.</p>'
+            f'<nav class="hg-jump" aria-label="Jump to a skill">{jump}</nav></header></div>{parts}</section>')
+if '<!--LD-HANG-->' not in src:
+    src = src.replace('<section class="lt-story"', '<!--LD-HANG--><!--/LD-HANG--><section class="lt-story"', 1)
+src = re.sub(r'<!--LD-HANG-->.*?<!--/LD-HANG-->', lambda m: '<!--LD-HANG-->' + hang_html() + '<!--/LD-HANG-->', src, flags=re.S)
 src = re.sub(r'<!--LD-DOORS-->.*?<!--/LD-DOORS-->', lambda m: '<!--LD-DOORS-->' + ''.join(door_html(c) for c in order) + '<!--/LD-DOORS-->', src, flags=re.S)
 src = re.sub(r'style\.css\?v=[\w-]+', 'style.css?v=' + CSSV, src)
 src = re.sub(r'learning-doors\.js\?v=[\w-]+', 'learning-doors.js?v=' + CSSV, src)
