@@ -121,9 +121,9 @@ P.append(finix("finix-mups-20", "Finix MUPS 20", "Rabeprazole Sodium BP 20 mg", 
 
 HP = dict(id="finix-hp", name="Finix HP", short="Rabeprazole 20 mg + Amoxicillin 500 mg + Clarithromycin 500 mg",
     form="H. pylori eradication combination pack", pack="7 sachets per carton, one combination blister in each",
-    img="/assets/img/logos/finix-hp-clarithromycin-amoxicillin-rabeprazole-logo.png",
-    alt="Finix HP logo, rabeprazole, amoxicillin and clarithromycin combination pack by Opsonin Pharma", ac="#7a3fb0",
-    co="Opsonin Pharma Ltd.", brand_page="/brands/finix-hp/", kind="hp", logo=True,
+    img="/assets/img/products/finix-hp-pack-box.webp",
+    alt="Finix HP carton and sachet, clarithromycin, amoxicillin and rabeprazole combination pack by Opsonin Pharma", ac="#7a3fb0",
+    co="Opsonin Pharma Ltd.", brand_page="/brands/finix-hp/", kind="hp",
     lead="Finix HP is a combination pack of rabeprazole, amoxicillin and clarithromycin. The manufacturer lists it for Helicobacter pylori eradication in specified ulcer conditions. It is not for routine acidity, gas or bloating.")
 
 MALIFA = dict(id="malifa-30", name="Malifa 30", short="Ferric maltol 30 mg", form="Capsule (oral)",
@@ -147,66 +147,75 @@ def dose_table():
     return ('<div class="cab-tw"><table class="cab-tbl"><thead><tr><th>Indication</th><th>Adult dose</th><th>Duration</th></tr></thead>'
             f'<tbody>{r}</tbody></table></div><p class="cab-small">Doses are general rabeprazole reference values. Always follow the prescriber and the current insert.</p>')
 
-def body_finix(p):
+def sec_finix(p):
     ind = ul(p["ind"]) + '<p class="cab-small"><b>Also described in general rabeprazole references:</b></p>' + ul(FX_IND_GEN)
     admin = ul(p["admin"]) + dose_table()
-    return "".join([
-        acc("Indications", ind, True),
-        acc("Dosage & administration", admin),
-        acc("How it works", f"<p>{e(FX_MOA)}</p>"),
-        acc("Interactions", ul(FX_INTER, True) + '<p class="cab-small">Tell the doctor or pharmacist about all medicines, supplements and herbal products.</p>'),
-        acc("Contraindications", ul(FX_CONTRA)),
-        acc("Side effects", f"<p>{e(FX_SIDE)}</p>"),
-        acc("Precautions & warnings", ul(FX_PREC)),
-        acc("Pregnancy, lactation & special populations", f"<p>{e(FX_PREG)}</p><p>{e(FX_SPECIAL)}</p>"),
-        acc("Overdose & storage", f"<p><b>Overdose.</b> {e(FX_OD)}</p><p><b>Storage.</b> {e(FX_STORE)}</p>"),
-        acc("Quick answers", "".join(f"<p><b>{e(q)}</b><br>{e(a)}</p>" for q, a in FX_FAQ)),
-    ])
+    return [
+        ("Indications", ind, True),
+        ("Dosage & administration", admin),
+        ("How it works", f"<p>{e(FX_MOA)}</p>"),
+        ("Interactions", ul(FX_INTER, True) + '<p class="cab-small">Tell the doctor or pharmacist about all medicines, supplements and herbal products.</p>'),
+        ("Contraindications", ul(FX_CONTRA)),
+        ("Side effects", f"<p>{e(FX_SIDE)}</p>"),
+        ("Precautions & warnings", ul(FX_PREC)),
+        ("Pregnancy, lactation & special populations", f"<p>{e(FX_PREG)}</p><p>{e(FX_SPECIAL)}</p>"),
+        ("Overdose & storage", f"<p><b>Overdose.</b> {e(FX_OD)}</p><p><b>Storage.</b> {e(FX_STORE)}</p>"),
+        ("Quick answers", "".join(f"<p><b>{e(q)}</b><br>{e(a)}</p>" for q, a in FX_FAQ)),
+    ]
+
+def body_finix(p):
+    return "".join(acc(*x) for x in sec_finix(p))
+
+def sec_hp(p):
+    comp = ul(["Rabeprazole Sodium BP 20 mg tablet", "Amoxicillin BP 500 mg capsule", "Clarithromycin USP 500 mg tablet"])
+    return [
+        ("Composition", comp + "<p>The manufacturer insert describes seven sachets per carton, with one combination blister in each sachet.</p>", True),
+        ("Manufacturer-listed use", "<p>Eradication of H. pylori in active chronic gastric and duodenal ulcer disease, as stated in the manufacturer's product information.</p>"),
+        ("How the components work", "<p>Rabeprazole inhibits the gastric H⁺/K⁺-ATPase proton pump and reduces acid secretion. Amoxicillin interferes with bacterial cell-wall synthesis. Clarithromycin inhibits bacterial protein synthesis through the 50S ribosomal subunit.</p>"),
+        ("Prescribing considerations", "<p>Suitability depends on confirmed diagnosis, allergy history, previous antibiotic exposure, interactions, organ function and local antimicrobial resistance. Clarithromycin-containing regimens may not suit every setting. A qualified prescriber must choose the regimen. Do not self-start, share or reuse this combination.</p>"),
+        ("Quick answers", "<p><b>Can it be taken for ordinary gas or heartburn?</b><br>No. It contains two antibiotics and needs a diagnosis and a prescription.</p><p><b>Does everyone with H. pylori need the same treatment?</b><br>No. A clinician weighs resistance, prior antibiotics, allergies, interactions and patient factors.</p>"),
+    ]
 
 def body_hp(p):
-    comp = ul(["Rabeprazole Sodium BP 20 mg tablet", "Amoxicillin BP 500 mg capsule", "Clarithromycin USP 500 mg tablet"])
-    return "".join([
-        acc("Composition", comp + "<p>The manufacturer insert describes seven sachets per carton, with one combination blister in each sachet.</p>", True),
-        acc("Manufacturer-listed use", "<p>Eradication of H. pylori in active chronic gastric and duodenal ulcer disease, as stated in the manufacturer's product information.</p>"),
-        acc("How the components work", "<p>Rabeprazole inhibits the gastric H⁺/K⁺-ATPase proton pump and reduces acid secretion. Amoxicillin interferes with bacterial cell-wall synthesis. Clarithromycin inhibits bacterial protein synthesis through the 50S ribosomal subunit.</p>"),
-        acc("Prescribing considerations", "<p>Suitability depends on confirmed diagnosis, allergy history, previous antibiotic exposure, interactions, organ function and local antimicrobial resistance. Clarithromycin-containing regimens may not suit every setting. A qualified prescriber must choose the regimen. Do not self-start, share or reuse this combination.</p>"),
-        acc("Quick answers", "<p><b>Can it be taken for ordinary gas or heartburn?</b><br>No. It contains two antibiotics and needs a diagnosis and a prescription.</p><p><b>Does everyone with H. pylori need the same treatment?</b><br>No. A clinician weighs resistance, prior antibiotics, allergies, interactions and patient factors.</p>"),
-    ])
+    return "".join(acc(*x) for x in sec_hp(p))
 
-def body_malifa(p):
-    return "".join([
-        acc("Indication", "<p>Treatment of iron deficiency in adults (Bangladesh listing).</p><p class='cab-small'>Some other regional labels describe iron-deficiency anaemia and include patients from 10 years of age. Follow the local approved insert.</p>", True),
-        acc("Dosage & administration", ul([
+def sec_malifa(p):
+    return [
+        ("Indication", "<p>Treatment of iron deficiency in adults (Bangladesh listing).</p><p class='cab-small'>Some other regional labels describe iron-deficiency anaemia and include patients from 10 years of age. Follow the local approved insert.</p>", True),
+        ("Dosage & administration", ul([
             "30 mg twice daily, preferably on an empty stomach, at least 1 hour before or 2 hours after meals.",
             "Do not open, break or chew the capsule.",
             "Treatment is generally at least 12 weeks and continues until ferritin is in the normal range.",
             "Paediatric: safety and effectiveness are not established in the Bangladesh listing. Some other labels differ, so follow the local insert.",
         ])),
-        acc("How it works", "<p>Ferric maltol delivers iron for uptake across the intestinal wall and transfer to transferrin and ferritin. It has been shown to raise serum iron parameters, including ferritin and transferrin saturation (TSAT). It is described as a ferric–maltol complex that limits free iron in the gut.</p>"),
-        acc("Interactions", ul([
+        ("How it works", "<p>Ferric maltol delivers iron for uptake across the intestinal wall and transfer to transferrin and ferritin. It has been shown to raise serum iron parameters, including ferritin and transferrin saturation (TSAT). It is described as a ferric–maltol complex that limits free iron in the gut.</p>"),
+        ("Interactions", ul([
             "<b>Dimercaprol:</b> may raise the risk of nephrotoxicity, so avoid the combination.",
             "<b>Some oral drugs</b> (mycophenolate, ethinyl estradiol, ciprofloxacin, doxycycline): bioavailability may fall. Separate doses by at least 4 hours where it matters.",
             "<b>Levothyroxine, bisphosphonates, penicillamine:</b> iron may reduce absorption, so separate the doses.",
             "<b>Antacids and PPIs:</b> may reduce absorption of iron by altering gastric pH. Avoid together where possible.",
             "<b>Food:</b> reduces iron bioavailability. Dairy, tea and coffee do so too.",
         ], True)),
-        acc("Contraindications", ul([
+        ("Contraindications", ul([
             "Known hypersensitivity to ferric maltol or any component.",
             "History of haemochromatosis or other iron-overload syndromes.",
             "Patients receiving repeated blood transfusions.",
             "Anaemia not caused by iron deficiency (per general reference).",
         ])),
-        acc("Side effects", "<p>Most common: flatulence, diarrhoea, constipation, discoloured (dark) faeces, abdominal pain, nausea and vomiting. Dark stools can interfere with occult-blood stool tests.</p>"),
-        acc("Precautions & warnings", ul([
+        ("Side effects", "<p>Most common: flatulence, diarrhoea, constipation, discoloured (dark) faeces, abdominal pain, nausea and vomiting. Dark stools can interfere with occult-blood stool tests.</p>"),
+        ("Precautions & warnings", ul([
             "Avoid during an active inflammatory bowel disease (IBD) flare.",
             "Do not give with evidence of iron overload or with intravenous iron.",
             "Assess iron parameters before starting and monitor during therapy.",
             "Accidental iron overdose is a leading cause of fatal poisoning in children under 6.",
         ])),
-        acc("Pregnancy, lactation & special populations", "<p>After oral use ferric maltol is not absorbed systemically as an intact complex, so fetal exposure and infant exposure through milk are not expected. There are no data on human milk presence, effects on the breastfed child or on milk production. No well-established dose change is defined for renal or hepatic impairment, so use physician oversight.</p>"),
-        acc("Overdose & storage", "<p><b>Overdose.</b> No overdose data are available for Malifa. Early signs of iron overload include nausea, vomiting, abdominal pain and diarrhoea, and serious cases can progress to systemic toxicity. Seek immediate help.</p><p><b>Storage.</b> Cool place below 25 °C (listing), dry and protected from light. Some references quote below 30 °C, so follow the pack. Keep out of reach of children.</p>"),
-        acc("Listed price (MedEx)", "<p>Unit ৳11.00 · strip ৳110.00 · pack of 6 × 10 ৳660.00. Prices change, so confirm at the pharmacy.</p>"),
-    ])
+        ("Pregnancy, lactation & special populations", "<p>After oral use ferric maltol is not absorbed systemically as an intact complex, so fetal exposure and infant exposure through milk are not expected. There are no data on human milk presence, effects on the breastfed child or on milk production. No well-established dose change is defined for renal or hepatic impairment, so use physician oversight.</p>"),
+        ("Overdose & storage", "<p><b>Overdose.</b> No overdose data are available for Malifa. Early signs of iron overload include nausea, vomiting, abdominal pain and diarrhoea, and serious cases can progress to systemic toxicity. Seek immediate help.</p><p><b>Storage.</b> Cool place below 25 °C (listing), dry and protected from light. Some references quote below 30 °C, so follow the pack. Keep out of reach of children.</p>"),
+        ("Listed price (MedEx)", "<p>Unit ৳11.00 · strip ৳110.00 · pack of 6 × 10 ৳660.00. Prices change, so confirm at the pharmacy.</p>"),
+    ]
+
+def body_malifa(p):
+    return "".join(acc(*x) for x in sec_malifa(p))
 
 def dialog(p, idx, total):
     if p["kind"] == "finix":
