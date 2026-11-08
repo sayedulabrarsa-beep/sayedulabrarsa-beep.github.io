@@ -8,7 +8,7 @@ from collections import OrderedDict
 
 SITE = 'https://sayedulabrar.site'
 TODAY = datetime.date.today().isoformat()
-CSSV = 'ld12-20261107'
+CSSV = 'ld15-20261107'
 P = 'learning/index.html'
 
 AREAS = OrderedDict([
@@ -115,6 +115,8 @@ AFF = [  # (pattern searched in title + date line + description, display name, l
 ]
 PROV_MARK = {'LinkedIn Learning': '/assets/img/linkedin-learning-mark.svg', 'Coursera': '/assets/img/coursera-mark.svg'}
 LENS = [30, 58, 42, 70, 36, 52]
+DUR = {'master microsoft excel': '14 h 54 min', 'master microsoft powerpoint': '9 h 32 min', 'presentation tips': '5 h 11 min', 'canva essential training': '2 h 23 min'}  # only durations printed on certificates
+CLOCKI = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>'
 def affil(c):
     t = ' '.join([c['title'], c['sub'], c.get('desc', '')])
     for pat, name, logo in AFF:
@@ -133,6 +135,8 @@ def hang_card(c, i, cat):
     if af:
         name, logo = af
         h += ('<div class="hg-aff">' + (f'<img src="{LG}{logo}" alt="" width="34" height="34" loading="lazy">' if logo else '<span class="hg-aff-dot" aria-hidden="true"></span>') + f'<span>{esc(name)}</span></div>')
+    dur = next((v for k, v in DUR.items() if c['title'].lower().startswith(k)), None)
+    if dur: h += f'<div class="hg-dur">{CLOCKI}{dur}</div>'
     foot = ('<span class="hg-path">Learning path</span>' if c['path'] else '') + (f'<time>{c["date"].strftime("%b %Y")}</time>' if c['date'] else '')
     if foot: h += f'<div class="hg-foot">{foot}</div>'
     return h + '</div></li>'

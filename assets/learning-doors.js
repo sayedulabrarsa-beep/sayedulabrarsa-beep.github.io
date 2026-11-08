@@ -178,3 +178,21 @@ els.forEach(function(el,i){el.classList.add('lt-rv');el.style.setProperty('--d',
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
   parts.forEach(function(p){p.classList.add('hg-rv');io.observe(p)});
 })();
+
+/* hanging lines react to scrolling: page scroll and sideways scroll push the cards like wind */
+(function(){
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var parts=[].slice.call(document.querySelectorAll('.hg-part'));if(!parts.length)return;
+  var st=new Map(),vis=new Set(),lastY=window.scrollY,run=false,lt=0;
+  parts.forEach(function(p){st.set(p,{a:0,v:0});var tr=p.querySelectorAll('.hg-track'),lx=[];
+    tr.forEach(function(t,i){lx[i]=t.scrollLeft;t.addEventListener('scroll',function(){var d=t.scrollLeft-lx[i];lx[i]=t.scrollLeft;st.get(p).v+=Math.max(-90,Math.min(90,-d))*.22;kick()},{passive:true})})});
+  if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){e.isIntersecting?vis.add(e.target):vis.delete(e.target)})},{rootMargin:'120px 0px'});parts.forEach(function(p){io.observe(p)})}else parts.forEach(function(p){vis.add(p)});
+  function prog(){var h=window.innerHeight;vis.forEach(function(p){var r=p.getBoundingClientRect();p.style.setProperty('--pg',Math.max(0,Math.min(1,(h-r.top)/(h+r.height))).toFixed(3))})}
+  window.addEventListener('scroll',function(){var d=window.scrollY-lastY;lastY=window.scrollY;var imp=Math.max(-90,Math.min(90,d))*.3;vis.forEach(function(p){st.get(p).v+=imp});prog();kick()},{passive:true});
+  function kick(){if(!run){run=true;lt=0;requestAnimationFrame(tick)}}
+  function tick(t){var dt=lt?Math.min(.033,(t-lt)/1000):.016;lt=t;var busy=false;
+    st.forEach(function(s,p){if(Math.abs(s.a)<.01&&Math.abs(s.v)<.05){if(s.a){s.a=0;s.v=0;p.style.setProperty('--sw','0')}return}
+      s.v+=(-38*s.a-3.2*s.v)*dt;s.a+=s.v*dt;s.a=Math.max(-9,Math.min(9,s.a));p.style.setProperty('--sw',s.a.toFixed(2));busy=true});
+    if(busy)requestAnimationFrame(tick);else run=false}
+  prog();
+})();

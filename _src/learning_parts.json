@@ -1,0 +1,576 @@
+{
+ "communities": [
+  {
+   "logo": "/assets/img/daffodil-international-university-logo.png",
+   "name": "Daffodil International University",
+   "desc": "University and student-development activities"
+  },
+  {
+   "logo": "/assets/img/logos/bshrm-bangladesh-society-for-human-resources-management-logo.png",
+   "name": "BSHRM",
+   "desc": "Human resource management community"
+  },
+  {
+   "logo": "/assets/img/logos/briddhi-we-help-to-grow-logo.png",
+   "name": "Briddhi",
+   "desc": "Professional growth and development"
+  },
+  {
+   "logo": "/assets/img/logos/pharmacia-club-daffodil-international-university-logo.png",
+   "name": "Pharmacia Club",
+   "desc": "Daffodil International University · pharmacy community"
+  },
+  {
+   "logo": "/assets/img/logos/hrdi-human-resource-development-institute-logo.png",
+   "name": "Human Resource Development Institute",
+   "desc": "Professional learning and development"
+  },
+  {
+   "logo": "/assets/img/logos/admission-ac-logo.png",
+   "name": "Admission.ac",
+   "desc": "Education and career-related engagement"
+  }
+ ],
+ "featured": [
+  {
+   "logo": "/assets/img/linkedin-learning-mark.svg",
+   "topic": "AI & pharmaceutical innovation",
+   "title": "How AI Is Transforming Pharma: From R&D to Care Delivery",
+   "provider": "LinkedIn Learning"
+  },
+  {
+   "logo": "/assets/img/linkedin-learning-mark.svg",
+   "topic": "Healthcare AI",
+   "title": "Generative AI in Healthcare",
+   "provider": "LinkedIn Learning"
+  },
+  {
+   "logo": "/assets/img/linkedin-learning-mark.svg",
+   "topic": "Product management",
+   "title": "AI Agents for Product Leaders",
+   "provider": "LinkedIn Learning"
+  },
+  {
+   "logo": "/assets/img/linkedin-learning-mark.svg",
+   "topic": "AI skills",
+   "title": "Introduction to Prompt Engineering for Generative AI",
+   "provider": "LinkedIn Learning"
+  },
+  {
+   "logo": "/assets/img/logos/coursera-logo.png",
+   "topic": "Marketing strategy",
+   "title": "Marketing Strategy Capstone Project",
+   "provider": "Coursera"
+  },
+  {
+   "logo": "/assets/img/logos/coursera-logo.png",
+   "topic": "Pharmaceutical product management",
+   "title": "Drug Commercialization",
+   "provider": "Coursera"
+  },
+  {
+   "logo": "/assets/img/linkedin-learning-mark.svg",
+   "topic": "Analytics & productivity",
+   "title": "Master Microsoft Excel",
+   "provider": "LinkedIn Learning"
+  },
+  {
+   "logo": "/assets/img/linkedin-learning-mark.svg",
+   "topic": "Presentation skills",
+   "title": "Master Microsoft PowerPoint",
+   "provider": "LinkedIn Learning"
+  },
+  {
+   "logo": "/assets/img/linkedin-learning-mark.svg",
+   "topic": "Product marketing",
+   "title": "Advanced Product Marketing",
+   "provider": "LinkedIn Learning"
+  },
+  {
+   "logo": "/assets/img/linkedin-learning-mark.svg",
+   "topic": "Communication & leadership",
+   "title": "Public Speaking Skills Professional Certificate",
+   "provider": "LinkedIn Learning"
+  }
+ ],
+ "universities": [
+  {
+   "logos": [
+    "/assets/img/logos/universities/duke-university-logo.png"
+   ],
+   "name": "Duke University",
+   "items": [
+    {
+     "t": "Introductory Human Physiology",
+     "d": "Oct 2020"
+    },
+    {
+     "t": "The Challenges of Global Health",
+     "d": "Oct 2020"
+    }
+   ],
+   "skills": []
+  },
+  {
+   "logos": [
+    "/assets/img/logos/universities/johns-hopkins-university-logo.png"
+   ],
+   "name": "Johns Hopkins University",
+   "items": [
+    {
+     "t": "COVID-19 Contact Tracing",
+     "d": "Oct 2020"
+    },
+    {
+     "t": "Introduction to the Biology of Cancer",
+     "d": "Oct 2020"
+    }
+   ],
+   "skills": []
+  },
+  {
+   "logos": [
+    "/assets/img/logos/universities/university-of-california-san-diego-ucsd-logo.png"
+   ],
+   "name": "University of California San Diego",
+   "items": [
+    {
+     "t": "Drug Development Product Management Specialization (Drug Discovery, Drug Development, Drug Commercialization)",
+     "d": "Oct 2020"
+    },
+    {
+     "t": "Learning How to Learn (with McMaster University)",
+     "d": "Oct 2020"
+    }
+   ],
+   "skills": []
+  },
+  {
+   "logos": [
+    "/assets/img/logos/universities/mcmaster-university-and-uc-san-diego-logo.png"
+   ],
+   "name": "McMaster University",
+   "items": [
+    {
+     "t": "Learning How to Learn (with UC San Diego)",
+     "d": "Oct 2020"
+    }
+   ],
+   "skills": []
+  },
+  {
+   "logos": [
+    "/assets/img/logos/universities/yale-university-logo.png"
+   ],
+   "name": "Yale University",
+   "items": [
+    {
+     "t": "The Science of Well-Being",
+     "d": "Oct 2020"
+    }
+   ],
+   "skills": []
+  },
+  {
+   "logos": [
+    "/assets/img/logos/universities/stanford-online-logo.png"
+   ],
+   "name": "Stanford University",
+   "items": [
+    {
+     "t": "Stanford Introduction to Food and Health",
+     "d": "Oct 2020"
+    }
+   ],
+   "skills": []
+  },
+  {
+   "logos": [
+    "/assets/img/logos/universities/university-of-north-carolina-at-chapel-hill-logo.png"
+   ],
+   "name": "University of North Carolina at Chapel Hill",
+   "items": [
+    {
+     "t": "Epidemiology: The Basic Science of Public Health",
+     "d": "Oct 2020"
+    }
+   ],
+   "skills": []
+  },
+  {
+   "logos": [
+    "/assets/img/logos/universities/university-of-colorado-logo.png"
+   ],
+   "name": "University of Colorado Boulder",
+   "items": [
+    {
+     "t": "Successful Presentation",
+     "d": "Oct 2020"
+    }
+   ],
+   "skills": []
+  },
+  {
+   "logos": [
+    "/assets/img/logos/universities/uc-irvine-division-of-continuing-education-logo.png"
+   ],
+   "name": "University of California, Irvine",
+   "items": [
+    {
+     "t": "Effective Problem-Solving and Decision-Making",
+     "d": "Nov 2020"
+    }
+   ],
+   "skills": []
+  },
+  {
+   "logos": [
+    "/assets/img/logos/universities/michigan-state-university-logo.png"
+   ],
+   "name": "Michigan State University",
+   "items": [
+    {
+     "t": "Cameras, Exposure, and Photography",
+     "d": "Oct 2020"
+    }
+   ],
+   "skills": []
+  },
+  {
+   "logos": [
+    "/assets/img/logos/universities/ie-business-school-logo.png"
+   ],
+   "name": "IE Business School",
+   "items": [
+    {
+     "t": "Marketing Strategy Specialization (5 courses)",
+     "d": "Jan 2023"
+    },
+    {
+     "t": "The Marketing Plan",
+     "d": "Dec 2022"
+    }
+   ],
+   "skills": []
+  },
+  {
+   "logos": [
+    "/assets/img/logos/universities/wharton-online-university-of-pennsylvania-logo.png"
+   ],
+   "name": "University of Pennsylvania",
+   "items": [
+    {
+     "t": "Introduction to Marketing",
+     "d": "Jan 2023"
+    }
+   ],
+   "skills": []
+  }
+ ],
+ "professional": [
+  {
+   "logos": [
+    "/assets/img/linkedin-learning-mark.svg"
+   ],
+   "name": "LinkedIn Learning · specialised learning paths",
+   "items": [
+    {
+     "t": "Master Microsoft Excel, learning path (14 h 54 min)",
+     "d": "Sep 2025"
+    },
+    {
+     "t": "Master Microsoft PowerPoint, learning path (9 h 32 min)",
+     "d": "Sep 2025"
+    },
+    {
+     "t": "Presentation Tips (5 h 11 min)",
+     "d": "Sep 2025"
+    },
+    {
+     "t": "Canva Essential Training (2 h 23 min)",
+     "d": "Sep 2025"
+    }
+   ],
+   "skills": [
+    "Microsoft Excel",
+    "Microsoft PowerPoint",
+    "Presentations",
+    "Canva"
+   ]
+  },
+  {
+   "logos": [
+    "/assets/img/logos/institutions/microsoft-logo.png"
+   ],
+   "name": "Microsoft",
+   "items": [
+    {
+     "t": "Career Essentials in Project Management (with LinkedIn)",
+     "d": "Sep 2025"
+    }
+   ],
+   "skills": [
+    "Project Management",
+    "Budget Development",
+    "Project Communications"
+   ]
+  },
+  {
+   "logos": [
+    "/assets/img/logos/institutions/american-marketing-association-ama-logo.png"
+   ],
+   "name": "American Marketing Association (AMA)",
+   "items": [
+    {
+     "t": "Generative AI for Marketing, Professional Certificate",
+     "d": "Sep 2025"
+    }
+   ],
+   "skills": [
+    "Digital Marketing",
+    "Content Marketing",
+    "Generative AI for Marketing"
+   ]
+  },
+  {
+   "logos": [
+    "/assets/img/logos/institutions/toastmasters-international-logo.png"
+   ],
+   "name": "Toastmasters International",
+   "items": [
+    {
+     "t": "Public Speaking Skills, Professional Certificate",
+     "d": "Sep 2025"
+    }
+   ],
+   "skills": [
+    "Speech Writing",
+    "Public Speaking",
+    "Presentation Skills"
+   ]
+  },
+  {
+   "logos": [
+    "/assets/img/logos/institutions/sales-management-association-logo.png"
+   ],
+   "name": "Sales Management Association",
+   "items": [
+    {
+     "t": "Sales Management Foundations, Professional Certificate",
+     "d": "Sep 2025"
+    }
+   ],
+   "skills": [
+    "Sales Strategy",
+    "Sales Performance",
+    "Sales Coaching"
+   ]
+  },
+  {
+   "logos": [
+    "/assets/img/logos/institutions/zendesk-logo.png"
+   ],
+   "name": "Zendesk",
+   "items": [
+    {
+     "t": "Customer Service, Professional Certificate",
+     "d": "Sep 2025"
+    }
+   ],
+   "skills": [
+    "Relationship Building",
+    "Troubleshooting",
+    "Customer Service"
+   ]
+  },
+  {
+   "logos": [
+    "/assets/img/logos/institutions/pmi-authorized-training-partner-logo.png"
+   ],
+   "name": "Project Management Institute (PMI)",
+   "items": [
+    {
+     "t": "Project Management Foundations (3.25 PDUs)",
+     "d": "Sep 2025"
+    },
+    {
+     "t": "Project Management Foundations: Schedules (2 PDUs)",
+     "d": "Sep 2025"
+    },
+    {
+     "t": "Project Management Foundations: Communication (1 PDU)",
+     "d": "Sep 2025"
+    },
+    {
+     "t": "Project Management Foundations: Ethics (1 PDU)",
+     "d": "Sep 2025"
+    },
+    {
+     "t": "Building High-Performance Teams (2.25 PDUs)",
+     "d": "Sep 2025"
+    },
+    {
+     "t": "Product Management: Launching Your Product (1 PDU)",
+     "d": "Sep 2025"
+    },
+    {
+     "t": "Strategic Content Marketing: Attract, Engage, and Retain (1 PDU)",
+     "d": "Aug 2025"
+    }
+   ],
+   "skills": [
+    "Project Management",
+    "Project Scheduling",
+    "Project Communications",
+    "Business Ethics",
+    "High Performance Teams",
+    "Team Leadership",
+    "Product Launch",
+    "Content Marketing",
+    "Customer Engagement"
+   ]
+  },
+  {
+   "logos": [
+    "/assets/img/logos/institutions/iiba-endorsed-education-provider-logo.png"
+   ],
+   "name": "International Institute of Business Analysis (IIBA)",
+   "items": [
+    {
+     "t": "Becoming a Product Manager: A Complete Guide (11 CDUs)",
+     "d": "Sep 2025"
+    }
+   ],
+   "skills": [
+    "Product Management"
+   ]
+  },
+  {
+   "logos": [
+    "/assets/img/logos/institutions/nasba-cpe-qas-sponsor-logo.png"
+   ],
+   "name": "National Association of State Boards of Accountancy (NASBA)",
+   "items": [
+    {
+     "t": "Excel Essential Training, Microsoft 365 (6 CPE credits)",
+     "d": "Sep 2025"
+    },
+    {
+     "t": "Building High-Performance Teams (3.4 CPE credits)",
+     "d": "Sep 2025"
+    }
+   ],
+   "skills": [
+    "Microsoft Excel",
+    "High Performance Teams",
+    "Team Leadership"
+   ]
+  }
+ ],
+ "trainings": [
+  {
+   "logos": [
+    "/assets/img/logos/navana-pharmaceuticals-plc-logo.png",
+    "/assets/img/logos/institutions/toss-talent-optimisation-strategic-solution-logo.png"
+   ],
+   "name": "Navana Pharmaceuticals PLC & TOSS",
+   "items": [
+    {
+     "t": "Strategic Marketing and Brand Management Workshop (certificate of participation)",
+     "d": "19–20 Oct 2024"
+    }
+   ],
+   "skills": []
+  },
+  {
+   "logos": [
+    "/assets/img/logos/institutions/goedu-ac-online-learning-logo.png",
+    "/assets/img/logos/institutions/skill-jobs-logo.png",
+    "/assets/img/logos/hrdi-human-resource-development-institute-logo.png"
+   ],
+   "name": "GoEdu.ac, with Skill.jobs & HRDI",
+   "items": [
+    {
+     "t": "Setting and Achieving Focus, Goals and Targets, completed with distinction (instructor: Md. Sabur Khan)",
+     "d": "28 Jan 2021"
+    }
+   ],
+   "skills": []
+  },
+  {
+   "logos": [
+    "/assets/img/logos/institutions/universitas-airlangga-faculty-of-pharmacy-seal.png"
+   ],
+   "name": "Faculty of Pharmacy, Universitas Airlangga (Indonesia)",
+   "items": [
+    {
+     "t": "Training on How to Make Herbal Medicine and Innovative Packaging, Surabaya (participant, 5 SKP)",
+     "d": "16 Jul 2021"
+    }
+   ],
+   "skills": []
+  },
+  {
+   "logos": [
+    "/assets/img/logos/institutions/self-growth-hrdi-logo.png",
+    "/assets/img/logos/hrdi-human-resource-development-institute-logo.png"
+   ],
+   "name": "HR Development Institute (HRDI) & Self Growth",
+   "items": [
+    {
+     "t": "Online learning session: How To Earn?",
+     "d": "24 Sep 2021"
+    }
+   ],
+   "skills": []
+  },
+  {
+   "logos": [
+    "/assets/img/logos/institutions/daffodil-international-university-logo.png"
+   ],
+   "name": "Daffodil International University",
+   "items": [
+    {
+     "t": "Suicide Prevention, a 2-hour participatory workshop",
+     "d": "11 Sep 2021"
+    }
+   ],
+   "skills": []
+  },
+  {
+   "logos": [
+    "/assets/img/logos/institutions/bylcx-bangladesh-youth-leadership-center-logo.png"
+   ],
+   "name": "BYLCx, Bangladesh Youth Leadership Center",
+   "items": [
+    {
+     "t": "Course Evaluation, online course",
+     "d": "15 Feb 2024"
+    }
+   ],
+   "skills": []
+  }
+ ],
+ "stats": [
+  {
+   "n": "18",
+   "l": "courses & paths completed"
+  },
+  {
+   "n": "7",
+   "l": "specialised learning paths / professional certificates"
+  },
+  {
+   "n": "11",
+   "l": "individual courses"
+  },
+  {
+   "n": "26",
+   "l": "skills covered"
+  }
+ ],
+ "prof_lead": "Skill courses and learning paths I completed on LinkedIn Learning in 2025. Each certificate carries the partner, provider or credit body shown here (PDUs, CDUs and CPE credits are as printed on the certificates). They are course-completion certificates, not memberships or professional designations.",
+ "prof_note": "Counted from the 19 certificate files: Building High-Performance Teams appears twice (once with PMI PDUs, once with NASBA CPE credit), so it is counted as one course. The 7 specialised paths add up to about 60 h 21 min of learning. This list covers the 2025 LinkedIn Learning certificates I have on file; other LinkedIn Learning records are counted separately on the Learning page.",
+ "uni_lead": "Online non-credit courses and specializations I completed through Coursera, authorised by these universities. They are online certificates, not enrollment or degrees at those universities.",
+ "train_lead": "Workshops, trainings and short online courses from companies, universities and learning organisations, taken from the certificates I hold. They are participation or completion certificates."
+}
