@@ -3355,3 +3355,9 @@ html.lp-arrive .lp-intro-copy,html.lp-arrive .lp-arch{animation:lprise .9s cubic
 @media (max-width:760px){.hg-part--x .hg-meta{grid-template-columns:1fr}.hg-part--x .hg-num{grid-row:auto;grid-column:1;margin-bottom:6px}.hg-part--x .hg-meta>*{grid-column:1}}
 .hg-track{scroll-padding-inline:max(24px,calc((100vw - 1180px)/2 + 24px))}
 @media (max-width:760px){.hg-track{scroll-padding-inline:16px}}
+
+/* area pages: hanging parts replace the old card galleries */
+.lp-hgwrap{margin-top:8px}
+.lp-hgwrap .hg-part--area{padding-top:48px}
+.lp-hgwrap .hg-part--area+.hg-part--area{border-top:1px solid color-mix(in srgb,var(--c2) 18%,transparent)}
+.hg-part--area .hg-meta h3 em{color:var(--c2,inherit)}

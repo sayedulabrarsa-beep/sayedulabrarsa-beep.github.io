@@ -8,7 +8,7 @@ from collections import OrderedDict
 
 SITE = 'https://sayedulabrar.site'
 TODAY = datetime.date.today().isoformat()
-CSSV = 'ld16-20261107'
+CSSV = 'ld17-20261107'
 P = 'learning/index.html'
 
 AREAS = OrderedDict([
@@ -201,16 +201,35 @@ def card(c, a):
             f'<p class="lp-sub">{sub if not (c["date"] and sub.startswith("Completed")) else ""}</p>'
             f'<div class="lp-card-foot"><span class="lp-type">{"Learning path" if c["path"] else "Course"}</span><span class="lp-when">{esc(when)}</span></div></article>')
 
+TIER1 = re.compile(r"^(master|mastering)\b|specializ|professional certificate|career essentials|capstone", re.I)
+def dur_min(c):
+    v = next((v for k, v in DUR.items() if c['title'].lower().startswith(k)), None)
+    if not v: return None
+    m = re.match(r'(\d+) h(?: (\d+) min)?', v); return int(m.group(1)) * 60 + int(m.group(2) or 0)
+def newest(c): return (c['date'] is None, -(c['date'].toordinal() if c['date'] else 0), c['title'])
+def tiered(items):
+    a1 = sorted([c for c in items if TIER1.search(c['title'])], key=newest)
+    a2 = sorted([c for c in items if not TIER1.search(c['title'])], key=newest)
+    out = []
+    if a1: out.append(('Master &amp; specialized courses', a1))
+    if a2: out.append(('Other courses' if a1 else '', a2))
+    return out
 def groups_for(cat):
-    cs = sorted(by[cat], key=lambda c: (c['date'] is None, -(c['date'].toordinal() if c['date'] else 0), c['title']))
-    g = []
-    paths = [c for c in cs if c['path']]
+    cs = by[cat]
+    paths = sorted([c for c in cs if c['path']], key=lambda c: (dur_min(c) is None, -(dur_min(c) or 0)) + newest(c))
     li = [c for c in cs if not c['path'] and c['prov'] == 'LinkedIn Learning']
     co = [c for c in cs if not c['path'] and c['prov'] == 'Coursera']
-    if paths: g.append(('Learning paths', 'Learning paths & certificates', 'Multi-course learning paths completed in this area.', paths))
-    if li: g.append(('LinkedIn Learning', 'LinkedIn Learning courses', 'Individual courses, newest first.', li))
-    if co: g.append(('Coursera', 'Coursera courses', 'University-led courses and specialization courses.', co))
+    g = []
+    if paths: g.append(('Learning paths', 'Learning paths & certificates', 'Multi-course learning paths completed in this area. Paths with a recorded learning time come first, longest on top.', [('', paths)]))
+    if li: g.append(('LinkedIn Learning', 'LinkedIn Learning courses', 'Individual courses. Master and specialized courses first, then the others, newest first within each line.', tiered(li)))
+    if co: g.append(('Coursera', 'Coursera courses', 'University-led courses and specialization courses. Master and specialized ones first, then the others.', tiered(co)))
     return g
+
+def lp_rail(label, cells, name):
+    lab = f'<h5 class="hg-linelabel">{label}</h5>' if label else ''
+    return (f'{lab}<div class="hg-rail"><button type="button" class="hg-arrow hg-prev" aria-label="Scroll {esc(name)} back">←</button>'
+            f'<button type="button" class="hg-arrow hg-next" aria-label="Scroll {esc(name)} forward">→</button>'
+            f'<div class="hg-track" tabindex="0" role="region" aria-label="{esc(name)}, scroll sideways"><ol class="hg-line">{cells}</ol></div></div>')
 
 for cat, a in AREAS.items():
     cs = by[cat]; n = len(cs); grp = groups_for(cat)
@@ -225,8 +244,9 @@ for cat, a in AREAS.items():
     stats = [f'<div class="lp-stat"><b>{n}</b><span>courses and paths</span></div>',
              f'<div class="lp-stat"><b>{len(provs)}</b><span>{esc(" · ".join(f"{k} {v}" for k, v in provs.items()))}</span></div>']
     if dated: stats.append(f'<div class="lp-stat"><b>{fmt(max(dated))}</b><span>latest completion</span></div>')
-    sec = []
-    for i, (tag, h2, d, items) in enumerate(grp, 1):
+    sec = []; ci = 0
+    for i, (tag, h2, d, lines) in enumerate(grp, 1):
+        items = [c for _, l in lines for c in l]
         ds = [c['date'] for c in items if c['date']]
         k = len(items); noun = ('path' if k == 1 else 'paths') if tag == 'Learning paths' else ('course' if k == 1 else 'courses')
         chips = [f'{k} {noun}']
@@ -240,17 +260,24 @@ for cat, a in AREAS.items():
                 if s and not s.startswith('Completed') and s not in inst: inst.append(s)
             chips += inst[:2]
         elif tag != 'Learning paths': chips.append(tag)
-        sec.append(f'<section class="lp-group" aria-labelledby="g{i}"><div class="lp-group-head"><div><p class="lp-group-tag"><span>{i:02d}</span> {esc(tag)} · {esc(cat)}</p><h2 id="g{i}">{esc(h2)}</h2><p class="lp-group-desc">{esc(d)}</p>'
-                   f'<ul class="lp-chips">{"".join(f"<li>{esc(x)}</li>" for x in chips)}</ul></div>'
-                   f'<div class="lp-gal-ctl"><span class="lp-scroll-cue">Scroll <span aria-hidden="true">→</span></span><button type="button" class="lp-arrow lp-gprev" aria-label="Scroll back">←</button><button type="button" class="lp-arrow lp-gnext" aria-label="Scroll forward">→</button></div></div>'
-                   f'<div class="lp-gallery" tabindex="0" aria-label="{esc(h2)}, scroll sideways">{"".join(card(c, a) for c in items)}</div></section>')
+        rails = []
+        for label, l in lines:
+            cells = ''
+            for c in l:
+                cells += hang_card(c, ci, cat); ci += 1
+            rails.append(lp_rail(label, cells, h2))
+        w = h2.rsplit(' ', 1)
+        hh = (esc(w[0]) + ' <em>' + esc(w[1]) + '</em>') if len(w) == 2 else esc(h2)
+        sec.append(f'<article class="hg-part hg-part--x hg-part--area" id="g{i}"><div class="hg-meta"><span class="hg-num">{i:02d}</span><span class="hg-cat">{esc(tag)} · {esc(cat)}</span>'
+                   f'<h3>{hh}</h3><p>{esc(d)}</p><div class="hg-tags">{"".join(f"<span class=hg-tag>{esc(x)}</span>" for x in chips)}</div></div>'
+                   f'{"".join(rails)}<p class="hg-hint">Scroll to walk the line <span aria-hidden="true">→</span></p></article>')
     chips_all = ''.join(f'<a href="/learning/{AREAS[c]["slug"]}/"{" aria-current=\"page\"" if c == cat else ""}>{esc(c)}</a>' for c in order)
     main = (f'<main id="main"><div class="lp-curtain" aria-hidden="true"></div>'
             f'<div class="lp-strip"><div class="wrap"><span class="lp-dot" aria-hidden="true"></span><span>Sayedul Abrar · learning record</span><span class="lp-strip-time">Dhaka time <b id="lpTime">--:--</b></span><a href="/learning/#doors">← Back to the doors</a></div></div>'
             f'<section class="lp-intro"><div class="wrap lp-intro-grid"><div class="lp-intro-copy"><p class="lp-kick">Door {a["idx"]+1:02d} of {len(order):02d}</p><h1>{esc(cat)}</h1><p class="lp-lead">{esc(a["lead"])}</p>'
             f'<div class="lp-stats">{"".join(stats)}</div><p class="lp-hint">Scroll to walk the line <span aria-hidden="true">↓</span></p></div>'
             f'<div class="lp-arch" aria-hidden="true"><span class="lp-arch-in"><span class="lp-arch-ico">{ICONS[a["icon"]]}</span><b>{n}</b><small>courses</small></span></div></div></section>'
-            f'<div class="wrap lp-groups">{"".join(sec)}</div>'
+            f'<div class="hg hg--x lp-hgwrap">{"".join(sec)}</div>'
             f'<section class="lp-nextdoor"><div class="wrap"><a class="lp-nd lp-nd-prev" href="/learning/{AREAS[prev_c]["slug"]}/"><small>← Previous door</small><b>{esc(prev_c)}</b></a><a class="lp-nd lp-nd-next" href="/learning/{AREAS[next_c]["slug"]}/"><small>Next door →</small><b>{esc(next_c)}</b></a></div></section>'
             f'<section class="lp-cta"><div class="wrap"><p class="lp-kick">All doors</p><div class="lp-door-links">{chips_all}</div>'
             f'<p class="lp-note">Individual courses are completed courses, not separate certificates, unless a credential was issued. Learning paths are shown as paths.</p>'
