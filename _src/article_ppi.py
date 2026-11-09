@@ -1,0 +1,212 @@
+#!/usr/bin/env python3
+"""Builds /blog/when-to-take-ppi-before-meals/ from the iron-tablets article as a layout template."""
+import re, json, pathlib, html
+ROOT = pathlib.Path(__file__).resolve().parent.parent
+SLUG = "when-to-take-ppi-before-meals"
+BASE = "https://sayedulabrar.site"
+URL = f"{BASE}/blog/{SLUG}/"
+DATE, DATE_EN, DATE_BN = "2026-11-09", "9 November 2026", "৯ নভেম্বর ২০২৬"
+IMG = "/assets/img/blog/ppi-tablets/"
+THUMB = IMG + "when-to-take-ppi-before-meals-thumbnail-16x9.webp"
+SOCIAL = f"{BASE}/assets/img/blog/{SLUG}-social.jpg"
+F = {  # file, alt/caption EN, alt BN
+ "timing": ("when-to-take-omeprazole-and-other-ppis-timing-and-food.webp",
+   "When to take a PPI: the NHS says omeprazole can be taken at the same time each morning, with or without food; MedlinePlus says prescription capsules are usually taken once a day before a meal.",
+   "পিপিআই কখন খাবেন: NHS বলছে ওমিপ্রাজল প্রতিদিন সকালে একই সময়ে, খাবারের সঙ্গে বা ছাড়া খাওয়া যায়; MedlinePlus বলছে প্রেসক্রিপশনের ক্যাপসুল সাধারণত দিনে একবার খাবারের আগে খেতে হয়।"),
+ "swallow": ("swallow-ppi-capsule-or-tablet-whole-do-not-crush-or-chew.webp",
+   "Swallow a PPI whole with water. Do not chew or crush enteric coated or gastro-resistant tablets.",
+   "পিপিআই পানি দিয়ে গোটা গিলুন। এন্টেরিক কোটেড বা গ্যাস্ট্রো-রেজিস্ট্যান্ট ট্যাবলেট চিবাবেন না, গুঁড়াও করবেন না।"),
+ "inter": ("ppi-medicine-interactions-warfarin-clopidogrel-digoxin-iron.webp",
+   "Medicines named in the NHS, MedlinePlus and a UK rabeprazole leaflet as needing a conversation with your pharmacist: warfarin, clopidogrel, digoxin, phenytoin, diazepam, iron, St John’s wort and others.",
+   "NHS, MedlinePlus ও একটি UK রাবেপ্রাজল লিফলেটে যেসব ওষুধ নিয়ে ফার্মাসিস্টের সঙ্গে কথা বলতে বলা হয়েছে: ওয়ারফারিন, ক্লোপিডোগ্রেল, ডিগক্সিন, ফেনিটয়েন, ডায়াজেপাম, আয়রন, সেন্ট জনস ওয়ার্ট ও আরও কিছু।"),
+ "doctor": ("ppi-long-term-use-risks-and-when-to-see-a-doctor.webp",
+   "See a doctor promptly if you have trouble swallowing, bloody vomit, black or bloody stools, chest pain, unexplained weight loss, or heartburn lasting three months or more.",
+   "গিলতে কষ্ট, রক্তবমি, কালো বা রক্তমাখা পায়খানা, বুকে ব্যথা, অকারণে ওজন কমা, বা তিন মাসের বেশি বুক জ্বালা হলে দ্রুত ডাক্তার দেখান।"),
+ "missed": ("missed-dose-and-too-much-ppi-what-to-do.webp",
+   "Missed a PPI dose: take it when you remember unless the next dose is nearly due, and never take two together. If you take too much, get medical advice.",
+   "পিপিআইয়ের ডোজ বাদ গেলে: মনে পড়লে খান, পরের ডোজের সময় প্রায় হয়ে গেলে বাদ দিন, কখনও দুটো একসাথে খাবেন না। বেশি খেয়ে ফেললে চিকিৎসকের পরামর্শ নিন।"),
+}
+def fig(k, bn=False):
+    f, en, b = F[k]
+    t = b if bn else en
+    cap = {"timing": ("Sources differ on food. Your leaflet decides.", "খাবার নিয়ে উৎসগুলোর মধ্যে পার্থক্য আছে। আপনার লিফলেটই শেষ কথা।"),
+           "swallow": ("Swallow whole. Ask a pharmacist if you cannot.", "গোটা গিলুন। না পারলে ফার্মাসিস্টকে জিজ্ঞেস করুন।"),
+           "inter": ("Not a complete list. Always share your full medicine list.", "এটা পূর্ণ তালিকা নয়। আপনার সব ওষুধের কথা জানান।"),
+           "doctor": ("Warning signs are not for home treatment.", "সতর্কতার লক্ষণ ঘরে সামলানোর নয়।"),
+           "missed": ("One missed dose is usually simple to handle.", "একটি ডোজ বাদ পড়া সাধারণত সহজেই সামলানো যায়।")}[k][1 if bn else 0]
+    return f'<figure class="gb-fig"><img src="{IMG}{f}" width="1448" height="960" alt="{html.escape(t, quote=True)}" loading="lazy" decoding="async"><figcaption>{cap}</figcaption></figure>'
+
+def table(label, head, rows):
+    th = "".join(f"<th>{h}</th>" for h in head)
+    tr = "".join("<tr>" + "".join(f"<td>{c}</td>" for c in r) + "</tr>\n" for r in rows)
+    return f'<div class="table-scroll" role="region" aria-label="{label}" tabindex="0"><table class="compare-table"><thead><tr>{th}</tr></thead><tbody>\n{tr}</tbody></table></div>'
+def faq(items):
+    return '<div class="faq">\n' + "\n".join(f"<details><summary>{i+1}. {q}</summary><p>{a}</p></details>" for i, (q, a) in enumerate(items)) + "\n</div>"
+REFS = [("https://www.nhs.uk/medicines/omeprazole/how-and-when-to-take-omeprazole", "NHS: How and when to take omeprazole"),
+        ("https://www.nhs.uk/medicines/omeprazole/common-questions-about-omeprazole", "NHS: Common questions about omeprazole"),
+        ("https://www.nhs.uk/medicines/omeprazole/", "NHS: Omeprazole"),
+        ("https://medlineplus.gov/druginfo/meds/a693050.html", "MedlinePlus: Omeprazole"),
+        ("https://www.medicines.org.uk/emc/product/14538/pil", "electronic medicines compendium (UK): Rabeprazole sodium 20 mg gastro-resistant tablets, patient information leaflet")]
+refs = "".join(f'<li><a href="{u}" target="_blank" rel="noopener noreferrer">{t}</a></li>' for u, t in REFS)
+
+# ------------------------------------------------------------------ English
+FAQ_EN = [
+ ("Should I take omeprazole before or after food?", "The NHS says you can take omeprazole with or without food. MedlinePlus says prescription omeprazole capsules are usually taken once a day before a meal. Because labels differ by product and condition, follow your prescriber and your leaflet."),
+ ("Is it better to take a PPI in the morning or at night?", "The NHS advises the same time each morning for once-a-day omeprazole, or morning and evening if twice a day. Choose the schedule your doctor gave you and keep it consistent."),
+ ("Can I chew or crush a PPI tablet?", "No for enteric coated or gastro-resistant tablets, according to the NHS. A UK rabeprazole leaflet also says the tablet must be swallowed whole, not crushed or chewed. If you struggle to swallow, ask a pharmacist."),
+ ("How long can I use a PPI without a prescription?", "The NHS says not to take omeprazole for longer than 2 weeks if you bought it without a prescription. MedlinePlus says not to use non-prescription omeprazole for more than 14 days, or more often than once every 4 months, without talking to a doctor. These are UK and US rules, so follow the label on your pack."),
+ ("Can I take two acid-reducing medicines together?", "Do not assume it is safe. The NHS lists lansoprazole and famotidine among medicines that may not mix well with omeprazole. Ask your pharmacist before combining them."),
+ ("What should I do if I miss a dose?", "Take it as soon as you remember, unless the next dose is nearly due. In that case skip the missed dose. Never take two doses together."),
+]
+EN = f'''<div class="lang-pane" id="pane-en" lang="en" data-pane="en"><div class="article-head"><p class="kick">Health Made Simple</p><h1 class="article-title">When to Take a PPI: Before Meals, Common Mistakes (Rabeprazole, Omeprazole)</h1><p class="article-subtitle">When to take a gas and acid medicine, how to swallow it, what to avoid and when to see a doctor. A pharmacist explains, with official sources.</p><div class="article-meta"><span>{DATE_EN}</span><span>Health basics</span><span>6–8 min read</span><span>By Sayedul Abrar</span></div></div><figure class="hero-figure"><img class="article-hero" src="{THUMB}" alt="When to Take a PPI: Before Meals and Common Mistakes. A clock, a glass of water and two capsules. By Sayedul Abrar, Pharmacist." width="1600" height="900" fetchpriority="high" decoding="async"></figure><div class="article-body"><section class="answer-first"><h2>Quick answer: when to take a PPI</h2><p>Many PPI labels advise taking it once a day before a meal, but sources differ: the NHS says omeprazole can be taken at the same time each morning, with or without food. Swallow it whole, never chew or crush it, and keep the same time daily. Follow your prescriber and your product leaflet.</p></section>
+<ul><li><strong>Timing:</strong> pick one time and keep it. The NHS says morning for once-a-day omeprazole.</li><li><strong>Food:</strong> NHS says with or without food; MedlinePlus says prescription capsules are usually taken before a meal.</li><li><strong>Swallow whole</strong> with water. Do not chew or crush enteric coated or gastro-resistant tablets.</li><li><strong>Do not self-treat for long:</strong> non-prescription packs are for 2 weeks (NHS) or 14 days (MedlinePlus).</li></ul>
+<h2>What is a PPI?</h2>
+<p>PPI stands for proton pump inhibitor. It is a type of medicine that reduces stomach acid. Omeprazole, lansoprazole and rabeprazole are examples. According to the NHS, omeprazole is used to treat or prevent stomach ulcers, heartburn and gastro-oesophageal reflux disease (GORD), and, alongside antibiotics, <em>Helicobacter pylori</em> infection. If you want to understand the symptoms first, read my article on <a href="/blog/heartburn-vs-acid-reflux-vs-gerd/">heartburn, acid reflux and GERD</a>.</p>
+<h2>A common story (illustrative, fictional)</h2>
+<p>Rafi, 34, buys a gas medicine whenever his chest burns. Some days he takes it in the morning, some days at night. When the tablet is hard to swallow he chews it. After three months he is still buying strips without a check-up. A pharmacist would ask him to read the leaflet, keep a fixed time, swallow the tablet whole and see a doctor, because heartburn lasting three months or more is one of the reasons MedlinePlus gives for calling a doctor. This is an example, not a real patient.</p>
+<h2>When should you take a PPI?</h2>
+<p>This is the part where trusted sources do not say exactly the same thing, and that is normal. Products, strengths and conditions differ. The table shows what each source states.</p>
+{fig("timing")}
+{table("What each source says about PPI timing", ["Source","Medicine","What it says about timing"], [
+ ["NHS","Omeprazole","Same time each morning if once a day, or morning and evening if twice a day. With or without food."],
+ ["MedlinePlus","Omeprazole (prescription capsules)","Usually once a day before a meal."],
+ ["MedlinePlus","Omeprazole (non-prescription tablets)","Once a day in the morning, at least 1 hour before eating, for 14 days in a row."],
+ ["UK patient leaflet (eMC)","Rabeprazole 20 mg tablets","Mostly once a day. The section does not specify morning or food. For <em>H. pylori</em>, twice a day, normally for 7 days."]])}
+<p>The honest answer is therefore this: if your label says before a meal, follow that. If your product allows food, the NHS says it is fine. Either way, take it at a consistent time.</p>
+<h2>How to swallow it</h2>
+<p>The NHS says to swallow omeprazole with water and not to chew or crush capsules or tablets labelled enteric coated or gastro-resistant. The UK rabeprazole leaflet is blunt: the tablet must be swallowed whole, not crushed or chewed. If swallowing is hard, the NHS suggests asking a pharmacist. MedlinePlus describes opening omeprazole capsules onto applesauce, and the NHS notes some tablets can be dissolved in water. Those are product-specific, so only do it if your own leaflet says so.</p>
+{fig("swallow")}
+<h2>Common mistakes to avoid</h2>
+<ul><li><strong>Chewing or crushing</strong> a gastro-resistant tablet.</li><li><strong>Random timing,</strong> some days morning and some days night.</li><li><strong>Doubling a missed dose</strong> to catch up.</li><li><strong>Running non-prescription packs for months</strong> instead of the 2 weeks or 14 days stated by the NHS and MedlinePlus.</li><li><strong>Ignoring warning signs</strong> such as trouble swallowing, black stools or weight loss.</li><li><strong>Not mentioning other medicines</strong> and supplements.</li><li><strong>Drinking alcohol:</strong> the NHS says it is best not to, because alcohol can raise stomach acid and worsen symptoms.</li></ul>
+<h2>How long can you take it?</h2>
+<p>The NHS says some people need omeprazole for only a few days, others for weeks, months or years. It also says the chance of serious side effects can be higher after a year or more. These are mostly rare and include low vitamin B12, weakened bones that may break more easily, a severe allergic reaction, and a type of lupus causing rashes and joint pain. MedlinePlus similarly says PPIs may raise the risk of fractures of the wrists, hips or spine, with the highest risk at high doses or when used for a year or longer. If you are on a PPI long term, ask your doctor to review whether you still need it. Do not stop a prescribed PPI on your own.</p>
+<h2>Medicines to mention to your pharmacist</h2>
+{table("Medicines that may not mix well with PPIs", ["Medicine","What the source says","Source"], [
+ ["Warfarin, clopidogrel","May not mix well with omeprazole","NHS"],
+ ["Digoxin, diazepam, phenytoin","May not mix well with omeprazole","NHS"],
+ ["Lansoprazole, famotidine","Other acid-reducing medicines that may not mix well with omeprazole","NHS"],
+ ["St John’s wort, iron supplements","Tell your doctor and pharmacist if you take them","MedlinePlus; NHS lists St John’s wort"],
+ ["Nelfinavir, atazanavir (HIV medicines)","May not mix well with omeprazole. The rabeprazole leaflet says atazanavir should not be used together with rabeprazole","NHS; UK leaflet"],
+ ["Ketoconazole, itraconazole","Rabeprazole may lower the amount of these medicines in your blood","UK leaflet"],
+ ["High-dose methotrexate","The doctor may temporarily stop rabeprazole","UK leaflet"]])}
+{fig("inter")}
+<p>This is not a full list, and different PPIs have different interactions. I also covered one example in my <a href="/blog/how-to-take-iron-tablets-properly/">article on iron tablets</a>.</p>
+<h2>What if I miss a dose, or take too much?</h2>
+<p>The NHS and MedlinePlus agree: take a missed dose as soon as you remember, unless the next dose is nearly due, and never take two doses together. A UK rabeprazole leaflet adds that if you forget your medicine for more than 5 days, call your doctor before taking any more. The NHS says an extra dose is unlikely to cause problems, but advises getting medical advice if you take too much, and bringing the packet with you.</p>
+{fig("missed")}
+<h2>When to see a doctor</h2>
+<p>MedlinePlus lists these reasons to call a doctor if you are using non-prescription omeprazole for heartburn: heartburn lasting 3 months or longer, no improvement after 14 days, chest or shoulder pain, shortness of breath, unexplained weight loss, vomiting (especially bloody), stomach pain, trouble swallowing, or black or bloody stools. A UK rabeprazole leaflet says to stop and see a doctor straight away for severe watery or bloody diarrhoea with fever, abdominal pain or tenderness, and to seek care for sudden swelling of the face or difficulty breathing.</p>
+{fig("doctor")}
+<h2>Frequently asked questions</h2>
+{faq(FAQ_EN)}
+<h2>Key takeaway</h2>
+<p>Choose one consistent time, follow the timing on your own label, swallow the medicine whole, share your other medicines and do not self-treat for long. If symptoms keep returning or warning signs appear, see a doctor.</p>
+<section class="article-related"><h2>Related reading</h2><ul><li><a href="/blog/heartburn-vs-acid-reflux-vs-gerd/">Heartburn vs Acid Reflux vs GERD</a></li><li><a href="/blog/how-to-take-iron-tablets-properly/">How to Take Iron Tablets Properly: Timing, Food and Interactions</a></li><li><a href="/brands/finix/">Product reference: Finix (rabeprazole), Opsonin Pharma. Always follow the product leaflet.</a></li></ul><p><small>Disclosure: I work in the Product Management Department at Opsonin Pharma Ltd., which markets Finix. This article is general education, not a promotion of any brand.</small></p></section><section class="source-list"><h2>References</h2><ul>{refs}</ul></section><div class="disclaimer"><strong>Medical Education Disclaimer:</strong> This article is for general education only and is not a substitute for personal medical advice, diagnosis or treatment. Consult a clinician or registered pharmacist before starting, stopping or changing a medicine.</div></div></div>'''
+
+# ------------------------------------------------------------------ Bangla
+FAQ_BN = [
+ ("ওমিপ্রাজল কি খাবারের আগে খাব, না পরে?", "NHS বলছে ওমিপ্রাজল খাবারের সঙ্গে বা খাবার ছাড়া, দুভাবেই খাওয়া যায়। MedlinePlus বলছে প্রেসক্রিপশনের ওমিপ্রাজল ক্যাপসুল সাধারণত দিনে একবার খাবারের আগে খেতে হয়। পণ্য ও রোগভেদে লেবেল আলাদা হয়, তাই ডাক্তারের পরামর্শ ও আপনার ওষুধের লিফলেট মেনে চলুন।"),
+ ("পিপিআই সকালে খাওয়া ভালো, না রাতে?", "NHS বলছে দিনে একবার হলে প্রতিদিন সকালে একই সময়ে, আর দিনে দুবার হলে সকাল ও সন্ধ্যায় ওমিপ্রাজল খেতে। ডাক্তার যে সময় দিয়েছেন সেটাই মানুন এবং প্রতিদিন একই সময় রাখুন।"),
+ ("পিপিআই ট্যাবলেট কি চিবিয়ে বা গুঁড়া করে খাওয়া যায়?", "NHS অনুযায়ী এন্টেরিক কোটেড বা গ্যাস্ট্রো-রেজিস্ট্যান্ট ট্যাবলেট চিবানো বা গুঁড়া করা যাবে না। একটি UK রাবেপ্রাজল লিফলেটেও বলা আছে ট্যাবলেট গোটা গিলতে হবে, চিবানো বা গুঁড়া করা যাবে না। গিলতে সমস্যা হলে ফার্মাসিস্টকে জিজ্ঞেস করুন।"),
+ ("প্রেসক্রিপশন ছাড়া কত দিন পিপিআই খাওয়া যায়?", "NHS বলছে প্রেসক্রিপশন ছাড়া কেনা ওমিপ্রাজল ২ সপ্তাহের বেশি খাবেন না। MedlinePlus বলছে ডাক্তারের সঙ্গে কথা না বলে ১৪ দিনের বেশি, কিংবা প্রতি ৪ মাসে একবারের বেশি প্রেসক্রিপশন-ছাড়া ওমিপ্রাজল ব্যবহার করবেন না। এগুলো UK ও US-এর নিয়ম, তাই আপনার প্যাকের লেবেল মানুন।"),
+ ("দুটি অ্যাসিড কমানোর ওষুধ একসঙ্গে খাওয়া যায়?", "নিরাপদ ধরে নেবেন না। NHS-এর তালিকায় ল্যানসোপ্রাজল ও ফ্যামোটিডিন সেই ওষুধের মধ্যে আছে, যেগুলো ওমিপ্রাজলের সঙ্গে ভালোভাবে নাও মিশতে পারে। একসঙ্গে খাওয়ার আগে ফার্মাসিস্টকে জিজ্ঞেস করুন।"),
+ ("ডোজ বাদ পড়লে কী করব?", "মনে পড়লেই খেয়ে নিন, তবে পরের ডোজের সময় প্রায় হয়ে গেলে বাদ পড়া ডোজটা এড়িয়ে যান। কখনও দুই ডোজ একসঙ্গে খাবেন না।"),
+]
+BN = f'''<div class="lang-pane" id="pane-bn" lang="bn" data-pane="bn" hidden><div class="article-head"><p class="kick">সহজ ভাষায় স্বাস্থ্য</p><h1 class="article-title">গ্যাসের ওষুধ খাওয়ার সঠিক নিয়ম: খাবারের আগে কখন খাবেন, সাধারণ ভুল (রাবেপ্রাজল, ওমিপ্রাজল)</h1><p class="article-subtitle">গ্যাস ও অ্যাসিডের ওষুধ কখন খাবেন, কীভাবে গিলবেন, কী এড়াবেন এবং কখন ডাক্তার দেখাবেন। একজন ফার্মাসিস্টের ব্যাখ্যা, সরকারি উৎসসহ।</p><div class="article-meta"><span>{DATE_BN}</span><span>স্বাস্থ্য বিষয়ক</span><span>৬–৮ মিনিটে পড়া</span><span>লেখক: Sayedul Abrar</span></div></div><figure class="hero-figure"><img class="article-hero" src="{THUMB}" alt="গ্যাসের ওষুধ কখন খাবেন: খাবারের আগে, আর সাধারণ ভুল। একটি ঘড়ি, এক গ্লাস পানি ও দুটি ক্যাপসুল।" width="1600" height="900" fetchpriority="high" decoding="async"></figure><div class="article-body"><section class="answer-first"><h2>সংক্ষেপে উত্তর: গ্যাসের ওষুধ কখন খাবেন</h2><p>অনেক পিপিআইয়ের লেবেলে দিনে একবার খাবারের আগে খেতে বলা হয়, তবে উৎসভেদে পার্থক্য আছে: NHS বলছে ওমিপ্রাজল প্রতিদিন সকালে একই সময়ে, খাবারের সঙ্গে বা ছাড়া খাওয়া যায়। গোটা গিলুন, চিবাবেন না, গুঁড়া করবেন না, আর প্রতিদিন একই সময় রাখুন। ডাক্তারের পরামর্শ ও ওষুধের লিফলেট মানুন।</p></section>
+<ul><li><strong>সময়:</strong> একটি সময় ঠিক করে সেটাই ধরে রাখুন। NHS বলছে দিনে একবার হলে সকালে।</li><li><strong>খাবার:</strong> NHS বলছে খাবারের সঙ্গে বা ছাড়া; MedlinePlus বলছে প্রেসক্রিপশনের ক্যাপসুল সাধারণত খাবারের আগে।</li><li><strong>গোটা গিলুন</strong> পানি দিয়ে। এন্টেরিক কোটেড বা গ্যাস্ট্রো-রেজিস্ট্যান্ট ট্যাবলেট চিবাবেন না বা গুঁড়া করবেন না।</li><li><strong>নিজে নিজে বেশি দিন নয়:</strong> প্রেসক্রিপশন ছাড়া কেনা প্যাকের জন্য ২ সপ্তাহ (NHS) বা ১৪ দিন (MedlinePlus)।</li></ul>
+<h2>পিপিআই কী?</h2>
+<p>পিপিআই-এর পুরো নাম প্রোটন পাম্প ইনহিবিটর। এটি পাকস্থলীর অ্যাসিড কমানোর ওষুধ। ওমিপ্রাজল, ল্যানসোপ্রাজল ও রাবেপ্রাজল এর উদাহরণ। NHS অনুযায়ী ওমিপ্রাজল পাকস্থলীর আলসার, বুক জ্বালা ও গ্যাস্ট্রো-ইসোফেজিয়াল রিফ্লাক্স রোগের (GORD) চিকিৎসা বা প্রতিরোধে এবং অ্যান্টিবায়োটিকের সঙ্গে <em>হেলিকোব্যাক্টর পাইলোরি</em> সংক্রমণে ব্যবহার হয়। উপসর্গ আগে বুঝতে চাইলে পড়ুন আমার লেখা <a href="/blog/heartburn-vs-acid-reflux-vs-gerd-bangla/">বুক জ্বালা, অ্যাসিড রিফ্লাক্স ও GERD</a>।</p>
+<h2>একটি পরিচিত গল্প (উদাহরণ, কাল্পনিক)</h2>
+<p>৩৪ বছর বয়সী রাফি বুক জ্বললেই গ্যাসের ওষুধ কিনে নেন। কোনো দিন সকালে খান, কোনো দিন রাতে। ট্যাবলেট গিলতে কষ্ট হলে চিবিয়ে ফেলেন। তিন মাস পরেও চেকআপ ছাড়াই স্ট্রিপ কিনে চলেছেন। একজন ফার্মাসিস্ট তাঁকে বলবেন লিফলেটটা পড়তে, নির্দিষ্ট সময় ঠিক করতে, গোটা গিলতে এবং ডাক্তার দেখাতে, কারণ তিন মাস বা তার বেশি বুক জ্বালা থাকা MedlinePlus-এর দেওয়া ডাক্তার ডাকার কারণগুলোর একটি। এটি একটি উদাহরণ, কোনো প্রকৃত রোগী নন।</p>
+<h2>পিপিআই কখন খাবেন?</h2>
+<p>এই জায়গায় নির্ভরযোগ্য উৎসগুলো হুবহু একই কথা বলে না, আর সেটা স্বাভাবিক। পণ্য, শক্তি ও রোগভেদে নিয়ম আলাদা হয়। কোন উৎস কী বলছে, তা নিচের সারণিতে দেওয়া হলো।</p>
+{fig("timing", True)}
+{table("পিপিআই খাওয়ার সময় নিয়ে প্রতিটি উৎস কী বলছে", ["উৎস","ওষুধ","সময় নিয়ে কী বলা আছে"], [
+ ["NHS","ওমিপ্রাজল","দিনে একবার হলে সকালে একই সময়ে, দুবার হলে সকাল ও সন্ধ্যায়। খাবারের সঙ্গে বা ছাড়া।"],
+ ["MedlinePlus","ওমিপ্রাজল (প্রেসক্রিপশনের ক্যাপসুল)","সাধারণত দিনে একবার, খাবারের আগে।"],
+ ["MedlinePlus","ওমিপ্রাজল (প্রেসক্রিপশন ছাড়া ট্যাবলেট)","সকালে দিনে একবার, খাওয়ার অন্তত ১ ঘণ্টা আগে, টানা ১৪ দিন।"],
+ ["UK রোগীর লিফলেট (eMC)","রাবেপ্রাজল ২০ মি.গ্রা. ট্যাবলেট","বেশির ভাগ ক্ষেত্রে দিনে একবার। সকাল বা খাবারের কথা নির্দিষ্ট করা নেই। <em>H. pylori</em>-র জন্য দিনে দুবার, সাধারণত ৭ দিন।"]])}
+<p>তাই সৎ উত্তর হলো: আপনার লেবেলে খাবারের আগে লেখা থাকলে সেটাই মানুন। আপনার পণ্যে খাবারের সঙ্গে খেতে বাধা না থাকলে NHS বলছে তা চলে। দুই ক্ষেত্রেই সময়টা প্রতিদিন একই রাখুন।</p>
+<h2>কীভাবে গিলবেন</h2>
+<p>NHS বলছে ওমিপ্রাজল পানি দিয়ে গিলতে, আর "এন্টেরিক কোটেড" বা "গ্যাস্ট্রো-রেজিস্ট্যান্ট" লেখা ক্যাপসুল বা ট্যাবলেট চিবাতে বা গুঁড়া করতে নয়। UK রাবেপ্রাজল লিফলেটে স্পষ্ট বলা আছে, ট্যাবলেট গোটা গিলতে হবে, গুঁড়া বা চিবানো যাবে না। গিলতে কষ্ট হলে NHS ফার্মাসিস্টকে জিজ্ঞেস করতে বলছে। MedlinePlus-এ ওমিপ্রাজল ক্যাপসুল খুলে অ্যাপলসসের সঙ্গে মেশানোর কথা আছে, আর NHS জানাচ্ছে কিছু ট্যাবলেট পানিতে গুলে খাওয়া যায়। এগুলো নির্দিষ্ট পণ্যের জন্য, তাই আপনার লিফলেটে লেখা থাকলে তবেই করুন।</p>
+{fig("swallow", True)}
+<h2>যেসব সাধারণ ভুল এড়াবেন</h2>
+<ul><li>গ্যাস্ট্রো-রেজিস্ট্যান্ট ট্যাবলেট <strong>চিবানো বা গুঁড়া করা।</strong></li><li><strong>এলোমেলো সময়,</strong> কোনো দিন সকালে, কোনো দিন রাতে।</li><li>ডোজ বাদ গেলে পরে <strong>দ্বিগুণ খাওয়া।</strong></li><li>NHS ও MedlinePlus-এর বলা ২ সপ্তাহ বা ১৪ দিনের জায়গায় <strong>প্রেসক্রিপশন ছাড়া মাসের পর মাস</strong> খাওয়া।</li><li>গিলতে কষ্ট, কালো পায়খানা বা ওজন কমার মতো <strong>সতর্কতার লক্ষণ উপেক্ষা করা।</strong></li><li>অন্য ওষুধ ও সাপ্লিমেন্টের কথা <strong>না জানানো।</strong></li><li><strong>অ্যালকোহল:</strong> NHS বলছে না খাওয়াই ভালো, কারণ অ্যালকোহল পাকস্থলীর অ্যাসিড বাড়িয়ে উপসর্গ খারাপ করতে পারে।</li></ul>
+<h2>কত দিন খাওয়া যায়?</h2>
+<p>NHS বলছে কারও ওমিপ্রাজল লাগে মাত্র কয়েক দিন, কারও কয়েক সপ্তাহ, মাস বা বছর। এটাও বলছে, এক বছর বা তার বেশি খেলে গুরুতর পার্শ্বপ্রতিক্রিয়ার সম্ভাবনা বাড়তে পারে। এগুলো বেশির ভাগই বিরল এবং এর মধ্যে আছে ভিটামিন বি১২ কমে যাওয়া, হাড় দুর্বল হয়ে সহজে ভাঙার ঝুঁকি, গুরুতর অ্যালার্জি এবং র‍্যাশ ও জয়েন্ট ব্যথাসহ এক ধরনের লুপাস। MedlinePlus-ও বলছে পিপিআই কব্জি, কোমর বা মেরুদণ্ডের হাড় ভাঙার ঝুঁকি বাড়াতে পারে, ঝুঁকি সবচেয়ে বেশি উচ্চ মাত্রায় বা এক বছর বা তার বেশি ব্যবহারে। দীর্ঘদিন পিপিআই খেলে ডাক্তারকে বলুন ওষুধটা এখনও লাগবে কি না তা দেখে নিতে। প্রেসক্রাইব করা পিপিআই নিজে থেকে বন্ধ করবেন না।</p>
+<h2>ফার্মাসিস্টকে যেসব ওষুধের কথা জানাবেন</h2>
+{table("যেসব ওষুধ পিপিআইয়ের সঙ্গে ভালোভাবে নাও মিশতে পারে", ["ওষুধ","উৎস কী বলছে","উৎস"], [
+ ["ওয়ারফারিন, ক্লোপিডোগ্রেল","ওমিপ্রাজলের সঙ্গে ভালোভাবে নাও মিশতে পারে","NHS"],
+ ["ডিগক্সিন, ডায়াজেপাম, ফেনিটয়েন","ওমিপ্রাজলের সঙ্গে ভালোভাবে নাও মিশতে পারে","NHS"],
+ ["ল্যানসোপ্রাজল, ফ্যামোটিডিন","অন্য অ্যাসিড কমানোর ওষুধ, যা ওমিপ্রাজলের সঙ্গে ভালোভাবে নাও মিশতে পারে","NHS"],
+ ["সেন্ট জনস ওয়ার্ট, আয়রন সাপ্লিমেন্ট","খেলে ডাক্তার ও ফার্মাসিস্টকে জানান","MedlinePlus; NHS-এ সেন্ট জনস ওয়ার্ট আছে"],
+ ["নেলফিনাভির, অ্যাটাজানাভির (এইচআইভির ওষুধ)","ওমিপ্রাজলের সঙ্গে ভালোভাবে নাও মিশতে পারে। রাবেপ্রাজল লিফলেটে বলা আছে অ্যাটাজানাভির রাবেপ্রাজলের সঙ্গে একসঙ্গে ব্যবহার করা যাবে না","NHS; UK লিফলেট"],
+ ["কিটোকোনাজল, ইট্রাকোনাজল","রাবেপ্রাজল রক্তে এই ওষুধগুলোর পরিমাণ কমিয়ে দিতে পারে","UK লিফলেট"],
+ ["উচ্চ মাত্রার মেথোট্রেক্সেট","ডাক্তার সাময়িকভাবে রাবেপ্রাজল বন্ধ রাখতে পারেন","UK লিফলেট"]])}
+{fig("inter", True)}
+<p>এটি পূর্ণ তালিকা নয়, আর ভিন্ন পিপিআইয়ের মিথস্ক্রিয়াও ভিন্ন। একটি উদাহরণ নিয়ে আমি <a href="/blog/how-to-take-iron-tablets-properly/#bn">আয়রন ট্যাবলেটের লেখায়</a>ও আলোচনা করেছি।</p>
+<h2>ডোজ বাদ পড়লে বা বেশি খেয়ে ফেললে কী করবেন?</h2>
+<p>NHS ও MedlinePlus একমত: মনে পড়লেই বাদ পড়া ডোজ খেয়ে নিন, তবে পরের ডোজের সময় প্রায় হয়ে গেলে সেটা এড়িয়ে যান, আর কখনও দুই ডোজ একসঙ্গে খাবেন না। একটি UK রাবেপ্রাজল লিফলেট যোগ করেছে, ৫ দিনের বেশি ওষুধ না খেলে আবার খাওয়ার আগে ডাক্তারকে ফোন করুন। NHS বলছে বাড়তি এক ডোজে সমস্যা হওয়ার সম্ভাবনা কম, তবে বেশি খেয়ে ফেললে চিকিৎসকের পরামর্শ নিন এবং প্যাকেটটি সঙ্গে নিয়ে যান।</p>
+{fig("missed", True)}
+<h2>কখন ডাক্তার দেখাবেন</h2>
+<p>বুক জ্বালার জন্য প্রেসক্রিপশন ছাড়া ওমিপ্রাজল খেলে MedlinePlus ডাক্তার ডাকার যে কারণগুলো দিয়েছে: ৩ মাস বা তার বেশি বুক জ্বালা, ১৪ দিনে উন্নতি না হওয়া, বুকে বা কাঁধে ব্যথা, শ্বাসকষ্ট, অকারণে ওজন কমা, বমি (বিশেষত রক্তসহ), পেটে ব্যথা, গিলতে কষ্ট, বা কালো কিংবা রক্তমাখা পায়খানা। একটি UK রাবেপ্রাজল লিফলেট বলছে জ্বর, পেট ব্যথা বা পেটে চাপ দিলে ব্যথাসহ তীব্র পাতলা বা রক্তমাখা ডায়রিয়া হলে ওষুধ বন্ধ করে সঙ্গে সঙ্গে ডাক্তার দেখাতে, আর হঠাৎ মুখ ফুলে যাওয়া বা শ্বাসকষ্ট হলে চিকিৎসা নিতে।</p>
+{fig("doctor", True)}
+<h2>সচরাচর জিজ্ঞাসিত প্রশ্ন</h2>
+{faq(FAQ_BN)}
+<h2>মূল কথা</h2>
+<p>একটি নির্দিষ্ট সময় বেছে নিন, নিজের লেবেলের সময়ের নিয়ম মানুন, গোটা গিলুন, অন্য ওষুধের কথা জানান এবং নিজে নিজে বেশি দিন খাবেন না। উপসর্গ বারবার ফিরে এলে বা সতর্কতার লক্ষণ দেখা দিলে ডাক্তার দেখান।</p>
+<section class="article-related"><h2>আরও পড়ুন</h2><ul><li><a href="/blog/heartburn-vs-acid-reflux-vs-gerd-bangla/">বুক জ্বালা, অ্যাসিড রিফ্লাক্স ও GERD</a></li><li><a href="/blog/how-to-take-iron-tablets-properly/#bn">আয়রন ট্যাবলেট কীভাবে খাবেন</a></li><li><a href="/brands/finix/">পণ্যের তথ্য: Finix (রাবেপ্রাজল), Opsonin Pharma। সব সময় পণ্যের লিফলেট মানুন।</a></li></ul><p><small>প্রকাশের তথ্য: আমি Opsonin Pharma Ltd.-এর প্রোডাক্ট ম্যানেজমেন্ট বিভাগে কাজ করি, যারা Finix বাজারজাত করে। এই লেখা সাধারণ স্বাস্থ্যশিক্ষা, কোনো ব্র্যান্ডের প্রচার নয়।</small></p></section><section class="source-list"><h2>সূত্র</h2><ul>{refs}</ul></section><div class="disclaimer"><strong>চিকিৎসা-শিক্ষা বিষয়ক দাবিত্যাগ:</strong> এই লেখা শুধু সাধারণ শিক্ষার জন্য। এটি ব্যক্তিগত চিকিৎসা-পরামর্শ, রোগ নির্ণয় বা চিকিৎসার বিকল্প নয়। কোনো ওষুধ শুরু, বন্ধ বা বদলানোর আগে চিকিৎসক বা নিবন্ধিত ফার্মাসিস্টের সঙ্গে কথা বলুন।</div></div></div>'''
+
+TITLE = "When to Take a PPI: Before Meals, Common Mistakes (Rabeprazole, Omeprazole)"
+TITLE_SHORT = "When to Take a PPI: Before Meals and Common Mistakes"
+DESC = "When to take a PPI such as omeprazole or rabeprazole: before meals or with food, how to swallow it, common mistakes, medicine interactions, missed doses and when to see a doctor. Explained by a pharmacist with NHS, MedlinePlus and UK leaflet sources."
+KW = "when to take PPI, omeprazole before or after food, rabeprazole how to take, PPI common mistakes, omeprazole morning or night, can I crush omeprazole, PPI interactions, গ্যাসের ওষুধ খাওয়ার সঠিক নিয়ম, গ্যাসের ওষুধ কখন খাবেন, ওমিপ্রাজল কখন খাবেন, রাবেপ্রাজল খাওয়ার নিয়ম, পিপিআই কখন খাবেন"
+
+def main():
+    t = (ROOT / "blog/how-to-take-iron-tablets-properly/index.html").read_text(encoding="utf-8")
+    a = t.index("<article>"); b = t.index("</article>")
+    head, tail = t[:a], t[b:]
+    esc = lambda x: html.escape(x, quote=True)
+    # head metadata
+    head = re.sub(r"<title>.*?</title>", f"<title>{html.escape(TITLE)} | Sayedul Abrar</title>", head, 1, flags=re.S)
+    def meta(attr, name, val):
+        nonlocal head
+        head = re.sub(rf'(<meta {attr}="{re.escape(name)}" content=")[^"]*(")', lambda m: m.group(1) + esc(val) + m.group(2), head, 1)
+    meta("name", "description", DESC); meta("name", "keywords", KW)
+    meta("property", "og:title", TITLE_SHORT); meta("property", "og:description", DESC); meta("property", "og:url", URL)
+    meta("property", "og:image", SOCIAL); meta("property", "og:image:alt", "When to take a PPI: before meals and common mistakes")
+    meta("property", "article:modified_time", DATE)
+    meta("name", "twitter:title", TITLE_SHORT); meta("name", "twitter:description", DESC); meta("name", "twitter:image", SOCIAL)
+    meta("name", "twitter:image:alt", "When to take a PPI: before meals and common mistakes")
+    head = re.sub(r'(<link rel="canonical" href=")[^"]*"', rf'\g<1>{URL}"', head, 1)
+    for tag in ('article:published_time',):
+        head = re.sub(rf'(<meta property="{tag}" content=")[^"]*"', rf'\g<1>{DATE}"', head)
+    # JSON-LD
+    ld = [json.loads(x) for x in re.findall(r'<script type="application/ld\+json">(.*?)</script>', head, re.S)]
+    blog, faqld, crumbs = ld
+    blog["mainEntityOfPage"]["@id"] = URL; blog["headline"] = TITLE; blog["description"] = DESC
+    blog["datePublished"] = blog["dateModified"] = DATE
+    def imo(u, w, h, cap): return {"@type": "ImageObject", "url": BASE + u, "width": w, "height": h, "caption": cap, "creditText": "Sayedul Abrar", "creator": {"@type": "Person", "name": "Sayedul Abrar"}}
+    imgs = [SOCIAL, imo(THUMB, 1600, 900, TITLE_SHORT + ". By Sayedul Abrar, Pharmacist.")]
+    for k in F: imgs.append(imo(IMG + F[k][0], 1448, 960, F[k][1]))
+    blog["image"] = imgs
+    for k in ("keywords",):
+        if k in blog: blog[k] = KW
+    if "about" in blog: blog["about"] = [{"@type": "Drug", "name": "Proton pump inhibitor"}]
+    if "citation" in blog: blog["citation"] = [{"@type": "WebPage", "name": n, "url": u} for u, n in REFS]
+    faqld["mainEntity"] = [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": re.sub(r"<[^>]+>", "", a)}} for q, a in FAQ_EN]
+    crumbs["itemListElement"][2].update(name="When to Take a PPI", item=URL)
+    blobs = iter([blog, faqld, crumbs])
+    head = re.sub(r'<script type="application/ld\+json">.*?</script>', lambda m: '<script type="application/ld+json">' + json.dumps(next(blobs), ensure_ascii=False) + '</script>', head, flags=re.S)
+    head = head.replace('/ How to Take Iron Tablets Properly</p>', '/ When to Take a PPI</p>')
+    # related section in tail stays (author card, footer); replace its "related" block
+    tail = re.sub(r'<section class="related">.*?</section>', f'<section class="related"><h2>More · Health Made Simple</h2><div class="related-track"><a class="related-card" href="/blog/{SLUG}/#bn"><strong>Read in Bangla</strong><span>গ্যাসের ওষুধ খাওয়ার সঠিক নিয়ম</span></a><a class="related-card" href="/blog/heartburn-vs-acid-reflux-vs-gerd/"><strong>Heartburn vs Acid Reflux vs GERD</strong><span>Symptoms and when to see a doctor.</span></a><a class="related-card" href="/blog/how-to-take-iron-tablets-properly/"><strong>How to Take Iron Tablets Properly</strong><span>Timing, food and interactions.</span></a></div></section>', tail, 1, flags=re.S)
+    out = head + "<article>" + EN + BN + tail
+    d = ROOT / "blog" / SLUG; d.mkdir(exist_ok=True)
+    (d / "index.html").write_text(out, encoding="utf-8")
+    db = ROOT / "blog" / (SLUG + "-bangla"); db.mkdir(exist_ok=True)
+    stub = (ROOT / "blog/how-to-take-iron-tablets-properly-bangla/index.html").read_text(encoding="utf-8")
+    stub = stub.replace("how-to-take-iron-tablets-properly", SLUG).replace("আয়রন ট্যাবলেট কীভাবে খাবেন (বাংলা)", "গ্যাসের ওষুধ খাওয়ার সঠিক নিয়ম (বাংলা)")
+    (db / "index.html").write_text(stub, encoding="utf-8")
+    print("built", len(out))
+main()
