@@ -3750,3 +3750,17 @@ body.pf-page footer .cr,body.pf-page footer small{color:#d9c6a2}
 .pwr-ref small{display:inline;margin-left:8px}
 .pwr-body{padding-bottom:22px}
 @media(max-width:700px){.pwr-paper{height:480px;padding:34px 18px 30px 44px;background:linear-gradient(90deg,transparent 30px,#e8a3a3 30px,#e8a3a3 32px,transparent 32px),#fffdf8}.pwr-ref{left:44px;right:14px}.pwr-ref small{display:block;margin:2px 0 0}}
+
+/* hero shorter + divider; cabinet = 3 rows of 2 on small screens */
+.pf-hero{padding-top:26px!important;padding-bottom:34px!important;border-bottom:3px double #c9a461;position:relative}
+.pf-hero:after{content:"";position:absolute;left:50%;bottom:-9px;width:14px;height:14px;margin-left:-7px;transform:rotate(45deg);background:radial-gradient(circle at 35% 30%,#f3dfae,#a47a2e);box-shadow:0 1px 2px rgba(0,0,0,.3);z-index:2}
+.pf-art{min-height:540px}.pf-figure{height:560px}
+.pf-hero .portfolio-intro-grid{align-items:center}
+@media(max-width:900px){.pf-art{min-height:400px}.pf-figure{height:400px}}
+@media(max-width:480px){.pf-art{min-height:340px}.pf-figure{height:350px}.pf-hero{padding-top:14px!important;padding-bottom:26px!important}}
+@media(max-width:900px){
+ .cab-body{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+ .cab-tier,.cab-row{display:contents}
+ .cab-tag{display:none}
+}
+@media(max-width:480px){.pf-art{min-height:290px}.pf-figure{height:300px}.pf-stack{height:92px}}

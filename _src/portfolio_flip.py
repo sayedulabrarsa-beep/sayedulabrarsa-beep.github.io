@@ -5,7 +5,7 @@ import re, pathlib, html
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 PAGE = ROOT / "portfolio" / "index.html"
 e = html.escape
-TOK = "pf5-20261109"
+TOK = "pf7-20261109"
 
 # (tag, title, line)  — titles come from the Learning record and the PMD role description
 PAGES = [
