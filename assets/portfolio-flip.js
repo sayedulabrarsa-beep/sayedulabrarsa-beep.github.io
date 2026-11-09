@@ -8,7 +8,7 @@ var reduce=false;try{reduce=matchMedia('(prefers-reduced-motion: reduce)').match
   if(data.length<2)return;
   var top=pad.querySelector('.pf-top'),under=pad.querySelector('.pf-under'),cnt=null;
   var i=0,busy=false,hold=false,timer;
-  function fill(el,p){el.querySelector('b').textContent=p[0]}
+  function fill(el,p){var b=el.querySelector('b');b.style.fontSize='';b.textContent=p[0];var fs=parseFloat(getComputedStyle(b).fontSize),max=el.clientWidth-56;while(b.scrollWidth>max&&fs>18){fs-=1;b.style.fontSize=fs+'px'}}
   function pad2(n){return n<10?'0'+n:''+n}
   function next(){
     if(busy)return;busy=true;
@@ -24,7 +24,7 @@ var reduce=false;try{reduce=matchMedia('(prefers-reduced-motion: reduce)').match
   function loop(){clearInterval(timer);timer=setInterval(function(){if(!hold&&!document.hidden)next()},2800)}
   pad.addEventListener('mouseenter',function(){hold=true});pad.addEventListener('mouseleave',function(){hold=false});
   pad.addEventListener('click',next);
-  fill(under,data[1]);loop();
+  fill(under,data[1]);fill(top,data[0]);loop();if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){fill(top,data[i]);fill(under,data[(i+1)%data.length])});
 })();
 /* ---------- handwriting words ---------- */
 (function(){

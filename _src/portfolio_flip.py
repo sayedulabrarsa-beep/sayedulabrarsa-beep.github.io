@@ -5,7 +5,7 @@ import re, pathlib, html
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 PAGE = ROOT / "portfolio" / "index.html"
 e = html.escape
-TOK = "pf4-20261109"
+TOK = "pf5-20261109"
 
 # (tag, title, line)  — titles come from the Learning record and the PMD role description
 PAGES = [
@@ -59,8 +59,8 @@ def main():
     s = s[:a] + hero() + s[b:]
     s = re.sub(r"<!--PQ-START-->.*?<!--PQ-END-->", lambda m: words(), s, flags=re.S)
     s = s.replace("<body>", '<body class="pf-page">', 1) if '<body class="pf-page">' not in s else s
-    if "Amiri" not in s:
-        s = s.replace("family=Dancing+Script:wght@700", "family=Dancing+Script:wght@700&family=Amiri:wght@400;700&family=Atma:wght@400;500", 1)
+    if "Hind+Siliguri" not in s:
+        s = s.replace("&family=Atma:wght@400;500","").replace("family=Dancing+Script:wght@700", "family=Dancing+Script:wght@700&family=Amiri:wght@400;700&family=Lora:wght@500&family=Hind+Siliguri:wght@400;500", 1)
     if "portfolio-flip.js" not in s:
         s = s.replace("</body>", f'<script src="/assets/portfolio-flip.js?v={TOK}" defer></script>\n</body>', 1)
     s = re.sub(r'/assets/style\.css\?v=[^"]*', f'/assets/style.css?v={TOK}', s)
