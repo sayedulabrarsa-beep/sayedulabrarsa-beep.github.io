@@ -3713,3 +3713,19 @@ body.pf-page footer .social-link,body.pf-page footer .social-link span{color:#3b
 body.pf-page footer .cr,body.pf-page footer small{color:#d9c6a2}
 .pf-words .pwr-head .eyebrow{font-size:10px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:#b76e25}
 .pf-words .pwr-head h2{font-size:clamp(28px,4vw,42px);line-height:1.15;letter-spacing:-.035em;color:#20283b;margin:10px 0 14px}
+
+/* portfolio hero v2: lead first, title-only pad, full-length portrait */
+.pf-lead{margin:4px 0 22px;max-width:560px;font-size:clamp(18px,2.2vw,22px);line-height:1.55;font-weight:600;color:#20283b;letter-spacing:-.01em}
+.pf-pad{margin:6px 0 26px;max-width:520px}
+.pf-stack{height:122px}
+.pf-pg{justify-content:center;padding:18px 30px}
+.pf-pg b{font-size:clamp(30px,4.8vw,50px);line-height:1.05}
+.pf-art{min-height:600px;align-items:flex-end}
+.pf-art:before{width:78%;height:70%;bottom:6%;top:auto;background:linear-gradient(180deg,#f5e4ca,#efd5aa);border-radius:46% 46% 18% 18%/38% 38% 8% 8%;transform:none}
+.pf-glow{position:absolute;left:50%;bottom:12%;width:86%;height:62%;transform:translateX(-50%);border-radius:50%;background:radial-gradient(circle,rgba(31,59,115,.16),transparent 68%)}
+.pf-figure{position:relative;z-index:2;height:600px;width:auto;max-width:100%;object-fit:contain;filter:drop-shadow(0 18px 22px rgba(20,33,61,.28))}
+.pf-ground{position:absolute;left:50%;bottom:4px;width:62%;height:26px;transform:translateX(-50%);border-radius:50%;background:radial-gradient(ellipse,rgba(20,33,61,.38),transparent 70%);z-index:1}
+.pf-art .portfolio-stamp{z-index:3}
+@media(max-width:900px){.pf-art{min-height:460px}.pf-figure{height:460px}}
+@media(max-width:480px){.pf-stack{height:104px}.pf-art{min-height:420px}.pf-figure{height:420px}}
+.portfolio-intro-copy>p.pf-lead{max-width:580px;color:#1d2438;font-size:clamp(19px,2.3vw,23px);font-weight:600;line-height:1.5}

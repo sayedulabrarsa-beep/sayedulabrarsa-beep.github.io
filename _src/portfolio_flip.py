@@ -5,7 +5,7 @@ import re, pathlib, html
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 PAGE = ROOT / "portfolio" / "index.html"
 e = html.escape
-TOK = "pf2-20261109"
+TOK = "pf4-20261109"
 
 # (tag, title, line)  — titles come from the Learning record and the PMD role description
 PAGES = [
@@ -30,20 +30,18 @@ PAGES = [
 ]
 
 def hero():
-    n = len(PAGES)
     first, second = PAGES[0], PAGES[1]
     def pg(p, cls):
-        return f'<div class="pf-pg {cls}"><small>{e(p[0])}</small><b>{e(p[1])}</b><span>{e(p[2])}</span></div>'
-    data = "".join(f'<li data-t="{e(t)}" data-h="{e(h)}" data-l="{e(l)}"></li>' for t, h, l in PAGES)
+        return f'<div class="pf-pg {cls}"><b>{e(p[1])}</b></div>'
+    data = "".join(f'<li data-h="{e(h)}"></li>' for t, h, l in PAGES)
     rings = "".join("<i></i>" for _ in range(11))
     return f'''<section class="portfolio-intro pf-hero"><div class="wrap portfolio-intro-grid">
   <div class="portfolio-intro-copy"><p class="eyebrow">Selected work · Brand strategy · Healthcare</p><h1>Sayedul Abrar’s <em>Portfolio</em></h1>
-  <p class="pf-hi"><strong>Hi, I’m Sayedul.</strong><span>The toolkit I bring to every brand:</span></p>
-  <div class="pf-pad" id="pf-pad" role="img" aria-label="Rotating list of roles and skills"><div class="pf-rings" aria-hidden="true">{rings}</div><div class="pf-stack">{pg(second, "pf-under")}{pg(first, "pf-top")}</div><em class="pf-count" aria-hidden="true">01 / {n:02d}</em></div>
+  <p class="pf-lead">Pharmaceutical product management, brand development and meaningful work in healthcare.</p>
+  <div class="pf-pad" id="pf-pad" role="img" aria-label="Rotating list of roles and skills"><div class="pf-rings" aria-hidden="true">{rings}</div><div class="pf-stack">{pg(second, "pf-under")}{pg(first, "pf-top")}</div></div>
   <ul class="pf-data" hidden>{data}</ul>
-  <p class="portfolio-lead">Pharmaceutical product management, brand development and meaningful work in healthcare.</p>
   <div class="pf-cta"><a class="portfolio-cta" href="/contact/">Discuss a collaboration <span aria-hidden="true">↗</span></a><a class="pf-ghost" href="#cabinet">See the cabinet ↓</a></div></div>
-  <div class="portfolio-intro-art"><div class="portfolio-portrait pf-portrait"><img src="/assets/img/portfolio/formal-portrait.webp" alt="Sayedul Abrar in a formal suit" width="600" height="718"></div><div class="portfolio-stamp">PHARMACIST<br>LEARNER<br>CONTRIBUTOR</div><span class="portfolio-orbit" aria-hidden="true"></span></div>
+  <div class="portfolio-intro-art pf-art"><span class="pf-glow" aria-hidden="true"></span><img class="pf-figure" src="/assets/img/portfolio/formal-suit-cutout.webp" alt="Sayedul Abrar in a navy double-breasted suit" width="567" height="1496"><span class="pf-ground" aria-hidden="true"></span><div class="portfolio-stamp">PHARMACIST<br>LEARNER<br>CONTRIBUTOR</div></div>
 </div></section>'''
 
 def words():

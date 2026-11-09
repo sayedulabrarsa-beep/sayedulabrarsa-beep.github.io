@@ -4,21 +4,21 @@ var reduce=false;try{reduce=matchMedia('(prefers-reduced-motion: reduce)').match
 /* ---------- flip pad ---------- */
 (function(){
   var pad=document.getElementById('pf-pad');if(!pad)return;
-  var data=[].map.call(document.querySelectorAll('.pf-data li'),function(li){return[li.dataset.t,li.dataset.h,li.dataset.l]});
+  var data=[].map.call(document.querySelectorAll('.pf-data li'),function(li){return[li.dataset.h]});
   if(data.length<2)return;
-  var top=pad.querySelector('.pf-top'),under=pad.querySelector('.pf-under'),cnt=pad.querySelector('.pf-count');
+  var top=pad.querySelector('.pf-top'),under=pad.querySelector('.pf-under'),cnt=null;
   var i=0,busy=false,hold=false,timer;
-  function fill(el,p){el.querySelector('small').textContent=p[0];el.querySelector('b').textContent=p[1];el.querySelector('span').textContent=p[2]}
+  function fill(el,p){el.querySelector('b').textContent=p[0]}
   function pad2(n){return n<10?'0'+n:''+n}
   function next(){
     if(busy)return;busy=true;
     var n=(i+1)%data.length;
-    if(reduce){fill(top,data[n]);i=n;cnt.textContent=pad2(i+1)+' / '+pad2(data.length);busy=false;return}
+    if(reduce){fill(top,data[n]);i=n;busy=false;return}
     top.classList.add('is-flip');
     setTimeout(function(){
       i=n;fill(top,data[i]);top.classList.add('no-tr');top.classList.remove('is-flip');
       void top.offsetWidth;top.classList.remove('no-tr');
-      fill(under,data[(i+1)%data.length]);cnt.textContent=pad2(i+1)+' / '+pad2(data.length);busy=false;
+      fill(under,data[(i+1)%data.length]);busy=false;
     },720);
   }
   function loop(){clearInterval(timer);timer=setInterval(function(){if(!hold&&!document.hidden)next()},2800)}
