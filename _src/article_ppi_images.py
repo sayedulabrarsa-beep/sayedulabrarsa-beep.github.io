@@ -31,11 +31,17 @@ def page(name, w, h, body): PAGES[name] = (w, h, f'<html><head><meta charset="ut
 W, H = 1448, 960
 page("when-to-take-omeprazole-and-other-ppis-timing-and-food", W, H, f'''
 <div class="title" style="font-size:58px">When to Take a <em>PPI</em></div>
-<div class="card g" style="left:5%;top:22%;width:42%;height:27%"><h3>NHS (omeprazole)</h3><p>Same time each morning. With or without food.</p><small>Twice a day: morning and evening</small></div>
-<div class="card o" style="right:5%;top:22%;width:42%;height:27%"><h3>MedlinePlus</h3><p>Prescription capsules: usually once a day before a meal.</p><small>Non-prescription: 1 hour before eating, 14 days</small></div>
-{clock(75,540,250)}
-<div class="card t" style="left:26%;top:54%;width:69%;height:19%;padding:30px 34px"><p style="text-align:left">Sources differ, so your product leaflet and prescriber come first.</p></div>
-<div class="foot">Pick one time and keep it the same every day.</div>
+<div class="card g" style="left:5%;top:21%;width:42%;height:22%;padding:24px 30px"><h3>NHS (omeprazole)</h3><p>Same time each morning. With or without food.</p></div>
+<div class="card o" style="right:5%;top:21%;width:42%;height:22%;padding:24px 30px"><h3>MedlinePlus (omeprazole)</h3><p>Prescription capsules: usually once a day before a meal.</p></div>
+<div class="card t" style="left:5%;top:47%;width:90%;height:27%"><h3>Rabeprazole tablets (FDA label)</h3><p>Can be taken without regard to timing of meals for most uses.</p><small>Exceptions: duodenal ulcer, after the morning meal. H. pylori triple therapy, with food.</small></div>
+<div class="foot" style="bottom:4%">Your leaflet and prescriber come first. Keep the same time every day.</div>
+''')
+page("rabeprazole-finix-tablet-mups-and-sprinkle-how-to-take", W, H, f'''
+<div class="title" style="font-size:54px">Rabeprazole Forms: <em>How to Take</em></div>
+<div class="card t" style="left:4%;top:21%;width:29%;height:40%;padding:26px 26px"><h3 style="font-size:36px">Tablet</h3><p style="font-size:27px">Finix 20 tablet. Swallow whole with water. Do not chew, crush or split.</p><small>FDA label: with or without food for most uses</small></div>
+<div class="card o" style="left:35.5%;top:21%;width:29%;height:40%;padding:26px 26px"><h3 style="font-size:36px">MUPS tablet</h3><p style="font-size:27px">Finix MUPS 20. Swallow whole unless the insert says otherwise.</p><small>Pellet-based enteric-coated tablet</small></div>
+<div class="card g" style="right:4%;top:21%;width:29%;height:40%;padding:26px 26px"><h3 style="font-size:36px">Sprinkle 10 mg</h3><p style="font-size:27px">Open and scatter on a little soft food or liquid. Take all within 15 minutes. Do not chew the granules.</p><small>US label: dose 30 minutes before a meal</small></div>
+<div class="foot">Always follow your own pack insert and prescriber.</div>
 ''')
 page("swallow-ppi-capsule-or-tablet-whole-do-not-crush-or-chew", W, H, f'''
 <div class="title" style="font-size:56px">Swallow It <em>Whole</em></div>
