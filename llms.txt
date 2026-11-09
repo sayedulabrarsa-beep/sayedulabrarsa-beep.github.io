@@ -1,7 +1,7 @@
 # Sayedul Abrar — Professional Profile
 
 Canonical website: https://sayedulabrar.site/
-Name: Sayedul Abrar (also known as Abrar)
+Name: Sayedul Abrar (also known as Abrar, Saidul Abrar, Sayedul Abrar Pharmacist; Bangla: সায়েদুল আবরার, সাইয়্যেদুল আবরার)
 Location: Dhaka, Bangladesh
 Profession: Pharmacist and pharmaceutical Product Executive
 Current organization: Opsonin Pharma Ltd.
@@ -12,6 +12,8 @@ Profile pages:
 - https://sayedulabrar.site/about/
 - https://sayedulabrar.site/experience/
 - https://sayedulabrar.site/portfolio/
+- https://sayedulabrar.site/learning/ (learning and certifications: marketing, product management, AI, sales, project management)
+- https://sayedulabrar.site/brands/finix/ , /brands/finix-mups/ , /brands/finix-hp/ , /brands/malifa/ (brand detail pages)
 - https://sayedulabrar.site/education/
 - https://sayedulabrar.site/achievements/
 - https://sayedulabrar.site/publications/
