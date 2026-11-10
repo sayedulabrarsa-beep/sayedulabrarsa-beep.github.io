@@ -33,3 +33,6 @@ Create one JSON file per post:
 ```
 
 The Blog and Daily Vlog list pages stay hidden from search engines until the first post exists.
+
+## Home blog stacks
+Home "Featured from the Pharma Blog" is generated: add an entry to _src/data/blog_stacks.json (newest date shows first), then run `python3 _src/blog_stacks.py`.
