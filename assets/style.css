@@ -3175,11 +3175,14 @@ html.lp-arrive .lp-intro-copy,html.lp-arrive .lp-arch{animation:lprise .9s cubic
 @media (max-width:600px){.lp-hero{padding-top:26px}.lp-track{gap:20px}.lp-arrow{display:none}.lp-gal-ctl .lp-arrow{display:none}.lp-glance-head{width:100%}.lp-card{flex-basis:78vw}.lp-intro{padding-top:36px}}
 
 /* ===== Learning: full course record as a scroll story (month by month) ===== */
-.lt-story{display:none;position:relative;overflow:clip;isolation:isolate;background:#fbf8f4;color:#1a1818;padding:0 0 90px}
+.lt-story{display:none;position:relative;overflow:visible;isolation:isolate;background:#fbf8f4;color:#1a1818;padding:0 0 90px}
 .lt-story.is-on{display:block}
 .lt-story::before{content:"";position:absolute;inset:0;z-index:-2;background:radial-gradient(620px 560px at 0 0,rgba(240,170,130,.55),transparent 70%),radial-gradient(560px 620px at 100% 100%,rgba(226,160,172,.6),transparent 70%),repeating-linear-gradient(135deg,rgba(0,0,0,.018) 0 1px,transparent 1px 7px)}
-.lt-rings{position:absolute;left:-6%;top:12vh;width:min(62vw,720px);aspect-ratio:1;z-index:-1;color:rgba(26,24,24,.09);animation:ltspin 160s linear infinite;pointer-events:none}
-.lt-rings svg{width:100%;height:100%;display:block}
+/* Keep the dial anchored to the viewport while the course story scrolls. Rotate only the artwork, never its position. */
+.lt-rings{position:fixed;left:-6%;top:50vh;width:min(62vw,720px);aspect-ratio:1;z-index:0;color:rgba(26,24,24,.14);pointer-events:none;opacity:0;visibility:hidden;transition:opacity .35s ease,visibility .35s ease}
+.lt-rings.is-visible{opacity:1;visibility:visible}
+.lt-rings svg{width:100%;height:100%;display:block;transform-origin:50% 50%;animation:ltspin 160s linear infinite}
+.lt-head-m,.lt-grid{position:relative;z-index:1}
 @keyframes ltspin{to{transform:rotate(360deg)}}
 .lt-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px;align-items:start;padding-top:20px}
 .lt-left{--hh:118px;position:sticky;top:var(--hh);height:calc(100vh - var(--hh));min-height:520px;display:flex;flex-direction:column;justify-content:center;padding-bottom:20px}
@@ -3233,7 +3236,7 @@ html.lp-arrive .lp-intro-copy,html.lp-arrive .lp-arch{animation:lprise .9s cubic
  .lt-year{margin:0;height:1em;font-size:46px}
  .lt-range{margin:0;font-size:11px;letter-spacing:.12em;flex:1 1 130px}
  .lt-prog{flex:1 1 100%;max-width:none}
- .lt-rings{width:120vw;left:-30%;top:4vh}
+ .lt-rings{width:120vw;left:-30%;top:50vh;z-index:0}
  .lt-list{padding:36px 0 30vh 30px}
  .lt-dot{left:-35px}
  .lt-item{padding-bottom:64px}
