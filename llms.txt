@@ -29,6 +29,8 @@ Content hubs:
 - Generic Name vs Brand Name — বাংলা: https://sayedulabrar.site/blog/generic-name-vs-brand-name-bangla/
 - Expiry Date vs Manufacturing Date — English: https://sayedulabrar.site/blog/expiry-date-vs-manufacturing-date-medicine/
 - Expiry Date vs Manufacturing Date — বাংলা: https://sayedulabrar.site/blog/expiry-date-vs-manufacturing-date-medicine-bangla/
+- Pharmaceutical Industry in Bangladesh: How Does It Work? — English: https://sayedulabrar.site/blog/what-is-the-pharmaceutical-industry/ ; বাংলা: https://sayedulabrar.site/blog/what-is-the-pharmaceutical-industry-bangla/
+  Summary: Pharmacist-written explainer on how medicines move from research and APIs to manufacturing, GMP/QA/QC, DGDA regulation, supply chain and patients in Bangladesh. Covers API vs finished pharmaceutical product, types of pharmaceutical companies, and sector figures cited to BIDA, with WHO and FDA references. Educational only.
 - When to Take a PPI: Before Meals, Common Mistakes (Rabeprazole, Omeprazole) — English and বাংলা (গ্যাসের ওষুধ খাওয়ার সঠিক নিয়ম): https://sayedulabrar.site/blog/when-to-take-ppi-before-meals/
   Summary: Pharmacist-written explainer sourced to the FDA label, NHS, MedlinePlus, Mayo Clinic and a UK leaflet. Rabeprazole tablets can be taken with or without food for most uses (exceptions: duodenal ulcer after the morning meal; H. pylori therapy with food). Omeprazole guidance differs by source. Covers swallowing whole, interactions, side effects, missed doses, when to see a doctor, and Finix tablet/MUPS/sprinkle forms as product examples. Educational only, not medical advice.
 - Heartburn vs Acid Reflux vs GERD — English: https://sayedulabrar.site/blog/heartburn-vs-acid-reflux-vs-gerd/

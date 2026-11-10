@@ -1,0 +1,42 @@
+{
+ "hero": [
+  "pharmaceutical-industry-in-bangladesh-how-medicines-reach-you-thumbnail-16x9.webp",
+  1600,
+  900
+ ],
+ "api": [
+  "api-vs-finished-pharmaceutical-product-fpp.webp",
+  1600,
+  901
+ ],
+ "supply": [
+  "pharmaceutical-supply-chain-in-bangladesh-from-manufacturing-to-patient.webp",
+  1600,
+  901
+ ],
+ "gmp": [
+  "gmp-quality-assurance-and-quality-control-qa-qc-explained.webp",
+  1600,
+  900
+ ],
+ "mfg": [
+  "tablet-and-capsule-manufacturing-process-seven-steps.webp",
+  1600,
+  900
+ ],
+ "journey": [
+  "complete-journey-of-a-medicine-research-to-post-market-monitoring.webp",
+  1600,
+  900
+ ],
+ "types": [
+  "types-of-pharmaceutical-companies-innovator-generic-api-cdmo-cro.webp",
+  1600,
+  900
+ ],
+ "key": [
+  "pharmaceutical-industry-in-bangladesh-key-takeaways.webp",
+  1600,
+  900
+ ]
+}
