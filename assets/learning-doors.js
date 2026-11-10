@@ -118,6 +118,13 @@ function render(){
       return '<li class="lt-item" data-i="'+i+'"><span class="lt-dot" aria-hidden="true"></span><p class="lt-date">'+tag+' · '+n+(n===1?' COURSE':' COURSES')+'</p><h3>'+esc(ttl)+'</h3><p class="lt-sub">'+esc(pv)+'</p><ul>'+g.items.map(function(c,j){return '<li'+(j>=8?' class="lt-more" hidden':'')+'>'+esc(c.title)+(c.path?' <em>learning path</em>':'')+'<small>'+esc(c.cat)+'</small></li>'}).join('')+'</ul>'+(n>8?'<button type="button" class="lt-toggle" aria-expanded="false">Show '+(n-8)+' more</button>':'')+'</li>';
    }).join('')+'</ol></div>';
   story.innerHTML=h;story.classList.add('is-on');src.classList.add('lt-off');
+  var ring=story.querySelector('.lt-rings');
+  function syncRing(){
+    if(!ring)return;
+    var bounds=story.getBoundingClientRect();
+    ring.classList.toggle('is-visible',bounds.top<window.innerHeight&&bounds.bottom>0);
+  }
+  syncRing();
   cur=story.querySelector('.lt-cur');tot=story.querySelector('.lt-tot');bar=story.querySelector('.lt-bar i');range=story.querySelector('.lt-range');
   yearBox=story.querySelector('.lt-year');yearText=story.querySelector('.lt-yeartext');fill=story.querySelector('.lt-fill');list=story.querySelector('.lt-list');
   digitEls=[].slice.call(story.querySelectorAll('.lt-digits .lt-reel'));items=[].slice.call(story.querySelectorAll('.lt-item'));
@@ -143,7 +150,7 @@ function onScroll(){
   items.forEach(function(el,k){var r=el.getBoundingClientRect(),c=r.top+Math.min(r.height,160)/2,d=Math.abs(c-line);if(r.top<line&&r.bottom>line){d=-1}if(d<bd){bd=d;best=k}});
   setActive(best);
 }
-window.addEventListener('scroll',function(){if(!raf)raf=requestAnimationFrame(onScroll)},{passive:true});
+window.addEventListener('scroll',function(){if(!raf)raf=requestAnimationFrame(onScroll);if(ring)syncRing()},{passive:true});
 window.addEventListener('resize',function(){setHH();if(items.length)setActive(active,true)});
 function setHH(){var h=document.querySelector('header');story.style.setProperty('--hh',(h?h.offsetHeight:0)+'px')}
 setHH();
