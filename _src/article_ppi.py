@@ -16,6 +16,12 @@ F = {  # file, alt/caption EN, alt BN
  "forms": ("rabeprazole-finix-tablet-mups-and-sprinkle-how-to-take.webp",
    "Rabeprazole forms: tablet and MUPS tablet are swallowed whole; the sprinkle capsule is opened onto a little soft food or liquid and taken within 15 minutes, without chewing the granules.",
    "রাবেপ্রাজলের ধরন: ট্যাবলেট ও MUPS ট্যাবলেট গোটা গিলতে হয়; Sprinkle ক্যাপসুল খুলে অল্প নরম খাবার বা তরলে মিশিয়ে ১৫ মিনিটের মধ্যে খেতে হয়, দানা চিবানো যাবে না।"),
+ "how": ("how-ppis-work-reduce-stomach-acid-simple-illustration.webp",
+   "How PPIs work, simplified: a PPI reduces stomach acid, which means less acid reaching the stomach and food pipe, relief of symptoms and healing of acid-related problems such as ulcers.",
+   "পিপিআই কীভাবে কাজ করে, সহজ চিত্র: পিপিআই পাকস্থলীর অ্যাসিড কমায়, ফলে অ্যাসিড কম হয়, উপসর্গে আরাম মেলে এবং আলসারের মতো অ্যাসিড-সংক্রান্ত সমস্যা সারতে সাহায্য হয়।"),
+ "special": ("ppi-in-pregnancy-breastfeeding-older-adults-kidney-liver-ask-doctor.webp",
+   "PPI use in special situations, a general summary: pregnancy, breastfeeding, older adults, and kidney or liver problems. Always check with your doctor or pharmacist first.",
+   "বিশেষ পরিস্থিতিতে পিপিআই ব্যবহার, সাধারণ সারসংক্ষেপ: গর্ভাবস্থা, স্তন্যদান, বয়স্ক মানুষ এবং কিডনি বা লিভারের সমস্যা। সবসময় আগে ডাক্তার বা ফার্মাসিস্টকে জিজ্ঞেস করুন।"),
  "side": ("ppi-common-side-effects-omeprazole-nhs.webp",
    "Common side effects of omeprazole listed by the NHS: headache, stomach pain, feeling or being sick, constipation or diarrhoea, and more wind. Seek medical advice if side effects are severe, persistent or unusual.",
    "NHS-এর তালিকা অনুযায়ী ওমিপ্রাজলের সাধারণ পার্শ্বপ্রতিক্রিয়া: মাথাব্যথা, পেটব্যথা, বমি বমি ভাব বা বমি, কোষ্ঠকাঠিন্য বা ডায়রিয়া এবং বেশি গ্যাস। পার্শ্বপ্রতিক্রিয়া তীব্র, দীর্ঘস্থায়ী বা অস্বাভাবিক হলে চিকিৎসকের পরামর্শ নিন।"),
@@ -32,19 +38,21 @@ F = {  # file, alt/caption EN, alt BN
    "Missed a PPI dose: take it when you remember unless the next dose is nearly due, and never take two together. If you take too much, get medical advice.",
    "পিপিআইয়ের ডোজ বাদ গেলে: মনে পড়লে খান, পরের ডোজের সময় প্রায় হয়ে গেলে বাদ দিন, কখনও দুটো একসাথে খাবেন না। বেশি খেয়ে ফেললে চিকিৎসকের পরামর্শ নিন।"),
 }
-DIM = {"timing": (1600, 903), "swallow": (1600, 903), "inter": (1600, 903), "doctor": (1600, 903), "missed": (1600, 452), "side": (832, 942), "forms": (1448, 960)}
+DIM = {"how": (835, 942), "special": (834, 941), "timing": (1600, 903), "swallow": (1600, 903), "inter": (1600, 903), "doctor": (1600, 903), "missed": (1600, 452), "side": (832, 942), "forms": (1448, 960)}
 def fig(k, bn=False):
     f, en, b = F[k]
     t = b if bn else en
     cap = {"timing": ("Sources differ on food. Your leaflet decides.", "খাবার নিয়ে উৎসগুলোর মধ্যে পার্থক্য আছে। আপনার লিফলেটই শেষ কথা।"),
            "forms": ("Always follow your own pack insert.", "সবসময় নিজের প্যাকের ইনসার্ট মানুন।"),
+           "how": ("Simplified illustration. PPIs reduce stomach acid.", "সরল চিত্র। পিপিআই পাকস্থলীর অ্যাসিড কমায়।"),
+           "special": ("General summary only. Details differ by medicine; check with your doctor or pharmacist.", "শুধু সাধারণ সারসংক্ষেপ। ওষুধভেদে বিস্তারিত আলাদা; ডাক্তার বা ফার্মাসিস্টকে জিজ্ঞেস করুন।"),
            "side": ("Side effects listed by the NHS for omeprazole.", "ওমিপ্রাজলের জন্য NHS-এর তালিকাভুক্ত পার্শ্বপ্রতিক্রিয়া।"),
            "swallow": ("Swallow whole. Ask a pharmacist if you cannot.", "গোটা গিলুন। না পারলে ফার্মাসিস্টকে জিজ্ঞেস করুন।"),
            "inter": ("Not a complete list. Always share your full medicine list.", "এটা পূর্ণ তালিকা নয়। আপনার সব ওষুধের কথা জানান।"),
            "doctor": ("Warning signs are not for home treatment.", "সতর্কতার লক্ষণ ঘরে সামলানোর নয়।"),
            "missed": ("One missed dose is usually simple to handle.", "একটি ডোজ বাদ পড়া সাধারণত সহজেই সামলানো যায়।")}[k][1 if bn else 0]
     w, h = DIM[k]
-    style = ' style="max-width:520px;margin-inline:auto"' if k == "side" else ""
+    style = ' style="max-width:520px;margin-inline:auto"' if k in ("side", "how", "special") else ""
     return f'<figure class="gb-fig"{style}><img src="{IMG}{f}" width="{w}" height="{h}" alt="{html.escape(t, quote=True)}" loading="lazy" decoding="async"><figcaption>{cap}</figcaption></figure>'
 
 def table(label, head, rows):
@@ -74,12 +82,16 @@ FAQ_EN = [
  ("Can I chew or crush a PPI tablet?", "No for enteric coated or gastro-resistant tablets, according to the NHS. A UK rabeprazole leaflet also says the tablet must be swallowed whole, not crushed or chewed. If you struggle to swallow, ask a pharmacist."),
  ("How long can I use a PPI without a prescription?", "The NHS says not to take omeprazole for longer than 2 weeks if you bought it without a prescription. MedlinePlus says not to use non-prescription omeprazole for more than 14 days, or more often than once every 4 months, without talking to a doctor. These are UK and US rules, so follow the label on your pack."),
  ("Can I take two acid-reducing medicines together?", "Do not assume it is safe. The NHS lists lansoprazole and famotidine among medicines that may not mix well with omeprazole. Ask your pharmacist before combining them."),
+ ("Can I take a PPI during pregnancy or while breastfeeding?", "The NHS says you can usually take omeprazole in pregnancy and while breastfeeding, but to check with a pharmacist or doctor first. The FDA label for rabeprazole says there are no available human data in pregnant women and that lactation studies have not been conducted. Always ask your doctor first."),
  ("What should I do if I miss a dose?", "Take it as soon as you remember, unless the next dose is nearly due. In that case skip the missed dose. Never take two doses together."),
 ]
 EN = f'''<div class="lang-pane" id="pane-en" lang="en" data-pane="en"><div class="article-head"><p class="kick">Health Made Simple</p><h1 class="article-title">When to Take a PPI: Before Meals, Common Mistakes (Rabeprazole, Omeprazole)</h1><p class="article-subtitle">When to take a gas and acid medicine, how to swallow it, what to avoid and when to see a doctor. A pharmacist explains, with official sources.</p><div class="article-meta"><span>{DATE_EN}</span><span>Health basics</span><span>6–8 min read</span><span>By Sayedul Abrar</span></div></div><figure class="hero-figure"><img class="article-hero" src="{THUMB}" alt="When to Take a PPI: a stomach illustration, a glass of water, capsules and a checklist asking before meal, with food or empty stomach. By Sayedul Abrar, Pharmacist." width="1600" height="902" fetchpriority="high" decoding="async"></figure><div class="article-body"><section class="answer-first"><h2>Quick answer: when to take a PPI</h2><p>Rabeprazole tablets can be taken with or without food for most uses, according to the FDA label. Omeprazole advice varies: the NHS says morning, with or without food, while MedlinePlus says prescription capsules are usually taken before a meal. Swallow tablets whole, never chew or crush them, and follow your prescriber and leaflet.</p></section>
 <ul><li><strong>Timing:</strong> pick one time and keep it. The NHS says morning for once-a-day omeprazole.</li><li><strong>Rabeprazole tablets:</strong> with or without food for most uses (FDA label). Exceptions: duodenal ulcer, after the morning meal; H. pylori therapy, with food.</li><li><strong>Omeprazole:</strong> NHS says with or without food; MedlinePlus says prescription capsules are usually taken before a meal.</li><li><strong>Swallow whole</strong> with water. Do not chew or crush enteric coated or gastro-resistant tablets.</li><li><strong>Do not self-treat for long:</strong> non-prescription packs are for 2 weeks (NHS) or 14 days (MedlinePlus).</li></ul>
 <h2>What is a PPI?</h2>
 <p>PPI stands for proton pump inhibitor. It is a type of medicine that reduces stomach acid. Omeprazole, lansoprazole and rabeprazole are examples. According to the NHS, omeprazole is used to treat or prevent stomach ulcers, heartburn and gastro-oesophageal reflux disease (GORD), and, alongside antibiotics, <em>Helicobacter pylori</em> infection. If you want to understand the symptoms first, read my article on <a href="/blog/heartburn-vs-acid-reflux-vs-gerd/">heartburn, acid reflux and GERD</a>.</p>
+<h2>How does a PPI work, and how fast?</h2>
+<p>A PPI reduces the amount of acid your stomach makes, which is why it is used for ulcers, heartburn and reflux (NHS). For rabeprazole, the FDA label says the acid-reducing effect begins within one hour of taking a 20 mg tablet. That describes the effect on acid, so do not expect every symptom to vanish within an hour. The same label adds a useful warning: feeling better on treatment does not rule out a more serious stomach problem, which is one more reason to see a doctor if symptoms keep returning.</p>
+{fig("how")}
 <h2>A common story (illustrative, fictional)</h2>
 <p>Rafi, 34, buys a gas medicine whenever his chest burns. Some days he takes it in the morning, some days at night. When the tablet is hard to swallow he chews it. After three months he is still buying strips without a check-up. A pharmacist would ask him to read the leaflet, keep a fixed time, swallow the tablet whole and see a doctor, because heartburn lasting three months or more is one of the reasons MedlinePlus gives for calling a doctor. This is an example, not a real patient.</p>
 <h2>When should you take a PPI?</h2>
@@ -128,6 +140,9 @@ EN = f'''<div class="lang-pane" id="pane-en" lang="en" data-pane="en"><div class
 <h2>When to see a doctor</h2>
 <p>MedlinePlus lists these reasons to call a doctor if you are using non-prescription omeprazole for heartburn: heartburn lasting 3 months or longer, no improvement after 14 days, chest or shoulder pain, shortness of breath, unexplained weight loss, vomiting (especially bloody), stomach pain, trouble swallowing, or black or bloody stools. A UK rabeprazole leaflet says to stop and see a doctor straight away for severe watery or bloody diarrhoea with fever, abdominal pain or tenderness, and to seek care for sudden swelling of the face or difficulty breathing.</p>
 {fig("doctor")}
+<h2>Pregnancy, breastfeeding, older adults, kidney or liver problems</h2>
+<p>The picture above is a general summary, and the details differ by medicine, so here is what the sources actually say. For omeprazole, the NHS says you can usually take it in pregnancy and while breastfeeding, but to check with a pharmacist or doctor first. For rabeprazole, the FDA label says there are no available human data in pregnant women and that lactation studies have not been conducted, so ask your doctor before using it. The same label reports no overall safety or effectiveness differences in older adults and no dose adjustment for mild to moderate liver impairment. The NHS notes that omeprazole may not be suitable if you have a kidney or liver condition. In every one of these situations, ask your doctor or pharmacist first.</p>
+{fig("special")}
 <h2>Frequently asked questions</h2>
 {faq(FAQ_EN)}
 <h2>Key takeaway</h2>
@@ -143,12 +158,16 @@ FAQ_BN = [
  ("পিপিআই ট্যাবলেট কি চিবিয়ে বা গুঁড়া করে খাওয়া যায়?", "NHS অনুযায়ী এন্টেরিক কোটেড বা গ্যাস্ট্রো-রেজিস্ট্যান্ট ট্যাবলেট চিবানো বা গুঁড়া করা যাবে না। একটি UK রাবেপ্রাজল লিফলেটেও বলা আছে ট্যাবলেট গোটা গিলতে হবে, চিবানো বা গুঁড়া করা যাবে না। গিলতে সমস্যা হলে ফার্মাসিস্টকে জিজ্ঞেস করুন।"),
  ("প্রেসক্রিপশন ছাড়া কত দিন পিপিআই খাওয়া যায়?", "NHS বলছে প্রেসক্রিপশন ছাড়া কেনা ওমিপ্রাজল ২ সপ্তাহের বেশি খাবেন না। MedlinePlus বলছে ডাক্তারের সঙ্গে কথা না বলে ১৪ দিনের বেশি, কিংবা প্রতি ৪ মাসে একবারের বেশি প্রেসক্রিপশন-ছাড়া ওমিপ্রাজল ব্যবহার করবেন না। এগুলো UK ও US-এর নিয়ম, তাই আপনার প্যাকের লেবেল মানুন।"),
  ("দুটি অ্যাসিড কমানোর ওষুধ একসঙ্গে খাওয়া যায়?", "নিরাপদ ধরে নেবেন না। NHS-এর তালিকায় ল্যানসোপ্রাজল ও ফ্যামোটিডিন সেই ওষুধের মধ্যে আছে, যেগুলো ওমিপ্রাজলের সঙ্গে ভালোভাবে নাও মিশতে পারে। একসঙ্গে খাওয়ার আগে ফার্মাসিস্টকে জিজ্ঞেস করুন।"),
+ ("গর্ভাবস্থায় বা বুকের দুধ খাওয়ানোর সময় পিপিআই খাওয়া যায়?", "NHS বলছে গর্ভাবস্থায় ও স্তন্যদানের সময় ওমিপ্রাজল সাধারণত খাওয়া যায়, তবে আগে ফার্মাসিস্ট বা ডাক্তারকে জিজ্ঞেস করতে হবে। রাবেপ্রাজলের FDA লেবেলে বলা আছে গর্ভবতী নারীদের ওপর মানুষের তথ্য নেই এবং বুকের দুধে এর উপস্থিতি নিয়ে গবেষণা হয়নি। সবসময় আগে ডাক্তারকে জিজ্ঞেস করুন।"),
  ("ডোজ বাদ পড়লে কী করব?", "মনে পড়লেই খেয়ে নিন, তবে পরের ডোজের সময় প্রায় হয়ে গেলে বাদ পড়া ডোজটা এড়িয়ে যান। কখনও দুই ডোজ একসঙ্গে খাবেন না।"),
 ]
 BN = f'''<div class="lang-pane" id="pane-bn" lang="bn" data-pane="bn" hidden><div class="article-head"><p class="kick">সহজ ভাষায় স্বাস্থ্য</p><h1 class="article-title">গ্যাসের ওষুধ খাওয়ার সঠিক নিয়ম: খাবারের আগে কখন খাবেন, সাধারণ ভুল (রাবেপ্রাজল, ওমিপ্রাজল)</h1><p class="article-subtitle">গ্যাস ও অ্যাসিডের ওষুধ কখন খাবেন, কীভাবে গিলবেন, কী এড়াবেন এবং কখন ডাক্তার দেখাবেন। একজন ফার্মাসিস্টের ব্যাখ্যা, সরকারি উৎসসহ।</p><div class="article-meta"><span>{DATE_BN}</span><span>স্বাস্থ্য বিষয়ক</span><span>৬–৮ মিনিটে পড়া</span><span>লেখক: Sayedul Abrar</span></div></div><figure class="hero-figure"><img class="article-hero" src="{THUMB}" alt="গ্যাসের ওষুধ (পিপিআই) কখন খাবেন: পাকস্থলীর ছবি, এক গ্লাস পানি, ক্যাপসুল এবং খাবারের আগে, খাবারের সঙ্গে বা খালি পেটে: এই প্রশ্নের চেকলিস্ট। ফার্মাসিস্ট Sayedul Abrar।" width="1600" height="902" fetchpriority="high" decoding="async"></figure><div class="article-body"><section class="answer-first"><h2>সংক্ষেপে উত্তর: গ্যাসের ওষুধ কখন খাবেন</h2><p>FDA লেবেল অনুযায়ী রাবেপ্রাজল ট্যাবলেট বেশির ভাগ ক্ষেত্রে খাবারের সঙ্গে বা ছাড়া খাওয়া যায়। ওমিপ্রাজলের ক্ষেত্রে উৎসভেদে পার্থক্য আছে: NHS বলছে সকালে, খাবারের সঙ্গে বা ছাড়া; MedlinePlus বলছে প্রেসক্রিপশনের ক্যাপসুল সাধারণত খাবারের আগে। ট্যাবলেট গোটা গিলুন, চিবাবেন না, গুঁড়া করবেন না এবং ডাক্তারের পরামর্শ ও লিফলেট মানুন।</p></section>
 <ul><li><strong>সময়:</strong> একটি সময় ঠিক করে সেটাই ধরে রাখুন। NHS বলছে দিনে একবার হলে সকালে।</li><li><strong>রাবেপ্রাজল ট্যাবলেট:</strong> বেশির ভাগ ক্ষেত্রে খাবারের সঙ্গে বা ছাড়া (FDA লেবেল)। ব্যতিক্রম: ডুওডেনাল আলসারে সকালের খাবারের পর; H. pylori থেরাপিতে খাবারের সঙ্গে।</li><li><strong>ওমিপ্রাজল:</strong> NHS বলছে খাবারের সঙ্গে বা ছাড়া; MedlinePlus বলছে প্রেসক্রিপশনের ক্যাপসুল সাধারণত খাবারের আগে।</li><li><strong>গোটা গিলুন</strong> পানি দিয়ে। এন্টেরিক কোটেড বা গ্যাস্ট্রো-রেজিস্ট্যান্ট ট্যাবলেট চিবাবেন না বা গুঁড়া করবেন না।</li><li><strong>নিজে নিজে বেশি দিন নয়:</strong> প্রেসক্রিপশন ছাড়া কেনা প্যাকের জন্য ২ সপ্তাহ (NHS) বা ১৪ দিন (MedlinePlus)।</li></ul>
 <h2>পিপিআই কী?</h2>
 <p>পিপিআই-এর পুরো নাম প্রোটন পাম্প ইনহিবিটর। এটি পাকস্থলীর অ্যাসিড কমানোর ওষুধ। ওমিপ্রাজল, ল্যানসোপ্রাজল ও রাবেপ্রাজল এর উদাহরণ। NHS অনুযায়ী ওমিপ্রাজল পাকস্থলীর আলসার, বুক জ্বালা ও গ্যাস্ট্রো-ইসোফেজিয়াল রিফ্লাক্স রোগের (GORD) চিকিৎসা বা প্রতিরোধে এবং অ্যান্টিবায়োটিকের সঙ্গে <em>হেলিকোব্যাক্টর পাইলোরি</em> সংক্রমণে ব্যবহার হয়। উপসর্গ আগে বুঝতে চাইলে পড়ুন আমার লেখা <a href="/blog/heartburn-vs-acid-reflux-vs-gerd-bangla/">বুক জ্বালা, অ্যাসিড রিফ্লাক্স ও GERD</a>।</p>
+<h2>পিপিআই কীভাবে কাজ করে, আর কত দ্রুত?</h2>
+<p>পিপিআই পাকস্থলীতে অ্যাসিড তৈরি কমায়, তাই আলসার, বুক জ্বালা ও রিফ্লাক্সে এটি ব্যবহার হয় (NHS)। রাবেপ্রাজলের FDA লেবেল বলছে ২০ মি.গ্রা. ট্যাবলেট খাওয়ার এক ঘণ্টার মধ্যে অ্যাসিড কমানোর প্রভাব শুরু হয়। এটা অ্যাসিডের ওপর প্রভাবের কথা, তাই এক ঘণ্টায় সব উপসর্গ চলে যাবে আশা করবেন না। একই লেবেলে একটি গুরুত্বপূর্ণ সতর্কতাও আছে: চিকিৎসায় ভালো লাগলেও পাকস্থলীর গুরুতর সমস্যা বাদ যায় না। উপসর্গ বারবার ফিরলে ডাক্তার দেখানোর আরেকটি কারণ এটাই।</p>
+{fig("how", True)}
 <h2>একটি পরিচিত গল্প (উদাহরণ, কাল্পনিক)</h2>
 <p>৩৪ বছর বয়সী রাফি বুক জ্বললেই গ্যাসের ওষুধ কিনে নেন। কোনো দিন সকালে খান, কোনো দিন রাতে। ট্যাবলেট গিলতে কষ্ট হলে চিবিয়ে ফেলেন। তিন মাস পরেও চেকআপ ছাড়াই স্ট্রিপ কিনে চলেছেন। একজন ফার্মাসিস্ট তাঁকে বলবেন লিফলেটটা পড়তে, নির্দিষ্ট সময় ঠিক করতে, গোটা গিলতে এবং ডাক্তার দেখাতে, কারণ তিন মাস বা তার বেশি বুক জ্বালা থাকা MedlinePlus-এর দেওয়া ডাক্তার ডাকার কারণগুলোর একটি। এটি একটি উদাহরণ, কোনো প্রকৃত রোগী নন।</p>
 <h2>পিপিআই কখন খাবেন?</h2>
@@ -197,6 +216,9 @@ BN = f'''<div class="lang-pane" id="pane-bn" lang="bn" data-pane="bn" hidden><di
 <h2>কখন ডাক্তার দেখাবেন</h2>
 <p>বুক জ্বালার জন্য প্রেসক্রিপশন ছাড়া ওমিপ্রাজল খেলে MedlinePlus ডাক্তার ডাকার যে কারণগুলো দিয়েছে: ৩ মাস বা তার বেশি বুক জ্বালা, ১৪ দিনে উন্নতি না হওয়া, বুকে বা কাঁধে ব্যথা, শ্বাসকষ্ট, অকারণে ওজন কমা, বমি (বিশেষত রক্তসহ), পেটে ব্যথা, গিলতে কষ্ট, বা কালো কিংবা রক্তমাখা পায়খানা। একটি UK রাবেপ্রাজল লিফলেট বলছে জ্বর, পেট ব্যথা বা পেটে চাপ দিলে ব্যথাসহ তীব্র পাতলা বা রক্তমাখা ডায়রিয়া হলে ওষুধ বন্ধ করে সঙ্গে সঙ্গে ডাক্তার দেখাতে, আর হঠাৎ মুখ ফুলে যাওয়া বা শ্বাসকষ্ট হলে চিকিৎসা নিতে।</p>
 {fig("doctor", True)}
+<h2>গর্ভাবস্থা, স্তন্যদান, বয়স্ক মানুষ এবং কিডনি বা লিভারের সমস্যা</h2>
+<p>ওপরের ছবিটি একটি সাধারণ সারসংক্ষেপ, আর বিস্তারিত ওষুধভেদে আলাদা, তাই সূত্রে আসলে কী আছে তা বলছি। ওমিপ্রাজল নিয়ে NHS বলছে গর্ভাবস্থায় ও স্তন্যদানের সময় সাধারণত খাওয়া যায়, তবে আগে ফার্মাসিস্ট বা ডাক্তারকে জিজ্ঞেস করতে হবে। রাবেপ্রাজল নিয়ে FDA লেবেলে বলা আছে, গর্ভবতী নারীদের ওপর মানুষের তথ্য নেই এবং বুকের দুধে এর উপস্থিতি নিয়ে গবেষণা হয়নি, তাই ব্যবহারের আগে ডাক্তারের পরামর্শ নিন। একই লেবেলে বয়স্কদের নিরাপত্তা বা কার্যকারিতায় সামগ্রিক পার্থক্য পাওয়া যায়নি বলা আছে এবং মৃদু থেকে মাঝারি লিভারের সমস্যায় ডোজ বদলাতে হয় না। NHS বলছে কিডনি বা লিভারের সমস্যা থাকলে ওমিপ্রাজল উপযুক্ত নাও হতে পারে। প্রতিটি ক্ষেত্রেই আগে ডাক্তার বা ফার্মাসিস্টকে জিজ্ঞেস করুন।</p>
+{fig("special", True)}
 <h2>সচরাচর জিজ্ঞাসিত প্রশ্ন</h2>
 {faq(FAQ_BN)}
 <h2>মূল কথা</h2>
@@ -241,7 +263,7 @@ def main():
         return d
     NAMES = {"timing": "PPI timing: what NHS, MedlinePlus and the FDA label say", "forms": "Rabeprazole forms: tablet, MUPS tablet and sprinkle capsule",
              "swallow": "Swallow a PPI whole: do and do not", "inter": "Medicines to mention to your pharmacist when taking a PPI",
-             "doctor": "When to see a doctor while taking a PPI", "missed": "Missed a PPI dose: what to do", "side": "Common side effects of omeprazole (NHS)"}
+             "doctor": "When to see a doctor while taking a PPI", "missed": "Missed a PPI dose: what to do", "side": "Common side effects of omeprazole (NHS)", "how": "How PPIs work: they reduce stomach acid", "special": "PPI use in pregnancy, breastfeeding, older adults, kidney or liver problems"}
     thumb = imo(THUMB, 1600, 902, "When to take a PPI: a stomach illustration, a glass of water, capsules and a checklist asking before meal, with food or empty stomach. By Sayedul Abrar, Pharmacist.", TITLE_SHORT, {"representativeOfPage": True})
     imgs = [SOCIAL, thumb]
     for k in F:
