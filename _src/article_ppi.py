@@ -16,6 +16,9 @@ F = {  # file, alt/caption EN, alt BN
  "forms": ("rabeprazole-finix-tablet-mups-and-sprinkle-how-to-take.webp",
    "Rabeprazole forms: tablet and MUPS tablet are swallowed whole; the sprinkle capsule is opened onto a little soft food or liquid and taken within 15 minutes, without chewing the granules.",
    "রাবেপ্রাজলের ধরন: ট্যাবলেট ও MUPS ট্যাবলেট গোটা গিলতে হয়; Sprinkle ক্যাপসুল খুলে অল্প নরম খাবার বা তরলে মিশিয়ে ১৫ মিনিটের মধ্যে খেতে হয়, দানা চিবানো যাবে না।"),
+ "side": ("ppi-common-side-effects-omeprazole-nhs.webp",
+   "Common side effects of omeprazole listed by the NHS: headache, stomach pain, feeling or being sick, constipation or diarrhoea, and more wind. Seek medical advice if side effects are severe, persistent or unusual.",
+   "NHS-এর তালিকা অনুযায়ী ওমিপ্রাজলের সাধারণ পার্শ্বপ্রতিক্রিয়া: মাথাব্যথা, পেটব্যথা, বমি বমি ভাব বা বমি, কোষ্ঠকাঠিন্য বা ডায়রিয়া এবং বেশি গ্যাস। পার্শ্বপ্রতিক্রিয়া তীব্র, দীর্ঘস্থায়ী বা অস্বাভাবিক হলে চিকিৎসকের পরামর্শ নিন।"),
  "swallow": ("swallow-ppi-capsule-or-tablet-whole-do-not-crush-or-chew.webp",
    "Swallow a PPI whole with water. Do not chew or crush enteric coated or gastro-resistant tablets.",
    "পিপিআই পানি দিয়ে গোটা গিলুন। এন্টেরিক কোটেড বা গ্যাস্ট্রো-রেজিস্ট্যান্ট ট্যাবলেট চিবাবেন না, গুঁড়াও করবেন না।"),
@@ -29,16 +32,20 @@ F = {  # file, alt/caption EN, alt BN
    "Missed a PPI dose: take it when you remember unless the next dose is nearly due, and never take two together. If you take too much, get medical advice.",
    "পিপিআইয়ের ডোজ বাদ গেলে: মনে পড়লে খান, পরের ডোজের সময় প্রায় হয়ে গেলে বাদ দিন, কখনও দুটো একসাথে খাবেন না। বেশি খেয়ে ফেললে চিকিৎসকের পরামর্শ নিন।"),
 }
+DIM = {"timing": (1600, 903), "swallow": (1600, 903), "inter": (1600, 903), "doctor": (1600, 903), "missed": (1600, 452), "side": (832, 942), "forms": (1448, 960)}
 def fig(k, bn=False):
     f, en, b = F[k]
     t = b if bn else en
     cap = {"timing": ("Sources differ on food. Your leaflet decides.", "খাবার নিয়ে উৎসগুলোর মধ্যে পার্থক্য আছে। আপনার লিফলেটই শেষ কথা।"),
            "forms": ("Always follow your own pack insert.", "সবসময় নিজের প্যাকের ইনসার্ট মানুন।"),
+           "side": ("Side effects listed by the NHS for omeprazole.", "ওমিপ্রাজলের জন্য NHS-এর তালিকাভুক্ত পার্শ্বপ্রতিক্রিয়া।"),
            "swallow": ("Swallow whole. Ask a pharmacist if you cannot.", "গোটা গিলুন। না পারলে ফার্মাসিস্টকে জিজ্ঞেস করুন।"),
            "inter": ("Not a complete list. Always share your full medicine list.", "এটা পূর্ণ তালিকা নয়। আপনার সব ওষুধের কথা জানান।"),
            "doctor": ("Warning signs are not for home treatment.", "সতর্কতার লক্ষণ ঘরে সামলানোর নয়।"),
            "missed": ("One missed dose is usually simple to handle.", "একটি ডোজ বাদ পড়া সাধারণত সহজেই সামলানো যায়।")}[k][1 if bn else 0]
-    return f'<figure class="gb-fig"><img src="{IMG}{f}" width="1448" height="960" alt="{html.escape(t, quote=True)}" loading="lazy" decoding="async"><figcaption>{cap}</figcaption></figure>'
+    w, h = DIM[k]
+    style = ' style="max-width:520px;margin-inline:auto"' if k == "side" else ""
+    return f'<figure class="gb-fig"{style}><img src="{IMG}{f}" width="{w}" height="{h}" alt="{html.escape(t, quote=True)}" loading="lazy" decoding="async"><figcaption>{cap}</figcaption></figure>'
 
 def table(label, head, rows):
     th = "".join(f"<th>{h}</th>" for h in head)
@@ -49,6 +56,7 @@ def faq(items):
 REFS = [("https://www.nhs.uk/medicines/omeprazole/how-and-when-to-take-omeprazole", "NHS: How and when to take omeprazole"),
         ("https://www.nhs.uk/medicines/omeprazole/common-questions-about-omeprazole", "NHS: Common questions about omeprazole"),
         ("https://www.nhs.uk/medicines/omeprazole/", "NHS: Omeprazole"),
+        ("https://www.nhs.uk/medicines/omeprazole/side-effects-of-omeprazole/", "NHS: Side effects of omeprazole"),
         ("https://medlineplus.gov/druginfo/meds/a693050.html", "MedlinePlus: Omeprazole"),
         ("https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/020973s043lbl.pdf", "U.S. FDA: ACIPHEX (rabeprazole sodium) delayed-release tablets prescribing information, revised 07/2023"),
         ("https://www.mayoclinic.org/drugs-supplements/rabeprazole-oral-route/proper-use/drg-20066981", "Mayo Clinic: Rabeprazole (oral route), proper use"),
@@ -68,7 +76,7 @@ FAQ_EN = [
  ("Can I take two acid-reducing medicines together?", "Do not assume it is safe. The NHS lists lansoprazole and famotidine among medicines that may not mix well with omeprazole. Ask your pharmacist before combining them."),
  ("What should I do if I miss a dose?", "Take it as soon as you remember, unless the next dose is nearly due. In that case skip the missed dose. Never take two doses together."),
 ]
-EN = f'''<div class="lang-pane" id="pane-en" lang="en" data-pane="en"><div class="article-head"><p class="kick">Health Made Simple</p><h1 class="article-title">When to Take a PPI: Before Meals, Common Mistakes (Rabeprazole, Omeprazole)</h1><p class="article-subtitle">When to take a gas and acid medicine, how to swallow it, what to avoid and when to see a doctor. A pharmacist explains, with official sources.</p><div class="article-meta"><span>{DATE_EN}</span><span>Health basics</span><span>6–8 min read</span><span>By Sayedul Abrar</span></div></div><figure class="hero-figure"><img class="article-hero" src="{THUMB}" alt="When to Take a PPI: Before Meals and Common Mistakes. A clock, a glass of water and two capsules. By Sayedul Abrar, Pharmacist." width="1600" height="900" fetchpriority="high" decoding="async"></figure><div class="article-body"><section class="answer-first"><h2>Quick answer: when to take a PPI</h2><p>Rabeprazole tablets can be taken with or without food for most uses, according to the FDA label. Omeprazole advice varies: the NHS says morning, with or without food, while MedlinePlus says prescription capsules are usually taken before a meal. Swallow tablets whole, never chew or crush them, and follow your prescriber and leaflet.</p></section>
+EN = f'''<div class="lang-pane" id="pane-en" lang="en" data-pane="en"><div class="article-head"><p class="kick">Health Made Simple</p><h1 class="article-title">When to Take a PPI: Before Meals, Common Mistakes (Rabeprazole, Omeprazole)</h1><p class="article-subtitle">When to take a gas and acid medicine, how to swallow it, what to avoid and when to see a doctor. A pharmacist explains, with official sources.</p><div class="article-meta"><span>{DATE_EN}</span><span>Health basics</span><span>6–8 min read</span><span>By Sayedul Abrar</span></div></div><figure class="hero-figure"><img class="article-hero" src="{THUMB}" alt="When to Take a PPI: a stomach illustration, a glass of water, capsules and a checklist asking before meal, with food or empty stomach. By Sayedul Abrar, Pharmacist." width="1600" height="902" fetchpriority="high" decoding="async"></figure><div class="article-body"><section class="answer-first"><h2>Quick answer: when to take a PPI</h2><p>Rabeprazole tablets can be taken with or without food for most uses, according to the FDA label. Omeprazole advice varies: the NHS says morning, with or without food, while MedlinePlus says prescription capsules are usually taken before a meal. Swallow tablets whole, never chew or crush them, and follow your prescriber and leaflet.</p></section>
 <ul><li><strong>Timing:</strong> pick one time and keep it. The NHS says morning for once-a-day omeprazole.</li><li><strong>Rabeprazole tablets:</strong> with or without food for most uses (FDA label). Exceptions: duodenal ulcer, after the morning meal; H. pylori therapy, with food.</li><li><strong>Omeprazole:</strong> NHS says with or without food; MedlinePlus says prescription capsules are usually taken before a meal.</li><li><strong>Swallow whole</strong> with water. Do not chew or crush enteric coated or gastro-resistant tablets.</li><li><strong>Do not self-treat for long:</strong> non-prescription packs are for 2 weeks (NHS) or 14 days (MedlinePlus).</li></ul>
 <h2>What is a PPI?</h2>
 <p>PPI stands for proton pump inhibitor. It is a type of medicine that reduces stomach acid. Omeprazole, lansoprazole and rabeprazole are examples. According to the NHS, omeprazole is used to treat or prevent stomach ulcers, heartburn and gastro-oesophageal reflux disease (GORD), and, alongside antibiotics, <em>Helicobacter pylori</em> infection. If you want to understand the symptoms first, read my article on <a href="/blog/heartburn-vs-acid-reflux-vs-gerd/">heartburn, acid reflux and GERD</a>.</p>
@@ -111,6 +119,9 @@ EN = f'''<div class="lang-pane" id="pane-en" lang="en" data-pane="en"><div class
  ["High-dose methotrexate","The doctor may temporarily stop rabeprazole","UK leaflet"]])}
 {fig("inter")}
 <p>This is not a full list, and different PPIs have different interactions. I also covered one example in my <a href="/blog/how-to-take-iron-tablets-properly/">article on iron tablets</a>.</p>
+<h2>What are the common side effects?</h2>
+<p>The NHS lists these as common side effects of omeprazole: headache, stomach pain, feeling sick or being sick, constipation or diarrhoea, and passing wind more than usual. It advises speaking to a pharmacist or doctor if side effects bother you or do not go away, and to keep taking the medicine unless you are told not to. Serious side effects are mostly rare. The NHS says to call NHS 111 (in the UK) if you think you may be having them. Where you live, contact your doctor or pharmacist.</p>
+{fig("side")}
 <h2>What if I miss a dose, or take too much?</h2>
 <p>The NHS and MedlinePlus agree: take a missed dose as soon as you remember, unless the next dose is nearly due, and never take two doses together. A UK rabeprazole leaflet adds that if you forget your medicine for more than 5 days, call your doctor before taking any more. The NHS says an extra dose is unlikely to cause problems, but advises getting medical advice if you take too much, and bringing the packet with you.</p>
 {fig("missed")}
@@ -134,7 +145,7 @@ FAQ_BN = [
  ("দুটি অ্যাসিড কমানোর ওষুধ একসঙ্গে খাওয়া যায়?", "নিরাপদ ধরে নেবেন না। NHS-এর তালিকায় ল্যানসোপ্রাজল ও ফ্যামোটিডিন সেই ওষুধের মধ্যে আছে, যেগুলো ওমিপ্রাজলের সঙ্গে ভালোভাবে নাও মিশতে পারে। একসঙ্গে খাওয়ার আগে ফার্মাসিস্টকে জিজ্ঞেস করুন।"),
  ("ডোজ বাদ পড়লে কী করব?", "মনে পড়লেই খেয়ে নিন, তবে পরের ডোজের সময় প্রায় হয়ে গেলে বাদ পড়া ডোজটা এড়িয়ে যান। কখনও দুই ডোজ একসঙ্গে খাবেন না।"),
 ]
-BN = f'''<div class="lang-pane" id="pane-bn" lang="bn" data-pane="bn" hidden><div class="article-head"><p class="kick">সহজ ভাষায় স্বাস্থ্য</p><h1 class="article-title">গ্যাসের ওষুধ খাওয়ার সঠিক নিয়ম: খাবারের আগে কখন খাবেন, সাধারণ ভুল (রাবেপ্রাজল, ওমিপ্রাজল)</h1><p class="article-subtitle">গ্যাস ও অ্যাসিডের ওষুধ কখন খাবেন, কীভাবে গিলবেন, কী এড়াবেন এবং কখন ডাক্তার দেখাবেন। একজন ফার্মাসিস্টের ব্যাখ্যা, সরকারি উৎসসহ।</p><div class="article-meta"><span>{DATE_BN}</span><span>স্বাস্থ্য বিষয়ক</span><span>৬–৮ মিনিটে পড়া</span><span>লেখক: Sayedul Abrar</span></div></div><figure class="hero-figure"><img class="article-hero" src="{THUMB}" alt="গ্যাসের ওষুধ কখন খাবেন: খাবারের আগে, আর সাধারণ ভুল। একটি ঘড়ি, এক গ্লাস পানি ও দুটি ক্যাপসুল।" width="1600" height="900" fetchpriority="high" decoding="async"></figure><div class="article-body"><section class="answer-first"><h2>সংক্ষেপে উত্তর: গ্যাসের ওষুধ কখন খাবেন</h2><p>FDA লেবেল অনুযায়ী রাবেপ্রাজল ট্যাবলেট বেশির ভাগ ক্ষেত্রে খাবারের সঙ্গে বা ছাড়া খাওয়া যায়। ওমিপ্রাজলের ক্ষেত্রে উৎসভেদে পার্থক্য আছে: NHS বলছে সকালে, খাবারের সঙ্গে বা ছাড়া; MedlinePlus বলছে প্রেসক্রিপশনের ক্যাপসুল সাধারণত খাবারের আগে। ট্যাবলেট গোটা গিলুন, চিবাবেন না, গুঁড়া করবেন না এবং ডাক্তারের পরামর্শ ও লিফলেট মানুন।</p></section>
+BN = f'''<div class="lang-pane" id="pane-bn" lang="bn" data-pane="bn" hidden><div class="article-head"><p class="kick">সহজ ভাষায় স্বাস্থ্য</p><h1 class="article-title">গ্যাসের ওষুধ খাওয়ার সঠিক নিয়ম: খাবারের আগে কখন খাবেন, সাধারণ ভুল (রাবেপ্রাজল, ওমিপ্রাজল)</h1><p class="article-subtitle">গ্যাস ও অ্যাসিডের ওষুধ কখন খাবেন, কীভাবে গিলবেন, কী এড়াবেন এবং কখন ডাক্তার দেখাবেন। একজন ফার্মাসিস্টের ব্যাখ্যা, সরকারি উৎসসহ।</p><div class="article-meta"><span>{DATE_BN}</span><span>স্বাস্থ্য বিষয়ক</span><span>৬–৮ মিনিটে পড়া</span><span>লেখক: Sayedul Abrar</span></div></div><figure class="hero-figure"><img class="article-hero" src="{THUMB}" alt="গ্যাসের ওষুধ (পিপিআই) কখন খাবেন: পাকস্থলীর ছবি, এক গ্লাস পানি, ক্যাপসুল এবং খাবারের আগে, খাবারের সঙ্গে বা খালি পেটে: এই প্রশ্নের চেকলিস্ট। ফার্মাসিস্ট Sayedul Abrar।" width="1600" height="902" fetchpriority="high" decoding="async"></figure><div class="article-body"><section class="answer-first"><h2>সংক্ষেপে উত্তর: গ্যাসের ওষুধ কখন খাবেন</h2><p>FDA লেবেল অনুযায়ী রাবেপ্রাজল ট্যাবলেট বেশির ভাগ ক্ষেত্রে খাবারের সঙ্গে বা ছাড়া খাওয়া যায়। ওমিপ্রাজলের ক্ষেত্রে উৎসভেদে পার্থক্য আছে: NHS বলছে সকালে, খাবারের সঙ্গে বা ছাড়া; MedlinePlus বলছে প্রেসক্রিপশনের ক্যাপসুল সাধারণত খাবারের আগে। ট্যাবলেট গোটা গিলুন, চিবাবেন না, গুঁড়া করবেন না এবং ডাক্তারের পরামর্শ ও লিফলেট মানুন।</p></section>
 <ul><li><strong>সময়:</strong> একটি সময় ঠিক করে সেটাই ধরে রাখুন। NHS বলছে দিনে একবার হলে সকালে।</li><li><strong>রাবেপ্রাজল ট্যাবলেট:</strong> বেশির ভাগ ক্ষেত্রে খাবারের সঙ্গে বা ছাড়া (FDA লেবেল)। ব্যতিক্রম: ডুওডেনাল আলসারে সকালের খাবারের পর; H. pylori থেরাপিতে খাবারের সঙ্গে।</li><li><strong>ওমিপ্রাজল:</strong> NHS বলছে খাবারের সঙ্গে বা ছাড়া; MedlinePlus বলছে প্রেসক্রিপশনের ক্যাপসুল সাধারণত খাবারের আগে।</li><li><strong>গোটা গিলুন</strong> পানি দিয়ে। এন্টেরিক কোটেড বা গ্যাস্ট্রো-রেজিস্ট্যান্ট ট্যাবলেট চিবাবেন না বা গুঁড়া করবেন না।</li><li><strong>নিজে নিজে বেশি দিন নয়:</strong> প্রেসক্রিপশন ছাড়া কেনা প্যাকের জন্য ২ সপ্তাহ (NHS) বা ১৪ দিন (MedlinePlus)।</li></ul>
 <h2>পিপিআই কী?</h2>
 <p>পিপিআই-এর পুরো নাম প্রোটন পাম্প ইনহিবিটর। এটি পাকস্থলীর অ্যাসিড কমানোর ওষুধ। ওমিপ্রাজল, ল্যানসোপ্রাজল ও রাবেপ্রাজল এর উদাহরণ। NHS অনুযায়ী ওমিপ্রাজল পাকস্থলীর আলসার, বুক জ্বালা ও গ্যাস্ট্রো-ইসোফেজিয়াল রিফ্লাক্স রোগের (GORD) চিকিৎসা বা প্রতিরোধে এবং অ্যান্টিবায়োটিকের সঙ্গে <em>হেলিকোব্যাক্টর পাইলোরি</em> সংক্রমণে ব্যবহার হয়। উপসর্গ আগে বুঝতে চাইলে পড়ুন আমার লেখা <a href="/blog/heartburn-vs-acid-reflux-vs-gerd-bangla/">বুক জ্বালা, অ্যাসিড রিফ্লাক্স ও GERD</a>।</p>
@@ -177,6 +188,9 @@ BN = f'''<div class="lang-pane" id="pane-bn" lang="bn" data-pane="bn" hidden><di
  ["উচ্চ মাত্রার মেথোট্রেক্সেট","ডাক্তার সাময়িকভাবে রাবেপ্রাজল বন্ধ রাখতে পারেন","UK লিফলেট"]])}
 {fig("inter", True)}
 <p>এটি পূর্ণ তালিকা নয়, আর ভিন্ন পিপিআইয়ের মিথস্ক্রিয়াও ভিন্ন। একটি উদাহরণ নিয়ে আমি <a href="/blog/how-to-take-iron-tablets-properly/#bn">আয়রন ট্যাবলেটের লেখায়</a>ও আলোচনা করেছি।</p>
+<h2>সাধারণ পার্শ্বপ্রতিক্রিয়া কী কী?</h2>
+<p>NHS ওমিপ্রাজলের সাধারণ পার্শ্বপ্রতিক্রিয়া হিসেবে এগুলো তালিকাভুক্ত করেছে: মাথাব্যথা, পেটব্যথা, বমি বমি ভাব বা বমি, কোষ্ঠকাঠিন্য বা ডায়রিয়া, এবং স্বাভাবিকের চেয়ে বেশি গ্যাস ছাড়া। পার্শ্বপ্রতিক্রিয়া বিরক্ত করলে বা না কমলে ফার্মাসিস্ট বা ডাক্তারের সঙ্গে কথা বলতে বলা হয়েছে, আর নিষেধ না করা পর্যন্ত ওষুধ চালিয়ে যেতে বলা হয়েছে। গুরুতর পার্শ্বপ্রতিক্রিয়া বেশির ভাগই বিরল। এমন সন্দেহ হলে NHS (যুক্তরাজ্যে) ১১১-এ কল করতে বলে। আপনি যেখানে থাকেন, সেখানকার ডাক্তার বা ফার্মাসিস্টের সঙ্গে যোগাযোগ করুন।</p>
+{fig("side", True)}
 <h2>ডোজ বাদ পড়লে বা বেশি খেয়ে ফেললে কী করবেন?</h2>
 <p>NHS ও MedlinePlus একমত: মনে পড়লেই বাদ পড়া ডোজ খেয়ে নিন, তবে পরের ডোজের সময় প্রায় হয়ে গেলে সেটা এড়িয়ে যান, আর কখনও দুই ডোজ একসঙ্গে খাবেন না। একটি UK রাবেপ্রাজল লিফলেট যোগ করেছে, ৫ দিনের বেশি ওষুধ না খেলে আবার খাওয়ার আগে ডাক্তারকে ফোন করুন। NHS বলছে বাড়তি এক ডোজে সমস্যা হওয়ার সম্ভাবনা কম, তবে বেশি খেয়ে ফেললে চিকিৎসকের পরামর্শ নিন এবং প্যাকেটটি সঙ্গে নিয়ে যান।</p>
 {fig("missed", True)}
@@ -218,14 +232,36 @@ def main():
     blog, faqld, crumbs = ld
     blog["mainEntityOfPage"]["@id"] = URL; blog["headline"] = TITLE; blog["description"] = DESC
     blog["datePublished"] = blog["dateModified"] = DATE
-    def imo(u, w, h, cap): return {"@type": "ImageObject", "url": BASE + u, "width": w, "height": h, "caption": cap, "creditText": "Sayedul Abrar", "creator": {"@type": "Person", "name": "Sayedul Abrar"}}
-    imgs = [SOCIAL, imo(THUMB, 1600, 900, TITLE_SHORT + ". By Sayedul Abrar, Pharmacist.")]
-    for k in F: imgs.append(imo(IMG + F[k][0], 1448, 960, F[k][1]))
+    def imo(u, w, h, cap, name, extra=None):
+        d = {"@type": "ImageObject", "@id": BASE + u + "#image", "url": BASE + u, "contentUrl": BASE + u, "name": name, "description": cap, "caption": cap,
+             "width": w, "height": h, "encodingFormat": "image/webp" if u.endswith(".webp") else "image/jpeg",
+             "inLanguage": "en", "creditText": "Sayedul Abrar", "copyrightNotice": "© 2026 Sayedul Abrar", "acquireLicensePage": BASE + "/about/",
+             "creator": {"@type": "Person", "name": "Sayedul Abrar", "url": BASE + "/about/"}, "representativeOfPage": False}
+        if extra: d.update(extra)
+        return d
+    NAMES = {"timing": "PPI timing: what NHS, MedlinePlus and the FDA label say", "forms": "Rabeprazole forms: tablet, MUPS tablet and sprinkle capsule",
+             "swallow": "Swallow a PPI whole: do and do not", "inter": "Medicines to mention to your pharmacist when taking a PPI",
+             "doctor": "When to see a doctor while taking a PPI", "missed": "Missed a PPI dose: what to do", "side": "Common side effects of omeprazole (NHS)"}
+    thumb = imo(THUMB, 1600, 902, "When to take a PPI: a stomach illustration, a glass of water, capsules and a checklist asking before meal, with food or empty stomach. By Sayedul Abrar, Pharmacist.", TITLE_SHORT, {"representativeOfPage": True})
+    imgs = [SOCIAL, thumb]
+    for k in F:
+        w, h = DIM[k]
+        imgs.append(imo(IMG + F[k][0], w, h, F[k][1], NAMES[k], {"thumbnailUrl": thumb["url"]}))
     blog["image"] = imgs
-    for k in ("keywords",):
-        if k in blog: blog[k] = KW
-    if "about" in blog: blog["about"] = [{"@type": "Drug", "name": "Proton pump inhibitor"}]
-    if "citation" in blog: blog["citation"] = [{"@type": "WebPage", "name": n, "url": (BASE + u if u.startswith("/") else u)} for u, n in REFS]
+    blog["thumbnailUrl"] = BASE + THUMB
+    blog["articleSection"] = "Health basics"
+    blog["isAccessibleForFree"] = True
+    blog["audience"] = {"@type": "PeopleAudience", "audienceType": "General public"}
+    blog["inLanguage"] = ["en", "bn"]
+    blog["speakable"] = {"@type": "SpeakableSpecification", "cssSelector": ["#pane-en .answer-first p", "#pane-bn .answer-first p"]}
+    blog["about"] = [
+        {"@type": "Drug", "name": "Rabeprazole", "nonProprietaryName": "rabeprazole sodium", "drugClass": {"@type": "DrugClass", "name": "Proton pump inhibitor"}},
+        {"@type": "Drug", "name": "Omeprazole", "nonProprietaryName": "omeprazole", "drugClass": {"@type": "DrugClass", "name": "Proton pump inhibitor"}},
+        {"@type": "MedicalCondition", "name": "Gastro-oesophageal reflux disease"}]
+    blog["mentions"] = [{"@type": "Drug", "name": n} for n in ("Warfarin", "Clopidogrel", "Digoxin", "Iron")] + [{"@type": "Drug", "name": "Finix (rabeprazole sodium)", "url": BASE + "/brands/finix/"}]
+    blog["keywords"] = KW
+    blog["wordCount"] = len(re.sub(r"<[^>]+>", " ", EN).split())
+    if "citation" in blog or True: blog["citation"] = [{"@type": "WebPage", "name": n, "url": (BASE + u if u.startswith("/") else u)} for u, n in REFS]
     faqld["mainEntity"] = [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": re.sub(r"<[^>]+>", "", a)}} for q, a in FAQ_EN]
     crumbs["itemListElement"][2].update(name="When to Take a PPI", item=URL)
     blobs = iter([blog, faqld, crumbs])
@@ -233,6 +269,7 @@ def main():
     head = head.replace('/ How to Take Iron Tablets Properly</p>', '/ When to Take a PPI</p>')
     # related section in tail stays (author card, footer); replace its "related" block
     tail = re.sub(r'<section class="related">.*?</section>', f'<section class="related"><h2>More · Health Made Simple</h2><div class="related-track"><a class="related-card" href="/blog/{SLUG}/#bn"><strong>Read in Bangla</strong><span>গ্যাসের ওষুধ খাওয়ার সঠিক নিয়ম</span></a><a class="related-card" href="/blog/heartburn-vs-acid-reflux-vs-gerd/"><strong>Heartburn vs Acid Reflux vs GERD</strong><span>Symptoms and when to see a doctor.</span></a><a class="related-card" href="/blog/how-to-take-iron-tablets-properly/"><strong>How to Take Iron Tablets Properly</strong><span>Timing, food and interactions.</span></a></div></section>', tail, 1, flags=re.S)
+    head = head.replace('</head>', '<style>.article-hero{aspect-ratio:1600/902!important;object-fit:cover!important;background:none!important}.gb-fig img{height:auto}</style></head>', 1)
     out = head + "<article>" + EN + BN + tail
     d = ROOT / "blog" / SLUG; d.mkdir(exist_ok=True)
     (d / "index.html").write_text(out, encoding="utf-8")
