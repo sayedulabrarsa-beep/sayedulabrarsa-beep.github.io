@@ -24,12 +24,13 @@
     var a=A[cur],n=a.slides.length+2,h,pg=((idx+1)/n*100)+'%',num=('0'+idx).slice(-2);
     var brand='<div class="sd-brand"><span>SAYEDUL ABRAR</span><i>sayedulabrar.site</i></div>';
     if(idx===0){
-      h='<div class="sd sd-cover" style="--ac:'+a.accent+'"><div class="sd-in" style="flex:0 0 auto;padding-bottom:0">'+brand+'</div><img src="'+a.image+'" alt="" style="margin-top:3cqw"><div class="sd-in" style="padding-top:0"><span class="sd-kick" style="margin-top:3.5cqw">'+esc(a.kicker.toUpperCase())+'</span><h3>'+esc(a.title)+'</h3><p class="sd-meta">A pharmacist’s summary · '+esc(a.read)+' full read</p><span class="sd-swipe"><b>→</b> Swipe through</span></div></div>';
+      h='<div class="sd sd-cover" style="--ac:'+a.accent+'"><img class="sd-bg" src="'+a.image+'" alt="">'+brand+'<div class="sd-ctitle"><span class="sd-kick">'+esc(a.kicker.toUpperCase())+'</span><h3>'+esc(a.title)+'</h3><p class="sd-meta">A pharmacist’s summary · '+esc(a.read)+' full read</p></div><div class="sd-swipe"><b>→</b> Swipe through</div><div class="sd-foot"><em style="--pg:'+pg+'"></em><span>01</span></div></div>';
     }else if(idx===n-1){
-      h='<div class="sd sd-end" style="--ac:'+a.accent+'">'+brand+'<div style="margin:auto 0"><h3>Want the full picture?</h3><p class="sd-p">This is a short summary of “'+esc(a.title)+'”. The full article has the sources, examples and FAQs.</p><div class="sd-cta"><a class="a1" href="/blog/'+a.slug+'/">Read in English ↗</a><a class="a2" lang="bn" href="/blog/'+a.bn+'">বাংলায় পড়ুন ↗</a></div></div><p class="sd-note">General education only. It does not replace advice from your doctor or pharmacist.</p></div>';
+      var e=a.end;
+      h='<div class="sd sd-end" style="--ac:'+a.accent+'">'+brand+'<h3 class="sd-endh">'+esc(e.h)+'</h3><p class="sd-p">'+esc(e.t)+'</p><div class="sd-pic"><img src="'+e.img+'" alt="'+esc(e.alt)+'"></div><div class="sd-cta"><a class="a1" href="/blog/'+a.slug+'/">Read the full article ↗</a><a class="a2" lang="bn" href="/blog/'+a.bn+'">বাংলায় পড়ুন ↗</a></div><p class="sd-note">General education only. It does not replace advice from your doctor or pharmacist.</p></div>';
     }else{
       var s=a.slides[idx-1];
-      h='<div class="sd" style="--ac:'+a.accent+';--pg:'+pg+'">'+brand+'<span class="sd-big" aria-hidden="true">'+num+'</span><h3>'+esc(s.h)+'</h3><ul>'+s.p.map(function(t){return'<li>'+esc(t)+'</li>'}).join('')+'</ul><div class="sd-foot"><em></em><span>'+num+'</span></div></div>';
+      h='<div class="sd" style="--ac:'+a.accent+'">'+brand+'<span class="sd-big" aria-hidden="true">'+num+'</span><h3>'+esc(s.h)+'</h3>'+(s.sub?'<p class="sd-sub">'+esc(s.sub)+'</p>':'')+'<ul>'+s.p.map(function(t){return'<li>'+esc(t)+'</li>'}).join('')+'</ul>'+(s.r?'<p class="sd-res">'+esc(s.r)+'</p>':'')+'<div class="sd-pic'+(s.fit==='contain'?' sd-contain':'')+'"><img src="'+s.img+'" alt="'+esc(s.alt)+'"></div><div class="sd-foot"><em style="--pg:'+pg+'"></em><span>'+num+'</span></div></div>';
     }
     stage.style.setProperty('--dx',(dx||14)+'px');stage.innerHTML=h;
     ttl.textContent=a.kicker;cnt.textContent=(idx+1)+' / '+n;
