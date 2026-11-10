@@ -104,7 +104,7 @@ function build(){
 var icoSvg='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>';
 var rings='<svg viewBox="0 0 600 600" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1">'+[300,262,224,186,148,110,72].map(function(r){return '<circle cx="300" cy="300" r="'+r+'"/>'}).join('')+'</g><g stroke="currentColor" stroke-width="1.4">'+(function(){var o='';for(var i=0;i<48;i++){var a=i*Math.PI/24,r1=i%4===0?276:286,r2=300;o+='<line x1="'+(300+Math.cos(a)*r1)+'" y1="'+(300+Math.sin(a)*r1)+'" x2="'+(300+Math.cos(a)*r2)+'" y2="'+(300+Math.sin(a)*r2)+'"/>'}return o})()+'</g></svg>';
 var digits='<span class="lt-reel">'+[0,1,2,3,4,5,6,7,8,9].map(function(d){return '<span>'+d+'</span>'}).join('')+'</span>';
-var G=[],items=[],active=-1,cur,tot,bar,range,yearBox,yearText,fill,list,digitEls,raf=0;
+var G=[],items=[],active=-1,cur,tot,bar,range,yearBox,yearText,fill,list,digitEls,ring,raf=0;
 function render(){
   G=build();
   if(!G.length){story.innerHTML='';story.classList.remove('is-on');src.classList.remove('lt-off');return}
@@ -118,7 +118,7 @@ function render(){
       return '<li class="lt-item" data-i="'+i+'"><span class="lt-dot" aria-hidden="true"></span><p class="lt-date">'+tag+' · '+n+(n===1?' COURSE':' COURSES')+'</p><h3>'+esc(ttl)+'</h3><p class="lt-sub">'+esc(pv)+'</p><ul>'+g.items.map(function(c,j){return '<li'+(j>=8?' class="lt-more" hidden':'')+'>'+esc(c.title)+(c.path?' <em>learning path</em>':'')+'<small>'+esc(c.cat)+'</small></li>'}).join('')+'</ul>'+(n>8?'<button type="button" class="lt-toggle" aria-expanded="false">Show '+(n-8)+' more</button>':'')+'</li>';
    }).join('')+'</ol></div>';
   story.innerHTML=h;story.classList.add('is-on');src.classList.add('lt-off');
-  var ring=story.querySelector('.lt-rings');
+  ring=story.querySelector('.lt-rings');
   function syncRing(){
     if(!ring)return;
     var bounds=story.getBoundingClientRect();
