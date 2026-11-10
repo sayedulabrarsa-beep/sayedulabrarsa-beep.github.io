@@ -2,6 +2,7 @@
 """Rebuilds the home-page 'Featured from the Pharma Blog' clothesline section from _src/data/blog_stacks.json.
 To add a new article: append an entry to the JSON (newest date sorts first), then run this script."""
 import json, html, pathlib, re
+from PIL import Image
 R = pathlib.Path(__file__).resolve().parent.parent
 data = sorted(json.load(open(R/"_src/data/blog_stacks.json", encoding="utf-8")), key=lambda a: a["date"], reverse=True)
 e = html.escape
@@ -13,11 +14,12 @@ tilt = [-1.6, 1.2, -0.8, 1.8, -1.2, 0.9, -1.9, 1.4, -0.6]
 cards = ""
 for i, a in enumerate(data):
     n = len(a["slides"]) + 2
+    iw, ih = Image.open(R/a["image"].lstrip("/")).size
     new = '<span class="st-new">NEW</span>' if i == 0 else ""
     cards += (f'<li class="st-item" style="--tilt:{tilt[i%9]}deg;--ac:{a["accent"]}"><button class="st-stack" type="button" data-i="{i}" aria-haspopup="dialog" aria-label="Open summary: {e(a["title"])} ({n} slides)">'
               f'<span class="st-pin" aria-hidden="true"></span><span class="st-sheet st-s2" aria-hidden="true"></span><span class="st-sheet st-s1" aria-hidden="true"></span>'
-              f'<span class="st-card"><img src="{a["image"]}" alt="{e(a["alt"])}" width="1200" height="630" loading="lazy">{new}'
-              f'<span class="st-cap"><small>{e(a["kicker"]).upper()}</small><b>{e(a["title"])}</b></span>'
+              f'<span class="st-card"><img src="{a["image"]}" alt="{e(a["alt"])}" width="{iw}" height="{ih}" loading="lazy" style="aspect-ratio:{iw}/{ih}">{new}'
+              f'<span class="st-cap"><small>{e(a["kicker"]).upper()}</small><b>{e(a["title"])}</b><em>{e(a["read"])} full read · tap to swipe</em></span>'
               f'<span class="st-count">Summary · {n} slides</span></span></button>'
               f'<a class="st-link" href="/blog/{a["slug"]}/">Read full article ↗</a></li>')
 payload = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
@@ -39,6 +41,6 @@ if "<!--stacks:start-->" in s:
 else:
     a = s.index('<section class="ed-blog-section">'); b = s.index("</section>", a) + len("</section>")
     s = s[:a] + section + s[b:]
-    s = s.replace('</head>', '<link rel="stylesheet" href="/assets/stacks.css?v=6"></head>', 1)
-    s = s.replace('</body>', '<script src="/assets/stacks.js?v=6" defer></script></body>', 1)
+    s = s.replace('</head>', '<link rel="stylesheet" href="/assets/stacks.css?v=8"></head>', 1)
+    s = s.replace('</body>', '<script src="/assets/stacks.js?v=8" defer></script></body>', 1)
 p.write_text(s, encoding="utf-8"); print("ok", len(data))
