@@ -16,6 +16,9 @@ F = {  # file, alt/caption EN, alt BN
  "forms": ("rabeprazole-finix-tablet-mups-and-sprinkle-how-to-take.webp",
    "Rabeprazole forms: tablet and MUPS tablet are swallowed whole; the sprinkle capsule is opened onto a little soft food or liquid and taken within 15 minutes, without chewing the granules.",
    "রাবেপ্রাজলের ধরন: ট্যাবলেট ও MUPS ট্যাবলেট গোটা গিলতে হয়; Sprinkle ক্যাপসুল খুলে অল্প নরম খাবার বা তরলে মিশিয়ে ১৫ মিনিটের মধ্যে খেতে হয়, দানা চিবানো যাবে না।"),
+ "key": ("key-takeaways-using-a-ppi-safely.webp",
+   "Key takeaways for using a PPI safely: rabeprazole tablets with or without food for most uses (FDA label), swallow whole, take at the same time every day, tell your doctor or pharmacist about other medicines, and see a doctor if symptoms return or warning signs appear.",
+   "পিপিআই নিরাপদে ব্যবহারের মূল কথা: রাবেপ্রাজল ট্যাবলেট বেশির ভাগ ক্ষেত্রে খাবারের সঙ্গে বা ছাড়া (FDA লেবেল), গোটা গিলুন, প্রতিদিন একই সময়ে খান, অন্য ওষুধের কথা জানান, উপসর্গ ফিরলে বা সতর্কতার লক্ষণ দেখা দিলে ডাক্তার দেখান।"),
  "how": ("how-ppis-work-reduce-stomach-acid-simple-illustration.webp",
    "How PPIs work, simplified: a PPI reduces stomach acid, which means less acid reaching the stomach and food pipe, relief of symptoms and healing of acid-related problems such as ulcers.",
    "পিপিআই কীভাবে কাজ করে, সহজ চিত্র: পিপিআই পাকস্থলীর অ্যাসিড কমায়, ফলে অ্যাসিড কম হয়, উপসর্গে আরাম মেলে এবং আলসারের মতো অ্যাসিড-সংক্রান্ত সমস্যা সারতে সাহায্য হয়।"),
@@ -41,12 +44,13 @@ F = {  # file, alt/caption EN, alt BN
    "Missed a PPI dose: take it when you remember unless the next dose is nearly due, and never take two together. If you take too much, get medical advice.",
    "পিপিআইয়ের ডোজ বাদ গেলে: মনে পড়লে খান, পরের ডোজের সময় প্রায় হয়ে গেলে বাদ দিন, কখনও দুটো একসাথে খাবেন না। বেশি খেয়ে ফেললে চিকিৎসকের পরামর্শ নিন।"),
 }
-DIM = {"key": (1600, 900), "how": (835, 942), "special": (834, 941), "timing": (1600, 903), "swallow": (1600, 903), "inter": (1600, 903), "doctor": (1600, 903), "missed": (1600, 452), "side": (832, 942), "forms": (1448, 960)}
+DIM = {"key": (1600, 900), "key": (1600, 900), "how": (835, 942), "special": (834, 941), "timing": (1600, 903), "swallow": (1600, 903), "inter": (1600, 903), "doctor": (1600, 903), "missed": (1600, 452), "side": (832, 942), "forms": (1448, 960)}
 def fig(k, bn=False):
     f, en, b = F[k]
     t = b if bn else en
     cap = {"timing": ("Sources differ on food. Your leaflet decides.", "খাবার নিয়ে উৎসগুলোর মধ্যে পার্থক্য আছে। আপনার লিফলেটই শেষ কথা।"),
            "forms": ("Always follow your own pack insert.", "সবসময় নিজের প্যাকের ইনসার্ট মানুন।"),
+           "key": ("Five points to remember.", "মনে রাখার পাঁচটি কথা।"),
            "key": ("Five points to remember.", "মনে রাখার পাঁচটি কথা।"),
            "how": ("Simplified illustration. PPIs reduce stomach acid.", "সরল চিত্র। পিপিআই পাকস্থলীর অ্যাসিড কমায়।"),
            "special": ("General summary only. Details differ by medicine; check with your doctor or pharmacist.", "শুধু সাধারণ সারসংক্ষেপ। ওষুধভেদে বিস্তারিত আলাদা; ডাক্তার বা ফার্মাসিস্টকে জিজ্ঞেস করুন।"),
@@ -152,6 +156,7 @@ EN = f'''<div class="lang-pane" id="pane-en" lang="en" data-pane="en"><div class
 <h2>Key takeaway</h2>
 {fig("key")}
 <p>Rabeprazole tablets can be taken with or without food for most uses, but use the timing on your own label, take it at a consistent time, swallow tablets whole (open sprinkle capsules only as the insert says), share your other medicines and do not self-treat for long. If symptoms keep returning or warning signs appear, see a doctor.</p>
+{fig("key")}
 <section class="article-related"><h2>Related reading</h2><ul><li><a href="/blog/heartburn-vs-acid-reflux-vs-gerd/">Heartburn vs Acid Reflux vs GERD</a></li><li><a href="/blog/how-to-take-iron-tablets-properly/">How to Take Iron Tablets Properly: Timing, Food and Interactions</a></li><li><a href="/brands/finix/">Example product: Finix (rabeprazole). Always follow the product leaflet.</a></li><li><a href="/brands/finix-mups/">Product reference: Finix MUPS 20 (rabeprazole MUPS tablet)</a></li></ul><p><small>Brand names are used only as examples to explain dosage forms. This is not an advertisement or a recommendation.</small></p></section><section class="source-list"><h2>References</h2><ul>{refs}</ul></section><div class="disclaimer"><strong>Medical Education Disclaimer:</strong> This article is for general education only and is not a substitute for personal medical advice, diagnosis or treatment. Consult a clinician or registered pharmacist before starting, stopping or changing a medicine.</div></div></div>'''
 
 # ------------------------------------------------------------------ Bangla
@@ -229,6 +234,7 @@ BN = f'''<div class="lang-pane" id="pane-bn" lang="bn" data-pane="bn" hidden><di
 <h2>মূল কথা</h2>
 {fig("key", True)}
 <p>রাবেপ্রাজল ট্যাবলেট বেশির ভাগ ক্ষেত্রে খাবারের সঙ্গে বা ছাড়া খাওয়া যায়, তবু নিজের লেবেলের নিয়ম মানুন, একটি নির্দিষ্ট সময়ে খান, ট্যাবলেট গোটা গিলুন (Sprinkle ক্যাপসুল শুধু ইনসার্ট অনুযায়ী খুলুন), অন্য ওষুধের কথা জানান এবং নিজে নিজে বেশি দিন খাবেন না। উপসর্গ বারবার ফিরে এলে বা সতর্কতার লক্ষণ দেখা দিলে ডাক্তার দেখান।</p>
+{fig("key", True)}
 <section class="article-related"><h2>আরও পড়ুন</h2><ul><li><a href="/blog/heartburn-vs-acid-reflux-vs-gerd-bangla/">বুক জ্বালা, অ্যাসিড রিফ্লাক্স ও GERD</a></li><li><a href="/blog/how-to-take-iron-tablets-properly/#bn">আয়রন ট্যাবলেট কীভাবে খাবেন</a></li><li><a href="/brands/finix/">উদাহরণ পণ্য: Finix (রাবেপ্রাজল)। সব সময় পণ্যের লিফলেট মানুন।</a></li><li><a href="/brands/finix-mups/">পণ্যের তথ্য: Finix MUPS ২০ (রাবেপ্রাজল MUPS ট্যাবলেট)</a></li></ul><p><small>ব্র্যান্ডের নাম শুধু ওষুধের ধরন বোঝানোর উদাহরণ হিসেবে ব্যবহার করা হয়েছে। এটি বিজ্ঞাপন বা সুপারিশ নয়।</small></p></section><section class="source-list"><h2>সূত্র</h2><ul>{refs}</ul></section><div class="disclaimer"><strong>চিকিৎসা-শিক্ষা বিষয়ক দাবিত্যাগ:</strong> এই লেখা শুধু সাধারণ শিক্ষার জন্য। এটি ব্যক্তিগত চিকিৎসা-পরামর্শ, রোগ নির্ণয় বা চিকিৎসার বিকল্প নয়। কোনো ওষুধ শুরু, বন্ধ বা বদলানোর আগে চিকিৎসক বা নিবন্ধিত ফার্মাসিস্টের সঙ্গে কথা বলুন।</div></div></div>'''
 
 TITLE = "When to Take a PPI: Before Meals, Common Mistakes (Rabeprazole, Omeprazole)"
@@ -269,7 +275,7 @@ def main():
         return d
     NAMES = {"timing": "PPI timing: what NHS, MedlinePlus and the FDA label say", "forms": "Rabeprazole forms: tablet, MUPS tablet and sprinkle capsule",
              "swallow": "Swallow a PPI whole: do and do not", "inter": "Medicines to mention to your pharmacist when taking a PPI",
-             "doctor": "When to see a doctor while taking a PPI", "missed": "Missed a PPI dose: what to do", "side": "Common side effects of omeprazole (NHS)", "key": "Key takeaways: using a PPI safely", "how": "How PPIs work: they reduce stomach acid", "special": "PPI use in pregnancy, breastfeeding, older adults, kidney or liver problems"}
+             "doctor": "When to see a doctor while taking a PPI", "missed": "Missed a PPI dose: what to do", "side": "Common side effects of omeprazole (NHS)", "key": "Key takeaways: using a PPI safely", "key": "Key takeaways: using a PPI safely", "how": "How PPIs work: they reduce stomach acid", "special": "PPI use in pregnancy, breastfeeding, older adults, kidney or liver problems"}
     thumb = imo(THUMB, 1600, 902, "When to take a PPI: a stomach illustration, a glass of water, capsules and a checklist asking before meal, with food or empty stomach. By Sayedul Abrar, Pharmacist.", TITLE_SHORT, {"representativeOfPage": True})
     imgs = [SOCIAL, thumb]
     for k in F:
