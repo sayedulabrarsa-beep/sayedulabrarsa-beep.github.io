@@ -20,6 +20,7 @@
       else if(e.key==='Tab'){var f=v.querySelectorAll('button:not([disabled]),a[href]');if(!f.length)return;var a=f[0],b=f[f.length-1];
         if(e.shiftKey&&document.activeElement===a){e.preventDefault();b.focus()}else if(!e.shiftKey&&document.activeElement===b){e.preventDefault();a.focus()}}});
   }
+  function tint(s){return s.dk?'--bg:'+s.bg+';--fg:#fff;--fg2:#ece6df;--mut:#b9b4ac;':'--bg:'+s.bg+';--fg:#172f2b;--fg2:#26332f;--mut:#5f6b66;'}
   function render(dx){
     var a=A[cur],n=a.slides.length+2,h,pg=((idx+1)/n*100)+'%',num=('0'+idx).slice(-2);
     var brand='<div class="sd-brand"><span>SAYEDUL ABRAR</span><i>sayedulabrar.site</i></div>';
@@ -27,10 +28,10 @@
       h='<div class="sd sd-cover" style="--ac:'+a.accent+'"><img class="sd-bg" src="'+a.image+'" alt="">'+brand+'<div class="sd-ctitle"><span class="sd-kick">'+esc(a.kicker.toUpperCase())+'</span><h3>'+esc(a.title)+'</h3><p class="sd-meta">A pharmacist’s summary · '+esc(a.read)+' full read</p></div><div class="sd-swipe"><b>→</b> Swipe through</div><div class="sd-foot"><em style="--pg:'+pg+'"></em><span>01</span></div></div>';
     }else if(idx===n-1){
       var e=a.end;
-      h='<div class="sd sd-end" style="--ac:'+a.accent+'">'+brand+'<h3 class="sd-endh">'+esc(e.h)+'</h3><p class="sd-p">'+esc(e.t)+'</p><div class="sd-pic"><img src="'+e.img+'" alt="'+esc(e.alt)+'"></div><div class="sd-cta"><a class="a1" href="/blog/'+a.slug+'/">Read the full article ↗</a><a class="a2" lang="bn" href="/blog/'+a.bn+'">বাংলায় পড়ুন ↗</a></div><p class="sd-note">General education only. It does not replace advice from your doctor or pharmacist.</p></div>';
+      h='<div class="sd sd-end" style="'+tint(e)+'--ac:'+a.accent+'">'+brand+'<h3 class="sd-endh">'+esc(e.h)+'</h3><p class="sd-p">'+esc(e.t)+'</p><div class="sd-pic"><img src="'+e.img+'" alt="'+esc(e.alt)+'"></div><div class="sd-cta"><a class="a1" href="/blog/'+a.slug+'/">Read the full article ↗</a><a class="a2" lang="bn" href="/blog/'+a.bn+'">বাংলায় পড়ুন ↗</a></div><p class="sd-note">General education only. It does not replace advice from your doctor or pharmacist.</p></div>';
     }else{
       var s=a.slides[idx-1];
-      h='<div class="sd" style="--ac:'+a.accent+'">'+brand+'<span class="sd-big" aria-hidden="true">'+num+'</span><h3>'+esc(s.h)+'</h3>'+(s.sub?'<p class="sd-sub">'+esc(s.sub)+'</p>':'')+'<ul>'+s.p.map(function(t){return'<li>'+esc(t)+'</li>'}).join('')+'</ul>'+(s.r?'<p class="sd-res">'+esc(s.r)+'</p>':'')+'<div class="sd-pic'+(s.fit==='contain'?' sd-contain':'')+'"><img src="'+s.img+'" alt="'+esc(s.alt)+'"></div><div class="sd-foot"><em style="--pg:'+pg+'"></em><span>'+num+'</span></div></div>';
+      h='<div class="sd" style="'+tint(s)+'--ac:'+a.accent+';--pg:'+pg+'">'+brand+'<span class="sd-big" aria-hidden="true">'+num+'</span><h3>'+esc(s.h)+'</h3>'+(s.sub?'<p class="sd-sub">'+esc(s.sub)+'</p>':'')+'<ul>'+s.p.map(function(t){return'<li>'+esc(t)+'</li>'}).join('')+'</ul>'+(s.r?'<p class="sd-res">'+esc(s.r)+'</p>':'')+'<div class="sd-pic'+(s.fit==='contain'?' sd-contain':'')+'"><img src="'+s.img+'" alt="'+esc(s.alt)+'"></div><div class="sd-foot"><em style="--pg:'+pg+'"></em><span>'+num+'</span></div></div>';
     }
     stage.style.setProperty('--dx',(dx||14)+'px');stage.innerHTML=h;
     ttl.textContent=a.kicker;cnt.textContent=(idx+1)+' / '+n;

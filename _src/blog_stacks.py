@@ -10,6 +10,16 @@ for a in data:
     assert (R/a["image"].lstrip("/")).exists(), a["image"]
     assert (R/"blog"/a["slug"]/"index.html").exists(), a["slug"]
     assert (R/"blog"/a["bn"].split("#")[0]/"index.html").exists(), a["bn"]
+import statistics
+def edge(path):
+    im = Image.open(R/path.lstrip("/")).convert("RGB"); im.thumbnail((500, 500)); w, h = im.size; px = im.load(); t = max(2, min(w, h)//60)
+    pts = [px[x, y] for x in range(w) for y in list(range(t)) + list(range(h-t, h))] + [px[x, y] for y in range(h) for x in list(range(t)) + list(range(w-t, w))]
+    c = [int(statistics.median(p[i] for p in pts)) for i in range(3)]
+    lum = (0.299*c[0] + 0.587*c[1] + 0.114*c[2]) / 255
+    return "#%02x%02x%02x" % tuple(c), lum < 0.5
+for a in data:
+    for s in a["slides"] + [a["end"]]:
+        s["bg"], s["dk"] = edge(s["img"])
 tilt = [-1.6, 1.2, -0.8, 1.8, -1.2, 0.9, -1.9, 1.4, -0.6]
 cards = ""
 for i, a in enumerate(data):
@@ -41,6 +51,6 @@ if "<!--stacks:start-->" in s:
 else:
     a = s.index('<section class="ed-blog-section">'); b = s.index("</section>", a) + len("</section>")
     s = s[:a] + section + s[b:]
-    s = s.replace('</head>', '<link rel="stylesheet" href="/assets/stacks.css?v=8"></head>', 1)
-    s = s.replace('</body>', '<script src="/assets/stacks.js?v=8" defer></script></body>', 1)
+    s = s.replace('</head>', '<link rel="stylesheet" href="/assets/stacks.css?v=10"></head>', 1)
+    s = s.replace('</body>', '<script src="/assets/stacks.js?v=10" defer></script></body>', 1)
 p.write_text(s, encoding="utf-8"); print("ok", len(data))
