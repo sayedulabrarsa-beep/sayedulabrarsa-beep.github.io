@@ -1,5 +1,5 @@
 /* End-of-article "You can also read" band — article pages only */
-.ae-band{--ae-teal:#126b56;--ae-orange:#c26e00;--ae-cream:#fffaf0;position:relative;margin:56px 0 24px;border-radius:24px;padding:clamp(28px,4.5vw,52px) clamp(16px,3.5vw,40px) clamp(26px,4vw,42px);color:#1C1E2D;overflow:hidden;background:linear-gradient(135deg,#fffaf0 0%,#f6ecd7 100%);border:1px solid #ead9ca;box-shadow:0 10px 30px rgba(120,90,40,.08);isolation:isolate}
+.ae-band{--ae-teal:#126b56;--ae-orange:#c26e00;--ae-cream:#fffaf0;position:relative;width:min(1120px,calc(100% - 32px));margin:56px auto 32px;border-radius:24px;padding:clamp(28px,4.5vw,52px) clamp(16px,3.5vw,40px) clamp(26px,4vw,42px);color:#1C1E2D;overflow:hidden;background:linear-gradient(135deg,#fffaf0 0%,#f6ecd7 100%);border:1px solid #ead9ca;box-shadow:0 10px 30px rgba(120,90,40,.08);isolation:isolate}
 .ae-band:before,.ae-band:after{content:"";position:absolute;border-radius:50%;z-index:-1;pointer-events:none}
 .ae-band:before{width:420px;height:420px;right:-120px;top:-170px;background:radial-gradient(circle,rgba(194,110,0,.14),transparent 68%)}
 .ae-band:after{width:380px;height:380px;left:-130px;bottom:-190px;background:radial-gradient(circle,rgba(18,107,86,.13),transparent 68%)}
@@ -40,7 +40,7 @@
   .ae-card{flex:0 0 min(78vw,320px);scroll-snap-align:start}
 }
 @media(max-width:520px){
-  .ae-band{margin-top:40px;border-radius:18px}
+  .ae-band{margin-top:40px;border-radius:18px;width:calc(100% - 24px)}
   .ae-prod-grid{grid-template-columns:1fr}
   .ae-body strong{font-size:16px}
 }

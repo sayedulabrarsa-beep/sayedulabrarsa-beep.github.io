@@ -2,7 +2,7 @@
   'use strict';
   var main=document.querySelector('main');
   if(!main||document.querySelector('.ae-band'))return;
-  var V='ae2-20261111';
+  var V='ae3-20261111';
   if(!document.querySelector('link[data-ae-style]')){
     var l=document.createElement('link');l.rel='stylesheet';l.href='/assets/article-end.css?v='+V;
     l.setAttribute('data-ae-style','');document.head.appendChild(l);
@@ -17,7 +17,7 @@
     'heartburn-vs-acid-reflux-vs-gerd':['Digestive health','হজম স্বাস্থ্য','Heartburn vs Acid Reflux vs GERD','হার্টবার্ন, অ্যাসিড রিফ্লাক্স ও জিইআরডি','How these common conditions differ.','এই সাধারণ অবস্থাগুলোর পার্থক্য কী।','/blog/heartburn-vs-acid-reflux-vs-gerd/','/blog/heartburn-vs-acid-reflux-vs-gerd-bangla/',B+'heartburn-gerd-index-card.webp'],
     'how-to-take-iron-tablets-properly':['Practical medicine use','ওষুধ ব্যবহার','How to Take Iron Tablets Properly','আয়রন ট্যাবলেট সঠিকভাবে খাওয়ার নিয়ম','Timing, food and interaction considerations.','সময়, খাবার ও ইন্টারঅ্যাকশনের বিষয়।','/blog/how-to-take-iron-tablets-properly/','/blog/how-to-take-iron-tablets-properly/#bn',B+'iron-tablets/how-to-take-iron-tablets-properly-timing-food-interactions-thumbnail-16x9.webp'],
     'iron-deficiency-vs-anemia':['Iron & health','আয়রন ও স্বাস্থ্য','Iron Deficiency vs Anemia','আয়রনের ঘাটতি বনাম রক্তাল্পতা','Are they the same? A simple explanation.','দুটি কি একই? সহজ ব্যাখ্যা।','/blog/iron-deficiency-vs-anemia/','/blog/iron-deficiency-vs-anemia/#bn',B+'iron-deficiency-vs-anemia-social.jpg'],
-    'glucosamine-alzheimers-nature-metabolism-study':['Research review','রিসার্চ রিভিউ','Glucosamine & Alzheimer’s Study','গ্লুকোসামিন ও আলঝেইমার্স গবেষণা','How to read a research paper’s claims carefully.','গবেষণার দাবি সতর্কভাবে পড়ার উপায়।','/blog/glucosamine-alzheimers-nature-metabolism-study/','/blog/glucosamine-alzheimers-nature-metabolism-study-bangla/',B+'glucosamine-alzheimers-en-thumbnail.svg'],
+    'glucosamine-alzheimers-nature-metabolism-study':['Research review','রিসার্চ রিভিউ','Glucosamine & Alzheimer’s Study','গ্লুকোসামিন ও আলঝেইমার্স গবেষণা','How to read a research paper’s claims carefully.','গবেষণার দাবি সতর্কভাবে পড়ার উপায়।','/blog/glucosamine-alzheimers-nature-metabolism-study/','/blog/glucosamine-alzheimers-nature-metabolism-study-bangla/',B+'glucosamine/glucosamine-and-alzheimers-nature-metabolism-study-cover.webp'],
     'what-is-the-pharmaceutical-industry':['Industry','ফার্মা শিল্প','Pharmaceutical Industry in Bangladesh','বাংলাদেশের ফার্মাসিউটিক্যাল শিল্প','How medicines are made and reach patients.','ওষুধ কীভাবে তৈরি হয়ে রোগীর কাছে পৌঁছায়।','/blog/what-is-the-pharmaceutical-industry/','/blog/what-is-the-pharmaceutical-industry-bangla/',B+'pharma-industry/pharmaceutical-industry-in-bangladesh-how-medicines-reach-you-thumbnail-16x9.webp']
   };
   var R={
@@ -127,7 +127,7 @@
       :'Product pages are general information for professionals and interested readers. Do not start or stop a medicine on your own; ask your doctor or pharmacist.';
   }
   render();
-  main.appendChild(band);
+  var foot=document.querySelector('body > footer');if(foot)document.body.insertBefore(band,foot);else document.body.appendChild(band);
   if(paneBn&&window.MutationObserver){
     new MutationObserver(render).observe(paneBn,{attributes:true,attributeFilter:['hidden']});
   }
