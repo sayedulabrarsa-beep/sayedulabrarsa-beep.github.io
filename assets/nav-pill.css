@@ -1,0 +1,29 @@
+/* Floating pill navigation (Craft-style layout, site colours). Loaded after style.css on every page. */
+html body header{position:sticky!important;top:0!important;z-index:100!important;background:transparent!important;border:0!important;box-shadow:none!important;padding:max(10px,env(safe-area-inset-top,0px)) 14px 0!important;isolation:auto!important;pointer-events:none}
+html body header .wrap.bar,html body header .bar{pointer-events:auto;display:flex!important;flex-wrap:nowrap!important;align-items:center!important;gap:6px!important;grid-template-columns:none!important;max-width:1120px!important;width:100%!important;margin:0 auto!important;min-height:0!important;padding:8px 10px 8px 22px!important;border-radius:999px!important;border:1px solid rgba(214,196,176,.55)!important;background:rgba(255,250,240,.96)!important;-webkit-backdrop-filter:saturate(1.4) blur(14px);backdrop-filter:saturate(1.4) blur(14px);box-shadow:0 6px 22px rgba(60,48,30,.10),0 1px 2px rgba(60,48,30,.06)!important;transition:max-width .35s ease,box-shadow .35s ease,background .35s ease,padding .35s ease}
+html body header.is-scrolled .bar{max-width:1040px!important;background:rgba(255,252,246,.94)!important;box-shadow:0 14px 36px rgba(60,48,30,.20),0 2px 6px rgba(60,48,30,.10)!important}
+html body header .bar>.logo{order:0!important;grid-column:auto!important;grid-row:auto!important;justify-self:auto!important;flex:0 0 auto;margin:0!important;padding:0!important;background:transparent!important;font-size:27px!important;line-height:1.1;color:#126b56!important;text-align:left}
+html body header .bar>nav{order:1!important;flex:1 1 0!important;min-width:0!important;width:auto!important;margin:0 4px 0 16px!important;padding:0!important;border:0!important;overflow:hidden!important;grid-column:auto!important;grid-row:auto!important;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 22px,#000 calc(100% - 22px),transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 22px,#000 calc(100% - 22px),transparent 100%)}
+html body header .menu{gap:2px!important;padding:0!important;margin:0!important;align-items:center!important}
+html body header .menu>li>a,html body header .menu>li>button{display:block!important;min-width:0!important;padding:9px 11px!important;border-radius:999px!important;font:500 13.5px/1.2 var(--display)!important;letter-spacing:0!important;text-transform:none!important;color:#2a3140!important;box-shadow:none!important;background:transparent!important;white-space:nowrap}
+html body header .menu .nav-icon{display:none!important}
+html body header .menu>li>a:hover,html body header .menu>li>a:focus-visible{background:rgba(18,107,86,.09)!important;color:#126b56!important}
+html body header .menu a[aria-current=page]{background:rgba(194,110,0,.12)!important;color:#a85b00!important;box-shadow:none!important}
+html body header .bar>.site-search-toggle{order:2!important;grid-column:auto!important;grid-row:auto!important;justify-self:auto!important;flex:0 0 38px;width:38px!important;height:38px!important;border:0!important;background:transparent!important;color:#126b56!important}
+html body header .bar>.site-search-toggle:hover{background:rgba(18,107,86,.09)!important}
+html body header .bar>.tgl{order:3!important;grid-column:auto!important;grid-row:auto!important}
+html body header .bar>.site-menu-toggle{order:4!important;grid-column:auto!important;grid-row:auto!important;justify-self:auto!important;flex:0 0 40px!important;width:40px!important;height:40px!important;border-radius:50%!important;background:#126b56!important;color:#fff!important;border:0!important;box-shadow:none!important}
+html body header .bar>.site-menu-toggle:hover{background:#0e5745!important}
+html body header .site-menu-toggle svg{width:22px!important;height:22px!important}
+html body header .site-search-form{order:9;flex:1 0 100%;grid-column:auto!important;grid-row:auto!important;padding:8px 6px 6px!important}
+@media(max-width:700px){
+  html body header{padding:max(8px,env(safe-area-inset-top,0px)) 10px 0!important}
+  html body header .wrap.bar,html body header .bar{flex-wrap:wrap!important;gap:0 4px!important;padding:8px 8px 6px 16px!important;border-radius:26px!important}
+  html body header .bar>.logo{flex:1 1 auto;font-size:24px!important}
+  html body header .bar>.site-search-toggle,html body header .bar>.tgl{flex:0 0 36px;width:36px!important;height:36px!important}
+  html body header .bar>.site-menu-toggle{flex:0 0 38px!important;width:38px!important;height:38px!important}
+  html body header .bar>nav{order:10!important;flex:1 0 100%!important;margin:4px -4px 0 -12px!important;padding:0!important;border-top:0!important}
+  html body header .menu>li>a{padding:8px 10px!important;font-size:13px!important}
+  html body header.is-scrolled .bar{max-width:100%!important}
+}
+@media(prefers-reduced-motion:reduce){html body header .bar{transition:none}}
