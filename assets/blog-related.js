@@ -18,7 +18,7 @@
       ['DIGESTIVE HEALTH','Heartburn vs Acid Reflux vs GERD','Understand symptoms, triggers and when to seek care.','/blog/heartburn-vs-acid-reflux-vs-gerd/','/assets/img/blog/heartburn-gerd-index-card.webp'],
       ['PHARMACY BASICS','Drug vs Medicine','Understand the difference between a drug and a medicine.','/blog/drug-vs-medicine/','/assets/img/blog/drug-vs-medicine/drug-vs-medicine-thumbnail.webp']],
     'how-to-take-iron-tablets-properly':[
-      ['IRON & HEALTH','Iron Deficiency vs Anemia','Understand how iron deficiency and anemia differ.','/blog/iron-deficiency-vs-anemia/','/assets/img/blog/iron-deficiency/iron-deficiency-vs-anemi'],
+      ['IRON & HEALTH','Iron Deficiency vs Anemia','Understand how iron deficiency and anemia differ.','/blog/iron-deficiency-vs-anemia/','/assets/img/blog/iron-deficiency-vs-anemia-social.jpg'],
       ['MEDICINE LABELS','Expiry Date vs Manufacturing Date','Learn how to read medicine pack dates.','/blog/expiry-date-vs-manufacturing-date-medicine/','/assets/img/blog/expiry/expiry-date-vs-manufacturing-date-medicine-social.jpg']],
     'iron-deficiency-vs-anemia':[
       ['PRACTICAL MEDICINE USE','How to Take Iron Tablets Properly','Read about timing, food and interactions.','/blog/how-to-take-iron-tablets-properly/','/assets/img/blog/iron-tablets/how-to-take-iron-tablets-properly-timing-food-interactions-thumbnail-16x9.webp'],
