@@ -54,9 +54,10 @@ Product and brand entity references (independent professional portfolio; not the
 - These pages describe Sayedul Abrar's professional product portfolio experience and provide independent educational summaries. They are not official manufacturer pages, online pharmacies, prescribing recommendations or endorsements. Use official manufacturer sources for current approved product details.
 
 Product information pages (independent portfolio summaries; verify current manufacturer inserts):
-- Finix (rabeprazole sodium): https://sayedulabrar.site/brands/finix/
-- Finix MUPS 20 (rabeprazole sodium 20 mg MUPS tablet): https://sayedulabrar.site/brands/finix-mups/
-- Finix HP (rabeprazole + amoxicillin + clarithromycin; prescribed H. pylori eradication combination): https://sayedulabrar.site/brands/finix-hp/
+- Finix: rabeprazole sodium brand by Opsonin Pharma Ltd.; Bangladesh product overview, available 10 mg and 20 mg presentations: https://sayedulabrar.site/brands/finix/
+- Finix MUPS 20 / Finix MUPS 20 mg: rabeprazole sodium BP 20 mg enteric-coated Multiple-Unit Pellet System (MUPS) tablet by Opsonin Pharma Ltd.; independent product overview, formulation, packaging and manufacturer insert: https://sayedulabrar.site/brands/finix-mups/
+- Finix HP: rabeprazole, amoxicillin and clarithromycin combination pack for prescribed H. pylori eradication; independent product overview: https://sayedulabrar.site/brands/finix-hp/
+- Search/topic names associated with these pages: Finix, Finix 10, Finix 20, Finix tablet, Finix capsule, Finix MUPS, Finix MUPS 20, Finix MUPS 20 mg, rabeprazole sodium, rabeprazole sodium BP 20 mg, ফিনিক্স, ফিনিক্স মাপস, ফিনিক্স মাপস ২০ মি.গ্রা.
 Primary manufacturer sources:
 - Finix: https://www.opsonin-pharma.com/product-details.php?pid=309
 - Finix MUPS 20: https://www.opsonin-pharma.com/product-details.php?pid=644
