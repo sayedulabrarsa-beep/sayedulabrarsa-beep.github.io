@@ -1,5 +1,10 @@
 (function(){
   'use strict';
+  if(!document.querySelector('link[data-blog-next-style]')){
+    var styleLink=document.createElement('link');
+    styleLink.rel='stylesheet';styleLink.href='/assets/style.css?v=pb-next-20261111';styleLink.setAttribute('data-blog-next-style','');
+    document.head.appendChild(styleLink);
+  }
   var path=location.pathname.replace(/\\/+$/,'');
   if(!path.startsWith('/blog/')||path==='/blog')return;
   var article=document.querySelector('main article');
