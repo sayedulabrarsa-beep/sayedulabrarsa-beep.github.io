@@ -3796,21 +3796,25 @@ body.pf-page footer .cr,body.pf-page footer small{color:#d9c6a2}
 @media(max-width:600px){.pb-continue{padding:38px 16px}.pb-continue-head{display:block}.pb-continue-all{margin-top:16px}.pb-continue-grid{display:flex;overflow-x:auto;gap:12px;padding:2px 2px 14px;scroll-snap-type:x mandatory;scrollbar-width:thin;-webkit-overflow-scrolling:touch}.pb-next-card,.pb-next-card:nth-child(n+4){display:flex;flex:0 0 min(76vw,280px);scroll-snap-align:start}.pb-next-image{aspect-ratio:1.35/1}.pb-next-copy{padding:14px}.pb-next-copy h3{font-size:17px}}
 @media(prefers-reduced-motion:reduce){.pb-next-card,.pb-next-image img{transition:none}}
 /* Contextual reading cards appended at the end of each Pharma Blog article */
-.article-next-reading{margin:34px 0;padding:clamp(18px,3vw,28px);border:1px solid var(--line);border-radius:18px;background:var(--bg2)}
-.article-next-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:18px}
-.article-next-heading p{margin:0 0 5px;color:var(--muted);font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
-.article-next-heading h2{margin:0;font-size:clamp(21px,3vw,28px)}
-.article-next-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-.article-next-card{display:flex;align-items:center;gap:13px;min-width:0;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--card);text-decoration:none;color:var(--fg);transition:transform .18s ease,border-color .18s ease}
-.article-next-card:hover{transform:translateY(-2px);border-color:var(--accent)}
-.article-next-card img{width:86px;height:68px;flex:none;object-fit:cover;border-radius:8px;background:var(--bg2)}
-.article-next-card span{display:block;min-width:0}
-.article-next-card small{display:block;margin-bottom:5px;color:var(--muted);font-size:9px;font-weight:700;letter-spacing:.08em}
-.article-next-card strong{display:block;font-size:13px;line-height:1.35}
-.article-next-card em{display:block;margin-top:4px;color:var(--muted);font-size:11px;line-height:1.4;font-style:normal}
-@media(max-width:620px){.article-next-grid{grid-template-columns:1fr}.article-next-card img{width:78px;height:64px}.article-next-heading{display:block}}
+/* Refined end-of-article reading recommendations */
+.article-next-reading{position:relative;margin:38px 0 24px;padding:clamp(20px,3vw,30px);border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg,var(--bg2),var(--card));overflow:hidden}
+.article-next-reading:before{content:"";position:absolute;left:0;top:0;width:4px;height:100%;background:var(--accent);opacity:.75}
+.article-next-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin:0 0 20px}
+.article-next-heading p{margin:0 0 7px;color:var(--accent);font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.article-next-heading h2{margin:0;font-size:clamp(22px,3vw,30px);line-height:1.15;letter-spacing:-.025em}
+.article-next-intro{display:block;margin-top:7px;color:var(--muted);font-size:12px;line-height:1.6}
+.article-next-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.article-next-card{display:grid;grid-template-columns:minmax(112px,36%) minmax(0,1fr);align-items:stretch;gap:0;min-width:0;min-height:132px;padding:0;border:1px solid var(--line);border-radius:13px;background:var(--card);overflow:hidden;text-decoration:none;color:var(--fg);transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+.article-next-card:hover{transform:translateY(-3px);border-color:var(--accent);box-shadow:0 12px 26px rgba(20,30,50,.08)}
+.article-next-card img{width:100%;height:100%;min-height:132px;object-fit:cover;background:var(--bg2)}
+.article-next-card>span{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;min-width:0;padding:14px}
+.article-next-card small{display:inline-block;margin-bottom:8px;color:var(--accent);font-size:8px;font-weight:800;letter-spacing:.1em;line-height:1.35}
+.article-next-card strong{display:block;font-size:14px;line-height:1.35}
+.article-next-card em{display:block;margin-top:6px;color:var(--muted);font-size:11px;line-height:1.5;font-style:normal}
+.article-next-card>span:after{content:"Read next ↗";display:block;margin-top:10px;color:var(--accent);font-size:10px;font-weight:800;letter-spacing:.02em}
+@media(max-width:760px){.article-next-grid{grid-template-columns:1fr}}
+@media(max-width:520px){.article-next-reading{margin:28px 0 18px;padding:17px 14px;border-radius:15px}.article-next-heading{margin-bottom:14px}.article-next-card{grid-template-columns:104px minmax(0,1fr);min-height:116px}.article-next-card img{min-height:116px}.article-next-card>span{padding:11px}.article-next-card strong{font-size:13px}.article-next-card em{font-size:10px}}
 @media(prefers-reduced-motion:reduce){.article-next-card{transition:none}}
-
 /* Portfolio-to-Pharma-Blog reading bridge */
 .portfolio-reading{padding:clamp(38px,5vw,64px) 0;background:linear-gradient(135deg,#172f2a,#24463c);color:#fff}
 .portfolio-reading .wrap{max-width:1120px}
