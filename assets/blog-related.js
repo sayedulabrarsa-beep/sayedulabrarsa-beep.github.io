@@ -40,7 +40,8 @@
       ['MEDICINE LABELS','Generic Name vs Brand Name','Understand ingredient names and product brands.','/blog/generic-name-vs-brand-name/','/assets/img/blog/generic-brand/which-name-is-the-real-medicine-generic-vs-brand-thumbnail.webp']]
   };
   var picks=catalog[slug]||catalog['drug-vs-medicine'];
-  related.innerHTML='<div class="article-next-heading"><div><p>Continue exploring</p><h2>Recommended next reads</h2><span class="article-next-intro">A few related topics selected to help you learn more.</span></div></div><div class="article-next-grid"></div>';
+  var isBangla=/-bangla\\/?$/.test(location.pathname);
+  related.innerHTML='<div class="article-next-heading"><div><p>'+(isBangla?'আরও জানুন · বাছাইকৃত পাঠ':'CONTINUE LEARNING · SELECTED FOR YOU')+'</p><h2 id="article-next-title">'+(isBangla?'এরপর যা পড়তে পারেন':'What to read next')+'</h2><span class="article-next-intro">'+(isBangla?'এই বিষয়ের সঙ্গে সম্পর্কিত আরও দুটি শিক্ষামূলক লেখা পড়ুন।':'Explore two closely related topics to build on what you have just learned.')+'</span></div></div><div class="article-next-grid"></div>';
   related.classList.add('article-next-reading');
   related.setAttribute('aria-labelledby','article-next-title');
   related.querySelector('h2').id='article-next-title';
