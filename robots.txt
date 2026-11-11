@@ -5,6 +5,10 @@ Allow: /
 User-agent: OAI-SearchBot
 Allow: /
 
+# Permit Google-Extended access for eligible Gemini-related uses; Google Search crawling is governed by Googlebot
+User-agent: Google-Extended
+Allow: /
+
 User-agent: Claude-SearchBot
 Allow: /
 
