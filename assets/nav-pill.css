@@ -27,3 +27,7 @@ html body header .site-search-form{order:9;flex:1 0 100%;grid-column:auto!import
   html body header.is-scrolled .bar{max-width:100%!important}
 }
 @media(prefers-reduced-motion:reduce){html body header .bar{transition:none}}
+
+/* At the top of the page the strip around the pill takes the colour of the section underneath; once scrolled it turns transparent so content floats behind the pill. */
+html body header:not(.is-scrolled){background:var(--hdr-bg,transparent)!important;padding-bottom:10px!important}
+html body header{transition:background-color .25s ease}
