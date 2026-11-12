@@ -2,7 +2,7 @@
   'use strict';
   var main=document.querySelector('main');
   if(!main||document.querySelector('.ae-band'))return;
-  var V='ae3-20261111';
+  var V='ae4-20261112';
   if(!document.querySelector('link[data-ae-style]')){
     var l=document.createElement('link');l.rel='stylesheet';l.href='/assets/article-end.css?v='+V;
     l.setAttribute('data-ae-style','');document.head.appendChild(l);
