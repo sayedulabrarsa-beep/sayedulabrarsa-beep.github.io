@@ -2,6 +2,7 @@
 """Rebuilds the home-page "Featured from the Pharma Blog" clothesline section.
 Articles listed in _src/data/blog_stacks.json are curated; every other article under /blog is discovered and added automatically from its own HTML.
 A GitHub Action (.github/workflows/featured-stacks.yml) runs this on every push that touches /blog.
+"""
 import json, html, pathlib, re
 from PIL import Image
 R = pathlib.Path(__file__).resolve().parent.parent
