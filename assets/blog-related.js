@@ -18,7 +18,8 @@
     'how-to-take-iron-tablets-properly':['Practical medicine use','ওষুধ ব্যবহার','How to Take Iron Tablets Properly','আয়রন ট্যাবলেট সঠিকভাবে খাওয়ার নিয়ম','Timing, food and interaction considerations.','সময়, খাবার ও ইন্টারঅ্যাকশনের বিষয়।','/blog/how-to-take-iron-tablets-properly/','/blog/how-to-take-iron-tablets-properly/#bn',B+'iron-tablets/how-to-take-iron-tablets-properly-timing-food-interactions-thumbnail-16x9.webp'],
     'iron-deficiency-vs-anemia':['Iron & health','আয়রন ও স্বাস্থ্য','Iron Deficiency vs Anemia','আয়রনের ঘাটতি বনাম রক্তাল্পতা','Are they the same? A simple explanation.','দুটি কি একই? সহজ ব্যাখ্যা।','/blog/iron-deficiency-vs-anemia/','/blog/iron-deficiency-vs-anemia/#bn',B+'iron-deficiency-vs-anemia-social.jpg'],
     'glucosamine-alzheimers-nature-metabolism-study':['Research review','রিসার্চ রিভিউ','Glucosamine & Alzheimer’s Study','গ্লুকোসামিন ও আলঝেইমার্স গবেষণা','How to read a research paper’s claims carefully.','গবেষণার দাবি সতর্কভাবে পড়ার উপায়।','/blog/glucosamine-alzheimers-nature-metabolism-study/','/blog/glucosamine-alzheimers-nature-metabolism-study-bangla/',B+'glucosamine/glucosamine-and-alzheimers-nature-metabolism-study-cover.webp'],
-    'what-is-the-pharmaceutical-industry':['Industry','ফার্মা শিল্প','Pharmaceutical Industry in Bangladesh','বাংলাদেশের ফার্মাসিউটিক্যাল শিল্প','How medicines are made and reach patients.','ওষুধ কীভাবে তৈরি হয়ে রোগীর কাছে পৌঁছায়।','/blog/what-is-the-pharmaceutical-industry/','/blog/what-is-the-pharmaceutical-industry-bangla/',B+'pharma-industry/pharmaceutical-industry-in-bangladesh-how-medicines-reach-you-thumbnail-16x9.webp']
+    'what-is-the-pharmaceutical-industry':['Industry','ফার্মা শিল্প','Pharmaceutical Industry in Bangladesh','বাংলাদেশের ফার্মাসিউটিক্যাল শিল্প','How medicines are made and reach patients.','ওষুধ কীভাবে তৈরি হয়ে রোগীর কাছে পৌঁছায়।','/blog/what-is-the-pharmaceutical-industry/','/blog/what-is-the-pharmaceutical-industry-bangla/',B+'pharma-industry/pharmaceutical-industry-in-bangladesh-how-medicines-reach-you-thumbnail-16x9.webp'],
+    'how-do-medicines-work-in-the-body':['Pharmacology basics','ফার্মাকোলজি বেসিক','How Do Medicines Work in the Body?','মানবদেহে ওষুধ কীভাবে কাজ করে?','Understand how medicines interact with receptors and other targets.','ওষুধ কীভাবে receptor ও শরীরের অন্যান্য লক্ষ্যবস্তুর সঙ্গে কাজ করে বুঝুন।','/blog/how-do-medicines-work-in-the-body/','/blog/how-do-medicines-work-in-the-body-bangla/','https://images.pexels.com/photos/3683074/pexels-photo-3683074.jpeg?auto=compress&cs=tinysrgb&w=1200']
   };
   var R={
     'drug-vs-medicine':['generic-name-vs-brand-name','expiry-date-vs-manufacturing-date-medicine','what-is-the-pharmaceutical-industry'],
@@ -29,7 +30,8 @@
     'how-to-take-iron-tablets-properly':['iron-deficiency-vs-anemia','expiry-date-vs-manufacturing-date-medicine','generic-name-vs-brand-name'],
     'iron-deficiency-vs-anemia':['how-to-take-iron-tablets-properly','drug-vs-medicine','glucosamine-alzheimers-nature-metabolism-study'],
     'glucosamine-alzheimers-nature-metabolism-study':['what-is-the-pharmaceutical-industry','drug-vs-medicine','generic-name-vs-brand-name'],
-    'what-is-the-pharmaceutical-industry':['drug-vs-medicine','generic-name-vs-brand-name','glucosamine-alzheimers-nature-metabolism-study']
+    'what-is-the-pharmaceutical-industry':['drug-vs-medicine','generic-name-vs-brand-name','glucosamine-alzheimers-nature-metabolism-study'],
+    'how-do-medicines-work-in-the-body':['drug-vs-medicine','generic-name-vs-brand-name','when-to-take-ppi-before-meals']
   };
   var P='/assets/img/products/';
   var PR={
