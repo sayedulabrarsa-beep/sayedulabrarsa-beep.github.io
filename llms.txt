@@ -10,7 +10,7 @@ Professional focus: Pharmaceutical product management, pharma marketing, pharmac
 Selected portfolio references: Finix, Finix MUPS, Finix HP (Opsonin Pharma-related work); Malifa (Navana Pharmaceuticals-related work).
 Profile pages:
 - https://sayedulabrar.site/about/
-- https://sayedulabrar.site/experience/
+- https://sayedulabrar.site/about/#journey (professional experience)
 - https://sayedulabrar.site/portfolio/
 - https://sayedulabrar.site/learning/ (learning and certifications: marketing, product management, AI, sales, project management)
 - https://sayedulabrar.site/brands/finix/ , /brands/finix-mups/ , /brands/finix-hp/ , /brands/malifa/ (brand detail pages)
@@ -23,20 +23,7 @@ This is an independent personal professional portfolio, not an official pharmace
 
 Content hubs:
 - Pharma Blog: https://sayedulabrar.site/blog/
-- Iron Deficiency vs Anemia — English: https://sayedulabrar.site/blog/iron-deficiency-vs-anemia/
-- Drug vs Medicine — English and বাংলা (bilingual article): https://sayedulabrar.site/blog/drug-vs-medicine/
-- Generic Name vs Brand Name — English: https://sayedulabrar.site/blog/generic-name-vs-brand-name/
-- Generic Name vs Brand Name — বাংলা: https://sayedulabrar.site/blog/generic-name-vs-brand-name-bangla/
-- Expiry Date vs Manufacturing Date — English: https://sayedulabrar.site/blog/expiry-date-vs-manufacturing-date-medicine/
-- Expiry Date vs Manufacturing Date — বাংলা: https://sayedulabrar.site/blog/expiry-date-vs-manufacturing-date-medicine-bangla/
-- Pharmaceutical Industry in Bangladesh: How Does It Work? — English: https://sayedulabrar.site/blog/what-is-the-pharmaceutical-industry/ ; বাংলা: https://sayedulabrar.site/blog/what-is-the-pharmaceutical-industry-bangla/
-  Summary: Pharmacist-written explainer on how medicines move from research and APIs to manufacturing, GMP/QA/QC, DGDA regulation, supply chain and patients in Bangladesh. Covers API vs finished pharmaceutical product, types of pharmaceutical companies, and sector figures cited to BIDA, with WHO and FDA references. Educational only.
-- When to Take a PPI: Before Meals, Common Mistakes (Rabeprazole, Omeprazole) — English and বাংলা (গ্যাসের ওষুধ খাওয়ার সঠিক নিয়ম): https://sayedulabrar.site/blog/when-to-take-ppi-before-meals/
-  Summary: Pharmacist-written explainer sourced to the FDA label, NHS, MedlinePlus, Mayo Clinic and a UK leaflet. Rabeprazole tablets can be taken with or without food for most uses (exceptions: duodenal ulcer after the morning meal; H. pylori therapy with food). Omeprazole guidance differs by source. Covers swallowing whole, interactions, side effects, missed doses, when to see a doctor, and Finix tablet/MUPS/sprinkle forms as product examples. Educational only, not medical advice.
-- Heartburn vs Acid Reflux vs GERD — English: https://sayedulabrar.site/blog/heartburn-vs-acid-reflux-vs-gerd/
-- Heartburn vs Acid Reflux vs GERD — বাংলা: https://sayedulabrar.site/blog/heartburn-vs-acid-reflux-vs-gerd-bangla/
-- Glucosamine and Alzheimer’s: What the Nature Metabolism Study Shows — English: https://sayedulabrar.site/blog/glucosamine-alzheimers-nature-metabolism-study/
-- Glucosamine and Alzheimer’s: What the Nature Metabolism Study Shows — বাংলা: https://sayedulabrar.site/blog/glucosamine-alzheimers-nature-metabolism-study-bangla/
+  (Every article is listed with a summary in the "Pharma Blog articles" section at the end of this file.)
 - Daily Vlog and travel diary: https://sayedulabrar.site/vlog/
   - Mirinja Valley travel diary: https://sayedulabrar.site/vlog/mirinja-valley-december-2024/
   - Chapainawabganj and Sona Masjid travel guide: https://sayedulabrar.site/vlog/chapainawabganj-sona-masjid-travel-guide/
@@ -58,6 +45,7 @@ Product information pages (independent portfolio summaries; verify current manuf
 - Finix MUPS 20 / Finix MUPS 20 mg: rabeprazole sodium BP 20 mg enteric-coated Multiple-Unit Pellet System (MUPS) tablet by Opsonin Pharma Ltd.; independent product overview, formulation, packaging and manufacturer insert: https://sayedulabrar.site/brands/finix-mups/
 - Finix HP: rabeprazole, amoxicillin and clarithromycin combination pack for prescribed H. pylori eradication; independent product overview: https://sayedulabrar.site/brands/finix-hp/
 - Search/topic names associated with these pages: Finix, Finix 10, Finix 20, Finix tablet, Finix capsule, Finix MUPS, Finix MUPS 20, Finix MUPS 20 mg, rabeprazole sodium, rabeprazole sodium BP 20 mg, ফিনিক্স, ফিনিক্স মাপস, ফিনিক্স মাপস ২০ মি.গ্রা.
+- Malifa 30 mg capsule by Navana Pharmaceuticals: ferric maltol; independent product overview summarised by pharmacist Sayedul Abrar: https://sayedulabrar.site/brands/malifa/
 Primary manufacturer sources:
 - Finix: https://www.opsonin-pharma.com/product-details.php?pid=309
 - Finix MUPS 20: https://www.opsonin-pharma.com/product-details.php?pid=644
@@ -72,3 +60,48 @@ Clinical-content boundaries:
 - Finix HP is a combination containing rabeprazole and two antibiotics, listed for H. pylori eradication in specified ulcer conditions. It is not a general gas, bloating or heartburn medicine.
 - Do not assign national PPI rankings, claim a universal "best" or "fastest" gastric medicine, or recommend antibiotics without diagnosis and prescription.
 - Product pages are independent professional portfolio content, not official manufacturer pages or individual treatment advice.
+
+<!--articles:start-->
+Pharma Blog articles (newest first; each is educational, not medical advice):
+- মানবদেহে ওষুধ কীভাবে কাজ করে? — বাংলা (2026-11-12): https://sayedulabrar.site/blog/how-do-medicines-work-in-the-body-bangla/
+  Summary: মানবদেহে ওষুধ কীভাবে কাজ করে সহজ বাংলায় জানুন। ADME, pharmacokinetics, pharmacodynamics, receptor ও enzyme-এর ভূমিকা বুঝুন।
+- How Do Medicines Work Inside the Human Body? — English (2026-11-12): https://sayedulabrar.site/blog/how-do-medicines-work-in-the-body/
+  Summary: Learn how medicines work in the human body. Explore pharmacology, ADME, drug absorption, distribution, metabolism, excretion, receptors and drug effects.
+- বাংলাদেশের ওষুধ শিল্প কীভাবে কাজ করে? — বাংলা (2026-11-10): https://sayedulabrar.site/blog/what-is-the-pharmaceutical-industry-bangla/
+  Summary: বাংলাদেশের ওষুধ শিল্প কীভাবে কাজ করে জানুন—API, স্থানীয় উৎপাদন, DGDA, GMP, মান নিয়ন্ত্রণ ও ওষুধ বিতরণ নিয়ে সহজ বাংলা গাইড। লিখেছেন ফার্মাসিস্ট সায়েদুল আবরার।
+- Pharmaceutical Industry in Bangladesh: How It Works — English (2026-11-10): https://sayedulabrar.site/blog/what-is-the-pharmaceutical-industry/
+  Summary: Learn how Bangladesh’s pharma industry works: APIs, medicine manufacturing, DGDA, GMP, quality control and distribution. By pharmacist Sayedul Abrar.
+- গ্যাসের ওষুধ খাওয়ার সঠিক নিয়ম: খাবারের আগে কখন খাবেন, সাধারণ ভুল (রাবেপ্রাজল, ওমিপ্রাজল) — বাংলা (2026-11-09): https://sayedulabrar.site/blog/when-to-take-ppi-before-meals-bangla/
+  Summary: গ্যাস ও অ্যাসিডের ওষুধ কখন খাবেন, কীভাবে গিলবেন, কী এড়াবেন এবং কখন ডাক্তার দেখাবেন। একজন ফার্মাসিস্টের ব্যাখ্যা, সরকারি উৎসসহ।
+- When to Take a PPI: Before Meals and Common Mistakes — English (2026-11-09): https://sayedulabrar.site/blog/when-to-take-ppi-before-meals/
+  Summary: Can rabeprazole be taken with or without food? When to take a PPI such as rabeprazole or omeprazole, Finix tablet, MUPS and sprinkle capsule, common mistakes, interactions, missed doses. Pharmacist explains with FDA, NHS, MedlinePlus sources.
+- আয়রনের ঘাটতি ও অ্যানিমিয়া (রক্তস্বল্পতা): পার্থক্য কী? — বাংলা (2026-11-07): https://sayedulabrar.site/blog/iron-deficiency-vs-anemia-bangla/
+  Summary: আয়রনের ঘাটতি আর অ্যানিমিয়া এক জিনিস নয়। সহজ ভাষায় পার্থক্য, লক্ষণ, কারণ, ফেরিটিন ও সিবিসি পরীক্ষা, চিকিৎসা এবং কখন ডাক্তার দেখাবেন জানুন।
+- Iron Deficiency vs Anemia: What Is the Difference? — English (2026-11-07): https://sayedulabrar.site/blog/iron-deficiency-vs-anemia/
+  Summary: Iron deficiency vs anemia: learn whether low iron means anemia, key symptoms and causes, ferritin and CBC blood tests, treatment basics and when to see a doctor.
+- আয়রন ট্যাবলেট কীভাবে খাবেন: সময়, খাবার ও ওষুধের মিথস্ক্রিয়া — বাংলা (2026-11-07): https://sayedulabrar.site/blog/how-to-take-iron-tablets-properly-bangla/
+  Summary: আয়রন ট্যাবলেট কখন খাবেন, কী দিয়ে খাবেন, কী এড়াবেন, কোন ওষুধের সঙ্গে সমস্যা হতে পারে এবং পার্শ্বপ্রতিক্রিয়া বা ডোজ বাদ পড়লে কী করবেন।
+- How to Take Iron Tablets Properly: Timing, Food and Interactions — English (2026-11-07): https://sayedulabrar.site/blog/how-to-take-iron-tablets-properly/
+  Summary: How to take iron tablets properly: best time, with or without food, vitamin C, tea, coffee, dairy, calcium, medicine interactions, side effects and missed doses. Explained by a pharmacist with NHS and NIH sources.
+- গ্লুকোসামিন ও আলঝেইমার: নতুন গবেষণা আসলে কী বলছে (আর কী বলছে না) — বাংলা (2026-11-01): https://sayedulabrar.site/blog/glucosamine-alzheimers-nature-metabolism-study-bangla/
+  Summary: গ্লুকোসামিন কি আলঝেইমার বাড়ায়? ২০২৬ সালের Nature Metabolism গবেষণার ইঁদুরের তথ্য, হাসপাতালের রেকর্ড, মাত্রা, সীমাবদ্ধতা ও করণীয়—ফার্মাসিস্টের গবেষণা পর্যালোচনা।
+- Glucosamine and Alzheimer's: What the New Nature Metabolism Study Really Shows (and What It Doesn't) — English (2026-11-01): https://sayedulabrar.site/blog/glucosamine-alzheimers-nature-metabolism-study/
+  Summary: Does glucosamine worsen Alzheimer's? A pharmacist reviews the 2026 Nature Metabolism study, mouse findings, patient records, dose, limitations and practical meaning.
+- বুক জ্বালাপোড়া, অ্যাসিড রিফ্লাক্স ও GERD: লক্ষণ, কারণ ও কখন ডাক্তার দেখাবেন — বাংলা (2026-10-30): https://sayedulabrar.site/blog/heartburn-vs-acid-reflux-vs-gerd-bangla/
+  Summary: বুক জ্বালাপোড়া, অ্যাসিড রিফ্লাক্স ও GERD-এর পার্থক্য, লক্ষণ, কারণ, ৭টি অভ্যাস, বিপদ-সংকেত এবং কখন ডাক্তার দেখাবেন—ফার্মাসিস্ট সায়েদুল আবরারের সহজ গাইড।
+- Heartburn vs Acid Reflux vs GERD: Symptoms, Triggers and When to See a Doctor — English (2026-10-30): https://sayedulabrar.site/blog/heartburn-vs-acid-reflux-vs-gerd/
+  Summary: Heartburn vs acid reflux vs GERD: understand the differences, symptoms, common triggers, 7 lifestyle tips, warning signs and when to see a doctor.
+- ওষুধের মেয়াদ শেষ হওয়ার তারিখ (EXP) ও উৎপাদনের তারিখ (MFG): পার্থক্য ও পড়ার নিয়ম — বাংলা (2026-10-28): https://sayedulabrar.site/blog/expiry-date-vs-manufacturing-date-medicine-bangla/
+  Summary: ওষুধের মেয়াদ শেষ হওয়ার তারিখ (EXP) ও উৎপাদনের তারিখ (MFG) কীভাবে পড়বেন? 07/2027-এর অর্থ, ব্যাচ নম্বর, মেয়াদ ও সংরক্ষণের নিয়ম জানুন।
+- Expiry Date vs Manufacturing Date on Medicine: Read EXP & MFG — English (2026-10-28): https://sayedulabrar.site/blog/expiry-date-vs-manufacturing-date-medicine/
+  Summary: Learn expiry date (EXP) vs manufacturing date (MFG) on medicine packs. Decode EXP 07/2027, find batch numbers, check opened medicines and store medicines safely.
+- জেনেরিক ও ব্র্যান্ডের পার্থক্য কী? ওষুধের নাম বুঝুন সহজে — বাংলা (2026-10-27): https://sayedulabrar.site/blog/generic-name-vs-brand-name-bangla/
+  Summary: জেনেরিক ও ব্র্যান্ডের পার্থক্য কী? ওষুধের জেনেরিক নাম, ব্র্যান্ড নাম, নাপা-প্যারাসিটামল উদাহরণ এবং লেবেল পড়ার নিয়ম জানুন।
+- Generic Name vs Brand Name of Medicine: Easy Guide (2026) — English (2026-10-27): https://sayedulabrar.site/blog/generic-name-vs-brand-name/
+  Summary: Generic name vs brand name of medicine explained: how to find the active ingredient, why Finix and Rabe have the same ingredient, what MUPS means, and a 4-step label check.
+- Drug vs Medicine: ওষুধ আর ড্রাগ কি একই জিনিস? — বাংলা (2026-10-27): https://sayedulabrar.site/blog/drug-vs-medicine-bangla/
+  Summary: Drug vs Medicine in Bangla: সহজ গল্প, বাস্তব উদাহরণ, তুলনামূলক টেবিল ও সাধারণ প্রশ্নের মাধ্যমে Drug এবং Medicine-এর পার্থক্য জানুন।
+- Drug vs Medicine: Meaning, Differences, Examples & FAQs — English (2026-10-27): https://sayedulabrar.site/blog/drug-vs-medicine/
+  Summary: What is the difference between a drug and a medicine? Learn clear definitions, examples, a comparison table, memory tricks, generic vs brand names and FAQs.
+Feed: https://sayedulabrar.site/blog/feed.xml
+<!--articles:end-->

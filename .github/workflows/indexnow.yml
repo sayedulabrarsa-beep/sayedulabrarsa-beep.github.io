@@ -1,0 +1,36 @@
+name: Ping IndexNow (Bing, Yandex, Seznam, Naver)
+
+# After a push to main, wait for GitHub Pages to serve the new pages, then tell IndexNow
+# which URLs changed so Bing (and ChatGPT/Copilot search, which rely on Bing) recrawl them quickly.
+on:
+  push:
+    branches: [main]
+    paths: ['**.html', 'sitemap.xml']
+  workflow_dispatch:
+
+concurrency:
+  group: indexnow
+  cancel-in-progress: true
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Work out changed public URLs
+        id: urls
+        run: |
+          BEFORE="${{ github.event.before }}"
+          if [ -z "$BEFORE" ] || ! git cat-file -e "$BEFORE" 2>/dev/null; then BEFORE="HEAD~1"; fi
+          git diff --name-only "$BEFORE" HEAD -- '*.html' \
+            | grep -v -E '^(_src|404\.html|search/|experience/)' \
+            | sed -E 's#(^|/)index\.html$#\1#; s#^#https://sayedulabrar.site/#' > urls.txt || true
+          echo "count=$(wc -l < urls.txt)" >> "$GITHUB_OUTPUT"
+          cat urls.txt
+      - name: Wait for Pages deploy, then submit
+        if: steps.urls.outputs.count != '0'
+        run: |
+          sleep 120
+          python3 _src/indexnow.py $(cat urls.txt)

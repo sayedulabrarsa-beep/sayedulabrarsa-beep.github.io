@@ -8,6 +8,7 @@ on:
       - 'blog/**'
       - '_src/data/blog_stacks.json'
       - '_src/blog_stacks.py'
+      - '_src/seo_feeds.py'
   workflow_dispatch:
 
 permissions:
@@ -27,13 +28,14 @@ jobs:
           python-version: '3.12'
       - run: pip install pillow
       - run: python3 _src/blog_stacks.py
+      - run: python3 _src/seo_feeds.py   # RSS feed, llms.txt article list, Blog schema
       - name: Commit if the homepage changed
         run: |
-          if [ -n "$(git status --porcelain index.html assets)" ]; then
+          if [ -n "$(git status --porcelain index.html assets blog/feed.xml blog/index.html llms.txt)" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add index.html assets
-            git commit -m "Auto-update homepage Featured from the Pharma Blog"
+            git add index.html assets blog/feed.xml blog/index.html llms.txt
+            git commit -m "Auto-update homepage stacks, RSS feed and llms.txt"
             git pull --rebase origin main
             git push
           fi
