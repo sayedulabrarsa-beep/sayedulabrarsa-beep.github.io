@@ -31,3 +31,5 @@ html body header .site-search-form{order:9;flex:1 0 100%;grid-column:auto!import
 /* At the top of the page the strip around the pill takes the colour of the section underneath; once scrolled it turns transparent so content floats behind the pill. */
 html body header:not(.is-scrolled){background:var(--hdr-bg,transparent)!important;padding-bottom:10px!important}
 html body header{transition:background-color .25s ease}
+/* Mobile fix: timeline entries (education, experience) stack the date above the content instead of squeezing it into a narrow column. */
+@media(max-width:600px){html body .entry{grid-template-columns:1fr!important;gap:6px!important}}
