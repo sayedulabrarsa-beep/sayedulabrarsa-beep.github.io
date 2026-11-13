@@ -2,7 +2,7 @@
   'use strict';
   var main=document.querySelector('main');
   if(!main||document.querySelector('.ae-band'))return;
-  var V='ae4-20261112';
+  var V='ae5-20261113';
   if(!document.querySelector('link[data-ae-style]')){
     var l=document.createElement('link');l.rel='stylesheet';l.href='/assets/article-end.css?v='+V;
     l.setAttribute('data-ae-style','');document.head.appendChild(l);
@@ -19,6 +19,7 @@
     'iron-deficiency-vs-anemia':['Iron & health','আয়রন ও স্বাস্থ্য','Iron Deficiency vs Anemia','আয়রনের ঘাটতি বনাম রক্তাল্পতা','Are they the same? A simple explanation.','দুটি কি একই? সহজ ব্যাখ্যা।','/blog/iron-deficiency-vs-anemia/','/blog/iron-deficiency-vs-anemia-bangla/',B+'iron-deficiency-vs-anemia-social.jpg'],
     'glucosamine-alzheimers-nature-metabolism-study':['Research review','রিসার্চ রিভিউ','Glucosamine & Alzheimer’s Study','গ্লুকোসামিন ও আলঝেইমার্স গবেষণা','How to read a research paper’s claims carefully.','গবেষণার দাবি সতর্কভাবে পড়ার উপায়।','/blog/glucosamine-alzheimers-nature-metabolism-study/','/blog/glucosamine-alzheimers-nature-metabolism-study-bangla/',B+'glucosamine/glucosamine-and-alzheimers-nature-metabolism-study-cover.webp'],
     'what-is-the-pharmaceutical-industry':['Industry','ফার্মা শিল্প','Pharmaceutical Industry in Bangladesh','বাংলাদেশের ফার্মাসিউটিক্যাল শিল্প','How medicines are made and reach patients.','ওষুধ কীভাবে তৈরি হয়ে রোগীর কাছে পৌঁছায়।','/blog/what-is-the-pharmaceutical-industry/','/blog/what-is-the-pharmaceutical-industry-bangla/',B+'pharma-industry/pharmaceutical-industry-in-bangladesh-how-medicines-reach-you-thumbnail-16x9.webp'],
+    'drug-absorption-how-medicine-enters-bloodstream':['Pharmacology basics','ফার্মাকোলজি বেসিক','Drug Absorption: How Does Medicine Enter the Bloodstream?','ওষুধের শোষণ: ওষুধ কীভাবে রক্তে প্রবেশ করে?','Follow a medicine from a swallowed tablet to the bloodstream.','ট্যাবলেট থেকে রক্তপ্রবাহে ওষুধের যাত্রা সহজভাবে জানুন।','/blog/drug-absorption-how-medicine-enters-bloodstream/','/blog/drug-absorption-how-medicine-enters-bloodstream-bangla/','/assets/img/blog/how-medicines-work/absorption-how-medicine-enters-the-bloodstream.webp'],
     'how-do-medicines-work-in-the-body':['Pharmacology basics','ফার্মাকোলজি বেসিক','How Do Medicines Work in the Body?','মানবদেহে ওষুধ কীভাবে কাজ করে?','Understand how medicines interact with receptors and other targets.','ওষুধ কীভাবে receptor ও শরীরের অন্যান্য লক্ষ্যবস্তুর সঙ্গে কাজ করে বুঝুন।','/blog/how-do-medicines-work-in-the-body/','/blog/how-do-medicines-work-in-the-body-bangla/','/assets/img/blog/how-medicines-work/how-do-medicines-work-inside-the-human-body-cover.webp'],
     'why-complete-antibiotic-course-antibiotic-resistance':['Medicine safety','ওষুধের নিরাপত্তা','Why Complete an Antibiotic Course?','অ্যান্টিবায়োটিক কোর্স কেন শেষ করবেন?','Finishing the course, resistance, missed doses and leftovers.','কোর্স শেষ করা, রেজিস্ট্যান্স, ডোজ মিস ও বাকি ওষুধ।','/blog/why-complete-antibiotic-course-antibiotic-resistance/','/blog/why-complete-antibiotic-course-antibiotic-resistance-bangla/','/assets/img/blog/antibiotic-course/why-complete-antibiotic-course-cover-16x9.webp']
   };
@@ -32,6 +33,7 @@
     'iron-deficiency-vs-anemia':['how-to-take-iron-tablets-properly','drug-vs-medicine','glucosamine-alzheimers-nature-metabolism-study'],
     'glucosamine-alzheimers-nature-metabolism-study':['what-is-the-pharmaceutical-industry','drug-vs-medicine','generic-name-vs-brand-name'],
     'what-is-the-pharmaceutical-industry':['drug-vs-medicine','generic-name-vs-brand-name','glucosamine-alzheimers-nature-metabolism-study'],
+    '${slug}':['how-do-medicines-work-in-the-body','generic-name-vs-brand-name','drug-vs-medicine'],
     'how-do-medicines-work-in-the-body':['drug-vs-medicine','generic-name-vs-brand-name','when-to-take-ppi-before-meals'],
     'why-complete-antibiotic-course-antibiotic-resistance':['generic-name-vs-brand-name','expiry-date-vs-manufacturing-date-medicine','drug-vs-medicine']
   };
