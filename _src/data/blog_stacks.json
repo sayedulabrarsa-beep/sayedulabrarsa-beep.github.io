@@ -1,5 +1,83 @@
 [
 {
+"slug": "why-complete-antibiotic-course-antibiotic-resistance",
+"bn": "why-complete-antibiotic-course-antibiotic-resistance-bangla",
+"date": "2026-11-13",
+"kicker": "Medicine safety",
+"title": "Why You Must Complete an Antibiotic Course",
+"image": "/assets/img/blog/antibiotic-course/why-complete-antibiotic-course-cover-16x9.webp",
+"alt": "Why you must complete an antibiotic course: capsule, bacteria and a seven-day checklist",
+"accent": "#c4573a",
+"read": "8 min",
+"slides": [
+{
+"h": "Finish the course",
+"p": [
+"Take antibiotics exactly as prescribed, even if you feel better.",
+"Stop early only if a doctor tells you to."
+],
+"img": "/assets/img/blog/antibiotic-course/antibiotic-dos-and-donts-take-as-prescribed.webp",
+"alt": "Antibiotic do's and don'ts",
+"r": "The length of the course is your prescriber's decision.",
+"sub": "",
+"fit": "cover"
+},
+{
+"h": "How resistance starts",
+"p": [
+"Antibiotics kill sensitive bacteria.",
+"Misuse gives resistant bacteria more chances to survive and spread."
+],
+"img": "/assets/img/blog/antibiotic-course/how-antibiotic-resistance-develops-simplified.webp",
+"alt": "How antibiotic resistance develops in three steps",
+"r": "Bacteria become resistant, not your body.",
+"sub": "",
+"fit": "cover"
+},
+{
+"h": "Not for colds and flu",
+"p": [
+"Antibiotics do not work on viruses (CDC)."
+],
+"img": "/assets/img/blog/antibiotic-course/antibiotics-treat-bacteria-not-viruses-cold-flu.webp",
+"alt": "Antibiotics treat bacteria, not viruses",
+"r": "Let a doctor decide if you need one.",
+"sub": "",
+"fit": "cover"
+},
+{
+"h": "Missed a dose?",
+"p": [
+"Take it when you remember, unless the next dose is almost due.",
+"Never take a double dose."
+],
+"img": "/assets/img/blog/antibiotic-course/missed-antibiotic-dose-what-to-do.webp",
+"alt": "What to do if you miss an antibiotic dose",
+"r": "",
+"sub": "",
+"fit": "cover"
+},
+{
+"h": "Look for the red mark",
+"p": [
+"In Bangladesh, antibiotic packs carry a red mark from December 2022 (DGDA).",
+"Use only with a registered doctor's prescription."
+],
+"img": "/assets/img/blog/antibiotic-course/bangladesh-red-mark-on-antibiotic-packs-dgda.webp",
+"alt": "Red mark on antibiotic packs in Bangladesh, illustration",
+"r": "",
+"sub": "",
+"fit": "cover"
+}
+],
+"end": {
+"h": "KEEP ANTIBIOTICS WORKING",
+"t": "Finish the course, don't save or share, and never double a missed dose.",
+"img": "/assets/img/blog/antibiotic-course/antibiotics-key-takeaways.webp",
+"alt": "Antibiotics: five things to remember"
+}
+},
+{
 "slug": "what-is-the-pharmaceutical-industry",
 "bn": "what-is-the-pharmaceutical-industry-bangla",
 "date": "2026-11-10",

@@ -6,8 +6,28 @@
     <atom:link href="https://sayedulabrar.site/blog/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Pharmacist-written educational articles in English and Bangla on medicines, pharmacology and the pharmaceutical industry in Bangladesh, by Sayedul Abrar.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 12 Nov 2026 06:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 06:00:00 +0000</lastBuildDate>
     <image><url>https://sayedulabrar.site/assets/img/og-image.png</url><title>Pharma Blog | Sayedul Abrar</title><link>https://sayedulabrar.site/blog/</link></image>
+    <item>
+      <title>অ্যান্টিবায়োটিক কোর্স শেষ করা কেন জরুরি?</title>
+      <link>https://sayedulabrar.site/blog/why-complete-antibiotic-course-antibiotic-resistance-bangla/</link>
+      <guid isPermaLink="true">https://sayedulabrar.site/blog/why-complete-antibiotic-course-antibiotic-resistance-bangla/</guid>
+      <pubDate>Fri, 13 Nov 2026 06:00:00 +0000</pubDate>
+      <dc:creator>Sayedul Abrar</dc:creator>
+      <dc:language>bn</dc:language>
+      <description>ভালো লাগলেও অ্যান্টিবায়োটিক কোর্স কেন শেষ করবেন? রেজিস্ট্যান্স, ডোজ মিস, বাকি ওষুধ, পার্শ্বপ্রতিক্রিয়া ও প্যাকের লাল চিহ্ন নিয়ে ফার্মাসিস্টের সহজ গাইড।</description>
+      <enclosure url="https://sayedulabrar.site/assets/img/blog/antibiotic-course/why-complete-antibiotic-course-antibiotic-resistance-social-bn.jpg" type="image/jpeg" length="56128"/>
+    </item>
+    <item>
+      <title>Why You Must Complete an Antibiotic Course</title>
+      <link>https://sayedulabrar.site/blog/why-complete-antibiotic-course-antibiotic-resistance/</link>
+      <guid isPermaLink="true">https://sayedulabrar.site/blog/why-complete-antibiotic-course-antibiotic-resistance/</guid>
+      <pubDate>Fri, 13 Nov 2026 06:00:00 +0000</pubDate>
+      <dc:creator>Sayedul Abrar</dc:creator>
+      <dc:language>en</dc:language>
+      <description>Why finish an antibiotic course even if you feel better? A pharmacist explains antibiotic resistance, missed doses, leftovers and Bangladesh&#x27;s red label.</description>
+      <enclosure url="https://sayedulabrar.site/assets/img/blog/antibiotic-course/why-complete-antibiotic-course-antibiotic-resistance-social.jpg" type="image/jpeg" length="58535"/>
+    </item>
     <item>
       <title>মানবদেহে ওষুধ কীভাবে কাজ করে?</title>
       <link>https://sayedulabrar.site/blog/how-do-medicines-work-in-the-body-bangla/</link>
