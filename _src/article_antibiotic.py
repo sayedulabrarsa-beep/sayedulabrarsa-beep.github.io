@@ -56,7 +56,7 @@ F = {
 }
 def fig(k, bn=False, hero=False):
     stem, aen, cen, abn, cbn = F[k]
-    src = f"{IMG}{stem}{'-bn' if bn else ''}.webp?v=3"
+    src = f"{IMG}{stem}{'-bn' if bn else ''}.webp?v=4"
     alt, cap = (abn, cbn) if bn else (aen, cen)
     load = 'fetchpriority="high"' if hero else 'loading="lazy"'
     tip = 'বড় করে দেখতে ছবিতে চাপুন।' if bn else 'Tap the image to view it full size.'
@@ -297,9 +297,10 @@ def build(lang):
         {"@type": "ListItem", "position": 1, "name": "Home", "item": B + "/"}, {"@type": "ListItem", "position": 2, "name": "Pharma Blog", "item": B + "/blog/"},
         {"@type": "ListItem", "position": 3, "name": m["short"], "item": full}]}
     lds = re.findall(r'<script type="application/ld\+json">.*?</script>', head, re.S)
-    assert len(lds) == 2, len(lds)
+    assert len(lds) >= 2, len(lds)
     j = lambda d: '<script type="application/ld+json">' + json.dumps(d, ensure_ascii=False) + "</script>"
-    head = head.replace(lds[0], j(blog) + j(faqld), 1).replace(lds[1], j(crumbs), 1)
+    head = head.replace(lds[0], j(blog) + j(faqld) + j(crumbs), 1)
+    for extra in lds[1:]: head = head.replace(extra, "", 1)
     head = head.replace("</head>", STYLE + "</head>", 1)
     sw = ('<nav class="lang-switch" aria-label="Language">'
           f'<a{"" if bn else " class=\"active\""} href="{EN_URL}" lang="en">English</a><a{" class=\"active\"" if bn else ""} href="{BN_URL}" lang="bn">বাংলা</a></nav>')
