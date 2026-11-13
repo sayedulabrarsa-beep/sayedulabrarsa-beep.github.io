@@ -1,0 +1,94 @@
+/* Readability (colour contrast) fixes, generated from a Lighthouse audit 13 Nov 2026. Loaded on all pages except Learning and Portfolio. */
+header .bar>.logo{color:#9b5800!important}
+header .menu>li>a:hover,header .menu>li>button:hover,header .menu>li>a[aria-current=page]{color:#9b5800!important}
+.site-search-form button{background-color:#ae6200!important}
+.hero .hl h1 em{color:#9b5800!important}
+@media (max-width:700px){header .bar>.logo{color:#9b5800!important}}
+@media (max-width:700px){header .menu>li>a[aria-current=page]{color:#9b5800!important}}
+.contact-small-note{color:#675b51!important}
+.contact-small-note a{color:#a8382a!important}
+.contact-feature-copy .contact-kicker{color:#f8d3c0!important}
+.contact-social-caption{color:#737269!important}
+.contact-newsletter>p:not(.contact-kicker){color:#747268!important}
+.contact-site-footer p{color:#76756d!important}
+.pb-hero-callout{color:#a8382a!important}
+.pb-search-help{color:#655b53!important}
+.pb-topic-bar a{color:#a8382a!important}
+.pb-how .pb-script{color:#f8d3c2!important}
+.pb-how-points>div>span{color:#f8d3c2!important}
+.pb-disclaimer{color:#71736b!important}
+.pb-footer-top p{color:#65675f!important}
+.pb-footer-bottom{color:#6c655d!important}
+body:not(.contact-editorial):not(.pharma-blog) header .menu a:hover,body:not(.contact-editorial):not(.pharma-blog) header .menu a[aria-current="page"]{color:#a8382a!important}
+body:not(.contact-editorial):not(.pharma-blog) header .menu a[aria-current="page"]:after{background-color:#c2452f!important}
+header .menu>li>a:hover,header .menu>li>button:hover,header .menu>li>a[aria-current="page"]{color:#a8382a!important}
+header .site-search-form button{background-color:#c2452f!important}
+.ed-pills a{background-color:#c2452f!important}
+.about-fact-stack span{color:#5c6a63!important}
+.about-link-grid small{color:#5c6a63!important}
+header .bar>.tgl:hover{color:#a8382a!important}
+@media (max-width:700px),(min-width:701px) and (max-aspect-ratio:11/20){.ed-mobile-name em{color:#a8382a!important}}
+.partner-wall h3{color:#a8382a!important}
+.vlog-section-title-row>p{color:#595f55!important}
+.vlog-card-meta{color:#787568!important}
+.vlog-read-time{color:#757669!important}
+.vlog-empty p{color:#595f55!important}
+.vlog-memory-bn{color:#536155!important}
+.awards-eyebrow span{color:#a36550!important}
+.awards-hero h1 em,.awards-section-heading h2 em,.awards-closing h2 em{color:#97634e!important}
+.awards-hero-foot{color:#6d7771!important}
+.awards-kicker{color:#97634e!important}
+.award-feature-top{color:#6e7771!important}
+.award-rank{color:#97634e!important}
+.awards-photo-heading h2 span{color:#97634e!important}
+.awards-photo-grid figcaption span{color:#97634e!important}
+.awards-timeline-year{color:#97634e!important}
+.awards-org-monogram{color:#68796b!important}
+.awards-type{color:#97634e!important}
+.awards-timeline-mark{color:#97634e!important}
+.publication-source span b{color:#9b5800!important}
+.aw2-chip span{color:#97634e!important}
+.aw2-journey h2 span{color:#a8382a!important}
+.rf-uni-card li em{color:#97634e!important}
+.bt-strip small{color:#796b59!important}
+.bt-btn small{color:#796b59!important}
+.pwr-ref small{color:#796b59!important}
+.pwr-n{color:#796b59!important}
+.pwr-note{color:#796b59!important}
+.st-link:hover{color:#a8382a!important}
+
+/* Achievements: larger small text for phones (Lighthouse "legible font sizes") */
+.awards-section-heading>p,.awards-timeline-content p:last-child,.awards-org,.aw2-org span,.awards-photo-grid figcaption,.award-meta,footer .cr{font-size:13px!important}
+.awards-eyebrow,.awards-kicker,.aw2-chip span,.awards-photo-grid figcaption span,.award-feature-top,.awards-type,.awards-hero-foot{font-size:12px!important}
+
+/* Reading progress bar on blog articles */
+.sp-progress{position:fixed;left:0;right:0;top:0;height:4px;z-index:9999;pointer-events:none;background:transparent}
+.sp-progress i{display:block;height:100%;background:#c2452f;transform:scaleX(0);transform-origin:0 50%;will-change:transform}
+
+/* Soft section reveals (About, Achievements, Education) */
+@media (prefers-reduced-motion:no-preference){
+ .sp-rv{opacity:0;transform:translateY(30px);transition:opacity .85s cubic-bezier(.2,.7,.2,1),transform .85s cubic-bezier(.2,.7,.2,1)}
+ .sp-rv.sp-in{opacity:1;transform:none}
+}
+
+/* Pharma Blog cards: lift on hover (thumbnails are not zoomed so their text never gets cropped) */
+@media (hover:hover){
+ .pb-feature-card{transition:transform .3s cubic-bezier(.2,.7,.2,1),box-shadow .3s ease}
+ .pb-feature-card:hover{transform:translateY(-5px);box-shadow:0 14px 30px -14px rgba(26,24,24,.28)}
+}
+
+/* Contrast fixes for colours that come from CSS variables */
+:root[data-theme="light"],:root:not([data-theme="dark"]){--accent:#995700}
+.ae-band{--ae-orange:#995700}
+:root{--vlog-coral:#a8382a}
+.home-editorial .ed-btn:not(.ed-btn-light){background:#c2452f}
+.home-editorial .ed-kicker{color:#a8382a}
+body.pharma-blog .pb-hero h1{color:#b83c2c}
+body.pharma-blog #pb-search button,body.pharma-blog .pb-contact-button{background:#c2452f}
+body.pharma-blog .pb-read-link{color:#a8382a}
+.st-new{background:color-mix(in srgb,var(--ac) 78%,#000)}
+.st-cap small{color:color-mix(in srgb,var(--ac) 72%,#000)}
+body.contact-editorial{--contact-coral:#b83c2c}
+.contact-editorial .contact-message-form button,.contact-editorial .contact-note-band a{background:#c2452f}
+.contact-editorial .contact-art-card small{color:#a8382a}
+.vlog-category-number{opacity:.9!important}

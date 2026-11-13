@@ -94,9 +94,17 @@ for i, a in enumerate(data):
     n = len(a["slides"]) + 2
     iw, ih = Image.open(R/a["image"].lstrip("/")).size
     new = '<span class="st-new">NEW</span>' if i == 0 else ""
-    cards += (f'<li class="st-item" style="--tilt:{tilt[i%9]}deg;--ac:{a["accent"]}"><button class="st-stack" type="button" data-i="{i}" aria-haspopup="dialog" aria-label="Open summary: {e(a["title"])} ({n} slides)">'
+    # small copy for the card (shown ~360px wide); full image stays as src for sharp zoom
+    srcset = ""
+    if iw > 900:
+        sp = R/(re.sub(r"\.(webp|jpe?g|png)$", "-w750.webp", a["image"].split("?")[0], flags=re.I).lstrip("/"))
+        if not sp.exists():
+            im = Image.open(R/a["image"].lstrip("/")); im = im.convert("RGBA" if im.mode in ("P", "LA", "RGBA") else "RGB")
+            im.resize((750, round(ih*750/iw)), Image.LANCZOS).save(sp, "WEBP", quality=82, method=6)
+        srcset = f' srcset="/{sp.relative_to(R).as_posix()} 750w, {a["image"]} {iw}w" sizes="357px"'
+    cards += (f'<li class="st-item" style="--tilt:{tilt[i%9]}deg;--ac:{a["accent"]}"><button class="st-stack" type="button" data-i="{i}" aria-haspopup="dialog">'
               f'<span class="st-pin" aria-hidden="true"></span><span class="st-sheet st-s2" aria-hidden="true"></span><span class="st-sheet st-s1" aria-hidden="true"></span>'
-              f'<span class="st-card"><img src="{a["image"]}" alt="{e(a["alt"])}" width="{iw}" height="{ih}" loading="lazy" style="aspect-ratio:{iw}/{ih}">{new}'
+              f'<span class="st-card"><img src="{a["image"]}" alt="{e(a["alt"])}" width="{iw}" height="{ih}" loading="lazy" style="aspect-ratio:{iw}/{ih}"{srcset}>{new}'
               f'<span class="st-cap"><small>{e(a["kicker"]).upper()}</small><b>{e(a["title"])}</b><em>{e(a["read"])} full read · tap to swipe</em></span>'
               f'<span class="st-count">Summary · {n} slides</span></span></button>'
               f'<a class="st-link" href="/blog/{a["slug"]}/">Read full article ↗</a></li>')
