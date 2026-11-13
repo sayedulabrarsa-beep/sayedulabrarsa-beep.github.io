@@ -35,7 +35,8 @@ h1{{font-size:50px;line-height:1.18;font-weight:700;margin-top:2px}}
 .t{{font-size:34px!important;line-height:1.22!important}}.p{{font-size:27px!important;line-height:1.38!important;color:#2d464e!important}}h1{{font-size:58px!important}}.kick{{font-size:24px!important}}.note{{font-size:28px!important}}.row{{background:rgba(255,255,255,.95)!important}}.foot{{font-size:22px!important;height:66px!important}}.tag{{position:absolute;right:40px;bottom:78px;font-size:18px;color:#5b6f75;background:rgba(255,255,255,.85);padding:6px 14px;border-radius:999px}}
 .kick{{display:flex;align-items:center;gap:12px;color:#17807a!important;font-weight:700!important}}
 .kick:before{{content:"";width:46px;height:4px;border-radius:2px;background:linear-gradient(90deg,#17807a,#e0892b);flex:none}}
-h1 em{{font-style:normal;background:linear-gradient(90deg,#0f8f86,#17656a 55%,#e0892b);-webkit-background-clip:text;background-clip:text;color:transparent}}
+h1 em{{font-style:normal;background:linear-gradient(90deg,#0d9488,#14b8a6);-webkit-background-clip:text;background-clip:text;color:transparent}}
+h1 i{{font-style:normal;background:linear-gradient(90deg,#e0562b,#f59e0b);-webkit-background-clip:text;background-clip:text;color:transparent}}
 h1{{color:#0f3c42!important}}
 .n{{background:#0f3c42!important;box-shadow:0 0 0 4px rgba(255,255,255,.9)}}
 .kick{{letter-spacing:.22em!important;font-size:21px!important}}
@@ -60,17 +61,17 @@ P = {}
 P["cover"] = (f'<!doctype html><html lang="en"><head><meta charset="utf-8"><style>{CSS}</style></head><body>'
   f'<div class="bg" style="background-image:url({U}/bg/cover.webp)"></div><div class="fade" style="--a:42%;--b:60%"></div>'
   f'<div style="position:absolute;left:80px;top:150px;width:640px"><p class="kick">Health Made Simple</p>'
-  f'<h1 style="font-size:92px!important;line-height:.98!important;margin-top:14px">Why You Must <em>Complete</em> an Antibiotic Course</h1>'
+  f'<h1 style="font-size:92px!important;line-height:.98!important;margin-top:14px">Why You Must <em>Complete</em> an <i>Antibiotic Course</i></h1>'
   f'<p style="font-size:32px;color:#4c6670;margin-top:16px">…and how antibiotic resistance starts</p>'
   f'<p style="display:inline-block;margin-top:38px;background:#17656a;color:#fff;font-weight:600;font-size:27px;padding:12px 28px;border-radius:999px">{BY}</p></div></body></html>')
 
-P["resistance"] = page("resistance", '<p class="kick">Simplified</p><h1>How antibiotic <em>resistance</em> develops</h1>' + rows([
+P["resistance"] = page("resistance", '<p class="kick">Simplified</p><h1>How <i>antibiotic</i> <em>resistance</em> develops</h1>' + rows([
   (N(0), "An infection has many bacteria", "A few may naturally be less sensitive to the medicine."),
   (N(1), "The antibiotic kills the sensitive ones", "Misuse and overuse give resistant bacteria more chances to survive."),
   (N(2), "Survivors multiply and can spread", "Next time, the same antibiotic may not work.")]) +
   '<p class="note" style="background:#fdf0ee;color:#a8362f">Resistance happens to the bacteria, not to your body.</p>', "WHO; MedlinePlus", a="44%", b="60%", w="860px", tag="Illustrative photo")
 
-P["viruses"] = page("viruses", '<p class="kick">The basics</p><h1>Antibiotics treat bacteria, <em>not viruses</em></h1>' + rows([
+P["viruses"] = page("viruses", '<p class="kick">The basics</p><h1>Antibiotics treat <em>bacteria</em>, <i>not viruses</i></h1>' + rows([
   (ic("ok"), "Bacterial infections", "A doctor prescribes an antibiotic when one is needed. Not every bacterial infection needs one."),
   (ic("no"), "Viral illnesses: colds and flu", "Antibiotics do not work on viruses and will not make you feel better.")]) +
   '<p class="note" style="background:#fff5df;border:1px solid #f0d99e">A fever or cough does not automatically mean you need an antibiotic. Let a doctor decide.</p>', "CDC", a="44%", b="58%", w="860px")
@@ -79,20 +80,20 @@ def two(h, items, ok):
     c = "#1f7a57" if ok else "#b8433f"; bg = "rgba(236,247,242,.93)" if ok else "rgba(251,238,236,.93)"
     li = "".join(f'<div style="display:flex;gap:14px;align-items:center;margin-top:16px">{ic("ok" if ok else "no")}<p class="p" style="font-size:23px;color:#173d43">{x}</p></div>' for x in items)
     return f'<div style="flex:1;background:{bg};border-radius:22px;padding:22px 24px;box-shadow:0 10px 26px rgba(23,61,67,.08)"><p class="t" style="color:{c};font-size:34px">{h}</p>{li}</div>'
-P["dosdonts"] = page("dosdonts", '<p class="kick">Do’s and don’ts</p><h1>How to take antibiotics <em>the right way</em></h1>'
+P["dosdonts"] = page("dosdonts", '<p class="kick">Do’s and don’ts</p><h1>How to take <i>antibiotics</i> <em>the right way</em></h1>'
   '<div style="display:flex;gap:22px;margin-top:24px;flex:1;align-items:stretch">' +
   two("Do", ["Take them exactly as prescribed", "Finish the course, even if you feel better, unless your doctor says otherwise", "Take each dose at the right time", "Tell your doctor or pharmacist about side effects"], True) +
   two("Don’t", ["Stop early on your own", "Save leftovers for a future illness", "Share them, or take someone else’s", "Buy them without a prescription"], False) +
   '</div>', "CDC; NHS; MedlinePlus", a="58%", b="74%", w="1060px")
 
-P["missed"] = page("missed", '<p class="kick">Missed dose</p><h1><em>Missed a dose</em> of your antibiotic?</h1>' + rows([
+P["missed"] = page("missed", '<p class="kick">Missed dose</p><h1><i>Missed a dose</i> of your <em>antibiotic?</em></h1>' + rows([
   (ic("ok"), "Take it as soon as you remember", "Then carry on with your usual schedule."),
   (ic("q"), "Is the next dose almost due?", "Skip the missed dose and take the next one at the usual time."),
   (ic("no"), "Never take a double dose", "Do not take two doses to make up for a missed one.")]) +
   '<p class="note" style="background:rgba(255,255,255,.88);font-size:24px;font-weight:600">Not sure? Ask your doctor or pharmacist. Your own leaflet may give specific advice.</p>',
   "NHS patient leaflet; MedlinePlus", a="44%", b="60%", w="860px")
 
-P["redlabel"] = page("redlabel", '<p class="kick" style="color:#b8433f">Bangladesh</p><h1>The <em>red mark</em> on antibiotic packs</h1>' + rows([
+P["redlabel"] = page("redlabel", '<p class="kick" style="color:#b8433f">Bangladesh</p><h1>The <i>red mark</i> on <em>antibiotic packs</em></h1>' + rows([
   (N(0), "What is it?", "Since December 2022, DGDA requires a red mark on antibiotic packs."),
   (N(1), "What does it say?", "“Antibiotic” and “Do not use without a prescription of registered physician”."),
   (N(2), "What should you do?", "Red mark = antibiotic. Take it only with a doctor’s prescription.")]) ,
@@ -101,13 +102,13 @@ P["redlabel"] = page("redlabel", '<p class="kick" style="color:#b8433f">Banglade
 def tier(h, c, items, note):
     return (f'<div class="row" style="border-left:10px solid {c};align-items:flex-start;flex-direction:column;gap:4px;padding:16px 24px">'
             f'<p class="t" style="color:{c};font-size:30px">{h}</p><p class="p" style="color:#173d43">{" · ".join(items)}</p><p class="p" style="font-weight:700;color:{c};font-size:21px">{note}</p></div>')
-P["sideeffects"] = page("sideeffects", '<p class="kick">Side effects</p><h1>When to <em>get help</em></h1><div class="list">' +
+P["sideeffects"] = page("sideeffects", '<p class="kick">Side effects</p><h1><em>When</em> to <i>get help</i></h1><div class="list">' +
   tier("Common", "#2f8f83", ["Feeling or being sick", "Bloating or indigestion", "Diarrhoea"], "Usually mild. Ask a pharmacist if you are worried.") +
   tier("Tell your doctor", "#c27a12", ["Severe or watery diarrhoea", "Severe or worrying side effects", "Extra doses taken by mistake"], "Do not stop or change the medicine on your own.") +
   tier("Emergency", "#b8433f", ["Swelling of the face, lips or tongue", "Difficulty breathing"], "Can be signs of a serious allergic reaction. Get emergency help immediately.") +
   '</div>', "NHS patient leaflet (June 2025); not a complete list", a="48%", b="62%", w="880px")
 
-P["takeaways"] = page("takeaways", '<p class="kick">Key takeaways</p><h1>Antibiotics: <em>5 things</em> to remember</h1><div class="list" style="gap:10px;margin-top:14px">' + "".join(
+P["takeaways"] = page("takeaways", '<p class="kick">Key takeaways</p><h1><em>Antibiotics:</em> <i>5 things</i> to remember</h1><div class="list" style="gap:10px;margin-top:14px">' + "".join(
   f'<div class="row" style="padding:12px 22px">{N(i)}<div><p class="t" style="font-size:26px">{a}</p><p class="p" style="font-size:21px">{b}</p></div></div>' for i, (a, b) in enumerate([
   ("Finish the course", "Even if you feel better, unless your doctor says otherwise."),
   ("Only with a prescription", "In Bangladesh, the red mark tells you it is an antibiotic."),

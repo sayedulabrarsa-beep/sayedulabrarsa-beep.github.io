@@ -56,7 +56,7 @@ F = {
 }
 def fig(k, bn=False, hero=False):
     stem, aen, cen, abn, cbn = F[k]
-    src = f"{IMG}{stem}{'-bn' if bn else ''}.webp?v=4"
+    src = f"{IMG}{stem}{'-bn' if bn else ''}.webp?v=5"
     alt, cap = (abn, cbn) if bn else (aen, cen)
     load = 'fetchpriority="high"' if hero else 'loading="lazy"'
     tip = 'বড় করে দেখতে ছবিতে চাপুন।' if bn else 'Tap the image to view it full size.'

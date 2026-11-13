@@ -36,7 +36,8 @@ body.bn .chip span{{font-size:23px}}
 body.bn .kick{{letter-spacing:.02em;font-size:24px;font-family:Anek,HS}}
 .title{{font-family:Anton,Impact,sans-serif;text-transform:uppercase;font-size:var(--ts,86px);line-height:.98;letter-spacing:.005em;margin-top:14px;color:#0f3c42}}
 body.bn .title{{font-family:Anek,HS;font-weight:800;text-transform:none;line-height:1.12;letter-spacing:0}}
-.title em{{font-style:normal;background:linear-gradient(90deg,#0f8f86,#17656a 60%,#e0892b);-webkit-background-clip:text;background-clip:text;color:transparent}}
+.title em{{font-style:normal;background:linear-gradient(90deg,#0d9488,#14b8a6);-webkit-background-clip:text;background-clip:text;color:transparent}}
+.title i{{font-style:normal;background:linear-gradient(90deg,#e0562b,#f59e0b);-webkit-background-clip:text;background-clip:text;color:transparent}}
 .sub{{font-size:30px;line-height:1.38;color:#2a4a51;margin-top:16px;font-weight:500}}
 body.bn .sub{{font-size:32px;line-height:1.45}}
 .legend{{margin-top:26px;display:flex;flex-direction:column;gap:18px}}
@@ -107,10 +108,10 @@ TEAL, ORANGE, RED, PURPLE, BLUE = "#17807a", "#e0892b", "#d0453c", "#7b5cc4", "#
 CFG = {
  "cover": dict(bg="cover", veilcss="background:linear-gradient(90deg,#f8f3ee 0%,#f8f3ee 22%,rgba(248,243,238,.9) 36%,rgba(248,243,238,0) 50%);", bgcss="background-size:auto 100%;background-position:calc(100% + 150px) center;", a="34%", b="50%", pw=700, top=110, byline=True, ts=(124, 94), foot=False, ill=False,
    kick=("Pharmacology made simple", "সহজ ভাষায় ফার্মাকোলজি"),
-   title=("Drug <em>Absorption</em>", "ওষুধের <em>শোষণ</em>"),
+   title=("<i>Drug</i> <em>Absorption</em>", "<i>ওষুধের</i> <em>শোষণ</em>"),
    sub=("How does medicine enter the bloodstream?", "ওষুধ কীভাবে রক্তে প্রবেশ করে?")),
  "journey": dict(bg="journey", a="32%", b="48%", pw=600, ts=(84, 72),
-   kick=("The big picture", "পুরো চিত্র"), title=("The journey of <em>a tablet</em>", "একটি ট্যাবলেটের <em>যাত্রা</em>"), sub=("", ""),
+   kick=("The big picture", "পুরো চিত্র"), title=("The <i>journey</i> of <em>a tablet</em>", "একটি <em>ট্যাবলেটের</em> <i>যাত্রা</i>"), sub=("", ""),
    marks=[(1268, 495, 1), (1120, 700, 2), (1015, 470, 3), (1235, 185, 4)],
    legend=[(("Stomach", "The tablet breaks up and starts to dissolve.", None), ("পাকস্থলী", "ট্যাবলেট ভেঙে গলতে শুরু করে।", None)),
            (("Small intestine", "Most of the medicine is absorbed here.", None), ("ক্ষুদ্রান্ত্র", "বেশির ভাগ ওষুধ এখানে শোষিত হয়।", None)),
@@ -118,7 +119,7 @@ CFG = {
            (("Heart → whole body", "The rest travels in the blood to where it acts.", None), ("হৃৎপিণ্ড → সারা শরীর", "বাকি ওষুধ রক্তে মিশে কাজের জায়গায় যায়।", None))],
    src=("MSD Manual; StatPearls", "MSD Manual; StatPearls")),
  "villi": dict(bg="villi", a="30%", b="44%", pw=560, ts=(88, 76), chips=[(("Huge surface", "Folds, villi and microvilli"), ("বিশাল জায়গা", "ভাঁজ, ভিলাই ও মাইক্রোভিলাই"), "#17807a"), (("Main site", "Small intestine absorbs most oral drugs"), ("প্রধান জায়গা", "মুখে খাওয়া বেশির ভাগ ওষুধ ক্ষুদ্রান্ত্রে শোষিত হয়"), "#d0453c")],
-   kick=("Close view", "কাছ থেকে দেখুন"), title=("Where absorption <em>happens</em>", "শোষণ <em>কোথায়</em> হয়"),
+   kick=("Close view", "কাছ থেকে দেখুন"), title=("Where <em>absorption</em> <i>happens</i>", "<em>শোষণ</em> <i>কোথায়</i> হয়"),
    sub=("Folds, villi and microvilli give the small intestine a huge surface, so most oral medicines are absorbed here.",
         "ভাঁজ, ভিলাই ও মাইক্রোভিলাই ক্ষুদ্রান্ত্রে বিশাল জায়গা তৈরি করে, তাই বেশির ভাগ মুখে খাওয়া ওষুধ এখানেই শোষিত হয়।"),
    calls=[(935, 92, 600, 205, "l", TEAL, ("Medicine molecules", "Dissolved drug in gut fluid"), ("ওষুধের অণু", "অন্ত্রের তরলে দ্রবীভূত ওষুধ")),
@@ -127,21 +128,21 @@ CFG = {
           (1330, 772, 1655, 610, "r", RED, ("Into the blood", "Molecules enter tiny capillaries"), ("রক্তে প্রবেশ", "অণু সূক্ষ্ম রক্তনালিতে ঢোকে"))],
    src=("StatPearls, Drug Absorption", "StatPearls, Drug Absorption")),
  "membrane": dict(bg="membrane", a="30%", b="42%", pw=560, ts=(82, 70), chips=[(("No energy", "Passive diffusion: high → low"), ("শক্তি লাগে না", "প্যাসিভ ডিফিউশন: বেশি → কম"), "#17807a"), (("Uses energy", "Active transport by a carrier"), ("শক্তি লাগে", "ক্যারিয়ারের মাধ্যমে সক্রিয় পরিবহন"), "#e0892b")],
-   kick=("Molecular level", "অণুর স্তরে"), title=("Crossing the <em>cell membrane</em>", "কোষপর্দা <em>পেরোনো</em>"),
+   kick=("Molecular level", "অণুর স্তরে"), title=("Crossing the <em>cell</em> <i>membrane</i>", "<em>কোষপর্দা</em> <i>পেরোনো</i>"),
    sub=("Medicines cross the fat-like (lipid) membrane of gut cells in two main ways.", "অন্ত্রের কোষের চর্বিজাতীয় পর্দা ওষুধ মূলত দুইভাবে পার হয়।"),
    calls=[(905, 505, 600, 790, "l", TEAL, ("Passive diffusion", "High → low concentration, no energy"), ("প্যাসিভ ডিফিউশন", "বেশি থেকে কম ঘনত্বে, শক্তি লাগে না")),
           (1395, 450, 1655, 90, "r", ORANGE, ("Transporter protein", "Carries a molecule; active transport uses energy"), ("ট্রান্সপোর্টার প্রোটিন", "অণু বহন করে; সক্রিয় পরিবহনে শক্তি লাগে")),
           (1140, 560, 1160, 790, "c", BLUE, ("Lipid bilayer", "The cell's outer membrane"), ("লিপিড বাইলেয়ার", "কোষের বাইরের পর্দা"))],
    src=("StatPearls; MSD Manual", "StatPearls; MSD Manual")),
  "liver": dict(bg="liver", a="30%", b="44%", pw=560, ts=(88, 74), chips=[(("IV = 100%", "Skips absorption and the first pass"), ("শিরায় = ১০০%", "শোষণ ও ফার্স্ট পাস এড়িয়ে যায়"), "#4a6fd6"), (("Under the tongue", "Some medicines avoid much of the first pass"), ("জিভের নিচে", "কিছু ওষুধ ফার্স্ট পাসের বড় অংশ এড়ায়"), "#e0892b")],
-   kick=("Bioavailability", "বায়োঅ্যাভেইলেবিলিটি"), title=("First-pass <em>metabolism</em>", "ফার্স্ট-পাস <em>মেটাবলিজম</em>"),
+   kick=("Bioavailability", "বায়োঅ্যাভেইলেবিলিটি"), title=("<i>First-pass</i> <em>metabolism</em>", "<i>ফার্স্ট-পাস</i> <em>মেটাবলিজম</em>"),
    sub=("Blood from the gut passes the liver first, so less active drug reaches the rest of the body.", "অন্ত্রের রক্ত আগে যকৃতে যায়, তাই কম সক্রিয় ওষুধ সারা শরীরে পৌঁছায়।"),
    calls=[(860, 720, 600, 800, "l", BLUE, ("Portal vein", "Brings absorbed drug from the gut"), ("পোর্টাল শিরা", "অন্ত্র থেকে শোষিত ওষুধ আনে")),
           (1195, 335, 1010, 105, "c", ORANGE, ("Liver breaks some down", "First-pass metabolism"), ("যকৃৎ কিছু ভেঙে ফেলে", "ফার্স্ট-পাস মেটাবলিজম")),
           (1350, 200, 1655, 380, "r", RED, ("To the heart", "Then to the whole body"), ("হৃৎপিণ্ডের দিকে", "তারপর সারা শরীরে"))],
    src=("StatPearls, First-Pass Effect", "StatPearls, First-Pass Effect")),
  "routes": dict(bg="routes", a="33%", b="40%", pw=570, ts=(72, 54), tight=True,
-   kick=("Routes of administration", "প্রয়োগের পথ"), title=("Does every route need <em>absorption?</em>", "সব পথে কি <em>শোষণ</em> লাগে?"), sub=("", ""),
+   kick=("Routes of administration", "প্রয়োগের পথ"), title=("Does every <i>route</i> need <em>absorption?</em>", "সব <i>পথে</i> কি <em>শোষণ</em> লাগে?"), sub=("", ""),
    marks=[(668, 462, 1), (1040, 300, 2), (1190, 260, 3), (1480, 240, 4), (825, 700, 5), (1130, 650, 6)],
    legend=[(("Swallowed tablet", "Dissolves and is absorbed in the gut.", ("Absorption needed", TEAL)), ("মুখে খাওয়া ট্যাবলেট", "গলে গিয়ে অন্ত্রে শোষিত হয়।", ("শোষণ লাগে", TEAL))),
            (("Injection (IM / SC)", "Absorbed from muscle or under the skin.", ("Absorption needed", TEAL)), ("ইনজেকশন (IM / SC)", "মাংসপেশি বা চামড়ার নিচ থেকে শোষিত হয়।", ("শোষণ লাগে", TEAL))),

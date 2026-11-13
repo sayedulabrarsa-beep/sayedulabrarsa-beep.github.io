@@ -35,7 +35,8 @@ h1{{font-size:54px;line-height:1.28;font-weight:700;margin-top:2px}}
 .t{{font-size:37px!important;line-height:1.22!important}}.p{{font-size:29px!important;line-height:1.38!important;color:#2d464e!important}}h1{{font-size:60px!important}}.kick{{font-size:24px!important}}.note{{font-size:30px!important}}.row{{background:rgba(255,255,255,.95)!important}}.foot{{font-size:22px!important;height:66px!important}}.tag{{position:absolute;right:40px;bottom:78px;font-size:18px;color:#5b6f75;background:rgba(255,255,255,.85);padding:6px 14px;border-radius:999px}}
 .kick{{display:flex;align-items:center;gap:12px;color:#17807a!important;font-weight:700!important}}
 .kick:before{{content:"";width:46px;height:4px;border-radius:2px;background:linear-gradient(90deg,#17807a,#e0892b);flex:none}}
-h1 em{{font-style:normal;background:linear-gradient(90deg,#0f8f86,#17656a 55%,#e0892b);-webkit-background-clip:text;background-clip:text;color:transparent}}
+h1 em{{font-style:normal;background:linear-gradient(90deg,#0d9488,#14b8a6);-webkit-background-clip:text;background-clip:text;color:transparent}}
+h1 i{{font-style:normal;background:linear-gradient(90deg,#e0562b,#f59e0b);-webkit-background-clip:text;background-clip:text;color:transparent}}
 h1{{color:#0f3c42!important}}
 .n{{background:#0f3c42!important;box-shadow:0 0 0 4px rgba(255,255,255,.9)}}
 .kick{{font-family:Anek,HS;font-size:25px!important}}
@@ -61,17 +62,17 @@ P = {}
 P["cover"] = (f'<!doctype html><html lang="bn"><head><meta charset="utf-8"><style>{CSS}</style></head><body>'
   f'<div class="bg" style="background-image:url({U}/bg/cover.webp)"></div><div class="fade" style="--a:42%;--b:60%"></div>'
   f'<div style="position:absolute;left:80px;top:150px;width:640px"><p class="kick">সহজ ভাষায় স্বাস্থ্য</p>'
-  f'<h1 style="font-size:66px!important;line-height:1.22!important;margin-top:14px">অ্যান্টিবায়োটিক কোর্স <em>শেষ করা</em> কেন জরুরি?</h1>'
+  f'<h1 style="font-size:66px!important;line-height:1.22!important;margin-top:14px">অ্যান্টিবায়োটিক কোর্স <em>শেষ করা</em> কেন <i>জরুরি?</i></h1>'
   f'<p style="font-size:32px;color:#4c6670;margin-top:16px">অ্যান্টিবায়োটিক রেজিস্ট্যান্স কীভাবে শুরু হয়</p>'
   f'<p style="display:inline-block;margin-top:38px;background:#17656a;color:#fff;font-weight:600;font-size:27px;padding:12px 28px;border-radius:999px">{BY}</p></div></body></html>')
 
-P["resistance"] = page("resistance", '<p class="kick">সরল ব্যাখ্যা</p><h1>অ্যান্টিবায়োটিক <em>রেজিস্ট্যান্স</em> কীভাবে তৈরি হয়</h1>' + rows([
+P["resistance"] = page("resistance", '<p class="kick">সরল ব্যাখ্যা</p><h1><i>অ্যান্টিবায়োটিক</i> <em>রেজিস্ট্যান্স</em> কীভাবে তৈরি হয়</h1>' + rows([
   (N(0), "সংক্রমণে অনেক ব্যাকটেরিয়া থাকে", "এদের কয়েকটি স্বাভাবিকভাবেই ওষুধে কম সংবেদনশীল হতে পারে।"),
   (N(1), "অ্যান্টিবায়োটিক সংবেদনশীলগুলোকে মারে", "ভুল বা অপ্রয়োজনীয় ব্যবহারে প্রতিরোধী ব্যাকটেরিয়া টিকে যাওয়ার সুযোগ পায়।"),
   (N(2), "টিকে থাকা ব্যাকটেরিয়া বাড়ে ও ছড়ায়", "পরের সংক্রমণে একই অ্যান্টিবায়োটিক আর কাজ নাও করতে পারে।")]) +
   '<p class="note" style="background:#fdf0ee;color:#a8362f">রেজিস্ট্যান্স হয় ব্যাকটেরিয়ার, আপনার শরীরের নয়।</p>', "WHO; MedlinePlus", a="44%", b="60%", w="860px", tag="প্রতীকী ছবি")
 
-P["viruses"] = page("viruses", '<p class="kick">মৌলিক ধারণা</p><h1>অ্যান্টিবায়োটিক ব্যাকটেরিয়ার জন্য, <em>ভাইরাসের জন্য নয়</em></h1>' + rows([
+P["viruses"] = page("viruses", '<p class="kick">মৌলিক ধারণা</p><h1>অ্যান্টিবায়োটিক <em>ব্যাকটেরিয়ার</em> জন্য, <i>ভাইরাসের জন্য নয়</i></h1>' + rows([
   (ic("ok"), "ব্যাকটেরিয়াজনিত সংক্রমণ", "দরকার মনে করলে ডাক্তার অ্যান্টিবায়োটিক দেন। তবে সব ব্যাকটেরিয়াজনিত সংক্রমণে এটি লাগে না।"),
   (ic("no"), "ভাইরাসজনিত অসুখ: সর্দি-কাশি ও ফ্লু", "অ্যান্টিবায়োটিক ভাইরাসে কাজ করে না, তাই এতে আপনি ভালো বোধ করবেন না।")]) +
   '<p class="note" style="background:#fff5df;border:1px solid #f0d99e">জ্বর বা কাশি মানেই অ্যান্টিবায়োটিক নয়। সিদ্ধান্ত নেবেন ডাক্তার।</p>', "CDC", a="44%", b="58%", w="860px")
@@ -80,20 +81,20 @@ def two(h, items, ok):
     c = "#1f7a57" if ok else "#b8433f"; bg = "rgba(236,247,242,.93)" if ok else "rgba(251,238,236,.93)"
     li = "".join(f'<div style="display:flex;gap:14px;align-items:center;margin-top:16px">{ic("ok" if ok else "no")}<p class="p" style="font-size:25px;color:#173d43">{x}</p></div>' for x in items)
     return f'<div style="flex:1;background:{bg};border-radius:22px;padding:22px 24px;box-shadow:0 10px 26px rgba(23,61,67,.08)"><p class="t" style="color:{c};font-size:34px">{h}</p>{li}</div>'
-P["dosdonts"] = page("dosdonts", '<p class="kick">করণীয় ও বর্জনীয়</p><h1>অ্যান্টিবায়োটিক খাওয়ার <em>সঠিক নিয়ম</em></h1>'
+P["dosdonts"] = page("dosdonts", '<p class="kick">করণীয় ও বর্জনীয়</p><h1><i>অ্যান্টিবায়োটিক</i> খাওয়ার <em>সঠিক নিয়ম</em></h1>'
   '<div style="display:flex;gap:22px;margin-top:24px;flex:1;align-items:stretch">' +
   two("যা করবেন", ["প্রেসক্রিপশনে যেভাবে লেখা, ঠিক সেভাবে খান", "ভালো লাগলেও কোর্স শেষ করুন, যদি না ডাক্তার অন্য কথা বলেন", "প্রতিটি ডোজ নির্দিষ্ট সময়ে খান", "পার্শ্বপ্রতিক্রিয়া হলে ডাক্তার বা ফার্মাসিস্টকে জানান"], True) +
   two("যা করবেন না", ["নিজে নিজে মাঝপথে বন্ধ করবেন না", "বাকি ওষুধ পরের অসুখের জন্য রেখে দেবেন না", "অন্যকে দেবেন না, অন্যের ওষুধ খাবেন না", "প্রেসক্রিপশন ছাড়া কিনবেন না"], False) +
   '</div>', "CDC; NHS; MedlinePlus", a="58%", b="74%", w="1060px")
 
-P["missed"] = page("missed", '<p class="kick">ডোজ বাদ পড়লে</p><h1>একটি <em>ডোজ মিস</em> হলে কী করবেন?</h1>' + rows([
+P["missed"] = page("missed", '<p class="kick">ডোজ বাদ পড়লে</p><h1>একটি <i>ডোজ মিস</i> হলে <em>কী করবেন?</em></h1>' + rows([
   (ic("ok"), "মনে পড়ার সঙ্গে সঙ্গে খেয়ে নিন", "তারপর আগের মতো নিয়ম মেনে চলুন।"),
   (ic("q"), "পরের ডোজের সময় প্রায় হয়ে গেছে?", "তাহলে বাদ পড়া ডোজটি বাদ দিন, পরেরটি নিয়মমতো খান।"),
   (ic("no"), "কখনও একসাথে দুটি ডোজ খাবেন না", "বাদ পড়া ডোজ পূরণ করতে দ্বিগুণ খাওয়া যাবে না।")]) +
   '<p class="note" style="background:rgba(255,255,255,.88);font-size:24px;font-weight:600">নিশ্চিত না হলে ডাক্তার বা ফার্মাসিস্টকে জিজ্ঞেস করুন। আপনার ওষুধের লিফলেটে আলাদা নির্দেশনা থাকতে পারে।</p>',
   "NHS রোগী-তথ্য লিফলেট; MedlinePlus", a="44%", b="60%", w="860px")
 
-P["redlabel"] = page("redlabel", '<p class="kick" style="color:#b8433f">বাংলাদেশ</p><h1>অ্যান্টিবায়োটিকের প্যাকে <em>লাল চিহ্ন</em></h1>' + rows([
+P["redlabel"] = page("redlabel", '<p class="kick" style="color:#b8433f">বাংলাদেশ</p><h1><em>অ্যান্টিবায়োটিকের</em> প্যাকে <i>লাল চিহ্ন</i></h1>' + rows([
   (N(0), "কী?", "ডিসেম্বর ২০২২ থেকে অ্যান্টিবায়োটিকের প্যাকে লাল চিহ্ন বাধ্যতামূলক (DGDA)।"),
   (N(1), "কী লেখা থাকে?", "“Antibiotic” এবং প্রেসক্রিপশন ছাড়া ব্যবহার না করার সতর্কবার্তা।"),
   (N(2), "আপনার করণীয়", "লাল চিহ্ন মানে অ্যান্টিবায়োটিক। শুধু ডাক্তারের প্রেসক্রিপশনে খান।")]) +
@@ -103,13 +104,13 @@ P["redlabel"] = page("redlabel", '<p class="kick" style="color:#b8433f">বা�
 def tier(h, c, items, note):
     return (f'<div class="row" style="border-left:10px solid {c};align-items:flex-start;flex-direction:column;gap:4px;padding:16px 24px">'
             f'<p class="t" style="color:{c};font-size:30px">{h}</p><p class="p" style="color:#173d43">{" · ".join(items)}</p><p class="p" style="font-weight:700;color:{c};font-size:23px">{note}</p></div>')
-P["sideeffects"] = page("sideeffects", '<p class="kick">পার্শ্বপ্রতিক্রিয়া</p><h1>কখন <em>সাহায্য</em> নেবেন</h1><div class="list">' +
+P["sideeffects"] = page("sideeffects", '<p class="kick">পার্শ্বপ্রতিক্রিয়া</p><h1><em>কখন</em> <i>সাহায্য</i> নেবেন</h1><div class="list">' +
   tier("সাধারণ", "#2f8f83", ["বমি ভাব বা বমি", "পেট ফাঁপা বা বদহজম", "পাতলা পায়খানা"], "সাধারণত হালকা হয়। চিন্তা হলে ফার্মাসিস্টকে জিজ্ঞেস করুন।") +
   tier("ডাক্তারকে জানান", "#c27a12", ["তীব্র বা পানির মতো পাতলা পায়খানা", "তীব্র বা দুশ্চিন্তার পার্শ্বপ্রতিক্রিয়া", "ভুল করে বাড়তি ডোজ"], "নিজে নিজে ওষুধ বন্ধ বা বদলাবেন না।") +
   tier("জরুরি", "#b8433f", ["মুখ, ঠোঁট বা জিহ্বা ফুলে যাওয়া", "শ্বাস নিতে কষ্ট"], "গুরুতর অ্যালার্জির লক্ষণ হতে পারে। সঙ্গে সঙ্গে জরুরি চিকিৎসা নিন।") +
   '</div>', "NHS রোগী-তথ্য লিফলেট (জুন ২০২৫); পূর্ণ তালিকা নয়", a="48%", b="62%", w="880px")
 
-P["takeaways"] = page("takeaways", '<p class="kick">মনে রাখার কথা</p><h1>অ্যান্টিবায়োটিক: <em>৫টি মূল কথা</em></h1><div class="list" style="gap:10px;margin-top:14px">' + "".join(
+P["takeaways"] = page("takeaways", '<p class="kick">মনে রাখার কথা</p><h1><em>অ্যান্টিবায়োটিক:</em> <i>৫টি মূল কথা</i></h1><div class="list" style="gap:10px;margin-top:14px">' + "".join(
   f'<div class="row" style="padding:12px 22px">{N(i)}<div><p class="t" style="font-size:28px">{a}</p><p class="p" style="font-size:23px">{b}</p></div></div>' for i, (a, b) in enumerate([
   ("পুরো কোর্স শেষ করুন", "ভালো লাগলেও, যদি না ডাক্তার অন্য কথা বলেন।"),
   ("শুধু প্রেসক্রিপশনে খান", "প্যাকে লাল চিহ্ন দেখলেই বুঝবেন এটি অ্যান্টিবায়োটিক।"),
