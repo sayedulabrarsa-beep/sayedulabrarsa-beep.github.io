@@ -68,6 +68,8 @@ Pharma Blog articles (newest first; each is educational, not medical advice):
   Summary: ভালো লাগলেও অ্যান্টিবায়োটিক কোর্স কেন শেষ করবেন? রেজিস্ট্যান্স, ডোজ মিস, বাকি ওষুধ, পার্শ্বপ্রতিক্রিয়া ও প্যাকের লাল চিহ্ন নিয়ে ফার্মাসিস্টের সহজ গাইড।
 - Why You Must Complete an Antibiotic Course — English (2026-11-13): https://sayedulabrar.site/blog/why-complete-antibiotic-course-antibiotic-resistance/
   Summary: Why finish an antibiotic course even if you feel better? A pharmacist explains antibiotic resistance, missed doses, leftovers and Bangladesh's red label.
+- Drug Absorption: How Does Medicine Enter the Bloodstream? — English (2026-11-13): https://sayedulabrar.site/blog/drug-absorption-how-medicine-enters-bloodstream/
+  Summary: Learn how a medicine moves from its administration site into the bloodstream. A simple guide to tablet disintegration, dissolution, intestinal absorption, bioavailability and first-pass metabolism.
 - মানবদেহে ওষুধ কীভাবে কাজ করে? — বাংলা (2026-11-12): https://sayedulabrar.site/blog/how-do-medicines-work-in-the-body-bangla/
   Summary: মানবদেহে ওষুধ কীভাবে কাজ করে সহজ বাংলায় জানুন। ADME, pharmacokinetics, pharmacodynamics, receptor ও enzyme-এর ভূমিকা বুঝুন।
 - How Do Medicines Work Inside the Human Body? — English (2026-11-12): https://sayedulabrar.site/blog/how-do-medicines-work-in-the-body/
