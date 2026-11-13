@@ -52,7 +52,7 @@ def discover(known):
         hs = list(re.finditer(r"<h([23])[^>]*>(.*?)</h[23]>", body, re.S)); secs = []
         for k, h in enumerate(hs):
             seg = body[h.end(): hs[k+1].start() if k+1 < len(hs) else len(body)]
-            im = re.search(r'<figure[^>]*>\s*<img src="([^"]+)" alt="([^"]*)"', seg)
+            im = re.search(r'<figure[^>]*>\s*(?:<a [^>]*>\s*)?<img src="([^"]+)" alt="([^"]*)"', seg)
             pr = re.search(r"<p>(.*?)</p>", seg, re.S)
             if im and _local(im.group(1)) and pr:
                 head = re.sub(r"^(?:[0-9০-৯]+[.।]\s*|[A-Z]\s*[—-]\s*)", "", _txt(h.group(2)))
