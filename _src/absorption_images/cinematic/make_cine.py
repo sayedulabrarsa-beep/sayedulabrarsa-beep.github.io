@@ -24,23 +24,29 @@ body.bn{{font-family:HS,Poppins,sans-serif}}
 .bg{{position:absolute;inset:0;background-size:cover;background-position:center}}
 .veil{{position:absolute;inset:0;background:linear-gradient(90deg,rgba(250,246,240,.97) 0%,rgba(250,246,240,.9) var(--a,30%),rgba(250,246,240,0) var(--b,44%))}}
 .vig{{position:absolute;inset:0;box-shadow:inset 0 0 160px rgba(15,60,66,.18)}}
-.panel{{position:absolute;left:64px;top:52px;width:var(--pw,560px)}}
+.panel{{position:absolute;left:64px;top:0;bottom:var(--fb,58px);width:var(--pw,560px);display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:30px 0}}
+.chips{{width:100%;display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:26px}}
+.chip{{background:rgba(255,255,255,.92);border-radius:18px;padding:16px 18px;box-shadow:0 10px 26px rgba(15,60,66,.12);border-top:6px solid var(--c,#17807a)}}
+.chip b{{display:block;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:31px;line-height:1.05;color:var(--c,#17807a)}}
+body.bn .chip b{{font-family:Anek;font-weight:800;text-transform:none;font-size:31px;line-height:1.2}}
+.chip span{{display:block;font-size:21px;line-height:1.3;color:#2a4a51;margin-top:6px}}
+body.bn .chip span{{font-size:23px}}
 .kick{{display:flex;align-items:center;gap:12px;font-size:20px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#17807a}}
 .kick:before{{content:"";width:46px;height:4px;border-radius:2px;background:linear-gradient(90deg,#17807a,#e0892b)}}
 body.bn .kick{{letter-spacing:.02em;font-size:24px;font-family:Anek,HS}}
 .title{{font-family:Anton,Impact,sans-serif;text-transform:uppercase;font-size:var(--ts,86px);line-height:.98;letter-spacing:.005em;margin-top:14px;color:#0f3c42}}
 body.bn .title{{font-family:Anek,HS;font-weight:800;text-transform:none;line-height:1.12;letter-spacing:0}}
 .title em{{font-style:normal;background:linear-gradient(90deg,#0f8f86,#17656a 60%,#e0892b);-webkit-background-clip:text;background-clip:text;color:transparent}}
-.sub{{font-size:27px;line-height:1.35;color:#2a4a51;margin-top:16px;font-weight:500}}
-body.bn .sub{{font-size:29px}}
-.legend{{margin-top:22px;display:flex;flex-direction:column;gap:12px}}
+.sub{{font-size:30px;line-height:1.38;color:#2a4a51;margin-top:16px;font-weight:500}}
+body.bn .sub{{font-size:32px;line-height:1.45}}
+.legend{{margin-top:26px;display:flex;flex-direction:column;gap:18px}}
 .li{{display:flex;gap:14px;align-items:flex-start}}
 .badge{{flex:none;width:44px;height:44px;border-radius:50%;background:#0f3c42;color:#fff;font-family:Anton,Anek,sans-serif;font-size:24px;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 4px rgba(255,255,255,.85)}}
 body.bn .badge{{font-family:Anek;font-weight:800;font-size:25px}}
-.li b{{display:block;font-size:24px;line-height:1.2;color:#0f3c42}}
-.li span{{display:block;font-size:20px;line-height:1.3;color:#3b5960}}
-body.bn .li b{{font-family:Anek;font-weight:700;font-size:27px}}
-body.bn .li span{{font-size:22px}}
+.li b{{display:block;font-size:28px;line-height:1.2;color:#0f3c42}}
+.li span{{display:block;font-size:22px;line-height:1.3;color:#3b5960}}
+body.bn .li b{{font-family:Anek;font-weight:700;font-size:30px}}
+body.bn .li span{{font-size:24px}}
 .li span.tag{{display:inline-block;color:#fff;margin-top:5px;font-size:15px;font-weight:700;color:#fff;padding:2px 10px;border-radius:999px;letter-spacing:.04em}}
 body.bn .li span.tag{{font-size:17px;font-family:Anek}}
 .call{{position:absolute;background:rgba(255,255,255,.93);backdrop-filter:blur(6px);border-radius:16px;padding:10px 16px;box-shadow:0 12px 30px rgba(15,60,66,.22);border-left:6px solid var(--c,#17807a);max-width:300px}}
@@ -88,13 +94,14 @@ def build(cfg, lang, w=1600, h=900):
     src = g("src") if "src" in cfg else ""
     foot = (f'<div class="foot"><span>{("সূত্র: " if bn else "Sources: ") + src if src else ""}</span><b>{"সাইয়্যেদুল আবরার, ফার্মাসিস্ট" if bn else "Sayedul Abrar, Pharmacist"} · sayedulabrar.site</b></div>') if cfg.get("foot", True) else ""
     ts = cfg.get("ts", (86, 74))[1 if bn else 0]
+    chips = ('<div class="chips">' + ''.join(f'<div class="chip" style="--c:{c[2]}"><b>{(c[1] if bn else c[0])[0]}</b><span>{(c[1] if bn else c[0])[1]}</span></div>' for c in cfg['chips']) + '</div>') if cfg.get('chips') else ''
     byline = (f'<p style="margin-top:34px;display:inline-block;background:#0f3c42;color:#fff;font-weight:700;font-size:{26 if w>1300 else 22}px;padding:12px 26px;border-radius:999px;box-shadow:0 10px 24px rgba(15,60,66,.25)">{"লিখেছেন সাইয়্যেদুল আবরার, ফার্মাসিস্ট" if bn else "By Sayedul Abrar, Pharmacist"}</p>') if cfg.get('byline') else ''
-    tight = '<style>.legend{gap:7px!important;margin-top:14px!important}.li b{font-size:22px!important}body.bn .li b{font-size:24px!important}.li span{font-size:18px!important}body.bn .li span{font-size:20px!important}.badge{width:38px!important;height:38px!important;font-size:20px!important}</style>' if cfg.get('tight') else ''
+    tight = '<style>.legend{gap:10px!important;margin-top:18px!important}body.bn .legend{gap:7px!important;margin-top:14px!important}.li b{font-size:25px!important}body.bn .li b{font-size:27px!important}.li span{font-size:20px!important}body.bn .li span{font-size:22px!important}.badge{width:38px!important;height:38px!important;font-size:20px!important}</style>' if cfg.get('tight') else ''
     return (f'<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><style>:root{{--w:{w}px;--h:{h}px}}{CSS}</style></head><body class="{lang}">{tight}'
             f'<div class="bg" style="background-image:url({U}/bg/{cfg["bg"]}.webp);{cfg.get("bgcss","")}"></div><div class="veil" style="--a:{cfg.get("a","30%")};--b:{cfg.get("b","46%")};{cfg.get("veilcss","")}"></div><div class="vig"></div>'
             f'<svg width="{w}" height="{h}" style="position:absolute;inset:0">{svg}</svg>{html}'
-            f'<div class="panel" style="--pw:{cfg.get("pw",560)}px;--ts:{ts}px;top:{cfg.get("top",52)}px"><p class="kick">{g("kick")}</p><h1 class="title">{g("title")}</h1>'
-            f'{f"<p class=sub>{sub}</p>" if sub else ""}{leg}{byline}</div>{ill if cfg.get("ill", True) else ""}{foot}</body></html>')
+            f'<div class="panel" style="--pw:{cfg.get("pw",560)}px;--ts:{ts}px;--fb:{58 if cfg.get("foot", True) else 0}px"><p class="kick">{g("kick")}</p><h1 class="title">{g("title")}</h1>'
+            f'{f"<p class=sub>{sub}</p>" if sub else ""}{chips}{leg}{byline}</div>{ill if cfg.get("ill", True) else ""}{foot}</body></html>')
 
 TEAL, ORANGE, RED, PURPLE, BLUE = "#17807a", "#e0892b", "#d0453c", "#7b5cc4", "#4a6fd6"
 CFG = {
@@ -102,7 +109,7 @@ CFG = {
    kick=("Pharmacology made simple", "সহজ ভাষায় ফার্মাকোলজি"),
    title=("Drug <em>Absorption</em>", "ওষুধের <em>শোষণ</em>"),
    sub=("How does medicine enter the bloodstream?", "ওষুধ কীভাবে রক্তে প্রবেশ করে?")),
- "journey": dict(bg="journey", a="32%", b="48%", pw=600, ts=(74, 64),
+ "journey": dict(bg="journey", a="32%", b="48%", pw=600, ts=(84, 72),
    kick=("The big picture", "পুরো চিত্র"), title=("The journey of <em>a tablet</em>", "একটি ট্যাবলেটের <em>যাত্রা</em>"), sub=("", ""),
    marks=[(1268, 495, 1), (1120, 700, 2), (1015, 470, 3), (1235, 185, 4)],
    legend=[(("Stomach", "The tablet breaks up and starts to dissolve.", None), ("পাকস্থলী", "ট্যাবলেট ভেঙে গলতে শুরু করে।", None)),
@@ -110,30 +117,30 @@ CFG = {
            (("Portal vein → liver", "Some drug is metabolised on this first pass.", None), ("পোর্টাল শিরা → যকৃৎ", "এই প্রথম যাত্রায় কিছু ওষুধ বিপাক হয়।", None)),
            (("Heart → whole body", "The rest travels in the blood to where it acts.", None), ("হৃৎপিণ্ড → সারা শরীর", "বাকি ওষুধ রক্তে মিশে কাজের জায়গায় যায়।", None))],
    src=("MSD Manual; StatPearls", "MSD Manual; StatPearls")),
- "villi": dict(bg="villi", a="30%", b="44%", pw=540, ts=(78, 66),
+ "villi": dict(bg="villi", a="30%", b="44%", pw=560, ts=(88, 76), chips=[(("Huge surface", "Folds, villi and microvilli"), ("বিশাল জায়গা", "ভাঁজ, ভিলাই ও মাইক্রোভিলাই"), "#17807a"), (("Main site", "Small intestine absorbs most oral drugs"), ("প্রধান জায়গা", "মুখে খাওয়া বেশির ভাগ ওষুধ ক্ষুদ্রান্ত্রে শোষিত হয়"), "#d0453c")],
    kick=("Close view", "কাছ থেকে দেখুন"), title=("Where absorption <em>happens</em>", "শোষণ <em>কোথায়</em> হয়"),
    sub=("Folds, villi and microvilli give the small intestine a huge surface, so most oral medicines are absorbed here.",
         "ভাঁজ, ভিলাই ও মাইক্রোভিলাই ক্ষুদ্রান্ত্রে বিশাল জায়গা তৈরি করে, তাই বেশির ভাগ মুখে খাওয়া ওষুধ এখানেই শোষিত হয়।"),
    calls=[(935, 92, 600, 205, "l", TEAL, ("Medicine molecules", "Dissolved drug in gut fluid"), ("ওষুধের অণু", "অন্ত্রের তরলে দ্রবীভূত ওষুধ")),
           (1330, 125, 1655, 60, "r", ORANGE, ("Microvilli", "Tiny brush border on each cell"), ("মাইক্রোভিলাই", "প্রতিটি কোষের মাথায় সূক্ষ্ম ব্রাশ")),
-          (1215, 640, 640, 560, "l", PURPLE, ("Villus", "Finger-like fold lined with absorbing cells"), ("ভিলাস", "শোষণকারী কোষে ঢাকা আঙুলের মতো অংশ")),
+          (1215, 640, 700, 440, "l", PURPLE, ("Villus", "Finger-like fold lined with absorbing cells"), ("ভিলাস", "শোষণকারী কোষে ঢাকা আঙুলের মতো অংশ")),
           (1330, 772, 1655, 610, "r", RED, ("Into the blood", "Molecules enter tiny capillaries"), ("রক্তে প্রবেশ", "অণু সূক্ষ্ম রক্তনালিতে ঢোকে"))],
    src=("StatPearls, Drug Absorption", "StatPearls, Drug Absorption")),
- "membrane": dict(bg="membrane", a="30%", b="42%", pw=540, ts=(72, 62),
+ "membrane": dict(bg="membrane", a="30%", b="42%", pw=560, ts=(82, 70), chips=[(("No energy", "Passive diffusion: high → low"), ("শক্তি লাগে না", "প্যাসিভ ডিফিউশন: বেশি → কম"), "#17807a"), (("Uses energy", "Active transport by a carrier"), ("শক্তি লাগে", "ক্যারিয়ারের মাধ্যমে সক্রিয় পরিবহন"), "#e0892b")],
    kick=("Molecular level", "অণুর স্তরে"), title=("Crossing the <em>cell membrane</em>", "কোষপর্দা <em>পেরোনো</em>"),
    sub=("Medicines cross the fat-like (lipid) membrane of gut cells in two main ways.", "অন্ত্রের কোষের চর্বিজাতীয় পর্দা ওষুধ মূলত দুইভাবে পার হয়।"),
    calls=[(905, 505, 600, 790, "l", TEAL, ("Passive diffusion", "High → low concentration, no energy"), ("প্যাসিভ ডিফিউশন", "বেশি থেকে কম ঘনত্বে, শক্তি লাগে না")),
           (1395, 450, 1655, 90, "r", ORANGE, ("Transporter protein", "Carries a molecule; active transport uses energy"), ("ট্রান্সপোর্টার প্রোটিন", "অণু বহন করে; সক্রিয় পরিবহনে শক্তি লাগে")),
           (1140, 560, 1160, 790, "c", BLUE, ("Lipid bilayer", "The cell's outer membrane"), ("লিপিড বাইলেয়ার", "কোষের বাইরের পর্দা"))],
    src=("StatPearls; MSD Manual", "StatPearls; MSD Manual")),
- "liver": dict(bg="liver", a="30%", b="44%", pw=540, ts=(78, 66),
+ "liver": dict(bg="liver", a="30%", b="44%", pw=560, ts=(88, 74), chips=[(("IV = 100%", "Skips absorption and the first pass"), ("শিরায় = ১০০%", "শোষণ ও ফার্স্ট পাস এড়িয়ে যায়"), "#4a6fd6"), (("Under the tongue", "Some medicines avoid much of the first pass"), ("জিভের নিচে", "কিছু ওষুধ ফার্স্ট পাসের বড় অংশ এড়ায়"), "#e0892b")],
    kick=("Bioavailability", "বায়োঅ্যাভেইলেবিলিটি"), title=("First-pass <em>metabolism</em>", "ফার্স্ট-পাস <em>মেটাবলিজম</em>"),
    sub=("Blood from the gut passes the liver first, so less active drug reaches the rest of the body.", "অন্ত্রের রক্ত আগে যকৃতে যায়, তাই কম সক্রিয় ওষুধ সারা শরীরে পৌঁছায়।"),
    calls=[(860, 720, 600, 800, "l", BLUE, ("Portal vein", "Brings absorbed drug from the gut"), ("পোর্টাল শিরা", "অন্ত্র থেকে শোষিত ওষুধ আনে")),
           (1195, 335, 1010, 105, "c", ORANGE, ("Liver breaks some down", "First-pass metabolism"), ("যকৃৎ কিছু ভেঙে ফেলে", "ফার্স্ট-পাস মেটাবলিজম")),
           (1350, 200, 1655, 380, "r", RED, ("To the heart", "Then to the whole body"), ("হৃৎপিণ্ডের দিকে", "তারপর সারা শরীরে"))],
    src=("StatPearls, First-Pass Effect", "StatPearls, First-Pass Effect")),
- "routes": dict(bg="routes", a="33%", b="40%", pw=560, ts=(68, 56), top=34, tight=True,
+ "routes": dict(bg="routes", a="33%", b="40%", pw=570, ts=(72, 54), tight=True,
    kick=("Routes of administration", "প্রয়োগের পথ"), title=("Does every route need <em>absorption?</em>", "সব পথে কি <em>শোষণ</em> লাগে?"), sub=("", ""),
    marks=[(668, 462, 1), (1040, 300, 2), (1190, 260, 3), (1480, 240, 4), (825, 700, 5), (1130, 650, 6)],
    legend=[(("Swallowed tablet", "Dissolves and is absorbed in the gut.", ("Absorption needed", TEAL)), ("মুখে খাওয়া ট্যাবলেট", "গলে গিয়ে অন্ত্রে শোষিত হয়।", ("শোষণ লাগে", TEAL))),
