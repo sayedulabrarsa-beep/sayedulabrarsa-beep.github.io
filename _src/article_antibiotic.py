@@ -14,14 +14,14 @@ esc = lambda x: html.escape(x, quote=True)
 # key: (file stem, alt EN, caption EN, alt BN, caption BN)
 F = {
  "cover": ("why-complete-antibiotic-course-cover-16x9",
-   "Why you must complete an antibiotic course: a pharmacy counter with teal-and-white capsules, a pill organiser, a glass of water, a microscope and glowing bacteria. By Sayedul Abrar, Pharmacist.",
+   "Why you must complete an antibiotic course: teal-and-white capsules in a blister strip, a seven-day pill organiser and a glass of water on a pharmacy counter, with glowing bacteria above. By Sayedul Abrar, Pharmacist.",
    "Finish the course your doctor prescribed. AI-generated photo; no real product shown.",
-   "অ্যান্টিবায়োটিক কোর্স শেষ করা কেন জরুরি: ফার্মেসির টেবিলে সাদা-সবুজ ক্যাপসুল, পিল অর্গানাইজার, এক গ্লাস পানি, মাইক্রোস্কোপ ও ব্যাকটেরিয়ার ছবি। লিখেছেন ফার্মাসিস্ট সাইয়্যেদুল আবরার।",
+   "অ্যান্টিবায়োটিক কোর্স শেষ করা কেন জরুরি: ফার্মেসির টেবিলে ব্লিস্টারে সাদা-সবুজ ক্যাপসুল, সাত দিনের পিল অর্গানাইজার, এক গ্লাস পানি এবং ওপরে ব্যাকটেরিয়ার ছবি। লিখেছেন ফার্মাসিস্ট সাইয়্যেদুল আবরার।",
    "ডাক্তার যতদিনের কোর্স দিয়েছেন, ততদিন শেষ করুন। AI দিয়ে তৈরি ছবি, কোনো আসল পণ্য নয়।"),
  "resistance": ("how-antibiotic-resistance-develops-simplified",
-   "Rod-shaped bacteria in a petri dish, with text explaining how antibiotic resistance develops in three simplified steps: an infection contains many bacteria and a few are less sensitive; the antibiotic kills the sensitive bacteria; the resistant survivors multiply and can spread. Resistance happens to the bacteria, not to your body.",
+   "Rod-shaped bacteria in a petri dish (teal sensitive, red resistant, grey killed), with text explaining how antibiotic resistance develops in three simplified steps: an infection contains many bacteria and a few are less sensitive; the antibiotic kills the sensitive bacteria; the resistant survivors multiply and can spread. Resistance happens to the bacteria, not to your body.",
    "Simplified illustration based on WHO and MedlinePlus explanations.",
-   "পেট্রি ডিশে দণ্ডাকার ব্যাকটেরিয়ার ছবির পাশে লেখা, অ্যান্টিবায়োটিক রেজিস্ট্যান্স কীভাবে তৈরি হয়, তিনটি সরল ধাপে: সংক্রমণে অনেক ব্যাকটেরিয়া থাকে, কয়েকটি কম সংবেদনশীল; অ্যান্টিবায়োটিক সংবেদনশীলগুলোকে মারে; প্রতিরোধী ব্যাকটেরিয়া টিকে গিয়ে বাড়ে ও ছড়াতে পারে। রেজিস্ট্যান্স হয় ব্যাকটেরিয়ার, শরীরের নয়।",
+   "পেট্রি ডিশে দণ্ডাকার ব্যাকটেরিয়া (সবুজ সংবেদনশীল, লাল প্রতিরোধী, ধূসর মৃত), পাশে লেখা, অ্যান্টিবায়োটিক রেজিস্ট্যান্স কীভাবে তৈরি হয়, তিনটি সরল ধাপে: সংক্রমণে অনেক ব্যাকটেরিয়া থাকে, কয়েকটি কম সংবেদনশীল; অ্যান্টিবায়োটিক সংবেদনশীলগুলোকে মারে; প্রতিরোধী ব্যাকটেরিয়া টিকে গিয়ে বাড়ে ও ছড়াতে পারে। রেজিস্ট্যান্স হয় ব্যাকটেরিয়ার, শরীরের নয়।",
    "WHO ও MedlinePlus-এর ব্যাখ্যার ভিত্তিতে সরল চিত্র।"),
  "viruses": ("antibiotics-treat-bacteria-not-viruses-cold-flu",
    "A bedside table with tissues, a thermometer and hot tea, with text: antibiotics treat bacteria, not viruses. Antibiotics may be prescribed for bacterial infections, but they do not work on viral illnesses such as colds and flu.",
@@ -56,10 +56,11 @@ F = {
 }
 def fig(k, bn=False, hero=False):
     stem, aen, cen, abn, cbn = F[k]
-    src = f"{IMG}{stem}{'-bn' if bn else ''}.webp?v=2"
+    src = f"{IMG}{stem}{'-bn' if bn else ''}.webp?v=3"
     alt, cap = (abn, cbn) if bn else (aen, cen)
     load = 'fetchpriority="high"' if hero else 'loading="lazy"'
-    return f'<figure class="hero-visual"><img src="{src}" alt="{esc(alt)}" width="1600" height="900" {load} decoding="async"><figcaption class="caption">{cap}</figcaption></figure>'
+    tip = 'বড় করে দেখতে ছবিতে চাপুন।' if bn else 'Tap the image to view it full size.'
+    return f'<figure class="hero-visual"><a href="{src}" target="_blank" rel="noopener" aria-label="{esc(tip)}"><img src="{src}" alt="{esc(alt)}" width="1600" height="900" {load} decoding="async"></a><figcaption class="caption">{cap} {tip}</figcaption></figure>'
 
 def table(label, head, rows):
     th = "".join(f"<th>{h}</th>" for h in head)
@@ -218,7 +219,7 @@ STYLE = ('<style>.article-content .faq details{border:1px solid var(--line);bord
 
 META = {
  "en": dict(url=EN_URL, lang="en", locale="en_BD",
-   title="Why Complete Your Antibiotic Course? Antibiotic Resistance Explained",
+   title="Why Complete an Antibiotic Course? Resistance Explained",
    h1="Why You Must Complete an Antibiotic Course (and How Antibiotic Resistance Starts)",
    short="Why You Must Complete an Antibiotic Course",
    desc="Why finish an antibiotic course even if you feel better? A pharmacist explains antibiotic resistance, missed doses, leftovers and Bangladesh's red label.",

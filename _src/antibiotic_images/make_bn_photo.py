@@ -27,7 +27,7 @@ h1{{font-size:54px;line-height:1.28;font-weight:700;margin-top:2px}}
 .note{{margin-top:16px;font-size:26px;font-weight:700;border-radius:16px;padding:14px 22px}}
 .foot{{position:absolute;left:0;right:0;bottom:0;height:62px;display:flex;justify-content:space-between;align-items:center;padding:0 72px;font-size:20px;color:#5b6f75;background:rgba(250,248,243,.92);border-top:1px solid #e2ebe8}}
 .foot b{{color:#17656a}}
-.tag{{position:absolute;right:40px;bottom:78px;font-size:18px;color:#5b6f75;background:rgba(255,255,255,.85);padding:6px 14px;border-radius:999px}}
+.t{{font-size:37px!important;line-height:1.22!important}}.p{{font-size:29px!important;line-height:1.38!important;color:#2d464e!important}}h1{{font-size:60px!important}}.kick{{font-size:24px!important}}.note{{font-size:30px!important}}.row{{background:rgba(255,255,255,.95)!important}}.foot{{font-size:22px!important;height:66px!important}}.tag{{position:absolute;right:40px;bottom:78px;font-size:18px;color:#5b6f75;background:rgba(255,255,255,.85);padding:6px 14px;border-radius:999px}}
 """
 def ic(ok):
     if ok == "ok": return '<svg width="52" height="52" style="flex:none"><circle cx="26" cy="26" r="24" fill="#1f7a57"/><path d="M15 27l7 8 15-17" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>'
@@ -45,9 +45,9 @@ N = lambda i: f'<div class="n">{"১২৩৪৫"[i]}</div>'
 
 P = {}
 P["cover"] = (f'<!doctype html><html lang="bn"><head><meta charset="utf-8"><style>{CSS}</style></head><body>'
-  f'<div class="bg" style="background-image:url({U}/bg/cover.webp)"></div><div class="fade" style="--a:36%;--b:58%"></div>'
-  f'<div style="position:absolute;left:90px;top:170px;width:780px"><p class="kick">সহজ ভাষায় স্বাস্থ্য</p>'
-  f'<h1 style="font-size:76px;line-height:1.28;margin-top:10px">অ্যান্টিবায়োটিক কোর্স শেষ করা কেন জরুরি?</h1>'
+  f'<div class="bg" style="background-image:url({U}/bg/cover.webp)"></div><div class="fade" style="--a:42%;--b:60%"></div>'
+  f'<div style="position:absolute;left:80px;top:150px;width:640px"><p class="kick">সহজ ভাষায় স্বাস্থ্য</p>'
+  f'<h1 style="font-size:64px!important;line-height:1.28;margin-top:10px">অ্যান্টিবায়োটিক কোর্স শেষ করা কেন জরুরি?</h1>'
   f'<p style="font-size:32px;color:#4c6670;margin-top:16px">অ্যান্টিবায়োটিক রেজিস্ট্যান্স কীভাবে শুরু হয়</p>'
   f'<p style="display:inline-block;margin-top:38px;background:#17656a;color:#fff;font-weight:600;font-size:27px;padding:12px 28px;border-radius:999px">{BY}</p></div></body></html>')
 
@@ -80,10 +80,10 @@ P["missed"] = page("missed", '<p class="kick">ডোজ বাদ পড়ল�
   "NHS রোগী-তথ্য লিফলেট; MedlinePlus", a="44%", b="60%", w="860px")
 
 P["redlabel"] = page("redlabel", '<p class="kick" style="color:#b8433f">বাংলাদেশ</p><h1>অ্যান্টিবায়োটিকের প্যাকে লাল চিহ্ন</h1>' + rows([
-  (N(0), "কী?", "ডিসেম্বর ২০২২ থেকে মানুষ ও প্রাণীর অ্যান্টিবায়োটিকের প্যাকে লাল শনাক্তকরণ চিহ্ন দেওয়ার সিদ্ধান্ত (DGDA)।"),
-  (N(1), "কী লেখা থাকে?", "“Antibiotic” লেখা লাল লেবেল এবং প্রেসক্রিপশন ছাড়া ব্যবহার না করার সতর্কবার্তা।"),
-  (N(2), "আপনার করণীয়", "লাল চিহ্ন দেখলে বুঝবেন এটি অ্যান্টিবায়োটিক। শুধু রেজিস্টার্ড চিকিৎসকের প্রেসক্রিপশনে খান।")]) +
-  '<p class="note" style="background:#fdf0ee;color:#a8362f;border:2px solid #e8b3ae">“রেজিস্টার্ড চিকিৎসকের প্রেসক্রিপশন ছাড়া ব্যবহার করবেন না”</p>',
+  (N(0), "কী?", "ডিসেম্বর ২০২২ থেকে অ্যান্টিবায়োটিকের প্যাকে লাল চিহ্ন বাধ্যতামূলক (DGDA)।"),
+  (N(1), "কী লেখা থাকে?", "“Antibiotic” এবং প্রেসক্রিপশন ছাড়া ব্যবহার না করার সতর্কবার্তা।"),
+  (N(2), "আপনার করণীয়", "লাল চিহ্ন মানে অ্যান্টিবায়োটিক। শুধু ডাক্তারের প্রেসক্রিপশনে খান।")]) +
+  '',
   "WHO বাংলাদেশ (DGDA, ড্রাগ কন্ট্রোল কমিটি)", a="50%", b="60%", w="880px", tag="প্রতীকী ছবি, আসল পণ্য নয়")
 
 def tier(h, c, items, note):
@@ -95,14 +95,14 @@ P["sideeffects"] = page("sideeffects", '<p class="kick">পার্শ্বপ
   tier("জরুরি", "#b8433f", ["মুখ, ঠোঁট বা জিহ্বা ফুলে যাওয়া", "শ্বাস নিতে কষ্ট"], "গুরুতর অ্যালার্জির লক্ষণ হতে পারে। সঙ্গে সঙ্গে জরুরি চিকিৎসা নিন।") +
   '</div>', "NHS রোগী-তথ্য লিফলেট (জুন ২০২৫); পূর্ণ তালিকা নয়", a="48%", b="62%", w="880px")
 
-P["takeaways"] = page("takeaways", '<p class="kick">মনে রাখার কথা</p><h1>অ্যান্টিবায়োটিক: ৫টি মূল কথা</h1><div class="list" style="gap:12px">' + "".join(
+P["takeaways"] = page("takeaways", '<p class="kick">মনে রাখার কথা</p><h1>অ্যান্টিবায়োটিক: ৫টি মূল কথা</h1><div class="list" style="gap:10px;margin-top:14px">' + "".join(
   f'<div class="row" style="padding:12px 22px">{N(i)}<div><p class="t" style="font-size:28px">{a}</p><p class="p" style="font-size:23px">{b}</p></div></div>' for i, (a, b) in enumerate([
   ("পুরো কোর্স শেষ করুন", "ভালো লাগলেও, যদি না ডাক্তার অন্য কথা বলেন।"),
   ("শুধু প্রেসক্রিপশনে খান", "প্যাকে লাল চিহ্ন দেখলেই বুঝবেন এটি অ্যান্টিবায়োটিক।"),
   ("ভাইরাসে কাজ করে না", "সর্দি-কাশি ও ফ্লুতে অ্যান্টিবায়োটিক কাজ করে না।"),
   ("রেখে দেবেন না, ভাগ করবেন না", "বাকি ওষুধ ফেলার নিয়ম ফার্মাসিস্টকে জিজ্ঞেস করুন।"),
   ("ডোজ মিস হলে দ্বিগুণ নয়", "সময়মতো খান, সমস্যা হলে ডাক্তারকে জানান।")])) + '</div>',
-  "NHS; CDC; MedlinePlus; WHO বাংলাদেশ", a="44%", b="58%", w="820px")
+  "NHS; CDC; MedlinePlus; WHO বাংলাদেশ", a="46%", b="60%", w="900px")
 
 NAMES = {"cover": "why-complete-antibiotic-course-cover-16x9", "resistance": "how-antibiotic-resistance-develops-simplified", "viruses": "antibiotics-treat-bacteria-not-viruses-cold-flu",
  "dosdonts": "antibiotic-dos-and-donts-take-as-prescribed", "missed": "missed-antibiotic-dose-what-to-do", "redlabel": "bangladesh-red-mark-on-antibiotic-packs-dgda",

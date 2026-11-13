@@ -27,7 +27,7 @@ h1{{font-size:50px;line-height:1.18;font-weight:700;margin-top:2px}}
 .note{{margin-top:16px;font-size:26px;font-weight:700;border-radius:16px;padding:14px 22px}}
 .foot{{position:absolute;left:0;right:0;bottom:0;height:62px;display:flex;justify-content:space-between;align-items:center;padding:0 72px;font-size:20px;color:#5b6f75;background:rgba(250,248,243,.92);border-top:1px solid #e2ebe8}}
 .foot b{{color:#17656a}}
-.tag{{position:absolute;right:40px;bottom:78px;font-size:18px;color:#5b6f75;background:rgba(255,255,255,.85);padding:6px 14px;border-radius:999px}}
+.t{{font-size:34px!important;line-height:1.22!important}}.p{{font-size:27px!important;line-height:1.38!important;color:#2d464e!important}}h1{{font-size:58px!important}}.kick{{font-size:24px!important}}.note{{font-size:28px!important}}.row{{background:rgba(255,255,255,.95)!important}}.foot{{font-size:22px!important;height:66px!important}}.tag{{position:absolute;right:40px;bottom:78px;font-size:18px;color:#5b6f75;background:rgba(255,255,255,.85);padding:6px 14px;border-radius:999px}}
 """
 def ic(ok):
     if ok == "ok": return '<svg width="52" height="52" style="flex:none"><circle cx="26" cy="26" r="24" fill="#1f7a57"/><path d="M15 27l7 8 15-17" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>'
@@ -45,9 +45,9 @@ N = lambda i: f'<div class="n">{"12345"[i]}</div>'
 
 P = {}
 P["cover"] = (f'<!doctype html><html lang="en"><head><meta charset="utf-8"><style>{CSS}</style></head><body>'
-  f'<div class="bg" style="background-image:url({U}/bg/cover.webp)"></div><div class="fade" style="--a:36%;--b:58%"></div>'
-  f'<div style="position:absolute;left:90px;top:170px;width:780px"><p class="kick">Health Made Simple</p>'
-  f'<h1 style="font-size:76px;line-height:1.1;margin-top:10px">Why You Must Complete an Antibiotic Course</h1>'
+  f'<div class="bg" style="background-image:url({U}/bg/cover.webp)"></div><div class="fade" style="--a:42%;--b:60%"></div>'
+  f'<div style="position:absolute;left:80px;top:150px;width:640px"><p class="kick">Health Made Simple</p>'
+  f'<h1 style="font-size:66px!important;line-height:1.1;margin-top:10px">Why You Must Complete an Antibiotic Course</h1>'
   f'<p style="font-size:32px;color:#4c6670;margin-top:16px">…and how antibiotic resistance starts</p>'
   f'<p style="display:inline-block;margin-top:38px;background:#17656a;color:#fff;font-weight:600;font-size:27px;padding:12px 28px;border-radius:999px">{BY}</p></div></body></html>')
 
@@ -80,10 +80,9 @@ P["missed"] = page("missed", '<p class="kick">Missed dose</p><h1>Missed a dose o
   "NHS patient leaflet; MedlinePlus", a="44%", b="60%", w="860px")
 
 P["redlabel"] = page("redlabel", '<p class="kick" style="color:#b8433f">Bangladesh</p><h1>The red mark on antibiotic packs</h1>' + rows([
-  (N(0), "What is it?", "A DGDA decision to put a red identification mark on human and veterinary antibiotic packs, from December 2022."),
-  (N(1), "What does it say?", "A red label reading “antibiotic” and a warning not to use it without a registered physician’s prescription."),
-  (N(2), "What should you do?", "If you see the red mark, it is an antibiotic. Take it only with a registered doctor’s prescription.")]) +
-  '<p class="note" style="background:#fdf0ee;color:#a8362f;border:2px solid #e8b3ae">“Do not use without a prescription of registered physician”</p>',
+  (N(0), "What is it?", "Since December 2022, DGDA requires a red mark on antibiotic packs."),
+  (N(1), "What does it say?", "“Antibiotic” and “Do not use without a prescription of registered physician”."),
+  (N(2), "What should you do?", "Red mark = antibiotic. Take it only with a doctor’s prescription.")]) ,
   "WHO Bangladesh (DGDA, Drug Control Committee)", a="50%", b="60%", w="880px", tag="Illustrative photo, not a real product")
 
 def tier(h, c, items, note):
@@ -95,14 +94,14 @@ P["sideeffects"] = page("sideeffects", '<p class="kick">Side effects</p><h1>When
   tier("Emergency", "#b8433f", ["Swelling of the face, lips or tongue", "Difficulty breathing"], "Can be signs of a serious allergic reaction. Get emergency help immediately.") +
   '</div>', "NHS patient leaflet (June 2025); not a complete list", a="48%", b="62%", w="880px")
 
-P["takeaways"] = page("takeaways", '<p class="kick">Key takeaways</p><h1>Antibiotics: 5 things to remember</h1><div class="list" style="gap:12px">' + "".join(
+P["takeaways"] = page("takeaways", '<p class="kick">Key takeaways</p><h1>Antibiotics: 5 things to remember</h1><div class="list" style="gap:10px;margin-top:14px">' + "".join(
   f'<div class="row" style="padding:12px 22px">{N(i)}<div><p class="t" style="font-size:26px">{a}</p><p class="p" style="font-size:21px">{b}</p></div></div>' for i, (a, b) in enumerate([
   ("Finish the course", "Even if you feel better, unless your doctor says otherwise."),
   ("Only with a prescription", "In Bangladesh, the red mark tells you it is an antibiotic."),
   ("Not for viruses", "Antibiotics do not work on colds and flu."),
   ("Don’t save or share", "Ask a pharmacist how to get rid of leftovers."),
   ("Never double a missed dose", "Take doses on time and report side effects.")])) + '</div>',
-  "NHS; CDC; MedlinePlus; WHO Bangladesh", a="44%", b="58%", w="820px")
+  "NHS; CDC; MedlinePlus; WHO Bangladesh", a="46%", b="60%", w="900px")
 
 NAMES = {"cover": "why-complete-antibiotic-course-cover-16x9", "resistance": "how-antibiotic-resistance-develops-simplified", "viruses": "antibiotics-treat-bacteria-not-viruses-cold-flu",
  "dosdonts": "antibiotic-dos-and-donts-take-as-prescribed", "missed": "missed-antibiotic-dose-what-to-do", "redlabel": "bangladesh-red-mark-on-antibiotic-packs-dgda",
