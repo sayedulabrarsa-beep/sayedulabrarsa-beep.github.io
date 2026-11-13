@@ -426,7 +426,7 @@ Educational disclaimer: This article is for general learning and is not personal
 
 ### ওষুধের শোষণ: ওষুধ কীভাবে রক্তে প্রবেশ করে?
 URL: https://sayedulabrar.site/blog/drug-absorption-how-medicine-enters-bloodstream-bangla/ · Language: Bangla · Published: 2026-11-13 · Author: Sayedul Abrar, pharmacist
-Summary: ওষুধ কীভাবে গ্রহণের স্থান থেকে রক্তপ্রবাহে পৌঁছায় তা সহজ বাংলায় জানুন। ট্যাবলেট ভাঙা, দ্রবীভূত হওয়া, অন্ত্র দিয়ে শোষণ, bioavailability ও first-pass metabolism ব্যাখ্যা করা হয়েছে।
+Summary: ওষুধ কীভাবে রক্তে প্রবেশ করে? ছবি ও ডায়াগ্রামসহ সহজ বাংলায় ওষুধের শোষণ: দ্রবীভবন, ভিলাই, প্যাসিভ ডিফিউশন, first-pass metabolism ও bioavailability।
 
 লেখক: Sayedul Abrar, ফার্মাসিস্ট · প্রকাশিত ১৩ নভেম্বর ২০২৬
 
@@ -462,7 +462,14 @@ Summary: ওষুধ কীভাবে গ্রহণের স্থান �
 
 উদাহরণ হিসেবে, enteric-coated tablet পাকস্থলীতে ভাঙা প্রতিরোধ করার জন্য তৈরি হয় এবং পরিপাকতন্ত্রের পরবর্তী অংশে গিয়ে ওষুধ ছাড়ে। তবে এর অর্থ এই নয় যে ওষুধের সম্পূর্ণ অংশ শোষিত হবেই।
 
-### ৪. Bioavailability কী?
+### ৪. ওষুধের অণু কীভাবে অন্ত্রের দেয়াল পেরোয়?
+
+দ্রবীভূত অণুকে অন্ত্রের আবরণীর কোষগুলো পার হতে হয়। প্রতিটি কোষের বাইরের আবরণ বা কোষপর্দা (cell membrane) চর্বিজাতীয় (lipid) অণু দিয়ে তৈরি। ওষুধ মূলত দুইভাবে এটি পার হয়:
+- প্যাসিভ ডিফিউশন (passive diffusion): সবচেয়ে সাধারণ পথ। যেখানে ওষুধ বেশি (অন্ত্র) সেখান থেকে যেখানে কম (রক্ত) সেদিকে অণু চলে যায়, কোনো শক্তি খরচ হয় না। চর্বিতে দ্রবণীয় ও আয়নহীন (un-ionised) অণু সবচেয়ে সহজে পেরোয়।
+- ক্যারিয়ার-নির্ভর পরিবহন (carrier-mediated transport): কোষপর্দার বিশেষ প্রোটিন নির্দিষ্ট অণুকে বহন করে। সক্রিয় পরিবহনে (active transport) শক্তি লাগে এবং ঘনত্বের বিপরীত দিকেও ওষুধ নিতে পারে। এই ক্যারিয়ার পূর্ণ (saturated) হয়ে যেতে পারে, আর একই ধরনের ওষুধ একে অপরের সঙ্গে প্রতিযোগিতা করতে পারে।
+কিছু প্রোটিন উল্টো কাজ করে। P-glycoprotein-এর মতো efflux পাম্প কিছু ওষুধকে আবার অন্ত্রে ফেরত পাঠায়, ফলে শোষণ কমতে পারে।
+
+### ৫. Bioavailability কী?
 
 Bioavailability বলতে সক্রিয় ওষুধ কত দ্রুত এবং কত পরিমাণে systemic circulation বা শরীরের সাধারণ রক্তপ্রবাহে পৌঁছায়, তা বোঝায়। Intravenous injection সরাসরি রক্তে দেওয়া হয় বলে এর bioavailability ১০০%। মুখে খাওয়া ওষুধের ক্ষেত্রে রক্তে পৌঁছানো পরিমাণ কম হতে পারে।
 
@@ -470,7 +477,9 @@ Bioavailability বলতে সক্রিয় ওষুধ কত দ্র
 
 মনে রাখুন: Absorption এবং bioavailability সম্পর্কিত, কিন্তু একই বিষয় নয়। রক্তের সাধারণ প্রবাহে পৌঁছানোর আগে ওষুধের যে অংশ নষ্ট বা metabolised হয়, bioavailability সেটিও বিবেচনা করে।
 
-### ৫. কোন বিষয়গুলো ওষুধের শোষণকে প্রভাবিত করে?
+First-pass metabolism বোঝার মূল পথটি এখানে। অন্ত্র থেকে বের হওয়া রক্ত সরাসরি সারা শরীরে যায় না; আগে পোর্টাল শিরা (portal vein) দিয়ে যকৃতে (লিভার) যায়। এই প্রথম যাত্রায় অন্ত্রের দেয়াল ও যকৃতে কিছু ওষুধ ভেঙে যেতে পারে, তাই কম সক্রিয় ওষুধ সাধারণ রক্তপ্রবাহে পৌঁছায়। শিরায় দেওয়া ওষুধ এই ধাপ এড়িয়ে যায়, আর জিভের নিচে রাখা কিছু ওষুধ, যেমন নাইট্রোগ্লিসারিন, এর বড় অংশ এড়াতে পারে।
+
+### ৬. কোন বিষয়গুলো ওষুধের শোষণকে প্রভাবিত করে?
 
 - Dosage form: Solution, সাধারণ tablet, capsule, enteric-coated tablet ও modified-release product ভিন্নভাবে কাজ করতে পারে।
 - খাবার: খাবার কিছু ওষুধের শোষণ কমাতে, দেরি করাতে বা বাড়াতে পারে। প্রভাবটি নির্দিষ্ট ওষুধের ওপর নির্ভর করে।
@@ -479,11 +488,13 @@ Bioavailability বলতে সক্রিয় ওষুধ কত দ্র
 - অন্য ওষুধ: কিছু ওষুধ পাকস্থলীর অম্লতা, অন্ত্রের গতি বা অন্য ওষুধের সঙ্গে binding-এর মাধ্যমে শোষণে প্রভাব ফেলতে পারে।
 - ওষুধ গ্রহণের পথ: Oral, inhaled, topical, sublingual, intramuscular ও intravenous route-এর শোষণ এক নয়।
 
-### ৬. সব route-এ কি absorption ধাপ লাগে?
+### ৭. সব route-এ কি absorption ধাপ লাগে?
 
 একইভাবে নয়। Intravenous ওষুধ সরাসরি রক্তপ্রবাহে দেওয়া হয়, তাই অন্য স্থান থেকে রক্তে প্রবেশের জন্য আলাদা absorption ধাপ লাগে না। Intramuscular ও subcutaneous injection-এর ওষুধকে ইনজেকশনের স্থান থেকে রক্তে যেতে হয়। Inhaled medicine শ্বাসনালিতে পৌঁছায়, আর topical medicine ত্বকে কাজ করতে বা ত্বক পেরিয়ে যেতে পারে—পণ্যের উদ্দেশ্য অনুযায়ী।
 
-### ৭. দৈনন্দিন জীবনের একটি সহজ উদাহরণ
+জিভের নিচে রাখা (sublingual) ওষুধ মুখের ভেতরের আবরণী দিয়ে শোষিত হয়।
+
+### ৮. দৈনন্দিন জীবনের একটি সহজ উদাহরণ
 
 ধরুন, আপনি সাধারণ একটি oral pain-relief tablet খেলেন। প্রথমে ট্যাবলেটটি ভেঙে যায় এবং সক্রিয় উপাদান পরিপাকতন্ত্রের তরলে দ্রবীভূত হয়। এরপর ওষুধ অন্ত্রের আবরণী অতিক্রম করে রক্তে প্রবেশ করে। রক্তের মাধ্যমে এটি বিভিন্ন টিস্যুতে পৌঁছে কাজ করতে পারে। পরে শরীর ওষুধটিকে metabolise ও eliminate করে।
 
@@ -519,12 +530,21 @@ Bioavailability বলতে সক্রিয় ওষুধ কত দ্র
 
 পরিপাকতন্ত্র থেকে শোষিত হওয়ার পর সাধারণ রক্তপ্রবাহে পৌঁছানোর আগে অন্ত্রের দেয়াল বা লিভারে ওষুধের metabolism হওয়াকে first-pass metabolism বলে।
 
+#### প্যাসিভ ডিফিউশন কী?
+
+এটি ওষুধের কোষপর্দা পেরোনোর সবচেয়ে সাধারণ উপায়। শক্তি খরচ ছাড়াই অণু বেশি ঘনত্বের জায়গা থেকে কম ঘনত্বের দিকে চলে যায়।
+
+#### শিরায় দেওয়া ওষুধ আর ট্যাবলেট আলাদাভাবে কাজ করে কেন?
+
+শিরায় (IV) দেওয়া ওষুধ সরাসরি রক্তে যায়, তাই এর bioavailability ১০০% এবং শোষণ বা first-pass metabolism-এর ধাপ নেই। ট্যাবলেটকে আগে দ্রবীভূত হতে হয়, শোষিত হতে হয় এবং যকৃৎ পার হতে হয়।
+
 ### তথ্যসূত্র ও আরও পড়ুন
 
-- NCBI Bookshelf, StatPearls. Pharmacokinetics.
-- NCBI Bookshelf. Bookshelf: Biomedical literature and pharmacology resources.
-- U.S. Food and Drug Administration. Drugs: FDA information and resources.
-- Merck Manual Professional. Overview of Pharmacokinetics.
+- Alagga AA, Pellegrini MV, Gupta V. Drug Absorption. StatPearls (NCBI Bookshelf), updated 27 February 2024. www.ncbi.nlm.nih.gov — mechanisms of absorption, small intestine, bioavailability.
+- First-Pass Effect. StatPearls (NCBI Bookshelf). www.ncbi.nlm.nih.gov — first-pass metabolism and routes that bypass it.
+- Pharmacokinetics. StatPearls (NCBI Bookshelf). www.ncbi.nlm.nih.gov — absorption within pharmacokinetics.
+- MSD Manual Professional Edition. Drug Absorption (reviewed August 2026). www.msdmanuals.com — drugs must be in solution, passive diffusion, transporters, routes.
+- Merck Manual Professional Edition. Overview of Pharmacokinetics. www.merckmanuals.com — general overview.
 
 সম্পাদকীয় নোট: এটি একটি প্রাথমিক ধারণা দেওয়ার জন্য লেখা। প্রতিটি ওষুধের শোষণ সম্পর্কিত নির্দিষ্ট তথ্য অনুমোদিত product information থেকে যাচাই করা উচিত।
 
@@ -535,7 +555,7 @@ Bioavailability বলতে সক্রিয় ওষুধ কত দ্র
 
 ### Drug Absorption: How Does Medicine Enter the Bloodstream?
 URL: https://sayedulabrar.site/blog/drug-absorption-how-medicine-enters-bloodstream/ · Language: English · Published: 2026-11-13 · Author: Sayedul Abrar, pharmacist
-Summary: Learn how a medicine moves from its administration site into the bloodstream. A simple guide to tablet disintegration, dissolution, intestinal absorption, bioavailability and first-pass metabolism.
+Summary: How does medicine enter the bloodstream? A pharmacist explains drug absorption with diagrams: dissolution, villi, diffusion, first-pass and bioavailability.
 
 By Sayedul Abrar, pharmacist · Published 13 November 2026
 
@@ -571,7 +591,14 @@ No. The site and extent of absorption depend on the medicine and its formulation
 
 For example, an enteric-coated tablet is designed to resist breaking down in the stomach and release its medicine further along the gastrointestinal tract. This is a formulation feature, not a guarantee that all of the drug will be absorbed.
 
-### 4. What is bioavailability?
+### 4. How do medicine molecules cross the gut wall?
+
+Dissolved molecules still have to pass through the cells that line the gut. The outer layer of each cell, the cell membrane, is made of fat-like (lipid) molecules. Medicines cross it mainly in two ways:
+- Passive diffusion: the most common way. Molecules move from where there is more drug (the gut) to where there is less (the blood), without using energy. Fat-soluble, un-ionised molecules cross most easily.
+- Carrier-mediated transport: special proteins in the membrane carry certain molecules across. Active transport uses energy and can move a drug against its concentration gradient. These carriers can become saturated, and similar drugs can compete for them.
+Some proteins work in the opposite direction. Efflux pumps such as P-glycoprotein push some drugs back into the gut, which can reduce how much is absorbed.
+
+### 5. What is bioavailability?
 
 Bioavailability describes the rate and extent to which the active ingredient reaches the systemic circulation. For an intravenous injection, bioavailability is 100% because the drug is placed directly into the bloodstream. For an oral medicine, the amount reaching the systemic circulation may be lower.
 
@@ -579,7 +606,9 @@ Why? Some of the dose may not be absorbed, and some may be metabolised in the in
 
 Remember: Absorption and bioavailability are related, but they are not exactly the same. Bioavailability also reflects losses before the drug reaches systemic circulation.
 
-### 5. What can affect drug absorption?
+Here is the route behind first-pass metabolism. Blood leaving the intestine does not go straight to the rest of the body. It first travels through the portal vein to the liver. Some of the drug can be broken down in the gut wall and the liver on this first pass, so less active drug reaches the general circulation. A medicine given into a vein skips this step, and some medicines absorbed under the tongue, such as nitroglycerin, can bypass much of it.
+
+### 6. What can affect drug absorption?
 
 - Dosage form: A solution, ordinary tablet, capsule, enteric-coated tablet and modified-release product can behave differently.
 - Food: Food may delay, reduce or sometimes increase the absorption of particular medicines. The effect is medicine-specific.
@@ -588,11 +617,13 @@ Remember: Absorption and bioavailability are related, but they are not exactly t
 - Other medicines: Some medicines interact by changing stomach acidity, binding another drug or altering gut movement.
 - Route of administration: Oral, inhaled, topical, sublingual, intramuscular and intravenous routes have different absorption patterns.
 
-### 6. Do all routes need an absorption step?
+### 7. Do all routes need an absorption step?
 
 Not in the same way. An intravenous medicine enters the bloodstream directly, so it does not need to be absorbed from another site first. Intramuscular and subcutaneous injections must move from the injection site into the circulation. Inhaled medicines are deposited in the respiratory tract, while topical medicines are intended to act on or pass through the skin depending on the product.
 
-### 7. A simple example from everyday medicine use
+Medicines placed under the tongue (sublingual) are absorbed through the lining of the mouth.
+
+### 8. A simple example from everyday medicine use
 
 Imagine taking a standard oral pain-relief tablet. The tablet first breaks apart and the active ingredient dissolves in gastrointestinal fluid. The dissolved drug then crosses the gut lining and enters the blood. It can travel to tissues where it produces its effect. The body later metabolises and eliminates the drug.
 
@@ -628,16 +659,21 @@ No. Food can reduce, delay, increase or have little effect on absorption dependi
 
 It is the metabolism of a drug in the gut wall or liver after absorption from the gastrointestinal tract but before it reaches the general circulation.
 
+#### What is passive diffusion?
+
+It is the most common way medicines cross cell membranes. Molecules move from an area of higher concentration to an area of lower concentration without using energy.
+
+#### Why does a medicine given into a vein work differently from a tablet?
+
+An intravenous (IV) medicine goes straight into the bloodstream, so its bioavailability is 100% and there is no absorption or first-pass step. A tablet must dissolve, be absorbed and pass the liver first.
+
 ### References and further reading
 
-- NCBI Bookshelf, StatPearls. Pharmacokinetics.
-
-- NCBI Bookshelf. Bookshelf: Biomedical literature and pharmacology resources.
-
-- U.S. Food and Drug Administration. Drugs: FDA information and resources.
-
-- Merck Manual Professional. Overview of Pharmacokinetics.
-
+- Alagga AA, Pellegrini MV, Gupta V. Drug Absorption. StatPearls (NCBI Bookshelf), updated 27 February 2024. www.ncbi.nlm.nih.gov — mechanisms of absorption, small intestine, bioavailability.
+- First-Pass Effect. StatPearls (NCBI Bookshelf). www.ncbi.nlm.nih.gov — first-pass metabolism and routes that bypass it.
+- Pharmacokinetics. StatPearls (NCBI Bookshelf). www.ncbi.nlm.nih.gov — absorption within pharmacokinetics.
+- MSD Manual Professional Edition. Drug Absorption (reviewed August 2026). www.msdmanuals.com — drugs must be in solution, passive diffusion, transporters, routes.
+- Merck Manual Professional Edition. Overview of Pharmacokinetics. www.merckmanuals.com — general overview.
 Editorial note: This article gives a simplified introduction. Absorption characteristics should be checked in the approved product information for each medicine.
 
 Educational disclaimer: This article is for general learning and is not personal medical advice. Do not change a medicine or dose based only on this article. Consult a qualified healthcare professional.
