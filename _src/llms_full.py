@@ -41,5 +41,15 @@ for date, slug, s in arts:
     body = re.split(r"\n#+ (?:Sayedul Abrar|Continue learning|আরও পড়ুন)\n", body)[0]
     out += [f"### {t}", f"URL: {B}/blog/{slug}/ · Language: {lang} · Published: {date} · Author: Sayedul Abrar, pharmacist",
             f"Summary: {meta(s, 'description')}", "", body, "", "---", ""]
+out.append("## Product profiles and FAQs (independent educational overviews)\n")
+for slug in ("finix", "finix-mups", "finix-hp", "malifa"):
+    p = R / "brands" / slug / "index.html"
+    if not p.exists(): continue
+    s = p.read_text(encoding="utf-8")
+    t = re.sub(r"\s*\|\s*Sayedul Abrar\s*$", "", html.unescape(re.search(r"<title>(.*?)</title>", s, re.S).group(1))).strip()
+    faqs = re.findall(r'<details class="drug-faq"[^>]*><summary>(.*?)</summary><p>(.*?)</p></details>', s, re.S)
+    out += [f"### {t}", f"URL: {B}/brands/{slug}/ · Author: Sayedul Abrar, pharmacist", f"Summary: {meta(s, 'description')}", ""]
+    out += [f"Q: {html.unescape(q)}\nA: {html.unescape(a)}\n" for q, a in faqs]
+    out += ["---", ""]
 (R / "llms-full.txt").write_text("\n".join(out), encoding="utf-8")
 print("llms-full.txt", len(arts), "articles", (R / "llms-full.txt").stat().st_size, "bytes")

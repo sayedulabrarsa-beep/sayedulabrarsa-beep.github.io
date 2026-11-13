@@ -1,0 +1,116 @@
+{
+  "_note": "Extra FAQs for brand pages, injected by _src/brand_faq_inject.py. Answers are plain text so the FAQPage schema matches the visible text exactly. Sources are listed per page. Drafted 13 Nov 2026; medical/regulatory review pending.",
+  "finix": {
+    "title": "Finix 20 mg (Rabeprazole): Uses, Dose & FAQ | Sayedul Abrar",
+    "description": "Finix 20 mg (rabeprazole sodium, Opsonin Pharma): uses, how and when to take it, course length, side effects, interactions and FAQs in English and Bangla, by pharmacist Sayedul Abrar.",
+    "en": [
+      ["What is Finix 20 mg used for?", "Finix 20 mg contains rabeprazole sodium, a proton pump inhibitor (PPI) that lowers stomach acid. Rabeprazole labels list healing and maintenance of erosive or ulcerative GERD, symptomatic GERD (heartburn), healing of duodenal ulcers, H. pylori eradication together with two antibiotics, and Zollinger-Ellison syndrome. Your prescriber decides which use applies to you."],
+      ["Should Finix be taken before or after food?", "Swallow it whole with water, once a day at about the same time unless told otherwise. The US rabeprazole label says it can be taken with or without food for most uses, after the morning meal for duodenal ulcer, and with meals during H. pylori treatment. Follow the pack insert and your prescriber if their advice differs."],
+      ["How long can Finix be taken?", "It depends on the condition. Label courses are usually 4 to 8 weeks for healing erosive GERD and up to 4 weeks for symptomatic GERD or duodenal ulcer. Maintenance studies ran up to 12 months. Labels advise using the shortest course that suits the condition, so long-term use should be reviewed regularly by a doctor."],
+      ["What are the side effects of Finix?", "In US label trials the most common side effects were pain, sore throat, flatulence, infection and constipation, each in about 2 to 3 percent of adults. Long-term PPI use is linked with fractures, low magnesium, low vitamin B12 and C. difficile diarrhoea. Get medical help for severe diarrhoea, rash, blistering skin or signs of allergy."],
+      ["Which medicines interact with Finix?", "Rabeprazole must not be used with rilpivirine (an HIV medicine). It can raise warfarin effect, high-dose methotrexate levels, digoxin and tacrolimus exposure, and it can lower absorption of medicines that need stomach acid, such as ketoconazole, itraconazole, iron salts and mycophenolate. Tell your doctor or pharmacist about every medicine you take."],
+      ["How is rabeprazole different from omeprazole, esomeprazole or pantoprazole?", "All work the same way, by blocking the stomach's proton pump. Reviews describe rabeprazole as relying less on the CYP2C19 liver enzyme, so genetic differences affect it less, and as activating at a higher pH. Trials found 8-week healing similar to omeprazole 20 mg, while some network meta-analyses ranked esomeprazole 40 mg or vonoprazan higher for erosive oesophagitis. No PPI is best for everyone."],
+      ["Does Finix help gastritis?", "Gastritis has several causes, including H. pylori infection, painkillers such as NSAIDs and alcohol. A PPI may be prescribed to relieve acid-related symptoms, but H. pylori gastritis needs a full eradication course chosen by a doctor. Gastritis is not a listed indication on the US rabeprazole label, so treatment should follow a diagnosis."],
+      ["Can Finix be taken in pregnancy or while breastfeeding?", "The rabeprazole label reports no adequate human pregnancy data. Animal studies did not show harm to the unborn baby, which does not prove safety in people. It is not known whether rabeprazole passes into human breast milk. Use it in pregnancy or breastfeeding only if a doctor advises it."],
+      ["What is the price of Finix 20?", "The maximum retail price (MRP) is printed on every pack. Online pharmacy prices can differ from the printed MRP and can change, so check the pack or ask your pharmacist. This page does not list prices."]
+    ],
+    "bn_heading": "বাংলায় প্রশ্ন ও উত্তর",
+    "bn": [
+      ["Finix 20 এর কাজ কি?", "Finix 20-এ আছে র‍্যাবিপ্রাজল সোডিয়াম, যা প্রোটন পাম্প ইনহিবিটর (PPI) গ্রুপের ওষুধ। এটি পাকস্থলীতে অ্যাসিড তৈরি কমায়। র‍্যাবিপ্রাজলের লেবেলে GERD (অ্যাসিড রিফ্লাক্স রোগ), বুক জ্বালা, ডিওডেনাল আলসার এবং চিকিৎসকের দেওয়া H. pylori চিকিৎসায় এর ব্যবহার উল্লেখ আছে। এটি সব ধরনের গ্যাস বা পেট ফাঁপার ওষুধ নয়।"],
+      ["Finix খাওয়ার নিয়ম কী? খাবারের আগে না পরে?", "সাধারণত দিনে একবার, প্রতিদিন একই সময়ে পুরো ট্যাবলেট পানি দিয়ে গিলে খেতে হয়। চিবানো বা ভাঙা যাবে না। মার্কিন র‍্যাবিপ্রাজল লেবেল অনুযায়ী বেশিরভাগ ক্ষেত্রে খাবারের আগে বা পরে নেওয়া যায়, ডিওডেনাল আলসারে সকালের খাবারের পরে এবং H. pylori চিকিৎসায় খাবারের সাথে। প্যাকের লিফলেট বা চিকিৎসকের নির্দেশ আলাদা হলে সেটিই মানুন।"],
+      ["Finix কতদিন খাওয়া যায়?", "রোগভেদে মেয়াদ আলাদা। ক্ষতযুক্ত GERD সারাতে সাধারণত ৪ থেকে ৮ সপ্তাহ, আর উপসর্গভিত্তিক GERD বা ডিওডেনাল আলসারে সাধারণত ৪ সপ্তাহ পর্যন্ত। লেবেল প্রয়োজনের সবচেয়ে কম সময় ব্যবহারের পরামর্শ দেয়, তাই দীর্ঘদিন খেতে হলে চিকিৎসক নিয়মিত পুনর্মূল্যায়ন করবেন।"],
+      ["Finix-এর পার্শ্বপ্রতিক্রিয়া কী?", "মার্কিন লেবেলের গবেষণায় সবচেয়ে বেশি দেখা গেছে ব্যথা, গলা ব্যথা, পেটে গ্যাস, সংক্রমণ ও কোষ্ঠকাঠিন্য, প্রতিটি প্রায় ২ থেকে ৩ শতাংশ প্রাপ্তবয়স্কের মধ্যে। দীর্ঘদিন PPI ব্যবহারে হাড় ভাঙার ঝুঁকি, ম্যাগনেসিয়াম ও ভিটামিন B12 কমে যাওয়া এবং C. difficile ডায়রিয়ার ঝুঁকি বাড়তে পারে। তীব্র ডায়রিয়া, র‍্যাশ বা অ্যালার্জি হলে দ্রুত চিকিৎসকের কাছে যান।"],
+      ["গর্ভাবস্থায় বা বুকের দুধ খাওয়ানোর সময় Finix খাওয়া যাবে?", "মানুষের গর্ভাবস্থায় পর্যাপ্ত তথ্য নেই। প্রাণী গবেষণায় ভ্রূণের ক্ষতি দেখা যায়নি, তবে এটি মানুষের জন্য নিরাপত্তার প্রমাণ নয়। র‍্যাবিপ্রাজল মায়ের দুধে যায় কি না জানা নেই। এই সময়ে শুধু চিকিৎসকের পরামর্শে খাবেন।"]
+    ],
+    "refs": [
+      ["ACIPHEX (rabeprazole sodium) prescribing information, DailyMed, US National Library of Medicine (updated Jan 2026)", "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1eb38279-0237-4967-be7a-c53a826c1138"],
+      ["Pace F, et al. A review of rabeprazole in the treatment of acid-related diseases. Ther Clin Risk Manag. 2007", "https://pmc.ncbi.nlm.nih.gov/articles/PMC2386363/"],
+      ["Dadabhai A, Friedenberg FK. Rabeprazole: a pharmacologic and clinical review for acid-related disorders. Expert Opin Drug Saf. 2009", "https://doi.org/10.1517/14740330802622892"],
+      ["Al Hayek M, et al. P-CABs and PPIs for erosive esophagitis: a network meta-analysis. eClinicalMedicine. 2026", "https://doi.org/10.1016/j.eclinm.2026.103807"],
+      ["Li MJ, et al. FDA-licensed PPIs for erosive esophagitis: a network meta-analysis. Medicine (Baltimore). 2017", "https://doi.org/10.1097/MD.0000000000008120"]
+    ],
+    "related": [["When to Take a PPI: Before Meals and Common Mistakes", "/blog/when-to-take-ppi-before-meals/"], ["Heartburn vs Acid Reflux vs GERD", "/blog/heartburn-vs-acid-reflux-vs-gerd/"]]
+  },
+  "finix-mups": {
+    "title": "Finix MUPS 20 (Rabeprazole): Uses, Dose & FAQ | Sayedul Abrar",
+    "description": "Finix MUPS 20 mg (rabeprazole sodium MUPS tablet, Opsonin Pharma): what MUPS means, uses, how to take it, side effects and FAQs in English and Bangla, by pharmacist Sayedul Abrar.",
+    "en": [
+      ["What is Finix MUPS 20 used for?", "Finix MUPS 20 contains rabeprazole sodium 20 mg, a proton pump inhibitor that lowers stomach acid. The manufacturer lists healing and maintenance of erosive or ulcerative GERD, symptomatic GERD, healing of gastric and duodenal ulcers, pathological hypersecretory conditions such as Zollinger-Ellison syndrome, and H. pylori eradication with amoxicillin and clarithromycin."],
+      ["How is Finix MUPS different from the Finix 20 tablet or capsule?", "Both contain the same medicine at the same strength, rabeprazole 20 mg. The difference is the formulation: in a MUPS tablet the dose is spread across many small coated pellets, while a standard enteric-coated tablet has a single coated core. This page does not cite a head-to-head clinical trial between the two, so it makes no claim that one works better."],
+      ["Can Finix MUPS be chewed, crushed or dispersed in water?", "Do not chew or crush it. The coating on each pellet protects rabeprazole from stomach acid, and breaking it can reduce how well the medicine works. Swallow the tablet whole with water unless the Finix MUPS insert says it may be dispersed. If swallowing is difficult, ask your pharmacist."],
+      ["When should Finix MUPS be taken?", "Usually once a day at about the same time, as the prescriber directs. For duodenal ulcer, rabeprazole is usually taken after the morning meal, and during H. pylori treatment it is taken twice daily with meals. For most other uses the US rabeprazole label allows it with or without food."],
+      ["What are the side effects of Finix MUPS?", "Side effects are usually mild: headache, diarrhoea or constipation, abdominal pain, nausea and flatulence. Long-term PPI use is linked with fractures, low magnesium, low vitamin B12 and C. difficile diarrhoea. Seek medical help for severe or persistent diarrhoea, skin reactions or signs of allergy."],
+      ["Is it safe to take Finix MUPS for a long time?", "Some people need long-term acid suppression, for example after healed erosive GERD, but labels advise the shortest course that suits the condition. Long-term users should have their need reviewed regularly. Stopping after long use can cause rebound acid symptoms, so ask your doctor before stopping."],
+      ["Is rabeprazole better than omeprazole or esomeprazole?", "Rabeprazole relies less on the CYP2C19 liver enzyme than some other PPIs and activates at a higher pH. Clinical trials found healing rates similar to omeprazole 20 mg, while some network meta-analyses ranked esomeprazole 40 mg or vonoprazan higher for erosive oesophagitis. The right choice depends on the patient, so no PPI is best for everyone."]
+    ],
+    "bn_heading": "বাংলায় প্রশ্ন ও উত্তর",
+    "bn": [
+      ["Finix MUPS 20 এর কাজ কি?", "Finix MUPS 20 হলো র‍্যাবিপ্রাজল সোডিয়াম ২০ মি.গ্রা.-এর একটি MUPS ট্যাবলেট, যা পাকস্থলীর অ্যাসিড কমায়। প্রস্তুতকারকের তথ্য অনুযায়ী এটি GERD, বুক জ্বালা, গ্যাস্ট্রিক ও ডিওডেনাল আলসার এবং চিকিৎসকের দেওয়া H. pylori চিকিৎসায় ব্যবহৃত হয়।"],
+      ["MUPS মানে কী?", "MUPS মানে Multiple-Unit Pellet System। এতে একটি ট্যাবলেটের ভেতরে অনেকগুলো আবরণযুক্ত ছোট দানা থাকে, প্রতিটি দানায় ওষুধের একটি অংশ থাকে। আবরণটি ওষুধকে পাকস্থলীর অ্যাসিড থেকে রক্ষা করে।"],
+      ["Finix MUPS আর সাধারণ Finix 20-এর পার্থক্য কী?", "দুটিতেই একই ওষুধ, র‍্যাবিপ্রাজল ২০ মি.গ্রা.। পার্থক্য শুধু গঠনে: MUPS-এ ডোজ অনেকগুলো আবরণযুক্ত দানায় ভাগ করা থাকে, আর সাধারণ ট্যাবলেটে একটি আবরণযুক্ত কোর থাকে। এই পেজে দুটির সরাসরি তুলনামূলক কোনো ক্লিনিক্যাল ট্রায়াল উল্লেখ নেই, তাই কোনটি বেশি কার্যকর সে দাবি করা হচ্ছে না।"],
+      ["Finix MUPS খাওয়ার নিয়ম কী?", "সাধারণত দিনে একবার, প্রতিদিন একই সময়ে পুরো ট্যাবলেট পানি দিয়ে গিলে খেতে হয়। চিবানো বা গুঁড়া করা যাবে না, কারণ দানার আবরণ নষ্ট হলে ওষুধের কার্যকারিতা কমতে পারে। ডিওডেনাল আলসারে সাধারণত সকালের খাবারের পরে। লিফলেট বা চিকিৎসকের নির্দেশ আলাদা হলে সেটিই মানুন।"],
+      ["Finix MUPS-এর পার্শ্বপ্রতিক্রিয়া কী?", "সাধারণত হালকা: মাথাব্যথা, ডায়রিয়া বা কোষ্ঠকাঠিন্য, পেটব্যথা, বমিভাব ও পেটে গ্যাস। দীর্ঘদিন ব্যবহারে হাড় ভাঙার ঝুঁকি, ম্যাগনেসিয়াম ও ভিটামিন B12 কমে যাওয়া এবং C. difficile ডায়রিয়ার ঝুঁকি বাড়তে পারে। তীব্র ডায়রিয়া, ত্বকে প্রতিক্রিয়া বা অ্যালার্জি হলে দ্রুত চিকিৎসকের কাছে যান।"]
+    ],
+    "refs": [
+      ["ACIPHEX (rabeprazole sodium) prescribing information, DailyMed, US National Library of Medicine (updated Jan 2026)", "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1eb38279-0237-4967-be7a-c53a826c1138"],
+      ["Pace F, et al. A review of rabeprazole in the treatment of acid-related diseases. Ther Clin Risk Manag. 2007", "https://pmc.ncbi.nlm.nih.gov/articles/PMC2386363/"],
+      ["Al Hayek M, et al. P-CABs and PPIs for erosive esophagitis: a network meta-analysis. eClinicalMedicine. 2026", "https://doi.org/10.1016/j.eclinm.2026.103807"],
+      ["Yang S, et al. PPIs versus vonoprazan in erosive esophagitis: a network meta-analysis. Medicine (Baltimore). 2022", "https://doi.org/10.1097/MD.0000000000031807"]
+    ],
+    "related": [["When to Take a PPI: Before Meals and Common Mistakes", "/blog/when-to-take-ppi-before-meals/"], ["Finix (rabeprazole) product profile", "/brands/finix/"]]
+  },
+  "finix-hp": {
+    "title": "Finix HP: H. pylori Kit Uses, Course & FAQ | Sayedul Abrar",
+    "description": "Finix HP (rabeprazole, amoxicillin and clarithromycin, Opsonin Pharma): what is in the pack, course length, side effects, penicillin allergy, resistance in Bangladesh and FAQs in English and Bangla.",
+    "en": [
+      ["What is in the Finix HP pack?", "Finix HP combines three medicines: rabeprazole sodium 20 mg tablets, amoxicillin 500 mg capsules and clarithromycin 500 mg tablets. The manufacturer insert describes seven sachets per carton, each holding one combination blister. Take the medicines exactly as the pack and your prescriber direct."],
+      ["How long is a Finix HP course?", "Take the full course your doctor prescribes, even if you feel better after a few days. The US rabeprazole label describes a 7-day course of rabeprazole, amoxicillin and clarithromycin, each taken twice daily with morning and evening meals. Stopping early or missing doses lowers the chance of clearing H. pylori and encourages antibiotic resistance."],
+      ["What side effects can Finix HP cause?", "Diarrhoea, nausea, a bitter or metallic taste and headache are among the more common effects of this kind of combination. Get urgent help for rash, swelling of the face or throat, or breathing difficulty. Severe or bloody diarrhoea, during or after treatment, also needs prompt medical review."],
+      ["Can I take Finix HP if I am allergic to penicillin?", "No. Amoxicillin is a penicillin antibiotic, so Finix HP must not be used by anyone with a penicillin allergy. Tell your doctor about any past reaction to antibiotics so they can choose a different regimen."],
+      ["Which medicines should not be taken with Finix HP?", "Clarithromycin interacts with many medicines. Its label lists some statins (simvastatin and lovastatin), colchicine in people with kidney or liver problems, pimozide and ergot medicines as combinations to avoid, and it can affect heart rhythm. Rabeprazole must not be used with rilpivirine. Show your doctor or pharmacist everything you take before starting."],
+      ["How do I know whether H. pylori has been cleared?", "International guidance (Maastricht VI/Florence, 2022) recommends a follow-up test, such as a urea breath test or stool antigen test, at least 4 weeks after finishing treatment. PPIs such as rabeprazole should be stopped about 2 weeks before the test, because they can cause a false negative result. Your doctor will arrange this."],
+      ["Does clarithromycin-based triple therapy work well in Bangladesh?", "Resistance matters. A Dhaka study found clarithromycin resistance in 39 percent of H. pylori samples, and a 2026 review of Bangladeshi studies reported rising resistance. Maastricht VI guidance advises against clarithromycin triple therapy without susceptibility testing where resistance is above about 15 percent. Your doctor weighs this when choosing a regimen."]
+    ],
+    "bn_heading": "বাংলায় প্রশ্ন ও উত্তর",
+    "bn": [
+      ["Finix HP কী এবং কখন দেওয়া হয়?", "Finix HP একটি কম্বিনেশন প্যাক, যাতে আছে র‍্যাবিপ্রাজল ২০ মি.গ্রা. ট্যাবলেট, অ্যামোক্সিসিলিন ৫০০ মি.গ্রা. ক্যাপসুল ও ক্ল্যারিথ্রোমাইসিন ৫০০ মি.গ্রা. ট্যাবলেট। পরীক্ষায় H. pylori জীবাণু ধরা পড়লে গ্যাস্ট্রিক বা ডিওডেনাল আলসারের চিকিৎসায় চিকিৎসক এটি দেন। সাধারণ অ্যাসিডিটি বা গ্যাসের জন্য এটি নয়।"],
+      ["Finix HP কতদিন খেতে হয়?", "চিকিৎসক যতদিন বলেন, পুরো কোর্স শেষ করুন, কয়েক দিনে ভালো লাগলেও। মার্কিন র‍্যাবিপ্রাজল লেবেলে এই তিন ওষুধের কোর্স ৭ দিনের, প্রতিটি দিনে দুইবার সকাল ও রাতের খাবারের সাথে। মাঝপথে থামালে জীবাণু থেকে যেতে পারে এবং অ্যান্টিবায়োটিক রেজিস্ট্যান্স বাড়ে।"],
+      ["পেনিসিলিনে অ্যালার্জি থাকলে Finix HP খাওয়া যাবে?", "না। অ্যামোক্সিসিলিন একটি পেনিসিলিন জাতীয় অ্যান্টিবায়োটিক, তাই পেনিসিলিনে অ্যালার্জি থাকলে Finix HP খাওয়া যাবে না। আগে কোনো অ্যান্টিবায়োটিকে প্রতিক্রিয়া হয়ে থাকলে চিকিৎসককে জানান।"],
+      ["চিকিৎসার পর H. pylori গেছে কি না কীভাবে বুঝব?", "আন্তর্জাতিক নির্দেশিকা (Maastricht VI, ২০২২) অনুযায়ী চিকিৎসা শেষের অন্তত ৪ সপ্তাহ পরে ইউরিয়া ব্রেথ টেস্ট বা স্টুল অ্যান্টিজেন টেস্ট করা উচিত। পরীক্ষার প্রায় ২ সপ্তাহ আগে র‍্যাবিপ্রাজলের মতো PPI বন্ধ রাখতে হয়, নইলে ভুল নেগেটিভ ফল আসতে পারে।"],
+      ["বাংলাদেশে কি এই চিকিৎসা ভালো কাজ করে?", "অ্যান্টিবায়োটিক রেজিস্ট্যান্স একটি বড় বিষয়। ঢাকার একটি গবেষণায় ৩৯ শতাংশ H. pylori নমুনায় ক্ল্যারিথ্রোমাইসিন রেজিস্ট্যান্স পাওয়া গেছে। আন্তর্জাতিক নির্দেশিকা বলে, যেখানে রেজিস্ট্যান্স প্রায় ১৫ শতাংশের বেশি, সেখানে সংবেদনশীলতা পরীক্ষা ছাড়া ক্ল্যারিথ্রোমাইসিন-ভিত্তিক চিকিৎসা এড়ানো ভালো। কোন চিকিৎসা উপযুক্ত তা চিকিৎসক ঠিক করবেন।"]
+    ],
+    "refs": [
+      ["Malfertheiner P, et al. Management of Helicobacter pylori infection: the Maastricht VI/Florence consensus report. Gut. 2022", "https://doi.org/10.1136/gutjnl-2022-327745"],
+      ["Aftab H, et al. Helicobacter pylori antibiotic susceptibility patterns in Bangladesh. J Infect Dev Ctries. 2016", "https://doi.org/10.3855/jidc.7713"],
+      ["Islam MK, et al. H. pylori antibiotic resistance in Bangladesh: a scoping review. Trop Med Int Health. 2026", "https://doi.org/10.1111/tmi.70129"],
+      ["ACIPHEX (rabeprazole sodium) prescribing information, DailyMed, US National Library of Medicine (updated Jan 2026)", "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1eb38279-0237-4967-be7a-c53a826c1138"]
+    ],
+    "related": [["Why You Must Complete an Antibiotic Course", "/blog/why-complete-antibiotic-course-antibiotic-resistance/"], ["Finix (rabeprazole) product profile", "/brands/finix/"]]
+  },
+  "malifa": {
+    "title": "Malifa 30 Ferric Maltol: Uses, Dose & FAQ | Sayedul Abrar",
+    "description": "Malifa 30 mg capsule (ferric maltol, Navana Pharmaceuticals): uses, dose, how it compares with ferrous iron, food and PPI interactions, side effects and FAQs in English and Bangla, by pharmacist Sayedul Abrar.",
+    "en": [
+      ["How is ferric maltol different from ferrous sulfate tablets?", "Ferric maltol is iron in the ferric form, bound to maltol, a sugar-derived molecule. Ferrous salts such as ferrous sulfate are the usual oral iron. Ferric maltol was studied in people with inflammatory bowel disease who could not tolerate ferrous iron, and it raised haemoglobin compared with placebo. Digestive side effects can still occur."],
+      ["How quickly does Malifa raise haemoglobin?", "Iron works gradually. In clinical trials of ferric maltol, haemoglobin rose over the first weeks and results were judged at 12 to 16 weeks. Treatment usually continues until iron stores (ferritin) are normal. Your doctor will repeat blood tests to check progress."],
+      ["Can Malifa be taken with tea, milk or food?", "It is best taken on an empty stomach, at least 1 hour before or 2 hours after a meal, because food lowers iron absorption. Tea, coffee and dairy can also reduce absorption, so keep them apart from the dose."],
+      ["Can Malifa be taken with Finix or another PPI?", "Antacids and proton pump inhibitors such as rabeprazole (Finix) can reduce iron absorption by changing stomach acidity, so the listing advises avoiding them together where possible. Do not stop either medicine on your own. Ask your doctor whether the doses can be spaced or whether both are needed."],
+      ["Why does Malifa make stools dark?", "Discoloured or dark stools are a common, expected effect of iron. Dark stools from iron can affect stool tests for hidden blood, so tell the lab you take iron. See a doctor quickly if stools are black and sticky together with weakness, dizziness or abdominal pain, because this can mean bleeding."],
+      ["Can Malifa be taken during pregnancy?", "After oral use, ferric maltol is not absorbed into the blood as the intact complex, so exposure of the baby is not expected, according to the listing. The Bangladesh listing is for adults with iron deficiency, so pregnant or breastfeeding women should take it only if a doctor recommends it."]
+    ],
+    "bn_heading": "বাংলায় প্রশ্ন ও উত্তর",
+    "bn": [
+      ["Malifa 30 এর কাজ কি?", "Malifa 30 ক্যাপসুলে আছে ৩০ মি.গ্রা. ফেরিক মালটল, যা মুখে খাওয়ার আয়রন। Navana Pharmaceuticals-এর তথ্য অনুযায়ী এটি প্রাপ্তবয়স্কদের আয়রনের ঘাটতির চিকিৎসায় ব্যবহৃত হয়।"],
+      ["Malifa খাওয়ার নিয়ম কী?", "তালিকাভুক্ত ডোজ দিনে দুইবার ৩০ মি.গ্রা., খালি পেটে, খাবারের অন্তত ১ ঘণ্টা আগে বা ২ ঘণ্টা পরে। ক্যাপসুল খোলা, ভাঙা বা চিবানো যাবে না। চা, কফি ও দুধ আয়রনের শোষণ কমায়, তাই এগুলো ডোজের সময় থেকে দূরে রাখুন।"],
+      ["Malifa খেলে পায়খানা কালো হয় কেন?", "আয়রন খেলে পায়খানার রং গাঢ় বা কালো হওয়া একটি সাধারণ ও প্রত্যাশিত প্রভাব। তবে কালো আঠালো পায়খানার সাথে দুর্বলতা, মাথা ঘোরা বা পেটব্যথা থাকলে এটি রক্তক্ষরণের লক্ষণ হতে পারে, তখন দ্রুত চিকিৎসকের কাছে যান।"],
+      ["Malifa আর Finix একসাথে খাওয়া যায়?", "Finix-এর মতো PPI এবং অ্যান্টাসিড পাকস্থলীর অ্যাসিড কমিয়ে আয়রনের শোষণ কমাতে পারে, তাই তালিকায় সম্ভব হলে একসাথে না খাওয়ার পরামর্শ আছে। নিজে থেকে কোনো ওষুধ বন্ধ করবেন না, চিকিৎসককে জিজ্ঞেস করুন।"],
+      ["Malifa কতদিন খেতে হয়?", "সাধারণত অন্তত ১২ সপ্তাহ, এবং আয়রনের মজুদ (ফেরিটিন) স্বাভাবিক না হওয়া পর্যন্ত। চিকিৎসক রক্ত পরীক্ষা করে সময় ঠিক করবেন।"]
+    ],
+    "refs": [
+      ["Schmidt C, et al. Ferric maltol therapy for iron deficiency anaemia in IBD: long-term extension data. Aliment Pharmacol Ther. 2016", "https://doi.org/10.1111/apt.13665"],
+      ["Howaldt S, et al. Oral ferric maltol vs intravenous ferric carboxymaltose in IBD: a randomized noninferiority trial. Inflamm Bowel Dis. 2022", "https://doi.org/10.1093/ibd/izab073"],
+      ["Pergola PE, Kopyt NP. Oral ferric maltol for iron-deficiency anemia in CKD: a randomized trial. Am J Kidney Dis. 2021", "https://doi.org/10.1053/j.ajkd.2021.03.020"]
+    ],
+    "related": [["How to Take Iron Tablets Properly", "/blog/how-to-take-iron-tablets-properly/"], ["Iron Deficiency vs Anemia", "/blog/iron-deficiency-vs-anemia/"]]
+  }
+}
