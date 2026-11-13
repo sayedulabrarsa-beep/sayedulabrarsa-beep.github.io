@@ -424,6 +424,227 @@ Educational disclaimer: This article is for general learning and is not personal
 
 ---
 
+### ওষুধের শোষণ: ওষুধ কীভাবে রক্তে প্রবেশ করে?
+URL: https://sayedulabrar.site/blog/drug-absorption-how-medicine-enters-bloodstream-bangla/ · Language: Bangla · Published: 2026-11-13 · Author: Sayedul Abrar, pharmacist
+Summary: ওষুধ কীভাবে গ্রহণের স্থান থেকে রক্তপ্রবাহে পৌঁছায় তা সহজ বাংলায় জানুন। ট্যাবলেট ভাঙা, দ্রবীভূত হওয়া, অন্ত্র দিয়ে শোষণ, bioavailability ও first-pass metabolism ব্যাখ্যা করা হয়েছে।
+
+লেখক: Sayedul Abrar, ফার্মাসিস্ট · প্রকাশিত ১৩ নভেম্বর ২০২৬
+
+সহজ উত্তর: Drug absorption বা ওষুধের শোষণ হলো ওষুধ গ্রহণের স্থান থেকে রক্তপ্রবাহে প্রবেশের প্রক্রিয়া। মুখে খাওয়া অনেক ওষুধের ক্ষেত্রে প্রথমে ট্যাবলেট ভাঙে, সক্রিয় উপাদান তরলে দ্রবীভূত হয়, এরপর অন্ত্রের দেয়াল অতিক্রম করে রক্তে প্রবেশ করে।
+
+আপনি যখন একটি ট্যাবলেট খান, সেটি কি সরাসরি রক্তে চলে যায়? না। রক্তে পৌঁছানোর আগে সাধারণত কয়েকটি ধাপ সম্পন্ন হয়। চলুন সহজভাবে বুঝে নিই।
+
+### ১. Drug absorption বা ওষুধের শোষণ কী?
+
+ওষুধের শোষণ হলো ওষুধ যে স্থান থেকে দেওয়া হয়েছে, সেখান থেকে রক্তে প্রবেশের প্রক্রিয়া। এটি Pharmacokinetics-এর একটি গুরুত্বপূর্ণ অংশ। Pharmacokinetics ব্যাখ্যা করে শরীর একটি ওষুধের সঙ্গে কীভাবে আচরণ করে।
+
+ওষুধ গ্রহণের পথ অনুযায়ী শোষণ ভিন্ন হয়। মুখে খাওয়া ট্যাবলেট, ইনহেলার, ইনজেকশন এবং ত্বকে লাগানোর ওষুধ একইভাবে শরীরে প্রবেশ করে না।
+
+### ২. ট্যাবলেট খাওয়ার পর কী ঘটে?
+
+সাধারণ অনেক oral tablet-এর ক্ষেত্রে তিনটি ধাপ মনে রাখা যায়:
+
+#### ধাপ ১: Disintegration — ট্যাবলেট ভেঙে যাওয়া
+
+পাকস্থলী বা অন্ত্রের তরলের সংস্পর্শে এসে ট্যাবলেট ছোট ছোট কণায় ভেঙে যায়। এই প্রক্রিয়াকে Disintegration বলে। ক্যাপসুলের খোলস খুলে ভেতরের উপাদান বের হতে পারে। তবে modified-release ওষুধ পরিকল্পিতভাবে ভিন্ন আচরণ করে।
+
+#### ধাপ ২: Dissolution — দ্রবীভূত হওয়া
+
+ওষুধের কণাগুলো পরিপাকতন্ত্রের তরলে দ্রবীভূত হয়। সাধারণত সক্রিয় উপাদান দ্রবীভূত হওয়ার পরই জৈবিক ঝিল্লি অতিক্রম করে শোষিত হতে পারে। তাই ওষুধের দ্রবণীয়তা ও formulation শোষণের গতি এবং পরিমাণকে প্রভাবিত করতে পারে।
+
+#### ধাপ ৩: অন্ত্রের দেয়াল অতিক্রম করা
+
+অনেক ওষুধ প্রধানত ক্ষুদ্রান্ত্র বা Small intestine থেকে শোষিত হয়। দ্রবীভূত ওষুধের অণু অন্ত্রের আবরণী অতিক্রম করে কাছের রক্তনালিতে প্রবেশ করে। ক্ষুদ্রান্ত্রের ভাঁজ ও ছোট আঙুলের মতো অংশ—Villi এবং Microvilli—শোষণের জন্য অনেক বড় পৃষ্ঠতল তৈরি করে।
+
+### ৩. সব ওষুধ কি একই জায়গায় শোষিত হয়?
+
+না। ওষুধের ধরন ও formulation অনুযায়ী শোষণের স্থান এবং পরিমাণ ভিন্ন হতে পারে। কিছু ওষুধ পাকস্থলী থেকে শোষিত হয়, আবার অনেক ওষুধ প্রধানত ক্ষুদ্রান্ত্র থেকে শোষিত হয়। কিছু ওষুধ এমনভাবে তৈরি করা হয়, যাতে তা পরিপাকতন্ত্রের নির্দিষ্ট অংশে গিয়ে উপাদান ছাড়ে।
+
+উদাহরণ হিসেবে, enteric-coated tablet পাকস্থলীতে ভাঙা প্রতিরোধ করার জন্য তৈরি হয় এবং পরিপাকতন্ত্রের পরবর্তী অংশে গিয়ে ওষুধ ছাড়ে। তবে এর অর্থ এই নয় যে ওষুধের সম্পূর্ণ অংশ শোষিত হবেই।
+
+### ৪. Bioavailability কী?
+
+Bioavailability বলতে সক্রিয় ওষুধ কত দ্রুত এবং কত পরিমাণে systemic circulation বা শরীরের সাধারণ রক্তপ্রবাহে পৌঁছায়, তা বোঝায়। Intravenous injection সরাসরি রক্তে দেওয়া হয় বলে এর bioavailability ১০০%। মুখে খাওয়া ওষুধের ক্ষেত্রে রক্তে পৌঁছানো পরিমাণ কম হতে পারে।
+
+এর কারণ, ওষুধের কিছু অংশ শোষিত নাও হতে পারে। আবার অন্ত্রের দেয়াল বা লিভারে রক্তের সাধারণ প্রবাহে পৌঁছানোর আগেই কিছু ওষুধ metabolised হতে পারে। একে First-pass metabolism বলা হয়।
+
+মনে রাখুন: Absorption এবং bioavailability সম্পর্কিত, কিন্তু একই বিষয় নয়। রক্তের সাধারণ প্রবাহে পৌঁছানোর আগে ওষুধের যে অংশ নষ্ট বা metabolised হয়, bioavailability সেটিও বিবেচনা করে।
+
+### ৫. কোন বিষয়গুলো ওষুধের শোষণকে প্রভাবিত করে?
+
+- Dosage form: Solution, সাধারণ tablet, capsule, enteric-coated tablet ও modified-release product ভিন্নভাবে কাজ করতে পারে।
+- খাবার: খাবার কিছু ওষুধের শোষণ কমাতে, দেরি করাতে বা বাড়াতে পারে। প্রভাবটি নির্দিষ্ট ওষুধের ওপর নির্ভর করে।
+- পরিপাকতন্ত্রের অবস্থা: বমি, ডায়রিয়া, অন্ত্রের গতির পরিবর্তন, অপারেশন বা কিছু রোগ শোষণকে প্রভাবিত করতে পারে।
+- ওষুধের বৈশিষ্ট্য: দ্রবণীয়তা, কণার আকার, স্থায়িত্ব ও ঝিল্লি অতিক্রম করার ক্ষমতা গুরুত্বপূর্ণ।
+- অন্য ওষুধ: কিছু ওষুধ পাকস্থলীর অম্লতা, অন্ত্রের গতি বা অন্য ওষুধের সঙ্গে binding-এর মাধ্যমে শোষণে প্রভাব ফেলতে পারে।
+- ওষুধ গ্রহণের পথ: Oral, inhaled, topical, sublingual, intramuscular ও intravenous route-এর শোষণ এক নয়।
+
+### ৬. সব route-এ কি absorption ধাপ লাগে?
+
+একইভাবে নয়। Intravenous ওষুধ সরাসরি রক্তপ্রবাহে দেওয়া হয়, তাই অন্য স্থান থেকে রক্তে প্রবেশের জন্য আলাদা absorption ধাপ লাগে না। Intramuscular ও subcutaneous injection-এর ওষুধকে ইনজেকশনের স্থান থেকে রক্তে যেতে হয়। Inhaled medicine শ্বাসনালিতে পৌঁছায়, আর topical medicine ত্বকে কাজ করতে বা ত্বক পেরিয়ে যেতে পারে—পণ্যের উদ্দেশ্য অনুযায়ী।
+
+### ৭. দৈনন্দিন জীবনের একটি সহজ উদাহরণ
+
+ধরুন, আপনি সাধারণ একটি oral pain-relief tablet খেলেন। প্রথমে ট্যাবলেটটি ভেঙে যায় এবং সক্রিয় উপাদান পরিপাকতন্ত্রের তরলে দ্রবীভূত হয়। এরপর ওষুধ অন্ত্রের আবরণী অতিক্রম করে রক্তে প্রবেশ করে। রক্তের মাধ্যমে এটি বিভিন্ন টিস্যুতে পৌঁছে কাজ করতে পারে। পরে শরীর ওষুধটিকে metabolise ও eliminate করে।
+
+এটি একটি সহজ ব্যাখ্যা। কত দ্রুত এবং কত পরিমাণ ওষুধ শোষিত হবে, তা ওষুধ, formulation ও ব্যক্তিভেদে ভিন্ন হয়। পণ্যের নির্দেশনা বা স্বাস্থ্যকর্মীর পরামর্শ ছাড়া কোনো ওষুধ গুঁড়ো, ভাঙা বা ক্যাপসুল খুলে খাবেন না।
+
+### মূল বিষয়গুলো মনে রাখুন
+
+- Absorption হলো ওষুধ গ্রহণের স্থান থেকে রক্তে প্রবেশের প্রক্রিয়া।
+- অনেক oral tablet-এর ক্ষেত্রে আগে disintegration ও dissolution ঘটে।
+- ক্ষুদ্রান্ত্রের villi ও microvilli শোষণের জন্য বড় পৃষ্ঠতল তৈরি করে।
+- Bioavailability হলো সক্রিয় ওষুধ কত দ্রুত ও কত পরিমাণে systemic circulation-এ পৌঁছায়।
+- খাবার, formulation, অন্ত্রের অবস্থা, ওষুধের বৈশিষ্ট্য ও route শোষণকে প্রভাবিত করতে পারে।
+
+### সাধারণ জিজ্ঞাসা
+
+#### একটি ট্যাবলেট শোষিত হতে কত সময় লাগে?
+
+সব ট্যাবলেটের জন্য নির্দিষ্ট সময় নেই। ওষুধ, formulation, খাবার, পরিপাকতন্ত্রের অবস্থা ও ব্যক্তির ওপর সময় নির্ভর করে।
+
+#### Absorption এবং dissolution কি একই?
+
+না। Dissolution হলো তরলে ওষুধ দ্রবীভূত হওয়া। Absorption হলো গ্রহণের স্থান থেকে ওষুধের রক্তে প্রবেশ করা।
+
+#### অনেক ওষুধ ক্ষুদ্রান্ত্র থেকে শোষিত হয় কেন?
+
+ক্ষুদ্রান্ত্রের পৃষ্ঠতল অনেক বড় এবং রক্ত সরবরাহ ভালো। এই বৈশিষ্ট্য অনেক ওষুধের শোষণে সহায়তা করে।
+
+#### খাবার কি সবসময় ওষুধের শোষণ কমায়?
+
+না। নির্দিষ্ট ওষুধ অনুযায়ী খাবার শোষণ কমাতে, দেরি করাতে, বাড়াতে বা তেমন কোনো প্রভাব না-ও ফেলতে পারে। সংশ্লিষ্ট ওষুধের নির্দেশনা অনুসরণ করুন।
+
+#### First-pass metabolism কী?
+
+পরিপাকতন্ত্র থেকে শোষিত হওয়ার পর সাধারণ রক্তপ্রবাহে পৌঁছানোর আগে অন্ত্রের দেয়াল বা লিভারে ওষুধের metabolism হওয়াকে first-pass metabolism বলে।
+
+### তথ্যসূত্র ও আরও পড়ুন
+
+- NCBI Bookshelf, StatPearls. Pharmacokinetics.
+- NCBI Bookshelf. Bookshelf: Biomedical literature and pharmacology resources.
+- U.S. Food and Drug Administration. Drugs: FDA information and resources.
+- Merck Manual Professional. Overview of Pharmacokinetics.
+
+সম্পাদকীয় নোট: এটি একটি প্রাথমিক ধারণা দেওয়ার জন্য লেখা। প্রতিটি ওষুধের শোষণ সম্পর্কিত নির্দিষ্ট তথ্য অনুমোদিত product information থেকে যাচাই করা উচিত।
+
+শিক্ষামূলক সতর্কতা: এই লেখা সাধারণ শিক্ষার জন্য, ব্যক্তিগত চিকিৎসা পরামর্শ নয়। শুধু এই লেখা পড়ে কোনো ওষুধ বা ডোজ পরিবর্তন করবেন না। যোগ্য স্বাস্থ্যসেবা পেশাজীবীর পরামর্শ নিন।
+
+
+---
+
+### Drug Absorption: How Does Medicine Enter the Bloodstream?
+URL: https://sayedulabrar.site/blog/drug-absorption-how-medicine-enters-bloodstream/ · Language: English · Published: 2026-11-13 · Author: Sayedul Abrar, pharmacist
+Summary: Learn how a medicine moves from its administration site into the bloodstream. A simple guide to tablet disintegration, dissolution, intestinal absorption, bioavailability and first-pass metabolism.
+
+By Sayedul Abrar, pharmacist · Published 13 November 2026
+
+The simple answer: Drug absorption is the movement of a medicine from the place where it is given into the bloodstream. For many swallowed medicines, this involves the medicine being released from its dosage form, dissolving in gastrointestinal fluid and crossing the gut wall.
+
+When you swallow a tablet, does it go directly into your blood? No. Several steps usually take place before the active ingredient becomes available in the circulation. Let us understand these steps in simple language.
+
+### 1. What is drug absorption?
+
+Drug absorption is the movement of a drug from its site of administration into the blood. It is an important part of pharmacokinetics—the study of what the body does to a medicine.
+
+Absorption depends on the route of administration. A swallowed tablet, an inhaled medicine, an injection and a skin patch do not enter the body in the same way.
+
+### 2. What happens after you swallow a tablet?
+
+For many conventional oral tablets, the process can be understood in three main stages:
+
+#### Step 1: Disintegration
+
+The tablet breaks into smaller particles after contact with fluid in the gastrointestinal tract. This process is called disintegration. Capsules may open and release their contents, while modified-release products behave differently by design.
+
+#### Step 2: Dissolution
+
+The drug particles dissolve in gastrointestinal fluid. The active ingredient must generally be in a dissolved form before it can cross biological membranes and be absorbed. A medicine's solubility and formulation can therefore affect how quickly and how much drug becomes available.
+
+#### Step 3: Crossing the intestinal wall
+
+Many medicines are absorbed mainly through the small intestine. Dissolved drug molecules move across the intestinal lining and enter nearby blood vessels. The small intestine has folds and tiny projections called villi and microvilli, which provide a large surface area for absorption.
+
+### 3. Does every medicine get absorbed in the same place?
+
+No. The site and extent of absorption depend on the medicine and its formulation. Some medicines are absorbed in the stomach, while many are absorbed mainly in the small intestine. Some products are designed to release their ingredients later or at a particular part of the gut.
+
+For example, an enteric-coated tablet is designed to resist breaking down in the stomach and release its medicine further along the gastrointestinal tract. This is a formulation feature, not a guarantee that all of the drug will be absorbed.
+
+### 4. What is bioavailability?
+
+Bioavailability describes the rate and extent to which the active ingredient reaches the systemic circulation. For an intravenous injection, bioavailability is 100% because the drug is placed directly into the bloodstream. For an oral medicine, the amount reaching the systemic circulation may be lower.
+
+Why? Some of the dose may not be absorbed, and some may be metabolised in the intestinal wall or liver before it reaches the general circulation. This is known as first-pass metabolism.
+
+Remember: Absorption and bioavailability are related, but they are not exactly the same. Bioavailability also reflects losses before the drug reaches systemic circulation.
+
+### 5. What can affect drug absorption?
+
+- Dosage form: A solution, ordinary tablet, capsule, enteric-coated tablet and modified-release product can behave differently.
+- Food: Food may delay, reduce or sometimes increase the absorption of particular medicines. The effect is medicine-specific.
+- Gastrointestinal conditions: Vomiting, diarrhoea, changes in gut movement, surgery or certain diseases may affect absorption.
+- Drug properties: Solubility, particle size, stability and ability to cross membranes can influence absorption.
+- Other medicines: Some medicines interact by changing stomach acidity, binding another drug or altering gut movement.
+- Route of administration: Oral, inhaled, topical, sublingual, intramuscular and intravenous routes have different absorption patterns.
+
+### 6. Do all routes need an absorption step?
+
+Not in the same way. An intravenous medicine enters the bloodstream directly, so it does not need to be absorbed from another site first. Intramuscular and subcutaneous injections must move from the injection site into the circulation. Inhaled medicines are deposited in the respiratory tract, while topical medicines are intended to act on or pass through the skin depending on the product.
+
+### 7. A simple example from everyday medicine use
+
+Imagine taking a standard oral pain-relief tablet. The tablet first breaks apart and the active ingredient dissolves in gastrointestinal fluid. The dissolved drug then crosses the gut lining and enters the blood. It can travel to tissues where it produces its effect. The body later metabolises and eliminates the drug.
+
+This is a simplified explanation. The exact timing and amount absorbed vary by medicine, formulation and person. Never crush, split or open a medicine unless its product instructions or a healthcare professional say it is appropriate.
+
+### Key takeaways
+
+- Absorption means movement of a drug from its administration site into the bloodstream.
+- Many oral tablets must disintegrate and dissolve before the drug can cross the gut wall.
+- The small intestine provides a large surface area through villi and microvilli.
+- Bioavailability is the rate and extent that active drug reaches systemic circulation.
+- Food, formulation, gut conditions, drug properties and route can affect absorption.
+
+### Frequently asked questions
+
+#### How long does a tablet take to absorb?
+
+There is no single time for all tablets. It depends on the medicine, formulation, food, gastrointestinal conditions and the person taking it.
+
+#### Are absorption and dissolution the same?
+
+No. Dissolution means the drug dissolves in fluid. Absorption means the drug moves from its administration site into the bloodstream.
+
+#### Why are many medicines absorbed in the small intestine?
+
+The small intestine has a large surface area and a rich blood supply, which support absorption of many medicines.
+
+#### Does food always reduce medicine absorption?
+
+No. Food can reduce, delay, increase or have little effect on absorption depending on the medicine. Follow the instructions for the specific product.
+
+#### What is first-pass metabolism?
+
+It is the metabolism of a drug in the gut wall or liver after absorption from the gastrointestinal tract but before it reaches the general circulation.
+
+### References and further reading
+
+- NCBI Bookshelf, StatPearls. Pharmacokinetics.
+
+- NCBI Bookshelf. Bookshelf: Biomedical literature and pharmacology resources.
+
+- U.S. Food and Drug Administration. Drugs: FDA information and resources.
+
+- Merck Manual Professional. Overview of Pharmacokinetics.
+
+Editorial note: This article gives a simplified introduction. Absorption characteristics should be checked in the approved product information for each medicine.
+
+Educational disclaimer: This article is for general learning and is not personal medical advice. Do not change a medicine or dose based only on this article. Consult a qualified healthcare professional.
+
+
+---
+
 ### মানবদেহে ওষুধ কীভাবে কাজ করে? ফার্মাকোলজি সহজ ব্যাখ্যা
 URL: https://sayedulabrar.site/blog/how-do-medicines-work-in-the-body-bangla/ · Language: Bangla · Published: 2026-11-12 · Author: Sayedul Abrar, pharmacist
 Summary: মানবদেহে ওষুধ কীভাবে কাজ করে সহজ বাংলায় জানুন। ADME, pharmacokinetics, pharmacodynamics, receptor ও enzyme-এর ভূমিকা বুঝুন।
