@@ -33,7 +33,7 @@
     'iron-deficiency-vs-anemia':['how-to-take-iron-tablets-properly','drug-vs-medicine','glucosamine-alzheimers-nature-metabolism-study'],
     'glucosamine-alzheimers-nature-metabolism-study':['what-is-the-pharmaceutical-industry','drug-vs-medicine','generic-name-vs-brand-name'],
     'what-is-the-pharmaceutical-industry':['drug-vs-medicine','generic-name-vs-brand-name','glucosamine-alzheimers-nature-metabolism-study'],
-    '${slug}':['how-do-medicines-work-in-the-body','generic-name-vs-brand-name','drug-vs-medicine'],
+    'drug-absorption-how-medicine-enters-bloodstream':['how-do-medicines-work-in-the-body','generic-name-vs-brand-name','drug-vs-medicine'],
     'how-do-medicines-work-in-the-body':['drug-vs-medicine','generic-name-vs-brand-name','when-to-take-ppi-before-meals'],
     'why-complete-antibiotic-course-antibiotic-resistance':['generic-name-vs-brand-name','expiry-date-vs-manufacturing-date-medicine','drug-vs-medicine']
   };
