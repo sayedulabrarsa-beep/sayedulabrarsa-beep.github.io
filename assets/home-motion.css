@@ -26,3 +26,14 @@ html.lenis.lenis-smooth{scroll-behavior:auto!important}
  .ed-btn,.ed-pills a,.ed-text-link{transition:translate .35s cubic-bezier(.2,.7,.2,1),transform .18s ease,box-shadow .18s ease,background .18s}
  .ed-btn:active,.ed-pills a:active,.ed-text-link:active{transform:scale(.96)}
 }
+/* F: slow floating pharmacy shapes behind the hero photo (drawn in code, photo untouched) */
+.hm-float{position:absolute;inset:0;z-index:0;pointer-events:none}
+.hm-float svg{position:absolute;overflow:visible;fill:none;stroke-width:1.6;stroke-linecap:round}
+.hm-f1{left:2%;top:18%;width:58px;stroke:#e95b4d;opacity:.55}
+.hm-f2{left:8%;bottom:16%;width:30px;stroke:#126b56;opacity:.45}
+.hm-f3{right:0;top:2%;width:46px;stroke:#126b56;opacity:.4}
+.hm-f4{right:4%;bottom:10%;width:26px;stroke:#e95b4d;opacity:.5}
+.hm-f5{left:20%;top:2%;width:22px;stroke:#e9a58f;opacity:.7}
+@keyframes hmFloat{0%,100%{transform:translate(0,0) rotate(var(--r,0deg))}50%{transform:translate(var(--x,6px),var(--y,-14px)) rotate(calc(var(--r,0deg) + 10deg))}}
+@media (prefers-reduced-motion:no-preference){.hm-float svg{animation:hmFloat var(--d,9s) ease-in-out infinite}}
+@media (max-width:760px){.hm-f1{width:40px;left:auto;right:58%;top:34%}.hm-f3{width:32px}.hm-f5,.hm-f2{display:none}}

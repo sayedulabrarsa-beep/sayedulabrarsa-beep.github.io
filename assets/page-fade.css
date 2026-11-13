@@ -1,0 +1,4 @@
+/* H: soft cross-fade between pages (Chrome/Edge/Safari 18.2+; other browsers just open the page as before). Not loaded on Learning or Portfolio. */
+@view-transition{navigation:auto}
+::view-transition-old(root),::view-transition-new(root){animation-duration:.35s;animation-timing-function:ease}
+@media (prefers-reduced-motion:reduce){@view-transition{navigation:none}}
