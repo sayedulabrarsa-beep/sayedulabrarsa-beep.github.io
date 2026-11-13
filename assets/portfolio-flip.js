@@ -31,7 +31,7 @@ var reduce=false;try{reduce=matchMedia('(prefers-reduced-motion: reduce)').match
   var root=document.getElementById('pwr');if(!root)return;
   var paper=root.querySelector('.pwr-paper'),body=root.querySelector('.pwr-body'),pen=root.querySelector('.pwr-pen');
   var elAr=root.querySelector('.pwr-ar'),elEn=root.querySelector('.pwr-en'),elBn=root.querySelector('.pwr-bn'),elRef=root.querySelector('.pwr-ref');
-  var btnPP=root.querySelector('.pwr-pp'),num=root.querySelector('.pwr-n');
+  var btnPP=root.querySelector('.pwr-pp'),num=root.querySelector('.pwr-n');if(num)num.hidden=true;
   var list=[],idx=0,run=0,paused=reduce,visible=false,tm=[];
   function later(f,ms){var t=setTimeout(f,ms);tm.push(t);return t}
   function clear(){tm.forEach(clearTimeout);tm=[]}
@@ -41,13 +41,12 @@ var reduce=false;try{reduce=matchMedia('(prefers-reduced-motion: reduce)').match
     pen.style.left=((rtl?r.left:r.right)-p.left-4)+'px';pen.style.top=(r.bottom-p.top-26)+'px';
   }
   function show(k,instant){
-    clear();run++;var my=run;idx=(k+list.length)%list.length;var it=list[idx];
+    clear();run++;var my=run;idx=(k+list.length)%list.length;var it=list[idx];remember(it);
     body.classList.remove('out');elRef.classList.remove('on');pen.classList.remove('on');
     var A=words(elAr,it.ar),E=words(elEn,it.en&&/[.!?”"]$/.test(it.en)?it.en:(it.en||'')+'.'),B=words(elBn,it.bn);
     elAr.hidden=!it.ar;
     elRef.innerHTML='';var c=document.createElement('span');c.textContent=it.ref;elRef.appendChild(c);
     if(it.note){var s=document.createElement('small');s.textContent=it.note;elRef.appendChild(s)}
-    num.textContent=(idx+1)+' / '+list.length;
     var seq=[];A.forEach(function(w){seq.push([w,true,260])});E.forEach(function(w){seq.push([w,false,115])});B.forEach(function(w){seq.push([w,false,125])});
     if(instant){seq.forEach(function(s){s[0].classList.add('on')});elRef.classList.add('on');return}
     var t=500;
@@ -56,7 +55,12 @@ var reduce=false;try{reduce=matchMedia('(prefers-reduced-motion: reduce)').match
     var readMs=Math.min(7000,3000+(it.en?it.en.length*18:0));
     later(function(){if(!paused)out()},t+150+readMs);
   }
-  function out(){var my=run;body.classList.add('out');later(function(){if(my===run&&!paused)show(idx+1)},520)}
+  /* random order each visit, never the same opening line twice in a row, fresh order every round */
+  function key(it){return (it.ref||'')+'|'+(it.en||'').slice(0,40)}
+  function mix(a){a=a.slice();for(var j=a.length-1;j>0;j--){var r=Math.floor(Math.random()*(j+1)),t=a[j];a[j]=a[r];a[r]=t}return a}
+  function shuffle(d){var a=mix(d),last='';try{last=localStorage.getItem('pwr-last')||''}catch(e){}if(a.length>1&&key(a[0])===last){var t=a[0];a[0]=a[1];a[1]=t}return a}
+  function remember(it){try{localStorage.setItem('pwr-last',key(it))}catch(e){}}
+  function out(){var my=run;body.classList.add('out');later(function(){if(my!==run||paused)return;if(idx===list.length-1&&list.length>2){var prev=list[idx];list=mix(list);if(key(list[0])===key(prev)){var t=list[0];list[0]=list[1];list[1]=t}show(0)}else show(idx+1)},520)}
   function setPaused(p){paused=p;btnPP.textContent=p?'Play':'Pause';btnPP.setAttribute('aria-pressed',p?'true':'false');btnPP.setAttribute('aria-label',p?'Resume writing':'Pause writing')}
   btnPP.addEventListener('click',function(){
     if(paused){setPaused(false);show(idx)}else{setPaused(true);clear();run++;var it=list[idx];[].forEach.call(root.querySelectorAll('.w'),function(w){w.classList.add('on')});elRef.classList.add('on');pen.classList.remove('on');body.classList.remove('out')}
@@ -65,7 +69,7 @@ var reduce=false;try{reduce=matchMedia('(prefers-reduced-motion: reduce)').match
   root.querySelector('.pwr-prev').addEventListener('click',function(){show(idx-1,paused)});
   function start(){
     if(list.length)return;
-    fetch(root.dataset.src).then(function(r){return r.json()}).then(function(d){list=d;setPaused(reduce);show(0,reduce)}).catch(function(){
+    fetch(root.dataset.src).then(function(r){return r.json()}).then(function(d){list=shuffle(d);setPaused(reduce);show(0,reduce)}).catch(function(){
       elEn.textContent='Words could not be loaded just now.';
     });
   }

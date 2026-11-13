@@ -122,7 +122,7 @@ function render(){
   function syncRing(){
     if(!ring)return;
     var bounds=story.getBoundingClientRect();
-    ring.classList.toggle('is-visible',bounds.top<window.innerHeight&&bounds.bottom>0);
+    ring.classList.toggle('is-visible',bounds.top<window.innerHeight*.55&&bounds.bottom>window.innerHeight*.45);
   }
   syncRing();
   cur=story.querySelector('.lt-cur');tot=story.querySelector('.lt-tot');bar=story.querySelector('.lt-bar i');range=story.querySelector('.lt-range');
@@ -150,7 +150,9 @@ function onScroll(){
   items.forEach(function(el,k){var r=el.getBoundingClientRect(),c=r.top+Math.min(r.height,160)/2,d=Math.abs(c-line);if(r.top<line&&r.bottom>line){d=-1}if(d<bd){bd=d;best=k}});
   setActive(best);
 }
-window.addEventListener('scroll',function(){if(!raf)raf=requestAnimationFrame(onScroll);if(ring&&story){var rb=story.getBoundingClientRect();ring.classList.toggle('is-visible',rb.top<window.innerHeight&&rb.bottom>0)}},{passive:true});
+/* wheel turns only with page scroll: down = clockwise, up = back, stops when scrolling stops */
+var rot=0,lastSY=window.scrollY;
+window.addEventListener('scroll',function(){if(!raf)raf=requestAnimationFrame(onScroll);var sy=window.scrollY,dy=sy-lastSY;lastSY=sy;if(ring&&story){var rb=story.getBoundingClientRect(),vh=window.innerHeight,on=rb.top<vh*.55&&rb.bottom>vh*.45;ring.classList.toggle('is-visible',on);if(on&&!reduce){rot=(rot+dy*.12)%360;ring.style.setProperty('--lt-rot',rot.toFixed(2)+'deg')}}},{passive:true});
 window.addEventListener('resize',function(){setHH();if(items.length)setActive(active,true)});
 function setHH(){var h=document.querySelector('header');story.style.setProperty('--hh',(h?h.offsetHeight:0)+'px')}
 setHH();
