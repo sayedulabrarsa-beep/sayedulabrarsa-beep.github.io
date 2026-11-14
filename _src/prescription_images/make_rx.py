@@ -263,6 +263,129 @@ def takeaways(lang):
                 ill="প্রতীকী ছবি" if bn else "Illustrative photo")
 P_["takeaways"] = takeaways
 
+
+# ======================================================= Style guide v2 (user's guide, 14 Nov 2026)
+# Palette: Deep Teal #155E63 headlines · Charcoal #263238 body · Soft Coral #E97865 one hook word ·
+# Warm Cream #F7F2E9 text zone · Pale Teal #DCEFED chips · White cards. Poppins (EN) + Hind Siliguri Bold (BN).
+TEAL, CHAR, CORAL, CREAM, PALE = "#155E63", "#263238", "#E97865", "#F7F2E9", "#DCEFED"
+CSS = f"""
+@font-face{{font-family:Anton;src:url({U}/anton-latin-400-normal.woff2)}}
+@font-face{{font-family:Anek;src:url({U}/anek-bangla-bengali-800-normal.woff2);font-weight:800;unicode-range:U+0964-0965,U+0980-09FE,U+200C-200D,U+25CC}}
+@font-face{{font-family:Anek;src:url({U}/anek-bangla-latin-800-normal.woff2);font-weight:800}}
+@font-face{{font-family:Pop;src:url({U}/poppins-latin-500-normal.woff2);font-weight:500}}
+@font-face{{font-family:Pop;src:url({U}/poppins-latin-600-normal.woff2);font-weight:600}}
+@font-face{{font-family:Pop;src:url({U}/poppins-latin-800-normal.woff2);font-weight:800}}
+@font-face{{font-family:HS;src:url({U}/hind-siliguri-bengali-400-normal.woff2);font-weight:400;unicode-range:U+0964-0965,U+0980-09FE,U+200C-200D,U+25CC}}
+@font-face{{font-family:HS;src:url({U}/hind-siliguri-bengali-600-normal.woff2);font-weight:600;unicode-range:U+0964-0965,U+0980-09FE,U+200C-200D,U+25CC}}
+@font-face{{font-family:HS;src:url({U}/hind-siliguri-bengali-700-normal.woff2);font-weight:700;unicode-range:U+0964-0965,U+0980-09FE,U+200C-200D,U+25CC}}
+*{{margin:0;padding:0;box-sizing:border-box}}
+body{{width:1600px;height:900px;overflow:hidden;position:relative;font-family:Pop,HS,sans-serif;color:{CHAR};background:{CREAM}}}
+body.bn{{font-family:HS,Pop,sans-serif}}
+.bg{{position:absolute;inset:0;background-size:cover;background-position:right center}}
+.veil{{position:absolute;inset:0;background:linear-gradient(90deg,rgba(247,242,233,.96) 0%,rgba(247,242,233,.9) var(--a,30%),rgba(247,242,233,0) var(--b,42%))}}
+.vig{{display:none}}
+.panel{{position:absolute;left:84px;top:0;bottom:64px;width:var(--pw,560px);display:flex;flex-direction:column;justify-content:center;padding:30px 0}}
+.kick{{font-size:19px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:{TEAL}}}
+body.bn .kick{{letter-spacing:.02em;font-size:23px;font-weight:700}}
+.title{{font-family:Pop,HS;font-weight:800;text-transform:uppercase;font-size:var(--ts,54px);line-height:1.06;margin-top:12px;color:var(--hc,{TEAL});letter-spacing:-.01em}}
+body.bn .title{{font-family:HS;font-weight:700;text-transform:none;line-height:1.22;letter-spacing:0}}
+.title em{{font-style:normal;color:inherit}}
+.title i{{font-style:normal;color:{CORAL}}}
+.sub{{font-size:30px;line-height:1.4;color:{CHAR};margin-top:18px;font-weight:500}}
+body.bn .sub{{font-size:32px}}
+.rows{{display:flex;flex-direction:column;gap:10px;margin-top:24px}}
+.row{{display:flex;gap:16px;align-items:center;background:#fff;border-radius:14px;padding:11px 18px;border-left:6px solid var(--c,{TEAL})}}
+.code{{flex:none;font-family:Pop,HS;font-weight:800;font-size:25px;color:var(--c,{TEAL});background:{PALE};border-radius:10px;padding:4px 10px;text-align:center}}
+.row b{{display:block;font-size:24px;line-height:1.2;color:{CHAR};font-weight:600}}
+body.bn .row b{{font-size:26px;font-weight:700}}
+.row span{{display:block;font-size:19px;line-height:1.3;color:#4a5a60}}
+body.bn .row span{{font-size:21px}}
+.badge{{flex:none;width:42px;height:42px;border-radius:50%;background:{TEAL};color:#fff;font-family:Pop,HS;font-weight:800;font-size:21px;display:flex;align-items:center;justify-content:center}}
+.note{{margin-top:14px;font-size:21px;font-weight:600;line-height:1.38;border-radius:12px;padding:11px 16px;background:{PALE};color:{TEAL}}}
+body.bn .note{{font-size:23px;font-weight:700}}
+.foot{{position:absolute;left:0;right:0;bottom:0;height:56px;display:flex;justify-content:space-between;align-items:center;padding:0 84px;font-size:18px;color:#4a5a60;background:rgba(247,242,233,.92)}}
+body.bn .foot{{font-size:20px}}
+.foot b{{color:{TEAL};font-weight:600;letter-spacing:.04em}}
+.ill{{position:absolute;right:24px;bottom:68px;font-size:15px;color:#4a5a60;background:rgba(255,255,255,.85);padding:3px 12px;border-radius:999px}}
+body.bn .ill{{font-size:17px}}
+.mk{{position:absolute;width:46px;height:46px;margin:-23px 0 0 -23px;border-radius:50%;background:{TEAL};color:#fff;font-family:Pop,HS;font-weight:800;font-size:22px;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 4px #fff}}
+"""
+SERIES = ("ফার্মেসি শিক্ষা", "Pharmacy education")
+def ser(bn): return SERIES[0] if bn else SERIES[1]
+def rows2(items, w="150px"):
+    return '<div class="rows">' + "".join(
+        f'<div class="row" style="--c:{c}"><div class="code" style="min-width:{w}">{a}</div><div><b>{b}</b>' + (f'<span>{d}</span>' if d else "") + '</div></div>' for c, a, b, d in items) + "</div>"
+def ph(lang, inner, src, bg, pw="560px", ts="54px", hc=TEAL, a="30%", b="42%"):
+    bn = lang == "bn"
+    return page(lang, inner.replace('<h1 class="title">', f'<h1 class="title" style="--hc:{hc}">'), src, bg=bg, a=a, b=b, pw=pw, ts=ts, ill="প্রতীকী ছবি" if bn else "Illustrative photo")
+
+def cover2(lang):
+    bn = lang == "bn"
+    t = 'প্রেসক্রিপশন পড়ার <i>নিয়ম</i>' if bn else 'How to read a <i>prescription</i>'
+    s = 'নির্দেশনা বুঝুন, নিরাপদে ওষুধ খান।' if bn else 'Decode the instructions. Take medicines safely.'
+    by = 'সাইয়্যেদুল আবরার, ফার্মাসিস্ট' if bn else 'By Sayedul Abrar, Pharmacist'
+    inner = f'<p class="kick">{ser(bn)}</p><h1 class="title">{t}</h1><p class="sub">{s}</p>' + \
+        f'<p style="align-self:flex-start;margin-top:34px;background:{TEAL};color:#fff;font-weight:600;font-size:24px;padding:10px 26px;border-radius:999px">{by}</p>'
+    return ph(lang, inner, "WHO Guide to Good Prescribing; ISMP", "cover", pw="560px", ts="74px" if not bn else "84px", a="30%", b="44%")
+
+def frequency2(lang):
+    bn = lang == "bn"
+    it = [(TEAL, "OD", "দিনে ১ বার", "নিরাপদ লেখা: daily"), (TEAL, "BD", "দিনে ২ বার", ""), (TEAL, "TDS", "দিনে ৩ বার", ""),
+          (TEAL, "QDS", "দিনে ৪ বার", "QID-ও একই"), (TEAL, "HS", "রাতে, ঘুমানোর আগে", "Nocte-ও একই"), (CORAL, "PRN · SOS", "শুধু দরকার হলে", "সর্বোচ্চ কতবার, জেনে নিন")] if bn else [
+         (TEAL, "OD", "Once a day", "Safer to write: daily"), (TEAL, "BD", "Twice a day", ""), (TEAL, "TDS", "Three times a day", ""),
+         (TEAL, "QDS", "Four times a day", "QID means the same"), (TEAL, "HS", "At bedtime", "Nocte means at night"), (CORAL, "PRN · SOS", "Only when needed", "Ask the most per day")]
+    t = 'কতবার <i>খাবেন?</i>' if bn else 'How often should I <i>take it?</i>'
+    return ph(lang, f'<p class="kick">{ser(bn)}</p><h1 class="title">{t}</h1>' + rows2(it, "150px"), "ISMP; WA Health; ACSQHC", "frequency", pw="590px", ts="52px" if not bn else "56px", a="31%", b="43%")
+
+def food2(lang):
+    bn = lang == "bn"
+    it = [(TEAL, "AC", "খাবারের আগে", "কতক্ষণ আগে, ওষুধভেদে আলাদা"), (TEAL, "PC", "খাবারের পরে বা সঙ্গে", ""),
+          (TEAL, "খালি পেটে", "সাধারণত খাবারের ১ ঘণ্টা আগে বা ২ ঘণ্টা পরে", ""), (TEAL, "HS", "রাতে ঘুমানোর আগে", "")] if bn else [
+         (TEAL, "AC", "Before food", "How long before depends on the medicine"), (TEAL, "PC", "After or with food", ""),
+         (TEAL, "EMPTY", "Empty stomach", "Often 1 hour before or 2 hours after food"), (TEAL, "HS", "At bedtime", "")]
+    t = 'খাবারের আগে না <i>পরে?</i>' if bn else 'Before or after <i>food?</i>'
+    note = "অনেক PPI, যেমন ওমিপ্রাজল, সাধারণত খাবারের আগে খাওয়া হয়।" if bn else "Example: many PPIs, such as omeprazole, are usually taken before a meal."
+    return ph(lang, f'<p class="kick">{ser(bn)}</p><h1 class="title">{t}</h1>' + rows2(it, "130px") + f'<p class="note">{note}</p>',
+              "NHS medicine leaflets; ask your pharmacist", "food", pw="560px", ts="56px", hc=CHAR, a="30%", b="40%")
+
+def forms2(lang):
+    bn = lang == "bn"
+    it = [(TEAL, "TAB · CAP", "ট্যাবলেট · ক্যাপসুল", ""), (TEAL, "SYP · SUSP", "সিরাপ · সাসপেনশন", "সাসপেনশন ঝাঁকিয়ে নিন"),
+          (TEAL, "INJ", "ইনজেকশন", "IM মাংসপেশিতে · IV শিরায়"), (TEAL, "DROPS", "চোখ, কান বা নাকের ড্রপ", ""),
+          (TEAL, "PO", "মুখে খাওয়ার জন্য", ""), (CORAL, "TSF", "১ চা-চামচ = ৫ mL", "মাপার কাপ বা সিরিঞ্জে মাপুন")] if bn else [
+         (TEAL, "TAB · CAP", "Tablet · Capsule", ""), (TEAL, "SYP · SUSP", "Syrup · Suspension", "Shake a suspension first"),
+         (TEAL, "INJ", "Injection", "IM into muscle · IV into a vein"), (TEAL, "DROPS", "Eye, ear or nose drops", ""),
+         (TEAL, "PO", "By mouth", ""), (CORAL, "TSF", "1 teaspoonful = 5 mL", "Use the cup or syringe, not a kitchen spoon")]
+    t = 'ট্যাবলেট, সিরাপ নাকি <i>ইনজেকশন?</i>' if bn else 'Tablet, syrup or <i>injection?</i>'
+    return ph(lang, f'<p class="kick">{ser(bn)}</p><h1 class="title">{t}</h1>' + rows2(it, "170px"), "ISMP; FDA (mL dosing)", "forms", pw="590px", ts="50px" if not bn else "52px", a="32%", b="44%")
+
+def mistakes2(lang):
+    bn = lang == "bn"
+    it = [(CORAL, "OD", "দিনে ১ বার, নাকি ডান চোখ?", "নিরাপদ লেখা: daily"), (CORAL, "QD", "পড়া হতে পারে QID (৪ বার)", "নিরাপদ লেখা: daily"),
+          (CORAL, "U", "ইউনিট, পড়া হতে পারে ০ বা ৪", "নিরাপদ লেখা: units"), (CORAL, "1.0 mg", "পড়া হতে পারে 10 mg", "নিরাপদ লেখা: 1 mg"),
+          (CORAL, ".5 mg", "পড়া হতে পারে 5 mg", "নিরাপদ লেখা: 0.5 mg")] if bn else [
+         (CORAL, "OD", "Once daily, or right eye?", "Safer: daily"), (CORAL, "QD", "Misread as QID (4 times)", "Safer: daily"),
+         (CORAL, "U", "Units, misread as 0 or 4", "Safer: units"), (CORAL, "1.0 mg", "Misread as 10 mg", "Safer: 1 mg"),
+         (CORAL, ".5 mg", "Misread as 5 mg", "Safer: 0.5 mg")]
+    t = 'এই সংক্ষেপগুলো <i>অনুমান</i> করবেন না' if bn else 'Don’t guess these <i>short forms</i>'
+    note = "অস্পষ্ট লাগলে ফার্মাসিস্ট বা ডাক্তারকে জিজ্ঞেস করুন।" if bn else "Unclear? Ask your pharmacist or doctor."
+    return ph(lang, f'<p class="kick">{ser(bn)}</p><h1 class="title">{t}</h1>' + rows2(it, "130px") + f'<p class="note">{note}</p>',
+              "ISMP List of Error-Prone Abbreviations", "mistakes", pw="560px", ts="50px", hc=CHAR, a="30%", b="40%")
+
+def takeaways2(lang):
+    bn = lang == "bn"
+    it = [("নাম, তারিখ ও ডাক্তারের তথ্য মিলিয়ে নিন", ""), ("ওষুধের নাম ও শক্তি প্যাকের সঙ্গে মেলান", ""),
+          ("কতটা, কতবার, কতদিন পড়ে নিন", ""), ("খাবারের আগে না পরে দেখুন", ""), ("অনুমান নয়, জিজ্ঞেস করুন", "")] if bn else [
+          ("Check your name, date and doctor", ""), ("Match medicine name and strength", ""),
+          ("Read how much, how often, how long", ""), ("Check before or after food", ""), ("Never guess: ask", "")]
+    lst = '<div class="rows" style="gap:9px">' + "".join(
+        f'<div class="row" style="padding:10px 16px"><div class="badge">{str(i+1).translate(BN_DIG) if bn else i+1}</div><div><b>{x}</b></div></div>' for i, (x, _) in enumerate(it)) + "</div>"
+    t = 'জিজ্ঞেস করুন। বুঝুন। <i>ঠিকভাবে খান।</i>' if bn else 'Ask. Understand. <i>Take it right.</i>'
+    return ph(lang, f'<p class="kick">{ser(bn)}</p><h1 class="title">{t}</h1>' + lst, "WHO Guide to Good Prescribing; ISMP", "takeaways", pw="520px", ts="50px", a="28%", b="38%")
+
+T = O = P = G = TEAL
+P_.update(cover=cover2, frequency=frequency2, food=food2, forms=forms2, mistakes=mistakes2, takeaways=takeaways2)
+
 NAMES = {"cover": "how-to-read-a-prescription-cover", "parts": "parts-of-a-prescription-labelled", "frequency": "prescription-frequency-abbreviations-od-bd-tds",
          "pattern": "what-does-1-0-1-mean-on-a-prescription", "food": "before-or-after-food-ac-pc-meaning", "forms": "medicine-forms-and-routes-tab-syp-inj",
          "mistakes": "error-prone-prescription-abbreviations", "takeaways": "how-to-read-a-prescription-key-takeaways"}

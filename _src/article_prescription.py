@@ -15,9 +15,9 @@ esc = lambda x: html.escape(x, quote=True)
 # key: (file stem, alt EN, caption EN, alt BN, caption BN)
 F = {
  "cover": ("how-to-read-a-prescription-cover",
-   "How to read a prescription: a doctor's desk with a notepad, pen, stethoscope and a glass of water, with labels BD, TDS, 1+0+1 and AC/PC. By Sayedul Abrar, Pharmacist.",
+   "How to read a prescription: a doctor's hand beside a blank prescription pad, a pen, a stethoscope and a glass of water on a wooden desk. Decode the instructions, take medicines safely. By Sayedul Abrar, Pharmacist.",
    "A simple guide to the words and short forms on a prescription. Illustrative photo.",
-   "প্রেসক্রিপশন পড়ার সহজ নিয়ম: ডাক্তারের টেবিলে নোটপ্যাড, কলম, স্টেথোস্কোপ ও পানির গ্লাস, পাশে BD, TDS, ১+০+১ ও AC/PC লেখা। লিখেছেন ফার্মাসিস্ট সাইয়্যেদুল আবরার।",
+   "প্রেসক্রিপশন পড়ার সহজ নিয়ম: কাঠের টেবিলে ডাক্তারের হাতের পাশে ফাঁকা প্রেসক্রিপশন প্যাড, কলম, স্টেথোস্কোপ ও পানির গ্লাস। নির্দেশনা বুঝুন, নিরাপদে ওষুধ খান। লিখেছেন ফার্মাসিস্ট সাইয়্যেদুল আবরার।",
    "প্রেসক্রিপশনের শব্দ ও সংক্ষেপ বোঝার সহজ গাইড। প্রতীকী ছবি।"),
  "parts": ("parts-of-a-prescription-labelled",
    "A sample prescription with eight numbered parts: 1 doctor's name, degrees and registration number; 2 patient's name, age and date; 3 the Rx symbol; 4 medicine name, form and strength; 5 how much and how often; 6 before or after food; 7 for how long; 8 signature and advice. Fictional doctor, patient and medicines.",
@@ -25,9 +25,9 @@ F = {
    "আটটি নম্বর দেওয়া অংশসহ একটি নমুনা প্রেসক্রিপশন: ১ ডাক্তারের নাম, ডিগ্রি ও রেজিস্ট্রেশন নম্বর; ২ রোগীর নাম, বয়স ও তারিখ; ৩ Rx চিহ্ন; ৪ ওষুধের নাম, ধরন ও শক্তি; ৫ কতটা ও কতবার; ৬ খাবারের আগে না পরে; ৭ কতদিন; ৮ স্বাক্ষর ও পরামর্শ। ডাক্তার, রোগী ও ওষুধ কাল্পনিক।",
    "শুধু নমুনা: ডাক্তার, রোগী ও ওষুধ কাল্পনিক। WHO Guide to Good Prescribing-এর ভিত্তিতে।"),
  "frequency": ("prescription-frequency-abbreviations-od-bd-tds",
-   "An alarm clock and a pill box, with prescription frequency abbreviations: OD once a day (safer to write daily), BD twice a day, TDS three times a day, QDS or QID four times a day, mane in the morning, HS or nocte at night, PRN or SOS only when needed, STAT straight away.",
+   "A morning, midday and night pill organiser and a clock, with prescription frequency abbreviations: OD once a day (safer to write daily), BD twice a day, TDS three times a day, QDS or QID four times a day, mane in the morning, HS or nocte at night, PRN or SOS only when needed, STAT straight away.",
    "Based on ISMP and Australian health department guidance on prescribing terms.",
-   "অ্যালার্ম ঘড়ি ও পিল বক্সের ছবির পাশে কতবার খাবেন তার সংক্ষেপ: OD দিনে ১ বার, BD দিনে ২ বার, TDS দিনে ৩ বার, QDS বা QID দিনে ৪ বার, mane সকালে, HS বা nocte রাতে, PRN বা SOS শুধু দরকার হলে, STAT এখনই।",
+   "সকাল, দুপুর ও রাতের পিল অর্গানাইজার ও ঘড়ির ছবির পাশে কতবার খাবেন তার সংক্ষেপ: OD দিনে ১ বার, BD দিনে ২ বার, TDS দিনে ৩ বার, QDS বা QID দিনে ৪ বার, mane সকালে, HS বা nocte রাতে, PRN বা SOS শুধু দরকার হলে, STAT এখনই।",
    "ISMP ও অস্ট্রেলিয়ার স্বাস্থ্য বিভাগের নির্দেশনার ভিত্তিতে।"),
  "pattern": ("what-does-1-0-1-mean-on-a-prescription",
    "What 1+0+1 means on a prescription: three panels for morning, midday and night showing 1, 0 and 1. Examples: 1+0+1 is one in the morning and one at night; 1+1+1 is three times a day; 0+0+1 is one at night only; half+0+half is half a tablet morning and night. The numbers are tablets or doses, not hours.",
@@ -35,29 +35,29 @@ F = {
    "প্রেসক্রিপশনে ১+০+১ মানে কী: সকাল, দুপুর ও রাতের তিনটি ঘরে ১, ০ ও ১। উদাহরণ: ১+০+১ মানে সকালে ১টি ও রাতে ১টি; ১+১+১ মানে দিনে ৩ বার; ০+০+১ মানে শুধু রাতে ১টি; ½+০+½ মানে সকালে ও রাতে আধা ট্যাবলেট। সংখ্যাগুলো ট্যাবলেট বা ডোজ, ঘণ্টা নয়।",
    "সকাল + দুপুর + রাতের এই লেখার ধরন বাংলাদেশের প্রেসক্রিপশনে খুব প্রচলিত।"),
  "food": ("before-or-after-food-ac-pc-meaning",
-   "A drawn plate of rice and egg with before and after arrows, explaining AC (before food), PC (after or with food), empty stomach (often 1 hour before or 2 hours after food) and HS (at bedtime). Example: many PPIs such as omeprazole are usually taken before a meal.",
-   "General meanings. Your medicine leaflet and pharmacist give the exact timing.",
-   "খাবারের প্লেট ও আগে-পরের তীর চিহ্ন দিয়ে AC (খাবারের আগে), PC (খাবারের পরে বা সঙ্গে), খালি পেটে (সাধারণত খাবারের ১ ঘণ্টা আগে বা ২ ঘণ্টা পরে) ও HS (ঘুমানোর আগে) বোঝানো হয়েছে। উদাহরণ: অনেক PPI, যেমন ওমিপ্রাজল, সাধারণত খাবারের আগে খেতে বলা হয়।",
-   "সাধারণ অর্থ। সঠিক সময় আপনার ওষুধের লিফলেট ও ফার্মাসিস্ট বলে দেবেন।"),
+   "A Bangladeshi meal of rice, dal, fish and greens with a glass of water and a tablet strip, explaining AC (before food), PC (after or with food), empty stomach (often 1 hour before or 2 hours after food) and HS (at bedtime). Example: many PPIs such as omeprazole are usually taken before a meal.",
+   "General meanings. Your medicine leaflet and pharmacist give the exact timing. Illustrative photo.",
+   "ভাত, ডাল, মাছ ও শাকের প্লেট, পানির গ্লাস ও ট্যাবলেটের পাতার ছবির পাশে AC (খাবারের আগে), PC (খাবারের পরে বা সঙ্গে), খালি পেটে (সাধারণত খাবারের ১ ঘণ্টা আগে বা ২ ঘণ্টা পরে) ও HS (ঘুমানোর আগে) বোঝানো হয়েছে। উদাহরণ: অনেক PPI, যেমন ওমিপ্রাজল, সাধারণত খাবারের আগে খেতে বলা হয়।",
+   "সাধারণ অর্থ। সঠিক সময় আপনার ওষুধের লিফলেট ও ফার্মাসিস্ট বলে দেবেন। প্রতীকী ছবি।"),
  "forms": ("medicine-forms-and-routes-tab-syp-inj",
-   "A glass of water, syringe, inhaler, drip bag, tablet and patch, with medicine form and route abbreviations: Tab tablet, Cap capsule, Syp syrup, Susp suspension (shake before use), Inj injection (IM into muscle, IV into a vein), Inh inhaler, drops, PO by mouth, and tsf one teaspoonful equal to 5 mL measured with the cup or syringe, not a kitchen spoon.",
+   "A syrup bottle, measuring cup, syringe, vial, dropper bottle, tablets and capsules, with medicine form and route abbreviations: Tab tablet, Cap capsule, Syp syrup, Susp suspension (shake before use), Inj injection (IM into muscle, IV into a vein), Inh inhaler, drops, PO by mouth, and tsf one teaspoonful equal to 5 mL measured with the cup or syringe, not a kitchen spoon.",
    "Use the measuring cup or oral syringe that comes with the medicine (FDA, ISMP). Illustrative photo.",
-   "পানির গ্লাস, সিরিঞ্জ, ইনহেলার, স্যালাইনের ব্যাগ, ট্যাবলেট ও প্যাচের ছবির পাশে ওষুধের ধরন ও প্রয়োগের পথের সংক্ষেপ: Tab ট্যাবলেট, Cap ক্যাপসুল, Syp সিরাপ, Susp সাসপেনশন (খাওয়ার আগে ঝাঁকিয়ে নিন), Inj ইনজেকশন (IM মাংসপেশিতে, IV শিরায়), Inh ইনহেলার, ড্রপ, PO মুখে খাওয়ার জন্য, আর tsf মানে ১ চা-চামচ বা ৫ mL, যা মাপার কাপ বা সিরিঞ্জে মাপবেন, রান্নাঘরের চামচে নয়।",
+   "সিরাপের বোতল, মাপার কাপ, সিরিঞ্জ, ভায়াল, ড্রপের বোতল, ট্যাবলেট ও ক্যাপসুলের ছবির পাশে ওষুধের ধরন ও প্রয়োগের পথের সংক্ষেপ: Tab ট্যাবলেট, Cap ক্যাপসুল, Syp সিরাপ, Susp সাসপেনশন (খাওয়ার আগে ঝাঁকিয়ে নিন), Inj ইনজেকশন (IM মাংসপেশিতে, IV শিরায়), Inh ইনহেলার, ড্রপ, PO মুখে খাওয়ার জন্য, আর tsf মানে ১ চা-চামচ বা ৫ mL, যা মাপার কাপ বা সিরিঞ্জে মাপবেন, রান্নাঘরের চামচে নয়।",
    "ওষুধের সঙ্গে দেওয়া মাপার কাপ বা সিরিঞ্জ ব্যবহার করুন (FDA, ISMP)। প্রতীকী ছবি।"),
  "mistakes": ("error-prone-prescription-abbreviations",
-   "A pharmacist at a pharmacy counter, with abbreviations that cause mistakes: OD can mean once daily or right eye; QD can be misread as QID; U for units can be misread as 0 or 4; 1.0 mg can be misread as 10 mg; .5 mg can be misread as 5 mg. If anything is unclear, ask the pharmacist and check with the doctor.",
+   "A magnifying glass over messy handwriting on a clipboard, with abbreviations that cause mistakes: OD can mean once daily or right eye; QD can be misread as QID; U for units can be misread as 0 or 4; 1.0 mg can be misread as 10 mg; .5 mg can be misread as 5 mg. If anything is unclear, ask the pharmacist and check with the doctor.",
    "Based on the ISMP List of Error-Prone Abbreviations. Illustrative photo.",
-   "ফার্মেসির কাউন্টারে একজন ফার্মাসিস্টের ছবির পাশে যে সংক্ষেপে ভুল হয়: OD মানে দিনে একবার, আবার ডান চোখও; QD পড়া হতে পারে QID; ইউনিটের U পড়া হতে পারে ০ বা ৪; 1.0 mg পড়া হতে পারে 10 mg; .5 mg পড়া হতে পারে 5 mg। অস্পষ্ট লাগলে ফার্মাসিস্ট ও ডাক্তারকে জিজ্ঞেস করুন।",
+   "ক্লিপবোর্ডে অস্পষ্ট হাতের লেখার ওপর ম্যাগনিফাইং গ্লাসের ছবির পাশে যে সংক্ষেপে ভুল হয়: OD মানে দিনে একবার, আবার ডান চোখও; QD পড়া হতে পারে QID; ইউনিটের U পড়া হতে পারে ০ বা ৪; 1.0 mg পড়া হতে পারে 10 mg; .5 mg পড়া হতে পারে 5 mg। অস্পষ্ট লাগলে ফার্মাসিস্ট ও ডাক্তারকে জিজ্ঞেস করুন।",
    "ISMP-এর ভুল-প্রবণ সংক্ষেপের তালিকার ভিত্তিতে। প্রতীকী ছবি।"),
  "takeaways": ("how-to-read-a-prescription-key-takeaways",
-   "A hand holding one capsule next to a glass of water, with five steps to read any prescription: check your name, date and the doctor's details; match the medicine name and strength with the pack; read how much, how often and how long; check before or after food; never guess, ask your pharmacist or doctor.",
+   "A pharmacist explaining a medicine box to a patient holding a prescription. Ask, understand, take it right: five steps to read any prescription: check your name, date and the doctor's details; match the medicine name and strength with the pack; read how much, how often and how long; check before or after food; never guess, ask your pharmacist or doctor.",
    "Five steps to remember. Illustrative photo.",
-   "হাতের তালুতে একটি ক্যাপসুল ও পানির গ্লাসের ছবির পাশে প্রেসক্রিপশন পড়ার ৫টি ধাপ: নাম, তারিখ ও ডাক্তারের তথ্য মিলিয়ে নিন; ওষুধের নাম ও শক্তি প্যাকের সঙ্গে মেলান; কতটা, কতবার, কতদিন পড়ে নিন; খাবারের আগে না পরে দেখুন; অনুমান না করে ফার্মাসিস্ট বা ডাক্তারকে জিজ্ঞেস করুন।",
+   "প্রেসক্রিপশন হাতে রোগীকে একজন ফার্মাসিস্ট ওষুধের বাক্স বুঝিয়ে দিচ্ছেন। জিজ্ঞেস করুন, বুঝুন, ঠিকভাবে খান: প্রেসক্রিপশন পড়ার ৫টি ধাপ: নাম, তারিখ ও ডাক্তারের তথ্য মিলিয়ে নিন; ওষুধের নাম ও শক্তি প্যাকের সঙ্গে মেলান; কতটা, কতবার, কতদিন পড়ে নিন; খাবারের আগে না পরে দেখুন; অনুমান না করে ফার্মাসিস্ট বা ডাক্তারকে জিজ্ঞেস করুন।",
    "মনে রাখার পাঁচটি ধাপ। প্রতীকী ছবি।"),
 }
 def fig(k, bn=False, hero=False):
     stem, aen, cen, abn, cbn = F[k]
-    src = f"{IMG}{stem}{'-bn' if bn else ''}.webp?v=1"
+    src = f"{IMG}{stem}{'-bn' if bn else ''}.webp?v=2"
     alt, cap = (abn, cbn) if bn else (aen, cen)
     load = 'fetchpriority="high"' if hero else 'loading="lazy"'
     tip = 'বড় করে দেখতে ছবিতে চাপুন।' if bn else 'Tap the image to view it full size.'
