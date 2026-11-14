@@ -6,8 +6,28 @@
     <atom:link href="https://sayedulabrar.site/blog/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Pharmacist-written educational articles in English and Bangla on medicines, pharmacology and the pharmaceutical industry in Bangladesh, by Sayedul Abrar.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 13 Nov 2026 06:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 06:00:00 +0000</lastBuildDate>
     <image><url>https://sayedulabrar.site/assets/img/og-image.png</url><title>Pharma Blog | Sayedul Abrar</title><link>https://sayedulabrar.site/blog/</link></image>
+    <item>
+      <title>প্রেসক্রিপশন পড়ার নিয়ম</title>
+      <link>https://sayedulabrar.site/blog/how-to-read-a-prescription-abbreviations-bangla/</link>
+      <guid isPermaLink="true">https://sayedulabrar.site/blog/how-to-read-a-prescription-abbreviations-bangla/</guid>
+      <pubDate>Sat, 14 Nov 2026 06:00:00 +0000</pubDate>
+      <dc:creator>Sayedul Abrar</dc:creator>
+      <dc:language>bn</dc:language>
+      <description>BD, TDS, OD, AC, PC ও ১+০+১ মানে কী? বাংলাদেশে প্রেসক্রিপশন পড়ার নিয়ম ধাপে ধাপে, নমুনা ও প্রশ্নোত্তরসহ, ফার্মাসিস্টের সহজ ব্যাখ্যা।</description>
+      <enclosure url="https://sayedulabrar.site/assets/img/blog/prescription/how-to-read-a-prescription-abbreviations-social-bn.jpg" type="image/jpeg" length="85854"/>
+    </item>
+    <item>
+      <title>How to Read a Prescription</title>
+      <link>https://sayedulabrar.site/blog/how-to-read-a-prescription-abbreviations/</link>
+      <guid isPermaLink="true">https://sayedulabrar.site/blog/how-to-read-a-prescription-abbreviations/</guid>
+      <pubDate>Sat, 14 Nov 2026 06:00:00 +0000</pubDate>
+      <dc:creator>Sayedul Abrar</dc:creator>
+      <dc:language>en</dc:language>
+      <description>What do BD, TDS, OD, AC, PC and 1+0+1 mean? A pharmacist explains how to read a prescription in Bangladesh, step by step, with a sample and FAQs.</description>
+      <enclosure url="https://sayedulabrar.site/assets/img/blog/prescription/how-to-read-a-prescription-abbreviations-social.jpg" type="image/jpeg" length="86143"/>
+    </item>
     <item>
       <title>অ্যান্টিবায়োটিক কোর্স শেষ করা কেন জরুরি?</title>
       <link>https://sayedulabrar.site/blog/why-complete-antibiotic-course-antibiotic-resistance-bangla/</link>

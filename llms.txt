@@ -64,6 +64,10 @@ Clinical-content boundaries:
 
 <!--articles:start-->
 Pharma Blog articles (newest first; each is educational, not medical advice):
+- প্রেসক্রিপশন পড়ার নিয়ম — বাংলা (2026-11-14): https://sayedulabrar.site/blog/how-to-read-a-prescription-abbreviations-bangla/
+  Summary: BD, TDS, OD, AC, PC ও ১+০+১ মানে কী? বাংলাদেশে প্রেসক্রিপশন পড়ার নিয়ম ধাপে ধাপে, নমুনা ও প্রশ্নোত্তরসহ, ফার্মাসিস্টের সহজ ব্যাখ্যা।
+- How to Read a Prescription — English (2026-11-14): https://sayedulabrar.site/blog/how-to-read-a-prescription-abbreviations/
+  Summary: What do BD, TDS, OD, AC, PC and 1+0+1 mean? A pharmacist explains how to read a prescription in Bangladesh, step by step, with a sample and FAQs.
 - অ্যান্টিবায়োটিক কোর্স শেষ করা কেন জরুরি? — বাংলা (2026-11-13): https://sayedulabrar.site/blog/why-complete-antibiotic-course-antibiotic-resistance-bangla/
   Summary: ভালো লাগলেও অ্যান্টিবায়োটিক কোর্স কেন শেষ করবেন? রেজিস্ট্যান্স, ডোজ মিস, বাকি ওষুধ, পার্শ্বপ্রতিক্রিয়া ও প্যাকের লাল চিহ্ন নিয়ে ফার্মাসিস্টের সহজ গাইড।
 - Why You Must Complete an Antibiotic Course — English (2026-11-13): https://sayedulabrar.site/blog/why-complete-antibiotic-course-antibiotic-resistance/

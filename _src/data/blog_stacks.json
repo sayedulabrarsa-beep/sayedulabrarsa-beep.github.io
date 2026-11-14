@@ -1,5 +1,69 @@
 [
 {
+"slug": "how-to-read-a-prescription-abbreviations",
+"bn": "how-to-read-a-prescription-abbreviations-bangla",
+"date": "2026-11-14",
+"kicker": "Medicine safety",
+"title": "How to Read a Prescription",
+"image": "/assets/img/blog/prescription/how-to-read-a-prescription-cover.webp",
+"alt": "How to read a prescription: BD, TDS, 1+0+1 and AC/PC labels on a doctor's desk",
+"accent": "#3b7ea1",
+"read": "8 min",
+"slides": [
+{
+"h": "How often",
+"p": [
+"OD once, BD twice, TDS three times, QDS four times a day."
+],
+"img": "/assets/img/blog/prescription/prescription-frequency-abbreviations-od-bd-tds.webp",
+"alt": "Prescription frequency abbreviations OD, BD, TDS, QDS",
+"r": "PRN or SOS means only when needed.",
+"sub": "",
+"fit": "cover"
+},
+{
+"h": "What 1+0+1 means",
+"p": [
+"Morning + midday + night.",
+"1+0+1 is one in the morning and one at night."
+],
+"img": "/assets/img/blog/prescription/what-does-1-0-1-mean-on-a-prescription.webp",
+"alt": "What 1+0+1 means on a prescription",
+"r": "The numbers are doses, not hours.",
+"sub": "",
+"fit": "cover"
+},
+{
+"h": "Before or after food",
+"p": [
+"AC is before food, PC is after food, HS is at bedtime."
+],
+"img": "/assets/img/blog/prescription/before-or-after-food-ac-pc-meaning.webp",
+"alt": "AC and PC meaning: before or after food",
+"r": "Follow your own leaflet for exact timing.",
+"sub": "",
+"fit": "cover"
+},
+{
+"h": "Watch out",
+"p": [
+"OD can mean right eye; 1.0 mg can be read as 10 mg."
+],
+"img": "/assets/img/blog/prescription/error-prone-prescription-abbreviations.webp",
+"alt": "Error-prone prescription abbreviations",
+"r": "Never guess. Ask your pharmacist.",
+"sub": "",
+"fit": "cover"
+}
+],
+"end": {
+"h": "NEVER GUESS",
+"t": "Check the name, strength, how often and how long, and ask your pharmacist if anything is unclear.",
+"img": "/assets/img/blog/prescription/how-to-read-a-prescription-key-takeaways.webp",
+"alt": "Five steps to read any prescription"
+}
+},
+{
 "slug": "why-complete-antibiotic-course-antibiotic-resistance",
 "bn": "why-complete-antibiotic-course-antibiotic-resistance-bangla",
 "date": "2026-11-13",
