@@ -45,3 +45,17 @@
   .ae-body strong{font-size:16px}
 }
 @media(prefers-reduced-motion:reduce){.ae-card,.ae-pc,.ae-fig img{transition:none}.ae-card:hover,.ae-pc:hover{transform:none}}
+
+/* Auto-scrolling row of every article (right to left), pauses on hover, focus or touch */
+.ae-mq{display:block;overflow:hidden;margin:0 -8px;padding:6px 8px 14px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 3%,#000 97%,transparent);mask-image:linear-gradient(90deg,transparent,#000 3%,#000 97%,transparent)}
+.ae-mq-in{display:flex;gap:18px;width:max-content}
+.ae-mq .ae-card{flex:0 0 clamp(250px,28vw,310px)}
+.ae-mq.ae-run .ae-mq-in{animation:ae-scroll var(--ae-dur,60s) linear infinite}
+.ae-mq.ae-run:hover .ae-mq-in,.ae-mq.ae-run:focus-within .ae-mq-in,.ae-mq.ae-hold .ae-mq-in{animation-play-state:paused}
+@keyframes ae-scroll{from{transform:translateX(0)}to{transform:translateX(calc(-50% - 9px))}}
+@media(max-width:900px){.ae-track.ae-mq{overflow:hidden;margin:0 -16px;padding:4px 16px 16px;scroll-snap-type:none}.ae-mq .ae-card{flex:0 0 min(74vw,300px)}}
+@media(prefers-reduced-motion:reduce){.ae-track.ae-mq{overflow-x:auto;-webkit-mask-image:none;mask-image:none}}
+.more-articles{width:min(1120px,calc(100% - 32px));margin:40px auto 0;font-size:15px}
+.more-articles h2{font-size:20px;margin:0 0 10px}
+.more-articles ul{columns:2 260px;margin:0;padding-left:18px}
+.more-articles li{margin:0 0 6px}
