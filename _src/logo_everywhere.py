@@ -1,12 +1,12 @@
 """Put the official SA logo in the header and footer of every page, keep favicons consistent,
-and use one copyright line. Learning and Portfolio pages are never touched.
+and use one copyright line. On Learning and Portfolio only these shared parts (head icons, header, footer) change, never the page content.
 Run from anywhere: python3 _src/logo_everywhere.py   (safe to re-run)
 """
 import pathlib, re
 
 R = pathlib.Path(__file__).resolve().parent.parent
 V = "sa-logo-20261114"
-SKIP = ("_src/", "learning/", "portfolio/", ".github/", "node_modules/")
+SKIP = ("_src/", ".github/", "node_modules/")
 
 ICONS = (
     f'<link rel="icon" href="/favicon.ico?v={V}" sizes="any">'
