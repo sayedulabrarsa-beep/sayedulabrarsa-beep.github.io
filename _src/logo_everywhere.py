@@ -23,8 +23,7 @@ ICONS = (
 MARK = ('<img class="logo-mark" src="/assets/img/sayedul-abrar-logo-badge-96.webp" '
         'srcset="/assets/img/sayedul-abrar-logo-badge-96.webp 1x, /assets/img/sayedul-abrar-logo-badge-192.webp 2x" '
         'alt="Sayedul Abrar SA logo" width="34" height="34" decoding="async">')
-CR = ('<div class="cr">© <span id="year">2026</span> Sayedul Abrar. All rights reserved. '
-      'The SA monogram is the personal logo of Sayedul Abrar and may not be used without permission.</div>')
+CR = '<div class="cr">© <span id="year">2026</span> Sayedul Abrar. All rights reserved.</div>'
 
 icon_re = re.compile(r'<link rel="(?:icon|shortcut icon|apple-touch-icon|manifest)"[^>]*>\s*')
 changed = 0
