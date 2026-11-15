@@ -29,45 +29,60 @@
     data.push({ href: link.getAttribute('href'), title: txt(link), img: img && img.getAttribute('src'),
       tag: txt(c.querySelector('.pb-card-meta')).split('·')[0].trim(), bn: !!c.querySelector('.pb-bangla-link') });
   });
+  // the helix: article cards mixed with patterned tiles, wound two turns round a vertical axis
   var list = data.slice();
-  while (list.length < 10) list = list.concat(data);          // keep the ring full when there are few articles
+  while (list.length < 9) list = list.concat(data);
+  var seq = [];
+  list.forEach(function (d) { seq.push(d); seq.push(null); });
 
-  var cards = list.map(function (d, i) {
-    var a = document.createElement('a');
-    a.className = 'bh-card'; a.href = d.href; a.tabIndex = -1; a.draggable = false; a.setAttribute('aria-label', d.title);
-    a.innerHTML = '<span class="bh-face bh-front">' +
-      (d.img ? '<img src="' + d.img + '" alt="" width="472" height="266" decoding="async">' : '') +
-      '<span class="bh-card-body"><span class="bh-card-tag"></span><span class="bh-card-title"></span>' +
-      '<span class="bh-card-foot"><span>Read article ↗</span><span>' + (d.bn ? 'English + বাংলা' : 'English') + '</span></span></span></span>' +
-      '<span class="bh-face bh-back t' + ((i % 6) + 1) + '" aria-hidden="true"></span>';
-    a.querySelector('.bh-card-tag').textContent = d.tag;
-    a.querySelector('.bh-card-title').textContent = d.title;
-    ring.appendChild(a);
-    return a;
+  var cards = seq.map(function (d, i) {
+    var el;
+    if (d) {
+      el = document.createElement('a');
+      el.className = 'bh-card'; el.href = d.href; el.tabIndex = -1; el.draggable = false; el.setAttribute('aria-label', d.title);
+      el.innerHTML = '<span class="bh-face bh-front">' +
+        (d.img ? '<img src="' + d.img + '" alt="" width="472" height="266" decoding="async">' : '') +
+        '<span class="bh-card-body"><span class="bh-card-tag"></span><span class="bh-card-title"></span>' +
+        '<span class="bh-card-foot"><span>Read article ↗</span><span>' + (d.bn ? 'English + বাংলা' : 'English') + '</span></span></span></span>' +
+        '<span class="bh-face bh-back t' + ((i % 6) + 1) + '" aria-hidden="true"></span>';
+      el.querySelector('.bh-card-tag').textContent = d.tag;
+      el.querySelector('.bh-card-title').textContent = d.title;
+    } else {
+      el = document.createElement('span');
+      var t = 't' + ((i * 5 % 6) + 1);
+      el.className = 'bh-card bh-tile'; el.setAttribute('aria-hidden', 'true');
+      el.innerHTML = '<span class="bh-face bh-back bh-tf ' + t + '"></span><span class="bh-face bh-back ' + t + '"></span>';
+    }
+    ring.appendChild(el);
+    return el;
   });
 
-  var N = cards.length, step = 360 / N, R = 500, push = 0.86, rot = 0, vel = 0, auto = 5 /* deg per second */;
+  var N = cards.length, TURNS = 2, step = 360 * TURNS / N, R = 430, H = 700, push = 1, rot = 0, vel = 0, auto = 10 /* deg per second */;
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var hovering = false, dragging = false, visible = true, last = 0;
 
   function measure() {
-    var w = stage.clientWidth, cw = cards[0].offsetWidth || 236;
-    R = Math.max(cw * 1.6, (N * cw * 1.55) / (2 * Math.PI));
-    var rise = w < 540 ? 46 : 64;
-    cards.forEach(function (c, i) {
-      var y = ((i % 4) - 1.5) * rise * (i % 2 ? 1 : -0.85);     // spiral-like stagger up and down the axis
-      c.style.transform = 'rotateY(' + (i * step).toFixed(3) + 'deg) translateZ(' + R.toFixed(1) + 'px) translateY(' + y.toFixed(1) + 'px)';
-    });
-    push = w < 540 ? 1.08 : w < 900 ? 0.95 : 0.86;
+    var w = stage.clientWidth;
+    R = w < 540 ? 200 : w < 900 ? 330 : 500;
+    H = stage.clientHeight * 1.35;
+    push = w < 540 ? 1.25 : 1.05;
   }
-  function facing(i) {                                           // 1 = straight at the viewer, -1 = directly away
-    return Math.cos(((i * step + rot) % 360) * Math.PI / 180);
-  }
+  function angle(i) { return i * step + rot; }
+  function facing(i) { return Math.cos(angle(i) * Math.PI / 180); }   // 1 = facing the viewer, -1 = facing away
   function render() {
-    ring.style.transform = 'translateZ(' + (-R * push).toFixed(1) + 'px) rotateX(-6deg) rotateY(' + rot.toFixed(3) + 'deg)';
+    var half = H / 2, fadeZone = H * 0.16;
     for (var i = 0; i < N; i++) {
-      var f = facing(i), b = f > 0.25 ? 1 : f > -0.2 ? 0.8 : 0.55;
-      if (cards[i]._b !== b) { cards[i]._b = b; cards[i].style.setProperty('--bh-dim', b); }
+      var a = angle(i), rad = a * Math.PI / 180;
+      var y = ((i * H / N + rot * H / (360 * TURNS)) % H + H) % H - half;   // cards travel downward as the helix turns
+      var x = Math.sin(rad) * R, z = Math.cos(rad) * R - R * push;
+      var c = cards[i];
+      c.style.transform = 'translate3d(' + x.toFixed(1) + 'px,' + y.toFixed(1) + 'px,' + z.toFixed(1) + 'px) rotateY(' + (a % 360).toFixed(2) + 'deg)';
+      var op = Math.max(0, Math.min(1, (half - Math.abs(y)) / fadeZone));
+      c.style.setProperty('--bh-op', op.toFixed(3));
+      c.style.pointerEvents = op < 0.5 ? 'none' : '';
+      var f = facing(i), b = f > 0.3 ? 1 : f > -0.2 ? 0.78 : 0.5, rev = f < 0;
+      if (c._r !== rev) { c._r = rev; c.classList.toggle('is-rev', rev); }
+      if (c._b !== b) { c._b = b; c.style.setProperty('--bh-dim', b); }
     }
   }
   function frame(t) {
@@ -75,7 +90,7 @@
     var dt = Math.min(50, t - last) / 1000; last = t;
     if (visible && !dragging) {
       if (Math.abs(vel) > 0.01) { rot += vel * dt; vel *= Math.pow(0.04, dt); }   // glide after a drag or scroll
-      else if (!hovering && !reduce) rot -= auto * dt;
+      else if (!hovering && !reduce) rot += auto * dt;
       render();
     }
     requestAnimationFrame(frame);
@@ -85,7 +100,7 @@
   var ly = window.scrollY || 0;
   window.addEventListener('scroll', function () {
     var y = window.scrollY || 0, d = y - ly; ly = y;
-    if (visible) { rot -= d * 0.16; vel = -d * 2.2; if (reduce) render(); }
+    if (visible) { rot += d * 0.2; vel = d * 2.4; if (reduce) render(); }
   }, { passive: true });
 
   // sideways drag / swipe turns it; a drag never opens a link

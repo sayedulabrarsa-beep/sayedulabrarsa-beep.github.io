@@ -32,17 +32,52 @@
   var order = Object.keys(topicColor);
   data.sort(function (a, b) { return order.indexOf(a.tag) - order.indexOf(b.tag); });
 
-  var SPOTS_D = [[14, 27, -7], [31, 39, 5], [47, 24, -4], [63, 29, 4], [15, 53, -5], [38, 61, 3], [56, 54, -3]];
-  var SPOTS_T = [[18, 23, -6], [48, 27, 5], [78, 22, -4], [22, 45, 4], [52, 48, -5], [80, 44, 3]];
-  var SPOTS_M = [[22, 21, -6], [72, 24, 5], [46, 38, -3], [22, 53, 4], [74, 54, -5]];
-  function spots() { var w = tray.clientWidth; return w < 540 ? SPOTS_M : w < 900 ? SPOTS_T : SPOTS_D; }
+  // one board per topic; each topic has its own colours. A topic with many articles spans several boards.
+  var THEMES = [
+    ['#e3d0b6', '#d9c2a3', '#b99f7d'], ['#cfdcc9', '#bccfb4', '#7f9c78'], ['#efd3c8', '#e4bfb1', '#b98676'],
+    ['#cfe0e6', '#b9d0d9', '#6f98a8'], ['#ddd3e8', '#cbbfdc', '#8f7fae'], ['#f0e2b4', '#e5d197', '#b49a4c'], ['#e2c4b0', '#d4ae96', '#a07658']];
+  var LAY = {
+    d: { 1: [[36, 44, -4]], 2: [[25, 42, -6], [49, 47, 5]], 3: [[19, 38, -6], [40, 49, 4], [61, 37, -3]],
+         n: [[14, 27, -7], [31, 39, 5], [47, 24, -4], [63, 29, 4], [15, 53, -5], [38, 61, 3], [56, 54, -3]] },
+    t: { 1: [[40, 36, -4]], 2: [[27, 33, -6], [66, 37, 5]], 3: [[20, 29, -6], [52, 34, 5], [82, 29, -3]],
+         n: [[18, 23, -6], [48, 27, 5], [78, 22, -4], [22, 45, 4], [52, 48, -5], [80, 44, 3]] },
+    m: { 1: [[50, 37, -4]], 2: [[29, 33, -6], [71, 39, 5]], 3: [[25, 28, -6], [73, 31, 5], [47, 48, -3]],
+         n: [[22, 25, -6], [72, 28, 5], [46, 42, -3], [22, 57, 4], [74, 58, -5]] } };
+  function lay() { var w = tray.clientWidth; return LAY[w < 540 ? 'm' : w < 900 ? 't' : 'd']; }
+
+  var groups = {}; order.forEach(function (t) { groups[t] = []; });
+  data.forEach(function (d) { groups[d.tag].push(d); });
+  var boards = [];
+  function makeBoards() {
+    var per = lay().n.length; boards = [];
+    order.forEach(function (t, ti) {
+      var g = groups[t], parts = Math.ceil(g.length / per);
+      for (var k = 0; k < parts; k++) boards.push({ tag: t, ti: ti, items: g.slice(k * per, k * per + per), part: k + 1, parts: parts });
+    });
+  }
 
   var page = 0, pages = 1, pins = [], picked = null, busy = false, elapsed = 0, PERIOD = 20000, z = 10;
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var titleEl = tray.querySelector('.ab-title');
+  function nice(t) { return t.charAt(0) + t.slice(1).toLowerCase(); }
+
+  // topic tabs
+  topicsEl.innerHTML = '';
+  var tabs = order.map(function (t, ti) {
+    var li = document.createElement('li'), b = document.createElement('button');
+    b.type = 'button'; b.textContent = nice(t) + ' (' + groups[t].length + ')'; li.style.setProperty('--tc', topicColor[t]);
+    b.addEventListener('click', function () { if (picked) close(); for (var i = 0; i < boards.length; i++) if (boards[i].tag === t) { page = i; build(true); return; } });
+    li.appendChild(b); topicsEl.appendChild(li); return li;
+  });
 
   function build(animate) {
-    var sp = spots(), per = sp.length; pages = Math.ceil(data.length / per); if (page >= pages) page = 0;
-    var set = data.slice(page * per, page * per + per), old = pins;
+    makeBoards(); pages = boards.length; if (page >= pages) page = 0;
+    var bd = boards[page], L = lay(), sp = bd.items.length <= 3 ? L[bd.items.length] : L.n, set = bd.items, old = pins;
+    var th = THEMES[bd.ti % THEMES.length];
+    tray.style.setProperty('--ab-bg', th[0]); tray.style.setProperty('--ab-bg2', th[1]); tray.style.setProperty('--ab-edge', th[2]);
+    tray.style.setProperty('--ab-tc', topicColor[bd.tag]);
+    titleEl.innerHTML = ''; nice(bd.tag).split(' ').forEach(function (w, i, arr) { titleEl.appendChild(document.createTextNode(w)); if (i < arr.length - 1) titleEl.appendChild(document.createElement('br')); });
+    tabs.forEach(function (li, i) { li.classList.toggle('is-on', order[i] === bd.tag); });
     old.forEach(function (p) { p.el.classList.add('is-out'); setTimeout(function () { p.el.remove(); }, 450); });
     pins = set.map(function (d, i) {
       var el = document.createElement('div');
@@ -58,10 +93,7 @@
       if (animate) setTimeout(function () { el.classList.remove('is-in'); }, 80 + i * 70);
       return pin;
     });
-    var seen = {}; topicsEl.innerHTML = '';
-    set.forEach(function (d) { if (seen[d.tag]) return; seen[d.tag] = 1; var li = document.createElement('li'); li.textContent = d.tag.charAt(0) + d.tag.slice(1).toLowerCase(); li.style.setProperty('--tc', topicColor[d.tag]); topicsEl.appendChild(li); });
-    pageEl.textContent = pages > 1 ? 'Set ' + (page + 1) + ' of ' + pages : data.length + ' articles';
-    tray.querySelector('.ab-status').classList.toggle('is-single', pages < 2);
+    pageEl.textContent = 'Topic ' + (bd.ti + 1) + ' of ' + order.length + (bd.parts > 1 ? ' · part ' + bd.part : '');
     Array.prototype.forEach.call(tray.querySelectorAll('.ab-status button, .ab-bar'), function (b) { b.style.display = pages > 1 ? '' : 'none'; });
     elapsed = 0;
   }
@@ -74,7 +106,9 @@
   }
   function wire(pin) {
     var el = pin.el, pid = null, sx, sy, ox, oy, drag = false, lastTap = 0;
+    var pickTap = 0;
     el.addEventListener('pointerdown', function (e) {
+      if (picked === pin) { if (e.timeStamp - pickTap < 400) { pickTap = 0; close(); } else pickTap = e.timeStamp; return; }
       if (e.button || picked) return;
       pid = e.pointerId; sx = e.clientX; sy = e.clientY; ox = pin.x; oy = pin.y; drag = false; el.style.zIndex = String(++z);
       try { el.setPointerCapture(pid); } catch (err) {}
@@ -116,7 +150,7 @@
     pin.el.style.setProperty('--s', k); setPos(pin); pin.el.classList.add('is-picked');
     var d = pin.d;
     detail.querySelector('.ab-d-img').innerHTML = d.img ? '<img src="' + d.img + '" alt="">' : '';
-    detail.querySelector('.ab-d-tag').textContent = d.tag + (d.read ? ' · ' + d.read : '');
+    detail.querySelector('.ab-d-tag').textContent = 'Topic: ' + nice(d.tag) + (d.read ? ' · ' + d.read.toLowerCase() : '');
     detail.querySelector('.ab-d-h').textContent = d.title;
     detail.querySelector('.ab-d-en').textContent = d.desc;
     var bnp = detail.querySelector('.ab-d-bn'); bnp.textContent = d.bnDesc; bnp.style.display = d.bnDesc ? '' : 'none';
@@ -134,6 +168,8 @@
     elapsed = 0;
   }
   detail.querySelector('.ab-close').addEventListener('click', close);
+  detail.querySelector('[data-ab="back"]').addEventListener('click', close);
+  detail.addEventListener('dblclick', function (e) { if (!e.target.closest('a,button')) close(); });
   detail.querySelector('[data-ab="full"]').addEventListener('click', function () { if (picked) reader(picked.d, false); });
 
   // full-view reader
@@ -169,7 +205,7 @@
   Array.prototype.forEach.call(tray.querySelectorAll('[data-ab-go]'), function (b) { b.addEventListener('click', function () { go(b.getAttribute('data-ab-go') === 'prev' ? -1 : 1); }); });
 
   var lastW = tray.clientWidth, rt;
-  window.addEventListener('resize', function () { clearTimeout(rt); rt = setTimeout(function () { if (spots().length !== (lastW < 540 ? 5 : lastW < 900 ? 6 : 7)) { close(); build(false); } lastW = tray.clientWidth; }, 200); });
+  window.addEventListener('resize', function () { clearTimeout(rt); rt = setTimeout(function () { var nw = tray.clientWidth; if ((nw < 540) !== (lastW < 540) || (nw < 900) !== (lastW < 900)) { close(); build(false); } lastW = tray.clientWidth; }, 200); });
 
   build(false);
 })();
