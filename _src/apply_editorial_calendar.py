@@ -97,24 +97,17 @@ for item in items:
 
 sitemap_path.write_text(sitemap, encoding="utf-8")
 
-# Inject/update the same live calendar on the homepage, blog index, and every article page.
+# Remove any previously injected public calendar blocks. The editorial schedule stays private.
 targets = [ROOT / "index.html", ROOT / "blog" / "index.html"] + list((ROOT / "blog").glob("*/index.html"))
 for page in targets:
     if not page.exists(): continue
     source = page.read_text(encoding="utf-8")
-    if "<!--editorial-calendar:start-->" in source:
-        source = re.sub(r'<!--editorial-calendar:start-->.*?<!--editorial-calendar:end-->', lambda _: calendar_html, source, flags=re.S)
-    elif page == ROOT / "index.html":
-        anchor = '<section class="ed-blog-section">'
-        source = source.replace(anchor, calendar_html + '\\n' + anchor, 1) if anchor in source else source.replace("</main>", calendar_html + "</main>", 1)
-    elif page == ROOT / "blog" / "index.html":
-        source = source.replace("<main", calendar_html + "\\n<main", 1) if "<main" in source else source.replace("</body>", calendar_html + "</body>", 1)
-    else:
-        source = source.replace("</main>", calendar_html + "</main>", 1)
-    page.write_text(source, encoding="utf-8")
+    cleaned = re.sub(r'<!--editorial-calendar:start-->.*?<!--editorial-calendar:end-->', '', source, flags=re.S)
+    if cleaned != source:
+        page.write_text(cleaned, encoding="utf-8")
 
-# Rebuild all discovery and homepage article components; generators omit noindex pages.
+# Rebuild discovery surfaces from published pages only.
 subprocess.run(["python3", "_src/blog_stacks.py"], cwd=ROOT, check=True)
 subprocess.run(["python3", "_src/seo_feeds.py"], cwd=ROOT, check=True)
 subprocess.run(["python3", "_src/article_index.py"], cwd=ROOT, check=True)
-print(f"Dhaka date={TODAY}; released pages={released}; hidden pages={hidden}; missing draft pages={missing}; calendar surfaces={len(targets)}")
+print(f"Dhaka date={TODAY}; released pages={released}; hidden pages={hidden}; missing draft pages={missing}; public calendar removed from {len(targets)} surfaces")
