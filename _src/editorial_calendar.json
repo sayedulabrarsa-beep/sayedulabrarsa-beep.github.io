@@ -21,7 +21,8 @@
       "time": "20:00",
       "slug": "prescription-abbreviations-od-bd-tds",
       "title": "Prescription Abbreviations (OD, BD, TDS)",
-      "status": "draft_on_2026-11-21"
+      "status": "not_drafted",
+      "needs": "Drafting date not assigned; release date is 19 Nov"
     },
     {
       "date": "2026-11-21",
