@@ -79,7 +79,9 @@ for item in items:
         source = re.sub(r'(<time[^>]*datetime=")[^"]+(")', lambda m: m.group(1)+pub_date+m.group(2), source, count=1)
         page.write_text(source, encoding="utf-8")
         url = f"{SITE}/{rel.rsplit('/index.html',1)[0]}/"
-        sitemap = re.sub(r'<url>.*?<loc>' + re.escape(url) + r'</loc>.*?</url>\\s*', '', sitemap, flags=re.S)
+        # Remove only the exact URL block; never consume preceding sitemap entries.
+        blocks = re.findall(r'<url>.*?</url>', sitemap, flags=re.S)
+        sitemap = re.sub(r'<url>.*?</url>', lambda m: '' if f'<loc>{url}</loc>' in m.group(0) else m.group(0), sitemap, flags=re.S)
         if due:
             og = re.search(r'<meta property="og:image" content="([^"]+)"', source)
             alt = re.search(r'<meta property="og:image:alt" content="([^"]*)"', source)
