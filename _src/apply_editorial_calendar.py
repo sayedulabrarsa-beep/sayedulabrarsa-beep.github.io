@@ -58,31 +58,45 @@ def render_calendar():
 <!--editorial-calendar:end-->'''
 
 calendar_html = render_calendar()
-# Hide future articles, release due English/Bangla pairs, and keep sitemap in sync.
+# Release each English/Bangla pair together only when both pages exist and the item is draftable.
 for item in items:
     pub_date = item["date"]
     due = datetime.strptime(pub_date, "%Y-%m-%d").date() <= TODAY
-    for suffix in ("", "-bangla"):
-        rel = f'blog/{item["slug"]}{suffix}/index.html'
-        page = ROOT / rel
+    pair = [
+        (f'blog/{item["slug"]}/index.html', f"{SITE}/blog/{item['slug']}/"),
+        (f'blog/{item["slug"]}-bangla/index.html', f"{SITE}/blog/{item['slug']}-bangla/"),
+    ]
+    pages = [(ROOT / rel, url) for rel, url in pair]
+    complete_pair = all(page.exists() for page, _ in pages)
+    allowed_to_publish = item.get("status") != "not_drafted"
+    release_pair = due and complete_pair and allowed_to_publish
+
+    if not complete_pair:
+        missing += sum(1 for page, _ in pages if not page.exists())
+
+    for page, url in pages:
         if not page.exists():
-            missing += 1
             continue
         source = page.read_text(encoding="utf-8")
-        robots = "index,follow,max-image-preview:large" if due else "noindex,nofollow"
+        robots = "index,follow,max-image-preview:large" if release_pair else "noindex,nofollow"
         if re.search(r'<meta name="robots" content="[^"]*">', source, re.I):
             source = re.sub(r'<meta name="robots" content="[^"]*">', f'<meta name="robots" content="{robots}">', source, count=1, flags=re.I)
         else:
             source = source.replace("</head>", f'<meta name="robots" content="{robots}"></head>', 1)
-        for key in ("datePublished", "dateModified"):
-            source = re.sub(r'("' + key + r'"\\s*:\\s*")[^"]+(")', lambda m: m.group(1)+pub_date+m.group(2), source)
-        source = re.sub(r'(<time[^>]*datetime=")[^"]+(")', lambda m: m.group(1)+pub_date+m.group(2), source, count=1)
+        if release_pair:
+            for key in ("datePublished", "dateModified"):
+                source = re.sub(r'("' + key + r'"\\s*:\\s*")[^"]+(")', lambda m: m.group(1)+pub_date+m.group(2), source)
+            source = re.sub(r'(<time[^>]*datetime=")[^"]+(")', lambda m: m.group(1)+pub_date+m.group(2), source, count=1)
         page.write_text(source, encoding="utf-8")
-        url = f"{SITE}/{rel.rsplit('/index.html',1)[0]}/"
-        # Remove only the exact URL block; never consume preceding sitemap entries.
-        blocks = re.findall(r'<url>.*?</url>', sitemap, flags=re.S)
-        sitemap = re.sub(r'<url>.*?</url>', lambda m: '' if f'<loc>{url}</loc>' in m.group(0) else m.group(0), sitemap, flags=re.S)
-        if due:
+
+        # Remove only this page's exact sitemap entry before optionally adding it back.
+        sitemap = re.sub(
+            r'<url>.*?</url>',
+            lambda m: '' if f'<loc>{url}</loc>' in m.group(0) else m.group(0),
+            sitemap,
+            flags=re.S
+        )
+        if release_pair:
             og = re.search(r'<meta property="og:image" content="([^"]+)"', source)
             alt = re.search(r'<meta property="og:image:alt" content="([^"]*)"', source)
             block = f'<url><loc>{url}</loc><lastmod>{pub_date}</lastmod>'
