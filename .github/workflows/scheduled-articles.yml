@@ -6,6 +6,7 @@ on:
     paths:
       - '_src/apply_editorial_calendar.py'
       - '_src/editorial_calendar.json'
+      - 'blog/**'
       - '.github/workflows/scheduled-articles.yml'
   schedule:
     - cron: '0 14 * * *' # 8:00 PM Asia/Dhaka daily
