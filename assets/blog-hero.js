@@ -1,10 +1,11 @@
-/* Pharma Blog hero: builds a drifting 3D field of cards from the article cards already on the page,
-   so every new article added to the grid appears here automatically. */
+/* Pharma Blog hero: article cards orbiting a vertical axis in a spiral (double-sided: article in
+   front, patterned back behind). Built from the article grid, so new articles join automatically.
+   The ring turns on its own, with page scroll, with a sideways drag/swipe, or the arrow keys. */
 (function () {
   var stage = document.getElementById('bh-stage');
   if (!stage) return;
 
-  // size the headline so it spans the hero width whichever font has loaded
+  // headline spans the hero width whichever font has loaded
   var h1 = document.querySelector('.bh-title'), fitEl = h1 && h1.querySelector('.bh-fit');
   function fit() {
     if (!fitEl) return;
@@ -15,105 +16,120 @@
   fit();
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
   window.addEventListener('load', fit);
-  var field = stage.querySelector('.bh-field');
+
+  var ring = stage.querySelector('.bh-field');
   var src = Array.prototype.slice.call(document.querySelectorAll('.pb-featured-grid .pb-feature-card'));
   if (!src.length) { stage.style.display = 'none'; return; }
-
   function txt(el) { return el ? el.textContent.replace(/\s+/g, ' ').trim() : ''; }
-  var items = [];
-  src.forEach(function (c, i) {
-    var link = c.querySelector('h3 a') || c.querySelector('a[href]');
+
+  var data = [];
+  src.forEach(function (c) {
+    var link = c.querySelector('h3 a') || c.querySelector('a[href]'); if (!link) return;
     var img = c.querySelector('img');
-    if (!link) return;
-    var tag = txt(c.querySelector('.pb-card-meta')).split('·')[0].trim();
+    data.push({ href: link.getAttribute('href'), title: txt(link), img: img && img.getAttribute('src'),
+      tag: txt(c.querySelector('.pb-card-meta')).split('·')[0].trim(), bn: !!c.querySelector('.pb-bangla-link') });
+  });
+  var list = data.slice();
+  while (list.length < 10) list = list.concat(data);          // keep the ring full when there are few articles
+
+  var cards = list.map(function (d, i) {
     var a = document.createElement('a');
-    a.className = 'bh-card'; a.href = link.getAttribute('href'); a.tabIndex = -1; a.draggable = false;
-    var html = '';
-    if (img) html += '<img src="' + img.getAttribute('src') + '" alt="" width="472" height="266" decoding="async"' + (i > 3 ? ' loading="lazy"' : '') + '>';
-    html += '<span class="bh-card-body"><span class="bh-card-tag"></span><span class="bh-card-title"></span>' +
-      '<span class="bh-card-foot"><span>Read article ↗</span><span>' + (c.querySelector('.pb-bangla-link') ? 'English + বাংলা' : 'English') + '</span></span></span>';
-    a.innerHTML = html;
-    a.querySelector('.bh-card-tag').textContent = tag;
-    a.querySelector('.bh-card-title').textContent = txt(link);
-    a.setAttribute('aria-label', txt(link));
-    items.push(a);
-    if (i % 2 === 1) { var t = document.createElement('span'); t.className = 'bh-tile t' + ((Math.floor(i / 2) % 6) + 1); t.setAttribute('aria-hidden', 'true'); items.push(t); }
+    a.className = 'bh-card'; a.href = d.href; a.tabIndex = -1; a.draggable = false; a.setAttribute('aria-label', d.title);
+    a.innerHTML = '<span class="bh-face bh-front">' +
+      (d.img ? '<img src="' + d.img + '" alt="" width="472" height="266" decoding="async">' : '') +
+      '<span class="bh-card-body"><span class="bh-card-tag"></span><span class="bh-card-title"></span>' +
+      '<span class="bh-card-foot"><span>Read article ↗</span><span>' + (d.bn ? 'English + বাংলা' : 'English') + '</span></span></span></span>' +
+      '<span class="bh-face bh-back t' + ((i % 6) + 1) + '" aria-hidden="true"></span>';
+    a.querySelector('.bh-card-tag').textContent = d.tag;
+    a.querySelector('.bh-card-title').textContent = d.title;
+    ring.appendChild(a);
+    return a;
   });
 
-  // deterministic scatter: three depth lanes, staggered heights
-  var LANES = [{ z: 90, y: -40, s: 1 }, { z: -260, y: 118, s: 1 }, { z: -150, y: -128, s: 1 }, { z: -420, y: 30, s: 1 }];
-  var nodes = items.map(function (el, i) {
-    var lane = el.className.indexOf('bh-tile') > -1 ? LANES[1 + (i % 3)] : LANES[i % 2 === 0 ? 0 : 2];
-    var jitter = ((i * 37) % 60) - 30;
-    field.appendChild(el);
-    return { el: el, i: i, z: lane.z - ((i * 53) % 70), y: lane.y + jitter, hover: false };
-  });
-
-  var gap, W, offset = 0, speed = 0.022, last = 0, running = true, visible = true;
+  var N = cards.length, step = 360 / N, R = 500, push = 0.86, rot = 0, vel = 0, auto = 5 /* deg per second */;
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var hovering = false, dragging = false, visible = true, last = 0;
+
   function measure() {
-    var w = stage.clientWidth;
-    gap = w < 540 ? 132 : w < 900 ? 168 : 205;
-    W = Math.max(nodes.length * gap, w + 500);
-    var k = w < 540 ? 0.62 : w < 900 ? 0.8 : 1;
-    nodes.forEach(function (n) { n.yy = n.y * k; n.zz = n.z * (w < 540 ? 0.7 : 1); });
+    var w = stage.clientWidth, cw = cards[0].offsetWidth || 236;
+    R = Math.max(cw * 1.6, (N * cw * 1.55) / (2 * Math.PI));
+    var rise = w < 540 ? 46 : 64;
+    cards.forEach(function (c, i) {
+      var y = ((i % 4) - 1.5) * rise * (i % 2 ? 1 : -0.85);     // spiral-like stagger up and down the axis
+      c.style.transform = 'rotateY(' + (i * step).toFixed(3) + 'deg) translateZ(' + R.toFixed(1) + 'px) translateY(' + y.toFixed(1) + 'px)';
+    });
+    push = w < 540 ? 1.08 : w < 900 ? 0.95 : 0.86;
   }
-  function place() {
-    var half = W / 2;
-    for (var j = 0; j < nodes.length; j++) {
-      var n = nodes[j];
-      var x = ((n.i * (W / nodes.length) + offset) % W + W) % W - half;
-      var p = x / half;                                  // -1 … 1 across the belt
-      var ry = -p * 38;                                  // edges turn inward
-      var z = n.zz - Math.abs(p) * 120 + (n.hover ? 70 : 0);
-      var edge = Math.min(1, (1 - Math.abs(p)) * 3.2);
-      var isTile = n.el.tagName !== 'A';
-      var depthFade = isTile ? (n.zz < -200 ? 0.5 : 0.75) : 1;
-      var dim = isTile || n.hover ? 1 : n.zz < -100 ? 0.72 : 1;
-      n.el.style.transform = 'translate3d(' + x.toFixed(1) + 'px,' + n.yy.toFixed(1) + 'px,' + z.toFixed(1) + 'px) rotateY(' + ry.toFixed(2) + 'deg)';
-      n.el.style.opacity = (edge * (n.hover ? 1 : depthFade)).toFixed(3);
-      n.el.style.zIndex = String(1000 + Math.round(z));
-      if (n.dim !== dim) { n.dim = dim; n.el.style.filter = dim < 1 ? 'brightness(' + dim + ')' : ''; }
+  function facing(i) {                                           // 1 = straight at the viewer, -1 = directly away
+    return Math.cos(((i * step + rot) % 360) * Math.PI / 180);
+  }
+  function render() {
+    ring.style.transform = 'translateZ(' + (-R * push).toFixed(1) + 'px) rotateX(-6deg) rotateY(' + rot.toFixed(3) + 'deg)';
+    for (var i = 0; i < N; i++) {
+      var f = facing(i), b = f > 0.25 ? 1 : f > -0.2 ? 0.8 : 0.55;
+      if (cards[i]._b !== b) { cards[i]._b = b; cards[i].style.setProperty('--bh-dim', b); }
     }
   }
   function frame(t) {
     if (!last) last = t;
-    var dt = Math.min(50, t - last); last = t;
-    if (running && visible && !dragging) { offset -= dt * speed; place(); }
+    var dt = Math.min(50, t - last) / 1000; last = t;
+    if (visible && !dragging) {
+      if (Math.abs(vel) > 0.01) { rot += vel * dt; vel *= Math.pow(0.04, dt); }   // glide after a drag or scroll
+      else if (!hovering && !reduce) rot -= auto * dt;
+      render();
+    }
     requestAnimationFrame(frame);
   }
 
-  // hover pauses the drift and lifts the card
-  nodes.forEach(function (n) {
-    if (n.el.tagName !== 'A') return;
-    n.el.addEventListener('pointerenter', function (e) { if (e.pointerType === 'mouse') { n.hover = true; running = false; place(); } });
-    n.el.addEventListener('pointerleave', function () { n.hover = false; running = !reduce; place(); });
-  });
+  // page scroll turns the ring
+  var ly = window.scrollY || 0;
+  window.addEventListener('scroll', function () {
+    var y = window.scrollY || 0, d = y - ly; ly = y;
+    if (visible) { rot -= d * 0.16; vel = -d * 2.2; if (reduce) render(); }
+  }, { passive: true });
 
-  // drag / swipe sideways to browse; a drag never triggers the link
-  var dragging = false, sx = 0, sy = 0, so = 0, moved = 0, pid = null;
-  stage.addEventListener('pointerdown', function (e) { if (e.button) return; pid = e.pointerId; sx = e.clientX; sy = e.clientY; so = offset; moved = 0; });
+  // sideways drag / swipe turns it; a drag never opens a link
+  var pid = null, sx = 0, sy = 0, sr = 0, moved = 0, lx = 0, lt = 0;
+  stage.addEventListener('pointerdown', function (e) { if (e.button) return; pid = e.pointerId; sx = lx = e.clientX; sy = e.clientY; sr = rot; moved = 0; lt = e.timeStamp; vel = 0; });
   stage.addEventListener('pointermove', function (e) {
-    if (e.pointerType === 'mouse' && pid === null) {      // gentle parallax tilt
-      var r = stage.getBoundingClientRect();
-      var px = (e.clientX - r.left) / r.width - 0.5, py = (e.clientY - r.top) / r.height - 0.5;
-      field.style.transform = 'rotateY(' + (px * 5).toFixed(2) + 'deg) rotateX(' + (-py * 4).toFixed(2) + 'deg)';
-    }
     if (pid !== e.pointerId) return;
     var dx = e.clientX - sx, dy = e.clientY - sy;
     if (!dragging && Math.abs(dx) > 8 && Math.abs(dx) > Math.abs(dy)) { dragging = true; stage.classList.add('is-drag'); try { stage.setPointerCapture(pid); } catch (err) {} }
-    if (dragging) { moved = Math.abs(dx); offset = so + dx * 1.25; place(); }
+    if (dragging) {
+      moved = Math.abs(dx); rot = sr + dx * 0.22;
+      var dtm = Math.max(1, e.timeStamp - lt); vel = (e.clientX - lx) * 0.22 / dtm * 1000; lx = e.clientX; lt = e.timeStamp;
+      render();
+    }
   });
   function end() { pid = null; if (dragging) { dragging = false; stage.classList.remove('is-drag'); } }
   stage.addEventListener('pointerup', end); stage.addEventListener('pointercancel', end);
-  stage.addEventListener('pointerleave', function (e) { if (e.pointerType === 'mouse') field.style.transform = ''; });
-  stage.addEventListener('click', function (e) { if (moved > 8) { e.preventDefault(); e.stopPropagation(); moved = 0; } }, true);
   stage.addEventListener('dragstart', function (e) { e.preventDefault(); });
+  stage.addEventListener('pointerover', function (e) { if (e.pointerType === 'mouse') hovering = true; });
+  stage.addEventListener('pointerout', function (e) { if (e.pointerType === 'mouse' && !stage.contains(e.relatedTarget)) hovering = false; });
+
+  // a card facing away is brought to the front instead of opening
+  stage.addEventListener('click', function (e) {
+    if (moved > 8) { e.preventDefault(); e.stopPropagation(); moved = 0; return; }
+    var a = e.target.closest && e.target.closest('.bh-card'); if (!a) return;
+    var i = cards.indexOf(a);
+    if (facing(i) < 0.55) {
+      e.preventDefault();
+      var target = -i * step, diff = ((target - rot) % 360 + 540) % 360 - 180;
+      vel = diff * 3.2;                                           // eases round to this card
+    }
+  }, true);
+
+  // arrows / buttons
+  function nudge(dir) { vel = dir * step * 3.2; if (reduce) { rot += dir * step; render(); } }
+  stage.addEventListener('keydown', function (e) { if (e.key === 'ArrowLeft') nudge(1); else if (e.key === 'ArrowRight') nudge(-1); });
+  Array.prototype.forEach.call(document.querySelectorAll('[data-bh-turn]'), function (b) {
+    b.addEventListener('click', function () { nudge(b.getAttribute('data-bh-turn') === 'prev' ? 1 : -1); });
+  });
 
   if ('IntersectionObserver' in window) new IntersectionObserver(function (en) { visible = en[0].isIntersecting; }, { threshold: 0 }).observe(stage);
   document.addEventListener('visibilitychange', function () { last = 0; });
-  window.addEventListener('resize', function () { fit(); measure(); place(); });
+  window.addEventListener('resize', function () { fit(); measure(); render(); });
 
-  measure(); place();
-  if (reduce) { running = false; } else requestAnimationFrame(frame);
+  measure(); render();
+  requestAnimationFrame(frame);
 })();

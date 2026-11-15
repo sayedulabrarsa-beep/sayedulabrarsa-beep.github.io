@@ -1,0 +1,175 @@
+/* Pharma Blog article board. Reads the article grid on the page, so new articles appear automatically.
+   - cards are grouped topic by topic; when there are more than fit, the board changes set every 20 s
+   - drag a card into the tray (or press Enter on it) to see what the article covers
+   - double-click / double-tap a card for the full article in a reader overlay */
+(function () {
+  var tray = document.getElementById('ab-tray');
+  if (!tray) return;
+  var pinsEl = tray.querySelector('.ab-pins'), slot = tray.querySelector('.ab-slot'), topicsEl = tray.querySelector('.ab-topics'),
+      pageEl = tray.querySelector('.ab-page'), bar = tray.querySelector('.ab-bar i'), detail = tray.querySelector('.ab-detail');
+  function txt(el) { return el ? el.textContent.replace(/\s+/g, ' ').trim() : ''; }
+
+  var COLORS = ['#116b57', '#c9483b', '#b8862b', '#7a5aa6', '#2f7f9c', '#a35a2a', '#4f7a3a', '#9c3f6b'];
+  var topicColor = {}, data = [];
+  Array.prototype.forEach.call(document.querySelectorAll('.pb-featured-grid .pb-feature-card'), function (c) {
+    var link = c.querySelector('h3 a') || c.querySelector('a[href]'); if (!link) return;
+    var img = c.querySelector('img'), bn = c.querySelector('.pb-bangla-link'), ps = c.querySelectorAll('.pb-card-copy > p');
+    var desc = '', bnDesc = '';
+    Array.prototype.forEach.call(ps, function (p) {
+      if (p.classList.contains('pb-card-meta')) return;
+      if (p.classList.contains('pb-bangla')) bnDesc = txt(p); else if (!desc) desc = txt(p);
+    });
+    var meta = txt(c.querySelector('.pb-card-meta')).split('·');
+    var title = txt(link), short = title.split(/[:?]/)[0].trim();
+    if (short.length > 30) short = short.split(' ').slice(0, 4).join(' ');
+    var tag = (meta[0] || 'Article').trim();
+    if (!(tag in topicColor)) topicColor[tag] = COLORS[Object.keys(topicColor).length % COLORS.length];
+    data.push({ href: link.getAttribute('href'), bn: bn && bn.getAttribute('href'), title: title, short: short, img: img && img.getAttribute('src'),
+      tag: tag, read: (meta[1] || '').trim(), desc: desc, bnDesc: bnDesc });
+  });
+  if (!data.length) { tray.parentNode.style.display = 'none'; return; }
+  // topic by topic: keep each topic's articles together, topics in order of first appearance
+  var order = Object.keys(topicColor);
+  data.sort(function (a, b) { return order.indexOf(a.tag) - order.indexOf(b.tag); });
+
+  var SPOTS_D = [[14, 27, -7], [31, 39, 5], [47, 24, -4], [63, 29, 4], [15, 53, -5], [38, 61, 3], [56, 54, -3]];
+  var SPOTS_T = [[18, 23, -6], [48, 27, 5], [78, 22, -4], [22, 45, 4], [52, 48, -5], [80, 44, 3]];
+  var SPOTS_M = [[22, 21, -6], [72, 24, 5], [46, 38, -3], [22, 53, 4], [74, 54, -5]];
+  function spots() { var w = tray.clientWidth; return w < 540 ? SPOTS_M : w < 900 ? SPOTS_T : SPOTS_D; }
+
+  var page = 0, pages = 1, pins = [], picked = null, busy = false, elapsed = 0, PERIOD = 20000, z = 10;
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function build(animate) {
+    var sp = spots(), per = sp.length; pages = Math.ceil(data.length / per); if (page >= pages) page = 0;
+    var set = data.slice(page * per, page * per + per), old = pins;
+    old.forEach(function (p) { p.el.classList.add('is-out'); setTimeout(function () { p.el.remove(); }, 450); });
+    pins = set.map(function (d, i) {
+      var el = document.createElement('div');
+      el.className = 'ab-pin' + (animate ? ' is-in' : ''); el.tabIndex = 0; el.setAttribute('role', 'button');
+      el.setAttribute('aria-label', d.title + '. Press Enter for a summary, or double-click for the full article.');
+      el.style.left = sp[i][0] + '%'; el.style.top = sp[i][1] + '%'; el.style.setProperty('--r', sp[i][2] + 'deg'); el.style.zIndex = String(++z);
+      el.innerHTML = '<span class="ab-tape"></span><span class="ab-photo">' + (d.img ? '<img src="' + d.img + '" alt="" loading="lazy" decoding="async" width="300" height="300">' : '') + '</span><span class="ab-cap"></span>';
+      el.querySelector('.ab-tape').textContent = d.tag; el.querySelector('.ab-tape').style.setProperty('--tc', topicColor[d.tag]);
+      el.querySelector('.ab-cap').textContent = d.short;
+      pinsEl.appendChild(el);
+      var pin = { el: el, d: d, x: 0, y: 0, r: sp[i][2] };
+      wire(pin);
+      if (animate) setTimeout(function () { el.classList.remove('is-in'); }, 80 + i * 70);
+      return pin;
+    });
+    var seen = {}; topicsEl.innerHTML = '';
+    set.forEach(function (d) { if (seen[d.tag]) return; seen[d.tag] = 1; var li = document.createElement('li'); li.textContent = d.tag.charAt(0) + d.tag.slice(1).toLowerCase(); li.style.setProperty('--tc', topicColor[d.tag]); topicsEl.appendChild(li); });
+    pageEl.textContent = pages > 1 ? 'Set ' + (page + 1) + ' of ' + pages : data.length + ' articles';
+    tray.querySelector('.ab-status').classList.toggle('is-single', pages < 2);
+    Array.prototype.forEach.call(tray.querySelectorAll('.ab-status button, .ab-bar'), function (b) { b.style.display = pages > 1 ? '' : 'none'; });
+    elapsed = 0;
+  }
+  function go(dir) { if (picked || pages < 2) return; page = (page + dir + pages) % pages; build(true); }
+
+  function setPos(pin) { pin.el.style.setProperty('--x', pin.x + 'px'); pin.el.style.setProperty('--y', pin.y + 'px'); pin.el.style.setProperty('--r', pin.r + 'deg'); }
+  function overSlot(pin) {
+    var a = pin.el.getBoundingClientRect(), b = slot.getBoundingClientRect(), cx = a.left + a.width / 2, cy = a.top + a.height / 2;
+    return cx > b.left - 20 && cx < b.right + 20 && cy > b.top - 20 && cy < b.bottom + 20;
+  }
+  function wire(pin) {
+    var el = pin.el, pid = null, sx, sy, ox, oy, drag = false, lastTap = 0;
+    el.addEventListener('pointerdown', function (e) {
+      if (e.button || picked) return;
+      pid = e.pointerId; sx = e.clientX; sy = e.clientY; ox = pin.x; oy = pin.y; drag = false; el.style.zIndex = String(++z);
+      try { el.setPointerCapture(pid); } catch (err) {}
+    });
+    el.addEventListener('pointermove', function (e) {
+      if (pid !== e.pointerId) return;
+      var dx = e.clientX - sx, dy = e.clientY - sy;
+      if (!drag && Math.abs(dx) + Math.abs(dy) > 7) { drag = true; busy = true; el.classList.add('is-drag'); }
+      if (drag) { pin.x = ox + dx; pin.y = oy + dy; setPos(pin); slot.classList.toggle('is-hot', overSlot(pin)); }
+    });
+    function up(e) {
+      if (pid !== e.pointerId) return; pid = null;
+      if (drag) {
+        drag = false; busy = false; el.classList.remove('is-drag'); slot.classList.remove('is-hot');
+        if (overSlot(pin)) open(pin);
+        else {                                                     // stay where dropped, but inside the tray
+          var t = tray.getBoundingClientRect(), a = el.getBoundingClientRect();
+          if (a.left < t.left + 8) pin.x += t.left + 8 - a.left; if (a.right > t.right - 8) pin.x -= a.right - t.right + 8;
+          if (a.top < t.top + 8) pin.y += t.top + 8 - a.top; if (a.bottom > t.bottom - 8) pin.y -= a.bottom - t.bottom + 8;
+          setPos(pin);
+        }
+        return;
+      }
+      var now = e.timeStamp;                                       // double-tap / double-click → full article
+      if (now - lastTap < 380) { lastTap = 0; reader(pin.d, false); } else lastTap = now;
+    }
+    el.addEventListener('pointerup', up);
+    el.addEventListener('pointercancel', function (e) { if (pid === e.pointerId) { pid = null; drag = false; busy = false; el.classList.remove('is-drag'); slot.classList.remove('is-hot'); } });
+    el.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); if (e.shiftKey) reader(pin.d, false); else open(pin); } });
+    el.addEventListener('dragstart', function (e) { e.preventDefault(); });
+  }
+
+  // summary view: the card sits in the tray slot and the board shows what the article covers
+  function open(pin) {
+    if (picked) return; picked = pin; pin.home = { x: pin.x, y: pin.y, r: pin.r };
+    var a = pin.el.getBoundingClientRect(), b = slot.getBoundingClientRect();
+    var k = Math.min(1, (b.width - 22) / pin.el.offsetWidth, (b.height - 22) / pin.el.offsetHeight);
+    pin.x += b.left + b.width / 2 - (a.left + a.width / 2); pin.y += b.top + b.height / 2 - (a.top + a.height / 2); pin.r = -2;
+    pin.el.style.setProperty('--s', k); setPos(pin); pin.el.classList.add('is-picked');
+    var d = pin.d;
+    detail.querySelector('.ab-d-img').innerHTML = d.img ? '<img src="' + d.img + '" alt="">' : '';
+    detail.querySelector('.ab-d-tag').textContent = d.tag + (d.read ? ' · ' + d.read : '');
+    detail.querySelector('.ab-d-h').textContent = d.title;
+    detail.querySelector('.ab-d-en').textContent = d.desc;
+    var bnp = detail.querySelector('.ab-d-bn'); bnp.textContent = d.bnDesc; bnp.style.display = d.bnDesc ? '' : 'none';
+    detail.querySelector('.ab-d-big').textContent = d.short;
+    var en = detail.querySelector('[data-ab="en"]'), bn = detail.querySelector('[data-ab="bn"]');
+    en.href = d.href; if (d.bn) { bn.href = d.bn; bn.style.display = ''; } else bn.style.display = 'none';
+    tray.classList.add('is-open'); slot.firstElementChild.style.visibility = 'hidden';
+    setTimeout(function () { detail.querySelector('.ab-close').focus({ preventScroll: true }); }, 60);
+  }
+  function close() {
+    if (!picked) return; var pin = picked; picked = null;
+    pin.x = pin.home.x; pin.y = pin.home.y; pin.r = pin.home.r; pin.el.style.removeProperty('--s'); setPos(pin);
+    pin.el.classList.remove('is-picked'); tray.classList.remove('is-open'); slot.firstElementChild.style.visibility = '';
+    if (overSlot(pin)) { pin.x = 0; pin.y = 0; setPos(pin); }
+    elapsed = 0;
+  }
+  detail.querySelector('.ab-close').addEventListener('click', close);
+  detail.querySelector('[data-ab="full"]').addEventListener('click', function () { if (picked) reader(picked.d, false); });
+
+  // full-view reader
+  var rd = document.createElement('div'); rd.className = 'ab-reader'; rd.setAttribute('role', 'dialog'); rd.setAttribute('aria-modal', 'true'); rd.setAttribute('aria-label', 'Article reader');
+  rd.innerHTML = '<div class="ab-r-bar"><b></b><button type="button" data-l="en">English</button><button type="button" data-l="bn">বাংলা</button><a class="ab-r-new" target="_blank" rel="noopener">Open page ↗</a><button type="button" class="ab-r-x" aria-label="Close reader">Close ✕</button></div><iframe title="Article" loading="lazy"></iframe>';
+  document.body.appendChild(rd);
+  var rFrame = rd.querySelector('iframe'), rCur = null;
+  function reader(d, bn) {
+    rCur = d; var url = bn && d.bn ? d.bn : d.href;
+    rd.querySelector('b').textContent = d.title; rd.querySelector('.ab-r-new').href = url; rFrame.src = url;
+    rd.querySelector('[data-l="bn"]').style.display = d.bn ? '' : 'none';
+    rd.querySelector('[data-l="en"]').classList.toggle('is-on', !bn); rd.querySelector('[data-l="bn"]').classList.toggle('is-on', !!bn);
+    rd.classList.add('is-on'); document.documentElement.classList.add('ab-lock');
+    rd.querySelector('.ab-r-x').focus({ preventScroll: true });
+  }
+  function readerOff() { rd.classList.remove('is-on'); document.documentElement.classList.remove('ab-lock'); rFrame.src = 'about:blank'; rCur = null; elapsed = 0; }
+  rd.querySelector('.ab-r-x').addEventListener('click', readerOff);
+  rd.querySelector('[data-l="en"]').addEventListener('click', function () { if (rCur) reader(rCur, false); });
+  rd.querySelector('[data-l="bn"]').addEventListener('click', function () { if (rCur) reader(rCur, true); });
+  rd.addEventListener('click', function (e) { if (e.target === rd) readerOff(); });
+  document.addEventListener('keydown', function (e) { if (e.key !== 'Escape') return; if (rCur) readerOff(); else if (picked) close(); });
+
+  // every 20 s the board shows the next set (paused while someone is using it)
+  var visible = false, hover = false;
+  if ('IntersectionObserver' in window) new IntersectionObserver(function (en) { visible = en[0].isIntersecting; }, { threshold: 0.25 }).observe(tray); else visible = true;
+  tray.addEventListener('pointerenter', function (e) { if (e.pointerType === 'mouse') hover = true; });
+  tray.addEventListener('pointerleave', function () { hover = false; });
+  setInterval(function () {
+    if (pages < 2 || !visible || busy || picked || rCur || hover || document.hidden) { if (bar) bar.style.width = (elapsed / PERIOD * 100) + '%'; return; }
+    elapsed += 250; if (bar) bar.style.width = Math.min(100, elapsed / PERIOD * 100) + '%';
+    if (elapsed >= PERIOD) go(1);
+  }, 250);
+  Array.prototype.forEach.call(tray.querySelectorAll('[data-ab-go]'), function (b) { b.addEventListener('click', function () { go(b.getAttribute('data-ab-go') === 'prev' ? -1 : 1); }); });
+
+  var lastW = tray.clientWidth, rt;
+  window.addEventListener('resize', function () { clearTimeout(rt); rt = setTimeout(function () { if (spots().length !== (lastW < 540 ? 5 : lastW < 900 ? 6 : 7)) { close(); build(false); } lastW = tray.clientWidth; }, 200); });
+
+  build(false);
+})();
