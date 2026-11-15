@@ -109,6 +109,56 @@ for item in items:
         else:
             hidden += 1
 
+
+# Add newly released English/Bangla pairs to the public Pharma Blog grid, once only.
+blog_index = ROOT / "blog" / "index.html"
+if blog_index.exists():
+    blog_html = blog_index.read_text(encoding="utf-8")
+    for item in items:
+        due = datetime.strptime(item["date"], "%Y-%m-%d").date() <= TODAY
+        if not due or item.get("status") == "not_drafted":
+            continue
+        slug = item["slug"]
+        en_path = ROOT / "blog" / slug / "index.html"
+        bn_path = ROOT / "blog" / (slug + "-bangla") / "index.html"
+        if not (en_path.exists() and bn_path.exists()):
+            continue
+        href = f"/blog/{slug}/"
+        if href in blog_html:
+            continue
+        en = en_path.read_text(encoding="utf-8")
+        bn = bn_path.read_text(encoding="utf-8")
+        def get_meta(source, name, attr="name"):
+            m = re.search(r'<meta ' + attr + r'="' + re.escape(name) + r'" content="([^"]*)"', source, re.I)
+            return html.unescape(m.group(1)) if m else ""
+        def get_h1(source):
+            m = re.search(r'<h1[^>]*>(.*?)</h1>', source, re.S | re.I)
+            return html.unescape(re.sub(r'<[^>]+>', '', m.group(1))).strip() if m else item["title"]
+        title_en = get_h1(en)
+        title_bn = get_h1(bn)
+        desc_en = get_meta(en, "description") or item["title"]
+        desc_bn = get_meta(bn, "description") or title_bn
+        image = get_meta(en, "og:image", "property")
+        image_alt = get_meta(en, "og:image:alt", "property") or title_en
+        image = image.replace(SITE, "") if image.startswith(SITE) else image
+        kicker = "PHARMACOLOGY BASICS"
+        read_match = re.search(r'(\\d+)\\s*MIN', en, re.I)
+        read_time = read_match.group(1) if read_match else "5"
+        card = (
+            f'<article class="pb-feature-card" data-topics="pharmacology basics medicine bangla" data-search="{html.escape(title_en + " " + title_bn + " " + desc_en + " " + desc_bn, quote=True)}">'
+            f'<a href="{href}" class="pb-card-image"><img src="{html.escape(image, quote=True)}" alt="{html.escape(image_alt, quote=True)}" loading="lazy"><span class="pb-image-label">NEW · {kicker}</span></a>'
+            f'<div class="pb-card-copy"><p class="pb-card-meta">{kicker} <span>·</span> {read_time} MIN READ</p>'
+            f'<h3><a href="{href}">{html.escape(title_en)}</a></h3><p>{html.escape(desc_en)}</p>'
+            f'<p class="pb-bangla" lang="bn">{html.escape(desc_bn)}</p>'
+            f'<a class="pb-read-link" href="{href}">Read in English ↗</a>'
+            f'<a class="pb-bangla-link" href="/blog/{slug}-bangla/">বাংলায় পড়ুন ↗</a></div></article>'
+        )
+        grid_open = '<div class="pb-featured-grid">'
+        grid_close = '</div><div id="pb-no-results"'
+        if grid_open in blog_html and grid_close in blog_html:
+            blog_html = blog_html.replace(grid_open, grid_open + card, 1)
+    blog_index.write_text(blog_html, encoding="utf-8")
+
 sitemap_path.write_text(sitemap, encoding="utf-8")
 
 # Remove any previously injected public calendar blocks. The editorial schedule stays private.
