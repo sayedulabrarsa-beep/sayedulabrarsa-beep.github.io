@@ -4,21 +4,11 @@ on:
   push:
     branches: [main]
     paths:
-      - '_src/scheduled_publish.py'
+      - '_src/apply_editorial_calendar.py'
+      - '_src/editorial_calendar.json'
       - '.github/workflows/scheduled-articles.yml'
   schedule:
-    - cron: '0 14 16 11 *'
-    - cron: '0 14 18 11 *'
-    - cron: '0 14 21 11 *'
-    - cron: '0 14 23 11 *'
-    - cron: '0 14 25 11 *'
-    - cron: '0 14 28 11 *'
-    - cron: '0 14 30 11 *'
-    - cron: '0 14 2 12 *'
-    - cron: '0 14 5 12 *'
-    - cron: '0 14 7 12 *'
-    - cron: '0 14 9 12 *'
-    - cron: '0 14 12 12 *'
+    - cron: '0 14 * * *' # 8:00 PM Asia/Dhaka daily
   workflow_dispatch:
 
 permissions:
@@ -38,15 +28,15 @@ jobs:
           python-version: '3.12'
       - name: Install image dependency
         run: pip install pillow
-      - name: Hide future articles and publish those due today
-        run: python3 _src/scheduled_publish.py
+      - name: Apply calendar, hide future pages, and release due pages
+        run: python3 _src/apply_editorial_calendar.py
       - name: Commit scheduled release changes
         run: |
           if [ -n "$(git status --porcelain)" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add blog assets index.html sitemap.xml llms.txt
-            git commit -m "Schedule and release pharmacology articles"
+            git add blog assets index.html sitemap.xml llms.txt _src
+            git commit -m "Apply editorial calendar and scheduled article release"
             git pull --rebase origin main
             git push
           fi
