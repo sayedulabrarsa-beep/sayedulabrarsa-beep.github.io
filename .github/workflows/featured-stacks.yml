@@ -40,6 +40,6 @@ jobs:
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add index.html assets blog llms.txt
             git commit -m "Auto-update homepage stacks, RSS feed and llms.txt"
-            git pull --rebase origin main
+            git pull --rebase --autostash origin main
             git push
           fi
