@@ -11,11 +11,12 @@
     if (!fitEl) return;
     h1.style.fontSize = '100px';
     var w = fitEl.getBoundingClientRect().width, room = h1.clientWidth - 28;
-    if (w > 0) h1.style.fontSize = Math.min(150, Math.floor(100 * room / w * 0.97)) + 'px';
+    if (w > 0) h1.style.fontSize = Math.min(150, Math.floor(100 * room / w * 0.95)) + 'px';
+    for (var k = 0; k < 30 && fitEl.getBoundingClientRect().width > room; k++) h1.style.fontSize = (parseFloat(h1.style.fontSize) - 3) + 'px';
   }
   fit();
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
-  window.addEventListener('load', fit);
+  window.addEventListener('load', fit); setTimeout(fit, 1500); setTimeout(fit, 4000);
 
   var ring = stage.querySelector('.bh-field');
   var src = Array.prototype.slice.call(document.querySelectorAll('.pb-featured-grid .pb-feature-card'));
@@ -33,7 +34,7 @@
   var list = data.slice();
   while (list.length < 9) list = list.concat(data);
   var seq = [];
-  list.forEach(function (d) { seq.push(d); seq.push(null); });
+  list.forEach(function (d) { seq.push(d); });   // articles only, with open space between them
 
   var cards = seq.map(function (d, i) {
     var el;
@@ -44,7 +45,7 @@
         (d.img ? '<img src="' + d.img + '" alt="" width="472" height="266" decoding="async">' : '') +
         '<span class="bh-card-body"><span class="bh-card-tag"></span><span class="bh-card-title"></span>' +
         '<span class="bh-card-foot"><span>Read article ↗</span><span>' + (d.bn ? 'English + বাংলা' : 'English') + '</span></span></span></span>' +
-        '<span class="bh-face bh-back t' + ((i % 6) + 1) + '" aria-hidden="true"></span>';
+        '';
       el.querySelector('.bh-card-tag').textContent = d.tag;
       el.querySelector('.bh-card-title').textContent = d.title;
     } else {
@@ -77,11 +78,11 @@
       var x = Math.sin(rad) * R, z = Math.cos(rad) * R - R * push;
       var c = cards[i];
       c.style.transform = 'translate3d(' + x.toFixed(1) + 'px,' + y.toFixed(1) + 'px,' + z.toFixed(1) + 'px) rotateY(' + (a % 360).toFixed(2) + 'deg)';
-      var op = Math.max(0, Math.min(1, (half - Math.abs(y)) / fadeZone));
+      var op = Math.max(0, Math.min(1, (half - Math.abs(y)) / fadeZone)) * Math.min(1, Math.abs(Math.cos(rad)) / 0.22);
       c.style.setProperty('--bh-op', op.toFixed(3));
       c.style.pointerEvents = op < 0.5 ? 'none' : '';
       var f = facing(i), b = f > 0.3 ? 1 : f > -0.2 ? 0.78 : 0.5, rev = f < 0;
-      if (c._r !== rev) { c._r = rev; c.classList.toggle('is-rev', rev); }
+      // cards seen from behind show the article itself, mirrored, a little darker
       if (c._b !== b) { c._b = b; c.style.setProperty('--bh-dim', b); }
     }
   }
