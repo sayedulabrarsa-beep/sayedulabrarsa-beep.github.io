@@ -59,3 +59,10 @@
 .more-articles h2{font-size:20px;margin:0 0 10px}
 .more-articles ul{columns:2 260px;margin:0;padding-left:18px}
 .more-articles li{margin:0 0 6px}
+
+.ae-band{background:linear-gradient(145deg,#f3f8f6 0%,#fffaf1 100%);border-color:#dce8e3;box-shadow:0 12px 34px rgba(24,66,60,.07)}
+.ae-track.ae-mq{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;overflow:visible;margin:0;padding:0;mask-image:none;-webkit-mask-image:none}
+.ae-track .ae-mq-in{display:contents;width:auto}
+.ae-mq .ae-card{width:auto;min-width:0;flex:initial;animation:none}
+.ae-body{padding:15px 16px 17px}.ae-body strong{font-size:16px}
+@media(max-width:760px){.ae-track.ae-mq{grid-template-columns:1fr}.ae-mq .ae-card{width:100%}}
