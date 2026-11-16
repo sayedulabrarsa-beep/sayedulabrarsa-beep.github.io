@@ -2,7 +2,7 @@
   'use strict';
   var main=document.querySelector('main');
   if(!main||document.querySelector('.ae-band'))return;
-  var V='ae6-20261114';
+  var V='ae7-20261116';
   if(!document.querySelector('link[data-ae-style]')){
     var l=document.createElement('link');l.rel='stylesheet';l.href='/assets/article-end.css?v='+V;
     l.setAttribute('data-ae-style','');document.head.appendChild(l);
@@ -61,7 +61,8 @@
   if(!A[slug]||document.querySelector('.ae-band'))return;
   /* related picks first, then every other article, newest first */
   var picks=(R[slug]||[]).filter(function(k){return A[k]});
-  ORDER.forEach(function(k){if(k!==slug&&picks.indexOf(k)<0)picks.push(k)});
+  ORDER.forEach(function(k){if(k!==slug&&picks.indexOf(k)<0&&picks.length<3)picks.push(k)});
+  picks=picks.slice(0,3);
   var paneBn=document.getElementById('pane-bn');
   var htmlBn=document.documentElement.lang==='bn';
   function isBn(){return paneBn?!paneBn.hidden:htmlBn}
@@ -80,12 +81,10 @@
   var track=el('div','ae-track ae-mq');
   var inner=el('div','ae-mq-in');track.appendChild(inner);
   var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var loops=reduce?1:2;
   var cards=[];
-  for(var L=0;L<loops;L++)picks.forEach(function(k){
+  picks.forEach(function(k){
     var a=A[k];
     var c=el('a','ae-card');
-    if(L){c.setAttribute('aria-hidden','true');c.tabIndex=-1}
     var fig=el('span','ae-fig');
     var im=el('img');im.src=a[8];im.loading='lazy';im.decoding='async';im.width=1600;im.height=900;
     fig.appendChild(im);
@@ -94,14 +93,7 @@
     c.append(fig,body);inner.appendChild(c);
     cards.push({k:k,a:a,c:c,im:im,tag:tag,t:t,d:d,go:go});
   });
-  if(!reduce){
-    inner.style.setProperty('--ae-dur',(picks.length*6)+'s');
-    track.classList.add('ae-run');
-    /* pause while the reader touches or focuses the row */
-    var resume;
-    track.addEventListener('touchstart',function(){track.classList.add('ae-hold');clearTimeout(resume)},{passive:true});
-    track.addEventListener('touchend',function(){resume=setTimeout(function(){track.classList.remove('ae-hold')},2500)},{passive:true});
-  }
+
   wrap.append(head,track);
   /* the plain-HTML link list is for search engines and no-JS readers; the band replaces it */
   Array.prototype.forEach.call(document.querySelectorAll('.more-articles'),function(n){n.hidden=true});
@@ -128,8 +120,8 @@
   function render(){
     var bn=isBn();
     band.lang=bn?'bn':'en';
-    eyebrow.textContent=bn?'আরও জানুন':'Continue learning';
-    h2.textContent=bn?'আরও পড়তে পারেন':'You can also read';
+    eyebrow.textContent=bn?'পরবর্তী পাঠ':'KEEP LEARNING';
+    h2.textContent=bn?'এবার এগুলোও পড়ুন':'Continue with these articles';
     all.textContent=bn?'সব আর্টিকেল ↗':'All articles ↗';
     cards.forEach(function(x){
       var a=x.a;
