@@ -10,7 +10,7 @@
   function fit() {
     if (!fitEl) return;
     h1.style.fontSize = '100px';
-    var w = fitEl.getBoundingClientRect().width, room = h1.clientWidth - 28;
+    var cs = getComputedStyle(h1), w = fitEl.getBoundingClientRect().width, room = h1.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight) - 28;
     if (w > 0) h1.style.fontSize = Math.min(window.innerWidth > 900 ? 168 : 150, Math.floor(100 * room / w * 0.95)) + 'px';
     for (var k = 0; k < 30 && fitEl.getBoundingClientRect().width > room; k++) h1.style.fontSize = (parseFloat(h1.style.fontSize) - 3) + 'px';
   }
@@ -65,7 +65,7 @@
 
   function measure() {
     var w = stage.clientWidth;
-    R = w < 540 ? 200 : w < 760 ? 330 : Math.min(470, w * 0.4);
+    R = w < 540 ? 200 : w < 900 ? 330 : Math.min(340, w * 0.22);
     H = stage.clientHeight * 1.35;
     push = w < 540 ? 1.25 : 1.05;
   }
