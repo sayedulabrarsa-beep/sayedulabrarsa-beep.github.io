@@ -1,18 +1,5 @@
 [
  {
-  "slug": "drug-distribution-how-medicines-reach-their-target",
-  "date": "2026-11-16",
-  "tag_en": "Pharma Blog",
-  "tag_bn": "ফার্মা ব্লগ",
-  "title_en": "Drug Distribution: How Medicines Travel from Blood to Body Tissues",
-  "title_bn": "ওষুধের বণ্টন: রক্তে প্রবেশের পর ওষুধ কোথায় যায়?",
-  "desc_en": "Follow a medicine after it enters the bloodstream. Learn how blood flow, tissue barriers and…",
-  "desc_bn": "রক্ত থেকে ওষুধ কীভাবে বিভিন্ন অঙ্গ ও টিস্যুতে পৌঁছায় এবং protein binding ও রক্তপ্রবাহ কেন…",
-  "url_en": "/blog/drug-distribution-how-medicines-reach-their-target/",
-  "url_bn": "/blog/drug-distribution-how-medicines-reach-their-target-bangla/",
-  "img": "/assets/img/blog/how-medicines-work/distribution-where-does-the-medicine-go.webp"
- },
- {
   "slug": "why-complete-antibiotic-course-antibiotic-resistance",
   "date": "2026-11-13",
   "tag_en": "Medicine safety",
