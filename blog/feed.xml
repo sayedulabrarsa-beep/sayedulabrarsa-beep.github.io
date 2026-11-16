@@ -6,8 +6,28 @@
     <atom:link href="https://sayedulabrar.site/blog/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Pharmacist-written educational articles in English and Bangla on medicines, pharmacology and the pharmaceutical industry in Bangladesh, by Sayedul Abrar.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 13 Nov 2026 06:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 06:00:00 +0000</lastBuildDate>
     <image><url>https://sayedulabrar.site/assets/img/og-image.png</url><title>Pharma Blog | Sayedul Abrar</title><link>https://sayedulabrar.site/blog/</link></image>
+    <item>
+      <title>ওষুধের বণ্টন: রক্তে প্রবেশের পর ওষুধ কোথায় যায়?</title>
+      <link>https://sayedulabrar.site/blog/drug-distribution-how-medicines-reach-their-target-bangla/</link>
+      <guid isPermaLink="true">https://sayedulabrar.site/blog/drug-distribution-how-medicines-reach-their-target-bangla/</guid>
+      <pubDate>Mon, 16 Nov 2026 06:00:00 +0000</pubDate>
+      <dc:creator>Sayedul Abrar</dc:creator>
+      <dc:language>bn</dc:language>
+      <description>রক্ত থেকে ওষুধ কীভাবে বিভিন্ন অঙ্গ ও টিস্যুতে পৌঁছায় এবং protein binding ও রক্তপ্রবাহ কেন গুরুত্বপূর্ণ, সহজভাবে জানুন।</description>
+      <enclosure url="https://sayedulabrar.site/assets/img/blog/how-medicines-work/distribution-where-does-the-medicine-go.webp" type="image/webp" length="222960"/>
+    </item>
+    <item>
+      <title>Drug Distribution: Where Does Medicine Go After Entering the Blood?</title>
+      <link>https://sayedulabrar.site/blog/drug-distribution-how-medicines-reach-their-target/</link>
+      <guid isPermaLink="true">https://sayedulabrar.site/blog/drug-distribution-how-medicines-reach-their-target/</guid>
+      <pubDate>Mon, 16 Nov 2026 06:00:00 +0000</pubDate>
+      <dc:creator>Sayedul Abrar</dc:creator>
+      <dc:language>en</dc:language>
+      <description>Learn how medicines travel from the bloodstream to organs and tissues, and why protein binding and blood flow matter.</description>
+      <enclosure url="https://sayedulabrar.site/assets/img/blog/how-medicines-work/distribution-where-does-the-medicine-go.webp" type="image/webp" length="222960"/>
+    </item>
     <item>
       <title>অ্যান্টিবায়োটিক কোর্স শেষ করা কেন জরুরি?</title>
       <link>https://sayedulabrar.site/blog/why-complete-antibiotic-course-antibiotic-resistance-bangla/</link>

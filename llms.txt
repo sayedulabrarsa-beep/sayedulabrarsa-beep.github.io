@@ -64,6 +64,10 @@ Clinical-content boundaries:
 
 <!--articles:start-->
 Pharma Blog articles (newest first; each is educational, not medical advice):
+- ওষুধের বণ্টন: রক্তে প্রবেশের পর ওষুধ কোথায় যায়? — বাংলা (2026-11-16): https://sayedulabrar.site/blog/drug-distribution-how-medicines-reach-their-target-bangla/
+  Summary: রক্ত থেকে ওষুধ কীভাবে বিভিন্ন অঙ্গ ও টিস্যুতে পৌঁছায় এবং protein binding ও রক্তপ্রবাহ কেন গুরুত্বপূর্ণ, সহজভাবে জানুন।
+- Drug Distribution: Where Does Medicine Go After Entering the Blood? — English (2026-11-16): https://sayedulabrar.site/blog/drug-distribution-how-medicines-reach-their-target/
+  Summary: Learn how medicines travel from the bloodstream to organs and tissues, and why protein binding and blood flow matter.
 - অ্যান্টিবায়োটিক কোর্স শেষ করা কেন জরুরি? — বাংলা (2026-11-13): https://sayedulabrar.site/blog/why-complete-antibiotic-course-antibiotic-resistance-bangla/
   Summary: ভালো লাগলেও অ্যান্টিবায়োটিক কোর্স কেন শেষ করবেন? রেজিস্ট্যান্স, ডোজ মিস, বাকি ওষুধ, পার্শ্বপ্রতিক্রিয়া ও প্যাকের লাল চিহ্ন নিয়ে ফার্মাসিস্টের সহজ গাইড।
 - Why You Must Complete an Antibiotic Course — English (2026-11-13): https://sayedulabrar.site/blog/why-complete-antibiotic-course-antibiotic-resistance/
