@@ -11,7 +11,7 @@
     if (!fitEl) return;
     h1.style.fontSize = '100px';
     var w = fitEl.getBoundingClientRect().width, room = h1.clientWidth - 28;
-    if (w > 0) h1.style.fontSize = Math.min(150, Math.floor(100 * room / w * 0.95)) + 'px';
+    if (w > 0) h1.style.fontSize = Math.min(window.innerWidth > 900 ? 168 : 150, Math.floor(100 * room / w * 0.95)) + 'px';
     for (var k = 0; k < 30 && fitEl.getBoundingClientRect().width > room; k++) h1.style.fontSize = (parseFloat(h1.style.fontSize) - 3) + 'px';
   }
   fit();
@@ -31,6 +31,7 @@
       tag: txt(c.querySelector('.pb-card-meta')).split('·')[0].trim(), bn: !!c.querySelector('.pb-bangla-link') });
   });
   // the helix: article cards mixed with patterned tiles, wound two turns round a vertical axis
+  var cn = document.querySelector('.bh-count-n'); if (cn) cn.textContent = data.length;
   var list = data.slice();
   while (list.length < 9) list = list.concat(data);
   var seq = [];
@@ -64,7 +65,7 @@
 
   function measure() {
     var w = stage.clientWidth;
-    R = w < 540 ? 200 : w < 900 ? 330 : 500;
+    R = w < 540 ? 200 : w < 760 ? 330 : Math.min(470, w * 0.4);
     H = stage.clientHeight * 1.35;
     push = w < 540 ? 1.25 : 1.05;
   }

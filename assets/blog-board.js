@@ -29,6 +29,7 @@
   });
   if (!data.length) { tray.parentNode.style.display = 'none'; return; }
   // topic by topic: keep each topic's articles together, topics in order of first appearance
+  var all = data.slice();
   var order = Object.keys(topicColor);
   data.sort(function (a, b) { return order.indexOf(a.tag) - order.indexOf(b.tag); });
 
@@ -38,7 +39,7 @@
     ['#cfe0e6', '#b9d0d9', '#6f98a8'], ['#ddd3e8', '#cbbfdc', '#8f7fae'], ['#f0e2b4', '#e5d197', '#b49a4c'], ['#e2c4b0', '#d4ae96', '#a07658']];
   var LAY = {
     d: { 1: [[36, 44, -4]], 2: [[25, 42, -6], [49, 47, 5]], 3: [[19, 38, -6], [40, 49, 4], [61, 37, -3]],
-         n: [[14, 27, -7], [31, 39, 5], [47, 24, -4], [63, 29, 4], [15, 53, -5], [38, 61, 3], [56, 54, -3]] },
+         n: [[15, 28, -7], [35, 40, 5], [56, 27, -4], [17, 56, 4], [39, 62, -3], [60, 55, 5]] },
     t: { 1: [[40, 36, -4]], 2: [[27, 33, -6], [66, 37, 5]], 3: [[20, 29, -6], [52, 34, 5], [82, 29, -3]],
          n: [[18, 23, -6], [48, 27, 5], [78, 22, -4], [22, 45, 4], [52, 48, -5], [80, 44, 3]] },
     m: { 1: [[50, 37, -4]], 2: [[29, 33, -6], [71, 39, 5]], 3: [[25, 28, -6], [73, 31, 5], [47, 48, -3]],
@@ -50,7 +51,9 @@
   var boards = [];
   function makeBoards() {
     var per = lay().n.length; boards = [];
-    order.forEach(function (t, ti) {
+    var allParts = Math.ceil(all.length / per);                       // first: every article, a few at a time
+    for (var a = 0; a < allParts; a++) boards.push({ tag: 'ALL ARTICLES', ti: -1, items: all.slice(a * per, a * per + per), part: a + 1, parts: allParts });
+    order.forEach(function (t, ti) {                                  // then: topic by topic
       var g = groups[t], parts = Math.ceil(g.length / per);
       for (var k = 0; k < parts; k++) boards.push({ tag: t, ti: ti, items: g.slice(k * per, k * per + per), part: k + 1, parts: parts });
     });
@@ -63,9 +66,10 @@
 
   // topic tabs
   topicsEl.innerHTML = '';
-  var tabs = order.map(function (t, ti) {
+  topicColor['ALL ARTICLES'] = '#2b2219';
+  var tabs = ['ALL ARTICLES'].concat(order).map(function (t, ti) {
     var li = document.createElement('li'), b = document.createElement('button');
-    b.type = 'button'; b.textContent = nice(t) + ' (' + groups[t].length + ')'; li.style.setProperty('--tc', topicColor[t]);
+    b.type = 'button'; b.textContent = nice(t) + ' (' + (t === 'ALL ARTICLES' ? all.length : groups[t].length) + ')'; li.style.setProperty('--tc', topicColor[t]);
     b.addEventListener('click', function () { if (picked) close(); for (var i = 0; i < boards.length; i++) if (boards[i].tag === t) { page = i; build(true); return; } });
     li.appendChild(b); topicsEl.appendChild(li); return li;
   });
@@ -73,11 +77,11 @@
   function build(animate) {
     makeBoards(); pages = boards.length; if (page >= pages) page = 0;
     var bd = boards[page], L = lay(), sp = bd.items.length <= 3 ? L[bd.items.length] : L.n, set = bd.items, old = pins;
-    var th = THEMES[bd.ti % THEMES.length];
+    var th = bd.ti < 0 ? ['#ead9c0', '#dcc6a6', '#b99f7d'] : THEMES[(bd.ti + 1) % THEMES.length];
     tray.style.setProperty('--ab-bg', th[0]); tray.style.setProperty('--ab-bg2', th[1]); tray.style.setProperty('--ab-edge', th[2]);
     tray.style.setProperty('--ab-tc', topicColor[bd.tag]);
     titleEl.innerHTML = ''; nice(bd.tag).split(' ').forEach(function (w, i, arr) { titleEl.appendChild(document.createTextNode(w)); if (i < arr.length - 1) titleEl.appendChild(document.createElement('br')); });
-    tabs.forEach(function (li, i) { li.classList.toggle('is-on', order[i] === bd.tag); });
+    tabs.forEach(function (li, i) { li.classList.toggle('is-on', (['ALL ARTICLES'].concat(order))[i] === bd.tag); });
     old.forEach(function (p) { p.el.classList.add('is-out'); setTimeout(function () { p.el.remove(); }, 450); });
     pins = set.map(function (d, i) {
       var el = document.createElement('div');
@@ -93,7 +97,7 @@
       if (animate) setTimeout(function () { el.classList.remove('is-in'); }, 80 + i * 70);
       return pin;
     });
-    pageEl.textContent = 'Topic ' + (bd.ti + 1) + ' of ' + order.length + (bd.parts > 1 ? ' · part ' + bd.part : '');
+    pageEl.textContent = (bd.ti < 0 ? 'All articles' : 'Topic ' + (bd.ti + 1) + ' of ' + order.length) + (bd.parts > 1 ? ' · ' + bd.part + '/' + bd.parts : '');
     Array.prototype.forEach.call(tray.querySelectorAll('.ab-status button, .ab-bar'), function (b) { b.style.display = pages > 1 ? '' : 'none'; });
     elapsed = 0;
   }
