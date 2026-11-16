@@ -15,8 +15,15 @@ sitemap_path = ROOT / "sitemap.xml"
 sitemap = sitemap_path.read_text(encoding="utf-8")
 released = hidden = missing = 0
 
+def is_due(item):
+    release_at = datetime.strptime(
+        item["date"] + "T" + item.get("time", DATA.get("publish_time", "20:00")),
+        "%Y-%m-%dT%H:%M"
+    ).replace(tzinfo=ZoneInfo("Asia/Dhaka"))
+    return NOW >= release_at
+
 def card_status(item, exists):
-    due = datetime.strptime(item["date"], "%Y-%m-%d").date() <= TODAY
+    due = is_due(item)
     if item["status"].startswith("draft_on"):
         return "Published" if due and exists else ("Draft overdue" if due else "Draft planned")
     if not exists: return "Page in preparation"
@@ -61,7 +68,7 @@ calendar_html = render_calendar()
 # Release each English/Bangla pair together only when both pages exist and the item is draftable.
 for item in items:
     pub_date = item["date"]
-    due = datetime.strptime(pub_date, "%Y-%m-%d").date() <= TODAY
+    due = is_due(item)
     pair = [
         (f'blog/{item["slug"]}/index.html', f"{SITE}/blog/{item['slug']}/"),
         (f'blog/{item["slug"]}-bangla/index.html', f"{SITE}/blog/{item['slug']}-bangla/"),
@@ -115,7 +122,7 @@ blog_index = ROOT / "blog" / "index.html"
 if blog_index.exists():
     blog_html = blog_index.read_text(encoding="utf-8")
     for item in items:
-        due = datetime.strptime(item["date"], "%Y-%m-%d").date() <= TODAY
+        due = is_due(item)
         if not due or item.get("status") == "not_drafted":
             continue
         slug = item["slug"]
