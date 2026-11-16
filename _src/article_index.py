@@ -101,7 +101,7 @@ for a in arts:
             continue
         s = o = path.read_text(encoding="utf-8")
         s = re.sub(re.escape(START) + ".*?" + re.escape(END), "", s, flags=re.S)
-        others = [x for x in arts if x["slug"] != a["slug"]]
+        others = [x for x in arts if x["slug"] != a["slug"]][:3]
         head = "ফার্মা ব্লগ থেকে আরও পড়ুন" if lang == "bn" else "More from the Pharma Blog"
         items = "".join(
             f'<li><a href="{html.escape(x["url_" + lang])}">{html.escape(x["title_" + lang])}</a></li>' for x in others
@@ -112,6 +112,9 @@ for a in arts:
         if k < 0:
             continue
         s = s[:k] + block + s[k:]
+        related_script = '<script src="/assets/blog-related.js?v=ae7-20261116" defer></script>'
+        if related_script not in s:
+            s = s.replace("</body>", related_script + "</body>")
         if s != o:
             path.write_text(s, encoding="utf-8")
             n += 1
