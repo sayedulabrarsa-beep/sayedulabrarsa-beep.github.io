@@ -1,5 +1,18 @@
 [
  {
+  "slug": "drug-distribution-how-medicines-reach-their-target",
+  "date": "2026-11-16",
+  "tag_en": "Pharmacology basics",
+  "tag_bn": "ফার্মাকোলজি বেসিক",
+  "title_en": "Drug Distribution: How Medicines Travel from Blood to Body Tissues",
+  "title_bn": "ওষুধের বণ্টন: রক্ত থেকে শরীরের বিভিন্ন টিস্যুতে কীভাবে পৌঁছায়?",
+  "desc_en": "Follow a medicine after it enters the bloodstream. Learn how blood flow, tissue barriers and protein binding shape drug distribution.",
+  "desc_bn": "রক্তে প্রবেশের পর ওষুধ কীভাবে বিভিন্ন অঙ্গ ও টিস্যুতে পৌঁছায়, রক্তপ্রবাহ, tissue barrier ও protein binding কীভাবে বণ্টনকে প্রভাবিত করে জানুন।",
+  "url_en": "/blog/drug-distribution-how-medicines-reach-their-target/",
+  "url_bn": "/blog/drug-distribution-how-medicines-reach-their-target-bangla/",
+  "img": "/assets/img/blog/how-medicines-work/distribution-where-does-the-medicine-go.webp"
+ },
+ {
   "slug": "why-complete-antibiotic-course-antibiotic-resistance",
   "date": "2026-11-13",
   "tag_en": "Medicine safety",
