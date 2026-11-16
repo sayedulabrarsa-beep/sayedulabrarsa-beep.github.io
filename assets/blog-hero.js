@@ -65,9 +65,9 @@
 
   function measure() {
     var w = stage.clientWidth;
-    R = w < 540 ? 200 : w < 900 ? 330 : Math.min(340, w * 0.22);
+    R = stage.dataset.r ? +stage.dataset.r : w < 540 ? Math.min(150, w * 0.4) : w < 900 ? Math.min(250, w * 0.34) : Math.min(520, w * 0.36);
     H = stage.clientHeight * 1.35;
-    push = w < 540 ? 1.25 : 1.05;
+    push = w < 540 ? 1.15 : 1.05;
   }
   function angle(i) { return i * step + rot; }
   function facing(i) { return Math.cos(angle(i) * Math.PI / 180); }   // 1 = facing the viewer, -1 = facing away
