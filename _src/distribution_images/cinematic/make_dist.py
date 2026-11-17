@@ -9,59 +9,58 @@ OUT = pathlib.Path(sys.argv[1]); OUT.mkdir(parents=True, exist_ok=True)
 U = H.as_uri()
 SC = 1600 / 1672  # source images are ~1672x941
 CSS = f"""
-@font-face{{font-family:Anton;src:url({U}/anton-latin-400-normal.woff2)}}
-@font-face{{font-family:Anek;src:url({U}/anek-bangla-bengali-800-normal.woff2);font-weight:800;unicode-range:U+0964-0965,U+0980-09FE,U+200C-200D,U+25CC}}
-@font-face{{font-family:Anek;src:url({U}/anek-bangla-latin-800-normal.woff2);font-weight:800}}
-@font-face{{font-family:Anek;src:url({U}/anek-bangla-bengali-700-normal.woff2);font-weight:700;unicode-range:U+0964-0965,U+0980-09FE,U+200C-200D,U+25CC}}
-@font-face{{font-family:Anek;src:url({U}/anek-bangla-latin-700-normal.woff2);font-weight:700}}
-@font-face{{font-family:Anek;src:url({U}/anek-bangla-bengali-600-normal.woff2);font-weight:600;unicode-range:U+0964-0965,U+0980-09FE,U+200C-200D,U+25CC}}
-@font-face{{font-family:HS;src:url({U}/hind-siliguri-bengali-400-normal.woff2);font-weight:400;unicode-range:U+0964-0965,U+0980-09FE,U+200C-200D,U+25CC}}
-@font-face{{font-family:HS;src:url({U}/hind-siliguri-bengali-600-normal.woff2);font-weight:600;unicode-range:U+0964-0965,U+0980-09FE,U+200C-200D,U+25CC}}
+@font-face{{font-family:Pop;src:url({U}/poppins-latin-800-normal.woff2);font-weight:800}}
+@font-face{{font-family:Pop;src:url({U}/poppins-latin-600-normal.woff2);font-weight:600}}
+@font-face{{font-family:Int;src:url({U}/inter-latin-400-normal.woff2);font-weight:400}}
+@font-face{{font-family:Int;src:url({U}/inter-latin-500-normal.woff2);font-weight:500}}
+@font-face{{font-family:Int;src:url({U}/inter-latin-600-normal.woff2);font-weight:600}}
+@font-face{{font-family:HS;src:url({U}/hind-siliguri-bengali-500-normal.woff2);font-weight:500;unicode-range:U+0964-0965,U+0980-09FE,U+200C-200D,U+25CC}}
 @font-face{{font-family:HS;src:url({U}/hind-siliguri-bengali-700-normal.woff2);font-weight:700;unicode-range:U+0964-0965,U+0980-09FE,U+200C-200D,U+25CC}}
+@font-face{{font-family:HS;src:url({U}/hind-siliguri-latin-700-normal.woff2);font-weight:700}}
+:root{{--teal:#174F52;--char:#253238;--coral:#E98250;--cream:#F7F1E6;--sage:#DCEBE7;--gold:#D8A84E;--steel:#526D82}}
 *{{margin:0;padding:0;box-sizing:border-box}}
-body{{width:var(--w);height:var(--h);overflow:hidden;position:relative;font-family:Poppins,HS,sans-serif;color:#0f3c42;background:#f7f2ec}}
-body.bn{{font-family:HS,Poppins,sans-serif}}
+body{{width:var(--w);height:var(--h);overflow:hidden;position:relative;font-family:Int,HS,sans-serif;color:var(--char);background:var(--cream)}}
+body.bn{{font-family:HS,Int,sans-serif}}
 .bg{{position:absolute;inset:0;background-size:cover;background-position:center}}
-.veil{{position:absolute;inset:0;background:linear-gradient(90deg,rgba(250,246,240,.97) 0%,rgba(250,246,240,.9) var(--a,30%),rgba(250,246,240,0) var(--b,44%))}}
-.vig{{position:absolute;inset:0;box-shadow:inset 0 0 160px rgba(15,60,66,.18)}}
-.panel{{position:absolute;left:64px;top:0;bottom:var(--fb,58px);width:var(--pw,560px);display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:30px 0}}
+.veil{{position:absolute;inset:0;background:linear-gradient(90deg,rgba(247,241,230,.97) 0%,rgba(247,241,230,.9) var(--a,30%),rgba(247,241,230,0) var(--b,44%))}}
+.vig{{display:none}}
+.panel{{position:absolute;left:96px;top:0;bottom:var(--fb,58px);width:var(--pw,560px);display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:30px 0}}
 .chips{{width:100%;display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:26px}}
-.chip{{background:rgba(255,255,255,.92);border-radius:18px;padding:16px 18px;box-shadow:0 10px 26px rgba(15,60,66,.12);border-top:6px solid var(--c,#17807a)}}
-.chip b{{display:block;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:31px;line-height:1.05;color:var(--c,#17807a)}}
-body.bn .chip b{{font-family:Anek;font-weight:800;text-transform:none;font-size:31px;line-height:1.2}}
-.chip span{{display:block;font-size:21px;line-height:1.3;color:#2a4a51;margin-top:6px}}
-body.bn .chip span{{font-size:23px}}
-.kick{{display:flex;align-items:center;gap:12px;font-size:20px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#17807a}}
-.kick:before{{content:"";width:46px;height:4px;border-radius:2px;background:linear-gradient(90deg,#17807a,#e0892b)}}
-body.bn .kick{{letter-spacing:.02em;font-size:24px;font-family:Anek,HS}}
-.title{{font-family:Anton,Impact,sans-serif;text-transform:uppercase;font-size:var(--ts,86px);line-height:.98;letter-spacing:.005em;margin-top:14px;color:#0f3c42}}
-body.bn .title{{font-family:Anek,HS;font-weight:800;text-transform:none;line-height:1.12;letter-spacing:0}}
-.title em{{font-style:normal;background:linear-gradient(90deg,#0d9488,#14b8a6);-webkit-background-clip:text;background-clip:text;color:transparent}}
-.title i{{font-style:normal;background:linear-gradient(90deg,#e0562b,#f59e0b);-webkit-background-clip:text;background-clip:text;color:transparent}}
-.sub{{font-size:30px;line-height:1.38;color:#2a4a51;margin-top:16px;font-weight:500}}
-body.bn .sub{{font-size:32px;line-height:1.45}}
-.legend{{margin-top:26px;display:flex;flex-direction:column;gap:18px}}
-.li{{display:flex;gap:14px;align-items:flex-start}}
-.badge{{flex:none;width:44px;height:44px;border-radius:50%;background:#0f3c42;color:#fff;font-family:Anton,Anek,sans-serif;font-size:24px;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 4px rgba(255,255,255,.85)}}
-body.bn .badge{{font-family:Anek;font-weight:800;font-size:25px}}
-.li b{{display:block;font-size:28px;line-height:1.2;color:#0f3c42}}
-.li span{{display:block;font-size:22px;line-height:1.3;color:#3b5960}}
-body.bn .li b{{font-family:Anek;font-weight:700;font-size:30px}}
-body.bn .li span{{font-size:24px}}
-.li span.tag{{display:inline-block;color:#fff;margin-top:5px;font-size:15px;font-weight:700;color:#fff;padding:2px 10px;border-radius:999px;letter-spacing:.04em}}
-body.bn .li span.tag{{font-size:17px;font-family:Anek}}
-.call{{position:absolute;background:rgba(255,255,255,.93);backdrop-filter:blur(6px);border-radius:16px;padding:10px 16px;box-shadow:0 12px 30px rgba(15,60,66,.22);border-left:6px solid var(--c,#17807a);max-width:300px}}
-.call b{{display:block;font-family:Anton,sans-serif;text-transform:uppercase;letter-spacing:.03em;font-size:25px;font-weight:400;color:#0f3c42;line-height:1.05}}
-body.bn .call b{{font-family:Anek;font-weight:800;text-transform:none;font-size:27px;line-height:1.2}}
-.call span{{display:block;font-size:19px;line-height:1.3;color:#36555c;margin-top:3px}}
-body.bn .call span{{font-size:20px}}
-.mk{{position:absolute;width:52px;height:52px;margin:-26px 0 0 -26px;border-radius:50%;background:#0f3c42;color:#fff;font-family:Anton,Anek,sans-serif;font-size:27px;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 5px rgba(255,255,255,.9),0 0 0 11px rgba(23,128,122,.35),0 10px 24px rgba(0,0,0,.3)}}
-body.bn .mk{{font-family:Anek;font-weight:800}}
-.foot{{position:absolute;left:0;right:0;bottom:0;height:54px;display:flex;justify-content:space-between;align-items:center;padding:0 64px;font-size:18px;color:#3b5960;background:linear-gradient(90deg,rgba(250,246,240,.95),rgba(250,246,240,.75))}}
-body.bn .foot{{font-size:20px}}
-.foot b{{color:#0f3c42;font-weight:700}}
-.ill{{position:absolute;right:20px;bottom:64px;font-size:15px;color:#3b5960;background:rgba(255,255,255,.8);padding:3px 12px;border-radius:999px}}
-body.bn .ill{{font-size:17px}}
+.chip{{background:var(--sage);border-radius:16px;padding:16px 18px;border-left:6px solid var(--c,var(--teal))}}
+.chip b{{display:block;font-family:Pop;font-weight:800;font-size:23px;line-height:1.15;color:var(--teal)}}
+body.bn .chip b{{font-family:HS;font-weight:700;font-size:27px;line-height:1.25}}
+.chip span{{display:block;font-size:20px;line-height:1.35;color:var(--char);margin-top:6px}}
+body.bn .chip span{{font-size:23px;font-weight:500}}
+.kick{{display:flex;align-items:center;gap:12px;font-family:Int;font-size:20px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--steel)}}
+.kick:before{{content:"";width:40px;height:4px;border-radius:2px;background:var(--coral)}}
+body.bn .kick{{letter-spacing:.02em;font-size:24px;font-family:HS;font-weight:700}}
+.title{{font-family:Pop,sans-serif;font-weight:800;text-transform:uppercase;font-size:var(--ts,76px);line-height:1.04;letter-spacing:-.01em;margin-top:16px;color:var(--teal)}}
+body.bn .title{{font-family:HS;font-weight:700;text-transform:none;line-height:1.2;letter-spacing:0}}
+.title em{{font-style:normal;color:var(--teal)}}
+.title i{{font-style:normal;color:var(--coral)}}
+.sub{{font-size:29px;line-height:1.42;color:var(--char);margin-top:18px;font-weight:500}}
+body.bn .sub{{font-size:31px;line-height:1.5}}
+.legend{{margin-top:26px;display:flex;flex-direction:column;gap:14px;width:100%}}
+.li{{display:flex;gap:14px;align-items:flex-start;background:rgba(255,255,255,.9);border-radius:14px;padding:12px 16px}}
+.badge{{flex:none;width:42px;height:42px;border-radius:50%;background:var(--teal);color:#fff;font-family:Pop,HS;font-weight:800;font-size:21px;display:flex;align-items:center;justify-content:center}}
+body.bn .badge{{font-family:HS;font-weight:700;font-size:24px}}
+.li b{{display:block;font-family:Pop;font-weight:800;font-size:24px;line-height:1.2;color:var(--teal)}}
+.li span{{display:block;font-size:20px;line-height:1.35;color:var(--char)}}
+body.bn .li b{{font-family:HS;font-weight:700;font-size:28px}}
+body.bn .li span{{font-size:23px;font-weight:500}}
+.li span.tag{{display:inline-block;color:#fff;margin-top:5px;font-size:15px;font-weight:600;padding:2px 10px;border-radius:999px}}
+.call{{position:absolute;background:#fff;border-radius:14px;padding:11px 16px;box-shadow:0 10px 26px rgba(37,50,56,.22);border-left:6px solid var(--c,var(--teal));max-width:300px}}
+.call b{{display:block;font-family:Pop;font-weight:800;font-size:21px;color:var(--teal);line-height:1.15}}
+body.bn .call b{{font-family:HS;font-weight:700;font-size:25px;line-height:1.25}}
+.call span{{display:block;font-size:18px;line-height:1.35;color:var(--char);margin-top:3px}}
+body.bn .call span{{font-size:20px;font-weight:500}}
+.mk{{position:absolute;width:50px;height:50px;margin:-25px 0 0 -25px;border-radius:50%;background:var(--teal);color:#fff;font-family:Pop,HS;font-weight:800;font-size:24px;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 5px #fff,0 0 0 10px var(--mkc,rgba(233,130,80,.55)),0 10px 24px rgba(0,0,0,.3)}}
+body.bn .mk{{font-family:HS;font-weight:700}}
+.foot{{position:absolute;left:0;right:0;bottom:0;height:54px;display:flex;justify-content:space-between;align-items:center;padding:0 96px;font-size:17px;color:var(--steel);background:rgba(247,241,230,.94)}}
+body.bn .foot{{font-size:19px}}
+.foot b{{color:var(--teal);font-weight:600}}
+.ill{{position:absolute;right:24px;bottom:66px;font-size:14px;color:var(--char);background:rgba(255,255,255,.85);padding:3px 12px;border-radius:999px}}
+body.bn .ill{{font-size:16px}}
 """
 P = lambda x, y: (x * SC, y * SC)
 def ring(x, y, r=34, c="#17807a"):
@@ -96,7 +95,7 @@ def build(cfg, lang, w=1600, h=900):
     foot = (f'<div class="foot"><span>{("সূত্র: " if bn else "Sources: ") + src if src else ""}</span><b>{"সাইয়্যেদুল আবরার, ফার্মাসিস্ট" if bn else "Sayedul Abrar, Pharmacist"} · sayedulabrar.site</b></div>') if cfg.get("foot", True) else ""
     ts = cfg.get("ts", (86, 74))[1 if bn else 0]
     chips = ('<div class="chips">' + ''.join(f'<div class="chip" style="--c:{c[2]}"><b>{(c[1] if bn else c[0])[0]}</b><span>{(c[1] if bn else c[0])[1]}</span></div>' for c in cfg['chips']) + '</div>') if cfg.get('chips') else ''
-    byline = (f'<p style="margin-top:34px;display:inline-block;background:#0f3c42;color:#fff;font-weight:700;font-size:{26 if w>1300 else 22}px;padding:12px 26px;border-radius:999px;box-shadow:0 10px 24px rgba(15,60,66,.25)">{"লিখেছেন সাইয়্যেদুল আবরার, ফার্মাসিস্ট" if bn else "By Sayedul Abrar, Pharmacist"}</p>') if cfg.get('byline') else ''
+    byline = (f'<p style="margin-top:34px;display:inline-block;background:#174F52;color:#fff;font-family:Int,HS;font-weight:600;font-size:{22 if w>1300 else 19}px;padding:12px 26px;border-radius:999px;box-shadow:0 10px 24px rgba(15,60,66,.25)">{"লিখেছেন সাইয়্যেদুল আবরার, ফার্মাসিস্ট" if bn else "By Sayedul Abrar, Pharmacist"}</p>') if cfg.get('byline') else ''
     tight = '<style>.legend{gap:10px!important;margin-top:18px!important}body.bn .legend{gap:7px!important;margin-top:14px!important}.li b{font-size:25px!important}body.bn .li b{font-size:27px!important}.li span{font-size:20px!important}body.bn .li span{font-size:22px!important}.badge{width:38px!important;height:38px!important;font-size:20px!important}</style>' if cfg.get('tight') else ''
     return (f'<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><style>:root{{--w:{w}px;--h:{h}px}}{CSS}</style></head><body class="{lang}">{tight}'
             f'<div class="bg" style="background-image:url({U}/bg/{cfg["bg"]}.webp);{cfg.get("bgcss","")}"></div><div class="veil" style="--a:{cfg.get("a","30%")};--b:{cfg.get("b","46%")};{cfg.get("veilcss","")}"></div><div class="vig"></div>'
@@ -104,31 +103,31 @@ def build(cfg, lang, w=1600, h=900):
             f'<div class="panel" style="--pw:{cfg.get("pw",560)}px;--ts:{ts}px;--fb:{58 if cfg.get("foot", True) else 0}px"><p class="kick">{g("kick")}</p><h1 class="title">{g("title")}</h1>'
             f'{f"<p class=sub>{sub}</p>" if sub else ""}{chips}{leg}{byline}</div>{ill if cfg.get("ill", True) else ""}{foot}</body></html>')
 
-TEAL, ORANGE, RED, PURPLE, BLUE = "#17807a", "#e0892b", "#d0453c", "#7b5cc4", "#4a6fd6"
-TEAL, ORANGE, RED, PURPLE, BLUE = "#17807a", "#e0892b", "#d0453c", "#7b5cc4", "#4a6fd6"
+TEAL, ORANGE, RED, PURPLE, BLUE = "#174F52", "#E98250", "#E98250", "#D8A84E", "#526D82"  # palette: teal, coral, coral, gold, steel
+TEAL, ORANGE, RED, PURPLE, BLUE = "#174F52", "#E98250", "#E98250", "#D8A84E", "#526D82"  # palette: teal, coral, coral, gold, steel
 CFG = {
- "cover": dict(bg="cover", a="28%", b="40%", pw=640, byline=True, ts=(126, 100), foot=False, ill=False,
+ "cover": dict(bg="cover", a="28%", b="40%", pw=640, byline=True, ts=(98, 92), foot=False, ill=False,
    kick=("Pharmacology made simple", "সহজ ভাষায় ফার্মাকোলজি"),
-   title=("<i>Drug</i> <em>Distribution</em>", "<i>ওষুধের</i> <em>বণ্টন</em>"),
+   title=("Drug <i>Distribution</i>", "ওষুধের <i>বণ্টন</i>"),
    sub=("How does medicine reach different parts of the body?", "ওষুধ কীভাবে শরীরের বিভিন্ন অংশে পৌঁছায়?")),
- "highway": dict(bg="highway", a="30%", b="40%", pw=540, ts=(80, 70),
-   kick=("How it travels", "কীভাবে যায়"), title=("<i>Riding</i> the <em>bloodstream</em>", "<em>রক্তপ্রবাহে</em> <i>ওষুধের যাত্রা</i>"), sub=("", ""),
+ "highway": dict(bg="highway", a="30%", b="40%", pw=540, ts=(66, 64),
+   kick=("How it travels", "কীভাবে যায়"), title=("Riding the <i>bloodstream</i>", "রক্তপ্রবাহে <i>ওষুধের যাত্রা</i>"), sub=("", ""),
    marks=[(860, 380, 1), (1440, 110, 2), (1565, 395, 3), (1480, 700, 4)],
    legend=[(("Bloodstream", "The heart pumps blood that carries the medicine.", None), ("রক্তপ্রবাহ", "হৃৎপিণ্ডের পাম্প করা রক্ত ওষুধ বয়ে নেয়।", None)),
            (("Liver", "Rich blood supply, so medicine can arrive quickly.", None), ("যকৃৎ", "রক্ত সরবরাহ বেশি, তাই ওষুধ দ্রুত পৌঁছাতে পারে।", None)),
            (("Kidneys", "Also receive a large share of blood flow.", None), ("কিডনি", "এরাও রক্তপ্রবাহের বড় অংশ পায়।", None)),
            (("Muscle", "Muscle and fat may receive it more slowly.", None), ("মাংসপেশি", "মাংসপেশি ও চর্বিতে ওষুধ তুলনামূলক ধীরে পৌঁছাতে পারে।", None))],
    src=("StatPearls; MSD Manual", "StatPearls; MSD Manual")),
- "barrier": dict(bg="barrier", a="28%", b="38%", pw=540, ts=(80, 70),
+ "barrier": dict(bg="barrier", a="28%", b="38%", pw=540, ts=(66, 64),
    chips=[(("Often cross", "Small, fat-soluble molecules"), ("প্রায়ই পার হয়", "ছোট, চর্বিতে দ্রবণীয় অণু"), ORANGE), (("Often kept out", "Large or strongly charged molecules"), ("প্রায়ই আটকে যায়", "বড় বা বেশি চার্জযুক্ত অণু"), BLUE)],
-   kick=("Special barriers", "বিশেষ বাধা"), title=("The <em>blood–brain</em> <i>barrier</i>", "<em>ব্লাড–ব্রেইন</em> <i>ব্যারিয়ার</i>"),
+   kick=("Special barriers", "বিশেষ বাধা"), title=("The <i>blood–brain</i> barrier", "<i>ব্লাড–ব্রেইন</i> ব্যারিয়ার"),
    sub=("Tightly joined cells let only some medicines into the brain.", "শক্তভাবে জোড়া লাগানো কোষ শুধু কিছু ওষুধকে মস্তিষ্কে ঢুকতে দেয়।"),
    calls=[(960, 255, 1200, 95, "l", BLUE, ("Kept out", "Larger molecules can't pass the wall"), ("আটকে যায়", "বড় অণু দেয়াল পেরোতে পারে না")),
           (1340, 600, 1655, 735, "r", ORANGE, ("Gets through", "Small, fat-soluble molecules reach the brain"), ("ঢুকে যায়", "ছোট, চর্বিতে দ্রবণীয় অণু মস্তিষ্কে পৌঁছায়")),
           (1095, 655, 690, 800, "l", PURPLE, ("Tight junctions", "Cells sealed closely together"), ("টাইট জাংশন", "কোষগুলো শক্তভাবে জোড়া লাগানো"))],
    src=("StatPearls; MSD Manual", "StatPearls; MSD Manual")),
- "binding": dict(bg="binding", a="27%", b="37%", pw=520, ts=(84, 72),
-   kick=("Plasma protein binding", "প্লাজমা প্রোটিন বাইন্ডিং"), title=("<em>Bound</em> vs <i>free</i> drug", "<em>আবদ্ধ</em> বনাম <i>মুক্ত</i> ওষুধ"),
+ "binding": dict(bg="binding", a="27%", b="37%", pw=470, ts=(70, 66),
+   kick=("Plasma protein binding", "প্লাজমা প্রোটিন বাইন্ডিং"), title=("Bound vs <i>free</i> drug", "আবদ্ধ বনাম <i>মুক্ত</i> ওষুধ"),
    sub=("Many medicines ride on albumin in the blood. In general, only the free part can leave the blood, act and be removed.",
         "অনেক ওষুধ রক্তে অ্যালবুমিনের সঙ্গে যুক্ত থাকে। সাধারণত শুধু মুক্ত অংশই রক্ত ছেড়ে কাজ করতে ও বের হতে পারে।"),
    calls=[(880, 470, 655, 800, "l", BLUE, ("Albumin + bound drug", "Held in the blood for now"), ("অ্যালবুমিন + আবদ্ধ ওষুধ", "আপাতত রক্তেই থাকে")),
@@ -152,6 +151,6 @@ with sync_playwright() as p:
             shot(build(CFG[key], lang), 1600, 900, OUT / f"{NAMES[key]}{'-bn' if lang == 'bn' else ''}.webp")
         if key == "cover":
             for lang in ("en", "bn"):
-                c = dict(CFG["cover"]); c["ts"] = (100, 80); c["pw"] = 520
+                c = dict(CFG["cover"]); c["ts"] = (80, 72); c["pw"] = 500
                 shot(build(c, lang, 1200, 630), 1200, 630, OUT / f"drug-distribution-social-{lang}.jpg", "jpeg")
     br.close()
