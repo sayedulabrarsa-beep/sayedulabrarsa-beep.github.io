@@ -3837,3 +3837,33 @@ body.pf-page footer .cr,body.pf-page footer small{color:#d9c6a2}
 @media(max-width:850px){.portfolio-reading-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:520px){.portfolio-reading{padding:34px 0}.portfolio-reading-grid{grid-template-columns:1fr}.portfolio-reading-card{min-height:130px}}
 @media(prefers-reduced-motion:reduce){.portfolio-reading-card{transition:none}}
+
+
+/* Mobile product-dialog controls: keep the toolbar above the scroll layer
+   and guarantee the three circular controls remain tappable. */
+.cab-dlg-top{
+  position:relative!important;
+  top:auto!important;
+  z-index:20!important;
+  pointer-events:auto!important;
+  isolation:isolate;
+}
+.cab-dlg-nav,
+.cab-dlg-nav button{
+  position:relative;
+  z-index:21;
+  pointer-events:auto!important;
+  touch-action:manipulation;
+  -webkit-tap-highlight-color:transparent;
+}
+.cab-dlg-nav button{
+  min-width:44px;
+  min-height:44px;
+  cursor:pointer;
+}
+@media(max-width:900px){
+  .cab-dlg{overscroll-behavior:contain}
+  .cab-dlg-in{min-height:0}
+  .cab-dlg-top{flex-shrink:0}
+  .cab-dlg-grid{min-height:0}
+}
