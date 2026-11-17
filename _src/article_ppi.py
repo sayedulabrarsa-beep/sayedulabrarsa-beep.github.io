@@ -289,10 +289,11 @@ def main():
     blog["inLanguage"] = ["en", "bn"]
     blog["speakable"] = {"@type": "SpeakableSpecification", "cssSelector": ["#pane-en .answer-first p", "#pane-bn .answer-first p"]}
     blog["about"] = [
-        {"@type": "Drug", "name": "Rabeprazole", "nonProprietaryName": "rabeprazole sodium", "drugClass": {"@type": "DrugClass", "name": "Proton pump inhibitor"}},
-        {"@type": "Drug", "name": "Omeprazole", "nonProprietaryName": "omeprazole", "drugClass": {"@type": "DrugClass", "name": "Proton pump inhibitor"}},
+        # "Thing", not "Drug": Google reads Drug as a Product and asks for offers/review/aggregateRating.
+        {"@type": "Thing", "name": "Rabeprazole", "sameAs": "https://en.wikipedia.org/wiki/Rabeprazole"},
+        {"@type": "Thing", "name": "Omeprazole", "sameAs": "https://en.wikipedia.org/wiki/Omeprazole"},
         {"@type": "MedicalCondition", "name": "Gastro-oesophageal reflux disease"}]
-    blog["mentions"] = [{"@type": "Drug", "name": n} for n in ("Warfarin", "Clopidogrel", "Digoxin", "Iron")] + [{"@type": "Drug", "name": "Finix (rabeprazole sodium)", "url": BASE + "/brands/finix/"}]
+    blog["mentions"] = [{"@type": "Thing", "name": n, "sameAs": "https://en.wikipedia.org/wiki/" + w} for n, w in (("Warfarin", "Warfarin"), ("Clopidogrel", "Clopidogrel"), ("Digoxin", "Digoxin"), ("Iron", "Iron_supplement"))] + [{"@type": "Thing", "name": "Finix (rabeprazole sodium)", "url": BASE + "/brands/finix/"}]
     blog["keywords"] = KW
     blog["wordCount"] = len(re.sub(r"<[^>]+>", " ", EN).split())
     if "citation" in blog or True: blog["citation"] = [{"@type": "WebPage", "name": n, "url": (BASE + u if u.startswith("/") else u)} for u, n in REFS]
