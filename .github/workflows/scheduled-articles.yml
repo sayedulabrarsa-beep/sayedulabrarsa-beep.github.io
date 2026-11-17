@@ -41,10 +41,10 @@ jobs:
           python3 _src/llms_full.py
       - name: Commit scheduled release changes
         run: |
-          if [ -n "$(git status --porcelain)" ]; then
+          git add blog assets index.html sitemap.xml llms.txt llms-full.txt _src
+          if ! git diff --cached --quiet; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add blog assets index.html sitemap.xml llms.txt llms-full.txt _src
             git commit -m "Apply editorial calendar and scheduled article release"
-            for i in 1 2 3 4; do git pull --rebase --autostash origin main && git push && break; sleep $((i*10)); done
+            git checkout -- . ; for i in 1 2 3 4; do git pull --rebase --autostash origin main && git push && break; sleep $((i*10)); done
           fi
