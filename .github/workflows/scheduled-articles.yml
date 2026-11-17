@@ -31,12 +31,20 @@ jobs:
         run: pip install pillow
       - name: Apply calendar, hide future pages, and release due pages
         run: python3 _src/apply_editorial_calendar.py
+      # Bot pushes do not trigger other workflows, so rebuild everything that lists articles here.
+      - name: Refresh homepage stacks, feeds, article lists and llms files
+        run: |
+          python3 _src/blog_stacks.py
+          python3 _src/seo_feeds.py
+          python3 _src/article_index.py
+          python3 _src/logo_everywhere.py
+          python3 _src/llms_full.py
       - name: Commit scheduled release changes
         run: |
           if [ -n "$(git status --porcelain)" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add blog assets index.html sitemap.xml llms.txt _src
+            git add blog assets index.html sitemap.xml llms.txt llms-full.txt _src
             git commit -m "Apply editorial calendar and scheduled article release"
             for i in 1 2 3 4; do git pull --rebase --autostash origin main && git push && break; sleep $((i*10)); done
           fi
