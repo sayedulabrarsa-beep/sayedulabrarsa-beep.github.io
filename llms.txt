@@ -64,6 +64,8 @@ Clinical-content boundaries:
 
 <!--articles:start-->
 Pharma Blog articles (newest first; each is educational, not medical advice):
+- অ্যাকটিভ ফার্মাসিউটিক্যাল ইনগ্রেডিয়েন্ট (API): কাঁচামাল থেকে ওষুধ — বাংলা (2026-11-17): https://sayedulabrar.site/blog/active-pharmaceutical-ingredient-api-from-raw-material-to-medicine-bangla/
+  Summary: API কী, কীভাবে তৈরি ও বিশুদ্ধ করা হয়, কীভাবে মান পরীক্ষা হয় এবং কীভাবে এটি ট্যাবলেট বা ক্যাপসুলের মতো প্রস্তুত ওষুধে ব্যবহৃত হয়—সহজ বাংলায় জানুন।
 - Active Pharmaceutical Ingredient (API): From Raw Material to Medicine — English (2026-11-17): https://sayedulabrar.site/blog/active-pharmaceutical-ingredient-api-from-raw-material-to-medicine/
   Summary: What is an active pharmaceutical ingredient (API)? Follow how an API is made, purified, tested and used in a finished medicine, with a simple process diagram.
 - ওষুধের বণ্টন: রক্ত থেকে শরীরের বিভিন্ন টিস্যুতে কীভাবে পৌঁছায়? — বাংলা (2026-11-16): https://sayedulabrar.site/blog/drug-distribution-how-medicines-reach-their-target-bangla/
