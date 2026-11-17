@@ -75,3 +75,9 @@ html.ab-lock,html.ab-lock body{overflow:hidden}
 .ab-g-list a{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
 .ab-g-list a:hover{color:var(--ab-tc,#116b57);border-bottom-color:currentColor}
 @media(max-width:900px){.ab-d-glimpse{grid-template-columns:1fr;gap:14px;margin:16px 0 0;max-height:none}.ab-g-list{columns:1}}
+
+/* Article board thumbnail visibility: show the complete educational cover artwork */
+.ab-photo{aspect-ratio:16/9;background:#f1f2f4}
+.ab-photo img{object-fit:contain!important;object-position:center;background:#f1f2f4}
+.ab-d-img{background:#f1f2f4}
+.ab-d-img img{object-fit:contain!important;background:#f1f2f4}
