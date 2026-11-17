@@ -6,8 +6,17 @@
     <atom:link href="https://sayedulabrar.site/blog/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Pharmacist-written educational articles in English and Bangla on medicines, pharmacology and the pharmaceutical industry in Bangladesh, by Sayedul Abrar.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 16 Nov 2026 06:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 06:00:00 +0000</lastBuildDate>
     <image><url>https://sayedulabrar.site/assets/img/og-image.png</url><title>Pharma Blog | Sayedul Abrar</title><link>https://sayedulabrar.site/blog/</link></image>
+    <item>
+      <title>Active Pharmaceutical Ingredient (API): From Raw Material to Medicine</title>
+      <link>https://sayedulabrar.site/blog/active-pharmaceutical-ingredient-api-from-raw-material-to-medicine/</link>
+      <guid isPermaLink="true">https://sayedulabrar.site/blog/active-pharmaceutical-ingredient-api-from-raw-material-to-medicine/</guid>
+      <pubDate>Tue, 17 Nov 2026 06:00:00 +0000</pubDate>
+      <dc:creator>Sayedul Abrar</dc:creator>
+      <dc:language>en</dc:language>
+      <description>What is an active pharmaceutical ingredient (API)? Follow how an API is made, purified, tested and used in a finished medicine, with a simple process diagram.</description>
+    </item>
     <item>
       <title>ওষুধের বণ্টন: রক্ত থেকে শরীরের বিভিন্ন টিস্যুতে কীভাবে পৌঁছায়?</title>
       <link>https://sayedulabrar.site/blog/drug-distribution-how-medicines-reach-their-target-bangla/</link>

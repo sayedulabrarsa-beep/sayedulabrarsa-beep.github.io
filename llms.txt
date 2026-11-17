@@ -64,6 +64,8 @@ Clinical-content boundaries:
 
 <!--articles:start-->
 Pharma Blog articles (newest first; each is educational, not medical advice):
+- Active Pharmaceutical Ingredient (API): From Raw Material to Medicine — English (2026-11-17): https://sayedulabrar.site/blog/active-pharmaceutical-ingredient-api-from-raw-material-to-medicine/
+  Summary: What is an active pharmaceutical ingredient (API)? Follow how an API is made, purified, tested and used in a finished medicine, with a simple process diagram.
 - ওষুধের বণ্টন: রক্ত থেকে শরীরের বিভিন্ন টিস্যুতে কীভাবে পৌঁছায়? — বাংলা (2026-11-16): https://sayedulabrar.site/blog/drug-distribution-how-medicines-reach-their-target-bangla/
   Summary: রক্তে প্রবেশের পর ওষুধ কীভাবে বিভিন্ন অঙ্গ ও টিস্যুতে পৌঁছায়, রক্তপ্রবাহ, tissue barrier ও protein binding কীভাবে বণ্টনকে প্রভাবিত করে জানুন।
 - Drug Distribution: How Medicines Travel from Blood to Body Tissues — English (2026-11-16): https://sayedulabrar.site/blog/drug-distribution-how-medicines-reach-their-target/
