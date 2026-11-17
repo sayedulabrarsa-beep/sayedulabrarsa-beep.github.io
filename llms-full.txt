@@ -4615,7 +4615,6 @@ DGDA বাংলাদেশের জাতীয় ঔষধ নিয়ন
 - FDA. Q7 Questions and Answers।
 - বাংলাদেশ ঔষধ প্রশাসন অধিদপ্তর (DGDA)। সরকারি ওয়েবসাইট ও নিয়ন্ত্রক তথ্য।
 - বাংলাদেশ বিনিয়োগ উন্নয়ন কর্তৃপক্ষ (BIDA)। সরকারি বিনিয়োগসংক্রান্ত তথ্য।
-- Wikimedia Commons. Pharmaceutical Factory photograph, Habin Zhang, CC BY-SA 4.0.
 
 শিক্ষামূলক সতর্কতা: এই লেখা ফার্মাসিউটিক্যাল উৎপাদনের সাধারণ ধারণা বোঝানোর জন্য। এটি প্রযোজ্য নিয়ন্ত্রক নির্দেশনা, অনুমোদিত specification বা পেশাগত quality-system procedure-এর বিকল্প নয়।
 
@@ -4744,7 +4743,6 @@ No system can guarantee that problems will never occur. GMP establishes controls
 - FDA. Q7 Questions and Answers.
 - Bangladesh Directorate General of Drug Administration. Official website and regulatory information.
 - Bangladesh Investment Development Authority. Official investment information.
-- Wikimedia Commons. Pharmaceutical Factory photograph, Habin Zhang, CC BY-SA 4.0.
 
 Educational note: This article explains general pharmaceutical manufacturing concepts. It is not a substitute for applicable regulatory requirements, approved specifications, or professional quality-system procedures.
 
