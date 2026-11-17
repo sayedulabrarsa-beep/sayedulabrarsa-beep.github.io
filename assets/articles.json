@@ -10,7 +10,7 @@
   "desc_bn": "API কী, কীভাবে তৈরি ও বিশুদ্ধ করা হয়, কীভাবে মান পরীক্ষা হয় এবং কীভাবে এটি ট্যাবলেট বা…",
   "url_en": "/blog/active-pharmaceutical-ingredient-api-from-raw-material-to-medicine/",
   "url_bn": "/blog/active-pharmaceutical-ingredient-api-from-raw-material-to-medicine-bangla/",
-  "img": "/assets/img/blog/api/api-social-en.jpg"
+  "img": "/assets/img/blog/api/api-social-en-w750.webp"
  },
  {
   "slug": "drug-distribution-how-medicines-reach-their-target",
@@ -23,7 +23,7 @@
   "desc_bn": "রক্তে প্রবেশের পর ওষুধ কীভাবে বিভিন্ন অঙ্গ ও টিস্যুতে পৌঁছায়, রক্তপ্রবাহ, tissue barrier ও protein binding কীভাবে বণ্টনকে প্রভাবিত করে জানুন।",
   "url_en": "/blog/drug-distribution-how-medicines-reach-their-target/",
   "url_bn": "/blog/drug-distribution-how-medicines-reach-their-target-bangla/",
-  "img": "/assets/img/blog/drug-distribution/drug-distribution-cover-cinematic.webp"
+  "img": "/assets/img/blog/drug-distribution/drug-distribution-social-en-w750.webp"
  },
  {
   "slug": "why-complete-antibiotic-course-antibiotic-resistance",
@@ -36,7 +36,7 @@
   "desc_bn": "কোর্স শেষ করা, রেজিস্ট্যান্স, ডোজ মিস ও বাকি ওষুধ।",
   "url_en": "/blog/why-complete-antibiotic-course-antibiotic-resistance/",
   "url_bn": "/blog/why-complete-antibiotic-course-antibiotic-resistance-bangla/",
-  "img": "/assets/img/blog/antibiotic-course/why-complete-antibiotic-course-cover-16x9.webp"
+  "img": "/assets/img/blog/antibiotic-course/why-complete-antibiotic-course-cover-16x9-w750.webp"
  },
  {
   "slug": "drug-absorption-how-medicine-enters-bloodstream",
@@ -49,7 +49,7 @@
   "desc_bn": "ট্যাবলেট থেকে রক্তপ্রবাহে ওষুধের যাত্রা সহজভাবে জানুন।",
   "url_en": "/blog/drug-absorption-how-medicine-enters-bloodstream/",
   "url_bn": "/blog/drug-absorption-how-medicine-enters-bloodstream-bangla/",
-  "img": "/assets/img/blog/drug-absorption/drug-absorption-cover-cinematic.webp"
+  "img": "/assets/img/blog/drug-absorption/drug-absorption-social-w750.webp"
  },
  {
   "slug": "how-do-medicines-work-in-the-body",
@@ -62,7 +62,7 @@
   "desc_bn": "ওষুধ কীভাবে receptor ও শরীরের অন্যান্য লক্ষ্যবস্তুর সঙ্গে কাজ করে বুঝুন।",
   "url_en": "/blog/how-do-medicines-work-in-the-body/",
   "url_bn": "/blog/how-do-medicines-work-in-the-body-bangla/",
-  "img": "/assets/img/blog/how-medicines-work/how-do-medicines-work-inside-the-human-body-cover.webp"
+  "img": "/assets/img/blog/how-medicines-work/how-do-medicines-work-inside-the-human-body-cover-w750.webp"
  },
  {
   "slug": "what-is-the-pharmaceutical-industry",
@@ -75,7 +75,7 @@
   "desc_bn": "ওষুধ কীভাবে তৈরি হয়ে রোগীর কাছে পৌঁছায়।",
   "url_en": "/blog/what-is-the-pharmaceutical-industry/",
   "url_bn": "/blog/what-is-the-pharmaceutical-industry-bangla/",
-  "img": "/assets/img/blog/pharma-industry/pharmaceutical-industry-in-bangladesh-how-medicines-reach-you-thumbnail-16x9.webp"
+  "img": "/assets/img/blog/pharma-industry/pharmaceutical-industry-in-bangladesh-how-medicines-reach-you-thumbnail-16x9-w750.webp"
  },
  {
   "slug": "when-to-take-ppi-before-meals",
@@ -88,7 +88,7 @@
   "desc_bn": "সময়, সাধারণ ভুল ও ডোজ মিস হলে করণীয়।",
   "url_en": "/blog/when-to-take-ppi-before-meals/",
   "url_bn": "/blog/when-to-take-ppi-before-meals-bangla/",
-  "img": "/assets/img/blog/ppi-tablets/when-to-take-ppi-before-meals-thumbnail-16x9.webp"
+  "img": "/assets/img/blog/ppi-tablets/when-to-take-ppi-before-meals-thumbnail-16x9-w750.webp"
  },
  {
   "slug": "iron-deficiency-vs-anemia",
@@ -101,7 +101,7 @@
   "desc_bn": "দুটি কি একই? সহজ ব্যাখ্যা।",
   "url_en": "/blog/iron-deficiency-vs-anemia/",
   "url_bn": "/blog/iron-deficiency-vs-anemia-bangla/",
-  "img": "/assets/img/blog/iron-deficiency-vs-anemia-social.jpg"
+  "img": "/assets/img/blog/iron-deficiency/iron-deficiency-vs-anemia-are-they-the-same-thumbnail-16x9-w750.webp"
  },
  {
   "slug": "how-to-take-iron-tablets-properly",
@@ -114,7 +114,7 @@
   "desc_bn": "সময়, খাবার ও ইন্টারঅ্যাকশনের বিষয়।",
   "url_en": "/blog/how-to-take-iron-tablets-properly/",
   "url_bn": "/blog/how-to-take-iron-tablets-properly-bangla/",
-  "img": "/assets/img/blog/iron-tablets/how-to-take-iron-tablets-properly-timing-food-interactions-thumbnail-16x9.webp"
+  "img": "/assets/img/blog/iron-tablets/how-to-take-iron-tablets-properly-timing-food-interactions-thumbnail-16x9-w750.webp"
  },
  {
   "slug": "glucosamine-alzheimers-nature-metabolism-study",
@@ -140,7 +140,7 @@
   "desc_bn": "এই সাধারণ অবস্থাগুলোর পার্থক্য কী।",
   "url_en": "/blog/heartburn-vs-acid-reflux-vs-gerd/",
   "url_bn": "/blog/heartburn-vs-acid-reflux-vs-gerd-bangla/",
-  "img": "/assets/img/blog/heartburn-gerd-index-card.webp"
+  "img": "/assets/img/blog/heartburn-gerd-index-card-w750.webp"
  },
  {
   "slug": "expiry-date-vs-manufacturing-date-medicine",
@@ -153,7 +153,7 @@
   "desc_bn": "ওষুধের প্যাকের তারিখগুলো কীভাবে পড়বেন।",
   "url_en": "/blog/expiry-date-vs-manufacturing-date-medicine/",
   "url_bn": "/blog/expiry-date-vs-manufacturing-date-medicine-bangla/",
-  "img": "/assets/img/blog/expiry/expiry-date-vs-manufacturing-date-medicine-social.jpg"
+  "img": "/assets/img/blog/expiry/is-your-medicine-still-safe-expiry-vs-manufacturing-date-thumbnail-w750.webp"
  },
  {
   "slug": "generic-name-vs-brand-name",
@@ -166,7 +166,7 @@
   "desc_bn": "ওষুধের প্যাকে উপাদানের নাম কোথায় পাবেন।",
   "url_en": "/blog/generic-name-vs-brand-name/",
   "url_bn": "/blog/generic-name-vs-brand-name-bangla/",
-  "img": "/assets/img/blog/generic-brand/which-name-is-the-real-medicine-generic-vs-brand-thumbnail.webp"
+  "img": "/assets/img/blog/generic-brand/which-name-is-the-real-medicine-generic-vs-brand-thumbnail-w750.webp"
  },
  {
   "slug": "drug-vs-medicine",
@@ -179,6 +179,6 @@
   "desc_bn": "ফার্মেসিতে শব্দ দুটির আসল অর্থ কী।",
   "url_en": "/blog/drug-vs-medicine/",
   "url_bn": "/blog/drug-vs-medicine-bangla/",
-  "img": "/assets/img/blog/drug-vs-medicine/drug-vs-medicine-thumbnail.webp"
+  "img": "/assets/img/blog/drug-vs-medicine/drug-vs-medicine-thumbnail-w750.webp"
  }
 ]
