@@ -3420,18 +3420,18 @@ html.lp-arrive .lp-intro-copy,html.lp-arrive .lp-arch{animation:lprise .9s cubic
 .cab-base i:first-child{left:34px}.cab-base i:last-child{right:34px}
 .cab-foot{max-width:640px;margin:34px auto 0;text-align:center;font-size:12.5px;line-height:1.55;color:#7a6a52}
 /* drawer (dialog) */
-.cab-dlg{padding:0;border:0;border-radius:20px;width:min(1080px,94vw);max-width:none;max-height:90vh;background:#fbf8f2;color:#2b2418;box-shadow:0 30px 80px rgba(30,20,5,.5);overflow:hidden}
-.cab-dlg[open]{display:block;animation:cabIn .38s cubic-bezier(.2,.8,.2,1)}
+.cab-dlg{padding:0;border:0;border-radius:20px;width:min(1080px,calc(100vw - 32px));max-width:none;max-height:82vh;max-height:min(82dvh,760px);margin:auto;background:#fbf8f2;color:#2b2418;box-shadow:0 24px 64px rgba(30,20,5,.46);overflow:hidden}
+.cab-dlg[open]{display:block;animation:cabIn .28s cubic-bezier(.2,.8,.2,1)}
 .cab-dlg::backdrop{background:rgba(38,26,10,.58);backdrop-filter:blur(3px)}
-@keyframes cabIn{from{opacity:0;transform:translateY(26px) scale(.97)}to{opacity:1;transform:none}}
-.cab-dlg-in{display:flex;flex-direction:column;max-height:90vh}
-.cab-dlg-top{display:flex;align-items:center;justify-content:space-between;padding:12px 16px 12px 22px;border-bottom:1px solid #e6dac3;background:#f3ead9;border-top:5px solid var(--ac)}
+@keyframes cabIn{from{opacity:0;transform:translateY(14px) scale(.985)}to{opacity:1;transform:none}}
+.cab-dlg-in{display:flex;flex-direction:column;height:min(82dvh,760px);max-height:82vh;max-height:min(82dvh,760px)}
+.cab-dlg-top{position:relative;z-index:4;flex:none;display:flex;align-items:center;justify-content:space-between;padding:10px 14px 10px 18px;border-bottom:1px solid #e6dac3;background:#f3ead9;border-top:5px solid var(--ac)}
 .cab-dlg-count{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#7a6a52}
-.cab-dlg-nav{display:flex;gap:8px}
-.cab-dlg-nav button{all:unset;box-sizing:border-box;display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:#fff;border:1px solid #ddcfb4;font-size:20px;line-height:1;cursor:pointer;color:#4a3a1c;transition:background .2s,transform .2s}
+.cab-dlg-nav{display:flex;gap:8px;align-items:center}
+.cab-dlg-nav button{all:unset;box-sizing:border-box;display:grid;place-items:center;width:42px;height:42px;min-width:42px;border-radius:50%;background:#fff;border:1px solid #ddcfb4;font-size:22px;line-height:1;cursor:pointer;color:#4a3a1c;touch-action:manipulation;-webkit-tap-highlight-color:transparent;transition:background .2s,transform .2s}
 .cab-dlg-nav button:hover{background:var(--ac);color:#fff;transform:scale(1.06)}
 .cab-dlg-nav button:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
-.cab-dlg-grid{display:grid;grid-template-columns:minmax(280px,360px) 1fr;min-height:0;flex:1;overflow:hidden}
+.cab-dlg-grid{display:grid;grid-template-columns:minmax(280px,360px) 1fr;min-height:0;flex:1;overflow:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
 .cab-dlg-side{overflow:auto;padding:22px 22px 26px;background:linear-gradient(#fff,#f7f1e4);border-right:1px solid #e6dac3}
 .cab-dlg-main{overflow:auto;padding:22px 28px 30px;max-height:calc(90vh - 64px)}
 .cab-dlg-side{max-height:calc(90vh - 64px)}
@@ -3471,10 +3471,15 @@ html.lp-arrive .lp-intro-copy,html.lp-arrive .lp-arch{animation:lprise .9s cubic
 @media(max-width:900px){
  .cab-row{grid-template-columns:repeat(2,1fr)}
  .dw{height:300px}
- .cab-dlg{width:96vw;max-height:94vh;border-radius:16px}
- .cab-dlg-in{max-height:94vh}
- .cab-dlg-grid{grid-template-columns:1fr;overflow:auto}
+ .cab-dlg{width:calc(100vw - 28px);max-height:82vh;max-height:min(82dvh,760px);border-radius:16px}
+ .cab-dlg-in{height:min(82dvh,760px);max-height:82vh;max-height:min(82dvh,760px)}
+ .cab-dlg-grid{display:block;overflow:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
  .cab-dlg-side,.cab-dlg-main{max-height:none;overflow:visible;border-right:0}
+ .cab-dlg-side{padding:16px 16px 20px}
+ .cab-dlg-main{padding:16px 16px calc(24px + env(safe-area-inset-bottom))}
+ .cab-dlg-top{padding:9px 10px 9px 14px}
+ .cab-dlg-nav{gap:6px}
+ .cab-dlg-nav button{width:40px;height:40px;min-width:40px;font-size:21px}
 }
 @media(max-width:520px){
  .cab{padding:0 8px}.cab-cornice,.cab-body,.cab-base{margin:0 -8px}.cab-body{padding:0 12px 6px}.cab-row{gap:8px}
