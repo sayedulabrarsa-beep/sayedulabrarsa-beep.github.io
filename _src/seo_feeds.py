@@ -78,7 +78,7 @@ def write_feed(arts):
     <description>Pharmacist-written educational articles in English and Bangla on medicines, pharmacology and the pharmaceutical industry in Bangladesh, by Sayedul Abrar.</description>
     <language>en</language>
     <lastBuildDate>{rfc822(last)}</lastBuildDate>
-    <image><url>{SITE}/assets/img/og-image.png</url><title>Pharma Blog | Sayedul Abrar</title><link>{SITE}/blog/</link></image>
+    <image><url>{SITE}/assets/img/social/pharma-blog-social-preview.jpg</url><title>Pharma Blog | Sayedul Abrar</title><link>{SITE}/blog/</link></image>
 {chr(10).join(items)}
   </channel>
 </rss>

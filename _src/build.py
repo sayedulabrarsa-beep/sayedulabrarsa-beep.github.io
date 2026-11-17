@@ -178,7 +178,7 @@ def post_ld(post, kind, url):
 
 
 # ---------- page shell ----------
-def page(path, title, desc, body, ld=None, og_type="website", noindex=False, nav=None, og_image="/assets/img/og-image.png"):
+def page(path, title, desc, body, ld=None, og_type="website", noindex=False, nav=None, og_image="/assets/img/social/homepage-social-preview.jpg?v=2"):
     canon = f"{BASE}{path}"
     t, d = esc(title, quote=False), esc(desc, quote=True)
     ld_html = "\n".join(
@@ -350,7 +350,7 @@ home_body = f"""<main id="main">
 </main>"""
 add("/", page("/", "Sayedul Abrar (Abrar) | Pharmacist, Finix MUPS & Pharma Product Executive",
                    "Official profile of Sayedul Abrar (Abrar), pharmacist and Product Executive at Opsonin Pharma in Bangladesh. Explore Finix and Finix MUPS brand work, Daffodil International University Pharmacy education, achievements and alumni connections.",
-              home_body, ld=[person_ld(), site_ld()], og_image="/assets/img/og-image.png"))
+              home_body, ld=[person_ld(), site_ld()], og_image="/assets/img/social/homepage-social-preview.jpg?v=2"))
 
 # ---------- ABOUT ----------
 about_body = f"""<main id="main">
@@ -752,7 +752,7 @@ for kind, cfg in KINDS.items():
     </div>
   </section>
 </main>"""
-        og = p.get("cover") or "/assets/img/og-image.png"
+        og = p.get("cover") or "/assets/img/social/homepage-social-preview.jpg?v=2"
         add(ppath, page(ppath, f"{p['title']} | {cfg['label']} | {NAME}", p.get("summary", cfg["desc"]), pbody,
                         ld=[post_ld(p, kind, url), crumb_ld([("Home", "/"), (cfg["label"], path), (p["title"], ppath)])],
                         og_type="article", nav=path, og_image=og),

@@ -188,7 +188,7 @@ def set_head(h, title, desc, url):
     h = re.sub(r'<link rel="canonical" href="[^"]*">', f'<link rel="canonical" href="{url}">', h)
     h = re.sub(r'<meta name="theme-color" content="[^"]*">', '<meta name="theme-color" content="#1a1818">', h)
     og = (f'<meta property="og:type" content="website"><meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}">'
-          f'<meta property="og:url" content="{url}"><meta property="og:image" content="{SITE}/assets/img/og-image.png"><meta name="twitter:card" content="summary_large_image">')
+          f'<meta property="og:url" content="{url}"><meta property="og:image" content="{SITE}/assets/img/social/learning-social-preview.jpg"><meta name="twitter:card" content="summary_large_image">')
     h = h.replace('<link rel="stylesheet" href="/assets/style.css', og + '<link rel="stylesheet" href="/assets/style.css', 1)
     h = h.replace('<script>try{if(localStorage', '<script>try{if(sessionStorage.getItem("ldEnter")){document.documentElement.classList.add("lp-arrive");sessionStorage.removeItem("ldEnter")}}catch(e){}</script><script>try{if(localStorage', 1)
     return h
