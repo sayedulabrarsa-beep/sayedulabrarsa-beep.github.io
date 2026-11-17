@@ -23,7 +23,7 @@
   cab.addEventListener('click',function(ev){
     var dw=ev.target.closest('.dw');if(!dw)return;
     if(ev.target.closest('.dw-x')){setOpen(dw,false);var tg=dw.querySelector('.dw-toggle');if(tg)tg.focus({preventScroll:true});syncAll();return;}
-    if(ev.target.closest('.dw-view')){lastBtn=dw.querySelector('.dw-view');show(dws.indexOf(dw));return;}
+    if(ev.target.closest('.dw-view')){return;}
     if(ev.target.closest('.dw-toggle')||ev.target.closest('.dw-cta')||ev.target.closest('.dw-front')){
       var open=dw.classList.contains('is-open');
       if(!open){
