@@ -96,13 +96,19 @@ for item in items:
             source = re.sub(r'(<time[^>]*datetime=")[^"]+(")', lambda m: m.group(1)+pub_date+m.group(2), source, count=1)
         page.write_text(source, encoding="utf-8")
 
-        # Remove only this page's exact sitemap entry before optionally adding it back.
-        sitemap = re.sub(
-            r'<url>.*?</url>',
-            lambda m: '' if f'<loc>{url}</loc>' in m.group(0) else m.group(0),
-            sitemap,
-            flags=re.S
-        )
+        # Remove only this page's exact sitemap entry (tolerates entries missing </url>) before optionally adding it back.
+        head, _, rest = sitemap.partition('<url>')
+        body = rest.rsplit('</urlset>', 1)[0]
+        chunks = ['<url>' + c for c in ('<url>' + body).split('<url>')[1:]] if rest else []
+        keep = []
+        for c in chunks:
+            c = c.strip()
+            if f'<loc>{url}</loc>' in c:
+                continue
+            if not c.endswith('</url>'):
+                c += '</url>'
+            keep.append('  ' + c)
+        sitemap = head.rstrip() + '\n' + '\n'.join(keep) + '\n</urlset>\n'
         if release_pair:
             og = re.search(r'<meta property="og:image" content="([^"]+)"', source)
             alt = re.search(r'<meta property="og:image:alt" content="([^"]*)"', source)
@@ -111,7 +117,15 @@ for item in items:
                 block += f'<image:image><image:loc>{html.escape(og.group(1), quote=False)}</image:loc>'
                 if alt: block += f'<image:title>{html.escape(alt.group(1))}</image:title>'
                 block += '</image:image>'
-            sitemap = sitemap.replace('</urlset>', block + '</urlset>')
+            seen = {og.group(1) if og else ''}
+            for im in re.finditer(r'<img src="(/assets/img/blog/[^"?]+)[^"]*" alt="([^"]*)"', source):
+                full = SITE + im.group(1)
+                if full in seen or full.endswith('.svg'):
+                    continue
+                seen.add(full)
+                block += f'<image:image><image:loc>{html.escape(full, quote=False)}</image:loc><image:title>{html.escape(html.unescape(im.group(2)))}</image:title></image:image>'
+            block += '</url>'
+            sitemap = sitemap.replace('</urlset>', '  ' + block + '\n</urlset>')
             released += 1
         else:
             hidden += 1
