@@ -207,12 +207,11 @@ Apparent volume of distribution (Vd) হলো এমন একটি pharmacoki
 
 Distribution হলো রক্ত ও টিস্যুর মধ্যে ওষুধের চলাচল। রক্তপ্রবাহ, কোষঝিল্লি অতিক্রমের ক্ষমতা, ওষুধের বৈশিষ্ট্য এবং protein binding—সবই গুরুত্বপূর্ণ। Vd ওষুধ শরীরে কোথায় আছে তা বুঝতে সাহায্য করে, তবে এটি বাস্তব কোনো শারীরিক স্থানের মাপ নয়।
 
-### মূল বিষয়গুলো
-
-- Drug distribution বা ওষুধের বণ্টন হলো রক্তপ্রবাহ থেকে শরীরের বিভিন্ন তরল ও টিস্যুতে ওষুধের চলাচল। ওষুধ শোষিত হওয়ার পর—অথবা সরাসরি শিরায় দেওয়ার পর—রক্তের সঙ্গে শরীরের বিভিন্ন স্থানে যায়। কিছু অংশ নির্দিষ্ট কার্যস্থলে পৌঁছায়, কিছু রক্তে থাকে, আবার কিছু অন্য অঙ্গে ছড়িয়ে পড়ে।.
-- হৃদপিণ্ড রক্ত সারা শরীরে পাম্প করে। যকৃত, কিডনি, মস্তিষ্ক ও হৃদপিণ্ডের মতো বেশি রক্তপ্রবাহযুক্ত অঙ্গে ওষুধ তুলনামূলক দ্রুত পৌঁছাতে পারে। চর্বি ও পেশির মতো টিস্যুতে পৌঁছাতে বেশি সময় লাগতে পারে। তবে শুধু রক্তপ্রবাহই যথেষ্ট নয়; ওষুধকে রক্তনালির দেয়াল ও কোষের বাধাও অতিক্রম করতে হয়।.
-- ওষুধের অণুর আকার, চার্জ এবং চর্বি বা পানিতে দ্রবণীয়তা আলাদা। ছোট ও lipid-soluble অণু কিছু কোষঝিল্লি সহজে অতিক্রম করতে পারে। অন্যদিকে বেশি পানিতে দ্রবণীয় বা চার্জযুক্ত অণু প্রধানত রক্ত বা কোষের বাইরের তরলে থাকতে পারে। Blood–brain barrier-এর মতো বিশেষ বাধা অনেক ওষুধকে মস্তিষ্কে প্রবেশ করতে সীমিত করে।.
-- কিছু ওষুধ রক্তের প্রোটিন—বিশেষ করে albumin-এর সঙ্গে সাময়িকভাবে যুক্ত হয়। যুক্ত অংশকে bound drug এবং যুক্ত নয় এমন অংশকে free বা unbound drug বলা হয়। সাধারণভাবে free drug কোষঝিল্লি অতিক্রম করে কার্যস্থলে পৌঁছাতে ও শরীর থেকে বের হতে পারে। এই বন্ধন স্থায়ী নয়; প্রয়োজন অনুযায়ী ওষুধ প্রোটিন থেকে আলাদা হতে পারে।.
+- ওষুধের বণ্টন হলো রক্তপ্রবাহ থেকে শরীরের তরল ও টিস্যুতে ওষুধের বিপরীতমুখী (reversible) চলাচল।
+- যকৃৎ, কিডনি, মস্তিষ্ক ও হৃৎপিণ্ডের মতো বেশি রক্ত পাওয়া অঙ্গে ওষুধ দ্রুত পৌঁছাতে পারে; চর্বি ও মাংসপেশিতে তুলনামূলক ধীরে।
+- ব্লাড–ব্রেইন ব্যারিয়ারের মতো বিশেষ বাধা অনেক ওষুধকে কিছু টিস্যুতে ঢুকতে দেয় না।
+- সাধারণত প্রোটিনের সঙ্গে যুক্ত নয় এমন মুক্ত ওষুধই রক্ত ছেড়ে লক্ষ্যে পৌঁছাতে ও শরীর থেকে বের হতে পারে।
+- ভলিউম অব ডিস্ট্রিবিউশন বোঝায় ওষুধ কতটা ছড়ায়; এটি শরীরের কোনো আসল জায়গার মাপ নয়।
 
 ### সাধারণ প্রশ্ন
 
@@ -275,12 +274,11 @@ Distribution can influence how quickly a medicine reaches its site of action, ho
 
 Distribution describes movement between blood and tissues. Blood flow, membrane permeability, drug properties and protein binding all matter. The apparent volume of distribution helps describe where a medicine is found, but it is not a literal body-space measurement.
 
-### Key takeaways
-
 - Drug distribution is the reversible movement of a medicine from the bloodstream into body fluids and tissues.
-- The heart pumps blood through the body.
-- Molecules differ in size, charge and fat or water solubility.
-- Some medicines attach reversibly to proteins in blood, especially albumin.
+- Organs with a rich blood supply, such as the liver, kidneys, brain and heart, may receive a medicine quickly; fat and muscle may receive it more slowly.
+- Special barriers, such as the blood–brain barrier, restrict the entry of many medicines into some tissues.
+- In general, only the free (unbound) part of a medicine can leave the blood, reach its target and be eliminated.
+- Volume of distribution describes how widely a medicine spreads; it is not a real body space.
 
 ### Frequently asked questions
 

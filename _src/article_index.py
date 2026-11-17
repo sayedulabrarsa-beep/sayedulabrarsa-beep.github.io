@@ -112,7 +112,7 @@ for a in arts:
         if k < 0:
             continue
         s = s[:k] + block + s[k:]
-        related_script = '<script src="/assets/blog-related.js?v=ae7-20261116" defer></script>'
+        related_script = '<script src="/assets/blog-related.js?v=ae8-20261117" defer></script>'
         if related_script not in s:
             s = s.replace("</body>", related_script + "</body>")
         if s != o:

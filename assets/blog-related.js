@@ -2,7 +2,7 @@
   'use strict';
   var main=document.querySelector('main');
   if(!main||document.querySelector('.ae-band'))return;
-  var V='ae7-20261116';
+  var V='ae8-20261117';
   if(!document.querySelector('link[data-ae-style]')){
     var l=document.createElement('link');l.rel='stylesheet';l.href='/assets/article-end.css?v='+V;
     l.setAttribute('data-ae-style','');document.head.appendChild(l);
@@ -33,7 +33,8 @@
     'iron-deficiency-vs-anemia':['how-to-take-iron-tablets-properly','drug-vs-medicine','glucosamine-alzheimers-nature-metabolism-study'],
     'glucosamine-alzheimers-nature-metabolism-study':['what-is-the-pharmaceutical-industry','drug-vs-medicine','generic-name-vs-brand-name'],
     'what-is-the-pharmaceutical-industry':['drug-vs-medicine','generic-name-vs-brand-name','glucosamine-alzheimers-nature-metabolism-study'],
-    'drug-absorption-how-medicine-enters-bloodstream':['how-do-medicines-work-in-the-body','generic-name-vs-brand-name','drug-vs-medicine'],
+    'drug-absorption-how-medicine-enters-bloodstream':['drug-distribution-how-medicines-reach-their-target','how-do-medicines-work-in-the-body','drug-vs-medicine'],
+    'drug-distribution-how-medicines-reach-their-target':['drug-absorption-how-medicine-enters-bloodstream','how-do-medicines-work-in-the-body','drug-metabolism-how-the-body-processes-medicines'],
     'how-do-medicines-work-in-the-body':['drug-vs-medicine','generic-name-vs-brand-name','when-to-take-ppi-before-meals'],
     'why-complete-antibiotic-course-antibiotic-resistance':['generic-name-vs-brand-name','expiry-date-vs-manufacturing-date-medicine','drug-vs-medicine']
   };
@@ -59,10 +60,15 @@
     LIST.forEach(function(x){A[x.slug]=[x.tag_en,x.tag_bn,x.title_en,x.title_bn,x.desc_en,x.desc_bn,x.url_en,x.url_bn,x.img];ORDER.push(x.slug)});
   }else{A=A0;ORDER=Object.keys(A0)}
   if(!A[slug]||document.querySelector('.ae-band'))return;
-  /* related picks first, then every other article, newest first */
-  var picks=(R[slug]||[]).filter(function(k){return A[k]});
-  ORDER.forEach(function(k){if(k!==slug&&picks.indexOf(k)<0&&picks.length<3)picks.push(k)});
-  picks=picks.slice(0,3);
+  /* Section 1 "Related articles": up to 5 hand-picked / same-topic / newest articles (static grid).
+     Section 2 "Continue with these articles": every other article, moving slowly right to left. */
+  var me=A[slug],rel=[];
+  function add(k){if(k!==slug&&A[k]&&rel.indexOf(k)<0&&rel.length<5)rel.push(k)}
+  (R[slug]||[]).forEach(add);
+  ORDER.forEach(function(k){if(A[k][0]===me[0])add(k)});
+  ORDER.forEach(add);
+  var more=ORDER.filter(function(k){return k!==slug&&rel.indexOf(k)<0});
+  if(more.length<4)more=ORDER.filter(function(k){return k!==slug});
   var paneBn=document.getElementById('pane-bn');
   var htmlBn=document.documentElement.lang==='bn';
   function isBn(){return paneBn?!paneBn.hidden:htmlBn}
@@ -78,23 +84,37 @@
   head.append(eyebrow,h2);
   var all=el('a','ae-all');all.href='/blog/';
   head.appendChild(all);
-  var track=el('div','ae-track ae-mq');
-  var inner=el('div','ae-mq-in');track.appendChild(inner);
-  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
   var cards=[];
-  picks.forEach(function(k){
+  function card(k,box,clone){
     var a=A[k];
     var c=el('a','ae-card');
+    if(clone){c.setAttribute('aria-hidden','true');c.tabIndex=-1}
     var fig=el('span','ae-fig');
     var im=el('img');im.src=a[8];im.loading='lazy';im.decoding='async';im.width=1600;im.height=900;
     fig.appendChild(im);
     var tag=el('small'),t=el('strong'),d=el('em'),go=el('b','ae-go');
     var body=el('span','ae-body');body.append(tag,t,d,go);
-    c.append(fig,body);inner.appendChild(c);
+    c.append(fig,body);box.appendChild(c);
     cards.push({k:k,a:a,c:c,im:im,tag:tag,t:t,d:d,go:go});
-  });
+  }
+  var grid=el('div','ae-grid ae-n'+rel.length);
+  rel.forEach(function(k){card(k,grid)});
+  var head2=el('div','ae-head ae-head2');
+  var eyebrow2=el('p','ae-eyebrow'),h2b=el('h2','ae-title ae-title2');h2b.id='ae-title2';
+  head2.append(eyebrow2,h2b);
+  var track=el('div','ae-track ae-mq ae-run');
+  track.setAttribute('aria-labelledby','ae-title2');
+  var inner=el('div','ae-mq-in');track.appendChild(inner);
+  /* two copies so the strip loops without a gap; about 9 seconds per card keeps it slow and readable */
+  more.forEach(function(k){card(k,inner)});
+  more.forEach(function(k){card(k,inner,true)});
+  track.style.setProperty('--ae-dur',Math.max(45,more.length*9)+'s');
+  /* touch: pause while a finger is on the strip, resume shortly after */
+  var hold;
+  track.addEventListener('touchstart',function(){clearTimeout(hold);track.classList.add('ae-hold')},{passive:true});
+  track.addEventListener('touchend',function(){clearTimeout(hold);hold=setTimeout(function(){track.classList.remove('ae-hold')},1500)},{passive:true});
+  wrap.append(head,grid,head2,track);
 
-  wrap.append(head,track);
   /* the plain-HTML link list is for search engines and no-JS readers; the band replaces it */
   Array.prototype.forEach.call(document.querySelectorAll('.more-articles'),function(n){n.hidden=true});
   var prods=(PM[slug]||[]).map(function(k){return PR[k]});
@@ -120,8 +140,10 @@
   function render(){
     var bn=isBn();
     band.lang=bn?'bn':'en';
-    eyebrow.textContent=bn?'পরবর্তী পাঠ':'KEEP LEARNING';
-    h2.textContent=bn?'এবার এগুলোও পড়ুন':'Continue with these articles';
+    eyebrow.textContent=bn?'একই বিষয়ে':'ON THE SAME TOPIC';
+    h2.textContent=bn?'সম্পর্কিত আর্টিকেল':'Related articles';
+    eyebrow2.textContent=bn?'পরবর্তী পাঠ':'KEEP LEARNING';
+    h2b.textContent=bn?'এবার এগুলোও পড়ুন':'Continue with these articles';
     all.textContent=bn?'সব আর্টিকেল ↗':'All articles ↗';
     cards.forEach(function(x){
       var a=x.a;

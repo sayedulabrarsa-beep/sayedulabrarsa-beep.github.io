@@ -134,9 +134,17 @@ CFG = {
           (1180, 505, 1150, 280, "c", ORANGE, ("Free drug", "Not attached to protein"), ("মুক্ত ওষুধ", "প্রোটিনের সঙ্গে যুক্ত নয়")),
           (1440, 630, 1655, 735, "r", TEAL, ("Into the tissue", "Free drug crosses the vessel wall"), ("টিস্যুতে প্রবেশ", "মুক্ত ওষুধ রক্তনালির দেয়াল পেরোয়"))],
    src=("StatPearls; MSD Manual", "StatPearls; MSD Manual")),
+ "takeaways": dict(bg="cover", a="34%", b="50%", veilcss="background:linear-gradient(90deg,#F7F1E6 0%,#F7F1E6 31%,rgba(247,241,230,.9) 38%,rgba(247,241,230,0) 52%);", pw=640, ts=(62, 60), tight=True, bgcss="background-size:auto 100%;background-position:calc(100% + 170px) center;",
+   kick=("Key takeaways", "মূল কথা"), title=("What to <i>remember</i>", "যা <i>মনে রাখবেন</i>"), sub=("", ""),
+   legend=[(("Blood → tissues", "Distribution is the reversible movement of medicine out of the blood.", None), ("রক্ত → টিস্যু", "রক্ত থেকে টিস্যুতে ওষুধের বিপরীতমুখী চলাচলই বণ্টন।", None)),
+           (("Blood flow", "Liver, kidneys, brain and heart may get it faster; fat and muscle slower.", None), ("রক্তপ্রবাহ", "যকৃৎ, কিডনি, মস্তিষ্ক ও হৃৎপিণ্ডে দ্রুত; চর্বি ও মাংসপেশিতে ধীরে।", None)),
+           (("Barriers", "The blood–brain barrier keeps many medicines out.", None), ("বাধা", "ব্লাড–ব্রেইন ব্যারিয়ার অনেক ওষুধকে আটকে রাখে।", None)),
+           (("Free drug", "In general, only unbound drug leaves the blood and acts.", None), ("মুক্ত ওষুধ", "সাধারণত শুধু অনাবদ্ধ ওষুধই রক্ত ছেড়ে কাজ করে।", None)),
+           (("Volume of distribution", "Describes how widely it spreads; not a real body space.", None), ("ভলিউম অব ডিস্ট্রিবিউশন", "ওষুধ কতটা ছড়ায় বোঝায়; শরীরের আসল জায়গা নয়।", None))],
+   src=("StatPearls; MSD Manual", "StatPearls; MSD Manual")),
 }
 NAMES = {"cover": "drug-distribution-cover-cinematic", "highway": "medicine-travelling-in-bloodstream-to-organs",
-         "barrier": "blood-brain-barrier-drug-distribution", "binding": "plasma-protein-binding-free-vs-bound-drug"}
+         "barrier": "blood-brain-barrier-drug-distribution", "binding": "plasma-protein-binding-free-vs-bound-drug", "takeaways": "drug-distribution-key-takeaways"}
 with sync_playwright() as p:
     br = p.chromium.launch()
     def shot(htm, w, h, path, fmt="webp"):
