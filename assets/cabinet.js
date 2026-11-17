@@ -37,54 +37,88 @@
     dws.forEach(function(d,i){setTimeout(function(){setOpen(d,on);syncAll();},i*140);});
   });
 
-  /* ---- detail dialog: reliable mobile controls ---- */
+  /* ---- product dialogs: delegated mobile-safe controls ---- */
   function lockPage(on){
     document.documentElement.style.overflow=on?'hidden':'';
     document.body.style.overflow=on?'hidden':'';
   }
-  function show(i){
-    var d=dlgs[i];if(!d)return;
-    cur=i;
-    if(typeof d.showModal==='function'){
-      if(!d.open){try{d.showModal();}catch(e){d.setAttribute('open','');}}
-    }else{d.setAttribute('open','');}
+  function openDialog(d){
+    if(!d)return;
+    cur=dlgs.indexOf(d);
+    if(!d.open){
+      try{d.showModal();}
+      catch(err){d.setAttribute('open','');}
+    }
     lockPage(true);
-    var s=d.querySelector('.cab-dlg-side'),m=d.querySelector('.cab-dlg-main'),g=d.querySelector('.cab-dlg-grid');
-    if(g)g.scrollTop=0;if(s)s.scrollTop=0;if(m)m.scrollTop=0;
+    var grid=d.querySelector('.cab-dlg-grid');
+    if(grid)grid.scrollTop=0;
   }
-  function hide(d){
+  function closeDialog(d){
     if(!d)return;
     if(d.open&&typeof d.close==='function')d.close();
     else d.removeAttribute('open');
+    if(!dlgs.some(function(x){return x.open;})){
+      lockPage(false);
+      cur=-1;
+      if(lastBtn)try{lastBtn.focus({preventScroll:true});}catch(err){}
+    }
   }
-  function go(step){
-    if(cur<0||!dlgs.length)return;
-    var from=cur,n=(from+step+dlgs.length)%dlgs.length;
-    if(dws[n])setOpen(dws[n],true);
-    syncAll();
-    var old=dlgs[from],next=dlgs[n];
-    if(old&&old.open)hide(old);
-    show(n);
+  function moveDialog(from,step){
+    var index=dlgs.indexOf(from);
+    if(index<0||!dlgs.length)return;
+    var target=dlgs[(index+step+dlgs.length)%dlgs.length];
+    var openNext=function(){openDialog(target);};
+    if(from.open&&typeof from.close==='function'){
+      from.addEventListener('close',openNext,{once:true});
+      from.close();
+    }else{
+      from.removeAttribute('open');
+      requestAnimationFrame(openNext);
+    }
   }
-  dlgs.forEach(function(d,i){
-    var prev=d.querySelector('[data-cab-prev]');
-    var next=d.querySelector('[data-cab-next]');
-    var close=d.querySelector('[data-cab-close]');
-    if(prev)prev.addEventListener('click',function(ev){ev.preventDefault();ev.stopPropagation();go(-1);});
-    if(next)next.addEventListener('click',function(ev){ev.preventDefault();ev.stopPropagation();go(1);});
-    if(close)close.addEventListener('click',function(ev){ev.preventDefault();ev.stopPropagation();hide(d);});
-    d.addEventListener('click',function(ev){if(ev.target===d)hide(d);});
+
+  /* Capture at document level: resilient to nested scrolling containers,
+     mobile tap synthesis and other bubbling handlers on the page. */
+  document.addEventListener('click',function(ev){
+    var button=ev.target&&ev.target.closest?ev.target.closest('.cab-dlg-nav button[data-cab-prev],.cab-dlg-nav button[data-cab-next],.cab-dlg-nav button[data-cab-close]'):null;
+    if(!button)return;
+    var dialog=button.closest('.cab-dlg');
+    if(!dialog)return;
+    ev.preventDefault();
+    ev.stopPropagation();
+    if(button.hasAttribute('data-cab-prev'))moveDialog(dialog,-1);
+    else if(button.hasAttribute('data-cab-next'))moveDialog(dialog,1);
+    else closeDialog(dialog);
+  },true);
+
+  dlgs.forEach(function(d){
     d.addEventListener('close',function(){
-      if(cur===i&&!dlgs.some(function(x){return x.open;})){
-        lockPage(false);cur=-1;
-        if(lastBtn)try{lastBtn.focus({preventScroll:true});}catch(e){}
+      if(!dlgs.some(function(x){return x.open;})){
+        lockPage(false);
+        cur=-1;
+        if(lastBtn)try{lastBtn.focus({preventScroll:true});}catch(err){}
       }
     });
+    d.addEventListener('click',function(ev){
+      if(ev.target===d)closeDialog(d);
+    });
     d.addEventListener('keydown',function(ev){
-      if(ev.key==='ArrowLeft'){ev.preventDefault();go(-1);}
-      else if(ev.key==='ArrowRight'){ev.preventDefault();go(1);}
+      if(ev.key==='ArrowLeft'){ev.preventDefault();moveDialog(d,-1);}
+      else if(ev.key==='ArrowRight'){ev.preventDefault();moveDialog(d,1);}
     });
   });
+
+  /* The cabinet's "view details" action opens the matching dialog. */
+  var originalCabinetClick=cab;
+  originalCabinetClick.addEventListener('click',function(ev){
+    var view=ev.target.closest('.dw-view');
+    if(!view)return;
+    var index=dws.indexOf(view.closest('.dw'));
+    if(index<0||!dlgs[index])return;
+    lastBtn=view;
+    openDialog(dlgs[index]);
+  },true);
+
 
 })();
 
