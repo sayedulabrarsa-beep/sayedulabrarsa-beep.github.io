@@ -478,8 +478,8 @@
 "date": "2026-10-28",
 "kicker": "Medicine safety",
 "title": "Expiry Date vs Manufacturing Date: Read Any Pack in 10 Seconds",
-"image": "/assets/img/blog/expiry/is-your-medicine-still-safe-expiry-vs-manufacturing-date-thumbnail.webp",
-"alt": "Expiry date vs manufacturing date on medicine",
+"image": "/assets/img/blog/expiry/expiry-thumbnail-1200x630.webp",
+"alt": "MFG vs EXP: read any medicine pack in 10 seconds",
 "accent": "#3b7ea1",
 "read": "6 min",
 "slides": [
@@ -490,8 +490,8 @@
 "EXP: when it expires.",
 "B.No.: which batch it is from."
 ],
-"img": "/assets/img/blog/expiry/reading-mfg-exp-batch-number-on-medicine-box.webp",
-"alt": "Reading MFG, EXP and batch number",
+"img": "/assets/img/blog/expiry/expiry-find-mfg-exp-batch-codes.webp",
+"alt": "Medicine box label showing MFG, EXP and B.No. codes",
 "r": "",
 "sub": "",
 "fit": "cover"
@@ -502,8 +502,8 @@
 "The manufacturing date tells you how old a pack is.",
 "The expiry date is the last date the maker guarantees strength and safety, if stored as directed."
 ],
-"img": "/assets/img/blog/expiry/mfg-date-stamped-on-medicine-blister-strip-factory.webp",
-"alt": "Manufacturing date on a blister strip",
+"img": "/assets/img/blog/expiry/expiry-mfg-date-on-blister-strip.webp",
+"alt": "MFG and EXP printed on a blister strip",
 "r": "",
 "sub": "",
 "fit": "cover"
@@ -514,8 +514,8 @@
 "It identifies the production batch.",
 "If there is a quality problem or recall, it helps trace the pack."
 ],
-"img": "/assets/img/blog/expiry/batch-number-on-medicine-boxes-bno-barcode.webp",
-"alt": "Batch numbers on medicine boxes",
+"img": "/assets/img/blog/expiry/expiry-batch-number-on-medicine-box.webp",
+"alt": "B.No. printed beside a barcode on a medicine box",
 "r": "Keep the pack or note the batch number when reporting a problem.",
 "sub": "",
 "fit": "cover"
@@ -526,8 +526,8 @@
 "Short answer: no.",
 "Strength can drop and you cannot tell by looking or smelling."
 ],
-"img": "/assets/img/blog/expiry/medicine-drawer-valid-near-expiry-expired-check.webp",
-"alt": "Valid, near expiry and expired medicines",
+"img": "/assets/img/blog/expiry/expiry-expired-medicine-do-not-use.webp",
+"alt": "Expired medicine: do not use, dispose safely",
 "r": "",
 "sub": "",
 "fit": "cover"
@@ -535,11 +535,11 @@
 {
 "h": "Store it right",
 "p": [
-"Keep medicine in a closed cupboard or bedside table.",
-"Avoid hot cars, steamy bathrooms and kitchen stoves."
+"Cool, dry place in the original pack.",
+"Avoid steamy bathrooms and sunny windowsills."
 ],
-"img": "/assets/img/blog/expiry/safe-vs-unsafe-places-to-store-medicine-at-home.webp",
-"alt": "Safe and unsafe places to store medicine",
+"img": "/assets/img/blog/expiry/expiry-store-medicine-good-vs-bad-spot.webp",
+"alt": "Good and bad places to store medicine",
 "r": "",
 "sub": "",
 "fit": "cover"
@@ -547,9 +547,9 @@
 ],
 "end": {
 "h": "THE 10-SECOND CHECK",
-"t": "Read the dates, inspect the strip, check the pack for damage and read the leaflet.",
-"img": "/assets/img/blog/expiry/four-step-medicine-pack-check.webp",
-"alt": "Four-step medicine pack check"
+"t": "Find EXP, apply the month-year rule, check the after-opening limit, then check the pack and ask if unsure.",
+"img": "/assets/img/blog/expiry/expiry-10-second-pack-check.webp",
+"alt": "10-second medicine pack check"
 }
 },
 {

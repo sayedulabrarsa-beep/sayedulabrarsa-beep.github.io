@@ -9,7 +9,7 @@
     '/assets/img/blog/pharma-industry/pharmaceutical-industry-in-bangladesh-how-medicines-reach-you-thumbnail-16x9-w750.webp':'/assets/img/blog/pharma-industry/pharmaceutical-industry-in-bangladesh-how-medicines-reach-you-thumbnail-16x9.webp',
     '/assets/img/blog/ppi-tablets/when-to-take-ppi-before-meals-thumbnail-16x9-w750.webp':'/assets/img/blog/ppi-tablets/when-to-take-ppi-before-meals-thumbnail-16x9.webp',
     '/assets/img/blog/glucosamine-alzheimers-social-w750.webp':'/assets/img/blog/glucosamine-alzheimers-social.webp',
-    '/assets/img/blog/expiry/is-your-medicine-still-safe-expiry-vs-manufacturing-date-thumbnail-w750.webp':'/assets/img/blog/expiry/expiry-date-vs-manufacturing-date-medicine-social.jpg',
+    '/assets/img/blog/expiry/expiry-thumbnail-1200x630-w750.webp':'/assets/img/blog/expiry/expiry-social-en.jpg',
     '/assets/img/blog/generic-brand/which-name-is-the-real-medicine-generic-vs-brand-thumbnail-w750.webp':'/assets/img/blog/generic-brand/which-name-is-the-real-medicine-generic-vs-brand-thumbnail.webp',
     '/assets/img/blog/iron-tablets/how-to-take-iron-tablets-properly-timing-food-interactions-thumbnail-16x9-w750.webp':'/assets/img/blog/iron-tablets/how-to-take-iron-tablets-properly-timing-food-interactions-thumbnail-16x9.webp',
     '/assets/img/blog/iron-deficiency/iron-deficiency-vs-anemia-are-they-the-same-thumbnail-16x9-w750.webp':'/assets/img/blog/iron-deficiency/iron-deficiency-vs-anemia-are-they-the-same-thumbnail-16x9.webp',
