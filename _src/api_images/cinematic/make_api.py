@@ -61,7 +61,23 @@ body.bn .foot{{font-size:19px}}
 .foot b{{color:var(--teal);font-weight:600}}
 .ill{{position:absolute;right:24px;bottom:66px;font-size:14px;color:var(--char);background:rgba(255,255,255,.85);padding:3px 12px;border-radius:999px}}
 body.bn .ill{{font-size:16px}}
-"""
+.panel{{left:72px!important}}
+.kick{{font-size:26px!important}} body.bn .kick{{font-size:30px!important}}
+.sub{{font-size:36px!important;line-height:1.3!important;margin-top:16px!important}} body.bn .sub{{font-size:38px!important;line-height:1.4!important}}
+.chips{{gap:14px!important;margin-top:24px!important}}
+.chip{{padding:14px 16px!important}}
+.chip b{{font-size:30px!important;line-height:1.1!important}} body.bn .chip b{{font-size:32px!important}}
+.chip span{{font-size:23px!important;line-height:1.25!important;margin-top:4px!important}} body.bn .chip span{{font-size:26px!important}}
+.call{{max-width:420px!important;padding:12px 20px!important;border-left-width:8px!important}}
+.call b{{font-size:31px!important}} body.bn .call b{{font-size:34px!important}}
+.call span{{font-size:24px!important;line-height:1.25!important}} body.bn .call span{{font-size:27px!important}}
+.legend{{gap:12px!important;margin-top:22px!important}}
+.li{{padding:12px 18px!important;gap:16px!important;align-items:center!important}}
+.badge{{width:54px!important;height:54px!important;font-size:28px!important}}
+.li b{{font-size:31px!important}} body.bn .li b{{font-size:33px!important}}
+.li span{{font-size:24px!important;line-height:1.25!important}} body.bn .li span{{font-size:27px!important}}
+.foot{{height:58px!important;font-size:21px!important;padding:0 72px!important}} body.bn .foot{{font-size:22px!important}}
+.ill{{font-size:17px!important;bottom:70px!important}}"""
 DX = [0]
 P = lambda x, y: (x * SC + DX[0], y * SC)
 def ring(x, y, r=34, c="#17807a"):
@@ -96,7 +112,7 @@ def build(cfg, lang, w=1600, h=900):
     foot = (f'<div class="foot"><span>{("সূত্র: " if bn else "Sources: ") + src if src else ""}</span><b>{"সাইয়্যেদুল আবরার, ফার্মাসিস্ট" if bn else "Sayedul Abrar, Pharmacist"} · sayedulabrar.site</b></div>') if cfg.get("foot", True) else ""
     ts = cfg.get("ts", (86, 74))[1 if bn else 0]
     chips = ('<div class="chips">' + ''.join(f'<div class="chip" style="--c:{c[2]}"><b>{(c[1] if bn else c[0])[0]}</b><span>{(c[1] if bn else c[0])[1]}</span></div>' for c in cfg['chips']) + '</div>') if cfg.get('chips') else ''
-    byline = (f'<p style="margin-top:34px;display:inline-block;background:#253238;color:#fff;border-left:6px solid #D8A84E;font-family:Int,HS;font-weight:600;font-size:{22 if w>1300 else 19}px;padding:12px 26px;border-radius:999px;box-shadow:0 10px 24px rgba(15,60,66,.25)">{"লিখেছেন সাইয়্যেদুল আবরার, ফার্মাসিস্ট" if bn else "By Sayedul Abrar, Pharmacist"}</p>') if cfg.get('byline') else ''
+    byline = (f'<p style="margin-top:34px;display:inline-block;background:#253238;color:#fff;border-left:6px solid #D8A84E;font-family:Int,HS;font-weight:600;font-size:{27 if w>1300 else 24}px;padding:12px 26px;border-radius:999px;box-shadow:0 10px 24px rgba(15,60,66,.25)">{"লিখেছেন সাইয়্যেদুল আবরার, ফার্মাসিস্ট" if bn else "By Sayedul Abrar, Pharmacist"}</p>') if cfg.get('byline') else ''
     tight = '<style>.legend{gap:10px!important;margin-top:18px!important}body.bn .legend{gap:7px!important;margin-top:14px!important}.li b{font-size:25px!important}body.bn .li b{font-size:27px!important}.li span{font-size:20px!important}body.bn .li span{font-size:22px!important}.badge{width:38px!important;height:38px!important;font-size:20px!important}</style>' if cfg.get('tight') else ''
     return (f'<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><style>:root{{--w:{w}px;--h:{h}px}}{CSS}</style></head><body class="{lang}">{tight}'
             f'<div class="bg" style="background-image:url({U}/bg/{cfg["bg"]}.webp);{cfg.get("bgcss","")}"></div><div class="veil" style="--a:{cfg.get("a","30%")};--b:{cfg.get("b","46%")};{cfg.get("veilcss","")}"></div><div class="vig"></div>'
@@ -110,51 +126,51 @@ SH = lambda px: f"background-size:auto 100%;background-position:calc(100% + {px}
 VE = lambda a: f"background:linear-gradient(90deg,#F7F1E6 0%,#F7F1E6 {a}%,rgba(247,241,230,.88) {a+7}%,rgba(247,241,230,0) {a+20}%);"
 TOP = "justify-content:flex-start;padding-top:70px"
 CFG = {
- "cover": dict(bg="cover", dx=100, bgcss=SH(100), veilcss=VE(27), pw=440, byline=True, ts=(96, 96), foot=False, ill=False,
+ "cover": dict(bg="cover", dx=130, bgcss=SH(130), veilcss=VE(30), pw=520, byline=True, ts=(116, 118), foot=False, ill=False,
    kick=("From lab to medicine", "সহজ ভাষায় ওষুধ উৎপাদন"),
    title=("What is an <i>API</i>?", "<i>API</i> কী?"),
-   sub=("Active Pharmaceutical Ingredient: from raw material to medicine.", "অ্যাকটিভ ফার্মাসিউটিক্যাল ইনগ্রেডিয়েন্ট: কাঁচামাল থেকে ওষুধ।")),
- "powders": dict(bg="powders", veilcss=VE(18), pw=900, ts=(64, 62), panelcss=TOP,
-   kick=("API vs finished product", "API বনাম প্রস্তুত ওষুধ"), title=("What's <i>inside</i> a tablet?", "ট্যাবলেটের <i>ভেতরে</i> কী থাকে?"), sub=("", ""),
-   calls=[(590, 560, 300, 815, "l", GOLD, ("API", "The active substance that gives the effect"), ("API", "যে সক্রিয় উপাদান কার্যকারিতা দেয়")),
-          (1000, 540, 1010, 330, "c", STEEL, ("Excipients", "Help bind, fill, coat and protect"), ("এক্সিপিয়েন্ট", "বাঁধা, ভরাট, আবরণ ও সুরক্ষায় সাহায্য করে")),
-          (1370, 630, 1655, 735, "r", TEAL, ("Finished product (FPP)", "API + excipients in a dosage form"), ("প্রস্তুত ওষুধ (FPP)", "ডোজ ফর্মে API + এক্সিপিয়েন্ট"))],
+   sub=("Active Pharmaceutical Ingredient, from raw material to medicine.", "অ্যাকটিভ ফার্মাসিউটিক্যাল ইনগ্রেডিয়েন্ট: কাঁচামাল থেকে ওষুধ।")),
+ "powders": dict(bg="powders", veilcss=VE(22), pw=420, ts=(80, 76), panelcss=TOP,
+   kick=("API vs medicine", "API বনাম ওষুধ"), title=("What's <i>inside</i> a tablet?", "ট্যাবলেটের <i>ভেতরে</i> কী?"), sub=("", ""),
+   calls=[(590, 560, 300, 800, "l", GOLD, ("API", "Gives the effect"), ("API", "কার্যকারিতা দেয়")),
+          (1000, 540, 1130, 330, "c", STEEL, ("Excipients", "Bind, fill, coat, protect"), ("এক্সিপিয়েন্ট", "বাঁধা, ভরাট, আবরণ, সুরক্ষা")),
+          (1370, 630, 1655, 735, "r", TEAL, ("Finished product", "API + excipients"), ("প্রস্তুত ওষুধ", "API + এক্সিপিয়েন্ট"))],
    src=SRC),
- "reactor": dict(bg="reactor", veilcss=VE(22), pw=440, ts=(64, 62),
+ "reactor": dict(bg="reactor", veilcss=VE(27), pw=530, ts=(86, 80),
    kick=("How an API is made", "API কীভাবে তৈরি হয়"), title=("Many <i>routes</i>, one goal", "পথ <i>ভিন্ন</i>, লক্ষ্য এক"),
-   sub=("The route depends on the substance's chemistry or biology.", "কোন পদ্ধতি লাগবে তা উপাদানের রসায়ন বা জীববিজ্ঞানের ওপর নির্ভর করে।"),
-   chips=[(("Synthesis", "Controlled chemical reactions"), ("সংশ্লেষণ", "নিয়ন্ত্রিত রাসায়নিক বিক্রিয়া"), GOLD), (("Fermentation", "Using microorganisms"), ("ফারমেন্টেশন", "অণুজীব ব্যবহার করে"), CORAL),
-          (("Extraction", "From natural sources"), ("নিষ্কাশন", "প্রাকৃতিক উৎস থেকে"), TEAL), (("Cell culture", "For some biological APIs"), ("সেল কালচার", "কিছু বায়োলজিক্যাল API-এর জন্য"), STEEL)],
-   calls=[(870, 520, 700, 120, "l", GOLD, ("Reactor", "Temperature, time, pH and mixing controlled"), ("রিঅ্যাক্টর", "তাপমাত্রা, সময়, pH ও মিশ্রণ নিয়ন্ত্রিত")),
-          (1510, 480, 1655, 735, "r", CORAL, ("Bioreactor", "Fermentation or cell culture"), ("বায়োরিঅ্যাক্টর", "ফারমেন্টেশন বা সেল কালচার"))],
+   sub=("The route depends on the substance.", "উপাদানভেদে পদ্ধতি ভিন্ন।"),
+   chips=[(("Synthesis", "Chemical reactions"), ("সংশ্লেষণ", "রাসায়নিক বিক্রিয়া"), GOLD), (("Fermentation", "Microorganisms"), ("ফারমেন্টেশন", "অণুজীব"), CORAL),
+          (("Extraction", "Natural sources"), ("নিষ্কাশন", "প্রাকৃতিক উৎস"), TEAL), (("Cell culture", "Some biologics"), ("সেল কালচার", "কিছু বায়োলজিক"), STEEL)],
+   calls=[(870, 520, 720, 110, "l", GOLD, ("Reactor", "Controlled conditions"), ("রিঅ্যাক্টর", "নিয়ন্ত্রিত পরিবেশ")),
+          (1510, 480, 1655, 735, "r", CORAL, ("Bioreactor", "Fermentation"), ("বায়োরিঅ্যাক্টর", "ফারমেন্টেশন"))],
    src=SRC),
- "crystal": dict(bg="crystal", veilcss=VE(24), pw=440, ts=(62, 60),
-   kick=("Isolation and purification", "পৃথকীকরণ ও বিশুদ্ধকরণ"), title=("From solution to <i>pure</i> powder", "দ্রবণ থেকে <i>বিশুদ্ধ</i> পাউডার"),
-   sub=("Crystallisation, filtration, washing and drying help remove unwanted material.", "ক্রিস্টালাইজেশন, ফিল্টারেশন, ধোয়া ও শুকানো অপ্রয়োজনীয় উপাদান সরাতে সাহায্য করে।"),
-   calls=[(1150, 290, 600, 150, "l", GOLD, ("Crystallisation", "The substance forms crystals"), ("ক্রিস্টালাইজেশন", "উপাদান কেলাস তৈরি করে")),
-          (1170, 640, 600, 815, "l", TEAL, ("Filtration", "The pure solid is collected"), ("ফিল্টারেশন", "বিশুদ্ধ কঠিন অংশ সংগ্রহ করা হয়"))],
+ "crystal": dict(bg="crystal", veilcss=VE(28), pw=530, ts=(86, 80),
+   kick=("Purification", "বিশুদ্ধকরণ"), title=("From solution to <i>pure</i> powder", "দ্রবণ থেকে <i>বিশুদ্ধ</i> পাউডার"),
+   sub=("Crystallise, filter, wash and dry.", "ক্রিস্টালাইজ, ফিল্টার, ধোয়া ও শুকানো।"),
+   calls=[(1150, 290, 650, 140, "l", GOLD, ("Crystallisation", "Crystals form"), ("ক্রিস্টালাইজেশন", "কেলাস তৈরি হয়")),
+          (1170, 640, 650, 790, "l", TEAL, ("Filtration", "Pure solid collected"), ("ফিল্টারেশন", "বিশুদ্ধ কঠিন অংশ জমে"))],
    src=SRC),
- "qc": dict(bg="qc", veilcss=VE(24), pw=440, ts=(64, 62),
+ "qc": dict(bg="qc", veilcss=VE(28), pw=530, ts=(86, 80),
    kick=("Quality testing", "মান পরীক্ষা"), title=("Tested <i>before</i> release", "ছাড়ের <i>আগে</i> পরীক্ষা"), sub=("", ""),
-   chips=[(("Identity", "Is it the right substance?"), ("পরিচয়", "সঠিক উপাদান কি না"), GOLD), (("Assay", "How much API is there?"), ("অ্যাসে", "API কতটুকু আছে"), TEAL),
-          (("Impurities", "Within set limits?"), ("ইমপিউরিটি", "নির্ধারিত সীমার মধ্যে কি না"), CORAL), (("Residual solvents", "Left from manufacturing"), ("অবশিষ্ট দ্রাবক", "উৎপাদন থেকে থেকে যাওয়া"), STEEL)],
-   calls=[(905, 245, 900, 70, "c", GOLD, ("Chromatogram", "Peaks help check identity and impurities"), ("ক্রোমাটোগ্রাম", "পিক দেখে পরিচয় ও ইমপিউরিটি যাচাই")),
-          (1365, 515, 1655, 735, "r", TEAL, ("Batch sample", "Results checked against the specification"), ("ব্যাচের নমুনা", "ফল স্পেসিফিকেশনের সঙ্গে মেলানো হয়"))],
+   chips=[(("Identity", "Right substance?"), ("পরিচয়", "সঠিক উপাদান?"), GOLD), (("Assay", "How much API?"), ("অ্যাসে", "API কতটুকু?"), TEAL),
+          (("Impurities", "Within limits?"), ("ইমপিউরিটি", "সীমার মধ্যে?"), CORAL), (("Solvents", "Leftovers checked"), ("দ্রাবক", "অবশিষ্ট যাচাই"), STEEL)],
+   calls=[(905, 245, 930, 60, "c", GOLD, ("Chromatogram", "Identity and impurities"), ("ক্রোমাটোগ্রাম", "পরিচয় ও ইমপিউরিটি")),
+          (1365, 515, 1655, 735, "r", TEAL, ("Batch sample", "Checked vs specification"), ("ব্যাচের নমুনা", "স্পেসিফিকেশনের সঙ্গে মেলানো"))],
    src=SRC),
- "gmp": dict(bg="gmp", veilcss=VE(24), pw=440, ts=(64, 62),
-   kick=("Why GMP matters", "GMP কেন জরুরি"), title=("Quality is <i>built in</i>", "মান গড়ে ওঠে <i>প্রতিটি ধাপে</i>"),
-   sub=("GMP means systems to prevent, detect, investigate and document problems.", "GMP মানে সমস্যা প্রতিরোধ, শনাক্ত, তদন্ত ও লিপিবদ্ধ করার ব্যবস্থা।"),
-   calls=[(1230, 290, 1655, 100, "r", GOLD, ("Trained, gowned staff", "Protect the product from contamination"), ("প্রশিক্ষিত কর্মী", "পণ্যকে দূষণ থেকে রক্ষা করে")),
-          (1420, 700, 1655, 470, "r", TEAL, ("Closed, labelled containers", "Every batch stays traceable"), ("বন্ধ, লেবেলযুক্ত পাত্র", "প্রতিটি ব্যাচ শনাক্তযোগ্য থাকে")),
-          (760, 430, 600, 760, "l", STEEL, ("Controlled clean areas", "Air, cleaning and access are managed"), ("নিয়ন্ত্রিত পরিচ্ছন্ন এলাকা", "বাতাস, পরিচ্ছন্নতা ও প্রবেশ নিয়ন্ত্রিত"))],
+ "gmp": dict(bg="gmp", veilcss=VE(28), pw=530, ts=(86, 80),
+   kick=("Why GMP matters", "GMP কেন জরুরি"), title=("Quality is <i>built in</i>", "মান গড়ে <i>প্রতি ধাপে</i>"),
+   sub=("Prevent, detect, investigate and record problems.", "সমস্যা প্রতিরোধ, শনাক্ত, তদন্ত ও লিপিবদ্ধ করা।"),
+   calls=[(1230, 290, 1655, 90, "r", GOLD, ("Trained staff", "Protect the product"), ("প্রশিক্ষিত কর্মী", "পণ্য সুরক্ষা")),
+          (1420, 700, 1655, 450, "r", TEAL, ("Closed containers", "Traceable batches"), ("বন্ধ পাত্র", "ব্যাচ শনাক্তযোগ্য")),
+          (760, 430, 660, 770, "l", STEEL, ("Clean areas", "Air and access controlled"), ("পরিচ্ছন্ন এলাকা", "বাতাস ও প্রবেশ নিয়ন্ত্রিত"))],
    src=SRC),
- "takeaways": dict(bg="journey", veilcss=VE(30), pw=600, ts=(60, 58), tight=True,
+ "takeaways": dict(bg="journey", dx=70, bgcss=SH(70), veilcss=VE(33), pw=640, ts=(82, 80),
    kick=("Key takeaways", "মূল কথা"), title=("API in <i>5 points</i>", "৫ কথায় <i>API</i>"), sub=("", ""),
-   legend=[(("Active substance", "The API gives the medicine its intended effect.", None), ("সক্রিয় উপাদান", "API-ই ওষুধের কাঙ্ক্ষিত কার্যকারিতা দেয়।", None)),
-           (("Not the tablet", "A finished tablet or capsule = API + excipients.", None), ("ট্যাবলেট নয়", "প্রস্তুত ট্যাবলেট বা ক্যাপসুল = API + এক্সিপিয়েন্ট।", None)),
-           (("Many routes", "Synthesis, extraction, fermentation and more.", None), ("ভিন্ন পদ্ধতি", "সংশ্লেষণ, নিষ্কাশন, ফারমেন্টেশন ইত্যাদি।", None)),
-           (("Tested and controlled", "Purification, testing and GMP support quality.", None), ("পরীক্ষা ও নিয়ন্ত্রণ", "বিশুদ্ধকরণ, পরীক্ষা ও GMP মান বজায় রাখতে সাহায্য করে।", None)),
-           (("Part of the whole", "API quality matters, but it is not the only factor.", None), ("সামগ্রিক মানের অংশ", "API-এর মান গুরুত্বপূর্ণ, তবে একমাত্র বিষয় নয়।", None))],
+   legend=[(("Active substance", "Gives the medicine its effect.", None), ("সক্রিয় উপাদান", "ওষুধের কার্যকারিতা দেয়।", None)),
+           (("Not the tablet", "Tablet = API + excipients.", None), ("ট্যাবলেট নয়", "ট্যাবলেট = API + এক্সিপিয়েন্ট।", None)),
+           (("Many routes", "Synthesis, extraction, fermentation…", None), ("ভিন্ন পদ্ধতি", "সংশ্লেষণ, নিষ্কাশন, ফারমেন্টেশন…", None)),
+           (("Tested and controlled", "Purification, testing and GMP.", None), ("পরীক্ষা ও নিয়ন্ত্রণ", "বিশুদ্ধকরণ, পরীক্ষা ও GMP।", None)),
+           (("Part of the whole", "Important, but not the only factor.", None), ("সামগ্রিক মানের অংশ", "গুরুত্বপূর্ণ, তবে একমাত্র নয়।", None))],
    src=SRC),
 }
 NAMES = {"cover": "api-cover-raw-material-to-medicine", "powders": "api-vs-excipients-vs-finished-medicine", "reactor": "api-manufacturing-reactor-and-bioreactor",
@@ -173,6 +189,6 @@ with sync_playwright() as p:
             shot(build(CFG[key], lang), 1600, 900, OUT / f"{NAMES[key]}{'-bn' if lang == 'bn' else ''}.webp")
         if key == "cover":
             for lang in ("en", "bn"):
-                c = dict(CFG["cover"]); c["ts"] = (80, 80); c["pw"] = 400; c["dx"] = 60; c["bgcss"] = SH(60)
+                c = dict(CFG["cover"]); c["ts"] = (96, 100); c["pw"] = 440; c["dx"] = 90; c["bgcss"] = SH(90)
                 shot(build(c, lang, 1200, 630), 1200, 630, OUT / f"api-social-{lang}.jpg", "jpeg")
     br.close()
