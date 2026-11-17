@@ -91,3 +91,8 @@
   .ae-track.ae-mq .ae-card{flex:0 0 min(70vw,270px)}
 }
 .ae-band[lang="bn"] .ae-eyebrow{letter-spacing:.02em;font-size:13px}
+
+/* Thumbnail visibility: preserve the complete topic artwork and avoid text/image cropping */
+.ae-fig{aspect-ratio:16/9;background:#f0f2f4}
+.ae-fig img{object-fit:contain!important;object-position:center;background:#f0f2f4}
+.ae-card .ae-fig img{min-width:100%;min-height:100%}
