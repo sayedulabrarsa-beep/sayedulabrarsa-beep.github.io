@@ -32,12 +32,14 @@
 <link rel="icon" href="/favicon.ico?v=sa-logo-20261114" sizes="any"><link rel="icon" type="image/png" sizes="48x48" href="/assets/icons/favicon-48x48.png?v=sa-logo-20261114"><link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png?v=sa-logo-20261114"><link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/icon-192.png?v=sa-logo-20261114"><link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png?v=sa-logo-20261114"><link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png?v=sa-logo-20261114"><link rel="manifest" href="/site.webmanifest?v=sa-logo-20261114"><style id="logo-mark-css">.logo-mark{display:inline-block;width:1.3em;height:1.3em;border-radius:50%;vertical-align:-.28em;margin-right:.38em;box-shadow:0 0 0 1px rgba(194,140,30,.35)}@media (max-width:420px){.logo-mark{width:1.15em;height:1.15em}}</style>
 <style id="achievement-rise-motion">
 #achievement-rise-layer{position:fixed;inset:0;z-index:9998;pointer-events:none;overflow:hidden}
-.achievement-rise-card{position:absolute;left:50%;top:50%;width:min( min(560px, calc(100vw - 36px)), 560px);padding:clamp(22px,4vw,38px);border:1px solid rgba(207,170,91,.48);border-radius:22px;background:linear-gradient(145deg,rgba(25,31,48,.97),rgba(43,45,63,.96));color:#fff;text-align:center;box-shadow:0 24px 90px rgba(0,0,0,.28);transform:translate(-50%,110vh);animation:achievement-rise 3.5s cubic-bezier(.2,.7,.2,1) both}
-.achievement-rise-card .rise-kicker{display:block;margin-bottom:12px;color:#e6c47d;font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase}
-.achievement-rise-card strong{display:block;font-size:clamp(24px,5vw,42px);line-height:1.12;font-weight:700}
-.achievement-rise-card .rise-sub{display:block;margin-top:12px;color:rgba(255,255,255,.78);font-size:clamp(12px,2vw,15px);letter-spacing:.04em}
-.achievement-rise-card .rise-year{display:inline-block;margin-top:20px;padding:6px 14px;border:1px solid rgba(230,196,125,.5);border-radius:99px;color:#f1d69c;font-size:12px;letter-spacing:.12em}
-@keyframes achievement-rise{0%{opacity:0;transform:translate(-50%,110vh)}18%{opacity:1}38%{opacity:1;transform:translate(-50%,0)}52%{opacity:0;transform:translate(-50%,-12vh)}100%{opacity:0;transform:translate(-50%,-110vh)}}
+.achievement-rise-card{position:absolute;left:50%;top:50%;width:min(360px,calc(100vw - 42px));padding:17px 22px 18px;border:1px solid rgba(224,190,119,.38);border-radius:16px;background:linear-gradient(145deg,rgba(25,31,48,.91),rgba(43,45,63,.90));color:#fff;text-align:center;box-shadow:0 14px 48px rgba(0,0,0,.20);transform:translate(-50%,110vh);animation:achievement-rise 5.2s cubic-bezier(.22,.68,.24,1) both;backdrop-filter:blur(8px)}
+.achievement-rise-card .rise-kicker{display:block;margin-bottom:7px;color:#e6c47d;font-size:8px;font-weight:700;letter-spacing:.17em;text-transform:uppercase}
+.achievement-rise-card strong{display:block;font-size:clamp(17px,3.5vw,24px);line-height:1.15;font-weight:700}
+.achievement-rise-card .rise-sub{display:block;margin-top:7px;color:rgba(255,255,255,.78);font-size:10px;letter-spacing:.025em}
+.achievement-rise-card .rise-year{display:inline-block;margin-top:10px;padding:4px 10px;border:1px solid rgba(230,196,125,.42);border-radius:99px;color:#f1d69c;font-size:9px;letter-spacing:.1em}
+.achievement-firework{position:absolute;width:4px;height:4px;border-radius:50%;left:var(--x);top:var(--y);background:var(--c);box-shadow:0 0 7px var(--c);opacity:0;animation:achievement-spark 1.45s ease-out forwards}
+@keyframes achievement-rise{0%{opacity:0;transform:translate(-50%,115vh)}14%{opacity:1}66%{opacity:1;transform:translate(-50%,-2vh)}82%{opacity:0;transform:translate(-50%,-12vh)}100%{opacity:0;transform:translate(-50%,-20vh)}}
+@keyframes achievement-spark{0%{opacity:0;transform:translate(0,0) scale(.35)}12%{opacity:1}100%{opacity:0;transform:translate(var(--dx),var(--dy)) scale(.05)}}
 @media(prefers-reduced-motion:reduce){#achievement-rise-layer{display:none}}
 </style>
 </head>
@@ -145,30 +147,34 @@
 
 <script id="achievement-rise-sequence">
 (function(){
-  if(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
-  var items=[
-    {kicker:'ANNUAL PMD ICONIC AWARD · 2025',title:'Best Productive',sub:'1st Place · General-A · Opsonin Pharma Ltd.',year:'2025'},
-    {kicker:'ANNUAL PMD ICONIC AWARD · 2025',title:'Best Innovative',sub:'1st Place · General-A · Opsonin Pharma Ltd.',year:'2025'}
-  ];
-  function play(){
-    var layer=document.getElementById('achievement-rise-layer');
-    if(!layer)return;
-    items.forEach(function(item,index){
-      window.setTimeout(function(){
-        var card=document.createElement('div');
-        card.className='achievement-rise-card';
-        card.innerHTML='<span class="rise-kicker"></span><strong></strong><span class="rise-sub"></span><span class="rise-year"></span>';
-        card.querySelector('.rise-kicker').textContent=item.kicker;
-        card.querySelector('strong').textContent=item.title;
-        card.querySelector('.rise-sub').textContent=item.sub;
-        card.querySelector('.rise-year').textContent=item.year;
-        layer.appendChild(card);
-        window.setTimeout(function(){card.remove()},3600);
-      },index*3700);
-    });
+ if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+ var items=[
+  {kicker:'ANNUAL PMD ICONIC AWARD · 2025',title:'Best Productive',sub:'1st Place · General-A · Opsonin Pharma Ltd.',year:'2025'},
+  {kicker:'ANNUAL PMD ICONIC AWARD · 2025',title:'Best Innovative',sub:'1st Place · General-A · Opsonin Pharma Ltd.',year:'2025'}
+ ];
+ var colors=['#f5d58b','#ffffff','#e8b84e','#d9e8ff','#f08b79'];
+ function burst(layer,x,y){
+  for(var i=0;i<34;i++){
+   var p=document.createElement('i'),a=Math.PI*2*i/34+(Math.random()-.5)*.18,d=55+Math.random()*95;
+   p.className='achievement-firework';p.style.setProperty('--x',x+'%');p.style.setProperty('--y',y+'%');
+   p.style.setProperty('--dx',Math.cos(a)*d+'px');p.style.setProperty('--dy',Math.sin(a)*d+'px');
+   p.style.setProperty('--c',colors[Math.floor(Math.random()*colors.length)]);
+   p.style.width=(2+Math.random()*2)+'px';p.style.height=p.style.width;layer.appendChild(p);
+   window.setTimeout(function(node){node.remove()},1550,p);
   }
-  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',play,{once:true});
-  else play();
+ }
+ function play(){
+  var layer=document.getElementById('achievement-rise-layer');if(!layer)return;
+  items.forEach(function(item,index){window.setTimeout(function(){
+   burst(layer,25,35);burst(layer,76,30);
+   var card=document.createElement('div');card.className='achievement-rise-card';
+   card.innerHTML='<span class="rise-kicker"></span><strong></strong><span class="rise-sub"></span><span class="rise-year"></span>';
+   card.querySelector('.rise-kicker').textContent=item.kicker;card.querySelector('strong').textContent=item.title;
+   card.querySelector('.rise-sub').textContent=item.sub;card.querySelector('.rise-year').textContent=item.year;
+   layer.appendChild(card);window.setTimeout(function(){card.remove()},5300);
+  },index*5700)});
+ }
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',play,{once:true});else play();
 })();
 </script>
 </body>
