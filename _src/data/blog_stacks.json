@@ -5,8 +5,8 @@
     "date": "2026-11-17",
     "kicker": "Pharmaceutical Industry",
     "title": "Active Pharmaceutical Ingredient (API): From Raw Material to Medicine",
-    "image": "/assets/img/blog/api/api-social-en.svg",
-    "alt": "Original vector editorial graphic showing API production from starting materials through a controlled process to medicine.",
+    "image": "/assets/img/blog/api/api-social-en.jpg",
+    "alt": "Original illustrated cover showing the API journey from raw material to medicine.",
     "accent": "#2f8f83",
     "read": "8 min",
     "slides": [
@@ -15,73 +15,73 @@
         "p": [
           "The API is the active substance; excipients support the formulation."
         ],
-        "img": "/assets/img/blog/api/api-diagram-01-en.svg",
-        "alt": "API plus excipients form the finished pharmaceutical product.",
+        "img": "/assets/img/blog/api/api-vs-excipients-vs-finished-medicine.webp",
+        "alt": "A dish of API powder, small dishes of excipient powders and finished tablets and capsules, labelled API, excipients and finished product.",
         "r": "",
         "sub": "",
-        "fit": "contain"
+        "fit": "cover"
       },
       {
         "h": "How APIs can be produced",
         "p": [
           "Routes include chemical synthesis, extraction, fermentation and cell culture."
         ],
-        "img": "/assets/img/blog/api/api-diagram-02-en.svg",
-        "alt": "Four common routes for producing active pharmaceutical ingredients.",
+        "img": "/assets/img/blog/api/api-manufacturing-reactor-and-bioreactor.webp",
+        "alt": "Stainless-steel chemical reactor and a glass bioreactor in an API manufacturing hall, with chips for synthesis, fermentation, extraction and cell culture.",
         "r": "",
         "sub": "",
-        "fit": "contain"
+        "fit": "cover"
       },
       {
         "h": "A simplified manufacturing journey",
         "p": [
           "Starting materials move through controlled production, isolation, purification and packaging."
         ],
-        "img": "/assets/img/blog/api/api-diagram-03-en.svg",
-        "alt": "Simplified process flow from starting materials to packaging.",
+        "img": "/assets/img/blog/api/api-crystallisation-and-filtration.webp",
+        "alt": "Crystals forming in a glass crystallisation vessel above a filter funnel collecting pure white API powder.",
         "r": "",
         "sub": "",
-        "fit": "contain"
+        "fit": "cover"
       },
       {
         "h": "Isolation and purification",
         "p": [
           "Operations depend on the API and the validated process."
         ],
-        "img": "/assets/img/blog/api/api-diagram-04-en.svg",
-        "alt": "Process mixture, separation, crystallisation and purified API.",
+        "img": "/assets/img/blog/api/api-quality-testing-chromatography.webp",
+        "alt": "Gloved hand loading an API sample vial into a chromatography instrument, with a chromatogram on screen and chips for identity, assay, impurities and residual solvents.",
         "r": "",
         "sub": "",
-        "fit": "contain"
+        "fit": "cover"
       },
       {
         "h": "Quality checks before release",
         "p": [
           "Tests are selected from the API specification and risk."
         ],
-        "img": "/assets/img/blog/api/api-diagram-05-en.svg",
-        "alt": "Identity, assay, impurity and other quality tests for APIs.",
+        "img": "/assets/img/blog/api/api-gmp-cleanroom.webp",
+        "alt": "Gowned technician handling API powder in a closed stainless-steel container inside a GMP cleanroom corridor.",
         "r": "",
         "sub": "",
-        "fit": "contain"
+        "fit": "cover"
       },
       {
         "h": "GMP is a connected system",
         "p": [
           "People, premises, records, process controls and quality oversight work together."
         ],
-        "img": "/assets/img/blog/api/api-diagram-06-en.svg",
-        "alt": "GMP controls across personnel, equipment, procedures, suppliers and quality oversight.",
+        "img": "/assets/img/blog/api/api-key-takeaways.webp",
+        "alt": "Key takeaways about APIs beside a glowing path from raw materials and a reactor to crystals, a testing instrument and finished tablets.",
         "r": "",
         "sub": "",
-        "fit": "contain"
+        "fit": "cover"
       }
     ],
     "end": {
       "h": "KEY TAKEAWAY",
       "t": "API quality depends on defined starting materials, controlled manufacturing, purification, testing and GMP oversight.",
-      "img": "/assets/img/blog/api/api-diagram-06-en.svg",
-      "alt": "GMP controls that support API quality."
+      "img": "/assets/img/blog/api/api-key-takeaways.webp",
+      "alt": "Key takeaways about APIs beside a glowing path from raw materials and a reactor to crystals, a testing instrument and finished tablets."
     }
   },
   {
