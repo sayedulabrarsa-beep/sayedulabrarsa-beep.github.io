@@ -3,10 +3,17 @@
 Articles listed in _src/data/blog_stacks.json are curated; every other article under /blog is discovered and added automatically from its own HTML.
 A GitHub Action (.github/workflows/featured-stacks.yml) runs this on every push that touches /blog.
 """
-import json, html, pathlib, re
+import json, html, pathlib, re, io, cairosvg
 from PIL import Image
 R = pathlib.Path(__file__).resolve().parent.parent
 e = html.escape
+
+def open_image(path):
+    p = R / path.lstrip("/")
+    if p.suffix.lower() == ".svg":
+        data = cairosvg.svg2png(url=str(p))
+        im = Image.open(io.BytesIO(data)); im.load(); return im
+    im = Image.open(p); im.load(); return im
 
 # ---- automatic discovery: any article in /blog that is not curated in the JSON is added from its own HTML ----
 ACCENTS = ["#2f8f83", "#c4573a", "#8a5a9c", "#b8433f", "#d08a1f", "#3b7ea1", "#6f6bb0", "#a24a6b"]
@@ -80,7 +87,7 @@ for a in data:
     assert (R/"blog"/a["bn"].split("#")[0]/"index.html").exists(), a["bn"]
 import statistics
 def edge(path):
-    im = Image.open(R/path.lstrip("/")).convert("RGB"); im.thumbnail((500, 500)); w, h = im.size; px = im.load(); t = max(2, min(w, h)//60)
+    im = open_image(path).convert("RGB"); im.thumbnail((500, 500)); w, h = im.size; px = im.load(); t = max(2, min(w, h)//60)
     pts = [px[x, y] for x in range(w) for y in list(range(t)) + list(range(h-t, h))] + [px[x, y] for y in range(h) for x in list(range(t)) + list(range(w-t, w))]
     c = [int(statistics.median(p[i] for p in pts)) for i in range(3)]
     lum = (0.299*c[0] + 0.587*c[1] + 0.114*c[2]) / 255
@@ -92,14 +99,14 @@ tilt = [-1.6, 1.2, -0.8, 1.8, -1.2, 0.9, -1.9, 1.4, -0.6]
 cards = ""
 for i, a in enumerate(data):
     n = len(a["slides"]) + 2
-    iw, ih = Image.open(R/a["image"].lstrip("/")).size
+    iw, ih = open_image(a["image"]).size
     new = '<span class="st-new">NEW</span>' if i == 0 else ""
     # small copy for the card (shown ~360px wide); full image stays as src for sharp zoom
     srcset = ""
     if iw > 900:
-        sp = R/(re.sub(r"\.(webp|jpe?g|png)$", "-w750.webp", a["image"].split("?")[0], flags=re.I).lstrip("/"))
+        sp = R/(re.sub(r"\.(webp|jpe?g|png|svg)$", "-w750.webp", a["image"].split("?")[0], flags=re.I).lstrip("/"))
         if not sp.exists():
-            im = Image.open(R/a["image"].lstrip("/")); im = im.convert("RGBA" if im.mode in ("P", "LA", "RGBA") else "RGB")
+            im = open_image(a["image"]); im = im.convert("RGBA" if im.mode in ("P", "LA", "RGBA") else "RGB")
             im.resize((750, round(ih*750/iw)), Image.LANCZOS).save(sp, "WEBP", quality=82, method=6)
         srcset = f' srcset="/{sp.relative_to(R).as_posix()} 750w, {a["image"]} {iw}w" sizes="357px"'
     cards += (f'<li class="st-item" style="--tilt:{tilt[i%9]}deg;--ac:{a["accent"]}"><button class="st-stack" type="button" data-i="{i}" aria-haspopup="dialog">'

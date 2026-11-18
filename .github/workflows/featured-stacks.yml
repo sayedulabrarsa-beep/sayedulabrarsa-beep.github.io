@@ -28,7 +28,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: pip install pillow
+      - run: pip install pillow cairosvg
       - run: python3 _src/blog_stacks.py
       - run: python3 _src/seo_feeds.py   # RSS feed, llms.txt article list, Blog schema
       - run: python3 _src/article_index.py   # all-articles list for the 'You can also read' band + crawlable links
