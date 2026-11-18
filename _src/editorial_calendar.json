@@ -1,5 +1,13 @@
 {
   "timezone": "Asia/Dhaka",
   "publish_time": "20:00",
-  "items": []
+  "items": [
+    {
+      "date": "2026-11-18",
+      "time": "20:00",
+      "slug": "drug-metabolism-how-the-body-processes-medicines",
+      "title": "Drug Metabolism",
+      "status": "scheduled"
+    }
+  ]
 }
