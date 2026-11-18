@@ -1,5 +1,18 @@
 [
  {
+  "slug": "drug-metabolism-how-the-body-processes-medicines",
+  "date": "2026-11-18",
+  "tag_en": "Pharma Blog",
+  "tag_bn": "ফার্মা ব্লগ",
+  "title_en": "Drug Metabolism: How Does the Body Process Medicines?",
+  "title_bn": "ওষুধের বিপাক: শরীর কীভাবে ওষুধকে পরিবর্তন করে?",
+  "desc_en": "A simple guide to drug metabolism, the liver, enzymes, active metabolites and first-pass…",
+  "desc_bn": "Drug metabolism, যকৃত, enzyme, active metabolite এবং first-pass metabolism সম্পর্কে সহজ ও…",
+  "url_en": "/blog/drug-metabolism-how-the-body-processes-medicines/",
+  "url_bn": "/blog/drug-metabolism-how-the-body-processes-medicines-bangla/",
+  "img": "/assets/img/blog/drug-metabolism/drug-metabolism-social-en.jpg"
+ },
+ {
   "slug": "active-pharmaceutical-ingredient-api-from-raw-material-to-medicine",
   "date": "2026-11-17",
   "tag_en": "Pharmaceutical Industry",

@@ -6,8 +6,28 @@
     <atom:link href="https://sayedulabrar.site/blog/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Pharmacist-written educational articles in English and Bangla on medicines, pharmacology and the pharmaceutical industry in Bangladesh, by Sayedul Abrar.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 17 Nov 2026 06:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 06:00:00 +0000</lastBuildDate>
     <image><url>https://sayedulabrar.site/assets/img/social/pharma-blog-social-preview.jpg</url><title>Pharma Blog | Sayedul Abrar</title><link>https://sayedulabrar.site/blog/</link></image>
+    <item>
+      <title>ওষুধের বিপাক: শরীর কীভাবে ওষুধকে পরিবর্তন করে?</title>
+      <link>https://sayedulabrar.site/blog/drug-metabolism-how-the-body-processes-medicines-bangla/</link>
+      <guid isPermaLink="true">https://sayedulabrar.site/blog/drug-metabolism-how-the-body-processes-medicines-bangla/</guid>
+      <pubDate>Wed, 18 Nov 2026 06:00:00 +0000</pubDate>
+      <dc:creator>Sayedul Abrar</dc:creator>
+      <dc:language>bn</dc:language>
+      <description>Drug metabolism, যকৃত, enzyme, active metabolite এবং first-pass metabolism সম্পর্কে সহজ ও প্রমাণভিত্তিক ধারণা।</description>
+      <enclosure url="https://sayedulabrar.site/assets/img/blog/drug-metabolism/drug-metabolism-social-bn.jpg" type="image/jpeg" length="116311"/>
+    </item>
+    <item>
+      <title>Drug Metabolism: How Does the Body Process Medicines?</title>
+      <link>https://sayedulabrar.site/blog/drug-metabolism-how-the-body-processes-medicines/</link>
+      <guid isPermaLink="true">https://sayedulabrar.site/blog/drug-metabolism-how-the-body-processes-medicines/</guid>
+      <pubDate>Wed, 18 Nov 2026 06:00:00 +0000</pubDate>
+      <dc:creator>Sayedul Abrar</dc:creator>
+      <dc:language>en</dc:language>
+      <description>A simple guide to drug metabolism, the liver, enzymes, active metabolites and first-pass metabolism.</description>
+      <enclosure url="https://sayedulabrar.site/assets/img/blog/drug-metabolism/drug-metabolism-social-en.jpg" type="image/jpeg" length="122461"/>
+    </item>
     <item>
       <title>অ্যাকটিভ ফার্মাসিউটিক্যাল ইনগ্রেডিয়েন্ট (API): কাঁচামাল থেকে ওষুধ</title>
       <link>https://sayedulabrar.site/blog/active-pharmaceutical-ingredient-api-from-raw-material-to-medicine-bangla/</link>

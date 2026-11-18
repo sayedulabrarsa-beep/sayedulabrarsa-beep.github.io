@@ -64,6 +64,10 @@ Clinical-content boundaries:
 
 <!--articles:start-->
 Pharma Blog articles (newest first; each is educational, not medical advice):
+- ওষুধের বিপাক: শরীর কীভাবে ওষুধকে পরিবর্তন করে? — বাংলা (2026-11-18): https://sayedulabrar.site/blog/drug-metabolism-how-the-body-processes-medicines-bangla/
+  Summary: Drug metabolism, যকৃত, enzyme, active metabolite এবং first-pass metabolism সম্পর্কে সহজ ও প্রমাণভিত্তিক ধারণা।
+- Drug Metabolism: How Does the Body Process Medicines? — English (2026-11-18): https://sayedulabrar.site/blog/drug-metabolism-how-the-body-processes-medicines/
+  Summary: A simple guide to drug metabolism, the liver, enzymes, active metabolites and first-pass metabolism.
 - অ্যাকটিভ ফার্মাসিউটিক্যাল ইনগ্রেডিয়েন্ট (API): কাঁচামাল থেকে ওষুধ — বাংলা (2026-11-17): https://sayedulabrar.site/blog/active-pharmaceutical-ingredient-api-from-raw-material-to-medicine-bangla/
   Summary: API কী, কীভাবে তৈরি ও বিশুদ্ধ করা হয়, কীভাবে মান পরীক্ষা হয় এবং কীভাবে এটি ট্যাবলেট বা ক্যাপসুলের মতো প্রস্তুত ওষুধে ব্যবহৃত হয়—সহজ বাংলায় জানুন।
 - Active Pharmaceutical Ingredient (API): From Raw Material to Medicine — English (2026-11-17): https://sayedulabrar.site/blog/active-pharmaceutical-ingredient-api-from-raw-material-to-medicine/
