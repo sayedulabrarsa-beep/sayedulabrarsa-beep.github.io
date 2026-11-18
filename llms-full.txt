@@ -385,6 +385,7 @@ Distribution হলো রক্ত ও টিস্যুর মধ্যে �
 - StatPearls. Pharmacokinetics. NCBI Bookshelf. NCBI Bookshelf.
 - Merck Manual Professional Edition. Overview of Pharmacokinetics. Merck Manual.
 সম্পাদকীয় নোট: এটি সাধারণ শিক্ষামূলক ব্যাখ্যা। নির্দিষ্ট ওষুধের ক্ষেত্রে অনুমোদিত product information অনুসরণ করুন।
+এই সিরিজের পরের লেখাওষুধের বিপাক: শরীর কীভাবে ওষুধকে পরিবর্তন করে? →
 শিক্ষামূলক সতর্কতা: এই লেখা ব্যক্তিগত চিকিৎসা পরামর্শ নয়। ওষুধ বা ডোজ পরিবর্তনের আগে চিকিৎসক বা ফার্মাসিস্টের পরামর্শ নিন।
 
 
@@ -452,6 +453,7 @@ No. Excessive water intake can be harmful and is not a reliable way to speed up 
 - StatPearls. Pharmacokinetics. NCBI Bookshelf. NCBI Bookshelf.
 - Merck Manual Professional Edition. Overview of Pharmacokinetics. Merck Manual.
 Editorial note: This is a general educational explanation. Consult approved product information for medicine-specific details.
+Next in this seriesDrug Metabolism: How Does the Body Process Medicines? →
 Educational disclaimer: This article is for general learning and is not personal medical advice. Do not change a medicine or dose without consulting a qualified healthcare professional.
 
 
