@@ -28,7 +28,7 @@ jobs:
         with:
           python-version: '3.12'
       - name: Install image dependency
-        run: pip install pillow
+        run: pip install pillow cairosvg
       - name: Apply calendar, hide future pages, and release due pages
         run: python3 _src/apply_editorial_calendar.py
       # Bot pushes do not trigger other workflows, so rebuild everything that lists articles here.
