@@ -171,267 +171,6 @@ Get in touch ↗Find me on LinkedIn
 
 ## Pharma Blog articles (newest first)
 
-### অ্যাকটিভ ফার্মাসিউটিক্যাল ইনগ্রেডিয়েন্ট (API): কাঁচামাল থেকে ওষুধ
-URL: https://sayedulabrar.site/blog/active-pharmaceutical-ingredient-api-from-raw-material-to-medicine-bangla/ · Language: Bangla · Published: 2026-11-17 · Author: Sayedul Abrar, pharmacist
-Summary: API কীভাবে তৈরি, বিশুদ্ধ ও পরীক্ষা করা হয়—ICH Q7, WHO, FDA ও বাংলাদেশের প্রেক্ষাপটে সহজভাবে জানুন।
-
-লেখক সায়েদুল আবরার, ফার্মাসিস্ট · প্রকাশিত ১৭ নভেম্বর ২০২৬ · হালনাগাদ ১৮ নভেম্বর ২০২৬
-
-সহজ উত্তর: Active Pharmaceutical Ingredient (API) বা সক্রিয় ঔষধি উপাদান হলো ওষুধের সেই উপাদান, যা নির্ধারিত ফার্মাকোলজিক্যাল কার্যকারিতা বা সরাসরি প্রভাব তৈরি করে। একটি ট্যাবলেট বা ক্যাপসুলে API-এর পাশাপাশি আরও কিছু উপাদান থাকে, যেগুলো ওষুধের গঠন ও কার্যকারিতা বজায় রাখতে সাহায্য করে।
-
-আপনি যখন একটি ট্যাবলেট দেখেন, তখন সেটি হলো প্রস্তুত ডোজেজ ফর্ম। কিন্তু সেই ট্যাবলেট তৈরির আগে এর সক্রিয় উপাদান তৈরি বা সংগ্রহ করতে হয়, বিশুদ্ধ করতে হয়, পরীক্ষা করতে হয় এবং নির্দিষ্ট মান পূরণ করলে তবেই ব্যবহার বা সরবরাহের জন্য ছাড়পত্র দেওয়া হয়। এই সক্রিয় উপাদানটিই হলো API।
-
-### ১. API আসলে কী?
-
-ICH এবং যুক্তরাষ্ট্রের FDA-এর সংজ্ঞা অনুযায়ী, API হলো এমন কোনো পদার্থ বা পদার্থের মিশ্রণ, যা ওষুধ তৈরিতে ব্যবহারের জন্য নির্ধারিত এবং প্রস্তুত ওষুধে সক্রিয় উপাদান হিসেবে কাজ করে। এটি রোগ নির্ণয়, নিরাময়, উপশম, চিকিৎসা বা প্রতিরোধে ফার্মাকোলজিক্যাল কার্যকারিতা বা অন্য কোনো সরাসরি প্রভাব দিতে পারে।
-
-উদাহরণ হিসেবে, একটি সাধারণ প্যারাসিটামল ট্যাবলেটে প্যারাসিটামল হলো API। ট্যাবলেটে এর পাশাপাশি excipients বা সহায়ক উপাদানও থাকতে পারে। এসব উপাদান ট্যাবলেট তৈরি, স্থায়িত্ব, ভাঙন, আবরণ বা অন্যান্য বৈশিষ্ট্য বজায় রাখতে সাহায্য করে। API এবং excipients-এর কাজ এক নয়।
-
-### ২. API ও প্রস্তুত ওষুধের পার্থক্য
-
-API হলো সক্রিয় ঔষধি উপাদান। আর Finished Pharmaceutical Product (FPP) হলো নির্দিষ্ট মাত্রা ও ডোজেজ ফর্মে প্রস্তুত ওষুধ—যেমন ট্যাবলেট, ক্যাপসুল, সিরাপ বা ইনজেকশন।
-- API: ওষুধের সক্রিয় উপাদান, যা নির্ধারিত ঔষধি প্রভাব তৈরি করে।
-- Excipients: বাইন্ডার, ফিলার, কোটিং বা সংরক্ষণে সহায়তাকারী উপাদানসহ অন্যান্য ফর্মুলেশন উপাদান।
-- FPP: API ও সহায়ক উপাদান দিয়ে তৈরি নির্দিষ্ট ডোজেজ ফর্মের প্রস্তুত ওষুধ।
-
-একটি প্রতিষ্ঠান API তৈরি করতে পারে, আর অন্য প্রতিষ্ঠান সেই API ব্যবহার করে ট্যাবলেট বা ক্যাপসুল তৈরি করতে পারে। আবার কোনো প্রতিষ্ঠান দুই ধরনের কাজই করতে পারে। তবে যে প্রতিষ্ঠানই কাজ করুক, উপাদান ও উৎপাদন প্রক্রিয়ার মান নিয়ন্ত্রণ জরুরি।
-
-### ৩. API কীভাবে তৈরি হয়?
-
-সব API একই পদ্ধতিতে তৈরি হয় না। ICH Q7-এ API উৎপাদনের কয়েকটি পদ্ধতির কথা বলা হয়েছে—যেমন chemical synthesis, extraction, fermentation বা cell culture এবং প্রাকৃতিক উৎস থেকে উপাদান সংগ্রহ। কোন পদ্ধতি ব্যবহার হবে, তা নির্ভর করে API-এর প্রকৃতি ও উৎপাদন প্রক্রিয়ার ওপর।
-
-#### API তৈরির সহজ ধাপ
-
-#### ধাপ ১: Starting materials বা প্রাথমিক উপাদান
-
-উৎপাদন শুরু হয় নির্ধারিত starting materials, reagents, solvents অথবা জৈবিক উপাদান দিয়ে। এগুলোর পরিচয়, গুণগত মান ও ব্যবহারের উপযোগিতা যাচাই করা জরুরি। সরবরাহকারী যাচাই, নির্দিষ্ট মানদণ্ড, নমুনা পরীক্ষা এবং traceability-এর মাধ্যমে অনুপযুক্ত উপাদান উৎপাদনে প্রবেশের ঝুঁকি কমানো হয়।
-ICH Q7 অনুযায়ী API উৎপাদন ঠিক কোন ধাপ থেকে শুরু হয়েছে, তা প্রস্তুতকারককে নির্ধারণ ও নথিভুক্ত করতে হয়। API starting material সাধারণত regulatory filing-এ চিহ্নিত ও যুক্তিসহ ব্যাখ্যা করা হয়। নির্ধারিত ওই ধাপের আগের সব কাজের ওপর Q7 একইভাবে প্রযোজ্য নয়; তবে starting material তৈরিতেও উপযুক্ত নিয়ন্ত্রণ থাকা দরকার। প্রক্রিয়া চূড়ান্ত API, purification, physical processing ও packaging-এর দিকে এগোলে GMP নিয়ন্ত্রণ আরও কঠোর হয়।
-
-#### ধাপ ২: উৎপাদন ও প্রক্রিয়া নিয়ন্ত্রণ
-
-Chemical synthesis-এর ক্ষেত্রে নিয়ন্ত্রিত রাসায়নিক বিক্রিয়ার মাধ্যমে starting materials থেকে এক বা একাধিক intermediate তৈরি হয়ে কাঙ্ক্ষিত API পাওয়া যায়। অন্য API extraction, fermentation বা cell-based process-এর মাধ্যমেও তৈরি হতে পারে। উৎপাদন পদ্ধতি অনুযায়ী তাপমাত্রা, সময়, pH, mixing বা অন্যান্য গুরুত্বপূর্ণ বিষয় পর্যবেক্ষণ করা হয়।
-
-#### ধাপ ৩: পৃথকীকরণ ও বিশুদ্ধকরণ
-
-উৎপাদিত মিশ্রণ থেকে কাঙ্ক্ষিত উপাদান আলাদা করা হয় এবং অনাকাঙ্ক্ষিত পদার্থ দূর করা হয়। প্রক্রিয়া অনুযায়ী filtration, crystallisation, washing, drying বা অন্যান্য purification পদ্ধতি ব্যবহার হতে পারে। লক্ষ্য হলো নির্ধারিত মান পূরণ করে এমন API পাওয়া।
-
-#### ধাপ ৪: Physical processing ও packaging
-
-কিছু API-এর ক্ষেত্রে milling, micronisation বা blending-এর মতো physical processing করা হয়, যাতে নির্দিষ্ট বৈশিষ্ট্য অর্জন করা যায়। এরপর উপযুক্ত পাত্রে API প্যাক করা হয় এবং পরিচয়, সংরক্ষণ ও পরিবহনের জন্য প্রয়োজনীয় নিয়ন্ত্রণ রাখা হয়।
-
-### ৪. API-এর মান কীভাবে পরীক্ষা করা হয়?
-
-API নির্ধারিত specification পূরণ করছে কি না, তা পরীক্ষা করে দেখা হয়। API ও তার ব্যবহারের ধরন অনুযায়ী পরীক্ষার ধরন ভিন্ন হতে পারে। সাধারণত নিচের বিষয়গুলো পরীক্ষা করা হতে পারে:
-- Identity: পদার্থটি সঠিক API কি না তা নিশ্চিত করা।
-- Assay বা content: API-এর পরিমাণ বা শক্তি নির্ধারণ করা।
-- Related substances ও impurities: উৎপাদন বা সংরক্ষণ থেকে আসা অমিশ্রণ পরীক্ষা করা।
-- Residual solvents: উৎপাদনে ব্যবহৃত দ্রাবকের অবশিষ্টাংশ পরীক্ষা করা।
-- Water content ও physical properties: প্রয়োজন অনুযায়ী পানি ও অন্যান্য ভৌত বৈশিষ্ট্য যাচাই করা।
-- Microbiological quality: API-এর ধরন ও ব্যবহারের ভিত্তিতে প্রয়োজনীয় জীবাণু-সংক্রান্ত পরীক্ষা করা।
-
-একটি পরীক্ষায় উত্তীর্ণ হলেই API-এর সব মান নিশ্চিত হয় না। সম্পূর্ণ specification, প্রাসঙ্গিক পদ্ধতি এবং batch documentation একসঙ্গে পর্যালোচনা করতে হয়। নির্ধারিত Quality Unit ফলাফল ও নথি যাচাই করে API ব্যবহার বা সরবরাহের জন্য release অথবা reject করার সিদ্ধান্ত দেয়।
-API ছাড়ের দায়িত্ব Quality Unit-এর; তবে ICH Q7 অনুযায়ী প্রতিটি পরীক্ষাগার পরীক্ষা Quality Unit-এর সদস্যকেই করতে হবে—এমন নয়। উপযুক্ত প্রশিক্ষণপ্রাপ্ত কর্মী নির্ধারিত laboratory control মেনে পরীক্ষা করতে পারেন, আর Quality Unit ফলাফল ও ছাড়ের সিদ্ধান্ত তদারকি করে। FDA-এর ২০১৮ সালের Q7 Questions and Answers-এ এই পার্থক্য ব্যাখ্যা করা হয়েছে। এটি যুক্তরাষ্ট্রের guidance-এর উদাহরণ; বাংলাদেশের প্রযোজ্য নিয়মের বিকল্প নয়।
-
-### ৫. API উৎপাদনে GMP কেন গুরুত্বপূর্ণ?
-
-Good Manufacturing Practice (GMP) হলো এমন একটি নিয়ন্ত্রণব্যবস্থা, যা নিশ্চিত করতে সাহায্য করে যে উৎপাদন ও মান নিয়ন্ত্রণ নির্ধারিত গুণগত মান অনুযায়ী ধারাবাহিকভাবে হচ্ছে। ICH Q7 বিশেষভাবে API উৎপাদনের জন্য GMP নির্দেশনা দেয়।
-বাস্তবে GMP-এর মধ্যে রয়েছে প্রশিক্ষিত কর্মী, উপযুক্ত স্থাপনা ও যন্ত্রপাতি, লিখিত পদ্ধতি, নিয়ন্ত্রিত উৎপাদন রেকর্ড, পরিষ্কার-পরিচ্ছন্নতা ও রক্ষণাবেক্ষণ, deviation investigation, change control, laboratory control, supplier oversight এবং Quality Unit-এর দায়িত্ব।
-GMP-এর অর্থ এই নয় যে কখনো ভুল হবে না। বরং এর উদ্দেশ্য হলো সমস্যা প্রতিরোধের ব্যবস্থা রাখা, সমস্যা শনাক্ত করা, তদন্ত করা, সিদ্ধান্ত নথিভুক্ত করা এবং পণ্যের মান সুরক্ষিত রাখা।
-WHO-এর API GMP নির্দেশিকায় manufacturing বলতে উপাদান গ্রহণ, উৎপাদন, packaging ও labelling, quality control, batch release, storage এবং distribution-সহ বিস্তৃত কার্যক্রম বোঝানো হয়েছে। অর্থাৎ GMP শুধু শেষ ধাপের laboratory test নয়; API supply chain-এর বিভিন্ন ধাপে যুক্ত একটি মান নিয়ন্ত্রণব্যবস্থা।
-
-### ৬. রোগীর জন্য API-এর মান কেন গুরুত্বপূর্ণ?
-
-API-এর গুণগত মান প্রস্তুত ওষুধের মানের একটি গুরুত্বপূর্ণ অংশ। API-এর পরিচয়, শক্তি, impurity profile বা অন্য গুরুত্বপূর্ণ বৈশিষ্ট্য নিয়ন্ত্রণে না থাকলে প্রস্তুত ওষুধ নির্ধারিত specification পূরণ নাও করতে পারে। তাই শুধু গুঁড়ার চেহারা বা সরবরাহকারীর পরিচিতি দেখে API-এর মান নির্ধারণ করা যায় না।
-তবে API-এর মানই পুরো ওষুধের মান নির্ধারণ করে না। Finished-product manufacturer-কে formulation, উৎপাদন, packaging ও stability-ও নিয়ন্ত্রণ করতে হয়। API quality হলো বৃহত্তর pharmaceutical quality system-এর একটি অংশ।
-
-### ৭. বাংলাদেশে API উৎপাদনের প্রসঙ্গ
-
-বাংলাদেশে প্রস্তুত ওষুধ উৎপাদনের একটি প্রতিষ্ঠিত শিল্প রয়েছে। পাশাপাশি দেশে API উৎপাদন সক্ষমতা বাড়ানোর উদ্যোগ ও বিনিয়োগের বিষয়ও আলোচিত হয়েছে। API-এর উৎস ও সরবরাহব্যবস্থা উপাদান এবং প্রস্তুতকারকভেদে ভিন্ন হতে পারে; দেশে ব্যবহৃত প্রতিটি API দেশেই উৎপাদিত হয়—এমন ধারণা করা ঠিক নয়।
-DGDA বাংলাদেশের জাতীয় ঔষধ নিয়ন্ত্রক কর্তৃপক্ষ। প্রকাশিত নির্দেশিকা অনুযায়ী এর কাজের মধ্যে উৎপাদন স্থাপনার লাইসেন্স, নিয়ন্ত্রক পরিদর্শন, ওষুধ নিবন্ধন ও বাজারজাতকরণ অনুমোদন, পরীক্ষাগার পরীক্ষা এবং বাজার-পরবর্তী নজরদারি অন্তর্ভুক্ত। নির্দিষ্ট API বা প্রস্তুত ওষুধের ক্ষেত্রে কার্যক্রম, পণ্য এবং বাংলাদেশের বর্তমান আইন অনুযায়ী শর্ত প্রযোজ্য হয়।
-BIDA-এর বর্তমান Pharmaceuticals & API খাতের পাতা বিনিয়োগ ও শিল্পসংক্রান্ত প্রেক্ষাপট দেয়। সেখানে থাকা বাজার বা আমদানির পরিসংখ্যান সময়নির্ভর; এই আর্টিকেলে সেগুলোকে স্থায়ী ২০২৬ সালের পরিসংখ্যান হিসেবে ব্যবহার করা হয়নি। BIDA বিনিয়োগসংক্রান্ত তথ্য দেয়, ওষুধ নিয়ন্ত্রণ করে DGDA।
-
-### মূল কথা
-
-- API অর্থ Active Pharmaceutical Ingredient—ওষুধের সক্রিয় উপাদান।
-- API এবং প্রস্তুত ট্যাবলেট, ক্যাপসুল বা সিরাপ এক জিনিস নয়।
-- Chemical synthesis, extraction, fermentation-সহ বিভিন্ন পদ্ধতিতে API তৈরি হতে পারে।
-- Purification, testing, documentation এবং GMP API-এর মান নিয়ন্ত্রণে সাহায্য করে।
-- API-এর মান প্রস্তুত ওষুধের মানে গুরুত্বপূর্ণ ভূমিকা রাখে, তবে এটিই একমাত্র নির্ধারক নয়।
-
-### সাধারণ প্রশ্নোত্তর
-
-#### API কি ওষুধের জেনেরিক নাম?
-
-সব ক্ষেত্রে একইভাবে বলা যায় না। API হলো সক্রিয় পদার্থ বা drug substance। জেনেরিক নাম সাধারণত সেই সক্রিয় উপাদানের স্বীকৃত নাম বোঝায়।
-
-#### API কি ট্যাবলেটের সমান?
-
-না। API হলো সক্রিয় উপাদান। ট্যাবলেট হলো API ও অন্যান্য উপাদান দিয়ে তৈরি একটি প্রস্তুত ডোজেজ ফর্ম।
-
-#### একটি কোম্পানি কি API ও ট্যাবলেট দুটোই তৈরি করতে পারে?
-
-হ্যাঁ। কিছু প্রতিষ্ঠান API উৎপাদন ও finished product manufacturing—দুটিই করে। আবার কিছু প্রতিষ্ঠান একটি নির্দিষ্ট কাজে বিশেষায়িত হয় বা অন্য প্রতিষ্ঠানের সঙ্গে চুক্তিতে কাজ করে।
-
-#### সব API কি chemical synthesis দিয়ে তৈরি হয়?
-
-না। API-এর ধরন অনুযায়ী chemical synthesis, extraction, fermentation, cell culture বা অন্য উপযুক্ত পদ্ধতি ব্যবহার হতে পারে।
-
-#### API-এর impurity পরীক্ষা কেন করা হয়?
-
-কাঁচামাল, রাসায়নিক বিক্রিয়া, উৎপাদন বা সংরক্ষণের সময় অমিশ্রণ তৈরি হতে পারে। পরীক্ষা ও প্রক্রিয়া নিয়ন্ত্রণের মাধ্যমে API নির্ধারিত মান পূরণ করছে কি না তা যাচাই করা হয়।
-
-#### GMP থাকলে কি কখনো ওষুধের মানের সমস্যা হবে না?
-
-কোনো ব্যবস্থাই সব ধরনের সমস্যা কখনোই হবে না—এমন নিশ্চয়তা দেয় না। GMP ধারাবাহিক উৎপাদন, সমস্যা শনাক্তকরণ, তদন্ত ও প্রতিরোধের জন্য নিয়ন্ত্রণব্যবস্থা তৈরি করে।
-
-### তথ্যসূত্র ও আরও পড়ুন
-
-- U.S. Food and Drug Administration. Q7A: Good Manufacturing Practice Guidance for Active Pharmaceutical Ingredients (আগস্ট ২০০১)।
-- U.S. Food and Drug Administration. Q7 Good Manufacturing Practice Guidance for APIs: Questions and Answers (এপ্রিল ২০১৮)।
-- World Health Organization. TRS 957, Annex 2: WHO Good Manufacturing Practices for Active Pharmaceutical Ingredients (২০১০)।
-- International Council for Harmonisation. ICH Quality Guidelines—Q7 ও Q11।
-- বাংলাদেশ ঔষধ প্রশাসন অধিদপ্তর (DGDA)। সরকারি পোর্টাল এবং স্থানীয়ভাবে সংগৃহীত চিকিৎসাপণ্যের মান নিশ্চিতকরণবিষয়ক ২০২৫ সালের নির্দেশিকা।
-- বাংলাদেশ বিনিয়োগ উন্নয়ন কর্তৃপক্ষ (BIDA)। Pharmaceuticals & API খাতের তথ্য। খাতভিত্তিক পরিসংখ্যান ব্যবহারের আগে সর্বশেষ প্রকাশনার তারিখ যাচাই করা উচিত।
-
-শিক্ষামূলক সতর্কতা: এই লেখা ফার্মাসিউটিক্যাল উৎপাদনের সাধারণ ধারণা বোঝানোর জন্য। এটি প্রযোজ্য নিয়ন্ত্রক নির্দেশনা, অনুমোদিত specification বা পেশাগত quality-system procedure-এর বিকল্প নয়।
-
-সায়েদুল আবরার
-A Grade Pharmacist · Registration Code A-22040
-Product Executive, Product Management Department · Opsonin Pharma Ltd.
-লেখক সম্পর্কে
-
----
-
-### Active Pharmaceutical Ingredient (API): From Raw Material to Medicine
-URL: https://sayedulabrar.site/blog/active-pharmaceutical-ingredient-api-from-raw-material-to-medicine/ · Language: English · Published: 2026-11-17 · Author: Sayedul Abrar, pharmacist
-Summary: Follow an API from starting materials to a tested active substance. Learn manufacturing routes, purification, quality controls, ICH Q7, WHO GMP and Bangladesh context.
-
-By Sayedul Abrar, pharmacist · Published 17 November 2026 · Updated 18 November 2026
-
-The simple answer: An active pharmaceutical ingredient (API), also called a drug substance, is the substance in a medicine that provides the intended pharmacological activity or other direct effect. A tablet or capsule usually contains an API together with other ingredients that help form and deliver the medicine.
-
-When you look at a tablet, you see the finished dosage form. But before that tablet is manufactured, its active ingredient must be produced or sourced, purified, tested and released under controlled quality systems. That active ingredient is the API.
-
-### 1. What exactly is an API?
-
-The International Council for Harmonisation (ICH) and the US Food and Drug Administration (FDA) describe an API as a substance or mixture of substances intended for use in manufacturing a drug product that becomes the active ingredient of that product. It is intended to provide pharmacological activity or another direct effect in diagnosis, cure, mitigation, treatment or prevention of disease, or to affect the structure or function of the body.
-
-For example, in a conventional paracetamol tablet, paracetamol is the API. The tablet also contains excipients—ingredients that support manufacturing, stability, disintegration, appearance or other product characteristics. Excipients are not interchangeable with the API: they serve different functions.
-
-### 2. API vs finished pharmaceutical product
-
-An API is the active drug substance. A finished pharmaceutical product (FPP) is the medicine in its final dosage form, such as a tablet, capsule, oral liquid or injection, ready for the relevant packaging and supply steps.
-- API: the active substance that provides the intended pharmacological effect.
-- Excipients: other formulation ingredients used for functions such as binding, filling, coating, preservation or helping the dosage form perform as designed.
-- FPP: the formulated medicine containing the API and excipients in a defined dosage form and strength.
-
-One company may manufacture the API and another may formulate it into tablets. Some organisations perform both activities. The business arrangement does not change the need to control the quality of the materials and processes.
-
-### 3. How is an API manufactured?
-
-There is no single manufacturing route for every API. ICH Q7 recognises several broad approaches, including chemical synthesis, extraction, fermentation or cell culture, and recovery from natural sources. The appropriate process depends on the substance and its chemistry or biology.
-
-#### A simplified manufacturing journey
-
-#### Step 1: Starting materials
-
-Manufacturing begins with defined starting materials, reagents, solvents or biological inputs. Their identity, quality and suitability must be assessed. Supplier qualification, specifications, sampling and traceability help prevent unsuitable materials from entering production.
-ICH Q7 expects the manufacturer to define and document the point at which API manufacturing begins. The API starting material is normally identified and justified in the regulatory filing. Q7 does not apply identically to every step before that defined point, although appropriate controls are still expected for producing the starting material. As the process moves toward the final API, purification, physical processing and packaging, GMP controls become progressively more stringent.
-
-#### Step 2: Production and process control
-
-In chemical synthesis, controlled reactions convert starting materials through one or more intermediates into the desired substance. Other APIs may be produced through extraction, fermentation or cell-based processes. Manufacturers monitor relevant parameters such as temperature, time, pH, mixing or other process-specific variables. The exact controls depend on the process.
-
-#### Step 3: Isolation and purification
-
-The desired substance is separated from process mixtures and unwanted materials. Depending on the process, operations may include filtration, crystallisation, washing, drying or other purification techniques. The aim is to obtain material that meets its defined quality requirements.
-
-#### Step 4: Physical processing and packaging
-
-Some APIs undergo milling, micronisation, blending or other physical processing to achieve specified properties. The API is then packed in suitable containers with appropriate identification and storage controls to protect it during handling and transport.
-
-### 4. How do manufacturers know an API is suitable?
-
-Testing is performed against approved or otherwise established specifications. The precise tests depend on the API and its intended use, but may include:
-- Identity: confirms that the material is the intended substance.
-- Assay or content: measures the amount or strength of the API.
-- Related substances and impurities: evaluates specified and other relevant impurities.
-- Residual solvents: checks solvents that may remain from manufacturing.
-- Water content and physical properties: assessed when relevant to the substance and its specifications.
-- Microbiological quality: tested where required by the API type and intended use.
-
-Passing one test does not automatically establish overall quality. Results must be evaluated against the complete specification, relevant procedures and batch documentation. A designated quality unit reviews the appropriate records and makes the release or rejection decision. The quality unit is responsible for API release and oversight of test results, but ICH Q7 does not require the quality unit itself to perform every laboratory test. Testing may be carried out by suitably trained personnel under appropriate laboratory controls. FDA's 2018 Q7 Questions and Answers clarifies this distinction; it is a US guidance example, not a substitute for Bangladesh requirements.
-
-### 5. Why does GMP matter in API manufacturing?
-
-Good Manufacturing Practice (GMP) is a system of controls designed to help ensure that materials and products are consistently produced and controlled according to appropriate quality standards. ICH Q7 provides GMP guidance specifically for APIs.
-In practical terms, GMP includes trained personnel, suitable premises and equipment, written procedures, controlled production records, cleaning and maintenance, investigations of deviations, change control, laboratory controls, supplier oversight and quality-unit responsibilities.
-GMP does not mean that errors are impossible. It means there should be systems to prevent problems where possible, detect them, investigate them, document decisions and protect product quality.
-WHO's API GMP guidance defines manufacturing broadly to include receipt of materials, production, packaging and labelling, quality control, release, storage and distribution. GMP is therefore not just a final laboratory check; it is a connected system across the API supply chain.
-
-### 6. Why does API quality matter to patients?
-
-The quality of the API contributes to the quality of the finished medicine. If the identity, strength, impurity profile or other critical attributes are not controlled, the finished product may not meet its intended specifications. That is why API quality cannot be judged only by the appearance of the powder or by the reputation of a supplier.
-Finished-product manufacturers also need to control formulation, manufacturing, packaging and stability. API quality is essential, but it is one part of a wider pharmaceutical quality system.
-
-### 7. What about API manufacturing in Bangladesh?
-
-Bangladesh has an established finished-medicine manufacturing sector and has also pursued greater local capacity for API production. The origin and supply route of an API can differ by substance and manufacturer; it should not be assumed that every API used locally is made domestically.
-The Directorate General of Drug Administration (DGDA) is Bangladesh's national medicines regulatory authority. Its published responsibilities include licensing premises, regulatory inspections, registration and marketing authorisation, laboratory testing and post-market surveillance. The applicable requirements for a particular API or finished medicine depend on the activity, product and current Bangladesh law.
-BIDA's current Pharmaceuticals & API sector page provides investment and industry context. Its market and import figures are time-specific; this article does not reuse them as timeless 2026 statistics. BIDA is an investment-information source, not the medicines regulator.
-
-### Key takeaways
-
-- API means active pharmaceutical ingredient; it is the active substance in a medicine.
-- The API is different from the finished tablet, capsule or liquid.
-- Manufacturing routes vary: chemical synthesis, extraction, fermentation and other processes may be used.
-- Purification, testing, documentation and GMP controls support API quality.
-- The quality of the API contributes to—but does not alone determine—the quality of the finished medicine.
-
-### Frequently asked questions
-
-#### Is API the same as a drug?
-
-In pharmaceutical manufacturing, API or drug substance refers to the active substance intended to provide the pharmacological effect. In everyday language, “drug” can have broader meanings.
-
-#### Is an API the same as a tablet?
-
-No. The API is the active substance. A tablet is a finished dosage form that usually contains the API plus excipients.
-
-#### Can one company manufacture both API and tablets?
-
-Yes. Some companies perform both API production and finished-product manufacturing, while others specialise in one activity or outsource part of the process.
-
-#### Are all APIs made by chemical synthesis?
-
-No. Depending on the substance, APIs may be produced through chemical synthesis, extraction, fermentation, cell culture or other suitable routes.
-
-#### Why are API impurities tested?
-
-Impurities can arise from starting materials, reactions, processing or storage. Testing and process controls help ensure that the API meets its defined quality requirements.
-
-#### Does GMP guarantee that a medicine will never have a quality problem?
-
-No system can guarantee that problems will never occur. GMP establishes controls for consistent production, detection, investigation and prevention of quality issues.
-
-### References and further reading
-
-- U.S. Food and Drug Administration. Q7A: Good Manufacturing Practice Guidance for Active Pharmaceutical Ingredients (August 2001).
-- U.S. Food and Drug Administration. Q7 Good Manufacturing Practice Guidance for APIs: Questions and Answers (April 2018).
-- World Health Organization. TRS 957, Annex 2: WHO Good Manufacturing Practices for Active Pharmaceutical Ingredients (2010).
-- International Council for Harmonisation. ICH Quality Guidelines, including Q7 and Q11.
-- Bangladesh Directorate General of Drug Administration. Official portal and 2025 guideline for quality assurance of locally sourced medical products.
-- Bangladesh Investment Development Authority. Pharmaceuticals & API sector profile. Sector figures are time-specific and should be checked against the page's latest publication date before reuse.
-
-Educational note: This article explains general pharmaceutical manufacturing concepts. It is not a substitute for applicable regulatory requirements, approved specifications, or professional quality-system procedures.
-
-Sayedul Abrar
-A Grade Pharmacist · Registration Code A-22040
-Product Executive, Product Management Department · Opsonin Pharma Ltd.
-About the author
-
----
-
 ### ওষুধের বণ্টন: রক্ত থেকে শরীরের বিভিন্ন টিস্যুতে কীভাবে পৌঁছায়?
 URL: https://sayedulabrar.site/blog/drug-distribution-how-medicines-reach-their-target-bangla/ · Language: Bangla · Published: 2026-11-16T20:00:00+06:00 · Author: Sayedul Abrar, pharmacist
 Summary: রক্তে প্রবেশের পর ওষুধ কীভাবে বিভিন্ন অঙ্গ ও টিস্যুতে পৌঁছায়, রক্তপ্রবাহ, tissue barrier ও protein binding কীভাবে বণ্টনকে প্রভাবিত করে জানুন।
@@ -4755,6 +4494,262 @@ Quick recall: Drug = substance/action; Medicine = prepared treatment product. Gi
 - NCBI Bookshelf
 For product-specific details, check the approved package insert and relevant local regulator.
 Medical Education Disclaimer: This article is for general education only and is not a substitute for personal medical advice, diagnosis or treatment. Consult a clinician or registered pharmacist before starting, stopping or changing a medicine.
+
+---
+
+### অ্যাকটিভ ফার্মাসিউটিক্যাল ইনগ্রেডিয়েন্ট (API): কাঁচামাল থেকে ওষুধ
+URL: https://sayedulabrar.site/blog/active-pharmaceutical-ingredient-api-from-raw-material-to-medicine-bangla/ · Language: Bangla · Published:  · Author: Sayedul Abrar, pharmacist
+Summary: API কী, কীভাবে তৈরি ও বিশুদ্ধ করা হয়, কীভাবে মান পরীক্ষা হয় এবং কীভাবে এটি ট্যাবলেট বা ক্যাপসুলের মতো প্রস্তুত ওষুধে ব্যবহৃত হয়—সহজ বাংলায় জানুন।
+
+লেখক: সায়েদুল আবরার, ফার্মাসিস্ট · প্রকাশিত ১৭ নভেম্বর ২০২৬
+
+সহজ উত্তর: Active Pharmaceutical Ingredient (API) বা সক্রিয় ঔষধি উপাদান হলো ওষুধের সেই উপাদান, যা নির্ধারিত ফার্মাকোলজিক্যাল কার্যকারিতা বা সরাসরি প্রভাব তৈরি করে। একটি ট্যাবলেট বা ক্যাপসুলে API-এর পাশাপাশি আরও কিছু উপাদান থাকে, যেগুলো ওষুধের গঠন ও কার্যকারিতা বজায় রাখতে সাহায্য করে।
+
+আপনি যখন একটি ট্যাবলেট দেখেন, তখন সেটি হলো প্রস্তুত ডোজেজ ফর্ম। কিন্তু সেই ট্যাবলেট তৈরির আগে এর সক্রিয় উপাদান তৈরি বা সংগ্রহ করতে হয়, বিশুদ্ধ করতে হয়, পরীক্ষা করতে হয় এবং নির্দিষ্ট মান পূরণ করলে তবেই ব্যবহার বা সরবরাহের জন্য ছাড়পত্র দেওয়া হয়। এই সক্রিয় উপাদানটিই হলো API।
+
+### ১. API আসলে কী?
+
+ICH এবং যুক্তরাষ্ট্রের FDA-এর সংজ্ঞা অনুযায়ী, API হলো এমন কোনো পদার্থ বা পদার্থের মিশ্রণ, যা ওষুধ তৈরিতে ব্যবহারের জন্য নির্ধারিত এবং প্রস্তুত ওষুধে সক্রিয় উপাদান হিসেবে কাজ করে। এটি রোগ নির্ণয়, নিরাময়, উপশম, চিকিৎসা বা প্রতিরোধে ফার্মাকোলজিক্যাল কার্যকারিতা বা অন্য কোনো সরাসরি প্রভাব দিতে পারে।
+
+উদাহরণ হিসেবে, একটি সাধারণ প্যারাসিটামল ট্যাবলেটে প্যারাসিটামল হলো API। ট্যাবলেটে এর পাশাপাশি excipients বা সহায়ক উপাদানও থাকতে পারে। এসব উপাদান ট্যাবলেট তৈরি, স্থায়িত্ব, ভাঙন, আবরণ বা অন্যান্য বৈশিষ্ট্য বজায় রাখতে সাহায্য করে। API এবং excipients-এর কাজ এক নয়।
+
+### ২. API ও প্রস্তুত ওষুধের পার্থক্য
+
+API হলো সক্রিয় ঔষধি উপাদান। আর Finished Pharmaceutical Product (FPP) হলো নির্দিষ্ট মাত্রা ও ডোজেজ ফর্মে প্রস্তুত ওষুধ—যেমন ট্যাবলেট, ক্যাপসুল, সিরাপ বা ইনজেকশন।
+- API: ওষুধের সক্রিয় উপাদান, যা নির্ধারিত ঔষধি প্রভাব তৈরি করে।
+- Excipients: বাইন্ডার, ফিলার, কোটিং বা সংরক্ষণে সহায়তাকারী উপাদানসহ অন্যান্য ফর্মুলেশন উপাদান।
+- FPP: API ও সহায়ক উপাদান দিয়ে তৈরি নির্দিষ্ট ডোজেজ ফর্মের প্রস্তুত ওষুধ।
+
+একটি প্রতিষ্ঠান API তৈরি করতে পারে, আর অন্য প্রতিষ্ঠান সেই API ব্যবহার করে ট্যাবলেট বা ক্যাপসুল তৈরি করতে পারে। আবার কোনো প্রতিষ্ঠান দুই ধরনের কাজই করতে পারে। তবে যে প্রতিষ্ঠানই কাজ করুক, উপাদান ও উৎপাদন প্রক্রিয়ার মান নিয়ন্ত্রণ জরুরি।
+
+### ৩. API কীভাবে তৈরি হয়?
+
+সব API একই পদ্ধতিতে তৈরি হয় না। ICH Q7-এ API উৎপাদনের কয়েকটি পদ্ধতির কথা বলা হয়েছে—যেমন chemical synthesis, extraction, fermentation বা cell culture এবং প্রাকৃতিক উৎস থেকে উপাদান সংগ্রহ। কোন পদ্ধতি ব্যবহার হবে, তা নির্ভর করে API-এর প্রকৃতি ও উৎপাদন প্রক্রিয়ার ওপর।
+
+#### API তৈরির সহজ ধাপ
+
+এটি একটি ধারণামূলক চিত্র। প্রকৃত উৎপাদন ধাপ, নিয়ন্ত্রণ ও গ্রহণযোগ্যতার মান API এবং অনুমোদিত প্রক্রিয়া অনুযায়ী ভিন্ন হতে পারে।
+
+#### ধাপ ১: Starting materials বা প্রাথমিক উপাদান
+
+উৎপাদন শুরু হয় নির্ধারিত starting materials, reagents, solvents অথবা জৈবিক উপাদান দিয়ে। এগুলোর পরিচয়, গুণগত মান ও ব্যবহারের উপযোগিতা যাচাই করা জরুরি। সরবরাহকারী যাচাই, নির্দিষ্ট মানদণ্ড, নমুনা পরীক্ষা এবং traceability-এর মাধ্যমে অনুপযুক্ত উপাদান উৎপাদনে প্রবেশের ঝুঁকি কমানো হয়।
+
+#### ধাপ ২: উৎপাদন ও প্রক্রিয়া নিয়ন্ত্রণ
+
+Chemical synthesis-এর ক্ষেত্রে নিয়ন্ত্রিত রাসায়নিক বিক্রিয়ার মাধ্যমে starting materials থেকে এক বা একাধিক intermediate তৈরি হয়ে কাঙ্ক্ষিত API পাওয়া যায়। অন্য API extraction, fermentation বা cell-based process-এর মাধ্যমেও তৈরি হতে পারে। উৎপাদন পদ্ধতি অনুযায়ী তাপমাত্রা, সময়, pH, mixing বা অন্যান্য গুরুত্বপূর্ণ বিষয় পর্যবেক্ষণ করা হয়।
+
+#### ধাপ ৩: পৃথকীকরণ ও বিশুদ্ধকরণ
+
+উৎপাদিত মিশ্রণ থেকে কাঙ্ক্ষিত উপাদান আলাদা করা হয় এবং অনাকাঙ্ক্ষিত পদার্থ দূর করা হয়। প্রক্রিয়া অনুযায়ী filtration, crystallisation, washing, drying বা অন্যান্য purification পদ্ধতি ব্যবহার হতে পারে। লক্ষ্য হলো নির্ধারিত মান পূরণ করে এমন API পাওয়া।
+
+#### ধাপ ৪: Physical processing ও packaging
+
+কিছু API-এর ক্ষেত্রে milling, micronisation বা blending-এর মতো physical processing করা হয়, যাতে নির্দিষ্ট বৈশিষ্ট্য অর্জন করা যায়। এরপর উপযুক্ত পাত্রে API প্যাক করা হয় এবং পরিচয়, সংরক্ষণ ও পরিবহনের জন্য প্রয়োজনীয় নিয়ন্ত্রণ রাখা হয়।
+
+### ৪. API-এর মান কীভাবে পরীক্ষা করা হয়?
+
+API নির্ধারিত specification পূরণ করছে কি না, তা পরীক্ষা করে দেখা হয়। API ও তার ব্যবহারের ধরন অনুযায়ী পরীক্ষার ধরন ভিন্ন হতে পারে। সাধারণত নিচের বিষয়গুলো পরীক্ষা করা হতে পারে:
+- Identity: পদার্থটি সঠিক API কি না তা নিশ্চিত করা।
+- Assay বা content: API-এর পরিমাণ বা শক্তি নির্ধারণ করা।
+- Related substances ও impurities: উৎপাদন বা সংরক্ষণ থেকে আসা অমিশ্রণ পরীক্ষা করা।
+- Residual solvents: উৎপাদনে ব্যবহৃত দ্রাবকের অবশিষ্টাংশ পরীক্ষা করা।
+- Water content ও physical properties: প্রয়োজন অনুযায়ী পানি ও অন্যান্য ভৌত বৈশিষ্ট্য যাচাই করা।
+- Microbiological quality: API-এর ধরন ও ব্যবহারের ভিত্তিতে প্রয়োজনীয় জীবাণু-সংক্রান্ত পরীক্ষা করা।
+
+একটি পরীক্ষায় উত্তীর্ণ হলেই API-এর সব মান নিশ্চিত হয় না। সম্পূর্ণ specification, প্রাসঙ্গিক পদ্ধতি এবং batch documentation একসঙ্গে পর্যালোচনা করতে হয়। নির্ধারিত Quality Unit ফলাফল ও নথি যাচাই করে API ব্যবহার বা সরবরাহের জন্য release অথবা reject করার সিদ্ধান্ত দেয়।
+
+### ৫. API উৎপাদনে GMP কেন গুরুত্বপূর্ণ?
+
+Good Manufacturing Practice (GMP) হলো এমন একটি নিয়ন্ত্রণব্যবস্থা, যা নিশ্চিত করতে সাহায্য করে যে উৎপাদন ও মান নিয়ন্ত্রণ নির্ধারিত গুণগত মান অনুযায়ী ধারাবাহিকভাবে হচ্ছে। ICH Q7 বিশেষভাবে API উৎপাদনের জন্য GMP নির্দেশনা দেয়।
+বাস্তবে GMP-এর মধ্যে রয়েছে প্রশিক্ষিত কর্মী, উপযুক্ত স্থাপনা ও যন্ত্রপাতি, লিখিত পদ্ধতি, নিয়ন্ত্রিত উৎপাদন রেকর্ড, পরিষ্কার-পরিচ্ছন্নতা ও রক্ষণাবেক্ষণ, deviation investigation, change control, laboratory control, supplier oversight এবং Quality Unit-এর দায়িত্ব।
+GMP-এর অর্থ এই নয় যে কখনো ভুল হবে না। বরং এর উদ্দেশ্য হলো সমস্যা প্রতিরোধের ব্যবস্থা রাখা, সমস্যা শনাক্ত করা, তদন্ত করা, সিদ্ধান্ত নথিভুক্ত করা এবং পণ্যের মান সুরক্ষিত রাখা।
+
+### ৬. রোগীর জন্য API-এর মান কেন গুরুত্বপূর্ণ?
+
+API-এর গুণগত মান প্রস্তুত ওষুধের মানের একটি গুরুত্বপূর্ণ অংশ। API-এর পরিচয়, শক্তি, impurity profile বা অন্য গুরুত্বপূর্ণ বৈশিষ্ট্য নিয়ন্ত্রণে না থাকলে প্রস্তুত ওষুধ নির্ধারিত specification পূরণ নাও করতে পারে। তাই শুধু গুঁড়ার চেহারা বা সরবরাহকারীর পরিচিতি দেখে API-এর মান নির্ধারণ করা যায় না।
+তবে API-এর মানই পুরো ওষুধের মান নির্ধারণ করে না। Finished-product manufacturer-কে formulation, উৎপাদন, packaging ও stability-ও নিয়ন্ত্রণ করতে হয়। API quality হলো বৃহত্তর pharmaceutical quality system-এর একটি অংশ।
+
+### ৭. বাংলাদেশে API উৎপাদনের প্রসঙ্গ
+
+বাংলাদেশে প্রস্তুত ওষুধ উৎপাদনের একটি প্রতিষ্ঠিত শিল্প রয়েছে। পাশাপাশি দেশে API উৎপাদন সক্ষমতা বাড়ানোর উদ্যোগ ও বিনিয়োগের বিষয়ও আলোচিত হয়েছে। এ বিষয়ে বাংলাদেশ বিনিয়োগ উন্নয়ন কর্তৃপক্ষ (BIDA) এবং ঔষধ প্রশাসন অধিদপ্তরের (DGDA) সরকারি তথ্য দেখা যেতে পারে। তবে বাংলাদেশে ব্যবহৃত প্রতিটি ওষুধের API দেশেই উৎপাদিত হয়—এমন ধারণা করা ঠিক নয়। উপাদানের উৎস ও সরবরাহব্যবস্থা ওষুধ এবং প্রস্তুতকারকভেদে ভিন্ন হতে পারে।
+DGDA বাংলাদেশের জাতীয় ঔষধ নিয়ন্ত্রক কর্তৃপক্ষ। বর্তমান নিয়ন্ত্রক শর্ত জানতে সাধারণ ব্যাখ্যার ওপর নির্ভর না করে DGDA-এর প্রকাশনা ও প্রযোজ্য আইন দেখা উচিত।
+
+### মূল কথা
+
+- API অর্থ Active Pharmaceutical Ingredient—ওষুধের সক্রিয় উপাদান।
+- API এবং প্রস্তুত ট্যাবলেট, ক্যাপসুল বা সিরাপ এক জিনিস নয়।
+- Chemical synthesis, extraction, fermentation-সহ বিভিন্ন পদ্ধতিতে API তৈরি হতে পারে।
+- Purification, testing, documentation এবং GMP API-এর মান নিয়ন্ত্রণে সাহায্য করে।
+- API-এর মান প্রস্তুত ওষুধের মানে গুরুত্বপূর্ণ ভূমিকা রাখে, তবে এটিই একমাত্র নির্ধারক নয়।
+
+### সাধারণ প্রশ্নোত্তর
+
+#### API কি ওষুধের জেনেরিক নাম?
+
+সব ক্ষেত্রে একইভাবে বলা যায় না। API হলো সক্রিয় পদার্থ বা drug substance। জেনেরিক নাম সাধারণত সেই সক্রিয় উপাদানের স্বীকৃত নাম বোঝায়।
+
+#### API কি ট্যাবলেটের সমান?
+
+না। API হলো সক্রিয় উপাদান। ট্যাবলেট হলো API ও অন্যান্য উপাদান দিয়ে তৈরি একটি প্রস্তুত ডোজেজ ফর্ম।
+
+#### একটি কোম্পানি কি API ও ট্যাবলেট দুটোই তৈরি করতে পারে?
+
+হ্যাঁ। কিছু প্রতিষ্ঠান API উৎপাদন ও finished product manufacturing—দুটিই করে। আবার কিছু প্রতিষ্ঠান একটি নির্দিষ্ট কাজে বিশেষায়িত হয় বা অন্য প্রতিষ্ঠানের সঙ্গে চুক্তিতে কাজ করে।
+
+#### সব API কি chemical synthesis দিয়ে তৈরি হয়?
+
+না। API-এর ধরন অনুযায়ী chemical synthesis, extraction, fermentation, cell culture বা অন্য উপযুক্ত পদ্ধতি ব্যবহার হতে পারে।
+
+#### API-এর impurity পরীক্ষা কেন করা হয়?
+
+কাঁচামাল, রাসায়নিক বিক্রিয়া, উৎপাদন বা সংরক্ষণের সময় অমিশ্রণ তৈরি হতে পারে। পরীক্ষা ও প্রক্রিয়া নিয়ন্ত্রণের মাধ্যমে API নির্ধারিত মান পূরণ করছে কি না তা যাচাই করা হয়।
+
+#### GMP থাকলে কি কখনো ওষুধের মানের সমস্যা হবে না?
+
+কোনো ব্যবস্থাই সব ধরনের সমস্যা কখনোই হবে না—এমন নিশ্চয়তা দেয় না। GMP ধারাবাহিক উৎপাদন, সমস্যা শনাক্তকরণ, তদন্ত ও প্রতিরোধের জন্য নিয়ন্ত্রণব্যবস্থা তৈরি করে।
+
+### তথ্যসূত্র ও আরও পড়ুন
+
+- US FDA. Q7: API উৎপাদনের জন্য Good Manufacturing Practice Guidance।
+- International Council for Harmonisation. ICH Quality Guidelines — Q7।
+- FDA. Q7 Questions and Answers।
+- বাংলাদেশ ঔষধ প্রশাসন অধিদপ্তর (DGDA)। সরকারি ওয়েবসাইট ও নিয়ন্ত্রক তথ্য।
+- বাংলাদেশ বিনিয়োগ উন্নয়ন কর্তৃপক্ষ (BIDA)। সরকারি বিনিয়োগসংক্রান্ত তথ্য।
+
+শিক্ষামূলক সতর্কতা: এই লেখা ফার্মাসিউটিক্যাল উৎপাদনের সাধারণ ধারণা বোঝানোর জন্য। এটি প্রযোজ্য নিয়ন্ত্রক নির্দেশনা, অনুমোদিত specification বা পেশাগত quality-system procedure-এর বিকল্প নয়।
+
+সায়েদুল আবরার
+A Grade Pharmacist · Registration Code A-22040
+Product Executive, Product Management Department · Opsonin Pharma Ltd.
+লেখক সম্পর্কে
+
+---
+
+### Active Pharmaceutical Ingredient (API): From Raw Material to Medicine
+URL: https://sayedulabrar.site/blog/active-pharmaceutical-ingredient-api-from-raw-material-to-medicine/ · Language: English · Published:  · Author: Sayedul Abrar, pharmacist
+Summary: What is an active pharmaceutical ingredient (API)? Follow how an API is made, purified, tested and used in a finished medicine, with a simple process diagram.
+
+By Sayedul Abrar, pharmacist · Published 17 November 2026
+
+The simple answer: An active pharmaceutical ingredient (API), also called a drug substance, is the substance in a medicine that provides the intended pharmacological activity or other direct effect. A tablet or capsule usually contains an API together with other ingredients that help form and deliver the medicine.
+
+When you look at a tablet, you see the finished dosage form. But before that tablet is manufactured, its active ingredient must be produced or sourced, purified, tested and released under controlled quality systems. That active ingredient is the API.
+
+### 1. What exactly is an API?
+
+The International Council for Harmonisation (ICH) and the US Food and Drug Administration (FDA) describe an API as a substance or mixture of substances intended for use in manufacturing a drug product that becomes the active ingredient of that product. It is intended to provide pharmacological activity or another direct effect in diagnosis, cure, mitigation, treatment or prevention of disease, or to affect the structure or function of the body.
+
+For example, in a conventional paracetamol tablet, paracetamol is the API. The tablet also contains excipients—ingredients that support manufacturing, stability, disintegration, appearance or other product characteristics. Excipients are not interchangeable with the API: they serve different functions.
+
+### 2. API vs finished pharmaceutical product
+
+An API is the active drug substance. A finished pharmaceutical product (FPP) is the medicine in its final dosage form, such as a tablet, capsule, oral liquid or injection, ready for the relevant packaging and supply steps.
+- API: the active substance that provides the intended pharmacological effect.
+- Excipients: other formulation ingredients used for functions such as binding, filling, coating, preservation or helping the dosage form perform as designed.
+- FPP: the formulated medicine containing the API and excipients in a defined dosage form and strength.
+
+One company may manufacture the API and another may formulate it into tablets. Some organisations perform both activities. The business arrangement does not change the need to control the quality of the materials and processes.
+
+### 3. How is an API manufactured?
+
+There is no single manufacturing route for every API. ICH Q7 recognises several broad approaches, including chemical synthesis, extraction, fermentation or cell culture, and recovery from natural sources. The appropriate process depends on the substance and its chemistry or biology.
+
+#### A simplified manufacturing journey
+
+Conceptual overview only. Actual manufacturing steps, process controls and acceptance criteria vary by API and approved process.
+
+#### Step 1: Starting materials
+
+Manufacturing begins with defined starting materials, reagents, solvents or biological inputs. Their identity, quality and suitability must be assessed. Supplier qualification, specifications, sampling and traceability help prevent unsuitable materials from entering production.
+
+#### Step 2: Production and process control
+
+In chemical synthesis, controlled reactions convert starting materials through one or more intermediates into the desired substance. Other APIs may be produced through extraction, fermentation or cell-based processes. Manufacturers monitor relevant parameters such as temperature, time, pH, mixing or other process-specific variables. The exact controls depend on the process.
+
+#### Step 3: Isolation and purification
+
+The desired substance is separated from process mixtures and unwanted materials. Depending on the process, operations may include filtration, crystallisation, washing, drying or other purification techniques. The aim is to obtain material that meets its defined quality requirements.
+
+#### Step 4: Physical processing and packaging
+
+Some APIs undergo milling, micronisation, blending or other physical processing to achieve specified properties. The API is then packed in suitable containers with appropriate identification and storage controls to protect it during handling and transport.
+
+### 4. How do manufacturers know an API is suitable?
+
+Testing is performed against approved or otherwise established specifications. The precise tests depend on the API and its intended use, but may include:
+- Identity: confirms that the material is the intended substance.
+- Assay or content: measures the amount or strength of the API.
+- Related substances and impurities: evaluates specified and other relevant impurities.
+- Residual solvents: checks solvents that may remain from manufacturing.
+- Water content and physical properties: assessed when relevant to the substance and its specifications.
+- Microbiological quality: tested where required by the API type and intended use.
+
+Passing one test does not automatically establish overall quality. Results must be evaluated against the complete specification, relevant procedures and batch documentation. A designated quality unit reviews the appropriate records and makes the release or rejection decision.
+
+### 5. Why does GMP matter in API manufacturing?
+
+Good Manufacturing Practice (GMP) is a system of controls designed to help ensure that materials and products are consistently produced and controlled according to appropriate quality standards. ICH Q7 provides GMP guidance specifically for APIs.
+In practical terms, GMP includes trained personnel, suitable premises and equipment, written procedures, controlled production records, cleaning and maintenance, investigations of deviations, change control, laboratory controls, supplier oversight and quality-unit responsibilities.
+GMP does not mean that errors are impossible. It means there should be systems to prevent problems where possible, detect them, investigate them, document decisions and protect product quality.
+
+### 6. Why does API quality matter to patients?
+
+The quality of the API contributes to the quality of the finished medicine. If the identity, strength, impurity profile or other critical attributes are not controlled, the finished product may not meet its intended specifications. That is why API quality cannot be judged only by the appearance of the powder or by the reputation of a supplier.
+Finished-product manufacturers also need to control formulation, manufacturing, packaging and stability. API quality is essential, but it is one part of a wider pharmaceutical quality system.
+
+### 7. What about API manufacturing in Bangladesh?
+
+Bangladesh has an established finished-medicine manufacturing sector and has also pursued greater local capacity for API production. The policy and investment context can be explored through Bangladesh's official investment and medicines-regulatory sources. However, a general article should not assume that every medicine ingredient used locally is manufactured domestically. The origin and supply route can differ by substance and manufacturer.
+The Directorate General of Drug Administration (DGDA) is Bangladesh's national medicines regulatory authority. For current regulatory requirements, readers should consult DGDA publications and applicable laws rather than rely on a general explainer.
+
+### Key takeaways
+
+- API means active pharmaceutical ingredient; it is the active substance in a medicine.
+- The API is different from the finished tablet, capsule or liquid.
+- Manufacturing routes vary: chemical synthesis, extraction, fermentation and other processes may be used.
+- Purification, testing, documentation and GMP controls support API quality.
+- The quality of the API contributes to—but does not alone determine—the quality of the finished medicine.
+
+### Frequently asked questions
+
+#### Is API the same as a drug?
+
+In pharmaceutical manufacturing, API or drug substance refers to the active substance intended to provide the pharmacological effect. In everyday language, “drug” can have broader meanings.
+
+#### Is an API the same as a tablet?
+
+No. The API is the active substance. A tablet is a finished dosage form that usually contains the API plus excipients.
+
+#### Can one company manufacture both API and tablets?
+
+Yes. Some companies perform both API production and finished-product manufacturing, while others specialise in one activity or outsource part of the process.
+
+#### Are all APIs made by chemical synthesis?
+
+No. Depending on the substance, APIs may be produced through chemical synthesis, extraction, fermentation, cell culture or other suitable routes.
+
+#### Why are API impurities tested?
+
+Impurities can arise from starting materials, reactions, processing or storage. Testing and process controls help ensure that the API meets its defined quality requirements.
+
+#### Does GMP guarantee that a medicine will never have a quality problem?
+
+No system can guarantee that problems will never occur. GMP establishes controls for consistent production, detection, investigation and prevention of quality issues.
+
+### References and further reading
+
+- US Food and Drug Administration. Q7: Good Manufacturing Practice Guidance for Active Pharmaceutical Ingredients.
+- International Council for Harmonisation. ICH Quality Guidelines — Q7.
+- FDA. Q7 Questions and Answers.
+- Bangladesh Directorate General of Drug Administration. Official website and regulatory information.
+- Bangladesh Investment Development Authority. Official investment information.
+
+Educational note: This article explains general pharmaceutical manufacturing concepts. It is not a substitute for applicable regulatory requirements, approved specifications, or professional quality-system procedures.
+
+Sayedul Abrar
+A Grade Pharmacist · Registration Code A-22040
+Product Executive, Product Management Department · Opsonin Pharma Ltd.
+About the author
 
 ---
 
