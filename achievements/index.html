@@ -31,15 +31,17 @@
 <link rel="stylesheet" href="/assets/site-polish.css?v=sp1">
 <link rel="icon" href="/favicon.ico?v=sa-logo-20261114" sizes="any"><link rel="icon" type="image/png" sizes="48x48" href="/assets/icons/favicon-48x48.png?v=sa-logo-20261114"><link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png?v=sa-logo-20261114"><link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/icon-192.png?v=sa-logo-20261114"><link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png?v=sa-logo-20261114"><link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png?v=sa-logo-20261114"><link rel="manifest" href="/site.webmanifest?v=sa-logo-20261114"><style id="logo-mark-css">.logo-mark{display:inline-block;width:1.3em;height:1.3em;border-radius:50%;vertical-align:-.28em;margin-right:.38em;box-shadow:0 0 0 1px rgba(194,140,30,.35)}@media (max-width:420px){.logo-mark{width:1.15em;height:1.15em}}</style>
 <style id="achievement-rise-motion">
-#achievement-rise-layer{position:fixed;inset:0;z-index:9998;pointer-events:none;overflow:hidden}
-.achievement-rise-card{position:absolute;left:50%;top:50%;width:min(360px,calc(100vw - 42px));padding:17px 22px 18px;border:1px solid rgba(224,190,119,.38);border-radius:16px;background:linear-gradient(145deg,rgba(25,31,48,.91),rgba(43,45,63,.90));color:#fff;text-align:center;box-shadow:0 14px 48px rgba(0,0,0,.20);transform:translate(-50%,110vh);animation:achievement-rise 5.2s cubic-bezier(.22,.68,.24,1) both;backdrop-filter:blur(8px)}
-.achievement-rise-card .rise-kicker{display:block;margin-bottom:7px;color:#e6c47d;font-size:8px;font-weight:700;letter-spacing:.17em;text-transform:uppercase}
-.achievement-rise-card strong{display:block;font-size:clamp(17px,3.5vw,24px);line-height:1.15;font-weight:700}
-.achievement-rise-card .rise-sub{display:block;margin-top:7px;color:rgba(255,255,255,.78);font-size:10px;letter-spacing:.025em}
-.achievement-rise-card .rise-year{display:inline-block;margin-top:10px;padding:4px 10px;border:1px solid rgba(230,196,125,.42);border-radius:99px;color:#f1d69c;font-size:9px;letter-spacing:.1em}
-.achievement-firework{position:absolute;width:4px;height:4px;border-radius:50%;left:var(--x);top:var(--y);background:var(--c);box-shadow:0 0 7px var(--c);opacity:0;animation:achievement-spark 1.45s ease-out forwards}
-@keyframes achievement-rise{0%{opacity:0;transform:translate(-50%,115vh)}14%{opacity:1}66%{opacity:1;transform:translate(-50%,-2vh)}82%{opacity:0;transform:translate(-50%,-12vh)}100%{opacity:0;transform:translate(-50%,-20vh)}}
-@keyframes achievement-spark{0%{opacity:0;transform:translate(0,0) scale(.35)}12%{opacity:1}100%{opacity:0;transform:translate(var(--dx),var(--dy)) scale(.05)}}
+#achievement-rise-layer{position:fixed;inset:0;z-index:9998;pointer-events:none;overflow:hidden;background:rgba(7,10,17,.24);animation:achievement-scene-in .5s ease-out both}
+.achievement-rise-card{position:absolute;left:50%;top:50%;width:min(370px,calc(100vw - 42px));padding:18px 22px 19px;border:1px solid rgba(239,201,126,.55);border-radius:17px;background:linear-gradient(145deg,rgba(20,26,40,.94),rgba(37,42,59,.92));color:#fff;text-align:center;box-shadow:0 16px 54px rgba(0,0,0,.38),0 0 32px rgba(232,184,78,.13);transform:translate(-50%,110vh);animation:achievement-rise 5.2s cubic-bezier(.22,.68,.24,1) both;backdrop-filter:blur(9px)}
+.achievement-rise-card .rise-kicker{display:block;margin-bottom:8px;color:#f0cb7d;font-size:9px;font-weight:700;letter-spacing:.17em;text-transform:uppercase}
+.achievement-rise-card strong{display:block;font-size:clamp(19px,4vw,25px);line-height:1.15;font-weight:700}
+.achievement-rise-card .rise-sub{display:block;margin-top:8px;color:rgba(255,255,255,.82);font-size:11px;letter-spacing:.025em}
+.achievement-rise-card .rise-year{display:inline-block;margin-top:11px;padding:4px 12px;border:1px solid rgba(240,203,125,.48);border-radius:99px;color:#f5dca6;font-size:10px;letter-spacing:.1em}
+.achievement-firework{position:absolute;left:var(--x);top:var(--y);width:2px;height:var(--len);border-radius:99px;transform-origin:50% 100%;transform:rotate(var(--angle)) scaleY(0);background:linear-gradient(to top,transparent 0%,var(--c) 72%,rgba(255,255,255,.95) 100%);box-shadow:0 0 7px var(--c),0 0 15px var(--c);opacity:0;animation:achievement-ray 1.8s cubic-bezier(.12,.65,.2,1) forwards}
+.achievement-firework:after{content:"";position:absolute;top:-4px;left:-2px;width:6px;height:6px;border-radius:50%;background:var(--c);box-shadow:0 0 10px 3px var(--c)}
+@keyframes achievement-scene-in{from{opacity:0}to{opacity:1}}
+@keyframes achievement-rise{0%{opacity:0;transform:translate(-50%,115vh)}14%{opacity:1}65%{opacity:1;transform:translate(-50%,-1vh)}82%{opacity:0;transform:translate(-50%,-12vh)}100%{opacity:0;transform:translate(-50%,-20vh)}}
+@keyframes achievement-ray{0%{opacity:0;transform:rotate(var(--angle)) scaleY(.08)}13%{opacity:1}75%{opacity:.8}100%{opacity:0;transform:rotate(var(--angle)) scaleY(1)}}
 @media(prefers-reduced-motion:reduce){#achievement-rise-layer{display:none}}
 </style>
 </head>
@@ -152,27 +154,34 @@
   {kicker:'ANNUAL PMD ICONIC AWARD · 2025',title:'Best Productive',sub:'1st Place · General-A · Opsonin Pharma Ltd.',year:'2025'},
   {kicker:'ANNUAL PMD ICONIC AWARD · 2025',title:'Best Innovative',sub:'1st Place · General-A · Opsonin Pharma Ltd.',year:'2025'}
  ];
- var colors=['#f5d58b','#ffffff','#e8b84e','#d9e8ff','#f08b79'];
- function burst(layer,x,y){
-  for(var i=0;i<34;i++){
-   var p=document.createElement('i'),a=Math.PI*2*i/34+(Math.random()-.5)*.18,d=55+Math.random()*95;
-   p.className='achievement-firework';p.style.setProperty('--x',x+'%');p.style.setProperty('--y',y+'%');
-   p.style.setProperty('--dx',Math.cos(a)*d+'px');p.style.setProperty('--dy',Math.sin(a)*d+'px');
-   p.style.setProperty('--c',colors[Math.floor(Math.random()*colors.length)]);
-   p.style.width=(2+Math.random()*2)+'px';p.style.height=p.style.width;layer.appendChild(p);
-   window.setTimeout(function(node){node.remove()},1550,p);
+ var colors=['#f5c65e','#fff1c8','#e8a93e','#f7f7f7','#43c66b','#dce8ff'];
+ function burst(layer,x,y,count){
+  for(var i=0;i<count;i++){
+   var ray=document.createElement('i'),angle=(360/count)*i+(Math.random()-0.5)*8;
+   ray.className='achievement-firework';ray.style.setProperty('--x',x+'%');ray.style.setProperty('--y',y+'%');
+   ray.style.setProperty('--angle',angle+'deg');ray.style.setProperty('--len',(45+Math.random()*105)+'px');
+   ray.style.setProperty('--c',colors[Math.floor(Math.random()*colors.length)]);
+   ray.style.animationDelay=(Math.random()*.18)+'s';layer.appendChild(ray);
+   window.setTimeout(function(node){node.remove()},2150,ray);
   }
+ }
+ function celebration(layer){
+  burst(layer,18+Math.random()*12,30+Math.random()*18,30);
+  burst(layer,70+Math.random()*12,26+Math.random()*20,34);
+  window.setTimeout(function(){burst(layer,43+Math.random()*12,48+Math.random()*12,28)},480);
+  window.setTimeout(function(){burst(layer,10+Math.random()*18,65+Math.random()*12,24)},850);
  }
  function play(){
   var layer=document.getElementById('achievement-rise-layer');if(!layer)return;
   items.forEach(function(item,index){window.setTimeout(function(){
-   burst(layer,25,35);burst(layer,76,30);
+   celebration(layer);
    var card=document.createElement('div');card.className='achievement-rise-card';
    card.innerHTML='<span class="rise-kicker"></span><strong></strong><span class="rise-sub"></span><span class="rise-year"></span>';
    card.querySelector('.rise-kicker').textContent=item.kicker;card.querySelector('strong').textContent=item.title;
    card.querySelector('.rise-sub').textContent=item.sub;card.querySelector('.rise-year').textContent=item.year;
    layer.appendChild(card);window.setTimeout(function(){card.remove()},5300);
-  },index*5700)});
+  },index*5900)});
+  window.setTimeout(function(){layer.style.transition='opacity .8s ease';layer.style.opacity='0';window.setTimeout(function(){layer.remove()},850)},items.length*5900+1800);
  }
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',play,{once:true});else play();
 })();
