@@ -171,6 +171,150 @@ Get in touch ↗Find me on LinkedIn
 
 ## Pharma Blog articles (newest first)
 
+### Good Manufacturing Practices (GMP): The Foundation of Pharmaceutical Quality
+URL: https://sayedulabrar.site/blog/good-manufacturing-practices-gmp-pharmaceutical-quality/ · Language: English · Published: 2026-11-19 · Author: Sayedul Abrar, pharmacist
+Summary: What is GMP in pharmaceuticals? Learn how people, premises, equipment, documentation, validation, CAPA and Bangladesh DGDA requirements work together to protect medicine quality.
+
+By Sayedul Abrar, pharmacist · Published 19 November 2026
+The simple answer: Good Manufacturing Practices (GMP) are the documented, risk-based practices and controls that help ensure medicines are consistently manufactured and controlled to the quality standards appropriate for their intended use. GMP is not simply a clean factory or a final laboratory test. It is a whole-system approach involving people, premises, equipment, materials, procedures, records and management oversight.
+
+A medicine may contain the correct active ingredient and still be unsuitable if it has been contaminated, mixed up, incorrectly labelled, manufactured with an uncontrolled process or stored under unsuitable conditions. GMP is designed to prevent these risks before a product reaches a patient.
+
+### 1. What does GMP actually mean?
+
+Good Manufacturing Practices are part of pharmaceutical quality assurance. WHO describes GMP as the part of a quality management system that ensures products are consistently produced and controlled to standards appropriate for their intended use and marketing authorisation. Its purpose is to reduce risks that cannot be eliminated reliably by testing the finished product alone—especially contamination, cross-contamination, mix-ups and false labelling.
+
+The word current in cGMP is important in some regulatory systems: manufacturers are expected to use suitable up-to-date methods, equipment, controls and scientific knowledge, rather than relying on obsolete practices. GMP is not a one-time certificate or a wall poster. It must be implemented every day and reviewed as processes, products and risks change.
+
+### 2. GMP is a complete pharmaceutical quality system
+
+Think of GMP as a connected system. A trained employee follows an approved procedure; suitable equipment performs a controlled operation; the activity is recorded; results are reviewed; and the quality function evaluates whether the batch meets its requirements. If something unexpected happens, the event is investigated and the system is improved.
+
+These elements reinforce one another. A good procedure cannot compensate for untrained staff; a modern machine cannot guarantee quality if it is poorly maintained or used incorrectly; and a laboratory result is not trustworthy if sampling, records or instruments are unreliable.
+
+### 3. People, training and hygiene
+
+Personnel must have appropriate education, training, experience and clearly defined responsibilities for the work they perform. Training is not limited to induction. It should be relevant to the employee’s duties, refreshed when procedures change and checked for effectiveness where appropriate.
+
+Personal hygiene, suitable protective clothing, handwashing, health-related precautions and controlled access help reduce the risk of contamination. Staff should understand why a rule exists—not merely sign a training sheet. People who work in production, quality control, engineering, warehousing, sanitation and maintenance all influence product quality.
+
+### 4. Premises, equipment and contamination control
+
+Buildings and production areas should be designed, located, maintained and used to suit the operations performed. Layout and workflow should reduce the risk of errors, mix-ups and contamination. Depending on the product and process, this may involve defined areas, controlled access, suitable ventilation, environmental monitoring, cleaning arrangements and separation of incompatible activities.
+
+Equipment must be suitable for its intended use, installed correctly, cleaned, maintained and calibrated where measurement is important. Qualification provides documented evidence that equipment or a system is fit for its intended purpose. A clean-looking machine is not automatically a qualified machine.
+
+### 5. Documentation: if it was not recorded, it is difficult to prove
+
+GMP relies on controlled documents and contemporaneous records. Procedures describe how an activity should be performed; records show what actually happened. Examples include specifications, standard operating procedures (SOPs), equipment logs, cleaning records, training records, analytical worksheets, material status records and batch manufacturing records.
+
+Good documentation supports traceability and allows a batch history to be reconstructed. Entries should be attributable, legible, recorded at the time the activity occurs, original or appropriately verified, and accurate. Corrections must preserve the original information and follow approved procedures. Electronic systems need appropriate access control, audit trails, backup and system validation according to their use and risk.
+
+Remember: A completed form is not proof of a well-controlled process by itself. The record must be truthful, complete, reviewed and consistent with what actually happened.
+
+### 6. Production controls, validation and process consistency
+
+Manufacturing should follow approved instructions, defined process parameters and appropriate in-process controls. Materials must be identified, status-controlled and released for use through the established system. Weighing, dispensing, line clearance, equipment setup, processing, packaging and labelling need controls proportionate to the risks.
+
+Validation provides documented evidence that a process, method or system can consistently achieve its intended result under defined conditions. Qualification demonstrates that premises, utilities or equipment are suitable for their intended use. Neither is simply a single successful batch or a one-time installation check. A lifecycle approach includes planning, documented evidence, monitoring and review when changes occur.
+
+For example, process validation for a tablet manufacturing process may evaluate critical steps and parameters such as blending, granulation, compression and coating where relevant to the product. The exact approach depends on product knowledge, process risk and applicable guidance; one universal recipe does not fit every medicine.
+
+### 7. Quality Assurance, Quality Control and the Quality Unit
+
+Quality Assurance (QA) is the planned and systematic system that provides confidence that quality requirements will be fulfilled. It includes quality governance, procedures, training, audits, change control, deviation management, product quality review and oversight of the manufacturing system.
+
+Quality Control (QC) focuses on sampling, specifications, testing, documentation and decisions or recommendations arising from test results. QC laboratories may test starting materials, packaging materials, in-process samples and finished products using approved methods and suitable instruments.
+
+They are different but connected functions. Testing cannot build quality into a poorly designed process, while a quality system still needs reliable testing where testing is required. The designated independent quality function or Quality Unit has defined authority in the pharmaceutical quality system, including review and batch disposition responsibilities under the applicable framework.
+
+### 8. Deviations, CAPA and change control
+
+A deviation is a departure from an approved instruction, specification or expected process condition. It should be documented, assessed for potential impact and investigated to a depth proportionate to risk. The investigation should seek the underlying cause rather than stop at blaming an individual or describing the immediate event.
+
+CAPA means corrective and preventive action. Corrective action addresses an identified problem and its cause; preventive action reduces the likelihood of a potential or recurring problem. Actions should have owners and due dates, and their effectiveness should be checked. Closing a CAPA because a task was completed is not enough if the problem returns.
+
+Change control ensures proposed changes—such as equipment, suppliers, materials, process parameters, software, premises or procedures—are evaluated, approved, documented and reviewed before implementation as appropriate. The assessment considers product quality, validation, regulatory commitments, training and documentation updates.
+
+### 9. Supplier qualification, complaints and recalls
+
+Quality begins before a material enters the factory. Manufacturers should evaluate and approve suppliers according to risk and the material or service supplied. Incoming materials need appropriate identification, sampling, testing or other verification, status control and storage. Critical outsourced activities require defined responsibilities, written agreements and suitable oversight.
+
+GMP also extends beyond the production line. Complaints must be recorded, assessed and investigated. Potentially affected batches should be evaluated, and recall procedures must allow prompt action when a product defect or safety concern requires it. Self-inspection and supplier audits help identify weaknesses before they become serious failures.
+
+### 10. What does GMP mean for Bangladesh?
+
+Bangladesh's current statutory framework includes the Drugs and Cosmetics Act, 2023. Section 17 addresses the requirement for manufacturers or sellers to follow WHO Good Practices in the manufacture, quality control, distribution, supply and storage of medicines. The Act also provides for the government to formulate relevant guidelines in line with WHO and other recognised international guidance.
+
+DGDA issued an office order on 11 May 2018 adopting specified WHO Good Practice guidelines, including WHO GMP for pharmaceutical products, TRS 986 (2014), Annex 2. That order is an important regulatory reference, but it should be read alongside the current 2023 Act, applicable rules, DGDA notices, licence conditions and product-specific requirements. Manufacturers should verify the current requirements with DGDA rather than relying on an old circular in isolation.
+
+International guidance is not automatically identical to national law. For example, US FDA cGMP regulations in 21 CFR Parts 210 and 211 apply within the United States regulatory framework. They are useful comparative references, but they should not be described as Bangladesh law. Similarly, ICH Q10 is a harmonised model for a pharmaceutical quality system across the product lifecycle; its implementation status and legal effect depend on the relevant jurisdiction and regulatory commitments.
+
+### 11. Why GMP matters to patients
+
+Patients cannot inspect a factory, verify a batch record or repeat a laboratory test before taking a medicine. They depend on manufacturers and regulators to ensure that products are made under controlled conditions. GMP helps protect against contamination, mix-ups, incorrect strength, defective packaging and unreliable processes. It supports consistent quality, but it does not replace clinical evaluation, appropriate prescribing, correct storage or post-market safety monitoring.
+
+Key takeaways
+- GMP is a complete, documented quality system—not just cleanliness or final-product testing.
+- People, premises, equipment, materials, procedures and records must work together.
+- Validation, qualification and process controls provide evidence that operations are suitable and consistent.
+- Deviations, CAPA and change control help investigate problems and prevent recurrence.
+- QA and QC have different but complementary responsibilities.
+- In Bangladesh, section 17 of the Drugs and Cosmetics Act, 2023 is a key statutory reference; current DGDA requirements must also be checked.
+
+### Frequently asked questions
+
+#### Is GMP the same as quality control?
+
+No. Quality control is one part of the wider GMP and pharmaceutical quality system. GMP also covers people, premises, equipment, documentation, production, validation, supplier controls, investigations and product quality oversight.
+
+#### Does GMP guarantee that every medicine is defect-free?
+
+No system can eliminate every risk. GMP is designed to reduce and control risks, detect problems and prevent their recurrence. Quality also depends on appropriate product design, materials, processes, storage and distribution.
+
+#### What is the difference between QA and QC?
+
+Quality assurance is the planned system that builds confidence that quality requirements will be met. Quality control includes sampling, specifications, testing and related checks. They work together but are not interchangeable.
+
+#### What does CAPA mean in GMP?
+
+CAPA means corrective and preventive action. Corrective action addresses an identified problem and its cause; preventive action reduces the chance of a potential or recurring problem.
+
+#### Is GMP legally relevant in Bangladesh?
+
+Yes. Section 17 of the Drugs and Cosmetics Act, 2023 addresses WHO Good Practices for manufacture, quality control, distribution, supply and storage. DGDA requirements, applicable rules, licence conditions and current notices must also be followed.
+
+#### Are FDA cGMP rules automatically Bangladesh law?
+
+No. US FDA regulations apply within their legal scope. They can be useful comparative references, but Bangladesh requirements must be determined from Bangladesh law and DGDA directions.
+
+#### Can a company outsource manufacturing and remain responsible for quality?
+
+Contract activities require defined responsibilities, written agreements and appropriate oversight. Outsourcing does not remove the need to ensure that the work is controlled and complies with applicable requirements.
+
+### References and further reading
+
+- World Health Organization. WHO good manufacturing practices for pharmaceutical products: main principles. WHO Technical Report Series 986, Annex 2 (2014).
+
+- World Health Organization. Quality assurance of pharmaceuticals: a compendium of guidelines and related materials, 10th edition, Volume 2 (2024).
+
+- Government of Bangladesh. ঔষধ ও কসমেটিকস আইন, ২০২৩, section 17.
+
+- Directorate General of Drug Administration (DGDA). Office order adopting WHO Good Practice guidelines (11 May 2018).
+
+- International Council for Harmonisation. ICH Q10: Pharmaceutical Quality System (Step 4, 2008).
+
+- US Food and Drug Administration. Current Good Manufacturing Practice (CGMP) Regulations.
+
+Educational note: This article explains general pharmaceutical quality principles. It is not a substitute for the current legal text, DGDA directions, a site's approved quality system or advice from qualified regulatory professionals.
+
+About the author
+Sayedul Abrar is a pharmacist and pharmaceutical product executive who writes about medicines, pharmacology and the pharmaceutical industry.
+
+Related reading: Pharmaceutical Industry in Bangladesh: How It Works · Active Pharmaceutical Ingredient (API): From Raw Material to Medicine
+
+---
+
 ### ওষুধের বিপাক: শরীর কীভাবে ওষুধকে পরিবর্তন করে?
 URL: https://sayedulabrar.site/blog/drug-metabolism-how-the-body-processes-medicines-bangla/ · Language: Bangla · Published: 2026-11-18T20:00:00+06:00 · Author: Sayedul Abrar, pharmacist
 Summary: Drug metabolism, যকৃত, enzyme, active metabolite এবং first-pass metabolism সম্পর্কে সহজ ও প্রমাণভিত্তিক ধারণা।
