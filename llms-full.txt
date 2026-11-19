@@ -171,6 +171,150 @@ Get in touch ↗Find me on LinkedIn
 
 ## Pharma Blog articles (newest first)
 
+### গুড ম্যানুফ্যাকচারিং প্র্যাকটিস (GMP): ওষুধের গুণগত মান নিশ্চিত করার ভিত্তি
+URL: https://sayedulabrar.site/blog/good-manufacturing-practices-gmp-pharmaceutical-quality-bangla/ · Language: Bangla · Published: 2026-11-19 · Author: Sayedul Abrar, pharmacist
+Summary: ওষুধশিল্পে GMP কী? কর্মী, কারখানা, যন্ত্রপাতি, নথিপত্র, validation, CAPA এবং বাংলাদেশের DGDA-এর প্রাসঙ্গিক নির্দেশনা কীভাবে ওষুধের মান রক্ষা করে জানুন।
+
+By Sayedul Abrar, ফার্মাসিস্ট · Published ১৯ নভেম্বর ২০২৬
+সহজ কথায়: Good Manufacturing Practices (GMP) হলো নথিভুক্ত, ঝুঁকিভিত্তিক নিয়ম, প্রক্রিয়া ও নিয়ন্ত্রণের সমন্বিত ব্যবস্থা, যার মাধ্যমে ওষুধ নির্ধারিত মান অনুযায়ী ধারাবাহিকভাবে উৎপাদন ও নিয়ন্ত্রণ করা হয়। GMP মানে শুধু পরিষ্কার কারখানা বা শেষ পণ্যের ল্যাবরেটরি পরীক্ষা নয়। এতে কর্মী, ভবন, যন্ত্রপাতি, কাঁচামাল, পদ্ধতি, নথিপত্র এবং ব্যবস্থাপনার তদারকি—সবকিছু অন্তর্ভুক্ত।
+
+কোনো ওষুধে সঠিক সক্রিয় উপাদান থাকলেও সেটি অনুপযুক্ত হতে পারে, যদি উৎপাদনের সময় দূষণ ঘটে, অন্য পণ্যের সঙ্গে মিশে যায়, ভুল লেবেল লাগে, অনিয়ন্ত্রিত প্রক্রিয়ায় তৈরি হয় অথবা অনুপযুক্ত পরিবেশে সংরক্ষণ করা হয়। রোগীর কাছে পৌঁছানোর আগেই এসব ঝুঁকি প্রতিরোধে GMP গুরুত্বপূর্ণ ভূমিকা রাখে।
+
+### ১. GMP বলতে আসলে কী বোঝায়?
+
+Good Manufacturing Practices হলো pharmaceutical quality assurance-এর একটি গুরুত্বপূর্ণ অংশ। WHO-এর ব্যাখ্যা অনুযায়ী, GMP এমন একটি quality management system-এর অংশ, যা নিশ্চিত করতে সাহায্য করে যে ওষুধ তার নির্ধারিত ব্যবহার ও marketing authorisation অনুযায়ী উপযুক্ত মানে ধারাবাহিকভাবে উৎপাদিত ও নিয়ন্ত্রিত হচ্ছে। এর উদ্দেশ্য হলো এমন ঝুঁকি কমানো, যা শুধু শেষ পণ্য পরীক্ষা করে নির্ভরযোগ্যভাবে দূর করা যায় না—যেমন contamination, cross-contamination, mix-up এবং ভুল labeling।
+
+কিছু নিয়ন্ত্রক ব্যবস্থায় current শব্দটি cGMP-তে ব্যবহৃত হয়। এর অর্থ হলো প্রস্তুতকারককে উপযুক্ত আধুনিক পদ্ধতি, যন্ত্রপাতি, নিয়ন্ত্রণ এবং বৈজ্ঞানিক জ্ঞান ব্যবহার করতে হবে; পুরোনো বা অকার্যকর ব্যবস্থার ওপর নির্ভর করলে চলবে না। GMP একবারের সার্টিফিকেট বা দেয়ালে টাঙানো পোস্টার নয়। প্রতিদিনের কাজে এটি বাস্তবায়ন করতে হয় এবং পণ্য, প্রক্রিয়া ও ঝুঁকি পরিবর্তনের সঙ্গে পর্যালোচনা করতে হয়।
+
+### ২. GMP একটি সম্পূর্ণ Pharmaceutical Quality System
+
+GMP-কে একটি সংযুক্ত ব্যবস্থা হিসেবে ভাবুন। প্রশিক্ষিত কর্মী অনুমোদিত পদ্ধতি অনুসরণ করেন; উপযুক্ত যন্ত্রপাতি নিয়ন্ত্রিত কাজ সম্পন্ন করে; কাজের রেকর্ড রাখা হয়; ফলাফল পর্যালোচনা করা হয়; এবং Quality function যাচাই করে batch নির্ধারিত শর্ত পূরণ করেছে কি না। অপ্রত্যাশিত কিছু ঘটলে সেটি তদন্ত করা হয় এবং ব্যবস্থার উন্নতি করা হয়।
+
+এই উপাদানগুলো একে অন্যকে শক্তিশালী করে। প্রশিক্ষণহীন কর্মীর হাতে ভালো SOP থাকলেই যথেষ্ট নয়; আধুনিক মেশিনও মান নিশ্চিত করতে পারে না যদি সেটি সঠিকভাবে রক্ষণাবেক্ষণ বা ব্যবহার না করা হয়। আবার sampling, নথিপত্র বা যন্ত্রের নির্ভরযোগ্যতা ঠিক না থাকলে ল্যাবরেটরির ফলাফলও প্রশ্নবিদ্ধ হতে পারে।
+
+### ৩. কর্মী, প্রশিক্ষণ ও ব্যক্তিগত পরিচ্ছন্নতা
+
+যে কাজ করবেন, সে অনুযায়ী কর্মীর শিক্ষা, প্রশিক্ষণ, অভিজ্ঞতা এবং স্পষ্ট দায়িত্ব থাকতে হবে। প্রশিক্ষণ শুধু চাকরিতে যোগদানের সময় নয়। কাজের ধরন অনুযায়ী নিয়মিত প্রশিক্ষণ, পদ্ধতি পরিবর্তনের পর পুনঃপ্রশিক্ষণ এবং প্রয়োজন অনুযায়ী প্রশিক্ষণের কার্যকারিতা যাচাই করা দরকার।
+
+ব্যক্তিগত পরিচ্ছন্নতা, উপযুক্ত protective clothing, হাত ধোয়া, স্বাস্থ্যসংক্রান্ত সতর্কতা এবং নিয়ন্ত্রিত প্রবেশ দূষণের ঝুঁকি কমায়। কর্মীদের বুঝতে হবে কোনো নিয়ম কেন মানতে হচ্ছে—শুধু প্রশিক্ষণ শিটে স্বাক্ষর করাই যথেষ্ট নয়। Production, Quality Control, Engineering, Warehouse, Sanitation ও Maintenance—সব বিভাগের কাজ ওষুধের মানকে প্রভাবিত করতে পারে।
+
+### ৪. ভবন, যন্ত্রপাতি ও দূষণ নিয়ন্ত্রণ
+
+উৎপাদন ভবন ও এলাকা এমনভাবে নকশা, রক্ষণাবেক্ষণ ও ব্যবহার করতে হয়, যাতে সংশ্লিষ্ট কাজের জন্য উপযুক্ত হয়। Layout এবং workflow এমন হওয়া উচিত, যাতে ভুল, mix-up ও contamination-এর ঝুঁকি কমে। পণ্য ও প্রক্রিয়ার ধরন অনুযায়ী নির্দিষ্ট এলাকা, নিয়ন্ত্রিত প্রবেশ, উপযুক্ত ventilation, environmental monitoring, cleaning ব্যবস্থা এবং অসামঞ্জস্যপূর্ণ কাজের পৃথকীকরণ প্রয়োজন হতে পারে।
+
+যন্ত্রপাতি নির্দিষ্ট কাজের উপযোগী হতে হবে, সঠিকভাবে স্থাপন করতে হবে, পরিষ্কার ও রক্ষণাবেক্ষণ করতে হবে এবং পরিমাপের ক্ষেত্রে প্রয়োজন অনুযায়ী calibration করতে হবে। Qualification-এর মাধ্যমে নথিভুক্ত প্রমাণ পাওয়া যায় যে যন্ত্র বা system নির্ধারিত ব্যবহারের উপযোগী। বাইরে থেকে পরিষ্কার দেখালেই কোনো মেশিন qualified হয়ে যায় না।
+
+### ৫. Documentation: নথি না থাকলে কাজের প্রমাণ দেওয়া কঠিন
+
+GMP-তে নিয়ন্ত্রিত document এবং কাজের সময়কার record অত্যন্ত গুরুত্বপূর্ণ। Procedure বলে কোনো কাজ কীভাবে করতে হবে; record দেখায় বাস্তবে কী করা হয়েছে। এর উদাহরণ হলো specification, Standard Operating Procedure (SOP), equipment log, cleaning record, training record, analytical worksheet, material status record এবং batch manufacturing record।
+
+ভালো documentation traceability নিশ্চিত করে এবং একটি batch-এর ইতিহাস পুনর্গঠন করতে সাহায্য করে। তথ্যের উৎস শনাক্তযোগ্য, পাঠযোগ্য, কাজের সময়ই নথিভুক্ত, মূল বা যথাযথভাবে যাচাইকৃত এবং নির্ভুল হওয়া উচিত। ভুল সংশোধনের সময় মূল তথ্য সংরক্ষণ করে অনুমোদিত পদ্ধতি অনুসরণ করতে হয়। Electronic system-এর ক্ষেত্রে ব্যবহার ও ঝুঁকি অনুযায়ী access control, audit trail, backup এবং system validation দরকার।
+
+মনে রাখুন: কোনো form পূরণ করা মানেই প্রক্রিয়া সঠিকভাবে নিয়ন্ত্রিত হয়েছে—এমন নয়। রেকর্ড সত্য, সম্পূর্ণ, পর্যালোচিত এবং বাস্তবে যা ঘটেছে তার সঙ্গে সামঞ্জস্যপূর্ণ হতে হবে।
+
+### ৬. উৎপাদন নিয়ন্ত্রণ, Validation ও ধারাবাহিকতা
+
+উৎপাদন অনুমোদিত নির্দেশনা, নির্ধারিত process parameter এবং উপযুক্ত in-process control অনুযায়ী করতে হয়। উপকরণ শনাক্ত করতে হবে, status নিয়ন্ত্রণ করতে হবে এবং নির্ধারিত ব্যবস্থায় ব্যবহারের জন্য release করতে হবে। Weighing, dispensing, line clearance, equipment setup, processing, packaging এবং labeling-এর প্রতিটি ধাপে ঝুঁকি অনুযায়ী নিয়ন্ত্রণ দরকার।
+
+Validation হলো নথিভুক্ত প্রমাণ, যার মাধ্যমে দেখানো হয় যে কোনো process, method বা system নির্ধারিত শর্তে ধারাবাহিকভাবে প্রত্যাশিত ফল দিতে পারে। Qualification দেখায় যে ভবন, utility বা equipment নির্দিষ্ট ব্যবহারের উপযোগী। এগুলো একবারের সফল batch বা installation check নয়। পরিকল্পনা, নথিভুক্ত প্রমাণ, পর্যবেক্ষণ এবং পরিবর্তনের পর পর্যালোচনা—সবই lifecycle approach-এর অংশ।
+
+উদাহরণ হিসেবে, tablet manufacturing process validation-এ পণ্যের ধরন অনুযায়ী blending, granulation, compression ও coating-এর মতো গুরুত্বপূর্ণ ধাপ এবং parameter মূল্যায়ন করা হতে পারে। নির্দিষ্ট পণ্য, process knowledge, ঝুঁকি এবং প্রযোজ্য guideline অনুযায়ী পদ্ধতি নির্ধারিত হয়; সব ওষুধের জন্য একই validation recipe প্রযোজ্য নয়।
+
+### ৭. Quality Assurance, Quality Control ও Quality Unit
+
+Quality Assurance (QA) হলো পরিকল্পিত ও পদ্ধতিগত ব্যবস্থা, যা নিশ্চিত করতে সাহায্য করে যে গুণগত শর্ত পূরণ হবে। এর মধ্যে quality governance, procedure, training, audit, change control, deviation management, product quality review এবং manufacturing system-এর তদারকি অন্তর্ভুক্ত।
+
+Quality Control (QC) মূলত sampling, specification, testing, documentation এবং পরীক্ষার ফলাফল থেকে উদ্ভূত যাচাইয়ের ওপর কাজ করে। QC laboratory-তে starting material, packaging material, in-process sample এবং finished product অনুমোদিত method ও উপযুক্ত instrument দিয়ে পরীক্ষা করা হতে পারে।
+
+QA ও QC আলাদা হলেও পরস্পর-সম্পূরক। দুর্বল process শুধু test করে ভালো করা যায় না; আবার quality system থাকলেও প্রয়োজনীয় পরীক্ষা নির্ভরযোগ্যভাবে করতে হয়। Pharmaceutical quality system-এ নির্ধারিত স্বাধীন Quality function বা Quality Unit-এর নির্দিষ্ট কর্তৃত্ব থাকে, যার মধ্যে প্রযোজ্য নিয়ম অনুযায়ী review এবং batch disposition-এর দায়িত্বও থাকতে পারে।
+
+### ৮. Deviation, CAPA ও Change Control
+
+Deviation হলো অনুমোদিত নির্দেশনা, specification বা প্রত্যাশিত process condition থেকে বিচ্যুতি। এটি নথিভুক্ত করতে হয়, সম্ভাব্য প্রভাব মূল্যায়ন করতে হয় এবং ঝুঁকি অনুযায়ী তদন্ত করতে হয়। তদন্তের লক্ষ্য হওয়া উচিত মূল কারণ খুঁজে বের করা—শুধু তাৎক্ষণিক ঘটনা বর্ণনা করা বা কোনো ব্যক্তিকে দোষী করা নয়।
+
+CAPA-এর পূর্ণরূপ Corrective and Preventive Action। Corrective Action শনাক্ত সমস্যার কারণ দূর করে; Preventive Action সম্ভাব্য বা পুনরাবৃত্ত সমস্যা কমাতে সাহায্য করে। প্রতিটি action-এর দায়িত্বপ্রাপ্ত ব্যক্তি ও সময়সীমা থাকা উচিত এবং কার্যকারিতা যাচাই করতে হয়। কাজ শেষ হলেই CAPA কার্যকর হয়েছে বলা যায় না, যদি একই সমস্যা আবার ঘটে।
+
+Change Control নিশ্চিত করে যে equipment, supplier, material, process parameter, software, premises বা procedure-এর প্রস্তাবিত পরিবর্তন বাস্তবায়নের আগে যথাযথভাবে মূল্যায়ন, অনুমোদন, নথিভুক্ত ও পর্যালোচনা করা হয়। এতে product quality, validation, regulatory commitment, training এবং documentation update-এর প্রভাব বিবেচনা করা হয়।
+
+### ৯. Supplier Qualification, অভিযোগ ও Recall
+
+কারখানায় কোনো উপকরণ প্রবেশের আগেই quality control শুরু হয়। সরবরাহকারী ও সরবরাহকৃত উপকরণ বা সেবার ঝুঁকি অনুযায়ী মূল্যায়ন ও অনুমোদন করতে হয়। Incoming material-এর পরিচয়, sampling, testing বা অন্যান্য verification, status control এবং storage ঠিকভাবে পরিচালনা করা জরুরি। চুক্তিভিত্তিক গুরুত্বপূর্ণ কাজের ক্ষেত্রে দায়িত্ব স্পষ্ট করে লিখিত চুক্তি এবং উপযুক্ত তদারকি দরকার।
+
+GMP শুধু production line-এ সীমাবদ্ধ নয়। অভিযোগ নথিভুক্ত, মূল্যায়ন ও তদন্ত করতে হয়। কোনো batch প্রভাবিত হতে পারে কি না তা যাচাই করতে হয়। Product defect বা safety concern থাকলে দ্রুত ব্যবস্থা নেওয়ার জন্য recall procedure থাকতে হবে। Self-inspection ও supplier audit গুরুতর সমস্যা হওয়ার আগেই দুর্বলতা শনাক্ত করতে সাহায্য করে।
+
+### ১০. বাংলাদেশে GMP-এর গুরুত্ব ও আইনগত প্রেক্ষাপট
+
+বাংলাদেশের বর্তমান আইনগত কাঠামোর একটি গুরুত্বপূর্ণ অংশ হলো ঔষধ ও কসমেটিকস আইন, ২০২৩। এই আইনের ধারা ১৭-তে ঔষধ উৎপাদনকারী বা বিক্রয়কারী প্রতিষ্ঠানকে উৎপাদন, মান নিয়ন্ত্রণ, বিতরণ, সরবরাহ ও সংরক্ষণের ক্ষেত্রে WHO Good Practices অনুসরণের কথা বলা হয়েছে। সরকার WHO এবং স্বীকৃত আন্তর্জাতিক সংস্থার guideline অনুসরণ করে সংশ্লিষ্ট নির্দেশিকা প্রণয়ন করতে পারে।
+
+DGDA ১১ মে ২০১৮ তারিখে একটি অফিস আদেশের মাধ্যমে WHO-এর নির্দিষ্ট Good Practice guideline গ্রহণের কথা জানায়; এর মধ্যে WHO GMP for pharmaceutical products, TRS 986 (2014), Annex 2 অন্তর্ভুক্ত। তবে এই আদেশকে বর্তমান ২০২৩ সালের আইন, প্রযোজ্য বিধি, DGDA-এর সাম্প্রতিক নোটিশ, লাইসেন্সের শর্ত এবং পণ্যভিত্তিক প্রয়োজনীয়তার সঙ্গে মিলিয়ে পড়তে হবে। শুধু পুরোনো একটি circular দেখে বর্তমান সব নিয়ম নির্ধারণ করা উচিত নয়।
+
+আন্তর্জাতিক guideline এবং বাংলাদেশের আইন একই বিষয় নয়। উদাহরণস্বরূপ, US FDA-এর 21 CFR Parts 210 ও 211 যুক্তরাষ্ট্রের নিয়ন্ত্রক কাঠামোর মধ্যে প্রযোজ্য। এগুলো তুলনামূলক reference হতে পারে, কিন্তু বাংলাদেশের আইন হিসেবে উপস্থাপন করা যাবে না। একইভাবে ICH Q10 পুরো product lifecycle-এ pharmaceutical quality system-এর একটি harmonised model; এর বাস্তবায়ন ও আইনগত প্রভাব সংশ্লিষ্ট দেশের নিয়ন্ত্রক কাঠামো ও প্রতিশ্রুতির ওপর নির্ভর করে।
+
+### ১১. রোগীর জন্য GMP কেন গুরুত্বপূর্ণ?
+
+একজন রোগী কারখানা পরিদর্শন করতে পারেন না, batch record যাচাই করতে পারেন না বা ওষুধ খাওয়ার আগে নিজে laboratory test করতে পারেন না। তাই উৎপাদনকারী ও নিয়ন্ত্রক সংস্থার ওপর নির্ভর করতে হয়, যাতে ওষুধ নিয়ন্ত্রিত পরিবেশে তৈরি হয়। GMP contamination, mix-up, ভুল strength, packaging defect এবং অনিয়ন্ত্রিত process-এর ঝুঁকি কমাতে সাহায্য করে। তবে এটি clinical evaluation, সঠিক prescribing, যথাযথ storage বা বাজারজাতকরণের পর safety monitoring-এর বিকল্প নয়।
+
+মূল বিষয়গুলো
+- GMP হলো সম্পূর্ণ নথিভুক্ত quality system—শুধু পরিচ্ছন্নতা বা final product testing নয়।
+- কর্মী, ভবন, যন্ত্রপাতি, উপকরণ, পদ্ধতি ও রেকর্ড একসঙ্গে কাজ করতে হয়।
+- Validation, qualification ও process control উৎপাদনের উপযোগিতা ও ধারাবাহিকতার প্রমাণ দেয়।
+- Deviation, CAPA ও change control সমস্যা তদন্ত ও পুনরাবৃত্তি প্রতিরোধে সাহায্য করে।
+- QA ও QC-এর দায়িত্ব আলাদা, তবে একে অপরের পরিপূরক।
+- বাংলাদেশে ঔষধ ও কসমেটিকস আইন, ২০২৩-এর ধারা ১৭ একটি গুরুত্বপূর্ণ আইনগত ভিত্তি; পাশাপাশি বর্তমান DGDA নির্দেশনা যাচাই করতে হয়।
+
+### সাধারণ জিজ্ঞাসা
+
+#### GMP কি শুধু Quality Control বা মান পরীক্ষা?
+
+না। Quality Control GMP-এর একটি অংশ। GMP-এর মধ্যে কর্মী, ভবন, যন্ত্রপাতি, নথিপত্র, উৎপাদন, প্রক্রিয়া যাচাই, সরবরাহকারী নিয়ন্ত্রণ, বিচ্যুতি তদন্ত এবং সামগ্রিক গুণগত ব্যবস্থাপনা অন্তর্ভুক্ত।
+
+#### GMP থাকলে কি প্রতিটি ওষুধ শতভাগ ত্রুটিমুক্ত হবে?
+
+না। কোনো ব্যবস্থাই সব ঝুঁকি পুরোপুরি দূর করতে পারে না। GMP ঝুঁকি কমাতে, নিয়ন্ত্রণ করতে, সমস্যা শনাক্ত করতে এবং পুনরাবৃত্তি ঠেকাতে সাহায্য করে।
+
+#### Quality Assurance ও Quality Control-এর পার্থক্য কী?
+
+Quality Assurance হলো এমন পরিকল্পিত ব্যবস্থা যা গুণগত মান নিশ্চিত করার প্রক্রিয়া তৈরি করে। Quality Control হলো নমুনা সংগ্রহ, নির্ধারিত specification অনুযায়ী পরীক্ষা এবং সংশ্লিষ্ট যাচাই। দুটো একসঙ্গে কাজ করে, তবে একই বিষয় নয়।
+
+#### GMP-তে CAPA বলতে কী বোঝায়?
+
+CAPA-এর পূর্ণরূপ Corrective and Preventive Action। Corrective Action শনাক্ত হওয়া সমস্যার কারণ দূর করতে কাজ করে; Preventive Action সম্ভাব্য বা পুনরাবৃত্ত সমস্যা প্রতিরোধে কাজ করে।
+
+#### বাংলাদেশে GMP কি আইনগতভাবে গুরুত্বপূর্ণ?
+
+হ্যাঁ। ঔষধ ও কসমেটিকস আইন, ২০২৩-এর ধারা ১৭-তে উৎপাদন, মান নিয়ন্ত্রণ, বিতরণ, সরবরাহ ও সংরক্ষণের ক্ষেত্রে WHO Good Practices অনুসরণের কথা বলা হয়েছে। পাশাপাশি DGDA-এর প্রযোজ্য নির্দেশনা, বিধি ও লাইসেন্সের শর্ত মানতে হয়।
+
+#### US FDA-এর cGMP নিয়ম কি বাংলাদেশে সরাসরি আইন?
+
+না। US FDA-এর নিয়ম তাদের নিজস্ব আইনগত পরিসরে প্রযোজ্য। এগুলো তুলনামূলক রেফারেন্স হতে পারে, কিন্তু বাংলাদেশে কী প্রযোজ্য তা বাংলাদেশের আইন ও DGDA-এর নির্দেশনা থেকে নির্ধারণ করতে হবে।
+
+#### উৎপাদন অন্য প্রতিষ্ঠানের মাধ্যমে করালেও কি মানের দায়িত্ব থাকে?
+
+হ্যাঁ। চুক্তিভিত্তিক উৎপাদন বা পরীক্ষা হলে লিখিত চুক্তিতে দায়িত্ব নির্ধারণ, কাজের তদারকি এবং প্রযোজ্য মান অনুসরণ নিশ্চিত করতে হয়। কাজ আউটসোর্স করলেই গুণগত দায়িত্ব শেষ হয়ে যায় না।
+
+### তথ্যসূত্র ও আরও পড়ুন
+
+- World Health Organization. WHO good manufacturing practices for pharmaceutical products: main principles. WHO Technical Report Series 986, Annex 2 (2014).
+
+- World Health Organization. Quality assurance of pharmaceuticals: a compendium of guidelines and related materials, 10th edition, Volume 2 (2024).
+
+- Government of Bangladesh. ঔষধ ও কসমেটিকস আইন, ২০২৩, section 17.
+
+- Directorate General of Drug Administration (DGDA). Office order adopting WHO Good Practice guidelines (11 May 2018).
+
+- International Council for Harmonisation. ICH Q10: Pharmaceutical Quality System (Step 4, 2008).
+
+- US Food and Drug Administration. Current Good Manufacturing Practice (CGMP) Regulations.
+
+শিক্ষামূলক নোট: এই লেখা pharmaceutical quality-এর সাধারণ নীতিমালা ব্যাখ্যা করে। এটি বর্তমান আইন, DGDA-এর নির্দেশনা, কোনো প্রতিষ্ঠানের অনুমোদিত quality system অথবা যোগ্য regulatory professional-এর পরামর্শের বিকল্প নয়।
+
+লেখক পরিচিতি
+সায়েদুল আবরার একজন ফার্মাসিস্ট ও ফার্মাসিউটিক্যাল পণ্য ব্যবস্থাপনা পেশাজীবী। তিনি ওষুধ, ফার্মাকোলজি এবং ওষুধশিল্প নিয়ে শিক্ষামূলক লেখা প্রকাশ করেন।
+
+সম্পর্কিত লেখা: বাংলাদেশের ওষুধ শিল্প কীভাবে কাজ করে? · API: কাঁচামাল থেকে ওষুধ
+
+---
+
 ### Good Manufacturing Practices (GMP): The Foundation of Pharmaceutical Quality
 URL: https://sayedulabrar.site/blog/good-manufacturing-practices-gmp-pharmaceutical-quality/ · Language: English · Published: 2026-11-19 · Author: Sayedul Abrar, pharmacist
 Summary: What is GMP in pharmaceuticals? Learn how people, premises, equipment, documentation, validation, CAPA and Bangladesh DGDA requirements work together to protect medicine quality.
