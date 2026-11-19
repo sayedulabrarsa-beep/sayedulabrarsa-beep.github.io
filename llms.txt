@@ -64,6 +64,8 @@ Clinical-content boundaries:
 
 <!--articles:start-->
 Pharma Blog articles (newest first; each is educational, not medical advice):
+- Good Manufacturing Practices (GMP): The Foundation of Pharmaceutical Quality — English (2026-11-19): https://sayedulabrar.site/blog/good-manufacturing-practices-gmp-pharmaceutical-quality/
+  Summary: What is GMP in pharmaceuticals? Learn how people, premises, equipment, documentation, validation, CAPA and Bangladesh DGDA requirements work together to protect medicine quality.
 - ওষুধের বিপাক: শরীর কীভাবে ওষুধকে পরিবর্তন করে? — বাংলা (2026-11-18): https://sayedulabrar.site/blog/drug-metabolism-how-the-body-processes-medicines-bangla/
   Summary: Drug metabolism, যকৃত, enzyme, active metabolite এবং first-pass metabolism সম্পর্কে সহজ ও প্রমাণভিত্তিক ধারণা।
 - Drug Metabolism: How Does the Body Process Medicines? — English (2026-11-18): https://sayedulabrar.site/blog/drug-metabolism-how-the-body-processes-medicines/

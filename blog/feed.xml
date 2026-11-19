@@ -6,8 +6,18 @@
     <atom:link href="https://sayedulabrar.site/blog/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Pharmacist-written educational articles in English and Bangla on medicines, pharmacology and the pharmaceutical industry in Bangladesh, by Sayedul Abrar.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 18 Nov 2026 06:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 06:00:00 +0000</lastBuildDate>
     <image><url>https://sayedulabrar.site/assets/img/social/pharma-blog-social-preview.jpg</url><title>Pharma Blog | Sayedul Abrar</title><link>https://sayedulabrar.site/blog/</link></image>
+    <item>
+      <title>Good Manufacturing Practices (GMP): The Foundation of Pharmaceutical Quality</title>
+      <link>https://sayedulabrar.site/blog/good-manufacturing-practices-gmp-pharmaceutical-quality/</link>
+      <guid isPermaLink="true">https://sayedulabrar.site/blog/good-manufacturing-practices-gmp-pharmaceutical-quality/</guid>
+      <pubDate>Thu, 19 Nov 2026 06:00:00 +0000</pubDate>
+      <dc:creator>Sayedul Abrar</dc:creator>
+      <dc:language>en</dc:language>
+      <description>What is GMP in pharmaceuticals? Learn how people, premises, equipment, documentation, validation, CAPA and Bangladesh DGDA requirements work together to protect medicine quality.</description>
+      <enclosure url="https://sayedulabrar.site/assets/img/blog/pharma-industry/gmp-quality-assurance-and-quality-control-qa-qc-explained.webp" type="image/webp" length="264804"/>
+    </item>
     <item>
       <title>ওষুধের বিপাক: শরীর কীভাবে ওষুধকে পরিবর্তন করে?</title>
       <link>https://sayedulabrar.site/blog/drug-metabolism-how-the-body-processes-medicines-bangla/</link>
