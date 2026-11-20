@@ -67,7 +67,7 @@
   (R[slug]||[]).forEach(add);
   ORDER.forEach(function(k){if(A[k][0]===me[0])add(k)});
   ORDER.forEach(add);
-  var more=ORDER.filter(function(k){return k!==slug&&rel.indexOf(k)<0});
+  var more=ORDER.filter(function(k){return k!==slug&&k!=='how-do-medicines-work-in-the-body'&&rel.indexOf(k)<0});
   if(more.length<4)more=ORDER.filter(function(k){return k!==slug});
   var paneBn=document.getElementById('pane-bn');
   var htmlBn=document.documentElement.lang==='bn';
@@ -102,17 +102,19 @@
   var head2=el('div','ae-head ae-head2');
   var eyebrow2=el('p','ae-eyebrow'),h2b=el('h2','ae-title ae-title2');h2b.id='ae-title2';
   head2.append(eyebrow2,h2b);
-  var track=el('div','ae-track ae-mq ae-run');
+  var track=el('div','ae-track ae-mq');
   track.setAttribute('aria-labelledby','ae-title2');
   var inner=el('div','ae-mq-in');track.appendChild(inner);
-  /* two copies so the strip loops without a gap; about 9 seconds per card keeps it slow and readable */
+  /* One copy only: readers control the row by swiping, scrolling or dragging. */
   more.forEach(function(k){card(k,inner)});
-  more.forEach(function(k){card(k,inner,true)});
-  track.style.setProperty('--ae-dur',Math.max(45,more.length*9)+'s');
-  /* touch: pause while a finger is on the strip, resume shortly after */
-  var hold;
-  track.addEventListener('touchstart',function(){clearTimeout(hold);track.classList.add('ae-hold')},{passive:true});
-  track.addEventListener('touchend',function(){clearTimeout(hold);hold=setTimeout(function(){track.classList.remove('ae-hold')},1500)},{passive:true});
+  track.setAttribute('tabindex','0');
+  track.setAttribute('role','region');
+  track.setAttribute('aria-label','More articles. Swipe or scroll horizontally to browse.');
+  var down=false,startX=0,scrollStart=0,moved=false;
+  track.addEventListener('pointerdown',function(e){if(e.pointerType==='mouse'&&e.button!==0)return;down=true;moved=false;startX=e.clientX;scrollStart=track.scrollLeft;track.classList.add('ae-dragging');});
+  track.addEventListener('pointermove',function(e){if(!down)return;var dx=e.clientX-startX;if(Math.abs(dx)>5)moved=true;if(moved){track.scrollLeft=scrollStart-dx;e.preventDefault();}});
+  ['pointerup','pointercancel','pointerleave'].forEach(function(name){track.addEventListener(name,function(){down=false;track.classList.remove('ae-dragging');});});
+  track.addEventListener('click',function(e){if(moved){e.preventDefault();e.stopPropagation();moved=false;}},true);
   wrap.append(head,grid,head2,track);
 
   /* the plain-HTML link list is for search engines and no-JS readers; the band replaces it */
