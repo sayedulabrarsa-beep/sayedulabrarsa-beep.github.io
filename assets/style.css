@@ -3867,3 +3867,8 @@ body.pf-page footer .cr,body.pf-page footer small{color:#d9c6a2}
   .cab-dlg-top{flex-shrink:0}
   .cab-dlg-grid{min-height:0}
 }
+
+/* Preserve the complete Drug Metabolism cover in its Pharma Blog card. */
+.pb-card-image-contain{background:#f2f0e9!important;}
+.pb-card-image-contain img{object-fit:contain!important;transform:none!important;}
+.pb-feature-card:hover .pb-card-image-contain img{transform:none!important;}
