@@ -93,7 +93,7 @@ Pharma Blog articles (newest first; each is educational, not medical advice):
 - How Do Medicines Work Inside the Human Body? — English (2026-11-12): https://sayedulabrar.site/blog/how-do-medicines-work-in-the-body/
   Summary: Learn how medicines work in the human body. Explore pharmacology, ADME, drug absorption, distribution, metabolism, excretion, receptors and drug effects.
 - বাংলাদেশের ওষুধ শিল্প কীভাবে কাজ করে? — বাংলা (2026-11-10): https://sayedulabrar.site/blog/what-is-the-pharmaceutical-industry-bangla/
-  Summary: বাংলাদেশের ওষুধ শিল্প কীভাবে কাজ করে জানুন—API, স্থানীয় উৎপাদন, DGDA, GMP, মান নিয়ন্ত্রণ ও ওষুধ বিতরণ নিয়ে সহজ বাংলা গাইড। লিখেছেন ফার্মাসিস্ট সায়েদুল আবরার।
+  Summary: বাংলাদেশের ওষুধ শিল্প কীভাবে কাজ করে জানুন—API, স্থানীয় উৎপাদন, DGDA, GMP, মান নিয়ন্ত্রণ ও ওষুধ বিতরণ নিয়ে সহজ বাংলা গাইড। লিখেছেন ফার্মাসিস্ট সাইয়্যেদুল আবরার।
 - Pharmaceutical Industry in Bangladesh: How It Works — English (2026-11-10): https://sayedulabrar.site/blog/what-is-the-pharmaceutical-industry/
   Summary: Learn how Bangladesh’s pharma industry works: APIs, medicine manufacturing, DGDA, GMP, quality control and distribution. By pharmacist Sayedul Abrar.
 - গ্যাসের ওষুধ খাওয়ার সঠিক নিয়ম: খাবারের আগে কখন খাবেন, সাধারণ ভুল (রাবেপ্রাজল, ওমিপ্রাজল) — বাংলা (2026-11-09): https://sayedulabrar.site/blog/when-to-take-ppi-before-meals-bangla/
@@ -113,7 +113,7 @@ Pharma Blog articles (newest first; each is educational, not medical advice):
 - Glucosamine and Alzheimer's: What the New Nature Metabolism Study Really Shows (and What It Doesn't) — English (2026-11-01): https://sayedulabrar.site/blog/glucosamine-alzheimers-nature-metabolism-study/
   Summary: Does glucosamine worsen Alzheimer's? A pharmacist reviews the 2026 Nature Metabolism study, mouse findings, patient records, dose, limitations and practical meaning.
 - বুক জ্বালাপোড়া, অ্যাসিড রিফ্লাক্স ও GERD: লক্ষণ, কারণ ও কখন ডাক্তার দেখাবেন — বাংলা (2026-10-30): https://sayedulabrar.site/blog/heartburn-vs-acid-reflux-vs-gerd-bangla/
-  Summary: বুক জ্বালাপোড়া, অ্যাসিড রিফ্লাক্স ও GERD-এর পার্থক্য, লক্ষণ, কারণ, ৭টি অভ্যাস, বিপদ-সংকেত এবং কখন ডাক্তার দেখাবেন—ফার্মাসিস্ট সায়েদুল আবরারের সহজ গাইড।
+  Summary: বুক জ্বালাপোড়া, অ্যাসিড রিফ্লাক্স ও GERD-এর পার্থক্য, লক্ষণ, কারণ, ৭টি অভ্যাস, বিপদ-সংকেত এবং কখন ডাক্তার দেখাবেন—ফার্মাসিস্ট সাইয়্যেদুল আবরারের সহজ গাইড।
 - Heartburn vs Acid Reflux vs GERD: Symptoms, Triggers and When to See a Doctor — English (2026-10-30): https://sayedulabrar.site/blog/heartburn-vs-acid-reflux-vs-gerd/
   Summary: Heartburn vs acid reflux vs GERD: understand the differences, symptoms, common triggers, 7 lifestyle tips, warning signs and when to see a doctor.
 - ওষুধের মেয়াদ শেষ হওয়ার তারিখ (EXP) ও উৎপাদনের তারিখ (MFG): পার্থক্য ও পড়ার নিয়ম — বাংলা (2026-10-28): https://sayedulabrar.site/blog/expiry-date-vs-manufacturing-date-medicine-bangla/
