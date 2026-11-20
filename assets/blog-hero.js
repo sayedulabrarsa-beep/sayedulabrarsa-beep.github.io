@@ -68,7 +68,7 @@
     /* Keep neighbouring article cards apart as the collection grows. The vertical pitch
        scales with the responsive card size; every new article is included automatically. */
     var pitch = w < 540 ? 94 : w < 900 ? 118 : 154;
-    R = stage.dataset.r ? +stage.dataset.r : w < 540 ? Math.min(170, w * 0.455) : w < 900 ? Math.min(270, w * 0.36) : Math.min(520, w * 0.36);
+    R = stage.dataset.r ? +stage.dataset.r : w < 540 ? Math.min(200, w * 0.535) : w < 900 ? Math.min(270, w * 0.36) : Math.min(520, w * 0.36);
     H = Math.max(stage.clientHeight * 1.35, N * pitch);
     push = w < 540 ? 1.15 : 1.05;
   }
