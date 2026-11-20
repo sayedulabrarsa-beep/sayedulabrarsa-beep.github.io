@@ -119,7 +119,7 @@
       /* Seamless marquee: recycle the existing links, preserve their order/offset across page navigation,
          and let pointer dragging track the user's finger or mouse exactly. */
       var navMotionOK=!(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches);
-      if(navMotionOK&&menu.children.length){
+      if(false&&navMotionOK&&menu.children.length){
         /* Right-to-left marquee with NO duplicate links. The gap is widened so the real links always cover the
            visible width; when the first link has fully left the view it is moved to the end (recycled).
            Links stay clickable: the pointer is captured only after a real drag (>6px). */
