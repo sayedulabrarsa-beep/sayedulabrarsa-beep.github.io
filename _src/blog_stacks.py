@@ -9,6 +9,11 @@ R = pathlib.Path(__file__).resolve().parent.parent
 e = html.escape
 
 def open_image(path):
+    # Article image references may include cache-busting query strings or fragments.
+    # They are browser metadata, not part of the local filesystem path.
+    path = path.split("#", 1)[0].split("?", 1)[0]
+    if path.startswith("https://sayedulabrar.site/"):
+        path = path[len("https://sayedulabrar.site"):]
     p = R / path.lstrip("/")
     if p.suffix.lower() == ".svg":
         data = cairosvg.svg2png(url=str(p))
