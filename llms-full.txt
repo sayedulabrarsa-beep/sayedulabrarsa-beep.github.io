@@ -3583,7 +3583,7 @@ So the two names answer two different questions:
 - Brand name → “What is this product called?”ব্র্যান্ড নাম → “এই পণ্যটির নাম কী?”
 Two boxes can have different brand names and still contain the same ingredient.
 দুটি বাক্সের ব্র্যান্ড নাম আলাদা হলেও ভেতরের উপাদান এক হতে পারে।
-লেখক: সায়েদুল আবরার, ফার্মাসিস্ট · প্রকাশ: ২৭ অক্টোবর ২০২৬ · হালনাগাদ: ৩১ অক্টোবর ২০২৬
+লেখক: সাইয়্যেদুল আবরার, ফার্মাসিস্ট · প্রকাশ: ২৭ অক্টোবর ২০২৬ · হালনাগাদ: ৩১ অক্টোবর ২০২৬
 
 ### The 10-second trick: find the small name১০ সেকেন্ডের কৌশল: ছোট নামটি খুঁজুন
 
