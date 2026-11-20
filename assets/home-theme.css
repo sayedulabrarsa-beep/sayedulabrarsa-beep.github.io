@@ -1,0 +1,140 @@
+/* Homepage colour theme: navy, gold and mist. Generated; loaded only on the homepage. */
+:root{--accent:#7c5a1f}
+header .bar>.logo{color:#7c5a1f}
+header .menu>li>a:hover,header .menu>li>a[aria-current=page]{color:#7c5a1f}
+header .menu a[aria-current=page]{box-shadow:inset 0 -2px 0 #7c5a1f}
+.site-search-form button{background:#7c5a1f}
+@media (max-width:700px){header .bar>.logo{color:#7c5a1f}}
+@media (max-width:700px){header .menu>li>a[aria-current=page]{background:#edf1f6 !important;color:#7c5a1f !important}}
+body:not(.contact-editorial):not(.pharma-blog) header{background:#f5f7fa;border-bottom:1px solid #cfd9e5}
+body:not(.contact-editorial):not(.pharma-blog) header .logo{color:#1a2e52}
+body:not(.contact-editorial):not(.pharma-blog) header .menu a{color:#161f35}
+body:not(.contact-editorial):not(.pharma-blog) header .menu a:hover,body:not(.contact-editorial):not(.pharma-blog) header .menu a[aria-current="page"]{color:#c58f31}
+body:not(.contact-editorial):not(.pharma-blog) header .menu a[aria-current="page"]:after{background:#c58f31}
+header{background:#f5f7fa !important;border-bottom:1px solid #cfd9e5 !important;color:#161f35 !important}
+header .bar>.logo{color:#1a2e52 !important}
+header .menu>li>a{color:#161f35 !important}
+header .menu>li>a:hover,header .menu>li>a[aria-current="page"]{color:#c58f31 !important}
+header .menu a[aria-current="page"]{box-shadow:inset 0 -2px 0 #c58f31 !important}
+header .bar>.site-search-toggle{color:#b6c5d8 !important}
+header .bar>.site-menu-toggle{color:#b6c5d8 !important}
+header .site-search-form{background:#f5f7fa !important;border:1px solid #cfd9e5 !important}
+header .site-search-form input{border:1px solid #cfd9e5;color:#161f35}
+header .site-search-form button{background:#c58f31}
+.site-nav-card{background:#f5f7fa;border:1px solid #cfd9e5}
+.site-nav-overlay-close{border:1px solid #cfd9e5;color:#1a2e52}
+.site-nav-overlay-profile{background:#ccd6e4}
+.site-nav-overlay-profile img{border:3px solid #f5f7fa;background:#f5f7fa}
+.site-nav-overlay-profile h2{color:#1a2e52}
+.site-nav-overlay-profile p{color:#444a58}
+.site-nav-overlay-links>a{color:#af7f2c}
+.site-nav-overlay-links>a:hover,.site-nav-overlay-links>a[aria-current="page"]{color:#1a2e52}
+.site-nav-overlay-links .overlay-contact{color:#161f35;border-bottom:1px solid #c58f31}
+.home-editorial{--ed-cream:#f5f7fa;--ed-peach:#ccd6e4;--ed-teal:#1a2e52;--ed-coral:#c69032;--ed-ink:#0e1a2e;--ed-muted:#4e5566;--ed-paper:#fefcf9}
+.ed-btn{box-shadow:4px 4px 0 rgba(26,46,82,.12)}
+.ed-btn:hover{box-shadow:6px 6px 0 rgba(26,46,82,.16)}
+.ed-text-link,.ed-arrow-link{border-bottom:1px solid #b6bdc6}
+.ed-signoff{color:#6c768c}
+.ed-collage:after{border:1px solid #d5a758}
+.ed-photo{box-shadow:0 8px 26px rgba(29,42,71,.12)}
+.ed-hero-bottom{border-top:1px solid #d1d9e3}
+.ed-paths{border-top:1px solid #d7dfea;border-bottom:1px solid #d7dfea}
+.ed-pills a{background:#d5a656}
+.ed-band-copy>p:not(.ed-kicker){color:#454b5a}
+.ed-focus-list{box-shadow:12px 12px 0 rgba(26,46,82,.08)}
+.ed-focus-list>a{border-bottom:1px solid #d7dee6}
+.ed-recognition-copy .ed-script{color:#c2cede}
+.ed-recognition-copy .ed-kicker{color:#b4c3d7}
+.ed-recognition h2 em{color:#b4c3d7}
+.ed-recognition-copy>p:not(.ed-script):not(.ed-kicker){color:#e3e8ee}
+.ed-award-chips span{border:1px solid #3b69ba;color:#f8fafc}
+.ed-diu-mark{box-shadow:0 8px 25px rgba(14,25,44,.1)}
+.ed-education-note{background:#e8c173;box-shadow:4px 4px 0 rgba(26,46,82,.13)}
+.ed-final-cta{background:#ccd6e4}
+.ed-final-cta:before,.ed-final-cta:after{border:1px solid rgba(26,46,82,.16)}
+.ed-final-cta>p:not(.ed-script){color:#4e5566}
+.ed-btn-light{box-shadow:4px 4px 0 rgba(198,144,50,.15)}
+.ed-cta-social{border-bottom:1px solid #b6bdc6}
+@media (max-width:640px){.ed-focus-list{box-shadow:6px 6px 0 rgba(26,46,82,.08)}}
+header nav:before{background:#f5f7fa !important}
+header nav{border-top-color:#cfd9e5 !important}
+header .bar>.site-search-toggle,header .bar>.site-menu-toggle{color:#1a2e52 !important}
+@media (max-width:700px),(min-width:701px) and (max-aspect-ratio:11/20){.ed-hero{background:linear-gradient(180deg,#f5f7fa,#ebeff4)}}
+@media (max-width:700px),(min-width:701px) and (max-aspect-ratio:11/20){.ed-hero .ed-kicker:after{color:#1a2e52}}
+@media (max-width:700px),(min-width:701px) and (max-aspect-ratio:11/20){.ed-mobile-name{color:#1a2e52}}
+@media (max-width:700px),(min-width:701px) and (max-aspect-ratio:11/20){.ed-mobile-name em{color:#c69032}}
+@media (max-width:700px),(min-width:701px) and (max-aspect-ratio:11/20){.ed-collage:before{background:#ccd6e4}}
+.home-logo-belt{background:var(--ed-paper,#fefcf9);border-top:1px solid #d7dfea;border-bottom:1px solid #d7dfea}
+.home-logo-belt-heading h2{color:var(--ed-teal,#1a2e52)}
+.home-logo-belt-heading h2 em{color:var(--ed-coral,#c69032)}
+.home-logo-belt-heading>p:last-child{color:var(--ed-muted,#4e5566)}
+.home-logo-track figure{border:1px solid #dbe0e7;box-shadow:0 7px 20px rgba(16,29,50,.07)}
+.home-logo-track figcaption{color:#535b6c}
+:root{--vlog-cream:#f5f7fa;--vlog-peach:#ccd6e4;--vlog-coral:#c48e31;--vlog-forest:#1b3055;--vlog-ink:#131b2f;--vlog-paper:#fcfcfd}
+header .bar>.logo{box-shadow:0 1px 0 rgba(24,35,60,.035)}
+header .menu a.is-current,header .menu a[aria-current="page"],.site-nav-overlay a[aria-current="page"]{background:rgba(124,90,31,.16) !important}
+header .menu>li>a.is-current,header .menu>li>a[aria-current="page"]{background:rgba(124,90,31,.18) !important}
+.st-section{background:var(--ed-cream,#f5f7fa);color:#0e1a2e}
+.st-head h2{color:#1a2e52}
+.st-head-side p{color:#4e5566}
+.st-line{background:#1a2e52}
+.st-stack:focus-visible{outline:3px solid #c69032}
+.st-pin{background:linear-gradient(90deg,#a67829,#c69032 45%,#a37629)}
+.st-sheet{background:#ccd6e4}
+.st-s2{background:#b6c5d8}
+.st-card{border:1px solid #d9e1eb;color:#101728}
+.st-cap em{color:#4e5566}
+.st-count{background:#1a2e52}
+.st-link{color:#1a2e52}
+.st-link:hover{color:#c69032;border-color:#c69032}
+.st-hint{color:#4e5566}
+html body header .wrap.bar,html body header .bar{border:1px solid rgba(181,193,209,.55) !important;background:rgba(245,247,250,.96) !important;box-shadow:0 6px 22px rgba(26,37,64,.10),0 1px 2px rgba(26,37,64,.06) !important}
+html body header .bar>.logo{color:#1a2e52 !important}
+html body header .menu>li>a:hover,html body header .menu>li>a:focus-visible{background:rgba(26,46,82,.09) !important;color:#1a2e52 !important}
+html body header .menu a[aria-current=page]{background:rgba(124,90,31,.12) !important;color:#6c4e1b !important}
+html body header .bar>.site-search-toggle{color:#1a2e52 !important}
+html body header .bar>.site-search-toggle:hover{background:rgba(26,46,82,.09) !important}
+html body header .bar>.site-menu-toggle{background:#1a2e52 !important}
+html body header .bar>.site-menu-toggle:hover{background:#152542 !important}
+html body header .wrap.bar,html body header .bar{background:rgba(245,247,250,.96) !important;box-shadow:0 6px 22px rgba(26,37,64,.10),0 1px 2px rgba(26,37,64,.06) !important}
+.hm-f1{stroke:#c69032}
+.hm-f2{stroke:#1a2e52}
+.hm-f3{stroke:#1a2e52}
+.hm-f4{stroke:#c69032}
+.hm-f5{stroke:#d5a758}
+header .bar>.logo{color:#634819 !important}
+header .menu>li>a:hover,header .menu>li>a[aria-current=page]{color:#634819 !important}
+.site-search-form button{background-color:#6f511c !important}
+@media (max-width:700px){header .bar>.logo{color:#634819 !important}}
+@media (max-width:700px){header .menu>li>a[aria-current=page]{color:#634819 !important}}
+body:not(.contact-editorial):not(.pharma-blog) header .menu a:hover,body:not(.contact-editorial):not(.pharma-blog) header .menu a[aria-current="page"]{color:#866122 !important}
+body:not(.contact-editorial):not(.pharma-blog) header .menu a[aria-current="page"]:after{background-color:#9a7027 !important}
+header .menu>li>a:hover,header .menu>li>a[aria-current="page"]{color:#866122 !important}
+header .site-search-form button{background-color:#9a7027 !important}
+.ed-pills a{background-color:#9a7027 !important}
+@media (max-width:700px),(min-width:701px) and (max-aspect-ratio:11/20){.ed-mobile-name em{color:#866122 !important}}
+.st-link:hover{color:#866122 !important}
+:root:not([data-theme="dark"]){--accent:#624718}
+:root{--vlog-coral:#866122}
+.home-editorial .ed-btn:not(.ed-btn-light){background:#9a7027}
+.home-editorial .ed-kicker{color:#866122}
+
+/* Hand-tuned homepage polish (appended after the generated colour map). */
+.home-editorial{--ed-coral:#a8741f;--ed-peach:#e3e9f1;--ed-teal:#1a2e52;--ed-ink:#0e1a2e;--ed-cream:#f5f7fa;--ed-paper:#ffffff}
+
+/* Primary buttons: navy with a gold hover */
+.home-editorial .ed-btn,.home-editorial .ed-paths a{background:#1a2e52 !important;color:#fff !important;border-color:#1a2e52 !important}
+.home-editorial .ed-btn:hover,.home-editorial .ed-btn:focus-visible,.home-editorial .ed-paths a:hover,.home-editorial .ed-paths a:focus-visible{background:#a8741f !important;border-color:#a8741f !important;color:#fff !important}
+
+/* Recognition band: gold accents on navy */
+.home-editorial .ed-recognition h2 em,.home-editorial .ed-recognition .ed-script{color:#e2b860 !important}
+.home-editorial .ed-recognition .ed-btn{background:#d4a94f !important;border-color:#d4a94f !important;color:#1a2e52 !important}
+.home-editorial .ed-recognition .ed-btn:hover,.home-editorial .ed-recognition .ed-btn:focus-visible{background:#fff !important;border-color:#fff !important;color:#1a2e52 !important}
+
+/* Gallery heading matches the other section headings */
+#ed-world-title{font-family:Georgia,"Times New Roman",serif;color:#1a2e52;letter-spacing:-.02em}
+#ed-world-title em{color:#a8741f}
+.ed-world-section .ed-script{color:#a8741f}
+
+/* Footer name in navy */
+footer .logo{color:#1a2e52}
