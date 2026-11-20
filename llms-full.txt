@@ -754,7 +754,7 @@ Educational disclaimer: This article is for general learning and is not personal
 URL: https://sayedulabrar.site/blog/why-complete-antibiotic-course-antibiotic-resistance-bangla/ · Language: Bangla · Published: 2026-11-13 · Author: Sayedul Abrar, pharmacist
 Summary: ভালো লাগলেও অ্যান্টিবায়োটিক কোর্স কেন শেষ করবেন? রেজিস্ট্যান্স, ডোজ মিস, বাকি ওষুধ, পার্শ্বপ্রতিক্রিয়া ও প্যাকের লাল চিহ্ন নিয়ে ফার্মাসিস্টের সহজ গাইড।
 
-লিখেছেন Sayedul Abrar, ফার্মাসিস্ট · প্রকাশিত ১৩ নভেম্বর ২০২৬
+লিখেছেন সাইয়্যেদুল আবরার, ফার্মাসিস্ট · প্রকাশিত ১৩ নভেম্বর ২০২৬
 
 সহজ উত্তর: ডাক্তার যেভাবে লিখেছেন, ঠিক সেভাবে অ্যান্টিবায়োটিকের পুরো কোর্স শেষ করুন, ভালো লাগলেও। শুধু ডাক্তার বললে আগে বন্ধ করবেন। নিজে থেকে বন্ধ করা, ডোজ বাদ দেওয়া, বাকি ওষুধ রেখে দেওয়া বা অন্যকে দেওয়া সংক্রমণ পুরোপুরি না সারার ঝুঁকি তৈরি করে এবং অ্যান্টিবায়োটিক রেজিস্ট্যান্স বাড়ায়, ফলে ভবিষ্যতের সংক্রমণ সারানো কঠিন হয়।
 
@@ -1276,7 +1276,7 @@ Educational disclaimer: This article is for general learning and is not personal
 URL: https://sayedulabrar.site/blog/how-do-medicines-work-in-the-body-bangla/ · Language: Bangla · Published: 2026-11-12 · Author: Sayedul Abrar, pharmacist
 Summary: মানবদেহে ওষুধ কীভাবে কাজ করে সহজ বাংলায় জানুন। ADME, pharmacokinetics, pharmacodynamics, receptor ও enzyme-এর ভূমিকা বুঝুন।
 
-লিখেছেন Sayedul Abrar, ফার্মাসিস্ট · প্রকাশিত ১২ নভেম্বর ২০২৬
+লিখেছেন সাইয়্যেদুল আবরার, ফার্মাসিস্ট · প্রকাশিত ১২ নভেম্বর ২০২৬
 
 সহজ উত্তর: একটি ওষুধকে শরীরে প্রবেশ করতে হয়, নির্দিষ্ট স্থানে পৌঁছাতে হয় এবং কোনো জৈবিক লক্ষ্যবস্তুর সঙ্গে কাজ করতে হয়। একই সঙ্গে শরীর ওষুধটিকে পরিবর্তন করে এবং বের করে দেয়। ফার্মাকোলজি এই দুই দিকই অধ্যয়ন করে।
 
