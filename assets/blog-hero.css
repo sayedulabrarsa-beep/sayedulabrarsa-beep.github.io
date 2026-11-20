@@ -83,3 +83,18 @@
 .pb-hero.bh .bh-foot{order:5;width:100%;box-sizing:border-box}
 @media(max-width:900px){.pb-hero.bh .bh-stage{height:520px;border-radius:22px}}
 @media(max-width:540px){.pb-hero.bh{padding-top:22px}.pb-hero.bh .bh-stage{width:calc(100% - 20px);height:470px;margin-top:16px;border-radius:18px}.bh-side{margin:16px auto 20px}.bh-side p{font-size:13.5px}.pb-hero.bh .bh-nav{bottom:12px}}
+
+
+/* Responsive breathing room for the rotating article cards.
+   The JS increases the helix height by article count, so future articles keep the same spacing. */
+@media(max-width:540px){
+  .pb-hero.bh .bh-stage{perspective:1050px}
+  .pb-hero.bh .bh-card{width:144px;height:216px;margin:-108px 0 0 -72px}
+  .pb-hero.bh .bh-card-body{padding:10px 10px 9px}
+  .pb-hero.bh .bh-card-title{font-size:11.5px;line-height:1.25;-webkit-line-clamp:4}
+  .pb-hero.bh .bh-card-tag{font-size:7px;letter-spacing:.1em}
+  .pb-hero.bh .bh-card-foot{gap:5px;font-size:7.8px}
+}
+@media(min-width:541px) and (max-width:900px){
+  .pb-hero.bh .bh-card{width:184px;height:264px;margin:-132px 0 0 -92px}
+}
