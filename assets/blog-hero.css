@@ -89,7 +89,7 @@
    The JS increases the helix height by article count, so future articles keep the same spacing. */
 @media(max-width:540px){
   .pb-hero.bh .bh-stage{perspective:1050px}
-  .pb-hero.bh .bh-card{width:144px;height:216px;margin:-108px 0 0 -72px}
+  .pb-hero.bh .bh-card{width:136px;height:210px;margin:-105px 0 0 -68px}
   .pb-hero.bh .bh-card-body{padding:10px 10px 9px}
   .pb-hero.bh .bh-card-title{font-size:11.5px;line-height:1.25;-webkit-line-clamp:4}
   .pb-hero.bh .bh-card-tag{font-size:7px;letter-spacing:.1em}
