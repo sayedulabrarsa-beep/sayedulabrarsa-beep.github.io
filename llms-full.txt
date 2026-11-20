@@ -460,7 +460,7 @@ Educational note: This article explains general pharmaceutical quality principle
 
 ### ওষুধের বিপাক: শরীর কীভাবে ওষুধকে পরিবর্তন করে?
 URL: https://sayedulabrar.site/blog/drug-metabolism-how-the-body-processes-medicines-bangla/ · Language: Bangla · Published: 2026-11-18T20:00:00+06:00 · Author: Sayedul Abrar, pharmacist
-Summary: Drug metabolism, যকৃত, enzyme, active metabolite এবং first-pass metabolism সম্পর্কে সহজ ও প্রমাণভিত্তিক ধারণা।
+Summary: ওষুধের বিপাক কীভাবে হয় জানুন—যকৃত, CYP enzyme, Phase I ও Phase II reaction, first-pass metabolism এবং prodrug activation সহজভাবে ব্যাখ্যা করা হয়েছে।
 
 By Sayedul Abrar, pharmacist · 18 November 2026
 সহজভাবে: Drug metabolism, যকৃত, enzyme, active metabolite এবং first-pass metabolism সম্পর্কে সহজ ও প্রমাণভিত্তিক ধারণা।
@@ -536,7 +536,7 @@ Metabolism ওষুধের রাসায়নিক পরিবর্ত�
 
 ### Drug Metabolism: How Does the Body Process Medicines?
 URL: https://sayedulabrar.site/blog/drug-metabolism-how-the-body-processes-medicines/ · Language: English · Published: 2026-11-18T20:00:00+06:00 · Author: Sayedul Abrar, pharmacist
-Summary: A simple guide to drug metabolism, the liver, enzymes, active metabolites and first-pass metabolism.
+Summary: Understand drug metabolism: how the liver and CYP enzymes process medicines, what Phase I and Phase II reactions mean, and how first-pass metabolism and prodrugs work.
 
 By Sayedul Abrar, pharmacist · 18 November 2026
 In simple terms: A simple guide to drug metabolism, the liver, enzymes, active metabolites and first-pass metabolism.
