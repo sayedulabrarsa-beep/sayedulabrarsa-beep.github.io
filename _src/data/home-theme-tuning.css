@@ -1,0 +1,19 @@
+/* Hand-tuned homepage polish (appended after the generated colour map). */
+.home-editorial{--ed-coral:#a8741f;--ed-peach:#e3e9f1;--ed-teal:#1a2e52;--ed-ink:#0e1a2e;--ed-cream:#f5f7fa;--ed-paper:#ffffff}
+
+/* Primary buttons: navy with a gold hover */
+.home-editorial .ed-btn,.home-editorial .ed-paths a{background:#1a2e52 !important;color:#fff !important;border-color:#1a2e52 !important}
+.home-editorial .ed-btn:hover,.home-editorial .ed-btn:focus-visible,.home-editorial .ed-paths a:hover,.home-editorial .ed-paths a:focus-visible{background:#a8741f !important;border-color:#a8741f !important;color:#fff !important}
+
+/* Recognition band: gold accents on navy */
+.home-editorial .ed-recognition h2 em,.home-editorial .ed-recognition .ed-script{color:#e2b860 !important}
+.home-editorial .ed-recognition .ed-btn{background:#d4a94f !important;border-color:#d4a94f !important;color:#1a2e52 !important}
+.home-editorial .ed-recognition .ed-btn:hover,.home-editorial .ed-recognition .ed-btn:focus-visible{background:#fff !important;border-color:#fff !important;color:#1a2e52 !important}
+
+/* Gallery heading matches the other section headings */
+#ed-world-title{font-family:Georgia,"Times New Roman",serif;color:#1a2e52;letter-spacing:-.02em}
+#ed-world-title em{color:#a8741f}
+.ed-world-section .ed-script{color:#a8741f}
+
+/* Footer name in navy */
+footer .logo{color:#1a2e52}
