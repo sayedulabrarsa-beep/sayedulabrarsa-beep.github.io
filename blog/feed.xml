@@ -6,8 +6,18 @@
     <atom:link href="https://sayedulabrar.site/blog/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Pharmacist-written educational articles in English and Bangla on medicines, pharmacology and the pharmaceutical industry in Bangladesh, by Sayedul Abrar.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 20 Nov 2026 06:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 06:00:00 +0000</lastBuildDate>
     <image><url>https://sayedulabrar.site/assets/img/social/pharma-blog-social-preview.jpg</url><title>Pharma Blog | Sayedul Abrar</title><link>https://sayedulabrar.site/blog/</link></image>
+    <item>
+      <title>Quality Assurance vs Quality Control: What Is the Difference in Pharmaceuticals?</title>
+      <link>https://sayedulabrar.site/blog/quality-assurance-vs-quality-control/</link>
+      <guid isPermaLink="true">https://sayedulabrar.site/blog/quality-assurance-vs-quality-control/</guid>
+      <pubDate>Sat, 21 Nov 2026 06:00:00 +0000</pubDate>
+      <dc:creator>Sayedul Abrar</dc:creator>
+      <dc:language>en</dc:language>
+      <description>Learn the difference between pharmaceutical Quality Assurance (QA) and Quality Control (QC), including responsibilities, testing, GMP, OOS investigations, CAPA and patient safety.</description>
+      <enclosure url="https://sayedulabrar.site/assets/img/blog/gmp/gmp-quality-assurance-versus-quality-control.webp" type="image/webp" length="118026"/>
+    </item>
     <item>
       <title>গুড ম্যানুফ্যাকচারিং প্র্যাকটিস (GMP): ওষুধের গুণগত মান নিশ্চিত করার ভিত্তি</title>
       <link>https://sayedulabrar.site/blog/good-manufacturing-practices-gmp-pharmaceutical-quality-bangla/</link>
