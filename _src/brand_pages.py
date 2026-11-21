@@ -8,7 +8,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "_src"))
 import portfolio_cabinet as C
 e = html.escape
-TOK = "pc5-20261108"
+TOK = "sa-20261121"
 
 PAGES = {
  "finix": dict(ac="#1d9a5b", imgs=[("finix-10-capsule-box", C.P[0]["alt"]), ("finix-20-capsule-box", C.P[1]["alt"]), ("finix-20-tablet-box", C.P[2]["alt"])],

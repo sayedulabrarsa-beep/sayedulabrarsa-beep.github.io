@@ -3872,3 +3872,20 @@ body.pf-page footer .cr,body.pf-page footer small{color:#d9c6a2}
 .pb-card-image-contain{background:#f2f0e9!important;}
 .pb-card-image-contain img{object-fit:contain!important;transform:none!important;}
 .pb-feature-card:hover .pb-card-image-contain img{transform:none!important;}
+
+/* ── Related stories at the end of a Daily Vlog post (21 Nov 2026) ─────────── */
+.vlog-rel{margin:46px 0 8px}
+.vlog-rel h2{font-size:clamp(22px,3.4vw,28px);margin:0 0 6px}
+.vlog-rel p.vlog-rel-sub{margin:0 0 20px;color:#5d5346;font-size:16px}
+.vlog-rel-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(248px,1fr));gap:20px}
+.vlog-rel-card{display:flex;flex-direction:column;background:#fffdf8;border:1px solid rgba(60,48,30,.12);
+  border-radius:18px;overflow:hidden;text-decoration:none;color:inherit;
+  box-shadow:0 6px 20px rgba(60,48,30,.07);transition:transform .22s cubic-bezier(.2,.7,.3,1),box-shadow .22s ease}
+.vlog-rel-card:hover,.vlog-rel-card:focus-visible{transform:translateY(-4px);box-shadow:0 16px 34px rgba(60,48,30,.16)}
+.vlog-rel-card img{width:100%;aspect-ratio:16/10;object-fit:cover;display:block;background:#efe7da}
+.vlog-rel-body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.vlog-rel-tag{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8a6b3d;font-weight:600}
+.vlog-rel-card h3{margin:0;font-size:19px;line-height:1.28}
+.vlog-rel-card p{margin:0;font-size:15px;line-height:1.45;color:#5d5346}
+.vlog-rel-go{margin-top:auto;padding-top:8px;font-weight:600;color:#a8382a;font-size:15px}
+@media(prefers-reduced-motion:reduce){.vlog-rel-card{transition:none}.vlog-rel-card:hover{transform:none}}

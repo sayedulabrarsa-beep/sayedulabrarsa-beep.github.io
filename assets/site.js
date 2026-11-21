@@ -116,71 +116,28 @@
     });
     if(!menu.dataset.navStableReady){
       menu.dataset.navStableReady='true';
-      /* Seamless marquee: recycle the existing links, preserve their order/offset across page navigation,
-         and let pointer dragging track the user's finger or mouse exactly. */
-      var navMotionOK=!(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches);
-      if(false&&navMotionOK&&menu.children.length){
-        /* Right-to-left marquee with NO duplicate links. The gap is widened so the real links always cover the
-           visible width; when the first link has fully left the view it is moved to the end (recycled).
-           Links stay clickable: the pointer is captured only after a real drag (>6px). */
-        var navKey='sa-nav-marquee-v4';
-        var items=Array.prototype.slice.call(menu.children);
-        function hrefOf(li){var a=li.querySelector('a');return a?new URL(a.getAttribute('href'),location.origin).pathname:''}
-        var sv=null;try{sv=JSON.parse(sessionStorage.getItem(navKey)||'null')}catch(err){}
-        if(sv&&Array.isArray(sv.order)){var by={};items.forEach(function(li){by[hrefOf(li)]=li});
-          sv.order.forEach(function(h){if(by[h]){menu.appendChild(by[h]);delete by[h]}});
-          Object.keys(by).forEach(function(h){menu.appendChild(by[h])})}
-        menu.style.willChange='transform';menu.style.width='max-content';menu.style.flexWrap='nowrap';
-        menu.style.justifyContent='flex-start';
-        nav.style.overflow='hidden';nav.style.touchAction='pan-y';nav.style.scrollBehavior='auto';
-        var navOffset=(sv&&isFinite(sv.o))?sv.o:0,navLast=0,dragging=false,dragMoved=false,pid=null,startX=0,startOff=0,pressed=false;
-        function fitGap(){
-          menu.style.setProperty('gap','0px','important');
-          var kids=menu.children,sum=0,maxw=0;
-          for(var i=0;i<kids.length;i++){var w=kids[i].getBoundingClientRect().width;sum+=w;if(w>maxw)maxw=w}
-          var need=nav.clientWidth+maxw+8,g=Math.max(3,(need-sum)/Math.max(kids.length,1));
-          menu.style.setProperty('gap',g+'px','important');
-        }
-        function gapPx(){var cs=getComputedStyle(menu);return parseFloat(cs.columnGap||cs.gap)||0}
-        function firstStep(){var f=menu.children[0];return f?f.getBoundingClientRect().width+gapPx():0}
-        function lastStep(){var l=menu.children[menu.children.length-1];return l?l.getBoundingClientRect().width+gapPx():0}
-        function normalize(){
-          var g=0,st;
-          while(menu.children.length>1&&(st=firstStep())>0&&navOffset<=-st&&g++<menu.children.length+2){menu.appendChild(menu.children[0]);navOffset+=st}
-          g=0;
-          while(menu.children.length>1&&(st=lastStep())>0&&navOffset>0&&g++<menu.children.length+2){menu.insertBefore(menu.children[menu.children.length-1],menu.children[0]);navOffset-=st}
-        }
-        function save(){try{sessionStorage.setItem(navKey,JSON.stringify({o:navOffset,order:Array.prototype.map.call(menu.children,hrefOf)}))}catch(err){}}
-        function paint(){normalize();menu.style.transform='translate3d('+navOffset+'px,0,0)'}
-        function tick(now){
-          if(!navLast)navLast=now;var dt=Math.min(now-navLast,40);navLast=now;
-          if(!document.hidden&&!dragging){navOffset-=dt*0.035;paint()}
-          requestAnimationFrame(tick);
-        }
-        nav.addEventListener('pointerdown',function(e){
-          if(e.pointerType==='mouse'&&e.button!==0)return;
-          pressed=true;dragMoved=false;pid=e.pointerId;startX=e.clientX;startOff=navOffset;
+      /* The navigation is deliberately STATIC. The old right-to-left marquee is gone and must stay gone
+         until Abrar asks for it back. This also clears anything an older cached build left behind. */
+      menu.style.transform='';
+      menu.style.removeProperty('will-change');
+      nav.style.removeProperty('overflow');
+      nav.style.removeProperty('touch-action');
+      try{sessionStorage.removeItem('sa-nav-marquee-v4');sessionStorage.removeItem('sa-nav-marquee-v3')}catch(err){}
+      /* Click and tap feedback: the pressed link dips, then a short ripple runs through the pill. */
+      Array.prototype.forEach.call(menu.querySelectorAll('a'),function(a){
+        a.addEventListener('pointerdown',function(){a.classList.add('is-press')});
+        ['pointerup','pointercancel','pointerleave','blur'].forEach(function(n){
+          a.addEventListener(n,function(){a.classList.remove('is-press')});
         });
-        nav.addEventListener('pointermove',function(e){
-          if(!pressed||e.pointerId!==pid)return;
-          var dx=e.clientX-startX;
-          if(!dragging&&Math.abs(dx)>6){dragging=true;dragMoved=true;try{nav.setPointerCapture(pid)}catch(err){}}
-          if(dragging){navOffset=startOff+dx;paint()}
+        a.addEventListener('click',function(){
+          a.classList.remove('is-tapped');void a.offsetWidth;a.classList.add('is-tapped');
+          setTimeout(function(){a.classList.remove('is-tapped')},620);
         });
-        function end(e){
-          if(e&&e.pointerId!==undefined&&e.pointerId!==pid)return;
-          if(dragging){try{nav.releasePointerCapture(pid)}catch(err){}}
-          dragging=false;pressed=false;pid=null;save();
-        }
-        nav.addEventListener('pointerup',end);nav.addEventListener('pointercancel',end);
-        nav.addEventListener('click',function(e){
-          if(dragMoved){e.preventDefault();e.stopPropagation();dragMoved=false}else save();
-        },true);
-        function init(){fitGap();paint()}
-        init();
-        window.addEventListener('load',init);window.addEventListener('resize',init,{passive:true});
-        if(document.fonts&&document.fonts.ready)document.fonts.ready.then(init);
-        requestAnimationFrame(tick);
+      });
+      /* Bring the current page's link into view once, without animating afterwards. */
+      var cur=menu.querySelector('[aria-current="page"]');
+      if(cur&&nav.scrollWidth>nav.clientWidth+4){
+        nav.scrollLeft=Math.max(0,cur.offsetLeft-(nav.clientWidth-cur.offsetWidth)/2);
       }
     }
   })();

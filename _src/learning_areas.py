@@ -8,7 +8,7 @@ from collections import OrderedDict
 
 SITE = 'https://sayedulabrar.site'
 TODAY = datetime.date.today().isoformat()
-CSSV = 'ld17-20261107'
+CSSV = 'sa-20261121'
 P = 'learning/index.html'
 
 AREAS = OrderedDict([
