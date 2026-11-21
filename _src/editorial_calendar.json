@@ -8,6 +8,13 @@
       "slug": "drug-metabolism-how-the-body-processes-medicines",
       "title": "Drug Metabolism",
       "status": "scheduled"
+    },
+    {
+      "date": "2026-11-21",
+      "time": "17:00",
+      "slug": "drug-excretion-how-medicines-leave-the-body",
+      "title": "Drug Excretion",
+      "status": "scheduled"
     }
   ]
 }
