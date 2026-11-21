@@ -68,6 +68,10 @@ Pharma Blog articles (newest first; each is educational, not medical advice):
   Summary: ফার্মাসিউটিক্যাল শিল্পে QA ও QC-এর পার্থক্য, দায়িত্ব, পরীক্ষা, GMP, OOS investigation, CAPA এবং রোগীর নিরাপত্তায় তাদের ভূমিকা সহজ বাংলায় জানুন।
 - Quality Assurance vs Quality Control: What Is the Difference in Pharmaceuticals? — English (2026-11-21): https://sayedulabrar.site/blog/quality-assurance-vs-quality-control/
   Summary: QA vs QC in pharmaceuticals: Quality Assurance builds the quality system, Quality Control does the sampling and testing. Roles, OOS investigation, CAPA and GMP.
+- ওষুধের নিঃসরণ: শরীর থেকে ওষুধ কীভাবে বের হয়? — বাংলা (2026-11-21): https://sayedulabrar.site/blog/drug-excretion-how-medicines-leave-the-body-bangla/
+  Summary: কিডনি, প্রস্রাব, পিত্ত ও clearance—শরীর থেকে ওষুধ কীভাবে বের হয় এবং কিডনির কার্যক্ষমতা কেন ডোজকে প্রভাবিত করে, সহজ ভাষায় জানুন।
+- Drug Excretion: How Do Medicines Leave the Body? — English (2026-11-21): https://sayedulabrar.site/blog/drug-excretion-how-medicines-leave-the-body/
+  Summary: Learn how medicines leave the body: kidney filtration, urine, bile, clearance, and why kidney function affects dosing.
 - গুড ম্যানুফ্যাকচারিং প্র্যাকটিস (GMP): ওষুধের গুণগত মান নিশ্চিত করার ভিত্তি — বাংলা (2026-11-19): https://sayedulabrar.site/blog/good-manufacturing-practices-gmp-pharmaceutical-quality-bangla/
   Summary: ওষুধশিল্পে GMP কী? কর্মী, কারখানা, যন্ত্রপাতি, নথিপত্র, validation, CAPA এবং বাংলাদেশের DGDA-এর প্রাসঙ্গিক নির্দেশনা কীভাবে ওষুধের মান রক্ষা করে জানুন।
 - Good Manufacturing Practices (GMP): The Foundation of Pharmaceutical Quality — English (2026-11-19): https://sayedulabrar.site/blog/good-manufacturing-practices-gmp-pharmaceutical-quality/

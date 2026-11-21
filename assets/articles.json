@@ -13,6 +13,19 @@
   "img": "/assets/img/blog/qaqc/qaqc-social-en.jpg"
  },
  {
+  "slug": "drug-excretion-how-medicines-leave-the-body",
+  "date": "2026-11-21",
+  "tag_en": "Pharma Blog",
+  "tag_bn": "ফার্মা ব্লগ",
+  "title_en": "Drug Excretion: How Do Medicines Leave the Body?",
+  "title_bn": "ওষুধের নিঃসরণ: শরীর থেকে ওষুধ কীভাবে বের হয়?",
+  "desc_en": "Learn how medicines leave the body: kidney filtration, urine, bile, clearance, and why kidney…",
+  "desc_bn": "কিডনি, প্রস্রাব, পিত্ত ও clearance—শরীর থেকে ওষুধ কীভাবে বের হয় এবং কিডনির কার্যক্ষমতা কেন…",
+  "url_en": "/blog/drug-excretion-how-medicines-leave-the-body/",
+  "url_bn": "/blog/drug-excretion-how-medicines-leave-the-body-bangla/",
+  "img": "/assets/img/blog/how-medicines-work/excretion-social.jpg"
+ },
+ {
   "slug": "good-manufacturing-practices-gmp-pharmaceutical-quality",
   "date": "2026-11-19",
   "tag_en": "Pharma Blog",

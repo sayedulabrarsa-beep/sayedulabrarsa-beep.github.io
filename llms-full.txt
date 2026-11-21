@@ -171,6 +171,160 @@ Get in touch ↗Find me on LinkedIn
 
 ## Pharma Blog articles (newest first)
 
+### ওষুধের নিঃসরণ: শরীর থেকে ওষুধ কীভাবে বের হয়?
+URL: https://sayedulabrar.site/blog/drug-excretion-how-medicines-leave-the-body-bangla/ · Language: Bangla · Published: 2026-11-21T20:00:00+06:00 · Author: Sayedul Abrar, pharmacist
+Summary: কিডনি, প্রস্রাব, পিত্ত ও clearance—শরীর থেকে ওষুধ কীভাবে বের হয় এবং কিডনির কার্যক্ষমতা কেন ডোজকে প্রভাবিত করে, সহজ ভাষায় জানুন।
+
+By Sayedul Abrar, pharmacist · ২১ নভেম্বর ২০২৬
+সহজভাবে: কিডনি, প্রস্রাব, clearance এবং শরীর থেকে ওষুধ বের হওয়ার অন্যান্য পথ সহজভাবে জানুন।
+এই লেখাটি ফার্মাকোলজির একটি গুরুত্বপূর্ণ ধারণা সহজ ভাষায় ব্যাখ্যা করে।
+
+### 1. সহজ অর্থ
+
+Drug excretion বা ওষুধের নিঃসরণ হলো শরীর থেকে ওষুধ অথবা তার metabolite বের হয়ে যাওয়া। অনেক ওষুধের যাত্রার শেষ ধাপ এটি। তবে কিছু ওষুধ metabolism ছাড়াই শরীর থেকে বের হতে পারে। Excretion ও metabolism এক নয়: metabolism ওষুধের রাসায়নিক গঠন বদলায়, আর excretion ওষুধকে শরীর থেকে সরিয়ে দেয়।
+
+### 2. কিডনি: অনেক ওষুধ বের হওয়ার প্রধান পথ
+
+কিডনি রক্ত ছেঁকে প্রস্রাব তৈরি করে। যেসব ছোট অণু রক্তের protein-এর সঙ্গে বেশি যুক্ত নয়, সেগুলোর কিছু অংশ glomerulus-এর filter অতিক্রম করতে পারে। কিছু ওষুধ kidney tubule-এ বিশেষ transport protein-এর সাহায্যে রক্ত থেকে প্রবেশ করে। আবার কিছু পদার্থ tubule থেকে পুনরায় রক্তে ফিরে যেতে পারে।
+
+### 3. কিডনির তিনটি প্রক্রিয়া
+
+Glomerular filtration-এর মাধ্যমে protein-এর সঙ্গে যুক্ত নয় এমন ওষুধ রক্ত থেকে filtrate-এ যায়। Tubular secretion-এ transport protein কিছু ওষুধকে রক্ত থেকে tubule-এ নিয়ে যায়। Tubular reabsorption-এ কিছু অণু tubule থেকে আবার রক্তে ফিরে আসে। এই তিন প্রক্রিয়ার ভারসাম্য নির্ধারণ করে প্রস্রাবের সঙ্গে কত ওষুধ বের হবে।
+
+### 4. নিঃসরণের অন্যান্য পথ
+
+কিছু ওষুধ বা metabolite পিত্তের মাধ্যমে অন্ত্রে যায় এবং মলের সঙ্গে বের হয়। অল্প পরিমাণে ঘাম, লালা, চোখের পানি, বুকের দুধ বা নিঃশ্বাসের সঙ্গেও কিছু পদার্থ বের হতে পারে। কোন পথ কতটা গুরুত্বপূর্ণ হবে তা ওষুধের বৈশিষ্ট্যের ওপর নির্ভর করে।
+
+### 5. Clearance কী?
+
+Clearance হলো নির্দিষ্ট সময়ে রক্তরসের যে পরিমাণ আয়তন থেকে একটি ওষুধ সম্পূর্ণ অপসারিত হয়েছে বলে ধরা হয় তার পরিমাপ। এটি শরীরের ওষুধ বের করার সক্ষমতা বোঝায়, ওষুধের মোট পরিমাণ নয়। Renal clearance হলো কিডনির মাধ্যমে হওয়া total clearance-এর অংশ।
+
+### 6. কিডনির কার্যক্ষমতা কেন গুরুত্বপূর্ণ?
+
+কিডনির কার্যক্ষমতা কমে গেলে কিডনির মাধ্যমে বের হওয়া কোনো ওষুধ শরীরে বেশি সময় থাকতে পারে এবং রক্তে তার ঘনত্ব বেড়ে যেতে পারে। নির্দিষ্ট ওষুধ, কিডনির অবস্থা ও রোগীর পরিস্থিতি বিবেচনা করে চিকিৎসক dose বা dose interval পরিবর্তন করতে পারেন। নিজে থেকে ডোজ পরিবর্তন করবেন না।
+
+### 7. যে দুটি বিষয় ওষুধ বের হওয়ার গতি বদলে দিতে পারে
+
+কিছু ওষুধ কত দ্রুত বের হবে তা দুটি পরিচিত বিষয়ের ওপর নির্ভর করতে পারে। প্রথমত, প্রস্রাবের pH: অনেক ওষুধ দুর্বল অ্যাসিড বা দুর্বল ক্ষার; প্রস্রাবে যে ওষুধ বেশি ionised অবস্থায় থাকে তা কম পুনঃশোষিত হয়, ফলে বেশি অংশ বের হয়ে যেতে পারে। দ্বিতীয়ত, enterohepatic recirculation: কিছু ওষুধ বা তাদের conjugate পিত্তের মাধ্যমে অন্ত্রে যায়, অন্ত্রের ব্যাকটেরিয়ার প্রভাবে বদলে আবার শোষিত হয় এবং ওষুধকে শরীরে বেশি সময় রাখতে পারে। এগুলো সাধারণ নীতি; নির্দিষ্ট ওষুধের ক্ষেত্রে এর গুরুত্ব আলাদা হতে পারে।
+
+### 8. বেশি পানি পান করলে কি ওষুধ দ্রুত বের হয়?
+
+সব সময় নয়। অতিরিক্ত পানি পান করলে ওষুধ নির্ভরযোগ্যভাবে দ্রুত বের হয় না; কিছু মানুষের জন্য অতিরিক্ত পানি ক্ষতিকরও হতে পারে। স্বাভাবিক hydration বজায় রাখুন এবং চিকিৎসকের নির্দেশ অনুসরণ করুন। ঘরে বসে ওষুধ দ্রুত বের করার চেষ্টা করবেন না।
+
+### 9. মূল কথা
+
+Excretion শরীর থেকে ওষুধ ও metabolite বের করে। অনেক ওষুধের ক্ষেত্রে কিডনি প্রধান পথ, তবে পিত্ত ও অন্যান্য পথও ভূমিকা রাখতে পারে। Clearance শরীরের ওষুধ অপসারণের সক্ষমতা বোঝায়। কিডনির কার্যক্ষমতা ওষুধের শরীরে থাকার মাত্রা ও ডোজকে প্রভাবিত করতে পারে।
+
+### মূল বিষয়গুলো
+
+- Excretion শরীর থেকে ওষুধ ও metabolite বের করে দেয়।
+- অনেক ওষুধের প্রধান পথ কিডনি; পিত্ত ও অন্যান্য পথও ভূমিকা রাখতে পারে।
+- Clearance শরীরের ওষুধ অপসারণের সক্ষমতা বোঝায়।
+- কিডনির কার্যক্ষমতা কমলে কিছু ওষুধের ডোজ বদলাতে হতে পারে; নিজে ডোজ বদলাবেন না।
+“শরীরে ওষুধ কীভাবে কাজ করে” সিরিজের অংশ। আরও পড়ুন: ওষুধের বিপাক · ওষুধের বণ্টন · ওষুধের শোষণ
+
+### সাধারণ প্রশ্ন
+
+#### ওষুধ শরীর থেকে বের হতে কত সময় লাগে?
+
+এটি ওষুধের ধরন, dose, metabolism, কিডনির কার্যক্ষমতা ও ব্যক্তিভেদে পরিবর্তিত হয়। সব ওষুধের জন্য এক সময়সীমা নেই।
+
+#### কিডনি কি সব ওষুধ বের করে?
+
+না। কিছু ওষুধ প্রধানত যকৃত ও পিত্তের মাধ্যমে বের হয়, আবার কিছু একাধিক পথে বের হতে পারে।
+
+#### নিজে থেকে পানি বেশি খেয়ে ওষুধ বের করা কি নিরাপদ?
+
+না। অতিরিক্ত পানি ক্ষতিকর হতে পারে এবং ওষুধ দ্রুত বের করার নির্ভরযোগ্য উপায় নয়।
+
+### তথ্যসূত্র ও আরও পড়ুন
+
+- Brunton LL, Hilal-Dandan R, Knollmann BC, editors. Goodman & Gilman's The Pharmacological Basis of Therapeutics. McGraw Hill.
+- StatPearls. Pharmacokinetics. NCBI Bookshelf. NCBI Bookshelf.
+- Merck Manual Professional Edition. Overview of Pharmacokinetics. Merck Manual.
+সম্পাদকীয় নোট: এটি সাধারণ শিক্ষামূলক ব্যাখ্যা। নির্দিষ্ট ওষুধের ক্ষেত্রে অনুমোদিত product information অনুসরণ করুন।
+শিক্ষামূলক সতর্কতা: এই লেখা ব্যক্তিগত চিকিৎসা পরামর্শ নয়। ওষুধ বা ডোজ পরিবর্তনের আগে চিকিৎসক বা ফার্মাসিস্টের পরামর্শ নিন।
+
+
+---
+
+### Drug Excretion: How Do Medicines Leave the Body?
+URL: https://sayedulabrar.site/blog/drug-excretion-how-medicines-leave-the-body/ · Language: English · Published: 2026-11-21T20:00:00+06:00 · Author: Sayedul Abrar, pharmacist
+Summary: Learn how medicines leave the body: kidney filtration, urine, bile, clearance, and why kidney function affects dosing.
+
+By Sayedul Abrar, pharmacist · 21 November 2026
+In simple terms: Understand renal and other routes of drug excretion, urine, clearance and why kidney function matters.
+This article explains an important pharmacology concept in clear, beginner-friendly language.
+
+### 1. The simple meaning
+
+Drug excretion is the removal of a medicine or its metabolites from the body. It is the final step in the journey of many medicines, although some drugs can leave the body without being metabolised first. Excretion is different from metabolism: metabolism changes a drug chemically, while excretion removes it.
+
+### 2. The kidneys: the main route for many medicines
+
+The kidneys filter blood and produce urine. Small molecules that are not strongly bound to plasma proteins may pass through the glomerular filter. Some drugs are also actively secreted from blood into the kidney tubules. As urine forms, some substances may be reabsorbed back into the blood, depending on their properties and urine conditions.
+
+### 3. Three renal processes
+
+Glomerular filtration moves unbound drug from blood into the filtrate. Tubular secretion uses transport proteins to move certain drugs from blood into the tubule. Tubular reabsorption allows some drug molecules to move from the tubule back into the circulation. The balance of these processes determines how much drug leaves in urine.
+
+### 4. Other routes of excretion
+
+Some medicines or metabolites leave through bile and faeces. Small amounts may leave through sweat, saliva, tears, breast milk or exhaled air. The importance of each route depends on the medicine. For most drugs, the kidneys and liver/biliary system are the most important organs involved in elimination.
+
+### 5. What is clearance?
+
+Clearance describes the volume of plasma from which a drug is completely removed per unit of time. It is a measure of the body's ability to eliminate a medicine, not the amount of drug itself. Renal clearance is the part of total clearance attributable to the kidneys.
+
+### 6. Why does kidney function matter?
+
+If kidney function is reduced, a medicine that relies heavily on renal excretion may remain in the body longer and reach higher concentrations. A prescriber may need to adjust the dose or interval based on the specific medicine, kidney function and clinical situation. Never change a dose yourself.
+
+### 7. Two details that change how fast a drug leaves
+
+Two well-known factors can change how quickly some medicines are excreted. First, urine pH: many medicines are weak acids or weak bases, and a drug that is more ionised in the urine is reabsorbed less, so more of it can leave. Second, enterohepatic recirculation: some drugs or their conjugates pass into bile, are changed again by gut bacteria and are reabsorbed, which can keep the drug in the body longer. These are general principles; their importance depends on the specific medicine.
+
+### 8. Does drinking extra water flush medicines out?
+
+Not necessarily. Drinking excessive water does not reliably remove medicines faster and can be harmful for some people. Follow normal hydration advice and the instructions from your healthcare professional. Do not try to speed up drug elimination at home.
+
+### 9. Key takeaways
+
+Excretion removes drugs and metabolites from the body. The kidneys are a major route for many medicines, but bile and other routes can contribute. Clearance describes the body's capacity to remove a drug. Kidney function can affect drug exposure and dosing.
+
+### Key takeaways
+
+- Drug excretion is the removal of a medicine or its metabolites from the body.
+- The kidneys filter blood and produce urine.
+- Glomerular filtration moves unbound drug from blood into the filtrate.
+- Some medicines or metabolites leave through bile and faeces.
+Part of the series “How Medicines Work in the Body”. Read also: Drug Metabolism · Drug Distribution · Drug Absorption
+
+### Frequently asked questions
+
+#### How long does a medicine take to leave the body?
+
+It varies with the drug, dose, metabolism, kidney function and individual factors. There is no single time that applies to every medicine.
+
+#### Do the kidneys remove every medicine?
+
+No. Some medicines are eliminated mainly through the liver and bile, while others use more than one route.
+
+#### Can I drink extra water to flush out a medicine?
+
+No. Excessive water intake can be harmful and is not a reliable way to speed up drug elimination.
+
+### References and further reading
+
+- Brunton LL, Hilal-Dandan R, Knollmann BC, editors. Goodman & Gilman's The Pharmacological Basis of Therapeutics. McGraw Hill.
+- StatPearls. Pharmacokinetics. NCBI Bookshelf. NCBI Bookshelf.
+- Merck Manual Professional Edition. Overview of Pharmacokinetics. Merck Manual.
+Editorial note: This is a general educational explanation. Consult approved product information for medicine-specific details.
+Educational disclaimer: This article is for general learning and is not personal medical advice. Do not change a medicine or dose without consulting a qualified healthcare professional.
+
+
+---
+
 ### কোয়ালিটি অ্যাসিউরেন্স (QA) বনাম কোয়ালিটি কন্ট্রোল (QC): ওষুধশিল্পে পার্থক্য কী?
 URL: https://sayedulabrar.site/blog/quality-assurance-vs-quality-control-bangla/ · Language: Bangla · Published: 2026-11-21 · Author: Sayedul Abrar, pharmacist
 Summary: ফার্মাসিউটিক্যাল শিল্পে QA ও QC-এর পার্থক্য, দায়িত্ব, পরীক্ষা, GMP, OOS investigation, CAPA এবং রোগীর নিরাপত্তায় তাদের ভূমিকা সহজ বাংলায় জানুন।
@@ -782,6 +936,7 @@ Metabolism ওষুধের রাসায়নিক পরিবর্ত�
 - First-pass metabolism-এর কারণে মুখে খাওয়া ডোজের কম অংশ রক্তে পৌঁছাতে পারে।
 - বিপাক ওষুধকে নিষ্ক্রিয় করতে, prodrug-কে সক্রিয় করতে বা active metabolite তৈরি করতে পারে।
 - Enzyme-এর পরিবর্তন drug interaction-এর একটি সাধারণ কারণ; তাই ওষুধ শুরু বা বন্ধের আগে পরামর্শ নিন।
+সিরিজের পরবর্তী লেখা: ওষুধের নিঃসরণ: শরীর থেকে ওষুধ কীভাবে বের হয়?
 
 ### সাধারণ প্রশ্ন
 
@@ -858,6 +1013,7 @@ Metabolism changes a medicine chemically and often involves the liver, but it ca
 - First-pass metabolism can lower how much of an oral dose reaches the blood.
 - Metabolism can switch a medicine off, switch a prodrug on, or form active metabolites.
 - Enzyme changes are a common reason for drug interactions, so ask before starting or stopping a medicine.
+Next in series: Drug Excretion: How Do Medicines Leave the Body?
 
 ### Frequently asked questions
 
