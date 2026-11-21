@@ -310,7 +310,7 @@ def build(lang):
     out = head + main + tail
     for part in (head, tail):
         assert TPL not in part, "template slug leaked: " + part[part.index(TPL)-200:part.index(TPL)+50]
-    out = re.sub(r"/assets/blog-related\.js\?v=[^\"]*", "/assets/blog-related.js?v=ae8-20261117", out)
+    out = re.sub(r"/assets/blog-related\.js\?v=[^\"]*", "/assets/blog-related.js?v=ae10-20261121", out)
     d = R / "blog" / (SLUG + ("-bangla" if bn else "")); d.mkdir(exist_ok=True)
     (d / "index.html").write_text(out, encoding="utf-8")
     print(lang, len(out), "words", blog["wordCount"], "desc", len(m["desc"]))

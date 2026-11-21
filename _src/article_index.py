@@ -11,6 +11,8 @@ Run from anywhere: python3 _src/article_index.py   (safe to re-run)
 """
 import html, json, pathlib, re
 
+RELATED_V = "ae10-20261121"  # keep in sync with assets/blog-related.js
+
 R = pathlib.Path(__file__).resolve().parent.parent
 CUR = json.loads((R / "_src/data/articles.json").read_text(encoding="utf-8"))
 START, END = "<!--more-articles-->", "<!--/more-articles-->"
@@ -112,9 +114,15 @@ for a in arts:
         if k < 0:
             continue
         s = s[:k] + block + s[k:]
-        related_script = '<script src="/assets/blog-related.js?v=ae8-20261117" defer></script>'
-        if related_script not in s:
+        # exactly one related-articles script per page, always at the current version
+        related_script = f'<script src="/assets/blog-related.js?v={RELATED_V}" defer></script>'
+        tag_re = re.compile(r'<script src="/assets/blog-related\.js\?v=[^"]*"[^>]*></script>\s*')
+        if not tag_re.search(s):
             s = s.replace("</body>", related_script + "</body>")
+        else:
+            first = tag_re.search(s).start()
+            s = tag_re.sub("", s)
+            s = s[:first] + related_script + s[first:]
         if s != o:
             path.write_text(s, encoding="utf-8")
             n += 1
