@@ -2,7 +2,7 @@
   'use strict';
   var main=document.querySelector('main');
   if(!main||document.querySelector('.ae-band'))return;
-  var V='ae9-20261117';
+  var V='ae10-20261121';
   if(!document.querySelector('link[data-ae-style]')){
     var l=document.createElement('link');l.rel='stylesheet';l.href='/assets/article-end.css?v='+V;
     l.setAttribute('data-ae-style','');document.head.appendChild(l);
@@ -107,15 +107,22 @@
   var track=el('div','ae-track ae-mq');
   track.setAttribute('aria-labelledby','ae-title2');
   var inner=el('div','ae-mq-in');track.appendChild(inner);
-  /* One copy only: readers control the row by swiping, scrolling or dragging. */
+  /* Two copies so the row can loop seamlessly right to left; readers can still swipe or drag. */
   more.forEach(function(k){card(k,inner)});
+  if(more.length){
+    more.forEach(function(k){card(k,inner)});
+    track.classList.add('ae-run');
+    track.style.setProperty('--ae-dur',Math.max(45,more.length*9)+'s');
+  }
   track.setAttribute('tabindex','0');
   track.setAttribute('role','region');
   track.setAttribute('aria-label','More articles. Swipe or scroll horizontally to browse.');
   var down=false,startX=0,scrollStart=0,moved=false;
-  track.addEventListener('pointerdown',function(e){if(e.pointerType==='mouse'&&e.button!==0)return;down=true;moved=false;startX=e.clientX;scrollStart=track.scrollLeft;track.classList.add('ae-dragging');});
+  track.addEventListener('pointerdown',function(e){if(e.pointerType==='mouse'&&e.button!==0)return;down=true;moved=false;startX=e.clientX;scrollStart=track.scrollLeft;track.classList.add('ae-dragging');track.classList.add('ae-hold');});
+  track.addEventListener('touchstart',function(){track.classList.add('ae-hold');},{passive:true});
+  ['touchend','touchcancel'].forEach(function(n){track.addEventListener(n,function(){setTimeout(function(){track.classList.remove('ae-hold');},2500);},{passive:true});});
   track.addEventListener('pointermove',function(e){if(!down)return;var dx=e.clientX-startX;if(Math.abs(dx)>5)moved=true;if(moved){track.scrollLeft=scrollStart-dx;e.preventDefault();}});
-  ['pointerup','pointercancel','pointerleave'].forEach(function(name){track.addEventListener(name,function(){down=false;track.classList.remove('ae-dragging');});});
+  ['pointerup','pointercancel','pointerleave'].forEach(function(name){track.addEventListener(name,function(){down=false;track.classList.remove('ae-dragging');setTimeout(function(){if(!down)track.classList.remove('ae-hold');},2500);});});
   track.addEventListener('click',function(e){if(moved){e.preventDefault();e.stopPropagation();moved=false;}},true);
   wrap.append(head,grid,head2,track);
 
