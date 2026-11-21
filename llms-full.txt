@@ -171,6 +171,145 @@ Get in touch ↗Find me on LinkedIn
 
 ## Pharma Blog articles (newest first)
 
+### Quality Assurance vs Quality Control: What Is the Difference in Pharmaceuticals?
+URL: https://sayedulabrar.site/blog/quality-assurance-vs-quality-control/ · Language: English · Published: 2026-11-21 · Author: Sayedul Abrar, pharmacist
+Summary: Learn the difference between pharmaceutical Quality Assurance (QA) and Quality Control (QC), including responsibilities, testing, GMP, OOS investigations, CAPA and patient safety.
+
+By Sayedul Abrar, pharmacist · Published 21 November 2026
+
+The short answer: Quality Assurance (QA) is the planned, system-wide approach that builds confidence that quality requirements will be met. Quality Control (QC) is the part of the quality system concerned with sampling, specifications, testing and evaluating whether materials or products meet those requirements. QA focuses strongly on preventing failures; QC helps detect and assess them. They are complementary—not competing departments.
+
+When a patient takes a tablet, they expect the right medicine, at the right strength, with consistent quality. That outcome does not come from a single laboratory test. It depends on a connected system: approved suppliers, trained people, controlled processes, reliable records, suitable facilities, validated methods, investigations and decisions made before a batch is released.
+
+### 1. What is Quality Assurance (QA)?
+
+Quality Assurance is the broader set of planned and systematic arrangements used to provide confidence that a product will meet its intended quality requirements. In pharmaceuticals, QA is not limited to checking paperwork at the end of production. It helps design, maintain and improve the processes that influence quality throughout the product lifecycle.
+
+Typical QA responsibilities may include:
+- Establishing and maintaining the pharmaceutical quality system and controlled procedures.
+- Reviewing and approving documents, specifications, master production instructions and changes according to assigned responsibilities.
+- Overseeing deviations, out-of-specification investigations, complaints, recalls, CAPA and change control.
+- Coordinating or overseeing supplier qualification, audits, training, validation and periodic quality reviews.
+- Reviewing batch documentation and ensuring that required checks and investigations are complete before an authorised batch disposition decision.
+- Monitoring trends and promoting risk-based continual improvement.
+
+QA does not mean that one department alone “owns” quality. Production, engineering, warehousing, procurement, QC and management all have responsibilities. QA provides governance, oversight and assurance within the organisation's defined quality system.
+
+### 2. What is Quality Control (QC)?
+
+Quality Control is the part of GMP concerned with sampling, specifications and testing, together with the organisation and documentation needed to ensure that relevant tests are performed and materials or products are not released until their quality has been judged compliant. WHO guidance makes an important point: QC is not confined to laboratory operations; it can also contribute to quality-related decisions.
+
+Typical QC activities include:
+- Sampling and testing incoming active ingredients, excipients, packaging materials and other components under approved procedures.
+- Performing in-process checks where required by the process and control strategy.
+- Testing finished products against approved specifications using suitable, qualified or validated methods.
+- Conducting stability testing and evaluating relevant analytical results.
+- Reviewing laboratory data, calculations, chromatograms, instrument records and audit trails.
+- Investigating atypical, out-of-trend or out-of-specification results and communicating findings through the quality system.
+
+QC results are evidence. A passing result is meaningful only when the sample is representative, the method is suitable, the instrument is controlled, the data are reliable and the result is interpreted against the correct approved specification.
+
+### 3. QA vs QC: the practical differences
+
+|
+| Area | Quality Assurance (QA) | Quality Control (QC)
+
+| Main emphasis | Building and maintaining a system that prevents quality failures | Sampling, testing and evaluating whether requirements are met
+
+| Approach | Primarily preventive and system-oriented | Primarily detection, measurement and assessment
+
+| Typical scope | Quality system, procedures, audits, deviations, CAPA, change control, supplier oversight and batch review | Sampling plans, laboratory testing, in-process checks, analytical data and stability results
+
+| Key evidence | Approved procedures, training records, audit reports, investigation and change-control records | Sampling records, raw data, test worksheets, chromatograms and certificates of analysis
+
+| Core question | Are the processes and controls designed and followed so quality can be achieved consistently? | Do the sampled materials or product meet the defined specifications?
+
+Important: “QA is prevention and QC is detection” is a useful introductory distinction, not an absolute boundary. QC can prevent unsuitable material from entering production by withholding approval, while QA also detects system weaknesses through audits, trend reviews and investigations.
+
+### 4. A practical example: a tablet batch
+
+Imagine a manufacturer is preparing a batch of tablets. The following simplified example shows how the two functions contribute. Actual responsibilities and approval steps must follow the site's approved procedures and applicable regulations.
+
+#### Before manufacturing
+
+QA: ensures that the relevant procedures, training, equipment status, validation and change controls are in place. QC: samples and tests incoming materials according to approved specifications. Material that has not received the required quality disposition is not used.
+
+#### During manufacturing
+
+QA: provides oversight of the quality system and ensures that deviations are documented and appropriately investigated. QC: performs specified in-process tests or checks, such as those assigned in the control strategy. Production personnel also perform and record their own process checks.
+
+#### Before batch release
+
+QC: completes required finished-product testing and reports the results with traceable raw data. QA or the authorised quality unit: reviews the complete batch record, deviations, laboratory results and other required evidence, then ensures that disposition is made by the person or unit authorised under the site's quality system. A laboratory pass alone does not automatically mean that a batch is releasable.
+
+### 5. What happens when a test result fails?
+
+An out-of-specification (OOS) result is not a signal to repeat testing until a passing value appears. It requires a documented, scientifically sound investigation under an approved procedure. The investigation should consider laboratory execution, calculations, instruments, sample handling and possible manufacturing or material causes. Retesting or resampling must be justified and controlled; results must not be discarded simply because they are inconvenient.
+
+QC contributes the analytical evidence and technical investigation. QA provides quality-system oversight, ensures the investigation is appropriately managed, evaluates impact and follow-up, and checks that corrective and preventive actions (CAPA) are effective. Batch disposition must follow applicable requirements and authorised procedures.
+
+Data integrity matters: original observations, raw data, metadata, audit trails, calculations and records should be complete, consistent, accurate and attributable. A polished certificate cannot compensate for unreliable underlying data.
+
+### 6. How do QA, QC and GMP fit together?
+
+GMP is a set of requirements and practices within pharmaceutical quality management. QA is the wider assurance framework; QC is an essential component concerned with sampling, specifications and testing. Neither QA nor QC can replace GMP. Equally, GMP is not achieved by having a QC laboratory alone: quality must be built into facilities, materials, people and processes.
+
+ICH Q10 describes a pharmaceutical quality system across the product lifecycle and emphasises process performance and product quality monitoring, corrective and preventive action, change management and management review. This helps explain why QA and QC need to exchange information rather than operate as isolated teams.
+
+### 7. Why does this distinction matter to patients?
+
+Patients never see the deviation log, analytical method, audit trail or batch review. They experience the outcome: whether the medicine is of the required identity, strength, purity and quality, and whether it remains suitable through its shelf life when stored as directed. Strong QA and QC systems reduce the risk that errors, contamination, mix-ups or unreliable results reach patients.
+
+For pharmacy students and professionals, the key lesson is that quality is everyone's responsibility. QC provides essential measurements and evidence; QA helps ensure that the organisation's systems use that evidence correctly and consistently.
+
+Key takeaways
+- QA is the broader system of planned arrangements that provides confidence in quality.
+- QC focuses on sampling, specifications, testing and evaluation.
+- QC is part of the quality system; it does not replace QA or GMP.
+- A passing laboratory result alone is not sufficient for batch release.
+- Reliable records, sound investigations and effective CAPA connect QA and QC.
+
+### Frequently asked questions
+
+Is QA more important than QC?
+No. They serve different, connected purposes. A strong quality system needs effective assurance and competent control/testing functions.
+
+Is QC a part of QA?
+In the broad pharmaceutical quality assurance framework, QC is one of the interrelated elements of quality management and is commonly treated as a component of the overall quality system.
+
+Does QC only mean laboratory testing?
+No. WHO describes QC as including sampling, specifications, testing, organisation and documentation. QC may also contribute to quality decisions.
+
+Can a batch be released if the finished-product test passes?
+Not on that result alone. Required records, investigations, process controls and other release requirements must also be satisfactory, and disposition must be made by the authorised quality function.
+
+Who investigates an OOS result?
+QC typically leads or contributes the laboratory investigation, while QA oversees the quality-system process and ensures impact assessment, appropriate actions and documentation. Site procedures define exact responsibilities.
+
+What is the difference between QA, QC and GMP?
+GMP sets requirements and practices for controlled pharmaceutical manufacturing. QA is the broader assurance system. QC is the sampling, specification and testing function within that system.
+
+Do QA and QC work independently?
+They need appropriate independence from production decisions and clear responsibilities, but they must communicate and collaborate. The organisational structure depends on applicable requirements and company procedures.
+
+### References and further reading
+
+- World Health Organization. WHO GMP: Main principles for pharmaceutical products, including section 17, Good practices in quality control, in the 2024 compendium.
+- World Health Organization. Quality assurance of pharmaceuticals: Compendium of guidelines and related materials, Volume 2, 10th edition (2024).
+- International Council for Harmonisation. ICH Q10: Pharmaceutical Quality System.
+- U.S. Food and Drug Administration. Quality Systems Approach to Pharmaceutical CGMP Regulations (2006).
+- World Health Organization. Guidelines: Production and WHO GMP.
+
+Educational note: This article is for general learning. Applicable legal requirements, regulatory guidance and approved site procedures take precedence. FDA guidance describes the U.S. regulatory framework and should not be read as Bangladesh law.
+
+Sayedul Abrar
+Pharmacist · A Grade Pharmacist (Registration Code A-22040)
+Product Executive, Product Management Department · Opsonin Pharma Ltd.About the author · LinkedIn
+
+Related reading: Good Manufacturing Practices (GMP) · How the Pharmaceutical Industry Works · Active Pharmaceutical Ingredient (API)
+
+---
+
 ### গুড ম্যানুফ্যাকচারিং প্র্যাকটিস (GMP): ওষুধের গুণগত মান নিশ্চিত করার ভিত্তি
 URL: https://sayedulabrar.site/blog/good-manufacturing-practices-gmp-pharmaceutical-quality-bangla/ · Language: Bangla · Published: 2026-11-19 · Author: Sayedul Abrar, pharmacist
 Summary: ওষুধশিল্পে GMP কী? কর্মী, কারখানা, যন্ত্রপাতি, নথিপত্র, validation, CAPA এবং বাংলাদেশের DGDA-এর প্রাসঙ্গিক নির্দেশনা কীভাবে ওষুধের মান রক্ষা করে জানুন।
