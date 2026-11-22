@@ -42,7 +42,7 @@
   var R={
     'drug-vs-medicine':['generic-name-vs-brand-name','expiry-date-vs-manufacturing-date-medicine','what-is-the-pharmaceutical-industry'],
     'generic-name-vs-brand-name':['drug-vs-medicine','expiry-date-vs-manufacturing-date-medicine','when-to-take-ppi-before-meals'],
-    'expiry-date-vs-manufacturing-date-medicine':['generic-name-vs-brand-name','drug-vs-medicine','how-to-take-iron-tablets-properly'],
+    'expiry-date-vs-manufacturing-date-medicine':['generic-name-vs-brand-name','medicine-stability-testing-how-shelf-life-is-established','drug-vs-medicine'],
     'when-to-take-ppi-before-meals':['heartburn-vs-acid-reflux-vs-gerd','generic-name-vs-brand-name','drug-vs-medicine'],
     'heartburn-vs-acid-reflux-vs-gerd':['when-to-take-ppi-before-meals','drug-vs-medicine','expiry-date-vs-manufacturing-date-medicine'],
     'how-to-take-iron-tablets-properly':['iron-deficiency-vs-anemia','expiry-date-vs-manufacturing-date-medicine','generic-name-vs-brand-name'],
@@ -53,7 +53,8 @@
     'drug-distribution-how-medicines-reach-their-target':['drug-absorption-how-medicine-enters-bloodstream','how-do-medicines-work-in-the-body','drug-metabolism-how-the-body-processes-medicines'],
     'how-do-medicines-work-in-the-body':['drug-vs-medicine','generic-name-vs-brand-name','when-to-take-ppi-before-meals'],
     'why-complete-antibiotic-course-antibiotic-resistance':['generic-name-vs-brand-name','expiry-date-vs-manufacturing-date-medicine','drug-vs-medicine'],
-    'good-manufacturing-practices-gmp-pharmaceutical-quality':['what-is-the-pharmaceutical-industry','drug-absorption-how-medicine-enters-bloodstream','how-do-medicines-work-in-the-body']
+    'medicine-stability-testing-how-shelf-life-is-established':['expiry-date-vs-manufacturing-date-medicine','good-manufacturing-practices-gmp-pharmaceutical-quality','quality-assurance-vs-quality-control'],
+    'good-manufacturing-practices-gmp-pharmaceutical-quality':['what-is-the-pharmaceutical-industry','medicine-stability-testing-how-shelf-life-is-established','how-do-medicines-work-in-the-body']
   };
   var P='/assets/img/products/';
   var PR={
