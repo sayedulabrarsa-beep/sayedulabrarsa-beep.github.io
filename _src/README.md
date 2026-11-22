@@ -36,3 +36,15 @@ The Blog and Daily Vlog list pages stay hidden from search engines until the fir
 
 ## Home blog stacks
 Home "Featured from the Pharma Blog" is generated: add an entry to _src/data/blog_stacks.json (newest date shows first), then run `python3 _src/blog_stacks.py`.
+
+
+## Mandatory navigation standard for every new article
+
+Every new English and Bangla article page must use the current site-wide navigation without redesigning or replacing its header. Keep the established header markup and load these shared stylesheets in addition to `assets/style.css`:
+
+```html
+<link rel="stylesheet" href="/assets/nav-pill.css?v=sa-20261122">
+<link rel="stylesheet" href="/assets/site-polish.css?v=sa-20261122">
+```
+
+Also load `/assets/site.js?v=sa-20261122` so the shared search control, centered logo, animated navigation row, and menu overlay are initialized. Do not create an article-specific navigation bar or override the shared navigation CSS. Before publishing any new article, compare its header and navigation assets with the current homepage and an existing current article (for example, the GMP article). Preserve the current navigation exactly across all new pages.
