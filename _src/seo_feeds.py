@@ -57,7 +57,7 @@ def write_feed(arts):
     for a in arts:
         f = R / a["img"].replace(SITE + "/", "") if a["img"].startswith(SITE + "/") else None
         size = f.stat().st_size if f and f.exists() else 0
-        kind = "webp" if a["img"].endswith(".webp") else "png" if a["img"].endswith(".png") else "jpeg"
+        kind = "svg+xml" if a["img"].endswith(".svg") else "webp" if a["img"].endswith(".webp") else "png" if a["img"].endswith(".png") else "jpeg"
         enc = f'\n      <enclosure url="{e(a["img"])}" type="image/{kind}" length="{size}"/>' if size else ""
         items.append(f"""    <item>
       <title>{e(a['title'])}</title>

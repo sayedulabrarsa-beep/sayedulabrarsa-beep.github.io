@@ -66,7 +66,7 @@ def discover(known):
             seg = body[h.end(): hs[k+1].start() if k+1 < len(hs) else len(body)]
             im = re.search(r'<figure[^>]*>\s*(?:<a [^>]*>\s*)?<img src="([^"]+)" alt="([^"]*)"', seg)
             pr = re.search(r"<p>(.*?)</p>", seg, re.S)
-            if im and _local(im.group(1)) and not im.group(1).lower().split('?')[0].endswith('.svg') and pr:
+            if im and _local(im.group(1)) and pr:
                 head = re.sub(r"^(?:[0-9০-৯]+[.।]\s*|[A-Z]\s*[—-]\s*)", "", _txt(h.group(2)))
                 secs.append((h.group(1), head, _short(_txt(pr.group(1))), _local(im.group(1)), html.unescape(im.group(2))))
         main = [x for x in secs if x[0] == "2"]; pick = main if len(main) >= 3 else secs
