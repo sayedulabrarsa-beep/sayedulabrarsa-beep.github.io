@@ -171,7 +171,7 @@ Get in touch ↗Find me on LinkedIn
 
 ## Pharma Blog articles (newest first)
 
-### ওষুধের স্থায়িত্ব পরীক্ষা: মেয়াদ কীভাবে নির্ধারণ করে ওষুধ কোম্পানি?
+### ওষুধের স্থায়িত্ব পরীক্ষা: মেয়াদ কীভাবে নির্ধারিত হয়
 URL: https://sayedulabrar.site/blog/medicine-stability-testing-how-shelf-life-is-established-bangla/ · Language: Bangla · Published: 2026-11-22 · Author: Sayedul Abrar, pharmacist
 Summary: Long-term, accelerated ও ongoing stability study-এর মাধ্যমে ওষুধের মান, packaging, storage এবং expiry date কীভাবে নির্ধারিত হয় জানুন।
 
@@ -254,6 +254,14 @@ Approval-এর পরও ongoing stability programme চলে। WHO guidance 
 
 ওষুধ নির্দেশিতভাবে সংরক্ষণ করা হলে এবং packaging উপযুক্ত থাকলেই expiry date অর্থবহ। Stability testing পরীক্ষাগারের তথ্যকে প্যাকেটে লেখা storage advice-এর সঙ্গে যুক্ত করে।
 
+### ৯. মূল কথা
+
+- Stability testing হলো নির্দিষ্ট তাপমাত্রা, আর্দ্রতা, আলো ও packaging-এর মধ্যে সময়ের সঙ্গে ওষুধের মান কীভাবে বদলায় তা পর্যবেক্ষণ।
+- Long-term data-ই finished medicine-এর shelf life-এর প্রধান ভিত্তি; accelerated data মূল্যায়নকে সমর্থন করে।
+- Study করতে হবে বাজারজাত করার container-closure system-এ বা যুক্তিযুক্ত সমতুল্য packaging-এ।
+- প্রতিনিধিত্বশীল batch ও পরিকল্পিত time point দেখায় মান specification-এর মধ্যে থাকছে কি না।
+- Shelf life হলো সম্পূর্ণ data package থেকে নেওয়া সিদ্ধান্ত। প্যাকে যেভাবে লেখা, সেভাবেই ওষুধ রাখুন।
+
 ### সাধারণ প্রশ্নোত্তর
 
 Long-term ও accelerated stability testing-এর পার্থক্য কী?
@@ -297,9 +305,9 @@ Product Executive, Product Management Department · Opsonin Pharma Ltd.
 
 ---
 
-### Medicine Stability Testing: How Do Pharmaceutical Companies Establish Shelf Life?
+### Medicine Stability Testing: How Shelf Life Is Set
 URL: https://sayedulabrar.site/blog/medicine-stability-testing-how-shelf-life-is-established/ · Language: English · Published: 2026-11-22 · Author: Sayedul Abrar, pharmacist
-Summary: Learn how long-term, accelerated and ongoing stability studies assess medicine quality, packaging, storage and expiry dates, with Bangladesh context.
+Summary: Medicine stability testing explained: long-term, accelerated and ongoing studies, packaging, shelf life and expiry dates, with Bangladesh context.
 
 By Sayedul Abrar, pharmacist · Published 22 November 2026
 The short answer: Stability testing follows medicine quality over time under defined temperature, humidity, light and packaging conditions. Long-term data provide the main basis for a finished medicine's shelf life; accelerated studies support the assessment. One short hot-chamber test cannot establish an expiry date by itself.
@@ -379,6 +387,14 @@ After approval, an ongoing programme monitors marketed batches. WHO guidance des
 - Do not judge quality only by colour, smell or appearance; some changes are not visible.
 
 The expiry date is meaningful when the medicine has been stored as directed and the pack remains suitable. Stability testing connects laboratory evidence with the storage advice on the label.
+
+### 9. Key takeaways
+
+- Stability testing follows medicine quality over time under defined temperature, humidity, light and packaging conditions.
+- Long-term data are the main basis for a finished medicine's shelf life; accelerated data support the assessment.
+- Studies should use the proposed marketed container-closure system or a justified equivalent.
+- Representative batches and planned time points show whether quality stays within specification.
+- Shelf life is a decision from the whole data package. Store the medicine as the pack says.
 
 ### Frequently asked questions
 
