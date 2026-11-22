@@ -28,8 +28,8 @@ s = s[:a] + '<div class="mdr-wrap">' + "".join(out) + '</div>' + s[b:]
 # 3) actions + assets
 s = s.replace('<a class="btn secondary" href="/experience/">Back to experience</a>',
               '<a class="btn secondary" href="/portfolio/#cabinet">Back to portfolio cabinet</a><a class="btn secondary" href="/experience/">Back to experience</a>')
-s = s.replace('<script src="/assets/site.js?v=sa-20261121" defer></script>',
-              '<script src="/assets/site.js?v=sa-20261121" defer></script>\n<script src="/assets/drawers.js?v=pc2-20261108" defer></script>')
-s = re.sub(r'/assets/style\.css\?v=[^"]*', '/assets/style.css?v=sa-20261121', s)
+s = s.replace('<script src="/assets/site.js?v=sa-20261122" defer></script>',
+              '<script src="/assets/site.js?v=sa-20261122" defer></script>\n<script src="/assets/drawers.js?v=pc2-20261108" defer></script>')
+s = re.sub(r'/assets/style\.css\?v=[^"]*', '/assets/style.css?v=sa-20261122', s)
 P.write_text(s, encoding="utf-8")
 print("ok", len(parts), "drawers")
