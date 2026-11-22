@@ -171,6 +171,251 @@ Get in touch ↗Find me on LinkedIn
 
 ## Pharma Blog articles (newest first)
 
+### ওষুধের স্থায়িত্ব পরীক্ষা: মেয়াদ কীভাবে নির্ধারণ করে ওষুধ কোম্পানি?
+URL: https://sayedulabrar.site/blog/medicine-stability-testing-how-shelf-life-is-established-bangla/ · Language: Bangla · Published: 2026-11-22 · Author: Sayedul Abrar, pharmacist
+Summary: Long-term, accelerated ও ongoing stability study-এর মাধ্যমে ওষুধের মান, packaging, storage এবং expiry date কীভাবে নির্ধারিত হয় জানুন।
+
+লিখেছেন Sayedul Abrar, pharmacist · প্রকাশিত ২২ নভেম্বর ২০২৬
+সংক্ষেপে: Stability testing হলো নির্দিষ্ট তাপমাত্রা, আর্দ্রতা, আলো ও packaging-এর মধ্যে সময়ের সঙ্গে ওষুধের গুণগত মান কীভাবে বদলায় তা পর্যবেক্ষণ। Long-term data-ই finished medicine-এর shelf life নির্ধারণের প্রধান ভিত্তি; accelerated study সহায়ক তথ্য দেয়। শুধু একটি গরম চেম্বারের পরীক্ষা দিয়ে expiry date ঠিক করা যায় না।
+
+উৎপাদনের দিন একটি batch release test পাস করলেও সংরক্ষণের সময় তার পরিবর্তন হতে পারে। প্যাকেটে আর্দ্রতা ঢুকতে পারে, active ingredient degrade হতে পারে, ট্যাবলেটের dissolution বদলাতে পারে অথবা তরল ওষুধের physical property পরিবর্তিত হতে পারে। Stability study প্রস্তুতকারককে বুঝতে সাহায্য করে—প্যাকেটে লেখা মেয়াদজুড়ে ওষুধটি নির্ধারিত quality specification পূরণ করবে কি না।
+
+### ১. ওষুধের stability testing কী?
+
+Stability testing হলো এমন একটি পরিকল্পিত programme, যেখানে Active Pharmaceutical Ingredient (API) অথবা Finished Pharmaceutical Product (FPP)-এর গুণগত মান সময়ের সঙ্গে কীভাবে বদলায় তা দেখা হয়। Temperature, relative humidity, light এবং অন্যান্য physical factor ফলাফলকে প্রভাবিত করতে পারে। Formulation, excipients ও container-closure system-ও গুরুত্বপূর্ণ; কোনো পণ্য আর্দ্রতা শোষণ করতে পারে, পানি হারাতে পারে অথবা packaging-এর সঙ্গে interaction করতে পারে।
+
+এই programme দুটি আলাদা সময়সীমা সমর্থন করতে পারে:
+- API retest period: ব্যবহারের আগে API-কে specification অনুযায়ী আবার পরীক্ষা করার সময়সীমা, যেখানে retest period প্রযোজ্য।
+- Finished-product shelf life: লেবেলের storage instruction মেনে রাখলে প্যাকেটজাত ওষুধ কতদিন approved quality limit-এর মধ্যে থাকার কথা। এই তথ্য expiry date সমর্থন করে।
+
+Release testing দেখে batch এখন specification পূরণ করছে কি না। Stability testing দেখে সময়ের সঙ্গে সেটি specification পূরণ করে যাচ্ছে কি না।
+
+### ২. Long-term, accelerated ও intermediate study
+
+Long-term study-তে ওষুধকে নির্বাচিত দীর্ঘমেয়াদি সংরক্ষণ-শর্তে রেখে মাস ও বছর ধরে পর্যবেক্ষণ করা হয়। প্রস্তাবিত shelf life-এর প্রধান real-time evidence এখান থেকেই আসে।
+
+Accelerated study-তে বেশি temperature এবং প্রযোজ্য ক্ষেত্রে বেশি humidity ব্যবহার করে সম্ভাব্য পরিবর্তন তুলনামূলক দ্রুত বোঝার চেষ্টা করা হয়। পরিবহন বা handling-এর সময় স্বল্পমেয়াদি temperature excursion মূল্যায়নেও এটি সহায়তা করতে পারে। তবে চেম্বারে ছয় মাসের accelerated study-কে সরাসরি কয়েক বছরের বাস্তব সংরক্ষণের সমান ধরা যায় না।
+
+Intermediate study অতিরিক্ত একটি condition-এ পরীক্ষা। যেমন, long-term condition ২৫°C/৬০% RH হলে এবং accelerated study-তে significant change দেখা গেলে intermediate study দরকার হতে পারে।
+
+|
+| Study | সাধারণ উদাহরণ | উদ্দেশ্য
+| Long-term | ২৫°C ± ২°C / ৬০% RH ± ৫%, অথবা ৩০°C ± ২°C / ৬৫% RH ± ৫% | বাস্তব সংরক্ষণ-শর্তে quality profile
+| Accelerated | ৪০°C ± ২°C / ৭৫% RH ± ৫% | বেশি stress-এ পরিবর্তনের সহায়ক তথ্য
+| Intermediate | ৩০°C ± ২°C / ৬৫% RH ± ৫% | প্রয়োজন হলে অতিরিক্ত মূল্যায়ন
+
+এগুলো ICH Q1A(R2)-এর general-case উদাহরণ; প্রতিটি ওষুধের জন্য একই protocol নয়। Long-term condition হিসেবে ৩০°C/৬৫% RH বেছে নিলে ওই framework-এ একই শর্তে আলাদা intermediate arm লাগে না। Refrigerated, frozen, semi-permeable container, biological product এবং বিশেষ dosage form-এর জন্য আলাদা study design প্রয়োজন হতে পারে।
+
+### ৩. Laboratory-তে কী পরীক্ষা করা হয়?
+
+Test panel নির্ভর করে dosage form ও পণ্যের ঝুঁকির ওপর। প্রাসঙ্গিক পরীক্ষা হতে পারে:
+
+- Assay বা potency: active ingredient-এর পরিমাণ ঠিক আছে কি না।
+- Degradation product ও impurity: breakdown product তৈরি হচ্ছে বা গ্রহণযোগ্য সীমা ছাড়াচ্ছে কি না।
+- Dissolution বা drug release: ট্যাবলেট বা ক্যাপসুল প্রত্যাশিতভাবে ওষুধ ছাড়ছে কি না।
+- Physical property: appearance, colour, moisture, hardness, caking বা phase separation—যা প্রযোজ্য।
+- অন্যান্য test: pH, preservative, microbial limit, sterility, particulate matter বা delivery-device performance—প্রয়োজন অনুযায়ী।
+
+Method এমন হতে হবে যাতে storage-এর সময় হওয়া পরিবর্তন শনাক্ত করা যায়। Validated stability-indicating method active ingredient-কে প্রাসঙ্গিক degradation product থেকে আলাদা করতে পারে। প্রতিটি পণ্যে সব test লাগে না; protocol নির্ধারিত হয় পণ্যের বৈশিষ্ট্য ও approved specification অনুযায়ী।
+
+### ৪. Packaging কেন study-এর অংশ?
+
+Packaging দিয়ে আর্দ্রতা, oxygen ও আলো কতটা প্রবেশ করতে পারে, তা ওষুধের stability বদলে দিতে পারে। Sealed blister থেকে bottle-এ পরিবর্তন, bottle material বা cap বদলানো, কিংবা desiccant পরিবর্তনের ফলে stability profile বদলাতে পারে। তাই proposed marketed container-closure system বা বৈজ্ঞানিকভাবে যুক্তিযুক্ত সমতুল্য packaging ব্যবহার করা জরুরি। অতিরিক্ত সুরক্ষা দিলে secondary packaging-ও গুরুত্বপূর্ণ।
+
+### ৫. Batch ও time point কীভাবে বেছে নেওয়া হয়?
+
+Formal study-তে এমন batch নেওয়া হয়, যা ভবিষ্যৎ commercial process-এর প্রতিনিধিত্ব করে। ICH Q1A(R2)-এর general case-এ অন্তত তিনটি primary batch-এর data বর্ণনা করা হয়েছে। Finished-product batch-এর formulation এবং proposed container-closure system একই হওয়া উচিত। Bracketing বা matrixing ব্যবহার করলে তার বৈজ্ঞানিক যুক্তি থাকতে হবে।
+
+পরীক্ষা নির্দিষ্ট সময়ে করা হয়। ICH general case অনুযায়ী ১২ মাস বা তার বেশি shelf life প্রস্তাবিত হলে long-term study-তে প্রথম বছরে প্রতি তিন মাসে, দ্বিতীয় বছরে প্রতি ছয় মাসে এবং এরপর বছরে একবার পরীক্ষা করা হয়। ছয় মাসের accelerated study-তে ০, ৩ ও ৬ মাসের মতো time point থাকতে পারে। Intermediate study দরকার হলে ১২ মাসে ০, ৬, ৯ ও ১২ মাসের মতো চারটি time point রাখা হতে পারে। প্রকৃত schedule অনুমোদিত protocol নির্ধারণ করে।
+
+### ৬. বাংলাদেশ: climate ও regulatory context
+
+বাংলাদেশে storage, transport ও distribution-এর সময় গরম ও আর্দ্র পরিবেশের প্রভাব বিবেচনা করা জরুরি। তবে climatic-zone label বা WHO table-কে বর্তমান জাতীয় regulatory instruction মনে করা ঠিক নয়।
+
+WHO-এর March 2021 update-এ Member State stability-conditions table-এ বাংলাদেশের পাশে [৩০°C/৬৫% RH] এবং footnote 3 রয়েছে। WHO ব্যাখ্যা করেছে, এই bracketed entry-গুলো International Federation of Pharmaceutical Manufacturers and Associations-এর দেওয়া climate reference-ভিত্তিক তথ্য; এগুলো জাতীয় নিয়ন্ত্রক সংস্থার আনুষ্ঠানিকভাবে নিশ্চিত করা condition নয়। তাই table-টি প্রেক্ষাপট দেয়, কিন্তু এটি প্রমাণ করে না যে ৩০°C/৬৫% RH প্রতিটি ওষুধের জন্য বর্তমান DGDA-নির্ধারিত শর্ত।
+
+নির্দিষ্ট product category, registration route এবং DGDA-এর বর্তমান নির্দেশনা যাচাই করতে হবে। ২০২৪ সালের DGDA guideline—যা locally sourced medical products for public health priority disease-এর জন্য—তার scope-এর মধ্যে অন্তত তিনটি commercial batch size-এ long-term study, proposed marketing container-closure system এবং full shelf life cover করার কথা বলে। Formula, API source, manufacturing site ও packaging material সরবরাহের জন্য নির্ধারিত পণ্যের সঙ্গে মিলতে হবে। এটি নির্দিষ্ট scope-এর guideline; সব registration route-এর সারাংশ নয়।
+
+### ৭. Stability data থেকে expiry date কীভাবে আসে?
+
+বিজ্ঞানীরা বিভিন্ন batch, time point ও quality attribute-এর ফল একসঙ্গে পর্যালোচনা করেন। পরিবর্তনের ধরন, batch-to-batch variability, degradation product এবং acceptance criteria বিবেচনা করা হয়। কোনো attribute সময়ের সঙ্গে বদলালে statistical analysis দরকার হতে পারে। Observed long-term data-এর বাইরে shelf life বাড়াতে হলে বৈজ্ঞানিক যুক্তি ও supporting evidence প্রয়োজন।
+
+Accelerated data সহায়ক, কিন্তু একটি accelerated study দিয়ে স্বয়ংক্রিয়ভাবে দুই বা তিন বছরের shelf life নির্ধারণ করা যায় না। Long-term real-time data, degradation behaviour, packaging, batch variability এবং প্রযোজ্য regulatory framework গুরুত্বপূর্ণ। Label-এর storage statement এমন condition-এর সঙ্গে মিলতে হবে, যেখানে stability প্রমাণ করা হয়েছে।
+
+Approval-এর পরও ongoing stability programme চলে। WHO guidance অনুযায়ী shelf life জুড়ে বাজারজাত পণ্য পর্যবেক্ষণ করা হয়। যুক্তিযুক্ত ব্যতিক্রম না থাকলে কোনো strength ও primary packaging type-এর পণ্য যে বছরে তৈরি হয়, সেই বছরে অন্তত একটি batch programme-এ রাখার কথা বলা হয়েছে।
+
+### ৮. রোগীদের কী জানা দরকার?
+
+- প্যাকেটে লেখা storage instruction অনুসরণ করুন; প্রতিটি ওষুধ refrigerator-এ রাখতে হয় না।
+- ট্যাবলেট ও ক্যাপসুল original packaging-এ রাখুন, বিশেষ করে প্যাকেটটি আর্দ্রতা বা আলো থেকে সুরক্ষা দিলে।
+- গরম গাড়ি, সরাসরি রোদ বা bathroom-এর মতো স্যাঁতসেঁতে জায়গায় ওষুধ রাখবেন না।
+- Printed expiry date পার হলে ওষুধ ব্যবহার করবেন না। প্যাকেট ক্ষতিগ্রস্ত বা ভেজা হলে pharmacist-এর পরামর্শ নিন।
+- শুধু রং, গন্ধ বা চেহারা দেখে quality নিশ্চিত করা যায় না; কিছু পরিবর্তন চোখে দেখা যায় না।
+
+ওষুধ নির্দেশিতভাবে সংরক্ষণ করা হলে এবং packaging উপযুক্ত থাকলেই expiry date অর্থবহ। Stability testing পরীক্ষাগারের তথ্যকে প্যাকেটে লেখা storage advice-এর সঙ্গে যুক্ত করে।
+
+### সাধারণ প্রশ্নোত্তর
+
+Long-term ও accelerated stability testing-এর পার্থক্য কী?
+Long-term study-তে নির্বাচিত storage condition-এ quality দেখা হয়। Accelerated study-তে বেশি temperature ও প্রযোজ্য ক্ষেত্রে humidity ব্যবহার করে দ্রুত পরিবর্তন বোঝা হয়। এটি সহায়ক; real-time evidence-এর বিকল্প নয়।
+
+ছয় মাসের accelerated study কি দুই বছরের expiry প্রমাণ করে?
+না। ছয় মাসের accelerated study দুই বছরের বাস্তব সংরক্ষণের গাণিতিক বিকল্প নয়। Shelf life-এ long-term data, degradation behaviour, batch variability ও packaging বিবেচনা করা হয়।
+
+সাধারণত তিনটি batch কেন পরীক্ষা করা হয়?
+একাধিক batch পরীক্ষা করলে stability pattern কতটা সামঞ্জস্যপূর্ণ এবং ভবিষ্যৎ batch specification-এর মধ্যে থাকার সম্ভাবনা কতটা বোঝা যায়।
+
+বাংলাদেশে কি প্রতিটি ওষুধের জন্য ৩০°C/৬৫% RH বাধ্যতামূলক?
+এই নিবন্ধে এমন দাবি করা হয়নি। WHO table-এ বাংলাদেশের পাশে [৩০°C/৬৫% RH] ও footnote 3 আছে; এটি IFPMA-প্রদত্ত climate estimate, regulator-এর আনুষ্ঠানিকভাবে নিশ্চিত করা condition নয়। DGDA-এর বর্তমান নির্দেশনা দেখুন।
+
+Marketed packaging-এই study করা জরুরি কেন?
+Packaging দিয়ে moisture, oxygen ও light প্রবেশের পরিমাণ বদলে যায়। Proposed container-closure system-এ study করলে সরবরাহ করা পণ্যের quality claim সমর্থন পায়।
+
+Stability sample-এর ফল specification-এর বাইরে গেলে কী হয়?
+নথিভুক্ত তদন্ত দরকার। Manufacturer method, sample, chamber history, batch ও packaging পর্যালোচনা করে impact মূল্যায়ন করেন। শুধু pass result না পাওয়া পর্যন্ত test পুনরাবৃত্তি তদন্তের বিকল্প নয়।
+
+API retest period ও finished medicine-এর expiry date কি একই?
+না। API-এর retest period থাকলে ব্যবহারের আগে আবার পরীক্ষা করা যায়। Finished medicine-এর shelf life expiry date সমর্থন করে; মেয়াদ শেষ হলে ব্যবহার করা উচিত নয়।
+
+### তথ্যসূত্র ও আরও পড়ুন
+
+- World Health Organization. TRS 1010, Annex 10: Stability testing of active pharmaceutical ingredients and finished pharmaceutical products. 2018.
+- International Council for Harmonisation. ICH Q1A(R2): Stability Testing of New Drug Substances and Products. Step 5, 2003.
+- World Health Organization. Stability conditions for WHO Member States by Region. Updated March 2021.
+- Directorate General of Drug Administration, Bangladesh. Guideline for quality assurance of locally sourced medical products for public health priority disease. Published 30 September 2024.
+- European Medicines Agency. ICH Q1 consolidated guideline status page. The consolidated text is listed as a Step 2b draft; consultation closed in July 2025.
+
+শিক্ষামূলক নোট: এই নিবন্ধে stability testing-এর ধারণা ও নির্বাচিত public guidance ব্যাখ্যা করা হয়েছে। এটি regulatory submission checklist নয় এবং DGDA-এর বর্তমান নির্দেশনা, approved product dossier বা validated stability protocol-এর বিকল্প নয়।
+
+### সাইয়্যেদুল আবরার
+
+ফার্মাসিস্ট · A Grade Pharmacist (Registration Code A-22040)
+Product Executive, Product Management Department · Opsonin Pharma Ltd.
+লেখক সম্পর্কে · LinkedIn
+
+সম্পর্কিত লেখা: Quality Assurance vs Quality Control · Good Manufacturing Practices (GMP) · Active Pharmaceutical Ingredient (API) · Expiry Date vs Manufacturing Date
+
+---
+
+### Medicine Stability Testing: How Do Pharmaceutical Companies Establish Shelf Life?
+URL: https://sayedulabrar.site/blog/medicine-stability-testing-how-shelf-life-is-established/ · Language: English · Published: 2026-11-22 · Author: Sayedul Abrar, pharmacist
+Summary: Learn how long-term, accelerated and ongoing stability studies assess medicine quality, packaging, storage and expiry dates, with Bangladesh context.
+
+By Sayedul Abrar, pharmacist · Published 22 November 2026
+The short answer: Stability testing follows medicine quality over time under defined temperature, humidity, light and packaging conditions. Long-term data provide the main basis for a finished medicine's shelf life; accelerated studies support the assessment. One short hot-chamber test cannot establish an expiry date by itself.
+
+A medicine may pass release testing when manufactured and still change during storage. Moisture may enter a pack, an active ingredient may degrade, a tablet may dissolve differently, or a liquid may change physically. Stability studies assess whether the product continues to meet its quality specifications throughout the period printed on the pack.
+
+### 1. What is medicine stability testing?
+
+Stability testing is a planned programme that measures how an active pharmaceutical ingredient (API) or finished pharmaceutical product (FPP) changes with time. Temperature, relative humidity, light and other physical factors can influence quality. The formulation, excipients and container-closure system also matter: a product may absorb moisture, lose water or interact with packaging.
+
+Two different time limits may be supported:
+- API retest period: when an active ingredient should be retested against its specification before use, where a retest period is appropriate.
+- Finished-product shelf life: how long the packaged medicine is expected to remain within approved quality limits when stored as labelled. This supports the expiry date.
+
+Release testing asks whether a batch meets its specifications now. Stability testing asks whether it continues to meet them as time passes.
+
+### 2. Long-term, accelerated and intermediate studies
+
+Long-term studies store the product under the selected intended or justified condition and follow it over months and years. These real-time results are the main foundation for a proposed shelf life.
+
+Accelerated studies use higher temperature and, where appropriate, humidity to reveal possible changes sooner. They provide supportive evidence and can help assess short-term shipping excursions. They do not convert six months in a chamber into a fixed number of years at room temperature.
+
+Intermediate studies add another condition when the design calls for it—for example, when a product stored long-term at 25°C/60% RH shows significant change during accelerated testing.
+
+|
+| Study | Illustrative general condition | Purpose
+| Long-term | 25°C ± 2°C / 60% RH ± 5%, or 30°C ± 2°C / 65% RH ± 5% | Real-time quality profile
+| Accelerated | 40°C ± 2°C / 75% RH ± 5% | Supportive evidence under higher stress
+| Intermediate | 30°C ± 2°C / 65% RH ± 5% | Additional evaluation when triggered
+
+These are ICH Q1A(R2) general-case examples, not a universal protocol. If 30°C/65% RH is selected as the long-term condition, a separate intermediate arm at the same setting is not required under that framework. Refrigerated, frozen, semi-permeable, biological and other specialised products need product-specific designs.
+
+### 3. What do laboratories test?
+
+The test panel depends on the dosage form and its risks. It may include:
+
+- Assay or potency: whether the required amount of active ingredient remains.
+- Degradation products and impurities: whether breakdown products appear or increase beyond their limits.
+- Dissolution or drug release: whether a tablet or capsule releases its medicine as expected.
+- Physical properties: appearance, colour, moisture, hardness, caking or phase separation, as relevant.
+- Other tests: pH, preservative content, microbial limits, sterility, particulate matter or device performance when applicable.
+
+Methods must detect storage-related change. A validated stability-indicating method should distinguish the active ingredient from relevant degradation products. Not every test is needed for every product; the protocol follows its characteristics and approved specification.
+
+### 4. Why packaging must be part of the study
+
+Packaging can limit or allow moisture, oxygen and light to reach a medicine. A change from a sealed blister to a bottle, or a change in bottle material, closure or desiccant, may alter the stability profile. Studies should therefore use the proposed marketed container-closure system or a scientifically justified equivalent. Secondary packaging matters when it provides additional protection.
+
+### 5. How are batches and time points selected?
+
+Formal studies use representative batches made by a process that reflects intended commercial production. ICH Q1A(R2) describes data from at least three primary batches in the general case. Finished-product batches should have the same formulation and proposed container-closure system. Bracketing or matrixing may reduce testing only when scientifically justified.
+
+Testing happens at planned intervals. In the ICH general case, long-term testing for a product with a proposed shelf life of at least 12 months normally occurs every three months in year one, every six months in year two, and annually thereafter. A six-month accelerated study commonly includes 0, 3 and 6 months. If intermediate testing is needed, a 12-month study may include 0, 6, 9 and 12 months. The approved protocol sets the actual schedule.
+
+### 6. Bangladesh: climate and regulatory context
+
+Hot and humid conditions during storage, transport and distribution make temperature and moisture important considerations in Bangladesh. But a climatic-zone label or WHO table should not be mistaken for a current national regulatory instruction.
+
+The WHO Member State stability-conditions table updated in March 2021 lists Bangladesh as [30°C/65% RH] with footnote 3. WHO explains that bracketed entries with this footnote were supplied by the International Federation of Pharmaceutical Manufacturers and Associations using climate references. They are not conditions confirmed to WHO through official communications from national medicines regulators. The table is useful context; it does not prove that 30°C/65% RH is a current DGDA-mandated condition for every medicine.
+
+Requirements must be checked against the applicable DGDA product category, registration route and current instructions. A 2024 DGDA guideline for locally sourced medical products for public health priority disease says, within its scope, applicants should provide long-term studies on at least three commercial batch sizes, in the proposed marketing container-closure system and covering the full shelf life. The formula, API source, manufacturing site and packaging material should match the product intended for supply. This is a scoped guideline, not a universal summary of every registration route.
+
+### 7. How does the evidence become an expiry date?
+
+Scientists review results across batches, time points and relevant quality attributes. They consider the pattern of change, batch-to-batch variability, degradation products and whether results remain within acceptance criteria. Statistical analysis may be appropriate when an attribute changes with time. Extrapolation beyond observed long-term data needs scientific justification and supporting evidence.
+
+Accelerated data support the assessment, but one accelerated study alone does not automatically establish a two- or three-year shelf life. Long-term real-time data, degradation behaviour, packaging, batch variability and the applicable regulatory framework all matter. The label's storage statement should match the conditions under which stability has been demonstrated.
+
+After approval, an ongoing programme monitors marketed batches. WHO guidance describes monitoring throughout shelf life and, unless justified otherwise, inclusion of at least one batch per year for each strength and primary packaging type when that product is manufactured. Significant process or packaging changes, atypical trends or out-of-specification results may require investigation.
+
+### 8. What should patients understand?
+
+- Follow the storage instructions on the pack; do not assume every medicine belongs in a refrigerator.
+- Keep tablets and capsules in their original packaging, especially when it protects them from moisture or light.
+- Avoid hot cars, direct sunlight and damp places such as bathrooms.
+- Do not use a medicine after its printed expiry date. If the pack is damaged or wet, ask a pharmacist.
+- Do not judge quality only by colour, smell or appearance; some changes are not visible.
+
+The expiry date is meaningful when the medicine has been stored as directed and the pack remains suitable. Stability testing connects laboratory evidence with the storage advice on the label.
+
+### Frequently asked questions
+
+What is the difference between long-term and accelerated stability testing?
+Long-term studies follow the product under the selected storage condition. Accelerated studies use higher temperature and, where appropriate, humidity to reveal changes sooner. They support, but do not replace, real-time evidence.
+
+Can six months of accelerated testing prove a two-year expiry date?
+No. Six months at an accelerated condition is not a mathematical substitute for two years of real-time storage. Shelf life uses long-term data, degradation behaviour, batch variability and packaging.
+
+Why are three batches commonly studied?
+Representative batches help show whether the stability pattern is consistent and future batches are likely to remain within specification. Exact requirements depend on the product and guidance.
+
+Does Bangladesh require 30°C/65% RH for every medicine?
+This article does not make that claim. WHO's 2021 table lists Bangladesh [30°C/65% RH] with footnote 3, an IFPMA-derived climate estimate rather than a condition formally confirmed by the national regulator. Check current DGDA requirements.
+
+Why must the marketed packaging be used?
+Packaging changes how much moisture, oxygen or light reaches a medicine. A study in the proposed container-closure system supports the quality claim for the supplied product.
+
+What happens if a stability sample fails a test?
+The result needs documented investigation. The manufacturer reviews the method, sample, chamber history, batch and packaging, assesses impact and follows applicable procedures. Repeating a test until it passes is not a substitute.
+
+Is an API retest period the same as a finished medicine expiry date?
+No. An API may be retested before use when a retest period applies. A finished medicine's shelf life supports its expiry date; it should not be used after that date.
+
+### References and further reading
+
+- World Health Organization. TRS 1010, Annex 10: Stability testing of active pharmaceutical ingredients and finished pharmaceutical products. 2018.
+- International Council for Harmonisation. ICH Q1A(R2): Stability Testing of New Drug Substances and Products. Step 5, 2003.
+- World Health Organization. Stability conditions for WHO Member States by Region. Updated March 2021.
+- Directorate General of Drug Administration, Bangladesh. Guideline for quality assurance of locally sourced medical products for public health priority disease. Published 30 September 2024.
+- European Medicines Agency. ICH Q1 consolidated guideline status page. The consolidated text is listed as a Step 2b draft; consultation closed in July 2025.
+
+Educational note: This article explains stability concepts and selected public guidance. It is not a regulatory submission checklist or a substitute for current DGDA instructions, an approved dossier or a validated stability protocol.
+
+
+---
+
 ### ওষুধের নিঃসরণ: শরীর থেকে ওষুধ কীভাবে বের হয়?
 URL: https://sayedulabrar.site/blog/drug-excretion-how-medicines-leave-the-body-bangla/ · Language: Bangla · Published: 2026-11-21T20:00:00+06:00 · Author: Sayedul Abrar, pharmacist
 Summary: কিডনি, প্রস্রাব, পিত্ত ও clearance—শরীর থেকে ওষুধ কীভাবে বের হয় এবং কিডনির কার্যক্ষমতা কেন ডোজকে প্রভাবিত করে, সহজ ভাষায় জানুন।
