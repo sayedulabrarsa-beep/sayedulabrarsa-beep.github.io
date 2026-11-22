@@ -17,7 +17,7 @@
     card.insertBefore(img,card.firstChild);
   });
   if(document.querySelector('.ae-band'))return;
-  var V='ae10-20261121';
+  var V='ae11-20261122';
   if(!document.querySelector('link[data-ae-style]')){
     var l=document.createElement('link');l.rel='stylesheet';l.href='/assets/article-end.css?v='+V;
     l.setAttribute('data-ae-style','');document.head.appendChild(l);
