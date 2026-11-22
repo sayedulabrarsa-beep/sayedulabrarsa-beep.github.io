@@ -107,13 +107,8 @@
   var track=el('div','ae-track ae-mq');
   track.setAttribute('aria-labelledby','ae-title2');
   var inner=el('div','ae-mq-in');track.appendChild(inner);
-  /* Two copies so the row can loop seamlessly right to left; readers can still swipe or drag. */
+  /* Responsive grid: show each remaining article once and use the full available width. */
   more.forEach(function(k){card(k,inner)});
-  if(more.length){
-    more.forEach(function(k){card(k,inner)});
-    track.classList.add('ae-run');
-    track.style.setProperty('--ae-dur',Math.max(45,more.length*9)+'s');
-  }
   track.setAttribute('tabindex','0');
   track.setAttribute('role','region');
   track.setAttribute('aria-label','More articles. Swipe or scroll horizontally to browse.');
