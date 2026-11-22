@@ -1,7 +1,22 @@
 (function(){
   'use strict';
   var main=document.querySelector('main');
-  if(!main||document.querySelector('.ae-band'))return;
+  if(!main)return;
+  /* Keep one related-article experience and ensure every article author card has its portrait. */
+  Array.prototype.forEach.call(main.querySelectorAll('p'),function(p){
+    var label=(p.textContent||'').trim().toLowerCase();
+    if(label.indexOf('related reading:')===0||label.indexOf('সম্পর্কিত লেখা:')===0)p.remove();
+  });
+  Array.prototype.forEach.call(main.querySelectorAll('.author-card'),function(card){
+    if(card.querySelector('img'))return;
+    var img=document.createElement('img');
+    img.className='author-avatar';
+    img.src='/assets/img/sayedul-abrar.jpg';
+    img.alt='Sayedul Abrar, pharmacist and Product Executive at Opsonin Pharma Ltd.';
+    img.width=76;img.height=76;img.loading='lazy';img.decoding='async';
+    card.insertBefore(img,card.firstChild);
+  });
+  if(document.querySelector('.ae-band'))return;
   var V='ae10-20261121';
   if(!document.querySelector('link[data-ae-style]')){
     var l=document.createElement('link');l.rel='stylesheet';l.href='/assets/article-end.css?v='+V;
