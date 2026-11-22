@@ -115,7 +115,7 @@ Pharma Blog articles (newest first; each is educational, not medical advice):
 - আয়রন ট্যাবলেট কীভাবে খাবেন: সময়, খাবার ও ওষুধের মিথস্ক্রিয়া — বাংলা (2026-11-07): https://sayedulabrar.site/blog/how-to-take-iron-tablets-properly-bangla/
   Summary: আয়রন ট্যাবলেট কখন খাবেন, কী দিয়ে খাবেন, কী এড়াবেন, কোন ওষুধের সঙ্গে সমস্যা হতে পারে এবং পার্শ্বপ্রতিক্রিয়া বা ডোজ বাদ পড়লে কী করবেন।
 - How to Take Iron Tablets Properly: Timing, Food and Interactions — English (2026-11-07): https://sayedulabrar.site/blog/how-to-take-iron-tablets-properly/
-  Summary: How to take iron tablets properly: best time, with or without food, vitamin C, tea, coffee, dairy, calcium, medicine interactions, side effects and missed doses. Explained by a pharmacist with NHS and NIH sources.
+  Summary: Iron tablets: before or after food? Best timing, vitamin C, tea, coffee, dairy and calcium gaps, interactions and missed doses, with NHS and NIH sources.
 - গ্লুকোসামিন ও আলঝেইমার: নতুন গবেষণা আসলে কী বলছে (আর কী বলছে না) — বাংলা (2026-11-01): https://sayedulabrar.site/blog/glucosamine-alzheimers-nature-metabolism-study-bangla/
   Summary: গ্লুকোসামিন কি আলঝেইমার বাড়ায়? ২০২৬ সালের Nature Metabolism গবেষণার ইঁদুরের তথ্য, হাসপাতালের রেকর্ড, মাত্রা, সীমাবদ্ধতা ও করণীয়—ফার্মাসিস্টের গবেষণা পর্যালোচনা।
 - Glucosamine and Alzheimer's: What the New Nature Metabolism Study Really Shows (and What It Doesn't) — English (2026-11-01): https://sayedulabrar.site/blog/glucosamine-alzheimers-nature-metabolism-study/
@@ -124,16 +124,16 @@ Pharma Blog articles (newest first; each is educational, not medical advice):
   Summary: বুক জ্বালাপোড়া, অ্যাসিড রিফ্লাক্স ও GERD-এর পার্থক্য, লক্ষণ, কারণ, ৭টি অভ্যাস, বিপদ-সংকেত এবং কখন ডাক্তার দেখাবেন—ফার্মাসিস্ট সাইয়্যেদুল আবরারের সহজ গাইড।
 - Heartburn vs Acid Reflux vs GERD: Symptoms, Triggers and When to See a Doctor — English (2026-10-30): https://sayedulabrar.site/blog/heartburn-vs-acid-reflux-vs-gerd/
   Summary: Heartburn vs acid reflux vs GERD: understand the differences, symptoms, common triggers, 7 lifestyle tips, warning signs and when to see a doctor.
-- ওষুধের মেয়াদ শেষ হওয়ার তারিখ (EXP) ও উৎপাদনের তারিখ (MFG): পার্থক্য ও পড়ার নিয়ম — বাংলা (2026-10-28): https://sayedulabrar.site/blog/expiry-date-vs-manufacturing-date-medicine-bangla/
-  Summary: ওষুধের মেয়াদ শেষ হওয়ার তারিখ (EXP) ও উৎপাদনের তারিখ (MFG) কীভাবে পড়বেন? 07/2027-এর অর্থ, ব্যাচ নম্বর, মেয়াদ ও সংরক্ষণের নিয়ম জানুন।
+- মেয়াদ শেষ হওয়ার তারিখ (EXP) ও উৎপাদনের তারিখ (MFG) দেখার নিয়ম — বাংলা (2026-10-28): https://sayedulabrar.site/blog/expiry-date-vs-manufacturing-date-medicine-bangla/
+  Summary: ঔষধ বা ওষুধের মেয়াদ শেষ হওয়ার তারিখ (EXP) ও উৎপাদনের তারিখ (MFG) কীভাবে দেখবেন? 07/2027 মানে কী, ব্যাচ নম্বর ও সংরক্ষণের নিয়ম।
 - Expiry Date vs Manufacturing Date on Medicine: Read EXP & MFG — English (2026-10-28): https://sayedulabrar.site/blog/expiry-date-vs-manufacturing-date-medicine/
-  Summary: Learn expiry date (EXP) vs manufacturing date (MFG) on medicine packs. Decode EXP 07/2027, find batch numbers, check opened medicines and store medicines safely.
-- জেনেরিক ও ব্র্যান্ডের পার্থক্য কী? ওষুধের নাম বুঝুন সহজে — বাংলা (2026-10-27): https://sayedulabrar.site/blog/generic-name-vs-brand-name-bangla/
-  Summary: জেনেরিক ও ব্র্যান্ডের পার্থক্য কী? ওষুধের জেনেরিক নাম, ব্র্যান্ড নাম, নাপা-প্যারাসিটামল উদাহরণ এবং লেবেল পড়ার নিয়ম জানুন।
+  Summary: What EXP and MFG mean on a medicine pack: how to read EXP 07/2027 (good to the end of that month), the batch number, opened-medicine limits and storage.
+- জেনেরিক নাম কী? জেনেরিক ও ব্র্যান্ড নামের পার্থক্য — বাংলা (2026-10-27): https://sayedulabrar.site/blog/generic-name-vs-brand-name-bangla/
+  Summary: জেনেরিক নাম ও ব্র্যান্ড নামের পার্থক্য কী? ওষুধের জেনেরিক নাম চেনার উপায়, নাপা-প্যারাসিটামল উদাহরণ ও লেবেল পড়ার নিয়ম জানুন।
 - Generic Name vs Brand Name of Medicine: Easy Guide (2026) — English (2026-10-27): https://sayedulabrar.site/blog/generic-name-vs-brand-name/
-  Summary: Generic name vs brand name of medicine explained: how to find the active ingredient, why Finix and Rabe have the same ingredient, what MUPS means, and a 4-step label check.
+  Summary: Generic name vs brand name of medicine: find the active ingredient, why Finix and Rabe share one, what MUPS means, and a 4-step label check.
 - Drug vs Medicine: ওষুধ আর ড্রাগ কি একই জিনিস? — বাংলা (2026-10-27): https://sayedulabrar.site/blog/drug-vs-medicine-bangla/
-  Summary: Drug vs Medicine in Bangla: সহজ গল্প, বাস্তব উদাহরণ, তুলনামূলক টেবিল ও সাধারণ প্রশ্নের মাধ্যমে Drug এবং Medicine-এর পার্থক্য জানুন।
+  Summary: ড্রাগ আর মেডিসিন (ওষুধ) কি একই জিনিস? সহজ গল্প, উদাহরণ, তুলনামূলক টেবিল ও সাধারণ প্রশ্নের মাধ্যমে Drug vs Medicine-এর পার্থক্য জানুন।
 - Drug vs Medicine: Meaning, Differences, Examples & FAQs — English (2026-10-27): https://sayedulabrar.site/blog/drug-vs-medicine/
   Summary: What is the difference between a drug and a medicine? Learn clear definitions, examples, a comparison table, memory tricks, generic vs brand names and FAQs.
 Feed: https://sayedulabrar.site/blog/feed.xml
