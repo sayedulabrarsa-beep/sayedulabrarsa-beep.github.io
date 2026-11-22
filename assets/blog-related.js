@@ -122,8 +122,10 @@
   var track=el('div','ae-track ae-mq');
   track.setAttribute('aria-labelledby','ae-title2');
   var inner=el('div','ae-mq-in');track.appendChild(inner);
-  /* Responsive grid: show each remaining article once and use the full available width. */
+  /* Keep the original animated horizontal article rail; duplicate cards for a seamless loop. */
   more.forEach(function(k){card(k,inner)});
+  track.classList.add('ae-run');
+  track.style.setProperty('--ae-dur',Math.max(42,more.length*6)+'s');
   track.setAttribute('tabindex','0');
   track.setAttribute('role','region');
   track.setAttribute('aria-label','More articles. Swipe or scroll horizontally to browse.');
@@ -192,6 +194,11 @@
       :'Product pages are general information for professionals and interested readers. Do not start or stop a medicine on your own; ask your doctor or pharmacist.';
   }
   render();
+  Array.prototype.slice.call(inner.children).forEach(function(node){
+    var clone=node.cloneNode(true);clone.setAttribute('aria-hidden','true');clone.tabIndex=-1;
+    clone.querySelectorAll('a,button,[tabindex]').forEach(function(el){el.tabIndex=-1});
+    inner.appendChild(clone);
+  });
   var foot=document.querySelector('body > footer');if(foot)document.body.insertBefore(band,foot);else document.body.appendChild(band);
   if(paneBn&&window.MutationObserver){
     new MutationObserver(render).observe(paneBn,{attributes:true,attributeFilter:['hidden']});
