@@ -17,7 +17,7 @@
     card.insertBefore(img,card.firstChild);
   });
   if(document.querySelector('.ae-band'))return;
-  var V='ae11-20261122';
+  var V='ae12-20261123';
   if(!document.querySelector('link[data-ae-style]')){
     var l=document.createElement('link');l.rel='stylesheet';l.href='/assets/article-end.css?v='+V;
     l.setAttribute('data-ae-style','');document.head.appendChild(l);
@@ -29,7 +29,7 @@
     'generic-name-vs-brand-name':['Medicine labels','ওষুধের লেবেল','Generic Name vs Brand Name','জেনেরিক নাম বনাম ব্র্যান্ড নাম','Find the ingredient name on any medicine pack.','ওষুধের প্যাকে উপাদানের নাম কোথায় পাবেন।','/blog/generic-name-vs-brand-name/','/blog/generic-name-vs-brand-name-bangla/',B+'generic-brand/which-name-is-the-real-medicine-generic-vs-brand-thumbnail-w750.webp'],
     'expiry-date-vs-manufacturing-date-medicine':['Medicine safety','ওষুধের নিরাপত্তা','Expiry Date vs Manufacturing Date','মেয়াদোত্তীর্ণের তারিখ বনাম উৎপাদনের তারিখ','Read the dates printed on a medicine pack.','ওষুধের প্যাকের তারিখগুলো কীভাবে পড়বেন।','/blog/expiry-date-vs-manufacturing-date-medicine/','/blog/expiry-date-vs-manufacturing-date-medicine-bangla/',B+'expiry/expiry-thumbnail-1200x630-w750.webp'],
     'when-to-take-ppi-before-meals':['PPI guide','পিপিআই গাইড','When to Take a PPI','পিপিআই কখন খাবেন','Timing, common mistakes and missed doses.','সময়, সাধারণ ভুল ও ডোজ মিস হলে করণীয়।','/blog/when-to-take-ppi-before-meals/','/blog/when-to-take-ppi-before-meals-bangla/',B+'ppi-tablets/when-to-take-ppi-before-meals-thumbnail-16x9-w750.webp'],
-    'heartburn-vs-acid-reflux-vs-gerd':['Digestive health','হজম স্বাস্থ্য','Heartburn vs Acid Reflux vs GERD','হার্টবার্ন, অ্যাসিড রিফ্লাক্স ও জিইআরডি','How these common conditions differ.','এই সাধারণ অবস্থাগুলোর পার্থক্য কী।','/blog/heartburn-vs-acid-reflux-vs-gerd/','/blog/heartburn-vs-acid-reflux-vs-gerd-bangla/',B+'heartburn-gerd-index-card-w750.webp'],
+    'heartburn-vs-acid-reflux-vs-gerd':['Digestive health','হজম স্বাস্থ্য','Heartburn vs Acid Reflux vs GERD','হার্টবার্ন, অ্যাসিড রিফ্লাক্স ও জিইআরডি','How these common conditions differ.','এই সাধারণ অবস্থাগুলোর পার্থক্য কী।','/blog/heartburn-vs-acid-reflux-vs-gerd/','/blog/heartburn-vs-acid-reflux-vs-gerd-bangla/',B+'reflux/reflux-card-w750.webp'],
     'how-to-take-iron-tablets-properly':['Practical medicine use','ওষুধ ব্যবহার','How to Take Iron Tablets Properly','আয়রন ট্যাবলেট সঠিকভাবে খাওয়ার নিয়ম','Timing, food and interaction considerations.','সময়, খাবার ও ইন্টারঅ্যাকশনের বিষয়।','/blog/how-to-take-iron-tablets-properly/','/blog/how-to-take-iron-tablets-properly-bangla/',B+'iron-tablets/how-to-take-iron-tablets-properly-timing-food-interactions-thumbnail-16x9-w750.webp'],
     'iron-deficiency-vs-anemia':['Iron & health','আয়রন ও স্বাস্থ্য','Iron Deficiency vs Anemia','আয়রনের ঘাটতি বনাম রক্তাল্পতা','Are they the same? A simple explanation.','দুটি কি একই? সহজ ব্যাখ্যা।','/blog/iron-deficiency-vs-anemia/','/blog/iron-deficiency-vs-anemia-bangla/',B+'iron-deficiency/iron-deficiency-vs-anemia-are-they-the-same-thumbnail-16x9-w750.webp'],
     'glucosamine-alzheimers-nature-metabolism-study':['Research review','রিসার্চ রিভিউ','Glucosamine & Alzheimer’s Study','গ্লুকোসামিন ও আলঝেইমার্স গবেষণা','How to read a research paper’s claims carefully.','গবেষণার দাবি সতর্কভাবে পড়ার উপায়।','/blog/glucosamine-alzheimers-nature-metabolism-study/','/blog/glucosamine-alzheimers-nature-metabolism-study-bangla/',B+'glucosamine-alzheimers-social-w750.webp'],

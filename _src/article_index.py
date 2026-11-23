@@ -11,7 +11,7 @@ Run from anywhere: python3 _src/article_index.py   (safe to re-run)
 """
 import html, json, pathlib, re
 
-RELATED_V = "ae10-20261121"  # keep in sync with assets/blog-related.js
+RELATED_V = "ae12-20261123"  # keep in sync with assets/blog-related.js
 
 R = pathlib.Path(__file__).resolve().parent.parent
 CUR = json.loads((R / "_src/data/articles.json").read_text(encoding="utf-8"))

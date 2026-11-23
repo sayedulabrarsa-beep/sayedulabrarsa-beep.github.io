@@ -483,7 +483,7 @@
     "date": "2026-10-30",
     "kicker": "Digestive health",
     "title": "Heartburn vs Acid Reflux vs GERD: What's the Difference?",
-    "image": "/assets/img/blog/heartburn-gerd-index-card.webp",
+    "image": "/assets/img/blog/reflux/reflux-card.webp",
     "alt": "Heartburn, acid reflux and GERD explained",
     "accent": "#d08a1f",
     "read": "7 min",
@@ -495,8 +495,8 @@
           "Acid reflux is the event.",
           "GERD is the repeating condition."
         ],
-        "img": "/assets/img/blog/lower-esophageal-sphincter-labelled.webp",
-        "alt": "Esophagus, lower esophageal sphincter and stomach",
+        "img": "/assets/img/blog/reflux/hero.webp",
+        "alt": "Torso illustration of acid reflux rising from the stomach into the food pipe",
         "r": "",
         "sub": "",
         "fit": "cover"
@@ -507,8 +507,8 @@
           "The valve between the food pipe and stomach should close like a one-way door.",
           "Reflux happens when it relaxes and acid rises."
         ],
-        "img": "/assets/img/blog/normal-vs-acid-reflux-comparison.webp",
-        "alt": "Closed valve versus reflux",
+        "img": "/assets/img/blog/reflux/valve.webp",
+        "alt": "The valve between the food pipe and stomach, closed",
         "r": "",
         "sub": "",
         "fit": "cover"
@@ -518,8 +518,8 @@
         "p": [
           "Foods, drinks, meal timing, lifestyle factors and some medicines can trigger reflux."
         ],
-        "img": "/assets/img/blog/acid-reflux-common-triggers.webp",
-        "alt": "Common acid reflux triggers",
+        "img": "/assets/img/blog/reflux/trigger-spicy.webp",
+        "alt": "Spicy food, one common reflux trigger",
         "r": "Notice your own triggers.",
         "sub": "",
         "fit": "cover"
@@ -531,8 +531,8 @@
           "Stay upright after eating.",
           "Elevating the head of the bed can help."
         ],
-        "img": "/assets/img/blog/seven-daily-habits-reduce-acid-reflux.webp",
-        "alt": "Seven daily habits to reduce reflux",
+        "img": "/assets/img/blog/reflux/habit-raised-bed.webp",
+        "alt": "A bed with the head end raised",
         "r": "",
         "sub": "",
         "fit": "cover"
@@ -543,8 +543,8 @@
           "Amber signs mean see a doctor soon.",
           "Red signs mean emergency help now."
         ],
-        "img": "/assets/img/blog/heartburn-warning-signs-when-to-see-doctor.webp",
-        "alt": "Traffic-light guide to reflux warning signs",
+        "img": "/assets/img/blog/reflux/warning-amber.webp",
+        "alt": "Symptoms that need a doctor soon",
         "r": "",
         "sub": "",
         "fit": "cover"
@@ -553,8 +553,8 @@
     "end": {
       "h": "KNOW YOUR SIGNALS",
       "t": "Medicines are a doctor’s decision. If symptoms keep coming back, get checked.",
-      "img": "/assets/img/blog/heartburn-story-four-steps.webp",
-      "alt": "Hasan’s four-step story"
+      "img": "/assets/img/blog/reflux/story-4-doctor-visit.webp",
+      "alt": "Hasan visits a doctor"
     }
   },
   {

@@ -6,7 +6,7 @@
     <atom:link href="https://sayedulabrar.site/blog/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Pharmacist-written educational articles in English and Bangla on medicines, pharmacology and the pharmaceutical industry in Bangladesh, by Sayedul Abrar.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 22 Nov 2026 06:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 06:00:00 +0000</lastBuildDate>
     <image><url>https://sayedulabrar.site/assets/img/social/pharma-blog-social-preview.jpg</url><title>Pharma Blog | Sayedul Abrar</title><link>https://sayedulabrar.site/blog/</link></image>
     <item>
       <title>ওষুধের স্থায়িত্ব পরীক্ষা: মেয়াদ কীভাবে নির্ধারিত হয়</title>
@@ -302,7 +302,7 @@
       <dc:creator>Sayedul Abrar</dc:creator>
       <dc:language>bn</dc:language>
       <description>বুক জ্বালাপোড়া, অ্যাসিড রিফ্লাক্স ও GERD-এর পার্থক্য, লক্ষণ, কারণ, ৭টি অভ্যাস, বিপদ-সংকেত এবং কখন ডাক্তার দেখাবেন—ফার্মাসিস্ট সাইয়্যেদুল আবরারের সহজ গাইড।</description>
-      <enclosure url="https://sayedulabrar.site/assets/img/blog/heartburn-gerd-hero.jpg" type="image/jpeg" length="161813"/>
+      <enclosure url="https://sayedulabrar.site/assets/img/blog/reflux/reflux-social-bn.jpg" type="image/jpeg" length="86412"/>
     </item>
     <item>
       <title>Heartburn vs Acid Reflux vs GERD: Symptoms, Triggers and When to See a Doctor</title>
@@ -312,7 +312,7 @@
       <dc:creator>Sayedul Abrar</dc:creator>
       <dc:language>en</dc:language>
       <description>Heartburn vs acid reflux vs GERD: understand the differences, symptoms, common triggers, 7 lifestyle tips, warning signs and when to see a doctor.</description>
-      <enclosure url="https://sayedulabrar.site/assets/img/blog/heartburn-gerd-hero.jpg" type="image/jpeg" length="161813"/>
+      <enclosure url="https://sayedulabrar.site/assets/img/blog/reflux/reflux-social-en.jpg" type="image/jpeg" length="91553"/>
     </item>
     <item>
       <title>মেয়াদ শেষ হওয়ার তারিখ (EXP) ও উৎপাদনের তারিখ (MFG) দেখার নিয়ম</title>

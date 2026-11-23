@@ -1,0 +1,118 @@
+/* Heartburn / Acid reflux / GERD article: interactive pictures. Works without JavaScript (everything stays visible). */
+.article-content{--rx-teal:#17646a;--rx-coral:#e0583a;--rx-ink:#253238;--rx-soft:#eef7f5;--rx-line:#d6e6e3}
+.article-content .rx{margin:24px 0 30px;color:var(--rx-ink)}
+.article-content .rx img,.article-content .rx-fig img,.article-content .rx-split img,.article-content .rx-result img{display:block;width:100%;height:auto;border-radius:14px}
+.article-content .rx button{font:inherit;cursor:pointer;color:inherit}
+.article-content .rx :focus-visible{outline:3px solid #ff8a1f;outline-offset:3px}
+.article-content .rx-card{background:linear-gradient(135deg,#f1f9f7,#fff7ec);border:1px solid var(--rx-line);border-radius:20px;padding:clamp(12px,2.4vw,20px);color:var(--rx-ink)}
+.article-content .rx-card p,.article-content .rx-card li,.article-content .rx-card b,.article-content .rx-card strong{color:var(--rx-ink)}
+.article-content .rx [hidden],.article-content .rx-result[hidden]{display:none!important}
+.article-content .rx .rx-cap{font-size:13px;color:#51626a;margin:10px 2px 0}
+
+/* hero */
+.article-content .hero-visual{padding:clamp(10px,2.4vw,18px)}
+.article-content .hero-visual img{height:auto;max-height:none;border-radius:16px;object-fit:cover;aspect-ratio:16/9}
+.article-content .hero-visual .caption{margin:10px 4px 0}
+
+/* chips used by trio / toggle / tabs */
+.article-content .rx-chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px}
+.article-content .rx-chip{min-height:44px;padding:8px 16px;border-radius:999px;border:1.5px solid #bcd3d0;background:#fff;font-weight:700;color:var(--rx-ink);transition:background .2s,color .2s,border-color .2s,transform .2s}
+.article-content .rx-chip:hover{transform:translateY(-1px);border-color:var(--rx-teal)}
+.article-content .rx-chip[aria-selected=true],.article-content .rx-chip[aria-pressed=true]{background:var(--rx-teal);border-color:var(--rx-teal);color:#fff}
+.article-content .rx-chip.green[aria-selected=true]{background:#2a8a4a;border-color:#2a8a4a}
+.article-content .rx-chip.amber[aria-selected=true]{background:#c98a0b;border-color:#c98a0b}
+.article-content .rx-chip.red[aria-selected=true]{background:#c9432a;border-color:#c9432a}
+.article-content .rx-panel{animation:rxIn .35s ease both}
+@keyframes rxIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.article-content .rx-js .rx-panel[hidden]{display:none}
+
+/* trio (heartburn / reflux / GERD) */
+.article-content .rx-trio .rx-panel{background:#fff;border:1px solid var(--rx-line);border-left:5px solid var(--rx-coral);border-radius:14px;padding:14px 18px}
+.article-content .rx-trio .rx-panel p{margin:4px 0}
+
+/* valve */
+.article-content .rx-valve-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:18px;align-items:center}
+.article-content .rx-valve-grid .rx-panel{background:#fff;border:1px solid var(--rx-line);border-radius:14px;padding:14px 18px}
+.article-content .rx-valve-grid .rx-panel p{margin:4px 0}
+.article-content .rx-valve-fig{position:relative}
+.article-content .rx-valve-fig img{transition:transform .5s ease,filter .5s ease}
+.article-content .rx-valve-fig[data-state=open] img{transform:scale(1.03);filter:saturate(1.25) hue-rotate(-8deg)}
+
+/* story viewer */
+.article-content .rx-story-stage{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:20px;align-items:center}
+.article-content .rx-story-stage img{aspect-ratio:1/1;object-fit:cover}
+.article-content .rx-step{display:flex;flex-direction:column;gap:8px}
+.article-content .rx-step .rx-num{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:var(--rx-teal);color:#fff;font-weight:800}
+.article-content .rx-step h3{margin:0;font-size:clamp(18px,3vw,22px)}
+.article-content .rx-step p{margin:0}
+.article-content .rx-nav{display:flex;align-items:center;gap:10px;margin-top:14px;flex-wrap:wrap}
+.article-content .rx-btn{min-height:44px;min-width:44px;padding:8px 18px;border-radius:999px;border:1.5px solid var(--rx-teal);background:#fff;font-weight:700;color:var(--rx-teal)}
+.article-content .rx-btn:hover:not(:disabled){background:var(--rx-teal);color:#fff}
+.article-content .rx-btn:disabled{opacity:.4;cursor:default}
+.article-content .rx-dots{display:flex;gap:8px;margin:0 auto}
+.article-content .rx-dot{width:14px;height:14px;min-height:0;padding:0;border-radius:50%;border:2px solid var(--rx-teal);background:transparent;position:relative}
+.article-content .rx-dot::after{content:"";position:absolute;inset:-15px}
+.article-content .rx-dot[aria-current=true]{background:var(--rx-teal)}
+
+/* trigger cards */
+.article-content .rx-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.article-content .rx-trig{position:relative;padding:0;border:2px solid transparent;border-radius:16px;overflow:hidden;background:#fff;text-align:left;box-shadow:0 2px 10px rgba(23,100,106,.08);transition:transform .2s,border-color .2s,box-shadow .2s}
+.article-content .rx-trig:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(23,100,106,.16)}
+.article-content .rx-trig img{border-radius:0;aspect-ratio:3/2;object-fit:cover}
+.article-content .rx-trig span{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:10px 12px;font-weight:700;font-size:15px;line-height:1.3;color:var(--rx-ink)}
+.article-content .rx-trig span::after{content:"+";flex:none;width:26px;height:26px;border-radius:50%;border:1.5px solid var(--rx-teal);display:inline-flex;align-items:center;justify-content:center;color:var(--rx-teal);font-weight:800}
+.article-content .rx-trig[aria-pressed=true]{border-color:var(--rx-coral)}
+.article-content .rx-trig[aria-pressed=true] span::after{content:"✓";background:var(--rx-coral);border-color:var(--rx-coral);color:#fff}
+.article-content .rx-tally{margin:12px 2px 0;font-weight:600}
+
+/* habits slider */
+.article-content .rx-slide{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:18px;align-items:center}
+.article-content .rx-slide img{aspect-ratio:16/9;object-fit:cover}
+.article-content .rx-slide h3{margin:0 0 6px;font-size:clamp(18px,3vw,22px)}
+.article-content .rx-slide p{margin:0}
+.article-content .rx-count{font-size:13px;font-weight:700;color:var(--rx-teal);letter-spacing:.04em;text-transform:uppercase}
+.article-content .rx-check{list-style:none;padding:0;margin:16px 0 6px}
+.article-content .rx-check li{margin:8px 0}
+.article-content .rx-check label{display:flex;gap:12px;align-items:flex-start;padding:10px 12px;border:1px solid var(--rx-line);border-radius:12px;background:#fff;cursor:pointer;color:var(--rx-ink)}
+.article-content .rx-check input{flex:none;width:22px;height:22px;margin-top:3px;accent-color:#17646a}
+.article-content .rx-check input:checked+span{text-decoration:line-through;text-decoration-color:#17646a88;opacity:.75}
+.article-content .rx-bar{height:10px;border-radius:99px;background:#dbe9e6;overflow:hidden}
+.article-content .rx-bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,#17646a,#2a8a4a);transition:width .4s ease}
+.article-content .rx-progress{font-weight:600;margin:6px 0 0}
+
+/* warning tabs */
+.article-content .rx-warn-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:18px;align-items:center}
+.article-content .rx-warn-grid .warning{margin:0}
+.article-content .rx-warn-grid .warning,.article-content .rx-warn-grid .warning *{color:#253238}
+
+/* quiz */
+.article-content .quiz button{transition:background .2s,border-color .2s}
+.article-content .quiz button.rx-right{border-color:#2ea35b!important;background:#eaf7ee;color:#1d5a35}
+.article-content .quiz button.rx-wrong{border-color:#c9432a!important;background:#fff0ed;color:#7a2a1a}
+.article-content .rx-result{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:18px;align-items:center;margin-top:18px}
+.article-content .rx-result[hidden]{display:none}
+.article-content .rx-result h3{margin:0 0 6px}
+.article-content .rx-result p{margin:4px 0 10px}
+
+/* picture figures */
+.article-content .rx-fig{margin:22px 0}
+.article-content .rx-fig img{border-radius:16px}
+.article-content .rx-fig figcaption{margin-top:8px}
+.article-content .rx-split{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:20px;align-items:center}
+.article-content .rx-split p{margin:0}
+.article-content .takeaways .rx-fig{margin:0 0 14px}
+
+/* reveal on scroll (only when JS is on) */
+.rx-js .rx-reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.rx-js .rx-reveal.rx-in{opacity:1;transform:none}
+
+@media(max-width:700px){
+ .article-content .rx-valve-grid,.article-content .rx-story-stage,.article-content .rx-slide,.article-content .rx-warn-grid,.article-content .rx-result,.article-content .rx-split{grid-template-columns:1fr}
+ .article-content .rx-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .article-content .rx-story-stage img{max-height:340px}
+}
+@media(prefers-reduced-motion:reduce){
+ .article-content .rx-panel{animation:none}
+ .rx-js .rx-reveal{opacity:1;transform:none;transition:none}
+ .article-content .rx-valve-fig img,.article-content .rx-trig,.article-content .rx-bar i{transition:none}
+}

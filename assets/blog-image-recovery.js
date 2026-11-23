@@ -14,7 +14,7 @@
     '/assets/img/blog/iron-tablets/how-to-take-iron-tablets-properly-timing-food-interactions-thumbnail-16x9-w750.webp':'/assets/img/blog/iron-tablets/how-to-take-iron-tablets-properly-timing-food-interactions-thumbnail-16x9.webp',
     '/assets/img/blog/iron-deficiency/iron-deficiency-vs-anemia-are-they-the-same-thumbnail-16x9-w750.webp':'/assets/img/blog/iron-deficiency/iron-deficiency-vs-anemia-are-they-the-same-thumbnail-16x9.webp',
     '/assets/img/blog/drug-vs-medicine/drug-vs-medicine-thumbnail-w750.webp':'/assets/img/blog/drug-vs-medicine/drug-vs-medicine-thumbnail.webp',
-    '/assets/img/blog/heartburn-gerd-index-card-w750.webp':'/assets/img/blog/heartburn-gerd-index-card.webp'
+    '/assets/img/blog/reflux/reflux-card-w750.webp':'/assets/img/blog/reflux/reflux-card.webp'
   };
   function recover(img){
     if(!img||img.dataset.imageRecovery)return;
