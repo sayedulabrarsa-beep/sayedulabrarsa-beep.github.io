@@ -13,6 +13,19 @@
   "img": "/assets/img/blog/pharmacovigilance/pv-card.webp"
  },
  {
+  "slug": "drug-half-life-explained",
+  "date": "2026-11-23",
+  "tag_en": "Pharma Blog",
+  "tag_bn": "ফার্মা ব্লগ",
+  "title_en": "Drug Half-Life: How Long Does a Medicine Stay in the Body?",
+  "title_bn": "একটি ওষুধ শরীরে কতক্ষণ থাকে? হাফ-লাইফ সহজ ভাষায়",
+  "desc_en": "Drug half-life explained: what it means, the 4–5 half-lives rule, steady state and what changes…",
+  "desc_bn": "ওষুধের হাফ-লাইফ সহজ ভাষায়: এর অর্থ, ৪–৫ হাফ-লাইফের নিয়ম, স্টেডি স্টেট ও কী এটি বদলায়।",
+  "url_en": "/blog/drug-half-life-explained/",
+  "url_bn": "/blog/drug-half-life-explained-bangla/",
+  "img": "/assets/img/blog/drug-half-life/drug-half-life-social-en.jpg"
+ },
+ {
   "slug": "medicine-stability-testing-how-shelf-life-is-established",
   "date": "2026-11-22",
   "tag_en": "Pharma Blog",

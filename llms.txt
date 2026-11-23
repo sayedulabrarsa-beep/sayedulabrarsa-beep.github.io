@@ -68,6 +68,10 @@ Pharma Blog articles (newest first; each is educational, not medical advice):
   Summary: ফার্মাকোভিজিল্যান্স, ADR রিপোর্টিং, safety signal এবং বাংলাদেশের DGDA জাতীয় ব্যবস্থায় ওষুধের নিরাপত্তা পর্যবেক্ষণ সহজ ভাষায় জানুন।
 - Pharmacovigilance: How Are Medicines Monitored for Safety? — English (2026-11-23): https://sayedulabrar.site/blog/pharmacovigilance-medicine-safety-monitoring/
   Summary: Understand pharmacovigilance, adverse event reporting, safety signals and Bangladesh’s DGDA-led medicine safety system in clear, evidence-informed language.
+- ওষুধের হাফ-লাইফ: একটি ওষুধ শরীরে কতক্ষণ থাকে? — বাংলা (2026-11-23): https://sayedulabrar.site/blog/drug-half-life-explained-bangla/
+  Summary: ওষুধের হাফ-লাইফ সহজ ভাষায়: এর অর্থ, ৪–৫ হাফ-লাইফের নিয়ম, স্টেডি স্টেট ও কী এটি বদলায়। ফার্মাসিস্টের সহজ গাইড।
+- Drug Half-Life: How Long Does a Medicine Stay in the Body? — English (2026-11-23): https://sayedulabrar.site/blog/drug-half-life-explained/
+  Summary: Drug half-life explained: what it means, the 4–5 half-lives rule, steady state and what changes it. A simple pharmacist's guide.
 - ওষুধের স্থায়িত্ব পরীক্ষা: মেয়াদ কীভাবে নির্ধারিত হয় — বাংলা (2026-11-22): https://sayedulabrar.site/blog/medicine-stability-testing-how-shelf-life-is-established-bangla/
   Summary: Long-term, accelerated ও ongoing stability study-এর মাধ্যমে ওষুধের মান, packaging, storage এবং expiry date কীভাবে নির্ধারিত হয় জানুন।
 - Medicine Stability Testing: How Shelf Life Is Set — English (2026-11-22): https://sayedulabrar.site/blog/medicine-stability-testing-how-shelf-life-is-established/

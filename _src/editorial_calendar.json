@@ -15,6 +15,41 @@
       "slug": "drug-excretion-how-medicines-leave-the-body",
       "title": "Drug Excretion",
       "status": "scheduled"
+    },
+    {
+      "date": "2026-11-23",
+      "time": "20:00",
+      "slug": "drug-half-life-explained",
+      "title": "Drug Half-Life",
+      "status": "scheduled"
+    },
+    {
+      "date": "2026-11-25",
+      "time": "20:00",
+      "slug": "bioavailability-explained",
+      "title": "Bioavailability",
+      "status": "not_drafted"
+    },
+    {
+      "date": "2026-11-26",
+      "time": "20:00",
+      "slug": "prescription-vs-otc-medicines-bangladesh",
+      "title": "Rx vs OTC in Bangladesh",
+      "status": "not_drafted"
+    },
+    {
+      "date": "2026-11-28",
+      "time": "20:00",
+      "slug": "onset-peak-duration-of-drug-action",
+      "title": "Onset, Peak and Duration",
+      "status": "not_drafted"
+    },
+    {
+      "date": "2026-11-28",
+      "time": "20:00",
+      "slug": "how-medicines-work-in-the-body-series",
+      "title": "Series hub: How Medicines Work in the Body",
+      "status": "not_drafted"
     }
   ]
 }

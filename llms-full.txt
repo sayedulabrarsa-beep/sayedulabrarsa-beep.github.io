@@ -171,6 +171,209 @@ Get in touch ↗Find me on LinkedIn
 
 ## Pharma Blog articles (newest first)
 
+### ওষুধের হাফ-লাইফ: একটি ওষুধ শরীরে কতক্ষণ থাকে?
+URL: https://sayedulabrar.site/blog/drug-half-life-explained-bangla/ · Language: Bangla · Published: 2026-11-23T20:00:00+06:00 · Author: Sayedul Abrar, pharmacist
+Summary: ওষুধের হাফ-লাইফ সহজ ভাষায়: এর অর্থ, ৪–৫ হাফ-লাইফের নিয়ম, স্টেডি স্টেট ও কী এটি বদলায়। ফার্মাসিস্টের সহজ গাইড।
+
+লিখেছেন সাইয়্যেদুল আবরার, ফার্মাসিস্ট · ২৩ নভেম্বর ২০২৬
+সহজভাবে: হাফ-লাইফ হলো রক্তে ওষুধের পরিমাণ অর্ধেক হতে যে সময় লাগে। প্রায় ৪–৫ হাফ-লাইফ পরে একটি ডোজের বেশিরভাগ শরীর থেকে বেরিয়ে যায়। নিয়মিত ডোজে প্রায় ৪–৫ হাফ-লাইফ পরে রক্তে মাত্রা স্থির হয়।
+
+### ১. হাফ-লাইফ মানে কী?
+
+এলিমিনেশন হাফ-লাইফ (লেখা হয় t½) হলো রক্তে (প্লাজমায়) ওষুধের ঘনত্ব শুরুর মানের অর্ধেকে নামতে যে সময় লাগে। কোনো ওষুধের হাফ-লাইফ ৬ ঘণ্টা হলে ৬ ঘণ্টায় মাত্রা ১০০% থেকে ৫০% হয়, পরের ৬ ঘণ্টায় ৫০% থেকে ২৫% হয়, এভাবে চলতে থাকে।
+হাফ-লাইফ একটি সময়, শক্তির মাপ নয়। হাফ-লাইফ দীর্ঘ হলে ওষুধটি “বেশি শক্তিশালী” নয়, শুধু শরীরে বেশি সময় থাকে।
+
+### ২. ৪–৫ হাফ-লাইফের নিয়ম
+
+প্রতিবার অর্ধেক হয় বলে ওষুধ এক ধাপে উধাও হয় না। একটি ডোজের পর কতটুকু বাকি থাকে, সহজ হিসাবে দেখুন:
+|
+| কত হাফ-লাইফ পার হলো | বাকি আছে | বেরিয়ে গেছে
+| ১ | ৫০% | ৫০%
+| ২ | ২৫% | ৭৫%
+| ৩ | ১২.৫% | ৮৭.৫%
+| ৪ | ৬.২৫% | ৯৩.৭৫%
+| ৫ | ৩.১% | ৯৬.৯%
+StatPearls অনুযায়ী ৪–৫ হাফ-লাইফ পরে ওষুধের প্রায় ৯৪–৯৭% শরীর থেকে বেরিয়ে যায়। তাই ফার্মাসিস্টরা প্রায়ই বলেন, প্রায় পাঁচ হাফ-লাইফ পরে একটি ডোজ “বেশিরভাগ শেষ”। তবে কিছু প্রভাব এবং কিছু সক্রিয় মেটাবোলাইট মূল ওষুধের চেয়ে বেশি সময় থাকতে পারে।
+
+### ৩. হাফ-লাইফ কীসের ওপর নির্ভর করে?
+
+মূলত দুটি বিষয়:
+- ক্লিয়ারেন্স: যকৃত ও কিডনি কত দ্রুত ওষুধ সরিয়ে দেয়। দ্রুত সরালে হাফ-লাইফ ছোট হয়। (পড়ুন ওষুধের বিপাক ও ওষুধ নিঃসরণ।)
+- ভলিউম অব ডিস্ট্রিবিউশন: ওষুধ শরীরের টিস্যুতে কতটা ছড়িয়ে পড়ে। যে ওষুধ চর্বি বা টিস্যুতে জমে থাকে, তা রক্ত থেকে ধীরে বের হয়, তাই হাফ-লাইফ দীর্ঘ হয়। (পড়ুন ওষুধের বণ্টন।)
+ফার্মাসিস্টরা এটি লেখেন t½ = 0.693 × Vd ÷ CL। সূত্র মনে রাখার দরকার নেই। শুধু মনে রাখুন: বেশি ছড়ালে বা ধীরে সরালে হাফ-লাইফ দীর্ঘ হয়।
+
+### ৪. কেন হাফ-লাইফ ঠিক করে দিনে কতবার ওষুধ খাবেন
+
+হাফ-লাইফ ছোট হলে সাধারণত প্রভাবও কম সময় থাকে, তাই দিনে কয়েকবার খেতে হতে পারে। হাফ-লাইফ দীর্ঘ হলে সাধারণত দিনে এক বা দুইবার যথেষ্ট। উদাহরণ হিসেবে, StatPearls অনুযায়ী ibuprofen-এর হাফ-লাইফ প্রায় ২ ঘণ্টা, digoxin-এর প্রায় ৩৬–৪৮ ঘণ্টা এবং amiodarone-এর কয়েক সপ্তাহ। এগুলো প্রাপ্তবয়স্কদের আনুমানিক মান; আপনার ডোজ ও সময় সবসময় প্রেসক্রিপশন বা ওষুধের লিফলেট অনুযায়ী হবে।
+নির্দিষ্ট সময়ে খেলে রক্তে মাত্রা কার্যকর সীমায় থাকে। অ্যান্টিবায়োটিকের কোর্স নির্দিষ্ট সময় মেনে খাওয়ার এটি একটি কারণ। পড়ুন কেন অ্যান্টিবায়োটিকের পুরো কোর্স শেষ করতে হয়।
+
+### ৫. স্টেডি স্টেট: যখন মাত্রা আর বাড়ে না
+
+নিয়মিত ওষুধ খেলে প্রতিটি নতুন ডোজ আগের ডোজের বাকি অংশের সাথে যোগ হয়। মাত্রা ধাপে ধাপে বাড়তে থাকে, যতক্ষণ না যত ওষুধ ঢুকছে তত ওষুধ বেরিয়ে যায়। এই ভারসাম্যকে বলে স্টেডি স্টেট (স্থির অবস্থা)। সাধারণ নিয়মে এটি প্রায় ৪–৫ হাফ-লাইফ পরে আসে।
+এ কারণেই দীর্ঘ-কার্যকর কিছু ওষুধের পুরো প্রভাব আসতে কয়েক দিন বা সপ্তাহ লাগে। খুব দীর্ঘ হাফ-লাইফের কয়েকটি ওষুধে চিকিৎসক দ্রুত লক্ষ্য-মাত্রায় পৌঁছাতে শুরুতে বড় একটি লোডিং ডোজ দিতে পারেন। এটি চিকিৎসকের সিদ্ধান্ত, নিজে কখনো করবেন না।
+
+### ৬. যেসব কারণে হাফ-লাইফ বদলায়
+
+- কিডনির রোগ: কিডনি দিয়ে বের হওয়া ওষুধ বেশি সময় থাকতে পারে।
+- যকৃতের রোগ: যকৃতে ভাঙা ওষুধ বেশি সময় থাকতে পারে।
+- বয়স: শিশু ও বয়স্কদের শরীর প্রায়ই ওষুধকে ভিন্নভাবে সামলায়। MSD Manual অনুযায়ী বয়স্কদের ক্ষেত্রে কিছু ঘুমের/প্রশান্তিদায়ক ওষুধের হাফ-লাইফ ৯৬ ঘণ্টা পর্যন্ত হতে পারে।
+- অন্য ওষুধ: কিছু ওষুধ অন্য ওষুধ ভাঙার এনজাইমকে দ্রুত বা ধীর করে দেয়।
+তাই চিকিৎসক আপনার জন্য ডোজ বা সময় বদলাতে পারেন। নিজে কখনো বদলাবেন না।
+
+### ৭. মূল কথা
+
+হাফ-লাইফ বলে ওষুধ কতক্ষণ থাকে, কতটা শক্তিশালী তা নয়। এটি ডোজের সময়, স্টেডি স্টেট এবং একই ডোজ ভিন্ন মানুষে ভিন্নভাবে কাজ করার কারণ ব্যাখ্যা করে।
+
+- হাফ-লাইফ হলো রক্তে ওষুধের মাত্রা অর্ধেক হতে যে সময় লাগে।
+- প্রায় ৪–৫ হাফ-লাইফ পরে একটি ডোজের প্রায় ৯৪–৯৭% বেরিয়ে যায়।
+- হাফ-লাইফ ঠিক করতে সাহায্য করে দিনে কতবার ওষুধ খেতে হবে।
+- নিয়মিত ডোজে প্রায় ৪–৫ হাফ-লাইফে স্টেডি স্টেট আসে।
+- কিডনি বা যকৃতের রোগ, বয়স ও অন্য ওষুধ হাফ-লাইফ বদলাতে পারে, তাই চিকিৎসকের দেওয়া সময় মেনে চলুন।
+
+### সাধারণ প্রশ্ন
+
+#### সহজ ভাষায় ওষুধের হাফ-লাইফ কী?
+
+হাফ-লাইফ হলো রক্তে ওষুধের পরিমাণ অর্ধেক হতে যে সময় লাগে। এক হাফ-লাইফ পরে ৫০% বাকি থাকে, দুই হাফ-লাইফ পরে ২৫%।
+
+#### হাফ-লাইফ পার হলে কি ওষুধ কাজ করা বন্ধ করে?
+
+ঠিক তা নয়। হাফ-লাইফ বলে রক্তে মাত্রা কখন অর্ধেক হয়, প্রভাব কখন শেষ হয় তা নয়। প্রভাব কতক্ষণ থাকে তা নির্ভর করে ওষুধ, ডোজ ও ব্যক্তির ওপর।
+
+#### কত হাফ-লাইফ পরে ওষুধ শরীর থেকে বেরিয়ে যায়?
+
+সাধারণ নিয়মে প্রায় ৪–৫ হাফ-লাইফ। ততক্ষণে একটি ডোজের প্রায় ৯৪–৯৭% বেরিয়ে যায়। কিছু প্রভাব বা সক্রিয় মেটাবোলাইট বেশি সময় থাকতে পারে, আর কিডনি বা যকৃতের রোগে বের হওয়া ধীর হতে পারে।
+
+#### হাফ-লাইফ দীর্ঘ মানে কি ওষুধ বেশি শক্তিশালী?
+
+না। হাফ-লাইফ বলে ওষুধ শরীরে কতক্ষণ থাকে, কতটা শক্তিশালী তা নয়। শক্তি নির্ভর করে ওষুধ ও ডোজের ওপর।
+
+#### কিছু ওষুধের পুরো প্রভাব আসতে কয়েক দিন লাগে কেন?
+
+নিয়মিত ডোজে রক্তে মাত্রা ধীরে বেড়ে স্টেডি স্টেটে পৌঁছায়, যাতে প্রায় ৪–৫ হাফ-লাইফ লাগে। দীর্ঘ হাফ-লাইফের ওষুধে এতে কয়েক দিন বা তার বেশি লাগতে পারে।
+
+#### প্রভাব কমে যাচ্ছে মনে হলে কি আগেভাগে ডোজ নিতে পারি?
+
+নিজে সময় বদলাবেন না। খুব কাছাকাছি ডোজ নিলে মাত্রা বেশি উঠে যেতে পারে। ওষুধের প্রভাব কম সময় থাকছে মনে হলে চিকিৎসক বা ফার্মাসিস্টকে জিজ্ঞেস করুন।
+
+#### হাফ-লাইফ কি সবার জন্য এক?
+
+না। বয়স, কিডনি ও যকৃতের কার্যক্ষমতা, শরীরের আকার, অসুস্থতা ও অন্য ওষুধ হাফ-লাইফ বদলাতে পারে। তাই কখনো কখনো ব্যক্তিভেদে ডোজ ঠিক করা হয়।
+
+
+---
+
+### Drug Half-Life: How Long Does a Medicine Stay in the Body?
+URL: https://sayedulabrar.site/blog/drug-half-life-explained/ · Language: English · Published: 2026-11-23T20:00:00+06:00 · Author: Sayedul Abrar, pharmacist
+Summary: Drug half-life explained: what it means, the 4–5 half-lives rule, steady state and what changes it. A simple pharmacist's guide.
+
+By Sayedul Abrar, pharmacist · 23 November 2026
+In simple terms: Half-life is the time it takes for the amount of a medicine in your blood to fall by half. After about 4–5 half-lives, most of a single dose has left the body. With regular doses, the level becomes steady after about 4–5 half-lives.
+
+### 1. What does half-life mean?
+
+The elimination half-life (written t½) is the time needed for the concentration of a drug in the blood (plasma) to fall to half of its starting value. If a medicine has a half-life of 6 hours, the level falls from 100% to 50% in 6 hours, then from 50% to 25% in the next 6 hours, and so on.
+Half-life is a time, not a strength. A medicine with a long half-life is not "stronger". It simply stays in the body longer.
+
+### 2. The 4–5 half-lives rule
+
+Because the level halves each time, the drug never disappears in one step. A simple count shows what is left after a single dose:
+|
+| Half-lives passed | Amount left | Amount removed
+| 1 | 50% | 50%
+| 2 | 25% | 75%
+| 3 | 12.5% | 87.5%
+| 4 | 6.25% | 93.75%
+| 5 | 3.1% | 96.9%
+StatPearls notes that about 94–97% of a drug is eliminated after 4–5 half-lives. That is why pharmacists often say a single dose is "mostly gone" after about five half-lives. Some effects, and some active metabolites, can last longer than the parent drug.
+
+### 3. What decides the half-life?
+
+Two things matter most:
+- Clearance: how fast the liver and kidneys remove the drug. Faster removal means a shorter half-life. (See Drug Metabolism and Drug Excretion.)
+- Volume of distribution: how widely the drug spreads into body tissues. A drug that hides in fat or tissues leaves the blood slowly, so its half-life is longer. (See Drug Distribution.)
+Pharmacists write this as t½ = 0.693 × Vd ÷ CL. You do not need the formula. Just remember: wider spread or slower removal gives a longer half-life.
+
+### 4. Why half-life sets how often you take a medicine
+
+A short half-life usually means a shorter effect, so the medicine may need to be taken several times a day. A long half-life usually allows once- or twice-daily dosing. For example, StatPearls gives ibuprofen a half-life of about 2 hours, digoxin about 36–48 hours, and amiodarone several weeks. These are approximate values for adults; your own dose and timing always come from your prescription or the product leaflet.
+Regular timing keeps the level in the useful range. This is one reason an antibiotic course is taken at fixed times. Read more in Why You Must Complete an Antibiotic Course.
+
+### 5. Steady state: when the level stops climbing
+
+When you take a medicine regularly, each new dose adds to what is still left from the last one. The level rises step by step until the amount going in equals the amount being removed. This balance is called steady state. As a rule of thumb, it is reached after about 4–5 half-lives.
+This explains why some long-acting medicines take days or weeks to show their full effect. For a few medicines with a very long half-life, doctors may start with a larger loading dose to reach the target level sooner. This is a medical decision and is never done on your own.
+
+### 6. Things that change half-life
+
+- Kidney disease: drugs removed by the kidneys can stay longer.
+- Liver disease: drugs broken down by the liver can stay longer.
+- Age: babies and older adults often handle medicines differently. The MSD Manual notes that some sedative medicines can reach half-lives of up to 96 hours in older people.
+- Other medicines: some drugs speed up or slow down the enzymes that clear another drug.
+This is why your doctor may change the dose or the timing for you. Never adjust it yourself.
+
+### 7. Key takeaways
+
+Half-life tells you how long a medicine stays, not how strong it is. It explains dosing times, steady state and why the same dose can act differently in different people.
+
+- Half-life is the time for the blood level of a medicine to fall by half.
+- After about 4–5 half-lives, roughly 94–97% of a single dose is gone.
+- Half-life helps decide how often a medicine is taken.
+- With regular dosing, steady state is reached after about 4–5 half-lives.
+- Kidney or liver disease, age and other medicines can change half-life, so follow your prescriber's timing.
+
+### Frequently asked questions
+
+#### What is the half-life of a drug in simple words?
+
+It is the time needed for the amount of a medicine in your blood to fall by half. After one half-life, 50% is left. After two, 25% is left.
+
+#### Does half-life mean the medicine stops working after that time?
+
+Not exactly. Half-life shows when the blood level has halved, not when the effect ends. How long the effect lasts depends on the medicine, the dose and the person.
+
+#### How many half-lives until a drug is out of your system?
+
+As a rule of thumb, about 4–5 half-lives. By then roughly 94–97% of a single dose has been eliminated. Some effects or active metabolites can last longer, and kidney or liver disease can slow removal.
+
+#### Does a longer half-life mean a stronger medicine?
+
+No. Half-life describes how long a medicine stays in the body, not how strong it is. Strength depends on the drug and the dose.
+
+#### Why do some medicines take days to work fully?
+
+With regular doses, the blood level builds up until it reaches steady state, which takes about 4–5 half-lives. For a medicine with a long half-life, this can take days or longer.
+
+#### Can I take my dose earlier if I feel it wearing off?
+
+Do not change the timing on your own. Doses taken too close together can push the level too high. Ask your doctor or pharmacist if you feel the medicine is not lasting.
+
+#### Is half-life the same for everyone?
+
+No. Age, kidney and liver function, body size, illness and other medicines can all change half-life. That is why doses are sometimes adjusted for a person.
+
+### Related reading
+
+- Drug Excretion: How Do Medicines Leave the Body?
+- Drug Metabolism: How Does the Body Process Medicines?
+- Why You Must Complete an Antibiotic Course
+- Drug Distribution: How Medicines Reach Their Target
+
+### References and further reading
+
+- StatPearls. Elimination Half-Life of Drugs. NCBI Bookshelf. ncbi.nlm.nih.gov
+- StatPearls. Steady State Concentration. statpearls.com
+- StatPearls. Loading Dose. statpearls.com
+- MSD Manual Professional Edition. Pharmacokinetics in Older Adults. msdmanuals.com
+- Open RN. Nursing Pharmacology, 1.9 Examining Effect. opentextbc.ca
+- StatPearls. Ibuprofen Toxicity. NCBI Bookshelf. ncbi.nlm.nih.gov
+- StatPearls. Digoxin. statpearls.com
+- StatPearls. Amiodarone. statpearls.com
+Educational disclaimer: This article is for general learning and is not personal medical advice. Do not change a medicine or dose without talking to a doctor or pharmacist. In an emergency, get medical help quickly.
+
+
+---
+
 ### ফার্মাকোভিজিল্যান্স: ওষুধের নিরাপত্তা কীভাবে পর্যবেক্ষণ করা হয়?
 URL: https://sayedulabrar.site/blog/pharmacovigilance-medicine-safety-monitoring-bangla/ · Language: Bangla · Published: 2026-11-23 · Author: Sayedul Abrar, pharmacist
 Summary: ফার্মাকোভিজিল্যান্স, ADR রিপোর্টিং, safety signal এবং বাংলাদেশের DGDA জাতীয় ব্যবস্থায় ওষুধের নিরাপত্তা পর্যবেক্ষণ সহজ ভাষায় জানুন।
@@ -771,6 +974,7 @@ Excretion শরীর থেকে ওষুধ ও metabolite বের কর
 - Clearance শরীরের ওষুধ অপসারণের সক্ষমতা বোঝায়।
 - কিডনির কার্যক্ষমতা কমলে কিছু ওষুধের ডোজ বদলাতে হতে পারে; নিজে ডোজ বদলাবেন না।
 “শরীরে ওষুধ কীভাবে কাজ করে” সিরিজের অংশ। আরও পড়ুন: ওষুধের বিপাক · ওষুধের বণ্টন · ওষুধের শোষণ
+সিরিজের পরের লেখা: ওষুধের হাফ-লাইফ: একটি ওষুধ শরীরে কতক্ষণ থাকে?
 
 ### সাধারণ প্রশ্ন
 
@@ -848,6 +1052,7 @@ Excretion removes drugs and metabolites from the body. The kidneys are a major r
 - Glomerular filtration moves unbound drug from blood into the filtrate.
 - Some medicines or metabolites leave through bile and faeces.
 Part of the series “How Medicines Work in the Body”. Read also: Drug Metabolism · Drug Distribution · Drug Absorption
+Next in series: Drug Half-Life: How Long Does a Medicine Stay in the Body?
 
 ### Frequently asked questions
 
