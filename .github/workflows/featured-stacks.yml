@@ -33,6 +33,8 @@ jobs:
       - run: python3 _src/seo_feeds.py   # RSS feed, llms.txt article list, Blog schema
       - run: python3 _src/article_index.py   # all-articles list for the 'You can also read' band + crawlable links
       - run: python3 _src/logo_everywhere.py # official logo, favicons and copyright line on new pages
+      - run: python3 _src/alt_text_tune.py   # consistent author-photo alt text
+      - run: python3 _src/image_credits.py   # image creator/credit/licence metadata for Google Images
       - run: python3 _src/sitemap_images.py  # every article picture listed in sitemap.xml
       - name: Commit if the homepage changed
         run: |

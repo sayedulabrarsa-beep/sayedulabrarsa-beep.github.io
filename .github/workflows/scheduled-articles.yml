@@ -39,6 +39,8 @@ jobs:
           python3 _src/article_index.py
           python3 _src/logo_everywhere.py
           python3 _src/llms_full.py
+          python3 _src/alt_text_tune.py
+          python3 _src/image_credits.py
           python3 _src/sitemap_images.py
       - name: Commit scheduled release changes
         run: |
