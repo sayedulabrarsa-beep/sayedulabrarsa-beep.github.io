@@ -61,12 +61,12 @@ def build(lang):
             f'<meta property="og:image" content="{social}"><meta property="og:image:secure_url" content="{social}"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="{E(d["cover_alt"])}">'
             f'<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{E(d["title"])}"><meta name="twitter:description" content="{E(d["description"])}"><meta name="twitter:image" content="{social}"><meta name="twitter:image:alt" content="{E(d["cover_alt"])}">'
             '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">'
-            '<link rel="stylesheet" href="/assets/style.css?v=pb-next-20261112"><link rel="stylesheet" href="/assets/nav-pill.css?v=stable-nav-20261120"><link rel="stylesheet" href="/assets/site-polish.css">'
+            '<link rel="stylesheet" href="/assets/style.css?v=sa-20261122"><link rel="stylesheet" href="/assets/nav-pill.css?v=sa-20261122"><link rel="stylesheet" href="/assets/site-polish.css?v=sa-20261122">'
             + HEAD_STYLE + J(blog) + J(faq) + f'<meta property="article:published_time" content="{A.DATE}T20:00:00+06:00">' + J(crumbs) + extra_ld +
             '<style id="fig-fit">.article-figure{margin:28px 0}.article-figure a{display:block}.article-figure img,.hero-visual img{display:block;width:100%;height:auto;border-radius:14px}.article-figure figcaption{font-size:14px;color:#526D82;margin-top:8px}</style>'
             + ICONS + '</head>')
     nav = ('<body><a class="skip" href="#main">Skip to content</a><header><div class="wrap bar"><a class="logo" href="/"><img class="logo-mark" src="/assets/img/sayedul-abrar-logo-badge-96.webp" srcset="/assets/img/sayedul-abrar-logo-badge-96.webp 1x, /assets/img/sayedul-abrar-logo-badge-192.webp 2x" alt="Sayedul Abrar SA logo" width="34" height="34" decoding="async">Sayedul Abrar</a>'
-           '<nav aria-label="Main"><ul class="menu" id="menu"><li><a href="/">Home</a></li><li><a href="/about/">About</a></li><li><a href="/blog/" aria-current="page">Pharma Blog</a></li><li><a href="/contact/">Contact</a></li></ul></nav></div></header>')
+           '<nav aria-label="Main"><ul class="menu" id="menu"><li><a href="/">Home</a></li><li><a href="/about/">About</a></li><li><a href="/achievements/">Achievements</a></li><li><a href="/education/">Education</a></li><li><a href="/learning/">Learning</a></li><li><a href="/publications/">Publications</a></li><li><a href="/community/">Community</a></li><li><a href="/blog/" aria-current="page">Pharma Blog</a></li><li><a href="/vlog/">Daily Vlog</a></li><li><a href="/contact/">Contact</a></li><li><a href="/portfolio/">Portfolio</a></li></ul></nav></div></header>')
     day = int(A.DATE[8:]); months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
     bnmonths = ["জানুয়ারি", "ফেব্রুয়ারি", "মার্চ", "এপ্রিল", "মে", "জুন", "জুলাই", "আগস্ট", "সেপ্টেম্বর", "অক্টোবর", "নভেম্বর", "ডিসেম্বর"]
     mi = int(A.DATE[5:7]) - 1
@@ -119,7 +119,7 @@ def build(lang):
             + ("ফার্মা ব্লগ থেকে আরও পড়ুন" if bn else "More from the Pharma Blog") + "</h2><ul>"
             + "".join(f'<li><a href="{h}">{t}</a></li>' for h, t in d["related"][:3]) + "</ul></nav><!--/more-articles--></main>")
     foot = ('<footer><div class="wrap"><p>© 2026 Sayedul Abrar. All rights reserved.</p><p><a href="/blog/">Pharma Blog</a> · <a href="/about/">About</a></p></div></footer>'
-            '<script src="/assets/site.js?v=stable-nav-20261120" defer></script><script src="/assets/site-polish.js" defer></script><script src="/assets/blog-related.js?v=ae8-20261117" defer></script></body></html>')
+            '<script src="/assets/site.js?v=sa-20261122" defer></script><script src="/assets/site-polish.js?v=sa-20261122" defer></script><script src="/assets/blog-related.js?v=ae12-20261123" defer></script></body></html>')
     out = ROOT / "blog" / slug / "index.html"; out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(head + nav + body + more + foot, encoding="utf-8")
     print(out.relative_to(ROOT), len(d["description"]), "chars desc")
