@@ -130,13 +130,9 @@
   track.setAttribute('tabindex','0');
   track.setAttribute('role','region');
   track.setAttribute('aria-label','More articles. Swipe or scroll horizontally to browse.');
-  var down=false,startX=0,scrollStart=0,moved=false;
-  track.addEventListener('pointerdown',function(e){if(e.pointerType==='mouse'&&e.button!==0)return;down=true;moved=false;startX=e.clientX;scrollStart=track.scrollLeft;track.classList.add('ae-dragging');track.classList.add('ae-hold');});
+  /* Do not intercept card clicks: native anchor navigation must always work. */
   track.addEventListener('touchstart',function(){track.classList.add('ae-hold');},{passive:true});
-  ['touchend','touchcancel'].forEach(function(n){track.addEventListener(n,function(){setTimeout(function(){track.classList.remove('ae-hold');},2500);},{passive:true});});
-  track.addEventListener('pointermove',function(e){if(!down)return;var dx=e.clientX-startX;if(Math.abs(dx)>5)moved=true;if(moved){track.scrollLeft=scrollStart-dx;e.preventDefault();}});
-  ['pointerup','pointercancel','pointerleave'].forEach(function(name){track.addEventListener(name,function(){down=false;track.classList.remove('ae-dragging');setTimeout(function(){if(!down)track.classList.remove('ae-hold');},2500);});});
-  track.addEventListener('click',function(e){if(moved){e.preventDefault();e.stopPropagation();moved=false;}},true);
+  ['touchend','touchcancel'].forEach(function(n){track.addEventListener(n,function(){setTimeout(function(){track.classList.remove('ae-hold');},1200);},{passive:true});});
   wrap.append(head,grid,head2,track);
 
   /* the plain-HTML link list is for search engines and no-JS readers; the band replaces it */
