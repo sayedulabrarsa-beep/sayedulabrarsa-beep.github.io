@@ -39,6 +39,7 @@ jobs:
           python3 _src/article_index.py
           python3 _src/logo_everywhere.py
           python3 _src/llms_full.py
+          python3 _src/sitemap_images.py
       - name: Commit scheduled release changes
         run: |
           git add blog assets index.html sitemap.xml llms.txt llms-full.txt _src

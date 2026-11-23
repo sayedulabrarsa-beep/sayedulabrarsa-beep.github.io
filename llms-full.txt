@@ -3263,7 +3263,7 @@ Educational disclaimer: This article is for general learning. It does not provid
 
 ### গ্লুকোসামিন ও আলঝেইমার: নতুন গবেষণা আসলে কী বলছে (আর কী বলছে না)
 URL: https://sayedulabrar.site/blog/glucosamine-alzheimers-nature-metabolism-study-bangla/ · Language: Bangla · Published: 2026-11-01 · Author: Sayedul Abrar, pharmacist
-Summary: গ্লুকোসামিন কি আলঝেইমার বাড়ায়? ২০২৬ সালের Nature Metabolism গবেষণার ইঁদুরের তথ্য, হাসপাতালের রেকর্ড, মাত্রা, সীমাবদ্ধতা ও করণীয়—ফার্মাসিস্টের গবেষণা পর্যালোচনা।
+Summary: গ্লুকোসামিন কি আলঝেইমার বাড়ায়? ২০২৬ সালের Nature Metabolism গবেষণার ইঁদুর ও রোগীর তথ্য, সীমাবদ্ধতা ও করণীয়—ফার্মাসিস্টের সহজ পর্যালোচনা।
 
 লেখক: সাইয়্যেদুল আবরার, ফার্মাসিস্ট · প্রকাশ: ১ নভেম্বর ২০২৬
 
@@ -3435,7 +3435,7 @@ Product Executive, Product Management Department (PMD) · Opsonin Pharma Ltd.
 
 ### Glucosamine & Alzheimer's: What the New Study Really Shows
 URL: https://sayedulabrar.site/blog/glucosamine-alzheimers-nature-metabolism-study/ · Language: English · Published: 2026-11-01 · Author: Sayedul Abrar, pharmacist
-Summary: Does glucosamine worsen Alzheimer's? A pharmacist reviews the 2026 Nature Metabolism study, mouse findings, patient records, dose, limitations and practical meaning.
+Summary: Does glucosamine worsen Alzheimer's? A pharmacist reviews the 2026 Nature Metabolism study: mouse data, patient records, limits and what it means for you.
 
 By Sayedul Abrar, pharmacist · Published 1 November 2026
 
@@ -4261,9 +4261,9 @@ NHS বলছে গর্ভাবস্থায় ও স্তন্যদ�
 
 ---
 
-### When to Take a PPI: Before Meals, Common Mistakes (Rabeprazole, Omeprazole)
+### When to Take a PPI (Rabeprazole, Omeprazole): Before Meals?
 URL: https://sayedulabrar.site/blog/when-to-take-ppi-before-meals/ · Language: English · Published:  · Author: Sayedul Abrar, pharmacist
-Summary: Can rabeprazole be taken with or without food? When to take a PPI such as rabeprazole or omeprazole, Finix tablet, MUPS and sprinkle capsule, common mistakes, interactions, missed doses. Pharmacist explains with FDA, NHS, MedlinePlus sources.
+Summary: When to take a PPI such as rabeprazole or omeprazole: before meals, with or without food, MUPS and sprinkle forms, common mistakes and missed doses.
 
 Health Made Simple
 
@@ -4560,7 +4560,7 @@ NHS অনুযায়ী অনেক ক্ষেত্রে জমান�
 
 ### Iron Deficiency vs Anemia: Differences, Symptoms & Tests
 URL: https://sayedulabrar.site/blog/iron-deficiency-vs-anemia/ · Language: English · Published:  · Author: Sayedul Abrar, pharmacist
-Summary: Iron deficiency vs anemia: learn whether low iron means anemia, key symptoms and causes, ferritin and CBC blood tests, treatment basics and when to see a doctor.
+Summary: Iron deficiency vs anemia: does low iron mean anemia? Key symptoms, causes, ferritin and CBC tests, treatment basics and when to see a doctor.
 
 Health Made Simple
 
@@ -4687,9 +4687,9 @@ Medical Education Disclaimer: This article is for general education only and is 
 
 ---
 
-### আয়রন ট্যাবলেট কীভাবে খাবেন: সময়, খাবার ও ওষুধের মিথস্ক্রিয়া
+### আয়রন ট্যাবলেট কখন খাবেন: খাবারের আগে না পরে? সঠিক নিয়ম
 URL: https://sayedulabrar.site/blog/how-to-take-iron-tablets-properly-bangla/ · Language: Bangla · Published:  · Author: Sayedul Abrar, pharmacist
-Summary: আয়রন ট্যাবলেট কখন খাবেন, কী দিয়ে খাবেন, কী এড়াবেন, কোন ওষুধের সঙ্গে সমস্যা হতে পারে এবং পার্শ্বপ্রতিক্রিয়া বা ডোজ বাদ পড়লে কী করবেন।
+Summary: আয়রন ট্যাবলেট খাবারের আগে না পরে খাবেন? সঠিক সময়, ভিটামিন C, চা-দুধ-ক্যালসিয়াম থেকে দূরত্ব, ওষুধের মিথস্ক্রিয়া ও ডোজ বাদ পড়লে করণীয়।
 
 সহজ ভাষায় স্বাস্থ্য
 
@@ -6668,7 +6668,7 @@ A: মানুষের গর্ভাবস্থায় পর্যাপ
 
 ### Finix MUPS 20 (Rabeprazole): Uses, Dose & FAQ
 URL: https://sayedulabrar.site/brands/finix-mups/ · Author: Sayedul Abrar, pharmacist
-Summary: Finix MUPS 20 mg (rabeprazole sodium MUPS tablet, Opsonin Pharma): uses, how to take it, what MUPS means and FAQs in English and Bangla.
+Summary: Finix MUPS 20 (rabeprazole 20 mg MUPS tablet, Opsonin Pharma): uses, how to take it, what MUPS means. Finix MUPS 20 এর কাজ কি ও খাওয়ার নিয়ম।
 
 Q: What does MUPS mean?
 A: MUPS means Multiple-Unit Pellet System. It is a multiparticulate tablet formulation containing multiple coated units.
@@ -6779,7 +6779,7 @@ A: অ্যান্টিবায়োটিক রেজিস্ট্য�
 
 ### Malifa 30 Ferric Maltol: Uses, Dose & FAQ
 URL: https://sayedulabrar.site/brands/malifa/ · Author: Sayedul Abrar, pharmacist
-Summary: Malifa 30 mg capsule (ferric maltol, Navana Pharmaceuticals): uses, dose, food and PPI interactions, side effects and FAQs in English and Bangla.
+Summary: Malifa 30 (ferric maltol capsule, Navana): uses, dose, food and PPI interactions, side effects. Malifa 30 এর কাজ কি ও খাওয়ার নিয়ম, বাংলায়।
 
 Q: What is Malifa 30?
 A: Malifa 30 is a capsule containing 30 mg of ferric maltol, an oral iron preparation listed by Navana Pharmaceuticals for iron deficiency in adults.

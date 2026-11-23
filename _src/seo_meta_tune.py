@@ -34,6 +34,29 @@ T = {
  "brands/malifa": (None,
    "Malifa 30 mg capsule (ferric maltol, Navana Pharmaceuticals): uses, dose, food and PPI interactions, side effects and FAQs in English and Bangla."),
 }
+# 23 Nov 2026 (Search Console export of 23 Nov): descriptions over 160 characters, Bangla query wording, About/Publications.
+T.update({
+ "blog/glucosamine-alzheimers-nature-metabolism-study": (None,
+   "Does glucosamine worsen Alzheimer's? A pharmacist reviews the 2026 Nature Metabolism study: mouse data, patient records, limits and what it means for you."),
+ "blog/glucosamine-alzheimers-nature-metabolism-study-bangla": (None,
+   "গ্লুকোসামিন কি আলঝেইমার বাড়ায়? ২০২৬ সালের Nature Metabolism গবেষণার ইঁদুর ও রোগীর তথ্য, সীমাবদ্ধতা ও করণীয়—ফার্মাসিস্টের সহজ পর্যালোচনা।"),
+ "blog/iron-deficiency-vs-anemia": (None,
+   "Iron deficiency vs anemia: does low iron mean anemia? Key symptoms, causes, ferritin and CBC tests, treatment basics and when to see a doctor."),
+ "blog/when-to-take-ppi-before-meals": ("When to Take a PPI (Rabeprazole, Omeprazole): Before Meals?"+SUF,
+   "When to take a PPI such as rabeprazole or omeprazole: before meals, with or without food, MUPS and sprinkle forms, common mistakes and missed doses."),
+ "blog/how-to-take-iron-tablets-properly-bangla": (
+   "আয়রন ট্যাবলেট কখন খাবেন: খাবারের আগে না পরে? সঠিক নিয়ম"+SUF,
+   "আয়রন ট্যাবলেট খাবারের আগে না পরে খাবেন? সঠিক সময়, ভিটামিন C, চা-দুধ-ক্যালসিয়াম থেকে দূরত্ব, ওষুধের মিথস্ক্রিয়া ও ডোজ বাদ পড়লে করণীয়।"),
+ "brands/finix-mups": (None,
+   "Finix MUPS 20 (rabeprazole 20 mg MUPS tablet, Opsonin Pharma): uses, how to take it, what MUPS means. Finix MUPS 20 এর কাজ কি ও খাওয়ার নিয়ম।"),
+ "brands/malifa": (None,
+   "Malifa 30 (ferric maltol capsule, Navana): uses, dose, food and PPI interactions, side effects. Malifa 30 এর কাজ কি ও খাওয়ার নিয়ম, বাংলায়।"),
+ "about": (None,
+   "Sayedul Abrar (Abrar, সাইয়্যেদুল আবরার), A-grade pharmacist and Product Executive at Opsonin Pharma Ltd., Dhaka: career, education, awards and Pharma Blog."),
+ "publications": (None,
+   "Sayedul Abrar's pharmacy research, publication, professional certifications and training in pharma marketing, product management and generative AI."),
+})
+
 E = lambda s: html.escape(s, quote=True).replace("&#x27;", "'")
 def sub_attr(s, prop_re, old, new):
     # replace content="old" in any meta tag whose name/property matches prop_re
