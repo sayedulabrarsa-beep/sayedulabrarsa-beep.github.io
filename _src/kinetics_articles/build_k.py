@@ -13,6 +13,7 @@ BND = str.maketrans("0123456789", "০১২৩৪৫৬৭৮৯")
 
 HEAD_STYLE = """<style>.article-content{max-width:900px!important;line-height:1.82}.article-content h2{margin:34px 0 10px}.article-content p{margin:12px 0}.article-content .lang-switch{display:flex;gap:8px;margin:18px 0 24px}.article-content .lang-switch a{min-height:44px;display:inline-flex;align-items:center;justify-content:center;border:1px solid #cbd9dc;border-radius:999px;padding:8px 16px;text-decoration:none;font-weight:600}.article-content .lang-switch .active{background:#17656a;color:white}.article-content .hero-visual{background:linear-gradient(135deg,#eaf4f1,#fff5e8);border-radius:18px;padding:12px;margin:22px 0}.article-content .hero-visual img{display:block;width:100%;height:auto;border-radius:12px}.article-content .quick,.article-content .takeaways{padding:18px 20px;background:#edf6f3;border-left:4px solid #287c73;border-radius:12px;margin:20px 0}.article-content .author-card{display:flex;gap:16px;align-items:center;border:1px solid var(--line);border-radius:16px;padding:18px;margin:30px 0}.article-content .author-card img{width:76px;height:76px;border-radius:50%;object-fit:cover}@media(max-width:600px){.article-content .author-card{align-items:flex-start}}
 .article-content table{width:100%;border-collapse:collapse;margin:18px 0;font-size:.96em}.article-content th,.article-content td{border:1px solid #d6e2df;padding:10px 12px;text-align:left;vertical-align:top}.article-content th{background:#edf6f3;color:#174F52}.article-content .table-wrap{overflow-x:auto}
+.article-content h2{scroll-margin-top:90px}.article-content .toc{background:#fbfdfc;border:1px solid #d6e2df;border-radius:14px;padding:14px 18px;margin:20px 0}.article-content .toc ol{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:4px}.article-content .toc a{color:#174F52;text-decoration:none}.article-content .toc a:hover{text-decoration:underline}
 .article-content .note{padding:14px 18px;background:#fff7ec;border-left:4px solid #E98250;border-radius:12px;margin:18px 0}
 .article-content .series-nav{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:30px 0}.article-content .series-nav a{display:block;border:1px solid #d6e2df;border-radius:14px;padding:14px 16px;text-decoration:none;background:#fbfdfc}.article-content .series-nav small{display:block;color:#526D82;font-weight:600;letter-spacing:.04em;text-transform:uppercase;font-size:.78em}.article-content .series-nav b{display:block;color:#174F52;line-height:1.35;margin-top:4px}.article-content .series-nav .next{text-align:right}.article-content .series-hub{grid-column:1/-1;text-align:center}@media(max-width:600px){.article-content .series-nav{grid-template-columns:1fr}.article-content .series-nav .next{text-align:left}}
 .article-content .series-list{counter-reset:s;list-style:none;padding:0;margin:20px 0;display:grid;gap:12px}.article-content .series-list li{counter-increment:s;display:flex;gap:14px;align-items:flex-start;border:1px solid #d6e2df;border-radius:14px;padding:14px 16px;background:#fbfdfc}.article-content .series-list li:before{content:counter(s);flex:none;width:38px;height:38px;border-radius:50%;background:#174F52;color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center}.article-content .series-list li.later:before{background:#E98250}html[lang=bn] .article-content ol:not(.series-list){list-style-type:bengali}.article-content .series-list b{display:block;color:#174F52}.article-content .series-list span{display:block;color:#253238;margin-top:2px}</style>"""
@@ -28,13 +29,21 @@ def build(lang):
     img = lambda n: f"/assets/img/blog/{A.IMGDIR}/{n}{'-bn' if bn else ''}.webp"
     social = f"{SITE}/assets/img/blog/{A.IMGDIR}/{A.PREFIX}-social-{lang}.jpg"
     assert len(d["description"]) <= 160, (lang, len(d["description"]))
-    figs = [img(A.COVER)] + [img(f[0]) for s in d["sections"] for f in ([s["fig"]] if s.get("fig") else [])]
+    sfigs = lambda s: s.get("figs") or ([s["fig"]] if s.get("fig") else [])
+    figs = [img(A.COVER)] + [img(f[0]) for s in d["sections"] for f in sfigs(s)]
+    objs = [(img(A.COVER), d["cover_alt"], d["cover_caption"])] + [(img(f[0]), f[1], f[2]) for s in d["sections"] for f in sfigs(s)]
+    image_objects = [{"@type": "ImageObject", "contentUrl": SITE + u, "url": SITE + u, "name": cap, "caption": cap, "description": alt,
+                      "width": 1600, "height": 900, "inLanguage": "bn-BD" if bn else "en-BD", "encodingFormat": "image/webp",
+                      "creator": {"@type": "Person", "name": "Sayedul Abrar", "url": f"{SITE}/about/"},
+                      "creditText": "Sayedul Abrar", "copyrightNotice": "© 2026 Sayedul Abrar"} for u, alt, cap in objs]
     blog = {"@context": "https://schema.org", "@type": "BlogPosting", "headline": d["title"], "description": d["description"],
             "inLanguage": "bn-BD" if bn else "en-BD", "datePublished": A.DATE, "dateModified": A.DATE,
-            "image": [social] + [SITE + f for f in figs],
+            "image": [social] + image_objects,
             "author": {"@type": "Person", "name": "Sayedul Abrar", "url": f"{SITE}/about/"},
             "publisher": {"@type": "Person", "name": "Sayedul Abrar", "url": f"{SITE}/"},
-            "mainEntityOfPage": url, "isAccessibleForFree": True, "keywords": d["keywords"]}
+            "mainEntityOfPage": url, "isAccessibleForFree": True, "keywords": d["keywords"],
+            "articleSection": "Pharmacology", "about": [{"@type": "Thing", "name": n} for n in d.get("about", [])],
+            "citation": [{"@type": "CreativeWork", "name": t, "url": u} for t, u in A.REFS]}
     faq = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
         {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in d["faqs"]]}
     crumbs = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
@@ -68,11 +77,13 @@ def build(lang):
             f'<figure class="hero-visual"><a href="{img(A.COVER)}?v=1" target="_blank" rel="noopener"><img src="{img(A.COVER)}?v=1" alt="{E(d["cover_alt"])}" width="1600" height="900" fetchpriority="high" decoding="async"></a><figcaption class="caption">{d["cover_caption"]}</figcaption></figure>'
             f'<p class="byline-seo">{"লিখেছেন" if bn else "By"} <a href="/about/" rel="author">{"সাইয়্যেদুল আবরার" if bn else "Sayedul Abrar"}</a>, {"ফার্মাসিস্ট" if bn else "pharmacist"} · <time datetime="{A.DATE}">{datestr}</time></p>'
             f'<div class="quick"><strong>{"সহজভাবে:" if bn else "In simple terms:"}</strong> {d["quick"]}</div>')
+    toc = "".join(f'<li><a href="#s{i+1}">{s["h2"]}</a></li>' for i, s in enumerate(d["sections"])) + f'<li><a href="#faq">{"সাধারণ প্রশ্ন" if bn else "Frequently asked questions"}</a></li>'
+    body += f'<nav class="toc" aria-label="{"এই লেখায়" if bn else "In this article"}"><strong>{"এই লেখায়" if bn else "In this article"}</strong><ol>{toc}</ol></nav>'
     n = 0
-    for s in d["sections"]:
-        body += f'<h2{" id=" + chr(34) + s["id"] + chr(34) if s.get("id") else ""}>{s["h2"]}</h2>{s["html"]}'
-        if s.get("fig"):
-            n += 1; f = s["fig"]
+    for si, s in enumerate(d["sections"]):
+        body += f'<h2 id="{s.get("id") or "s" + str(si + 1)}">{s["h2"]}</h2>{s["html"]}'
+        for f in sfigs(s):
+            n += 1
             body += (f'<figure class="article-figure"><a href="{img(f[0])}?v=1" target="_blank" rel="noopener"><img src="{img(f[0])}?v=1" alt="{E(f[1])}" width="1600" height="900" loading="lazy" decoding="async"></a>'
                      f'<figcaption>{"চিত্র" if bn else "Figure"} {str(n).translate(BND) if bn else n} · {f[2]}</figcaption></figure>')
         if s.get("after"):

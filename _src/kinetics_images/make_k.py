@@ -84,9 +84,10 @@ def page(cfg, lang, w=1600, h=900):
         back = f'<div class="bg" style="background:radial-gradient(circle at 85% 20%,{SAGE} 0,{CREAM} 60%)"></div>'
         svg = cfg["svg"](bn)
         mid = f'<div class="card" style="--cx:{cfg.get("cx",640)}px"><svg viewBox="0 0 {w-52-cfg.get("cx",640)} {h-96-62}">{svg}</svg></div>'
+    extra = (cfg.get("extra") or ("", ""))[1 if bn else 0]
     return (f'<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><style>:root{{--w:{w}px;--h:{h}px}}{CSS}{M.RECIPE}</style></head><body class="{lang}">'
             f'{back}{mid}<div class="panel" style="--pw:{cfg.get("pw",540)}px;--ts:{ts}px;--fb:{58 if foot_on else 0}px;{cfg.get("panelcss","")}">'
-            f'<p class="kick">{g("kick")}</p><h1 class="title">{g("title")}</h1>{f"<p class=sub>{sub}</p>" if sub else ""}{leg}{byline}</div>{foot}</body></html>')
+            f'<p class="kick">{g("kick")}</p><h1 class="title">{g("title")}</h1>{f"<p class=sub>{sub}</p>" if sub else ""}{leg}{byline}</div>{extra}{foot}</body></html>')
 
 if __name__ == "__main__":
     with sync_playwright() as p:
