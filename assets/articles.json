@@ -1,5 +1,18 @@
 [
  {
+  "slug": "pharmacovigilance-medicine-safety-monitoring",
+  "date": "2026-11-23",
+  "tag_en": "Medicine safety",
+  "tag_bn": "ওষুধের নিরাপত্তা",
+  "title_en": "Pharmacovigilance: How Are Medicines Monitored for Safety?",
+  "title_bn": "ফার্মাকোভিজিল্যান্স: ওষুধের নিরাপত্তা কীভাবে পর্যবেক্ষণ করা হয়?",
+  "desc_en": "Understand adverse event reporting, safety signals, post-marketing surveillance and Bangladesh’s DGDA-led medicine safety system.",
+  "desc_bn": "ADR রিপোর্টিং, safety signal, বাজার-পরবর্তী পর্যবেক্ষণ এবং DGDA-এর জাতীয় ব্যবস্থায় ওষুধের নিরাপত্তা পর্যবেক্ষণ জানুন।",
+  "url_en": "/blog/pharmacovigilance-medicine-safety-monitoring/",
+  "url_bn": "/blog/pharmacovigilance-medicine-safety-monitoring-bangla/",
+  "img": "/assets/img/blog/pharmacovigilance/pharmacovigilance-cover.svg"
+ },
+ {
   "slug": "medicine-stability-testing-how-shelf-life-is-established",
   "date": "2026-11-22",
   "tag_en": "Pharma Blog",
