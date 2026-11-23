@@ -1,0 +1,24 @@
+/* Pharmacovigilance article: picture figures with legends written in code (works without JavaScript). */
+.article-content .pv-fig{margin:26px 0 30px;padding:clamp(10px,2.2vw,18px);border-radius:20px;background:linear-gradient(135deg,#eaf4f1,#fff5e8);border:1px solid #d6e6e3;color:#253238}
+.article-content .pv-fig img{display:block;width:100%;height:auto;border-radius:14px;aspect-ratio:16/9;object-fit:cover}
+.article-content .pv-fig .caption{margin:12px 4px 0;font-size:14px;color:#41545b}
+.article-content .pv-legend{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));counter-reset:pv}
+.article-content .pv-legend li{margin:0;padding:10px 12px;background:#fff;border:1px solid #d6e6e3;border-radius:12px;display:flex;gap:10px;align-items:flex-start;line-height:1.4;color:#253238}
+.article-content .pv-legend li b{display:block;font-weight:700;color:#174F52}
+.article-content .pv-legend li span{display:block;font-size:14px;color:#41545b;margin-top:2px}
+.article-content ol.pv-legend li::before{counter-increment:pv;content:counter(pv);flex:none;width:28px;height:28px;border-radius:50%;background:#17646a;color:#fff;font-weight:800;font-size:14px;display:inline-flex;align-items:center;justify-content:center}
+[lang=bn] .article-content ol.pv-legend li::before{content:counter(pv,bengali)}
+.article-content ul.pv-legend li::before{content:"";flex:none;width:10px;height:10px;margin-top:7px;border-radius:50%;background:#e0583a}
+.article-content .pv-legend.pv-two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.article-content .pv-legend.pv-two li:first-child::before{background:#17646a}
+.article-content .pv-legend.pv-flow li.pv-end{border-color:#17646a;background:#eef7f5}
+.article-content .pv-days{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0 0;padding:0;list-style:none}
+.article-content .pv-days li{margin:0;flex:1 1 220px;padding:10px 14px;border-radius:12px;background:#fff7ec;border:1.5px solid #e0583a;color:#253238;line-height:1.4}
+.article-content .pv-days li b{font-size:1.25em;color:#c9432a}
+.article-content .pv-key{background:linear-gradient(135deg,#e5f2ee,#fff3df)}
+@media(max-width:560px){.article-content .pv-legend.pv-two{grid-template-columns:1fr}.article-content .pv-legend{grid-template-columns:1fr}}
+[data-theme=dark] .article-content .pv-fig{background:#16292c;border-color:#2c4a4d;color:#e8f1ef}
+[data-theme=dark] .article-content .pv-legend li,[data-theme=dark] .article-content .pv-days li{background:#1d3639;border-color:#2c4a4d;color:#e8f1ef}
+[data-theme=dark] .article-content .pv-legend li b{color:#9fe0d6}
+[data-theme=dark] .article-content .pv-legend li span,[data-theme=dark] .article-content .pv-fig .caption{color:#b9cdca}
+[data-theme=dark] .article-content .pv-days li b{color:#ff9a7d}

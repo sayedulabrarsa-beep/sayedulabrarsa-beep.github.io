@@ -1,8 +1,7 @@
 # Pharmacovigilance visual asset record
 
-- **Files:** `pharmacovigilance-cover.svg`, `pharmacovigilance-cycle-en.svg`, `pharmacovigilance-cycle-bn.svg`, `report-checklist-en.svg`, and `report-checklist-bn.svg`.
-- **Source:** Original vector artwork created specifically for the Pharmacovigilance article; no third-party photographs, stock images, logos, or external icon packs are used.
-- **Creator:** Original editorial visual production commissioned for the Sayedul Abrar Pharmaceutical Knowledge Platform.
+- **Files:** `pv-*.webp` (12 article pictures), `pv-social-en.jpg`, `pv-social-bn.jpg` (1200 × 630 share images), `pv-card.webp` and `pv-card-w750.webp` (blog card).
+- **Source:** Text-free illustrations supplied by the site owner (AI-generated). All labels, numbers and captions are live text in the page, in English and Bangla.
 - **Rights:** © 2026 Sayedul Abrar. All rights reserved; reuse requires permission.
-- **Accessibility:** SVGs include descriptive titles and descriptions; article images include language-appropriate alt text and captions.
-- **Format:** 16:9 SVG source at 1600 × 900; the homepage stack renderer creates an optimized WebP derivative when needed.
+- **Accessibility:** every picture has language-specific alt text, a caption and a text legend.
+- **Format:** 1600 × 900 WebP (quality 86). Rebuild with `_src/pv_images/make_pv.py`; page edits are in `apply_pv.py` and SEO files in `seo_pv.py`.

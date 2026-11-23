@@ -267,6 +267,8 @@ Sales, medical, regulatory, quality, customer-care এবং field team-ই অ�
 
 মূল কথা: ওষুধ বাজারে আসার পর ফার্মাকোভিজিল্যান্স শেষ হয় না। ঘটনা শনাক্ত, রিপোর্ট, মূল্যায়ন, প্যাটার্ন খোঁজা, ব্যবস্থা এবং যোগাযোগ—এই ধারাবাহিক শেখার প্রক্রিয়াই ওষুধের সুবিধা যেন ঝুঁকির তুলনায় বেশি থাকে, তা নিশ্চিত করতে সাহায্য করে।
 
+### মূল কথাগুলো
+
 আরও পড়ুন: ওষুধের যাত্রা বুঝতে পড়ুন Drug Distribution, Drug Metabolism এবং Drug Excretion। পণ্যের গুণগত মানের ব্যবস্থা জানতে পড়ুন Quality Assurance vs Quality Control এবং Medicine Stability Testing।
 
 ### সাধারণ জিজ্ঞাসা
@@ -408,6 +410,8 @@ Patients should seek urgent medical help for severe or rapidly worsening symptom
 Healthcare professionals should document suspected events, report through the appropriate local and national channel, and explain to patients that reporting helps improve the safety knowledge around medicines. A report does not automatically mean that the product is unsafe or that the reporter has established causation. It is one part of a system that turns real-world experience into better-informed decisions.
 
 The key message: pharmacovigilance does not end when a medicine reaches the market. It is continuous learning—notice, report, assess, detect patterns, act and communicate—to help keep the benefits of medicines greater than their risks.
+
+### Key takeaways
 
 Continue learning: Follow the medicine journey through Drug Distribution, Drug Metabolism and Drug Excretion. For the systems that protect product quality, read Quality Assurance vs Quality Control and Medicine Stability Testing.
 
