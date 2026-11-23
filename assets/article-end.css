@@ -98,11 +98,9 @@
 .ae-card .ae-fig img{min-width:100%;min-height:100%}
 
 /* Manual article browsing: no automatic movement; swipe, scroll or drag by hand */
-.ae-track.ae-mq{display:block;overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;scroll-behavior:smooth;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:#9bb7aa transparent;cursor:grab;touch-action:pan-x pan-y;-webkit-overflow-scrolling:touch;-webkit-mask-image:none!important;mask-image:none!important}
+.ae-track.ae-mq{display:block;overflow:hidden;overscroll-behavior-x:contain;scroll-behavior:auto;scroll-snap-type:none;scrollbar-width:none;touch-action:pan-y;-webkit-mask-image:none!important;mask-image:none!important}
 .ae-track.ae-mq .ae-mq-in{display:flex;gap:18px;width:max-content;padding:4px 2px 14px}
-.ae-track.ae-mq .ae-card{flex:0 0 clamp(240px,26vw,290px);scroll-snap-align:start}
-.ae-track.ae-mq.ae-dragging{cursor:grabbing;scroll-snap-type:none;scroll-behavior:auto;user-select:none}
-.ae-track.ae-mq.ae-dragging .ae-card{pointer-events:none}
+.ae-track.ae-mq .ae-card{flex:0 0 clamp(240px,26vw,290px);scroll-snap-align:start;pointer-events:auto;cursor:pointer}
 @media(max-width:900px){.ae-track.ae-mq{overflow-x:auto!important;margin:0 -16px;padding:4px 16px 14px;scroll-snap-type:x mandatory}.ae-track.ae-mq .ae-card{flex:0 0 min(76vw,300px)}}
 @media(prefers-reduced-motion:reduce){.ae-track.ae-mq{scroll-behavior:auto}}
 
