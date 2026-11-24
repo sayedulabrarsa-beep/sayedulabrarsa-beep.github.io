@@ -43,11 +43,13 @@ The public material retrieved in this review does not unambiguously identify the
 
 ## Visual asset record
 
-Four original vector diagrams are prepared for this draft:
+Six original vector diagrams are prepared for this draft:
 - editorial/drafts/assets/biosimilars-overview-en.svg
 - editorial/drafts/assets/biosimilars-comparability-en.svg
 - editorial/drafts/assets/biosimilars-overview-bn.svg
 - editorial/drafts/assets/biosimilars-comparability-bn.svg
+- editorial/drafts/assets/biosimilars-immunogenicity-en.svg
+- editorial/drafts/assets/biosimilars-immunogenicity-bn.svg
 
 Creator: OpenAI, original code-authored SVG diagrams commissioned for Sayedul Abrar's editorial programme. No third-party photographs, icons, trademarks or AI-generated raster images are embedded. The drawings are conceptual, not molecular structures, laboratory data or regulatory flowcharts. Proposed site-use permission: Sayedul Abrar may reproduce and adapt these original diagrams on sayedulabrar.site. Before production, convert to optimized WebP where useful while retaining accessible SVG source; preserve the “conceptual illustration; not to scale” note and language-specific alt text/captions.
 
