@@ -171,6 +171,70 @@ Get in touch ↗Find me on LinkedIn
 
 ## Pharma Blog articles (newest first)
 
+### 1 in Every 8 Taka: How Much Bangladesh Spends on Acid Medicines (PPIs)
+URL: https://sayedulabrar.site/blog/ppi-acid-medicine-market-bangladesh/ · Language: English · Published: 2026-11-24 · Author: Sayedul Abrar, pharmacist
+Summary: About Tk 4,983 crore a year, nearly 12% of medicine sales in Bangladesh, goes to PPI acid medicines. A simple, data-based look at which PPIs lead, how fast they grow and why use matters.
+
+By Sayedul Abrar, pharmacist · Published 24 November 2026
+
+The short answer: In the 12 months to September 2026, about Tk 4,983 crore of medicine sales in Bangladesh were PPIs (proton pump inhibitors), the medicines commonly called “gastric medicine”. That is close to 12% of the Tk 42,023 crore medicine market tracked by IQVIA, or roughly 1 in every 8 taka.
+
+### 1. The numbers at a glance
+
+Out of every 100 taka spent on medicines in Bangladesh, about 12 taka goes to one group of medicines: acid reducers.
+
+Tk 4,983 CrPPI sales in 12 months (to Sep 2026)
+~12%of the Tk 42,023 crore medicine market
+1 in 8taka of medicine sales goes to PPIs
+
+### 2. What are PPIs?
+
+PPIs (proton pump inhibitors) are medicines that lower the amount of acid the stomach produces. They work on the “proton pumps” in the stomach lining, the cells that release acid.
+
+Doctors prescribe them for conditions such as acid reflux and heartburn, stomach ulcers and gastritis. They are also often prescribed alongside other medicines, such as some painkillers, that can irritate the stomach. If you want to know how acid problems differ, read Heartburn vs Acid Reflux vs GERD, and for correct use, When to Take a PPI.
+
+### 3. Which acid medicines lead?
+
+Five PPI molecules make up this market, and one of them takes most of it. Esomeprazole alone accounts for about 63% of PPI sales.
+
+The smaller molecules are growing faster. Over the year, dexlansoprazole grew about 17% and pantoprazole about 17%, compared with about 4% for esomeprazole. The ranking is stable, but the gap is slowly narrowing.
+
+### 4. Growing, but slower than the market
+
+PPI sales grew by about 7% over the last year. The total medicine market grew faster, by about 12%. In other words, acid medicines are still growing in taka terms, but their share of total medicine sales is slowly getting smaller.
+
+### 5. Why is demand so high?
+
+Sales data shows how much is sold, not why. The following are likely contributing factors rather than measured findings:
+
+- Acidity is a common complaint. Many people consider “gastric” an everyday problem.
+- Easy access. PPIs are available in almost every pharmacy, and they are sometimes bought without a prescription.
+- Co-prescription. They are often prescribed together with other medicines to help protect the stomach.
+
+### 6. What this means for patients and the industry
+
+PPIs are useful medicines when a doctor prescribes them for the right reason. Like any medicine, they work best at the right dose and for the right length of time. Long-term use should be reviewed with a doctor rather than continued by habit.
+
+If acidity keeps coming back, it is better to see a doctor than to take a tablet every day without advice. Regular meal times and avoiding heavy meals late at night may also help some people.
+
+For the pharmaceutical industry, a market of this size brings a responsibility: to promote correct, balanced use and to support patient education.
+
+### Key takeaways
+
+- Bangladesh spent about Tk 4,983 crore on PPIs in the 12 months to September 2026, roughly 1 in every 8 taka of medicine sales.
+- Esomeprazole leads with about 63% of PPI sales; pantoprazole, omeprazole, dexlansoprazole and rabeprazole follow.
+- PPI sales grew about 7%, slower than the total market at about 12%.
+- These medicines work best when prescribed for the right reason, at the right dose and for the right duration.
+
+### About the data
+
+Figures are from IQVIA Bangladesh pharmaceutical market data, MAT (moving annual total: the 12 months to September 2026). Values are sales value in taka crore and are rounded. “PPI” here means the five PPI molecules listed in this article. Market growth for PPIs is calculated from IQVIA molecule-level growth and should be read as approximate.
+
+Educational note: This article is for general education, not individual medical advice. Do not start, stop or change a medicine without advice from a qualified healthcare professional.
+
+
+---
+
 ### বায়োসিমিলার কী? মূল বায়োলজিক ওষুধের সঙ্গে এর পার্থক্য কতটুকু?
 URL: https://sayedulabrar.site/blog/biosimilars-explained-bangla/ · Language: Bangla · Published: 2026-11-24 · Author: Sayedul Abrar, pharmacist
 Summary: বায়োসিমিলার কী, কীভাবে তৈরি ও পরীক্ষা করা হয়, জেনেরিক ওষুধের সঙ্গে পার্থক্য এবং বাংলাদেশে DGDA-এর নির্দেশনা সহজ ভাষায় জানুন।
