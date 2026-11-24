@@ -226,6 +226,20 @@ PPI (প্রোটন পাম্প ইনহিবিটর) এমন ও�
 - PPI বিক্রি বেড়েছে প্রায় ৭%, যা পুরো বাজারের প্রায় ১২% প্রবৃদ্ধির চেয়ে কম।
 - সঠিক কারণে, সঠিক মাত্রায় এবং সঠিক সময় পর্যন্ত খেলে এই ওষুধগুলো সবচেয়ে ভালো কাজ করে।
 
+### সাধারণ প্রশ্ন
+
+PPI মানে কী?
+PPI মানে প্রোটন পাম্প ইনহিবিটর। এটি এমন একটি ওষুধের গ্রুপ, যা পাকস্থলীতে অ্যাসিড তৈরি কমায়। অনেকে একে “গ্যাস্ট্রিকের ওষুধ” বলেন।
+
+বাংলাদেশ অ্যাসিডের ওষুধে কত খরচ করে?
+IQVIA-র তথ্য অনুযায়ী সেপ্টেম্বর ২০২৬ পর্যন্ত ১২ মাসে প্রায় ৪,৯৮৩ কোটি টাকা, যা ৪২,০২৩ কোটি টাকার ওষুধের বাজারের প্রায় ১২%।
+
+বাংলাদেশে কোন PPI সবচেয়ে বেশি বিক্রি হয়?
+Esomeprazole, PPI বিক্রির প্রায় ৬৩%। বাকিটা Pantoprazole, Omeprazole, Dexlansoprazole ও Rabeprazole-এর।
+
+প্রতিদিন গ্যাস্ট্রিকের ওষুধ খাওয়া কি ঠিক?
+চিকিৎসক পরামর্শ দিলে তবেই প্রতিদিন খাবেন। অ্যাসিডিটি বারবার ফিরে এলে নিজে নিজে প্রতিদিন ট্যাবলেট না খেয়ে চিকিৎসক দেখান।
+
 ### তথ্য সম্পর্কে
 
 সংখ্যাগুলো IQVIA বাংলাদেশের ওষুধ বাজারের তথ্য থেকে নেওয়া: MAT (মুভিং অ্যানুয়াল টোটাল, অর্থাৎ সেপ্টেম্বর ২০২৬ পর্যন্ত ১২ মাস)। মানগুলো কোটি টাকায় বিক্রয়মূল্য এবং রাউন্ড করা। এই লেখায় “PPI” বলতে উল্লিখিত পাঁচটি PPI মলিকিউল বোঝানো হয়েছে। PPI বাজারের প্রবৃদ্ধি IQVIA-র মলিকিউল-ভিত্তিক প্রবৃদ্ধি থেকে হিসাব করা, তাই এটিকে আনুমানিক হিসেবে ধরুন।
@@ -289,6 +303,20 @@ For the pharmaceutical industry, a market of this size brings a responsibility: 
 - Esomeprazole leads with about 63% of PPI sales; pantoprazole, omeprazole, dexlansoprazole and rabeprazole follow.
 - PPI sales grew about 7%, slower than the total market at about 12%.
 - These medicines work best when prescribed for the right reason, at the right dose and for the right duration.
+
+### Frequently asked questions
+
+What does PPI mean?
+PPI stands for proton pump inhibitor. It is a group of medicines that lowers the amount of acid the stomach makes. Many people call them “gastric medicine”.
+
+How much does Bangladesh spend on acid medicines?
+About Tk 4,983 crore in the 12 months to September 2026, according to IQVIA data. That is close to 12% of the Tk 42,023 crore medicine market.
+
+Which PPI is used most in Bangladesh?
+Esomeprazole, with about 63% of PPI sales. Pantoprazole, omeprazole, dexlansoprazole and rabeprazole make up the rest.
+
+Is it safe to take gastric medicine every day?
+Only take it every day if a doctor has advised it. If acidity keeps coming back, see a doctor rather than taking tablets daily on your own.
 
 ### About the data
 
