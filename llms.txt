@@ -132,8 +132,8 @@ Pharma Blog articles (newest first; each is educational, not medical advice):
   Summary: আয়রনের ঘাটতি আর অ্যানিমিয়া এক জিনিস নয়। সহজ ভাষায় পার্থক্য, লক্ষণ, কারণ, ফেরিটিন ও সিবিসি পরীক্ষা, চিকিৎসা এবং কখন ডাক্তার দেখাবেন জানুন।
 - Iron Deficiency vs Anemia: What Is the Difference? — English (2026-11-07): https://sayedulabrar.site/blog/iron-deficiency-vs-anemia/
   Summary: Iron deficiency vs anemia: does low iron mean anemia? Key symptoms, causes, ferritin and CBC tests, treatment basics and when to see a doctor.
-- আয়রন ট্যাবলেট কীভাবে খাবেন: সময়, খাবার ও ওষুধের মিথস্ক্রিয়া — বাংলা (2026-11-07): https://sayedulabrar.site/blog/how-to-take-iron-tablets-properly-bangla/
-  Summary: আয়রন ট্যাবলেট খাবারের আগে না পরে খাবেন? সঠিক সময়, ভিটামিন C, চা-দুধ-ক্যালসিয়াম থেকে দূরত্ব, ওষুধের মিথস্ক্রিয়া ও ডোজ বাদ পড়লে করণীয়।
+- আয়রন ট্যাবলেট কখন খাবেন? খাবারের আগে না পরে — বাংলা (2026-11-07): https://sayedulabrar.site/blog/how-to-take-iron-tablets-properly-bangla/
+  Summary: আয়রন ওষুধ কখন খেতে হয়—খাবারের আগে না পরে? ভিটামিন C, চা-কফি, দুধ ও ক্যালসিয়াম থেকে ব্যবধান এবং ওষুধের মিথস্ক্রিয়া জানুন।
 - How to Take Iron Tablets Properly: Timing, Food and Interactions — English (2026-11-07): https://sayedulabrar.site/blog/how-to-take-iron-tablets-properly/
   Summary: Iron tablets: before or after food? Best timing, vitamin C, tea, coffee, dairy and calcium gaps, interactions and missed doses, with NHS and NIH sources.
 - গ্লুকোসামিন ও আলঝেইমার: নতুন গবেষণা আসলে কী বলছে (আর কী বলছে না) — বাংলা (2026-11-01): https://sayedulabrar.site/blog/glucosamine-alzheimers-nature-metabolism-study-bangla/
@@ -144,8 +144,8 @@ Pharma Blog articles (newest first; each is educational, not medical advice):
   Summary: বুক জ্বালাপোড়া, অ্যাসিড রিফ্লাক্স ও GERD-এর পার্থক্য, লক্ষণ, কারণ, ৭টি অভ্যাস, বিপদ-সংকেত এবং কখন ডাক্তার দেখাবেন—ফার্মাসিস্ট সাইয়্যেদুল আবরারের সহজ গাইড।
 - Heartburn vs Acid Reflux vs GERD: Symptoms, Triggers and When to See a Doctor — English (2026-10-30): https://sayedulabrar.site/blog/heartburn-vs-acid-reflux-vs-gerd/
   Summary: Heartburn vs acid reflux vs GERD: understand the differences, symptoms, common triggers, 7 lifestyle tips, warning signs and when to see a doctor.
-- মেয়াদ শেষ হওয়ার তারিখ (EXP) ও উৎপাদনের তারিখ (MFG) দেখার নিয়ম — বাংলা (2026-10-28): https://sayedulabrar.site/blog/expiry-date-vs-manufacturing-date-medicine-bangla/
-  Summary: ঔষধ বা ওষুধের মেয়াদ শেষ হওয়ার তারিখ (EXP) ও উৎপাদনের তারিখ (MFG) কীভাবে দেখবেন? 07/2027 মানে কী, ব্যাচ নম্বর ও সংরক্ষণের নিয়ম।
+- ওষুধের মেয়াদ শেষ হওয়ার তারিখ (EXP) কীভাবে দেখবেন? — বাংলা (2026-10-28): https://sayedulabrar.site/blog/expiry-date-vs-manufacturing-date-medicine-bangla/
+  Summary: ওষুধের গায়ে EXP ও MFG তারিখ কী বোঝায়? EXP 07/2027-এর অর্থ, ব্যাচ নম্বর, মেয়াদ যাচাই ও নিরাপদ সংরক্ষণের নিয়ম জানুন—সহজ বাংলায়।
 - Expiry Date vs Manufacturing Date on Medicine: Read EXP & MFG — English (2026-10-28): https://sayedulabrar.site/blog/expiry-date-vs-manufacturing-date-medicine/
   Summary: What EXP and MFG mean on a medicine pack: how to read EXP 07/2027 (good to the end of that month), the batch number, opened-medicine limits and storage.
 - জেনেরিক নাম কী? জেনেরিক ও ব্র্যান্ড নামের পার্থক্য — বাংলা (2026-10-27): https://sayedulabrar.site/blog/generic-name-vs-brand-name-bangla/
