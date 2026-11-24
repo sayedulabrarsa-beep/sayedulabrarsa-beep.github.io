@@ -6,8 +6,28 @@
     <atom:link href="https://sayedulabrar.site/blog/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Pharmacist-written educational articles in English and Bangla on medicines, pharmacology and the pharmaceutical industry in Bangladesh, by Sayedul Abrar.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 23 Nov 2026 06:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 06:00:00 +0000</lastBuildDate>
     <image><url>https://sayedulabrar.site/assets/img/social/pharma-blog-social-preview.jpg</url><title>Pharma Blog | Sayedul Abrar</title><link>https://sayedulabrar.site/blog/</link></image>
+    <item>
+      <title>বায়োসিমিলার কী? মূল বায়োলজিক ওষুধের সঙ্গে এর পার্থক্য কতটুকু?</title>
+      <link>https://sayedulabrar.site/blog/biosimilars-explained-bangla/</link>
+      <guid isPermaLink="true">https://sayedulabrar.site/blog/biosimilars-explained-bangla/</guid>
+      <pubDate>Tue, 24 Nov 2026 06:00:00 +0000</pubDate>
+      <dc:creator>Sayedul Abrar</dc:creator>
+      <dc:language>bn</dc:language>
+      <description>বায়োসিমিলার কী, কীভাবে তৈরি ও পরীক্ষা করা হয়, জেনেরিক ওষুধের সঙ্গে পার্থক্য এবং বাংলাদেশে DGDA-এর নির্দেশনা সহজ ভাষায় জানুন।</description>
+      <enclosure url="https://sayedulabrar.site/assets/img/blog/biosimilars/biosimilars-cover.svg" type="image/svg+xml" length="2878"/>
+    </item>
+    <item>
+      <title>Biosimilars Explained: How Similar Are They to Original Biologic Medicines?</title>
+      <link>https://sayedulabrar.site/blog/biosimilars-explained/</link>
+      <guid isPermaLink="true">https://sayedulabrar.site/blog/biosimilars-explained/</guid>
+      <pubDate>Tue, 24 Nov 2026 06:00:00 +0000</pubDate>
+      <dc:creator>Sayedul Abrar</dc:creator>
+      <dc:language>en</dc:language>
+      <description>Learn what biosimilars are, how they are made and tested, how they differ from generics, and what Bangladesh’s DGDA guidance means.</description>
+      <enclosure url="https://sayedulabrar.site/assets/img/blog/biosimilars/biosimilars-cover.svg" type="image/svg+xml" length="2878"/>
+    </item>
     <item>
       <title>ফার্মাকোভিজিল্যান্স: ওষুধের নিরাপত্তা কীভাবে পর্যবেক্ষণ করা হয়?</title>
       <link>https://sayedulabrar.site/blog/pharmacovigilance-medicine-safety-monitoring-bangla/</link>

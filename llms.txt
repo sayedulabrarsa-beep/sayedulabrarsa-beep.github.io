@@ -64,6 +64,10 @@ Clinical-content boundaries:
 
 <!--articles:start-->
 Pharma Blog articles (newest first; each is educational, not medical advice):
+- বায়োসিমিলার কী? মূল বায়োলজিক ওষুধের সঙ্গে এর পার্থক্য কতটুকু? — বাংলা (2026-11-24): https://sayedulabrar.site/blog/biosimilars-explained-bangla/
+  Summary: বায়োসিমিলার কী, কীভাবে তৈরি ও পরীক্ষা করা হয়, জেনেরিক ওষুধের সঙ্গে পার্থক্য এবং বাংলাদেশে DGDA-এর নির্দেশনা সহজ ভাষায় জানুন।
+- Biosimilars Explained: How Similar Are They to Original Biologic Medicines? — English (2026-11-24): https://sayedulabrar.site/blog/biosimilars-explained/
+  Summary: Learn what biosimilars are, how they are made and tested, how they differ from generics, and what Bangladesh’s DGDA guidance means.
 - ফার্মাকোভিজিল্যান্স: ওষুধের নিরাপত্তা কীভাবে পর্যবেক্ষণ করা হয়? — বাংলা (2026-11-23): https://sayedulabrar.site/blog/pharmacovigilance-medicine-safety-monitoring-bangla/
   Summary: ফার্মাকোভিজিল্যান্স, ADR রিপোর্টিং, safety signal এবং বাংলাদেশের DGDA জাতীয় ব্যবস্থায় ওষুধের নিরাপত্তা পর্যবেক্ষণ সহজ ভাষায় জানুন।
 - Pharmacovigilance: How Are Medicines Monitored for Safety? — English (2026-11-23): https://sayedulabrar.site/blog/pharmacovigilance-medicine-safety-monitoring/
