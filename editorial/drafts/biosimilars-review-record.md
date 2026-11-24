@@ -17,6 +17,15 @@
 - Ten future/scheduled English–Bangla pairs were found in main but are outside the public sitemap. All 20 pages were checked and have <meta name="robots" content="noindex,nofollow"> with future publication dates: Bioavailability (25 Nov), Rx vs OTC (26 Nov), Onset/Peak/Duration (28 Nov), series hub (28 Nov), Dosage Forms (30 Nov), Immediate/Sustained/Enteric release (2 Dec), Routes of Administration (5 Dec), Drug Interactions (7 Dec), Side Effects vs ADRs (9 Dec), and How to Read a Medicine Label (12 Dec). They were not changed.
 - No Biosimilars article or Biosimilars-specific page path exists in the current published index, sitemap or main-branch blog inventory.
 
+
+## Page-level metadata audit
+
+- All 42 published English/Bangla article pages are present in the current main-branch article inventory and are marked index,follow. Each checked page has a canonical URL and language alternate tags.
+- The newest Pharmacovigilance and Half-Life pairs each have page-level BlogPosting JSON-LD and BreadcrumbList data.
+- Four older bilingual pairs (Glucosamine and Alzheimer's; Heartburn vs Acid Reflux vs GERD; Expiry Date vs Manufacturing Date; Generic Name vs Brand Name) use page-level Article rather than the programme's preferred BlogPosting type. This is valid general Article markup but is inconsistent with the newer editorial standard. Existing published pages were not modified.
+- The Bangla Drug vs Medicine page has BreadcrumbList but no FAQPage JSON-LD, while its English counterpart has FAQPage. Existing published pages were not modified.
+- The blog index itself has 42 BlogPosting entries. The page-level schema differences above do not change the index inventory.
+
 ## Scientific source set
 
 1. WHO, Guidelines on evaluation of biosimilars, TRS 1043, Annex 3 (2022), final post-ECBS version. Primary guidance for definitions, reference-product selection, analytical and functional comparability, tailored clinical evidence, immunogenicity, pharmacovigilance, labelling and traceability.
