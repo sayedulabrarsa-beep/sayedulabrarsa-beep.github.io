@@ -133,5 +133,14 @@
     "desc_en": "Understand adverse event reporting, safety signals, post-marketing surveillance and Bangladesh’s DGDA-led medicine safety system.",
     "desc_bn": "ADR রিপোর্টিং, safety signal, বাজার-পরবর্তী পর্যবেক্ষণ এবং DGDA-এর জাতীয় ব্যবস্থায় ওষুধের নিরাপত্তা পর্যবেক্ষণ জানুন।",
     "img": "/assets/img/blog/pharmacovigilance/pv-card.webp"
+  },
+  "ppi-acid-medicine-market-bangladesh": {
+    "tag_en": "Pharmaceutical industry",
+    "tag_bn": "ফার্মাসিউটিক্যাল শিল্প",
+    "title_en": "1 in Every 8 Taka: Bangladesh’s Acid Medicine Market",
+    "title_bn": "1 in Every 8 Taka: Bangladesh’s Acid Medicine Market",
+    "desc_en": "About Tk 4,983 crore a year goes to PPI acid medicines in Bangladesh.",
+    "desc_bn": "About Tk 4,983 crore a year goes to PPI acid medicines in Bangladesh.",
+    "img": "/assets/img/blog/ppi-market/ppi-market-card-w750.webp"
   }
 }
