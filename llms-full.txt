@@ -422,6 +422,8 @@ WHO, EMA ও FDA-এর আন্তর্জাতিক guideline থেকে
 - Interchangeability ও automatic substitution দেশের আইন ও নিয়ন্ত্রক সিদ্ধান্তের ওপর নির্ভর করে।
 - বাংলাদেশে DGDA-এর সর্বশেষ নির্দেশনা ও নির্দিষ্ট পণ্যের registration status যাচাই করুন।
 
+### মূল কথাগুলো
+
 ### সাধারণ প্রশ্নোত্তর
 
 #### বায়োসিমিলার কি জেনেরিক ওষুধের মতো?
@@ -561,6 +563,8 @@ International documents from WHO, EMA and FDA are useful for understanding the s
 - Immunogenicity, manufacturing quality and ongoing safety monitoring matter.
 - Interchangeability and automatic substitution depend on local regulatory and pharmacy rules.
 - In Bangladesh, check current DGDA requirements and product registration status.
+
+### Key takeaways
 
 ### Frequently asked questions
 

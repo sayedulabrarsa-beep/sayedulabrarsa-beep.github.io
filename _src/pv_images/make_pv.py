@@ -23,7 +23,7 @@ with sync_playwright() as p:
     for lang, t in SOC.items():
         fam = "Sora" if lang == "en" else "NSB"
         fs = 50 if lang == "en" else 48
-        html = f"""<style>
+        html = f"""<meta charset="utf-8"><style>
 @font-face{{font-family:Sora;font-weight:700;src:url({FONTS}/sora-latin-700-normal.woff2)}}
 @font-face{{font-family:Sora;font-weight:800;src:url({FONTS}/sora-latin-800-normal.woff2)}}
 @font-face{{font-family:NSB;font-weight:700;src:url({FONTS}/noto-serif-bengali-bengali-700-normal.woff2);unicode-range:U+0980-09FF,U+200C-200D,U+0964-0965}}
