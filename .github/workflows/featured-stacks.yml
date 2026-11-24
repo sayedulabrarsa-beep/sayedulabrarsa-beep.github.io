@@ -10,7 +10,7 @@ on:
       - '_src/blog_stacks.py'
       - '_src/seo_feeds.py'
       - '_src/article_index.py'
-      - '_src/data/articles.json'
+      - '_src/data/articles.json'\n      - '_src/image_credits.py'
   workflow_dispatch:
 
 permissions:
