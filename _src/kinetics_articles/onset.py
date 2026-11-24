@@ -90,3 +90,26 @@ BN = dict(
           ("/blog/drug-absorption-how-medicine-enters-bloodstream-bangla/", "ওষুধের শোষণ: ওষুধ কীভাবে রক্তে প্রবেশ করে?"),
           ("/blog/how-do-medicines-work-in-the-body-bangla/", "ওষুধ শরীরে কীভাবে কাজ করে?")],
 )
+
+# ---- Image + SEO layer (24 Nov): the user's 3 AI pictures so far (window, routes, weeks), descriptive alt text ----
+EN_FIG = {
+ "window": ("therapeutic-window-capsule-safe-range", "A teal and white capsule glowing inside a curved gauge, labelled Inside the window: effective and safe, illustrating the therapeutic window between too low and too high a drug level.", "Therapeutic window: not too low, not too high."),
+ "routes": ("routes-of-administration-injection-tablet-slow-release", "A tray with an injection vial, an IV line, a tablet and a slow-release capsule, each labelled, showing how the route of administration and dosage form change onset and duration of drug action.", "Injection, IV line, tablet and slow-release capsule: route and form change how fast and how long a medicine works."),
+ "weeks": ("medicine-full-effect-takes-weeks-pill-organizer", "A weekly pill organizer beside a desk calendar and a glass of water, labelled Same time, every day, showing that some medicines need weeks of regular use for their full effect.", "Some medicines, such as antidepressants, need weeks of regular use for their full effect."),
+}
+BN_FIG = {
+ "window": ("therapeutic-window-capsule-safe-range", "বাঁকা গেজের ভেতরে আলোকিত সবুজ-সাদা ক্যাপসুল; লেখা ‘উইন্ডোর ভেতরে: কার্যকর ও নিরাপদ’—খুব কম ও খুব বেশি মাত্রার মাঝের থেরাপিউটিক উইন্ডো।", "থেরাপিউটিক উইন্ডো: কমও নয়, বেশিও নয়।"),
+ "routes": ("routes-of-administration-injection-tablet-slow-release", "ট্রেতে ইনজেকশনের ভায়াল, IV লাইন, ট্যাবলেট ও ধীরে-নিঃসৃত ক্যাপসুল, প্রতিটির নাম লেখা—প্রয়োগের পথ ও ওষুধের রূপ কীভাবে কাজ শুরুর সময় ও স্থায়িত্ব বদলায়।", "ইনজেকশন, IV লাইন, ট্যাবলেট ও ধীরে-নিঃসৃত ক্যাপসুল: পথ ও রূপ ঠিক করে ওষুধ কত দ্রুত ও কতক্ষণ কাজ করবে।"),
+ "weeks": ("medicine-full-effect-takes-weeks-pill-organizer", "ডেস্ক ক্যালেন্ডার ও পানির গ্লাসের পাশে সাপ্তাহিক পিল অর্গানাইজার; লেখা ‘প্রতিদিন একই সময়ে’—কিছু ওষুধের পুরো প্রভাবে কয়েক সপ্তাহ নিয়মিত সেবন লাগে।", "অ্যান্টিডিপ্রেস্যান্টের মতো কিছু ওষুধের পুরো প্রভাবে কয়েক সপ্তাহ নিয়মিত সেবন লাগে।"),
+}
+def _layer(d, F):
+    s = d["sections"]
+    s[2]["figs"] = [F["window"]]
+    s[3]["figs"] = [F["routes"], s[3].pop("fig"), F["weeks"]]
+_layer(EN, EN_FIG); _layer(BN, BN_FIG)
+EN.update(
+ keywords="onset of action, peak effect, duration of action, onset peak duration, therapeutic window, concentration-time curve, how long does a medicine take to work, routes of administration, do not double a dose",
+ about=["Onset of action", "Duration of action", "Therapeutic window", "Pharmacokinetics"])
+BN.update(
+ keywords="ওষুধ কাজ করতে কতক্ষণ লাগে, অনসেট পিক ডিউরেশন, onset of action, ওষুধের কাজের স্থায়িত্ব, থেরাপিউটিক উইন্ডো, দ্বিগুণ ডোজ নয়",
+ about=["ওষুধের কাজ শুরুর সময়", "ওষুধের কাজের স্থায়িত্ব", "থেরাপিউটিক উইন্ডো", "ফার্মাকোকাইনেটিক্স"])

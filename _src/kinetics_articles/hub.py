@@ -81,3 +81,22 @@ BN = dict(
           ("/blog/drug-vs-medicine-bangla/", "ড্রাগ বনাম মেডিসিন"),
           ("/blog/why-complete-antibiotic-course-antibiotic-resistance-bangla/", "কেন অ্যান্টিবায়োটিকের পুরো কোর্স শেষ করতে হয়")],
 )
+
+# ---- Image + SEO layer (24 Nov): the user's 3 AI pictures, descriptive alt text ----
+EN_FIG = {
+ "road": ("how-medicines-work-series-seven-steps", "Seven glowing stepping stones across calm water at sunrise with icons of a capsule, stomach, blood drop, liver, kidneys, clock and target, showing the seven-step How Medicines Work in the Body series.", "Seven steps, one medicine: read the series in order."),
+ "journey": ("adme-absorption-distribution-metabolism-excretion-journey", "A tablet travelling through a translucent body with circles for the stomach, bloodstream, liver and kidneys, labelled 1 Absorption, 2 Distribution, 3 Metabolism and 4 Excretion, explaining ADME in pharmacokinetics.", "ADME: absorption, distribution, metabolism and excretion."),
+}
+BN_FIG = {
+ "road": ("how-medicines-work-series-seven-steps", "সূর্যোদয়ের শান্ত পানিতে সাতটি আলোকিত পাথরের ধাপ, তাতে ক্যাপসুল, পাকস্থলী, রক্তবিন্দু, যকৃত, কিডনি, ঘড়ি ও লক্ষ্যের চিহ্ন—‘শরীরে ওষুধ কীভাবে কাজ করে’ সাত ধাপের সিরিজ।", "সাত ধাপ, একটি ওষুধ: সিরিজটি ক্রম অনুযায়ী পড়ুন।"),
+ "journey": ("adme-absorption-distribution-metabolism-excretion-journey", "স্বচ্ছ মানবদেহে একটি ট্যাবলেটের যাত্রা, পাকস্থলী, রক্তপ্রবাহ, যকৃত ও কিডনির বৃত্তসহ; লেখা ১ শোষণ, ২ বণ্টন, ৩ বিপাক, ৪ নিঃসরণ—ফার্মাকোকাইনেটিক্সের ADME।", "ADME: শোষণ, বণ্টন, বিপাক ও নিঃসরণ।"),
+}
+def _layer(d, F):
+    s = d["sections"]
+    s[0]["figs"] = [F["road"], s[0].pop("fig")]
+    s[1]["figs"] = [F["journey"]]
+_layer(EN, EN_FIG); _layer(BN, BN_FIG)
+EN.update(about=["Pharmacokinetics", "ADME", "Drug absorption", "Drug metabolism"],
+ cover_alt="How medicines work in the body: a translucent man swallowing a tablet, with glowing pathways to the stomach, liver, bloodstream and kidneys, and the title How medicines work in the body.")
+BN.update(about=["ফার্মাকোকাইনেটিক্স", "ADME", "ওষুধের শোষণ", "ওষুধের বিপাক"],
+ cover_alt="শরীরে ওষুধ কীভাবে কাজ করে: স্বচ্ছ মানুষ ট্যাবলেট গিলছেন, আলোকিত পথ পাকস্থলী, যকৃত, রক্তপ্রবাহ ও কিডনিতে যাচ্ছে, শিরোনাম ‘শরীরে ওষুধ কীভাবে কাজ করে’।")

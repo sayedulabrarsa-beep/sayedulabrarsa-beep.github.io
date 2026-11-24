@@ -93,3 +93,40 @@ BN = dict(
           ("/blog/drug-metabolism-how-the-body-processes-medicines-bangla/", "ওষুধের বিপাক: শরীর কীভাবে ওষুধকে পরিবর্তন করে?"),
           ("/blog/drug-half-life-explained-bangla/", "ওষুধের হাফ-লাইফ: একটি ওষুধ শরীরে কতক্ষণ থাকে?")],
 )
+
+# ---- Image + SEO layer (24 Nov): the user's 8 AI pictures with code-drawn EN/BN labels, descriptive alt text ----
+EN_FIG = {
+ "iv": ("bioavailability-iv-100-percent-vs-tablet", "An IV drip bag on a stand beside a single white tablet on a steel tray, labelled IV = 100% and Tablet: often less, showing that intravenous bioavailability is 100% while oral bioavailability is often lower.", "IV is 100% bioavailable by definition; a tablet by mouth often delivers less."),
+ "firstpass": ("first-pass-metabolism-gut-portal-vein-liver", "Translucent anatomy of the gut, portal vein and liver with glowing medicine particles, numbered 1 gut, 2 portal vein, 3 liver breaks some down, 4 the rest reaches the blood, explaining first-pass metabolism and oral bioavailability.", "First-pass effect: the gut and liver can break down part of an oral dose before it reaches the blood."),
+ "food": ("food-effect-on-drug-absorption-before-after-meals", "A plate of rice and chicken curry with a glass of water and a tablet strip on a dining table, with the note that timing with meals changes drug absorption and bioavailability.", "Food can raise, lower or delay how much of a medicine is absorbed. Follow the label on before or after food."),
+ "forms": ("dosage-form-coated-tablet-capsule-dispersible-bioavailability", "A coated tablet, an orange and white capsule and a dispersible tablet fizzing in a glass of water, labelled by dosage form, showing how formulation changes bioavailability.", "The dosage form (coating, particle size, how fast it dissolves) affects bioavailability."),
+ "measure": ("bioavailability-blood-samples-auc-measurement", "A gloved hand placing a blood sample tube in a rack beside a lab clock, labelled Time and Drug level in each sample, showing how bioavailability is measured with blood levels over time (AUC, Cmax, Tmax).", "Bioavailability is measured from drug levels in blood samples taken at set times."),
+ "bephoto": ("bioequivalence-generic-vs-reference-medicine-balance", "Two plain white medicine boxes with tablet strips on a balanced brass scale, labelled Generic and Reference, illustrating bioequivalence of a generic medicine with the reference product.", "Bioequivalence: a generic medicine must deliver the same amount at the same rate as the reference product."),
+ "takeaways": ("bioavailability-key-takeaways", "Bioavailability key takeaways beside a glass of water and a tablet on a pharmacist's desk: a share of the dose, IV equals 100%, losses by mouth from absorption and first-pass metabolism, food and dosage form, and bioequivalence of generics.", "Bioavailability in five points."),
+}
+BN_FIG = {
+ "iv": ("bioavailability-iv-100-percent-vs-tablet", "স্ট্যান্ডে ঝোলানো IV ড্রিপ ব্যাগ ও স্টিলের ট্রেতে একটি সাদা ট্যাবলেট; লেখা ‘IV = ১০০%’ ও ‘ট্যাবলেট: প্রায়ই কম’—শিরায় দিলে বায়োঅ্যাভেইলেবিলিটি ১০০%, মুখে খেলে প্রায়ই কম।", "সংজ্ঞা অনুযায়ী IV-তে বায়োঅ্যাভেইলেবিলিটি ১০০%; মুখে খাওয়া ট্যাবলেটে প্রায়ই কম পৌঁছায়।"),
+ "firstpass": ("first-pass-metabolism-gut-portal-vein-liver", "অন্ত্র, পোর্টাল শিরা ও যকৃতের স্বচ্ছ চিত্রে আলোকিত ওষুধের কণা; ১ অন্ত্র, ২ পোর্টাল শিরা, ৩ যকৃতে কিছু ভাঙে, ৪ বাকিটা রক্তে যায়—ফার্স্ট-পাস মেটাবলিজম ও মুখে খাওয়া ওষুধের বায়োঅ্যাভেইলেবিলিটি।", "ফার্স্ট-পাস প্রভাব: মুখে খাওয়া ডোজের কিছু অংশ রক্তে পৌঁছানোর আগেই অন্ত্র ও যকৃতে ভেঙে যেতে পারে।"),
+ "food": ("food-effect-on-drug-absorption-before-after-meals", "খাবার টেবিলে ভাত ও মুরগির তরকারি, এক গ্লাস পানি ও ট্যাবলেটের পাতা; লেখা ‘খাবারের সময় শোষণ বদলায়’—খাবার ওষুধের শোষণ ও বায়োঅ্যাভেইলেবিলিটি বদলাতে পারে।", "খাবার ওষুধের শোষণ বাড়াতে, কমাতে বা দেরি করাতে পারে। খাবারের আগে না পরে, লেবেল মেনে চলুন।"),
+ "forms": ("dosage-form-coated-tablet-capsule-dispersible-bioavailability", "একটি কোটেড ট্যাবলেট, কমলা-সাদা ক্যাপসুল ও পানিতে গলতে থাকা ডিসপারসিবল ট্যাবলেট, প্রতিটির নাম লেখা—ওষুধের রূপ কীভাবে বায়োঅ্যাভেইলেবিলিটি বদলায়।", "ওষুধের রূপ (কোটিং, কণার আকার, গলার গতি) বায়োঅ্যাভেইলেবিলিটিতে প্রভাব ফেলে।"),
+ "measure": ("bioavailability-blood-samples-auc-measurement", "গ্লাভস পরা হাতে রক্তের নমুনার টিউব র‍্যাকে রাখা হচ্ছে, পাশে ল্যাবের ঘড়ি; লেখা ‘সময়’ ও ‘প্রতিটি নমুনায় ওষুধের মাত্রা’—সময়ের সাথে রক্তের মাত্রা দিয়ে বায়োঅ্যাভেইলেবিলিটি (AUC, Cmax, Tmax) মাপা।", "নির্দিষ্ট সময়ে নেওয়া রক্তের নমুনায় ওষুধের মাত্রা থেকে বায়োঅ্যাভেইলেবিলিটি মাপা হয়।"),
+ "bephoto": ("bioequivalence-generic-vs-reference-medicine-balance", "পিতলের দাঁড়িপাল্লায় সমান ভারসাম্যে দুটি সাদা ওষুধের বাক্স ও ট্যাবলেটের পাতা, ‘জেনেরিক’ ও ‘রেফারেন্স’ লেখা—জেনেরিক ওষুধের বায়োইকুইভ্যালেন্স।", "বায়োইকুইভ্যালেন্স: জেনেরিক ওষুধকে রেফারেন্সের মতো একই পরিমাণ একই গতিতে পৌঁছাতে হয়।"),
+ "takeaways": ("bioavailability-key-takeaways", "ফার্মাসিস্টের টেবিলে পানির গ্লাস ও ট্যাবলেটের পাশে বায়োঅ্যাভেইলেবিলিটির পাঁচটি মূল কথা: ডোজের একটি অংশ, IV মানে ১০০%, মুখে খেলে শোষণ ও ফার্স্ট-পাসে ক্ষতি, খাবার ও রূপ, এবং জেনেরিকের বায়োইকুইভ্যালেন্স।", "পাঁচ কথায় বায়োঅ্যাভেইলেবিলিটি।"),
+}
+def _layer(d, F):
+    s = d["sections"]
+    s[1]["figs"] = [F["iv"], s[1].pop("fig")]
+    s[2]["figs"] = [F["firstpass"]]
+    s[3]["figs"] = [F["food"], F["forms"]]
+    s[4]["figs"] = [F["measure"], s[4].pop("fig")]
+    s[5]["figs"] = [F["bephoto"], s[5].pop("fig")]
+    s[7]["figs"] = [F["takeaways"]]; s[7].pop("fig")
+_layer(EN, EN_FIG); _layer(BN, BN_FIG)
+EN.update(
+ keywords="bioavailability, bioavailability meaning, what is bioavailability, oral bioavailability, IV bioavailability 100%, first-pass effect, food effect on absorption, AUC Cmax Tmax, bioequivalence, generic medicines",
+ about=["Bioavailability", "First-pass effect", "Bioequivalence", "Pharmacokinetics"],
+ cover_alt="Bioavailability explained: a white tablet dissolving in a glass of water with glowing particles flowing into a blood vessel with red blood cells, and the title How much reaches the blood.")
+BN.update(
+ keywords="বায়োঅ্যাভেইলেবিলিটি, বায়োঅ্যাভেইলেবিলিটি কী, ওষুধের কতটুকু রক্তে পৌঁছায়, bioavailability, ফার্স্ট-পাস প্রভাব, খাবার ও ওষুধের শোষণ, বায়োইকুইভ্যালেন্স, জেনেরিক ওষুধ",
+ about=["বায়োঅ্যাভেইলেবিলিটি", "ফার্স্ট-পাস প্রভাব", "বায়োইকুইভ্যালেন্স", "ফার্মাকোকাইনেটিক্স"],
+ cover_alt="বায়োঅ্যাভেইলেবিলিটি: পানির গ্লাসে গলতে থাকা সাদা ট্যাবলেট থেকে আলোকিত কণা লাল রক্তকণিকাসহ রক্তনালিতে যাচ্ছে, শিরোনাম ‘রক্তে কতটুকু পৌঁছায়’।")

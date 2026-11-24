@@ -86,3 +86,35 @@ BN = dict(
           ("/blog/expiry-date-vs-manufacturing-date-medicine-bangla/", "মেয়াদোত্তীর্ণের তারিখ বনাম উৎপাদনের তারিখ"),
           ("/blog/drug-vs-medicine-bangla/", "ড্রাগ বনাম মেডিসিন")],
 )
+
+# ---- Image + SEO layer (24 Nov): the user's 6 AI pictures with code-drawn EN/BN labels, descriptive alt text ----
+EN_FIG = {
+ "prescription": ("prescription-medicine-written-by-registered-doctor", "A doctor in a white coat writing a prescription on a notepad beside a stethoscope, labelled Written by a registered doctor, explaining that a prescription (Rx) medicine is chosen for one person.", "A prescription medicine is chosen by a registered doctor for one person."),
+ "amr": ("antibiotic-misuse-antimicrobial-resistance-bacteria", "A gloved hand holding a petri dish of bacterial colonies in a laboratory, illustrating how antibiotic misuse and overuse drive antimicrobial resistance (WHO).", "Why antibiotics need a prescription: misuse and overuse drive antimicrobial resistance."),
+ "antibiotic": ("red-antibiotic-label-pack-bangladesh-dgda", "An example antibiotic box with a red band reading ANTIBIOTIC and the warning Do not use without a prescription of registered physician, beside a capsule blister strip, showing the DGDA red antibiotic label in Bangladesh (not a real brand).", "The red antibiotic label required by DGDA in Bangladesh since 2022 (example pack, not a real brand)."),
+ "ask": ("ask-your-pharmacist-medicine-leaflet-bangladesh", "A pharmacist in a Bangladeshi pharmacy explaining a medicine leaflet to an older customer, labelled Read the leaflet together, showing what to ask a pharmacist before buying an OTC medicine.", "Ask the pharmacist about the active ingredient, dose, timing, side effects and your other medicines."),
+ "takeaways": ("prescription-vs-otc-key-takeaways", "Prescription vs OTC key takeaways beside a clean model pharmacy counter with a medicine refrigerator: Rx is personal, the OTC list is short, antibiotics need a prescription in Bangladesh, read the label and ask the pharmacist.", "Rx and OTC in five points."),
+}
+BN_FIG = {
+ "prescription": ("prescription-medicine-written-by-registered-doctor", "সাদা অ্যাপ্রন পরা চিকিৎসক নোটপ্যাডে প্রেসক্রিপশন লিখছেন, পাশে স্টেথোস্কোপ; লেখা ‘রেজিস্টার্ড চিকিৎসকের লেখা’—প্রেসক্রিপশন (Rx) ওষুধ একজন মানুষের জন্য বেছে দেওয়া হয়।", "প্রেসক্রিপশন-ওষুধ রেজিস্টার্ড চিকিৎসক একজন মানুষের জন্য বেছে দেন।"),
+ "amr": ("antibiotic-misuse-antimicrobial-resistance-bacteria", "ল্যাবে গ্লাভস পরা হাতে ব্যাকটেরিয়ার কলোনিসহ পেট্রি ডিশ—অ্যান্টিবায়োটিকের অপব্যবহার ও অতিরিক্ত ব্যবহার কীভাবে অ্যান্টিমাইক্রোবিয়াল রেজিস্ট্যান্স বাড়ায় (WHO)।", "অ্যান্টিবায়োটিকে কেন প্রেসক্রিপশন: অপব্যবহার ও অতিরিক্ত ব্যবহারে রেজিস্ট্যান্স বাড়ে।"),
+ "antibiotic": ("red-antibiotic-label-pack-bangladesh-dgda", "লাল ব্যান্ডে ‘ANTIBIOTIC’ ও ‘Do not use without a prescription of registered physician’ লেখা উদাহরণ অ্যান্টিবায়োটিকের বাক্স, পাশে ক্যাপসুলের পাতা—বাংলাদেশে DGDA-র লাল অ্যান্টিবায়োটিক লেবেল (কোনো ব্র্যান্ড নয়)।", "বাংলাদেশে ২০২২ থেকে DGDA-র বাধ্যতামূলক লাল অ্যান্টিবায়োটিক লেবেল (উদাহরণ প্যাক, কোনো ব্র্যান্ড নয়)।"),
+ "ask": ("ask-your-pharmacist-medicine-leaflet-bangladesh", "বাংলাদেশের ফার্মেসিতে একজন ফার্মাসিস্ট বয়স্ক ক্রেতাকে ওষুধের লিফলেট বুঝিয়ে দিচ্ছেন; লেখা ‘লিফলেট একসাথে পড়ুন’—OTC ওষুধ কেনার আগে ফার্মাসিস্টকে কী জিজ্ঞেস করবেন।", "সক্রিয় উপাদান, ডোজ, সময়, পার্শ্বপ্রতিক্রিয়া ও আপনার অন্য ওষুধ নিয়ে ফার্মাসিস্টকে জিজ্ঞেস করুন।"),
+ "takeaways": ("prescription-vs-otc-key-takeaways", "পরিচ্ছন্ন মডেল ফার্মেসির কাউন্টার ও ওষুধের ফ্রিজের পাশে প্রেসক্রিপশন বনাম OTC-র পাঁচটি মূল কথা: Rx ব্যক্তিগত, OTC তালিকা ছোট, বাংলাদেশে অ্যান্টিবায়োটিকে প্রেসক্রিপশন লাগে, লেবেল পড়ুন ও ফার্মাসিস্টকে জিজ্ঞেস করুন।", "পাঁচ কথায় Rx ও OTC।"),
+}
+def _layer(d, F):
+    s = d["sections"]
+    s[0]["figs"] = [F["prescription"], s[0].pop("fig")]
+    s[2]["figs"] = [F["amr"]]
+    s[3]["figs"] = [F["antibiotic"]]; s[3].pop("fig")
+    s[5]["figs"] = [F["ask"]]
+    s[6]["figs"] = [F["takeaways"]]; s[6].pop("fig")
+_layer(EN, EN_FIG); _layer(BN, BN_FIG)
+EN.update(
+ keywords="prescription vs OTC, OTC medicine Bangladesh, over-the-counter medicine list Bangladesh, prescription medicine, antibiotic without prescription Bangladesh, red antibiotic label, DGDA, Drugs and Cosmetics Act 2023, ask your pharmacist",
+ about=["Prescription drug", "Over-the-counter drug", "Antimicrobial resistance", "Drug regulation in Bangladesh"],
+ cover_alt="Prescription vs OTC medicines in Bangladesh: a smiling pharmacist hands a medicine box across a pharmacy counter with a handwritten prescription, and the title Which medicines need a prescription.")
+BN.update(
+ keywords="প্রেসক্রিপশন বনাম OTC, OTC ওষুধ বাংলাদেশ, ওটিসি ওষুধের তালিকা, প্রেসক্রিপশন ছাড়া অ্যান্টিবায়োটিক, লাল লেবেল অ্যান্টিবায়োটিক, DGDA, ঔষধ ও কসমেটিকস আইন ২০২৩, ফার্মাসিস্ট",
+ about=["প্রেসক্রিপশন ওষুধ", "ওভার-দ্য-কাউন্টার ওষুধ", "অ্যান্টিমাইক্রোবিয়াল রেজিস্ট্যান্স", "বাংলাদেশের ওষুধ নিয়ন্ত্রণ"],
+ cover_alt="বাংলাদেশে প্রেসক্রিপশন বনাম OTC ওষুধ: হাসিমুখে ফার্মাসিস্ট কাউন্টারে ওষুধের বাক্স দিচ্ছেন, টেবিলে হাতে লেখা প্রেসক্রিপশন, শিরোনাম ‘কোন ওষুধে প্রেসক্রিপশন লাগে’।")

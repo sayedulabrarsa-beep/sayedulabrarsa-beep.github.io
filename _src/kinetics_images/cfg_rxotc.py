@@ -1,13 +1,15 @@
 """Rx vs OTC in Bangladesh article graphics. Recipe: Charcoal headline, keyword in Charcoal on a Muted Gold tag, Deep Teal kicker
 with a coral line, Deep Teal round badges, Steel Blue legend edge, Deep Teal byline pill with a gold edge."""
 from kchart import *
+from photo_common import L, EB, TOP, lab_css
 OUT = "assets/img/blog/prescription-vs-otc"
 PREFIX = "prescription-vs-otc"
 RECIPE = f""".title{{color:{CHAR}}} .title i{{color:{CHAR};background:{GOLD};padding:0 .14em;border-radius:.12em;-webkit-box-decoration-break:clone;box-decoration-break:clone}}
 .kick{{color:{TEAL}}} .kick:before{{background:{CORAL}}} .badge{{background:{TEAL};color:#fff;border-radius:50%}} .li{{--lc:{STEEL}}}
 .byline{{background:{TEAL};border-left:6px solid {GOLD}}} body.bn .byline{{font-family:HS;font-weight:700}}"""
+RECIPE += lab_css(GOLD)
 SRC = ("FDA; Drugs and Cosmetics Act 2023; National Drug Policy 2016", "FDA; ঔষধ ও কসমেটিকস আইন ২০২৩; জাতীয় ঔষধনীতি ২০১৬")
-SOCIAL = dict(ts=(68, 72), pw=540, a=36)
+SOCIAL = dict(ts=(68, 72), pw=540, a=26)
 RED = "#C0392B"
 
 def compare(bn):
@@ -55,7 +57,7 @@ def label(bn):
     return s
 
 CFG = {
- "cover": dict(kind="photo", bg="rxotc", a=30, pw=580, byline=True, foot=False, ts=(80, 84),
+ "cover": dict(kind="photo", bg="rx-cover", a=22, pw=580, byline=True, foot=False, ts=(80, 84),
    kick=("Rx vs OTC in Bangladesh", "Rx বনাম OTC, বাংলাদেশে"),
    title=("Which medicines need a <i>prescription</i>?", "কোন ওষুধে <i>প্রেসক্রিপশন</i> লাগে?"),
    sub=("Prescription-only and over-the-counter medicines, simply explained.", "প্রেসক্রিপশন-ওষুধ ও OTC ওষুধ, সহজ ভাষায়।")),
@@ -69,7 +71,7 @@ CFG = {
    title=("The <i>red</i> antibiotic label", "অ্যান্টিবায়োটিকের <i>লাল</i> লেবেল"),
    sub=("Red marking and a warning remind everyone: prescription only.", "লাল চিহ্ন ও সতর্কবার্তা মনে করিয়ে দেয়: শুধু প্রেসক্রিপশনে।"),
    src=("WHO Bangladesh 2023 and 2024; DGDA", "WHO বাংলাদেশ ২০২৩ ও ২০২৪; DGDA")),
- "takeaways": dict(kind="photo", bg="rxotc", a=40, pw=640, ts=(62, 62),
+ "takeaways": dict(kind="photo", bg="rx-takeaways", a=34, pw=640, ts=(62, 62),
    kick=("Key takeaways", "মূল কথা"), title=("Rx and OTC in <i>5 points</i>", "৫ কথায় <i>Rx ও OTC</i>"),
    legend=[(("Rx is personal", "Prescribed for one person."), ("Rx ব্যক্তিগত", "একজনের জন্য লেখা।")),
            (("OTC is a short list", "Not every medicine on the shelf."), ("OTC তালিকা ছোট", "তাকের সব ওষুধ OTC নয়।")),
@@ -80,3 +82,32 @@ CFG = {
 }
 NAMES = {"cover": "prescription-vs-otc-cover", "compare": "rx-vs-otc-comparison-bangladesh",
          "label": "red-antibiotic-label-bangladesh", "takeaways": "prescription-vs-otc-key-takeaways"}
+
+PACK = ('<div style="position:absolute;left:948px;top:441px;width:518px;height:76px;display:flex;align-items:center;justify-content:center;'
+        'font-family:Pop,sans-serif;font-weight:800;font-size:40px;letter-spacing:.12em;color:#fff">ANTIBIOTIC</div>'
+        '<div style="position:absolute;left:960px;top:340px;width:494px;text-align:center;font-family:Int,sans-serif;font-weight:600;font-size:21px;line-height:1.3;color:#253238">'
+        'Do not use without a prescription<br>of registered physician</div>')
+CFG.update({
+ "prescription": dict(kind="photo", bg="rx-prescription", a=12, pw=420, ts=(52, 52), panelcss=TOP, src=("U.S. FDA", "U.S. FDA"),
+   kick=("Prescription (Rx)", "প্রেসক্রিপশন (Rx)"),
+   title=("Chosen for <i>one person</i>", "একজন মানুষের <i>জন্য</i>"),
+   sub=("A registered doctor decides the medicine, dose and length of treatment.", "রেজিস্টার্ড চিকিৎসক ওষুধ, ডোজ ও কতদিন খাবেন তা ঠিক করেন।"),
+   extra=EB(lambda b: L(1000, 740, ("Written by a registered doctor", "রেজিস্টার্ড চিকিৎসকের লেখা")[b], "ps", 27))),
+ "amr": dict(kind="photo", bg="rx-amr", a=16, pw=500, ts=(56, 56), src=("WHO antimicrobial resistance fact sheet", "WHO অ্যান্টিমাইক্রোবিয়াল রেজিস্ট্যান্স ফ্যাক্ট শিট"),
+   kick=("Why antibiotics need Rx", "অ্যান্টিবায়োটিকে কেন Rx"),
+   title=("Misuse breeds <i>resistance</i>", "অপব্যবহারে বাড়ে <i>রেজিস্ট্যান্স</i>"),
+   sub=("WHO: misuse and overuse of antimicrobials drive drug-resistant infections.", "WHO: অ্যান্টিমাইক্রোবিয়ালের অপব্যবহার ও অতিরিক্ত ব্যবহার ওষুধ-প্রতিরোধী সংক্রমণ বাড়ায়।"),
+   extra=EB(lambda b: L(1170, 745, ("Bacteria in a lab dish (illustration)", "ল্যাবের ডিশে ব্যাকটেরিয়া (প্রতীকী)")[b], "pw", 25))),
+ "antibiotic": dict(kind="photo", bg="rx-antibiotic", a=16, pw=470, ts=(56, 56), src=("WHO Bangladesh 2023 and 2024; DGDA", "WHO বাংলাদেশ ২০২৩ ও ২০২৪; DGDA"),
+   kick=("Spot an antibiotic", "অ্যান্টিবায়োটিক চিনুন"),
+   title=("The <i>red</i> antibiotic label", "অ্যান্টিবায়োটিকের <i>লাল</i> লেবেল"),
+   sub=("Since 2022, DGDA requires a red marking, the word Antibiotic and a prescription warning.", "২০২২ থেকে DGDA লাল চিহ্ন, Antibiotic শব্দ ও প্রেসক্রিপশন-সতর্কবার্তা বাধ্যতামূলক করেছে।"),
+   extra=EB(lambda b: PACK + L(1205, 745, ("Example pack, not a real brand", "উদাহরণ প্যাক, কোনো ব্র্যান্ড নয়")[b], "pw", 24))),
+ "ask": dict(kind="photo", bg="rx-ask", a=16, pw=470, ts=(56, 56), src=("FDA; MedlinePlus", "FDA; MedlinePlus"),
+   kick=("Use your pharmacist", "ফার্মাসিস্টের সাহায্য নিন"),
+   title=("Ask before you <i>buy</i>", "কেনার আগে <i>জিজ্ঞেস</i> করুন"),
+   sub=("Active ingredient, dose, timing, side effects and your other medicines.", "সক্রিয় উপাদান, ডোজ, সময়, পার্শ্বপ্রতিক্রিয়া ও আপনার অন্য ওষুধ।"),
+   extra=EB(lambda b: L(1060, 745, ("Read the leaflet together", "লিফলেট একসাথে পড়ুন")[b], "ps", 27))),
+})
+NAMES.update({"prescription": "prescription-medicine-written-by-registered-doctor", "amr": "antibiotic-misuse-antimicrobial-resistance-bacteria",
+              "antibiotic": "red-antibiotic-label-pack-bangladesh-dgda", "ask": "ask-your-pharmacist-medicine-leaflet-bangladesh"})

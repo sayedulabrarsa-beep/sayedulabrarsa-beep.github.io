@@ -2,13 +2,15 @@
 Steel Blue line, Steel Blue square badges, gold legend edge, Steel Blue byline pill with a gold edge."""
 import math
 from kchart import *
+from photo_common import L, EB, TOP, lab_css
 OUT = "assets/img/blog/bioavailability"
 PREFIX = "bioavailability"
 RECIPE = f""".title{{color:{TEAL}}} .title i{{color:#fff;background:{STEEL};padding:0 .14em;border-radius:.12em;-webkit-box-decoration-break:clone;box-decoration-break:clone}}
 .kick{{color:{CHAR}}} .kick:before{{background:{STEEL}}} .badge{{background:{STEEL};color:#fff;border-radius:8px}} .li{{--lc:{GOLD}}}
 .byline{{background:{STEEL};border-left:6px solid {GOLD}}} body.bn .byline{{font-family:HS;font-weight:700}}"""
+RECIPE += lab_css(STEEL)
 SRC = ("StatPearls; MSD Manual; FDA; EUPATI", "StatPearls; MSD Manual; FDA; EUPATI")
-SOCIAL = dict(ts=(68, 72), pw=520, a=36)
+SOCIAL = dict(ts=(68, 72), pw=520, a=26)
 GREY = "#C9CFD2"
 
 def dots(bn):
@@ -74,7 +76,7 @@ def be(bn):
     return s
 
 CFG = {
- "cover": dict(kind="photo", bg="bioavail", a=30, pw=560, byline=True, foot=False, ts=(90, 92),
+ "cover": dict(kind="photo", bg="ba-cover", a=22, pw=560, byline=True, foot=False, ts=(90, 92),
    kick=("Bioavailability", "বায়োঅ্যাভেইলেবিলিটি"),
    title=("How much <i>reaches</i> the blood", "রক্তে কতটুকু <i>পৌঁছায়</i>"),
    sub=("Why the dose you swallow is not always the dose your body gets.", "যে ডোজ খান, শরীর সবসময় পুরোটা পায় না কেন।")),
@@ -93,7 +95,7 @@ CFG = {
    title=("What <i>bioequivalent</i> means", "<i>বায়োইকুইভ্যালেন্ট</i> মানে কী"),
    sub=("Same amount, same rate, same extent, within set statistical limits.", "একই পরিমাণ, একই গতি, একই মাত্রা, নির্দিষ্ট পরিসংখ্যান সীমার মধ্যে।"),
    src=("FDA Generic Drugs Q&A; FDA BE statistics guidance", "FDA Generic Drugs Q&A; FDA BE statistics guidance")),
- "takeaways": dict(kind="photo", bg="bioavail", a=40, pw=640, ts=(64, 64),
+ "takeaways": dict(kind="photo", bg="ba-takeaways", a=34, pw=640, ts=(64, 64),
    kick=("Key takeaways", "মূল কথা"), title=("Bioavailability in <i>5 points</i>", "৫ কথায় <i>বায়োঅ্যাভেইলেবিলিটি</i>"),
    legend=[(("A share of the dose", "The part reaching the blood unchanged."), ("ডোজের একটি অংশ", "যে অংশ অপরিবর্তিত অবস্থায় রক্তে যায়।")),
            (("IV = 100%", "It goes straight into the blood."), ("IV = ১০০%", "সরাসরি রক্তে যায়।")),
@@ -104,3 +106,43 @@ CFG = {
 }
 NAMES = {"cover": "bioavailability-cover", "dots": "bioavailability-100-molecules-iv-vs-oral", "auc": "bioavailability-auc-cmax-tmax-curve",
          "be": "bioequivalence-80-125-percent-limits", "takeaways": "bioavailability-key-takeaways"}
+
+SRCP = ("StatPearls; MSD Manual; FDA", "StatPearls; MSD Manual; FDA")
+CFG.update({
+ "iv": dict(kind="photo", bg="ba-iv", a=18, pw=520, ts=(60, 60), src=SRCP,
+   kick=("The percentage idea", "শতাংশের ধারণা"),
+   title=("IV is <i>100%</i>", "IV মানে <i>১০০%</i>"),
+   sub=("An injection into a vein goes straight into the blood. A tablet often delivers less.", "শিরায় ইনজেকশন সরাসরি রক্তে যায়। ট্যাবলেটে প্রায়ই কম পৌঁছায়।"),
+   extra=EB(lambda b: L(1185, 540, ("IV = 100%", "IV = ১০০%")[b], "pt", 30) + L(1010, 700, ("Tablet: often less", "ট্যাবলেট: প্রায়ই কম")[b], "pw", 28))),
+ "firstpass": dict(kind="photo", bg="ba-firstpass", a=16, pw=480, ts=(56, 56), src=SRCP,
+   kick=("First-pass effect", "ফার্স্ট-পাস প্রভাব"),
+   title=("Some is lost <i>on the first trip</i>", "প্রথম যাত্রায় <i>কিছু হারায়</i>"),
+   sub=("From the gut, blood goes through the portal vein to the liver before the rest of the body.", "অন্ত্র থেকে রক্ত পোর্টাল শিরা দিয়ে আগে যকৃতে যায়, তারপর সারা শরীরে।"),
+   extra=EB(lambda b: L(1130, 745, ("1 · Gut", "১ · অন্ত্র")[b], "pw", 28) + L(1000, 440, ("2 · Portal vein", "২ · পোর্টাল শিরা")[b], "pw", 26)
+                    + L(790, 140, ("3 · Liver breaks some down", "৩ · যকৃতে কিছু ভাঙে")[b], "pt", 28) + L(1290, 380, ("4 · The rest reaches the blood", "৪ · বাকিটা রক্তে যায়")[b], "pw", 26))),
+ "food": dict(kind="photo", bg="ba-food", a=16, pw=500, ts=(58, 58), src=SRCP,
+   kick=("Food matters", "খাবারের প্রভাব"),
+   title=("Before or <i>after</i> food?", "খাবারের আগে না <i>পরে</i>?"),
+   sub=("A meal can raise, lower or delay how much is absorbed. Follow the label.", "খাবার শোষণ বাড়াতে, কমাতে বা দেরি করাতে পারে। লেবেল মেনে চলুন।"),
+   extra=EB(lambda b: L(1150, 735, ("Timing with meals changes absorption", "খাবারের সময় শোষণ বদলায়")[b], "ps", 27))),
+ "forms": dict(kind="photo", bg="ba-forms", a=16, pw=500, ts=(58, 58), src=SRCP,
+   kick=("The dosage form", "ওষুধের রূপ"),
+   title=("Same drug, <i>different</i> forms", "একই ওষুধ, <i>ভিন্ন</i> রূপ"),
+   sub=("Coating, particle size and how fast it dissolves change bioavailability.", "কোটিং, কণার আকার ও গলার গতি বায়োঅ্যাভেইলেবিলিটি বদলায়।"),
+   extra=EB(lambda b: L(730, 745, ("Coated tablet", "কোটেড ট্যাবলেট")[b], "pw", 25) + L(1015, 745, ("Capsule", "ক্যাপসুল")[b], "pw", 25)
+                    + L(1355, 745, ("Dispersible tablet", "ডিসপারসিবল ট্যাবলেট")[b], "pw", 25))),
+ "measure": dict(kind="photo", bg="ba-measure", a=16, pw=470, ts=(56, 56), src=SRCP,
+   kick=("How it is measured", "কীভাবে মাপা হয়"),
+   title=("Blood samples <i>over time</i>", "সময়ের সাথে <i>রক্তের নমুনা</i>"),
+   sub=("Levels at set times draw the curve that gives AUC, Cmax and Tmax.", "নির্দিষ্ট সময়ে মাপা মাত্রা থেকে কার্ভ, AUC, Cmax ও Tmax পাওয়া যায়।"),
+   extra=EB(lambda b: L(757, 268, ("Time", "সময়")[b], "pt", 28) + L(1240, 735, ("Drug level in each sample", "প্রতিটি নমুনায় ওষুধের মাত্রা")[b], "pw", 26))),
+ "bephoto": dict(kind="photo", bg="ba-be", a=16, pw=480, ts=(56, 56), src=("FDA Generic Drugs Q&A", "FDA Generic Drugs Q&A"),
+   kick=("Generic medicines", "জেনেরিক ওষুধ"),
+   title=("Same amount, <i>same rate</i>", "একই পরিমাণ, <i>একই গতি</i>"),
+   sub=("A generic must be bioequivalent to the reference medicine.", "জেনেরিককে রেফারেন্স ওষুধের সাথে বায়োইকুইভ্যালেন্ট হতে হয়।"),
+   extra=EB(lambda b: L(855, 300, ("Generic", "জেনেরিক")[b], "pt", 28) + L(1360, 300, ("Reference", "রেফারেন্স")[b], "pt", 28)
+                    + L(1110, 745, ("Bioequivalent: they balance", "বায়োইকুইভ্যালেন্ট: সমান ভারসাম্য")[b], "ps", 27))),
+})
+NAMES.update({"iv": "bioavailability-iv-100-percent-vs-tablet", "firstpass": "first-pass-metabolism-gut-portal-vein-liver",
+              "food": "food-effect-on-drug-absorption-before-after-meals", "forms": "dosage-form-coated-tablet-capsule-dispersible-bioavailability",
+              "measure": "bioavailability-blood-samples-auc-measurement", "bephoto": "bioequivalence-generic-vs-reference-medicine-balance"})

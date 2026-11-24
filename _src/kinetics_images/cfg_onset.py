@@ -2,11 +2,13 @@
 Steel Blue kicker with a teal line, Charcoal round badges, teal legend edge, Deep Teal byline pill with a coral edge."""
 import math
 from kchart import *
+from photo_common import L, EB, TOP, lab_css
 OUT = "assets/img/blog/onset-peak-duration"
 PREFIX = "onset-peak-duration"
 RECIPE = f""".title{{color:{TEAL}}} .title i{{color:{CHAR};background:linear-gradient(transparent 18%,rgba(233,130,80,.55) 18%,rgba(233,130,80,.55) 92%,transparent 92%);padding:0 .08em;-webkit-box-decoration-break:clone;box-decoration-break:clone}}
 .kick{{color:{STEEL}}} .kick:before{{background:{TEAL}}} .badge{{background:{CHAR};color:#fff;border-radius:50%}} .li{{--lc:{TEAL}}}
 .byline{{background:{TEAL};border-left:6px solid {CORAL}}} body.bn .byline{{font-family:HS;font-weight:700}}"""
+RECIPE += lab_css(CORAL)
 SRC = ("StatPearls; MSD Manual; Open RN Pharmacology", "StatPearls; MSD Manual; Open RN Pharmacology")
 SOCIAL = dict(ts=(70, 72), pw=520, a=34)
 x0, y0, x1, y1 = 120, 100, 860, 570
@@ -110,3 +112,24 @@ CFG = {
 NAMES = {"cover": "onset-peak-duration-cover", "curve": "onset-peak-duration-therapeutic-window-curve",
          "routes": "onset-iv-tablet-slow-release-comparison", "double": "why-not-double-a-dose-curve",
          "takeaways": "onset-peak-duration-key-takeaways"}
+
+CFG.update({
+ "window": dict(kind="photo", bg="on-window", a=16, pw=500, ts=(58, 58), src=SRC,
+   kick=("Therapeutic window", "থেরাপিউটিক উইন্ডো"),
+   title=("Not too low, <i>not too high</i>", "কমও নয়, <i>বেশিও নয়</i>"),
+   sub=("A medicine works best while its level stays inside the safe range.", "নিরাপদ সীমার ভেতরে মাত্রা থাকলে ওষুধ সবচেয়ে ভালো কাজ করে।"),
+   extra=EB(lambda b: L(1140, 745, ("Inside the window: effective and safe", "উইন্ডোর ভেতরে: কার্যকর ও নিরাপদ")[b], "ps", 26))),
+ "routes": dict(kind="photo", bg="on-routes", a=16, pw=480, ts=(56, 56), src=("MSD Manual; StatPearls", "MSD Manual; StatPearls"),
+   kick=("Route and form", "পথ ও রূপ"),
+   title=("Different routes, <i>different speeds</i>", "ভিন্ন পথ, <i>ভিন্ন গতি</i>"),
+   sub=("Into a vein is fastest; a slow-release form lasts longer.", "শিরায় দিলে সবচেয়ে দ্রুত; ধীরে-নিঃসৃত রূপ বেশি সময় থাকে।"),
+   extra=EB(lambda b: L(972, 300, ("Injection", "ইনজেকশন")[b], "pt", 26) + L(1300, 455, ("IV line: fastest", "IV লাইন: সবচেয়ে দ্রুত")[b], "pw", 25)
+                    + L(845, 700, ("Tablet", "ট্যাবলেট")[b], "pw", 25) + L(1130, 700, ("Slow-release capsule", "ধীরে-নিঃসৃত ক্যাপসুল")[b], "pw", 25))),
+ "weeks": dict(kind="photo", bg="on-weeks", a=16, pw=480, ts=(56, 56), src=("NHS; MedlinePlus", "NHS; MedlinePlus"),
+   kick=("Some take weeks", "কিছু ওষুধে সপ্তাহ লাগে"),
+   title=("Full effect can take <i>weeks</i>", "পুরো প্রভাবে লাগতে পারে <i>কয়েক সপ্তাহ</i>"),
+   sub=("NHS: antidepressants can take up to 8 weeks to work fully. Keep taking as prescribed.", "NHS: অ্যান্টিডিপ্রেস্যান্টের পুরো প্রভাবে ৮ সপ্তাহ পর্যন্ত লাগতে পারে। নির্দেশমতো চালিয়ে যান।"),
+   extra=EB(lambda b: L(1100, 745, ("Same time, every day", "প্রতিদিন একই সময়ে")[b], "ps", 27))),
+})
+NAMES.update({"window": "therapeutic-window-capsule-safe-range", "routes": "routes-of-administration-injection-tablet-slow-release",
+              "weeks": "medicine-full-effect-takes-weeks-pill-organizer"})
