@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Add complete Google ImageObject rights metadata to first-party editorial images.
 
+The generator is idempotent and is run by the featured-stacks release workflow.
+
 Enriches existing JSON-LD ImageObject nodes (including BlogPosting.image) and
 creates supplemental ImageObjects for first-party editorial images referenced
 only in HTML. Company/product packshots and third-party images are not assigned
