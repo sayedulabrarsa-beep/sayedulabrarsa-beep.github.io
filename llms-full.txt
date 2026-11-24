@@ -171,17 +171,17 @@ Get in touch ↗Find me on LinkedIn
 
 ## Pharma Blog articles (newest first)
 
-### প্রতি ৮ টাকার ১ টাকা: অ্যাসিডের ওষুধে (PPI) বাংলাদেশ কত খরচ করে?
+### প্রতি ৮ টাকার ১ টাকা: অ্যাসিড কমানোর ওষুধে (PPI) বাংলাদেশ কত খরচ করে?
 URL: https://sayedulabrar.site/blog/ppi-acid-medicine-market-bangladesh-bangla/ · Language: Bangla · Published: 2026-11-24 · Author: Sayedul Abrar, pharmacist
-Summary: বাংলাদেশে বছরে প্রায় ৪,৯৮৩ কোটি টাকার PPI বা অ্যাসিডের ওষুধ বিক্রি হয়, যা মোট ওষুধ বিক্রির প্রায় ১২%। কোন PPI এগিয়ে, কত দ্রুত বাড়ছে আর সঠিক ব্যবহার কেন জরুরি—তথ্যভিত্তিক সহজ আলোচনা।
+Summary: বাংলাদেশে বছরে প্রায় ৪,৯৮৩ কোটি টাকার PPI বা অ্যাসিড কমানোর ওষুধ বিক্রি হয়, যা মোট ওষুধ বিক্রির প্রায় ১২%। কোন PPI এগিয়ে, কত দ্রুত বাড়ছে আর সঠিক ব্যবহার কেন জরুরি—তথ্যভিত্তিক সহজ আলোচনা।
 
 By Sayedul Abrar, pharmacist · প্রকাশিত ২৪ নভেম্বর ২০২৬
 
-সংক্ষেপে: সেপ্টেম্বর ২০২৬ পর্যন্ত ১২ মাসে বাংলাদেশে প্রায় ৪,৯৮৩ কোটি টাকার PPI (প্রোটন পাম্প ইনহিবিটর) বিক্রি হয়েছে—সাধারণভাবে যাকে আমরা “গ্যাস্ট্রিকের ওষুধ” বলি। IQVIA-র হিসাবে এটি দেশের ৪২,০২৩ কোটি টাকার ওষুধের বাজারের প্রায় ১২%, অর্থাৎ মোটামুটি প্রতি ৮ টাকার ১ টাকা।
+সংক্ষেপে: সেপ্টেম্বর ২০২৬ পর্যন্ত ১২ মাসে বাংলাদেশে প্রায় ৪,৯৮৩ কোটি টাকার অ্যাসিড কমানোর ওষুধ (PPI, প্রোটন পাম্প ইনহিবিটর) বিক্রি হয়েছে—যাকে আমরা “গ্যাস্ট্রিকের ওষুধ” বলি। IQVIA-র হিসাবে এটি দেশের ৪২,০২৩ কোটি টাকার ওষুধের বাজারের প্রায় ১২%, অর্থাৎ মোটামুটি প্রতি ৮ টাকার ১ টাকা।
 
 ### ১. এক নজরে সংখ্যাগুলো
 
-বাংলাদেশে ওষুধে খরচ হওয়া প্রতি ১০০ টাকার মধ্যে প্রায় ১২ টাকা যায় একটি গ্রুপের ওষুধে: অ্যাসিড কমানোর ওষুধ।
+বাংলাদেশে ওষুধে খরচ হওয়া প্রতি ১০০ টাকার মধ্যে প্রায় ১২ টাকা যায় একটি গ্রুপের ওষুধে: অ্যাসিড কমানোর ওষুধ (PPI), যাকে আমরা গ্যাস্ট্রিকের ওষুধ বলি।
 
 ৪,৯৮৩ কোটি টাকা১২ মাসে PPI বিক্রি (সেপ্টেম্বর ২০২৬ পর্যন্ত)
 ~১২%৪২,০২৩ কোটি টাকার ওষুধের বাজারের
@@ -193,7 +193,7 @@ PPI (প্রোটন পাম্প ইনহিবিটর) এমন ও�
 
 চিকিৎসকেরা অ্যাসিড রিফ্লাক্স ও বুক জ্বালাপোড়া, পাকস্থলীর আলসার এবং গ্যাস্ট্রাইটিসের মতো সমস্যায় এগুলো দেন। পাকস্থলীতে জ্বালা তৈরি করতে পারে এমন কিছু ওষুধের (যেমন কিছু ব্যথানাশক) সঙ্গেও প্রায়ই এগুলো দেওয়া হয়। অ্যাসিডের সমস্যাগুলোর পার্থক্য জানতে পড়ুন হার্টবার্ন, অ্যাসিড রিফ্লাক্স ও জিইআরডি, আর সঠিক নিয়মে খাওয়ার বিষয়ে পড়ুন PPI কখন খাবেন।
 
-### ৩. কোন অ্যাসিডের ওষুধ এগিয়ে?
+### ৩. কোন অ্যাসিড কমানোর ওষুধ এগিয়ে?
 
 এই বাজার মূলত পাঁচটি PPI মলিকিউল নিয়ে, আর তার একটিই বেশিরভাগ অংশ দখল করে আছে। শুধু Esomeprazole-এর ভাগই PPI বিক্রির প্রায় ৬৩%।
 
@@ -201,7 +201,7 @@ PPI (প্রোটন পাম্প ইনহিবিটর) এমন ও�
 
 ### ৪. বাড়ছে, তবে বাজারের চেয়ে ধীরে
 
-গত এক বছরে PPI বিক্রি বেড়েছে প্রায় ৭%। কিন্তু পুরো ওষুধের বাজার বেড়েছে আরও দ্রুত, প্রায় ১২%। অর্থাৎ টাকার অঙ্কে অ্যাসিডের ওষুধের বিক্রি বাড়ছে ঠিকই, তবে মোট ওষুধ বিক্রিতে এর ভাগ ধীরে ধীরে কমছে।
+গত এক বছরে PPI বিক্রি বেড়েছে প্রায় ৭%। কিন্তু পুরো ওষুধের বাজার বেড়েছে আরও দ্রুত, প্রায় ১২%। অর্থাৎ টাকার অঙ্কে অ্যাসিড কমানোর ওষুধের বিক্রি বাড়ছে ঠিকই, তবে মোট ওষুধ বিক্রিতে এর ভাগ ধীরে ধীরে কমছে।
 
 ### ৫. চাহিদা এত বেশি কেন?
 
@@ -231,7 +231,7 @@ PPI (প্রোটন পাম্প ইনহিবিটর) এমন ও�
 PPI মানে কী?
 PPI মানে প্রোটন পাম্প ইনহিবিটর। এটি এমন একটি ওষুধের গ্রুপ, যা পাকস্থলীতে অ্যাসিড তৈরি কমায়। অনেকে একে “গ্যাস্ট্রিকের ওষুধ” বলেন।
 
-বাংলাদেশ অ্যাসিডের ওষুধে কত খরচ করে?
+বাংলাদেশ অ্যাসিড কমানোর ওষুধে কত খরচ করে?
 IQVIA-র তথ্য অনুযায়ী সেপ্টেম্বর ২০২৬ পর্যন্ত ১২ মাসে প্রায় ৪,৯৮৩ কোটি টাকা, যা ৪২,০২৩ কোটি টাকার ওষুধের বাজারের প্রায় ১২%।
 
 বাংলাদেশে কোন PPI সবচেয়ে বেশি বিক্রি হয়?
@@ -249,17 +249,17 @@ Esomeprazole, PPI বিক্রির প্রায় ৬৩%। বাক�
 
 ---
 
-### 1 in Every 8 Taka: How Much Bangladesh Spends on Acid Medicines (PPIs)
+### 1 in Every 8 Taka: How Much Bangladesh Spends on Acid-Reducing Medicines (PPIs)
 URL: https://sayedulabrar.site/blog/ppi-acid-medicine-market-bangladesh/ · Language: English · Published: 2026-11-24 · Author: Sayedul Abrar, pharmacist
-Summary: About Tk 4,983 crore a year, nearly 12% of medicine sales in Bangladesh, goes to PPI acid medicines. A simple, data-based look at which PPIs lead, how fast they grow and why use matters.
+Summary: About Tk 4,983 crore a year, nearly 12% of medicine sales in Bangladesh, goes to acid-reducing medicines. A simple, data-based look at which PPIs lead, how fast they grow and why use matters.
 
 By Sayedul Abrar, pharmacist · Published 24 November 2026
 
-The short answer: In the 12 months to September 2026, about Tk 4,983 crore of medicine sales in Bangladesh were PPIs (proton pump inhibitors), the medicines commonly called “gastric medicine”. That is close to 12% of the Tk 42,023 crore medicine market tracked by IQVIA, or roughly 1 in every 8 taka.
+The short answer: In the 12 months to September 2026, about Tk 4,983 crore of medicine sales in Bangladesh were acid-reducing medicines (PPIs, proton pump inhibitors), locally called “gastric medicine”. That is close to 12% of the Tk 42,023 crore medicine market tracked by IQVIA, or roughly 1 in every 8 taka.
 
 ### 1. The numbers at a glance
 
-Out of every 100 taka spent on medicines in Bangladesh, about 12 taka goes to one group of medicines: acid reducers.
+Out of every 100 taka spent on medicines in Bangladesh, about 12 taka goes to one group of medicines: acid-reducing medicines (PPIs), locally called “gastric medicine”.
 
 Tk 4,983 CrPPI sales in 12 months (to Sep 2026)
 ~12%of the Tk 42,023 crore medicine market
@@ -271,7 +271,7 @@ PPIs (proton pump inhibitors) are medicines that lower the amount of acid the st
 
 Doctors prescribe them for conditions such as acid reflux and heartburn, stomach ulcers and gastritis. They are also often prescribed alongside other medicines, such as some painkillers, that can irritate the stomach. If you want to know how acid problems differ, read Heartburn vs Acid Reflux vs GERD, and for correct use, When to Take a PPI.
 
-### 3. Which acid medicines lead?
+### 3. Which acid-reducing medicines lead?
 
 Five PPI molecules make up this market, and one of them takes most of it. Esomeprazole alone accounts for about 63% of PPI sales.
 
@@ -279,7 +279,7 @@ The smaller molecules are growing faster. Over the year, dexlansoprazole grew ab
 
 ### 4. Growing, but slower than the market
 
-PPI sales grew by about 7% over the last year. The total medicine market grew faster, by about 12%. In other words, acid medicines are still growing in taka terms, but their share of total medicine sales is slowly getting smaller.
+PPI sales grew by about 7% over the last year. The total medicine market grew faster, by about 12%. In other words, acid-reducing medicines are still growing in taka terms, but their share of total medicine sales is slowly getting smaller.
 
 ### 5. Why is demand so high?
 
@@ -309,7 +309,7 @@ For the pharmaceutical industry, a market of this size brings a responsibility: 
 What does PPI mean?
 PPI stands for proton pump inhibitor. It is a group of medicines that lowers the amount of acid the stomach makes. Many people call them “gastric medicine”.
 
-How much does Bangladesh spend on acid medicines?
+How much does Bangladesh spend on acid-reducing medicines?
 About Tk 4,983 crore in the 12 months to September 2026, according to IQVIA data. That is close to 12% of the Tk 42,023 crore medicine market.
 
 Which PPI is used most in Bangladesh?
