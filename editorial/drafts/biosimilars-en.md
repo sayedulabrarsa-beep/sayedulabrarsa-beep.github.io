@@ -75,6 +75,10 @@ This is not a lower safety standard. It is a more focused use of evidence: the q
 
 ## 4. Why does immunogenicity matter?
 
+![How a biologic medicine may trigger binding or neutralizing anti-drug antibodies](assets/biosimilars-immunogenicity-en.svg)
+
+*Figure 3. Not every antibody is neutralizing; clinical relevance is product-specific.*
+
 Immunogenicity is the ability of a biological medicine to trigger an immune response. A patient may develop anti-drug antibodies (ADAs). Some antibodies bind to the medicine without blocking its action; others may neutralise its biological activity. Depending on the product and the clinical situation, an immune response may alter drug exposure, reduce response or contribute to hypersensitivity or other adverse effects.
 
 The risk is not determined by the word “biosimilar” alone. It can be influenced by the molecule, aggregates, impurities, expression system, formulation, excipients, container, route, dose, treatment duration and patient-related factors. The WHO guideline recommends a product-specific risk assessment and, when immunogenicity testing is needed, appropriately designed assays and clinical sampling.[1]
