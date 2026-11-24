@@ -113,3 +113,24 @@ EN.update(
 BN.update(
  keywords="ওষুধ কাজ করতে কতক্ষণ লাগে, অনসেট পিক ডিউরেশন, onset of action, ওষুধের কাজের স্থায়িত্ব, থেরাপিউটিক উইন্ডো, দ্বিগুণ ডোজ নয়",
  about=["ওষুধের কাজ শুরুর সময়", "ওষুধের কাজের স্থায়িত্ব", "থেরাপিউটিক উইন্ডো", "ফার্মাকোকাইনেটিক্স"])
+
+# ---- 24 Nov (later): the user's remaining pictures ON-1 cover, ON-2 time curve, ON-6 don't double, ON-7 key takeaways ----
+EN_FIG.update({
+ "curvephoto": ("onset-of-action-time-to-effect-stopwatch-tablet", "A stopwatch, a glass of water and a white tablet with a glowing arc of light, labelled Dose taken and Onset → peak → duration, showing that onset of action, peak and duration are timed from the dose.", "Onset, peak and duration are all measured from the moment you take the dose."),
+ "doublephoto": ("do-not-double-a-dose-tablets-alarm-clock", "A hand reaching for a second tablet beside a glass of water and an alarm clock, labelled Wait for the next dose time, warning not to double a dose when a medicine seems slow.", "Never double a dose unless your prescriber tells you to."),
+ "takeaways": ("onset-peak-duration-key-takeaways", "Onset, peak and duration key takeaways beside an hourglass and a teal and white capsule: onset, peak, duration, route and form, and do not double a dose.", "Drug timing in five points."),
+})
+BN_FIG.update({
+ "curvephoto": ("onset-of-action-time-to-effect-stopwatch-tablet", "স্টপওয়াচ, পানির গ্লাস ও সাদা ট্যাবলেটের পাশে আলোর বৃত্ত; লেখা ‘ডোজ নেওয়া হলো’ ও ‘শুরু → সর্বোচ্চ → স্থায়িত্ব’—ওষুধের কাজ শুরু, সর্বোচ্চ ও স্থায়িত্ব মাপা হয় ডোজ থেকে।", "ওষুধ খাওয়ার মুহূর্ত থেকেই শুরু, সর্বোচ্চ ও স্থায়িত্ব মাপা হয়।"),
+ "doublephoto": ("do-not-double-a-dose-tablets-alarm-clock", "পানির গ্লাস ও অ্যালার্ম ঘড়ির পাশে দ্বিতীয় ট্যাবলেটের দিকে হাত; লেখা ‘পরের ডোজের সময় পর্যন্ত অপেক্ষা’—ওষুধ ধীরে কাজ করলেও ডোজ দ্বিগুণ না করার সতর্কতা।", "চিকিৎসক না বললে কখনো ডোজ দ্বিগুণ করবেন না।"),
+ "takeaways": ("onset-peak-duration-key-takeaways", "বালুঘড়ি ও সবুজ-সাদা ক্যাপসুলের পাশে ওষুধের সময়ের পাঁচটি মূল কথা: শুরু, সর্বোচ্চ, স্থায়িত্ব, পথ ও রূপ, এবং দ্বিগুণ ডোজ নয়।", "পাঁচ কথায় ওষুধের সময়।"),
+})
+def _layer2(d, F):
+    s = d["sections"]
+    s[1]["figs"] = [F["curvephoto"]] + s[1].get("figs", [s[1].pop("fig")] if s[1].get("fig") else [])
+    s[1].pop("fig", None)
+    s[4]["figs"] = [F["doublephoto"]] + ([s[4].pop("fig")] if s[4].get("fig") else s[4].get("figs", []))
+    s[5].pop("fig", None); s[5]["figs"] = [F["takeaways"]]
+_layer2(EN, EN_FIG); _layer2(BN, BN_FIG)
+EN.update(cover_alt="Onset, peak and duration explained: a white capsule with a glowing light trail beside a wall clock and a glass of water, and the title When a medicine starts and stops.")
+BN.update(cover_alt="অনসেট, পিক ও ডিউরেশন: দেয়ালঘড়ি ও পানির গ্লাসের পাশে আলোর রেখাসহ সাদা ক্যাপসুল, শিরোনাম ‘ওষুধ কখন কাজ শুরু করে, কখন থামে’।")

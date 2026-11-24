@@ -118,3 +118,9 @@ BN.update(
  keywords="প্রেসক্রিপশন বনাম OTC, OTC ওষুধ বাংলাদেশ, ওটিসি ওষুধের তালিকা, প্রেসক্রিপশন ছাড়া অ্যান্টিবায়োটিক, লাল লেবেল অ্যান্টিবায়োটিক, DGDA, ঔষধ ও কসমেটিকস আইন ২০২৩, ফার্মাসিস্ট",
  about=["প্রেসক্রিপশন ওষুধ", "ওভার-দ্য-কাউন্টার ওষুধ", "অ্যান্টিমাইক্রোবিয়াল রেজিস্ট্যান্স", "বাংলাদেশের ওষুধ নিয়ন্ত্রণ"],
  cover_alt="বাংলাদেশে প্রেসক্রিপশন বনাম OTC ওষুধ: হাসিমুখে ফার্মাসিস্ট কাউন্টারে ওষুধের বাক্স দিচ্ছেন, টেবিলে হাতে লেখা প্রেসক্রিপশন, শিরোনাম ‘কোন ওষুধে প্রেসক্রিপশন লাগে’।")
+
+# ---- 24 Nov (later): RX-3 OTC label picture in section 5 ----
+EN_FIG["otcshelf"] = ("read-otc-medicine-label-active-ingredient", "A young man in a Bangladeshi pharmacy reading the back of a medicine box in front of shelves of OTC medicines, labelled Active ingredient? and Dose · warnings · expiry, showing how to read an OTC medicine label safely.", "Read the label every time: active ingredient, dose, warnings and expiry.")
+BN_FIG["otcshelf"] = ("read-otc-medicine-label-active-ingredient", "বাংলাদেশের ফার্মেসিতে OTC ওষুধের তাকের সামনে এক তরুণ ওষুধের বাক্সের পেছন পড়ছেন; লেখা ‘সক্রিয় উপাদান কী?’ ও ‘ডোজ · সতর্কতা · মেয়াদ’—OTC ওষুধের লেবেল নিরাপদে পড়ার নিয়ম।", "প্রতিবার লেবেল পড়ুন: সক্রিয় উপাদান, ডোজ, সতর্কতা ও মেয়াদ।")
+for _d, _F in ((EN, EN_FIG), (BN, BN_FIG)):
+    _d["sections"][4]["figs"] = [_F["otcshelf"]]

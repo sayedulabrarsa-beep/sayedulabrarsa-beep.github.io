@@ -10,7 +10,7 @@ RECIPE = f""".title{{color:{TEAL}}} .title i{{color:{CHAR};background:linear-gra
 .byline{{background:{TEAL};border-left:6px solid {CORAL}}} body.bn .byline{{font-family:HS;font-weight:700}}"""
 RECIPE += lab_css(CORAL)
 SRC = ("StatPearls; MSD Manual; Open RN Pharmacology", "StatPearls; MSD Manual; Open RN Pharmacology")
-SOCIAL = dict(ts=(70, 72), pw=520, a=34)
+SOCIAL = dict(ts=(70, 72), pw=520, a=26)
 x0, y0, x1, y1 = 120, 100, 860, 570
 X = lambda t: x0 + 10 + t * 60
 Y = lambda c: y1 - c * 430
@@ -81,7 +81,7 @@ def double(bn):
     return s
 
 CFG = {
- "cover": dict(kind="photo", bg="onset", a=28, pw=560, byline=True, foot=False, ts=(86, 90),
+ "cover": dict(kind="photo", bg="on-cover", a=22, pw=560, byline=True, foot=False, ts=(86, 90),
    kick=("Onset, peak and duration", "শুরু, সর্বোচ্চ ও স্থায়িত্ব"),
    title=("When a medicine <i>starts</i> and stops", "ওষুধ কখন <i>কাজ</i> শুরু করে, কখন থামে"),
    sub=("Reading the time curve of drug action in simple words.", "ওষুধের কাজের সময়-রেখা সহজ ভাষায়।")),
@@ -100,7 +100,7 @@ CFG = {
    title=("Slow is not a reason to <i>double</i>", "ধীর মানে <i>দ্বিগুণ</i> ডোজ নয়"),
    sub=("Doses taken too close together raise the risk of side effects.", "খুব কাছাকাছি ডোজ নিলে পার্শ্বপ্রতিক্রিয়ার ঝুঁকি বাড়ে।"),
    src=("NHS Specialist Pharmacy Service; Open RN", "NHS Specialist Pharmacy Service; Open RN")),
- "takeaways": dict(kind="photo", bg="onset", a=40, pw=640, ts=(64, 64),
+ "takeaways": dict(kind="photo", bg="on-takeaways", a=34, pw=640, ts=(64, 64),
    kick=("Key takeaways", "মূল কথা"), title=("Drug timing in <i>5 points</i>", "৫ কথায় <i>ওষুধের সময়</i>"),
    legend=[(("Onset", "When the effect first starts."), ("শুরু", "যখন প্রথম কাজ শুরু হয়।")),
            (("Peak", "When the level is highest."), ("সর্বোচ্চ", "যখন মাত্রা সবচেয়ে বেশি।")),
@@ -133,3 +133,17 @@ CFG.update({
 })
 NAMES.update({"window": "therapeutic-window-capsule-safe-range", "routes": "routes-of-administration-injection-tablet-slow-release",
               "weeks": "medicine-full-effect-takes-weeks-pill-organizer"})
+
+CFG.update({
+ "curvephoto": dict(kind="photo", bg="on-curve", a=16, pw=480, ts=(56, 56), src=SRC,
+   kick=("Time to effect", "কাজ শুরুর সময়"),
+   title=("The clock starts at <i>the dose</i>", "ঘড়ি চলে <i>ডোজ থেকে</i>"),
+   sub=("Onset, peak and duration are all measured from the time you take it.", "শুরু, সর্বোচ্চ ও স্থায়িত্ব মাপা হয় ওষুধ খাওয়ার সময় থেকে।"),
+   extra=EB(lambda b: L(1345, 95, ("Onset → peak → duration", "শুরু → সর্বোচ্চ → স্থায়িত্ব")[b], "pt", 26) + L(1030, 760, ("Dose taken", "ডোজ নেওয়া হলো")[b], "pw", 26))),
+ "doublephoto": dict(kind="photo", bg="on-double", a=16, pw=470, ts=(56, 56), src=("NHS Specialist Pharmacy Service", "NHS Specialist Pharmacy Service"),
+   kick=("A safety point", "নিরাপত্তার কথা"),
+   title=("Pause before an <i>extra tablet</i>", "বাড়তি ট্যাবলেটের আগে <i>থামুন</i>"),
+   sub=("Never double a dose unless your prescriber tells you to.", "চিকিৎসক না বললে কখনো ডোজ দ্বিগুণ করবেন না।"),
+   extra=EB(lambda b: L(1110, 760, ("Wait for the next dose time", "পরের ডোজের সময় পর্যন্ত অপেক্ষা")[b], "ps", 26))),
+})
+NAMES.update({"curvephoto": "onset-of-action-time-to-effect-stopwatch-tablet", "doublephoto": "do-not-double-a-dose-tablets-alarm-clock"})

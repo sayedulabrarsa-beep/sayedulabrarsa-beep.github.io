@@ -111,3 +111,12 @@ CFG.update({
 })
 NAMES.update({"prescription": "prescription-medicine-written-by-registered-doctor", "amr": "antibiotic-misuse-antimicrobial-resistance-bacteria",
               "antibiotic": "red-antibiotic-label-pack-bangladesh-dgda", "ask": "ask-your-pharmacist-medicine-leaflet-bangladesh"})
+
+CFG.update({
+ "otcshelf": dict(kind="photo", bg="rx-otcshelf", a=16, pw=470, ts=(56, 56), src=("U.S. FDA; MedlinePlus", "U.S. FDA; MedlinePlus"),
+   kick=("Using OTC medicines", "OTC ওষুধের ব্যবহার"),
+   title=("Read the label <i>every time</i>", "প্রতিবার <i>লেবেল পড়ুন</i>"),
+   sub=("Check the active ingredient so you do not take the same medicine twice.", "সক্রিয় উপাদান মিলিয়ে নিন, যাতে একই ওষুধ দুবার না খান।"),
+   extra=EB(lambda b: L(1010, 420, ("Active ingredient?", "সক্রিয় উপাদান কী?")[b], "pt", 27) + L(1060, 735, ("Dose · warnings · expiry", "ডোজ · সতর্কতা · মেয়াদ")[b], "pw", 25))),
+})
+NAMES.update({"otcshelf": "read-otc-medicine-label-active-ingredient"})
