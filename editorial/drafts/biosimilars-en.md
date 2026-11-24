@@ -19,6 +19,10 @@ Biologics and biosimilars are used in areas such as diabetes, cancer, inflammato
 
 *By Sayedul Abrar, Pharmacist · Editorial draft dated 24 November 2026*
 
+![Conceptual comparison of a generic medicine, reference biologic and biosimilar](assets/biosimilars-overview-en.svg)
+
+*Figure 1. A conceptual comparison; the molecular drawings are not to scale.*
+
 ## 1. What is a biological medicine?
 
 A biological medicine, often called a biologic, is made using biological systems such as living cells or microorganisms. Many are proteins, including insulin, growth factors, erythropoietin and monoclonal antibodies. Their size, folded three-dimensional structure, sugar attachments and other molecular features can influence how they work.
@@ -40,6 +44,10 @@ A biosimilar is not expected to be an exact molecular duplicate in the way that 
 The word “similar” is not a shortcut for “close enough”. A product should not be called a biosimilar unless the required comparability exercise demonstrates the necessary similarity.
 
 ## 3. How is biosimilarity demonstrated?
+
+![Five stages in a biosimilar comparability exercise](assets/biosimilars-comparability-en.svg)
+
+*Figure 2. The regulator considers the complete evidence package, not one test in isolation.*
 
 The assessment is a planned, head-to-head comparability exercise. It is based on the totality of evidence: regulators consider the combined findings rather than relying on one laboratory test or one clinical study.
 
