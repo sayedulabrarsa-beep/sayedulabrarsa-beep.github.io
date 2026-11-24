@@ -79,6 +79,10 @@ WHO-এর ২০২২ সালের নির্দেশিকায় pro
 
 ## ৪. Immunogenicity কেন গুরুত্বপূর্ণ?
 
+![Biologic medicine-এর বিরুদ্ধে binding বা neutralizing anti-drug antibody তৈরির ধারণাগত চিত্র](assets/biosimilars-immunogenicity-bn.svg)
+
+*চিত্র ৩। সব antibody neutralizing নয়; clinical গুরুত্ব পণ্যভেদে আলাদা।*
+
 Immunogenicity হলো কোনো biological medicine শরীরের immune system-কে প্রতিক্রিয়া জানাতে উদ্দীপিত করার ক্ষমতা। কোনো রোগীর শরীরে ওষুধটির বিরুদ্ধে anti-drug antibody (ADA) তৈরি হতে পারে। কিছু antibody ওষুধের সঙ্গে যুক্ত হলেও তার কাজ বন্ধ করে না; অন্য কিছু antibody ওষুধের biological activity neutralize করতে পারে।
 
 পণ্যের ধরন ও রোগীর অবস্থার ওপর নির্ভর করে immune response ওষুধের শরীরে অবস্থান, কার্যকারিতা বা নিরাপত্তাকে প্রভাবিত করতে পারে। কখনো hypersensitivity বা অন্য adverse effect-ও দেখা দিতে পারে।
