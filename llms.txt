@@ -171,6 +171,6 @@ Pharma Blog articles (newest first; each is educational, not medical advice):
 - Drug vs Medicine: ওষুধ আর ড্রাগ কি একই জিনিস? — বাংলা (2026-10-27): https://sayedulabrar.site/blog/drug-vs-medicine-bangla/
   Summary: ড্রাগ আর মেডিসিন (ওষুধ) কি একই জিনিস? সহজ গল্প, উদাহরণ, তুলনামূলক টেবিল ও সাধারণ প্রশ্নের মাধ্যমে Drug vs Medicine-এর পার্থক্য জানুন।
 - Drug vs Medicine: Meaning, Differences, Examples & FAQs — English (2026-10-27): https://sayedulabrar.site/blog/drug-vs-medicine/
-  Summary: What is the difference between a drug and a medicine? Learn clear definitions, examples, a comparison table, memory tricks, generic vs brand names and FAQs.
+  Summary: Drug vs medicine explained with clear definitions, examples and key differences. Learn how WHO terminology and Bangladesh law use these terms.
 Feed: https://sayedulabrar.site/blog/feed.xml
 <!--articles:end-->
