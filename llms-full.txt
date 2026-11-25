@@ -2909,6 +2909,37 @@ Summary: মানবদেহে ওষুধ কীভাবে কাজ ক�
 
 মনে রাখুন: PK = ওষুধের সঙ্গে শরীরের আচরণ; PD = শরীরের ওপর ওষুধের প্রভাব।
 
+### Pharmacokinetics বনাম Pharmacodynamics: পার্থক্য কী?
+
+এই দুটি শাখা দুটি আলাদা প্রশ্নের উত্তর দেয়। Pharmacokinetics (PK) ব্যাখ্যা করে ওষুধ শরীরের ভেতর দিয়ে কীভাবে চলাচল করে এবং সময়ের সঙ্গে এর ঘনত্ব কীভাবে বদলায়। Pharmacodynamics (PD) ব্যাখ্যা করে ওষুধ শরীরের জৈবিক লক্ষ্যবস্তুর সঙ্গে কীভাবে কাজ করে এবং কী প্রতিক্রিয়া তৈরি হয়।
+
+এক নজরে
+
+- PK = Exposure: ADME, bioavailability, clearance, volume of distribution ও half-life।
+
+- PD = Response: ওষুধের target, mechanism of action, concentration–response, potency ও efficacy।
+
+|
+| তুলনার বিষয় | Pharmacokinetics (PK) | Pharmacodynamics (PD)
+
+| মূল প্রশ্ন | শরীর ওষুধের সঙ্গে কী করে? | ওষুধ শরীরের ওপর কী প্রভাব ফেলে?
+
+| প্রধান বিষয় | সময়ের সঙ্গে ওষুধের চলাচল ও ঘনত্ব | Target-এর সঙ্গে মিথস্ক্রিয়া ও জৈবিক প্রভাব
+
+| গুরুত্বপূর্ণ ধারণা | ADME, bioavailability, clearance, half-life | Mechanism of action, EC50, Emax, potency, efficacy
+
+| ব্যবহারিক গুরুত্ব | ওষুধের exposure ও ডোজ-সংক্রান্ত বিষয় বুঝতে সাহায্য করে | কাঙ্ক্ষিত প্রভাব ও পার্শ্বপ্রতিক্রিয়া বুঝতে সাহায্য করে
+
+#### Potency বনাম efficacy: Pharmacodynamics-এর দুটি আলাদা ধারণা
+
+Potency বোঝায় নির্দিষ্ট প্রভাব তৈরি করতে কত পরিমাণ বা ঘনত্বের ওষুধ প্রয়োজন। Efficacy বোঝায় নির্দিষ্ট পরীক্ষার ব্যবস্থায় ওষুধটি সর্বোচ্চ কতটা প্রভাব তৈরি করতে পারে। কোনো ওষুধ বেশি potent হলেই তার সর্বোচ্চ efficacy বেশি হবে, সব রোগীর ক্ষেত্রে বেশি কার্যকর হবে বা সেটি বেশি নিরাপদ হবে—এমন নয়।
+
+#### PK ও PD কীভাবে একসঙ্গে কাজ করে?
+
+PK শরীরের কার্যস্থলে সময়ের সঙ্গে ওষুধের ঘনত্ব কেমন হতে পারে তা বুঝতে সাহায্য করে; PD সেই ঘনত্বের সঙ্গে সম্পর্কিত প্রভাব ব্যাখ্যা করে। Active metabolite, প্রভাব দেখা দিতে দেরি, tolerance, রোগের অবস্থা এবং ব্যক্তির শারীরবৃত্তীয় বৈশিষ্ট্য এই সম্পর্ককে প্রভাবিত করতে পারে। রক্তের plasma concentration সব সময় target site-এর concentration-এর সমানও নয়।
+
+উদাহরণ হিসেবে, কেউ মুখে রক্তচাপ কমানোর ওষুধ গ্রহণ করলে PK-তে দেখা হয় কতটুকু শোষিত হলো, কোথায় বণ্টিত হলো এবং কীভাবে শরীর থেকে বের হলো। PD-তে দেখা হয় ওষুধটি কোন biological target-এ কাজ করল এবং সেই প্রভাবে রক্তচাপে কী পরিবর্তন হলো। সম্পূর্ণ প্রতিক্রিয়া বুঝতে দুটি দৃষ্টিভঙ্গিই দরকার।
+
 ### ২. Pharmacokinetics: ADME-এর যাত্রা
 
 ওষুধ গ্রহণের পর শরীর সাধারণত চারটি প্রক্রিয়ার মাধ্যমে সেটিকে সামলায়। এগুলোকে একসঙ্গে ADME বলা হয়: Absorption, Distribution, Metabolism এবং Excretion। প্রক্রিয়াগুলো একসঙ্গে বা পরস্পরকে প্রভাবিত করে চলতে পারে; সব সময় আলাদা চারটি ধাপ হিসেবে ঘটে না।
@@ -2993,6 +3024,14 @@ PK ও PD বোঝা গেলে ডোজ, সময়, formulation, খা
 
 ### সাধারণ প্রশ্ন
 
+#### Potency ও efficacy-এর পার্থক্য কী?
+
+Potency বোঝায় নির্দিষ্ট প্রভাব তৈরি করতে কতটুকু ওষুধ লাগে। Efficacy বোঝায় নির্দিষ্ট ব্যবস্থায় ওষুধের সর্বোচ্চ প্রভাব কতটা হতে পারে। বেশি potent হলেই ওষুধের efficacy বেশি হবে—এমন নয়।
+
+#### Pharmacokinetics ও pharmacodynamics কীভাবে সম্পর্কিত?
+
+PK কার্যস্থলে সময়ের সঙ্গে ওষুধের ঘনত্ব বুঝতে সাহায্য করে, আর PD সেই ঘনত্বের সঙ্গে সম্পর্কিত প্রভাব ব্যাখ্যা করে। Active metabolite, প্রভাব দেখা দিতে দেরি এবং ব্যক্তির শারীরবৃত্তীয় বৈশিষ্ট্য এই সম্পর্ককে প্রভাবিত করতে পারে।
+
 #### Pharmacokinetics ও pharmacodynamics কি একই?
 
 না। Pharmacokinetics হলো absorption, distribution, metabolism ও excretion। Pharmacodynamics হলো শরীরে ওষুধের প্রভাব ও কার্যপদ্ধতি।
@@ -3060,6 +3099,37 @@ Pharmacology is the science of drugs and how they interact with living systems. 
 - Pharmacodynamics (PD): what the medicine does to the body—how it interacts with targets and produces biological effects.
 
 Remember it this way: PK = the body's journey with the drug; PD = the drug's effect on the body.
+
+### Pharmacokinetics vs Pharmacodynamics: what is the difference?
+
+These two branches answer different questions. Pharmacokinetics (PK) describes the medicine’s journey through the body and how its concentration changes over time. Pharmacodynamics (PD) describes how the medicine interacts with biological targets and what response follows.
+
+At a glance
+
+- PK = exposure: ADME, bioavailability, clearance, volume of distribution and half-life.
+
+- PD = response: drug targets, mechanism of action, concentration–response, potency and efficacy.
+
+|
+| Comparison | Pharmacokinetics (PK) | Pharmacodynamics (PD)
+
+| Main question | What does the body do to the medicine? | What does the medicine do to the body?
+
+| Core focus | Movement and concentration over time | Target interaction and biological effect
+
+| Common concepts | ADME, bioavailability, clearance, half-life | Mechanism of action, EC50, Emax, potency, efficacy
+
+| Practical use | Helps explain exposure and dosing considerations | Helps explain desired effects and adverse responses
+
+#### Potency vs efficacy: a pharmacodynamic distinction
+
+Potency describes how much drug (or what concentration) is needed to produce a specified effect. Efficacy describes the maximum effect a drug can produce in a defined system. A more potent medicine is not automatically more efficacious, more effective in every patient or safer.
+
+#### How do PK and PD work together?
+
+PK helps determine the concentration of a medicine at its site of action over time; PD helps explain the effect associated with that concentration. The relationship can be influenced by active metabolites, delayed responses, tolerance, disease and individual biology. Plasma concentration is also not always identical to concentration at the target site.
+
+For example, when a person takes an oral blood-pressure medicine, PK considers how much is absorbed, where it distributes and how it is eliminated. PD considers the biological target affected and how that interaction changes blood pressure. Both perspectives are needed to understand the overall response.
 
 ### 2. Pharmacokinetics: the ADME journey
 
@@ -3146,6 +3216,14 @@ Key takeaways
 - Responses vary between people; more medicine does not always mean more benefit.
 
 ### Frequently asked questions
+
+#### What is the difference between potency and efficacy?
+
+Potency describes how much drug is needed to produce a specified effect. Efficacy describes the maximum effect a drug can produce in a defined system. A more potent drug is not automatically more efficacious.
+
+#### How are pharmacokinetics and pharmacodynamics connected?
+
+PK helps determine drug concentration at the site of action over time, while PD explains the response associated with that concentration. Active metabolites, delayed effects and individual biology can influence the relationship.
 
 #### Is pharmacokinetics the same as pharmacodynamics?
 
