@@ -78,8 +78,8 @@ Pharma Blog articles (newest first; each is educational, not medical advice):
   Summary: Bioavailability meaning in simple words: why IV is 100%, what lowers it by mouth, how AUC measures it, and what bioequivalence means for generics.
 - প্রতি ৮ টাকার ১ টাকা: অ্যাসিড কমানোর ওষুধে (PPI) বাংলাদেশ কত খরচ করে? — বাংলা (2026-11-24): https://sayedulabrar.site/blog/ppi-acid-medicine-market-bangladesh-bangla/
   Summary: বাংলাদেশে বছরে প্রায় ৪,৯৮৩ কোটি টাকার PPI বা অ্যাসিড কমানোর ওষুধ বিক্রি হয়, যা মোট ওষুধ বিক্রির প্রায় ১২%। কোন PPI এগিয়ে, কত দ্রুত বাড়ছে আর সঠিক ব্যবহার কেন জরুরি—তথ্যভিত্তিক সহজ আলোচনা।
-- 1 in Every 8 Taka: How Much Bangladesh Spends on Acid-Reducing Medicines (PPIs) — English (2026-11-24): https://sayedulabrar.site/blog/ppi-acid-medicine-market-bangladesh/
-  Summary: About Tk 4,983 crore a year, nearly 12% of medicine sales in Bangladesh, goes to acid-reducing medicines. A simple, data-based look at which PPIs lead, how fast they grow and why use matters.
+- Bangladesh’s PPI Market: Tk 4,983 Crore in Annual Sales — English (2026-11-24): https://sayedulabrar.site/blog/ppi-acid-medicine-market-bangladesh/
+  Summary: IQVIA data show about Tk 4,983 crore in Bangladesh PPI sales in the 12 months to September 2026—around 12% of the tracked medicine market.
 - ফার্মাসিউটিক্যাল প্রোডাক্ট ম্যানেজমেন্ট কী? বাংলাদেশে কাজ, কৌশল ও দায়িত্ব — বাংলা (2026-11-24): https://sayedulabrar.site/blog/pharmaceutical-product-management-bangladesh-bangla/
   Summary: বাংলাদেশের ওষুধ শিল্পে প্রোডাক্ট ম্যানেজমেন্ট কীভাবে কাজ করে? বাজার বিশ্লেষণ, ব্র্যান্ড কৌশল, পণ্য জীবনচক্র, নৈতিক HCP engagement ও KPI সহজভাবে জানুন।
 - Pharmaceutical Product Management in Bangladesh: Strategy, Skills & Responsibilities — English (2026-11-24): https://sayedulabrar.site/blog/pharmaceutical-product-management-bangladesh/
