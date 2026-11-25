@@ -64,6 +64,10 @@ Clinical-content boundaries:
 
 <!--articles:start-->
 Pharma Blog articles (newest first; each is educational, not medical advice):
+- বাংলাদেশে ফার্মাসিউটিক্যাল মার্কেটিং কৌশল: বাস্তবসম্মত ও নৈতিক পরিকল্পনা — বাংলা (2026-11-25): https://sayedulabrar.site/blog/pharmaceutical-marketing-strategy-bangladesh-bangla/
+  Summary: বাংলাদেশে ফার্মাসিউটিক্যাল মার্কেটিং কৌশল কীভাবে তৈরি করবেন? বাজার বিশ্লেষণ, segmentation, positioning, বৈজ্ঞানিক যোগাযোগ, channel planning ও KPI জানুন।
+- Pharmaceutical Marketing Strategy in Bangladesh: A Practical, Ethical Framework — English (2026-11-25): https://sayedulabrar.site/blog/pharmaceutical-marketing-strategy-bangladesh/
+  Summary: Learn how to build a pharmaceutical marketing strategy in Bangladesh through market insight, segmentation, positioning, scientific communication, channel planning and measurable execution.
 - ক্লিনিক্যাল ট্রায়ালের ধাপগুলো: মানুষের ওপর প্রথম পরীক্ষা থেকে বাজার-পরবর্তী পর্যবেক্ষণ — বাংলা (2026-11-25): https://sayedulabrar.site/blog/clinical-trial-phases-explained-bangla/
   Summary: ক্লিনিক্যাল ট্রায়ালের Phase I, II, III ও IV কীভাবে কাজ করে? নিরাপত্তা, কার্যকারিতা, অংশগ্রহণকারীর অধিকার এবং বাংলাদেশের DGDA-এর GCP নির্দেশনা সহজ ভাষায় জানুন।
 - Clinical Trial Phases Explained: From First-in-Human to Post-Marketing — English (2026-11-25): https://sayedulabrar.site/blog/clinical-trial-phases-explained/
