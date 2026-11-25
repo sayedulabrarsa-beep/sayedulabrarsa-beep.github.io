@@ -7819,20 +7819,20 @@ Medical Education Disclaimer: এই লেখাটি সাধারণ শ�
 
 ### Drug vs Medicine: Meaning, Differences & Examples
 URL: https://sayedulabrar.site/blog/drug-vs-medicine/ · Language: English · Published:  · Author: Sayedul Abrar, pharmacist
-Summary: What is the difference between a drug and a medicine? Learn clear definitions, examples, a comparison table, memory tricks, generic vs brand names and FAQs.
+Summary: Drug vs medicine explained with clear definitions, examples and key differences. Learn how WHO terminology and Bangladesh law use these terms.
 
 Pharmacology Made Simple
 
 ## Drug vs Medicine: Meaning, Differences, Examples & FAQs
 
 A visual, easy-to-remember guide to the difference between a drug and a medicine—with everyday examples, a comparison table and quick revision tricks.
-27 October 2026Pharmacology Basics6–8 min readBy Sayedul Abrar
+27 October 2026Updated 25 November 2026Pharmacology Basics6–8 min readBy Sayedul Abrar
 
 ### Quick answer: Drug vs Medicine
 
 A drug is generally a substance that interacts with the body and can change a biological function. A medicine is generally a product prepared for a therapeutic purpose. In scientific and regulatory contexts, the terms may also be used interchangeably.
-- Drug: an active medicinal substance, such as paracetamol or rabeprazole.
-- Medicine: a prepared dosage form, such as a tablet, capsule or syrup.
+- Drug: in this learning comparison, the active medicinal substance, such as paracetamol or rabeprazole.
+- Medicine: the prepared product or dosage form, such as a tablet, capsule or syrup.
 
 Have you wondered why a tablet for a headache may be called a drug, a medicine, or medication? In everyday conversation, these terms often overlap. In pharmacology, they can describe different aspects of treatment.
 Imagine you visit a pharmacy because you have a headache. You ask for a medicine and receive a tablet. Later, while studying pharmacology, you read, “This drug acts on the human body.” The natural question is whether a drug and a medicine are exactly the same thing.
@@ -7840,7 +7840,7 @@ In simple terms, a drug often refers to a substance and its biological activity,
 
 ### 1. What is a drug?
 
-In pharmacology, a drug is generally a chemical substance that interacts with a living system and may alter a biological function.
+In pharmacology, the word drug commonly refers to a substance that interacts with a living system and may alter a biological function. In pharmaceutical and regulatory contexts, however, drug can also refer more broadly to a pharmaceutical product.
 - Paracetamol: an active substance used to relieve pain and reduce fever.
 - Rabeprazole: an active substance used to reduce stomach acid secretion.
 - Cetirizine: an active substance used to relieve allergy symptoms.
@@ -7860,8 +7860,8 @@ Paracetamol is an active medicinal substance. A paracetamol tablet made in a spe
 
 |
 | Aspect | Drug | Medicine
-| Simple meaning | A biologically active medicinal substance | A product prepared for therapeutic use
-| Main focus | Substance and its biological action | Prepared treatment product
+| Common learning distinction | Often emphasizes a medicinal substance and its biological action | Often emphasizes a product prepared for therapeutic use
+| Main focus in this comparison | Substance and biological action | Prepared treatment product
 | Example | Rabeprazole, paracetamol | Rabeprazole capsule, paracetamol tablet
 | Composition | May refer to an active substance | May contain active ingredients and excipients
 | Relationship | May be an ingredient in a medicine | May contain one or more medicinal substancesEasy memory trick — S vs P: S = Substance (Drug often focuses on the active substance); P = Prepared product (Medicine often focuses on the product prepared for treatment). Think: “What acts?” → drug/substance. “What is supplied for treatment?” → medicine/product. This is a learning aid, not an absolute rule; the terms overlap in real medical and regulatory use.
@@ -7885,7 +7885,7 @@ Remember: This example explains terminology; it is not a recommendation to buy o
 
 ### 5. Is every drug used as a medicine?
 
-No. A substance may be used in research, laboratory testing or other scientific work and may not be a ready-to-use medicine. A product intended for human treatment must meet relevant quality, formulation, dosage and regulatory requirements.
+Not necessarily. If drug is being used to mean an active substance, that substance may be studied in research or laboratory work and may not be a finished product intended for patient use. A medicine supplied for treatment must meet the applicable quality, formulation, labelling and regulatory requirements. The answer also depends on the definition being used: WHO and some regulatory sources use drug and medicine more broadly or interchangeably.
 Even a substance that can be useful in treatment may cause harm if used incorrectly. Whether something is called a drug and whether it is suitable for a particular person are different questions.
 
 ### 6. What is pharmacology?
@@ -7899,6 +7899,16 @@ Pharmacology helps explain drug effects, movement through the body and safe use.
 
 People may use medicines for fever, headache, allergies, acidity and many other conditions. Knowing a brand name alone is not the same as understanding a medicine.
 Understand the active ingredient, strength, reason for use, possible side effects and interactions with other medicines. Do not change a dose or use another person’s prescription based only on familiarity with a brand. Follow a qualified clinician’s or registered pharmacist’s advice.
+
+### How do scientific and legal definitions of drug and medicine differ?
+
+The substance-versus-product explanation above is a useful learning distinction, but it is not a universal definition. The World Health Organization’s Prequalification glossary defines a drug broadly as a substance or pharmaceutical product intended to modify or explore physiological systems or pathological states. In that glossary, the terms “drug”, “medicine” and “pharmaceutical product” are commonly used interchangeably.
+
+The same WHO glossary makes a more specific distinction between a drug substance—the active pharmaceutical ingredient (API) and associated molecules used to make a product—and a drug product, which is the finished dosage form, generally with excipients, in its final packaging. These technical terms are more precise when discussing pharmaceutical manufacturing.
+
+In Bangladesh, the Drugs and Cosmetics Act, 2023 (Act No. 29 of 2023) gives “drug” a broad statutory meaning in section 2(5). It includes medicines and substances used for human or animal treatment and also covers specified categories such as medical devices. This legal definition serves the purposes of the Act; it is not simply the everyday distinction between an ingredient and a tablet. For regulatory decisions, consult the law and the Directorate General of Drug Administration (DGDA).
+
+References: WHO: Glossary — drug, drug substance and drug product · Bangladesh: Drugs and Cosmetics Act, 2023, section 2 · DGDA: Laws and regulations.
 
 ### Frequently asked questions
 
@@ -7943,7 +7953,10 @@ Quick recall: Drug = substance/action; Medicine = prepared treatment product. Gi
 
 ### References
 
-- MedlinePlus
+- WHO: Glossary — drug, drug substance and drug product
+- Bangladesh: Drugs and Cosmetics Act, 2023, section 2
+- Directorate General of Drug Administration (DGDA): Laws
+- MedlinePlus: Drug information
 - U.S. Food and Drug Administration (FDA)
 - NCBI Bookshelf
 For product-specific details, check the approved package insert and relevant local regulator.
