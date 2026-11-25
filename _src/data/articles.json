@@ -151,5 +151,14 @@
     "desc_en": "Understand Phase I–IV, optional Phase 0 studies, participant safeguards and post-marketing follow-up.",
     "desc_bn": "Phase I–IV, ঐচ্ছিক Phase 0, অংশগ্রহণকারীর সুরক্ষা ও বাজার-পরবর্তী পর্যবেক্ষণ সহজ ভাষায় জানুন।",
     "img": "/assets/img/blog/clinical-trial-phases/ct-card.webp"
+  },
+  "pharmaceutical-marketing-strategy-bangladesh": {
+    "tag_en": "Pharmaceutical Marketing",
+    "tag_bn": "ফার্মাসিউটিক্যাল মার্কেটিং",
+    "title_en": "Pharmaceutical Marketing Strategy in Bangladesh",
+    "title_bn": "বাংলাদেশে ফার্মাসিউটিক্যাল মার্কেটিং কৌশল",
+    "desc_en": "A practical, ethical framework for market analysis, segmentation, positioning, communication and performance measurement.",
+    "desc_bn": "বাজার বিশ্লেষণ, segmentation, positioning, নৈতিক যোগাযোগ ও ফলাফল পরিমাপের ব্যবহারিক গাইড।",
+    "img": "/assets/img/blog/pharma-marketing-strategy/marketing-strategy-cover.svg"
   }
 }
