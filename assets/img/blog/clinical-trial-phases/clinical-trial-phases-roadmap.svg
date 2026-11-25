@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">Clinical trial development roadmap</title>
+<desc id="desc">A flow diagram from preclinical research through Phases I, II and III, regulatory review and Phase IV post-marketing studies.</desc>
+<!-- Original vector artwork by Sayedul Abrar, 25 November 2026. No third-party visual assets. -->
+<rect width="1600" height="900" rx="28" fill="#fbfaf6"/>
+<text x="90" y="105" font-family="Arial,sans-serif" font-size="34" font-weight="700" letter-spacing="3" fill="#287c73">THE DEVELOPMENT PATH</text>
+<text x="90" y="170" font-family="Arial,sans-serif" font-size="52" font-weight="700" fill="#173d43">From laboratory evidence to ongoing monitoring</text>
+<g font-family="Arial,sans-serif">
+<rect x="90" y="250" width="250" height="210" rx="24" fill="#e8eee9" stroke="#b7c9c0" stroke-width="3"/>
+<text x="215" y="305" text-anchor="middle" font-size="26" font-weight="700" fill="#174f52">BEFORE PEOPLE</text>
+<text x="215" y="355" text-anchor="middle" font-size="36" font-weight="700" fill="#173d43">Preclinical</text>
+<text x="215" y="398" text-anchor="middle" font-size="20" fill="#536a68">Laboratory &amp; nonclinical</text>
+<text x="215" y="428" text-anchor="middle" font-size="20" fill="#536a68">evidence</text>
+<path d="M340 355 H390" stroke="#78958a" stroke-width="8" stroke-linecap="round"/><path d="M375 337 L395 355 L375 373" fill="none" stroke="#78958a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="410" y="250" width="250" height="210" rx="24" fill="#e2efeb" stroke="#8eb6a8" stroke-width="3"/>
+<circle cx="535" cy="305" r="32" fill="#174f52"/><text x="535" y="317" text-anchor="middle" font-size="28" font-weight="700" fill="#fff">I</text>
+<text x="535" y="375" text-anchor="middle" font-size="32" font-weight="700" fill="#173d43">Phase I</text>
+<text x="535" y="414" text-anchor="middle" font-size="20" fill="#536a68">Safety, dose, PK/PD</text>
+<path d="M660 355 H710" stroke="#78958a" stroke-width="8" stroke-linecap="round"/><path d="M695 337 L715 355 L695 373" fill="none" stroke="#78958a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="730" y="250" width="250" height="210" rx="24" fill="#edf2e8" stroke="#c2cf9b" stroke-width="3"/>
+<circle cx="855" cy="305" r="32" fill="#287c73"/><text x="855" y="317" text-anchor="middle" font-size="25" font-weight="700" fill="#fff">II</text>
+<text x="855" y="375" text-anchor="middle" font-size="32" font-weight="700" fill="#173d43">Phase II</text>
+<text x="855" y="414" text-anchor="middle" font-size="20" fill="#536a68">Early activity, dose range</text>
+<path d="M980 355 H1030" stroke="#78958a" stroke-width="8" stroke-linecap="round"/><path d="M1015 337 L1035 355 L1015 373" fill="none" stroke="#78958a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1050" y="250" width="250" height="210" rx="24" fill="#f8e9df" stroke="#d8a78b" stroke-width="3"/>
+<circle cx="1175" cy="305" r="32" fill="#c56b42"/><text x="1175" y="317" text-anchor="middle" font-size="24" font-weight="700" fill="#fff">III</text>
+<text x="1175" y="375" text-anchor="middle" font-size="32" font-weight="700" fill="#173d43">Phase III</text>
+<text x="1175" y="414" text-anchor="middle" font-size="20" fill="#536a68">Confirm benefit &amp; safety</text>
+<path d="M1300 355 H1350" stroke="#78958a" stroke-width="8" stroke-linecap="round"/><path d="M1335 337 L1355 355 L1335 373" fill="none" stroke="#78958a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1370" y="250" width="160" height="210" rx="24" fill="#f3eddb" stroke="#d4bd7c" stroke-width="3"/>
+<text x="1450" y="315" text-anchor="middle" font-size="23" font-weight="700" fill="#9b7426">REVIEW</text>
+<text x="1450" y="365" text-anchor="middle" font-size="20" fill="#536a68">Regulatory</text>
+<text x="1450" y="395" text-anchor="middle" font-size="20" fill="#536a68">decision</text>
+<path d="M1450 460 V550 H800" stroke="#b18a39" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M820 532 L800 552 L780 532" fill="none" stroke="#b18a39" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="530" y="580" width="540" height="190" rx="28" fill="#173d43"/>
+<circle cx="640" cy="675" r="42" fill="#b18a39"/><text x="640" y="690" text-anchor="middle" font-size="31" font-weight="700" fill="#fff">IV</text>
+<text x="820" y="650" text-anchor="middle" font-size="36" font-weight="700" fill="#fff">Phase IV</text>
+<text x="820" y="700" text-anchor="middle" font-size="23" fill="#e7eee9">Post-marketing studies &amp; follow-up</text>
+<text x="820" y="740" text-anchor="middle" font-size="18" fill="#b7ccc4">The safety review continues after approval</text>
+</g>
+<text x="90" y="840" font-family="Arial,sans-serif" font-size="21" fill="#687c76">Simplified pathway. Some programmes combine phases or use a different sequence; approval is a separate regulatory decision.</text>
+</svg>
