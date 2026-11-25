@@ -1213,6 +1213,8 @@ Stability sample-এর ফল specification-এর বাইরে গেলে
 API retest period ও finished medicine-এর expiry date কি একই?
 না। API-এর retest period থাকলে ব্যবহারের আগে আবার পরীক্ষা করা যায়। Finished medicine-এর shelf life expiry date সমর্থন করে; মেয়াদ শেষ হলে ব্যবহার করা উচিত নয়।
 
+ওষুধ উৎপাদন ও মানব্যবস্থার বৃহত্তর প্রেক্ষাপট বুঝতে বাংলাদেশের ওষুধশিল্প কী? পড়ুন—এখানে stability testing-এর অবস্থানও বুঝতে পারবেন।
+
 ### তথ্যসূত্র ও আরও পড়ুন
 
 - World Health Organization. TRS 1010, Annex 10: Stability testing of active pharmaceutical ingredients and finished pharmaceutical products. 2018.
@@ -1346,6 +1348,8 @@ The result needs documented investigation. The manufacturer reviews the method, 
 
 Is an API retest period the same as a finished medicine expiry date?
 No. An API may be retested before use when a retest period applies. A finished medicine's shelf life supports its expiry date; it should not be used after that date.
+
+For the wider industry context, read What is the pharmaceutical industry? to understand where stability testing fits within pharmaceutical manufacturing and quality systems.
 
 ### References and further reading
 
@@ -1912,6 +1916,8 @@ CAPA-এর পূর্ণরূপ Corrective and Preventive Action। Correct
 #### উৎপাদন অন্য প্রতিষ্ঠানের মাধ্যমে করালেও কি মানের দায়িত্ব থাকে?
 
 হ্যাঁ। চুক্তিভিত্তিক উৎপাদন বা পরীক্ষা হলে লিখিত চুক্তিতে দায়িত্ব নির্ধারণ, কাজের তদারকি এবং প্রযোজ্য মান অনুসরণ নিশ্চিত করতে হয়। কাজ আউটসোর্স করলেই গুণগত দায়িত্ব শেষ হয়ে যায় না।
+
+বাংলাদেশের ওষুধশিল্পের সামগ্রিক চিত্র জানতে বাংলাদেশের ওষুধশিল্প কী? পড়ুন—GMP কীভাবে উৎপাদন ও মানব্যবস্থার অংশ, তা বুঝতে সাহায্য করবে।
 
 ### তথ্যসূত্র ও আরও পড়ুন
 
@@ -7186,6 +7192,8 @@ DGDA বাংলাদেশের জাতীয় ঔষধ নিয়ন
 
 কোনো ব্যবস্থাই সব ধরনের সমস্যা কখনোই হবে না—এমন নিশ্চয়তা দেয় না। GMP ধারাবাহিক উৎপাদন, সমস্যা শনাক্তকরণ, তদন্ত ও প্রতিরোধের জন্য নিয়ন্ত্রণব্যবস্থা তৈরি করে।
 
+বাংলাদেশের বৃহত্তর প্রেক্ষাপট বুঝতে বাংলাদেশের ওষুধশিল্প কী? পড়ুন—এখানে API কীভাবে ওষুধ উৎপাদন ও সরবরাহ ব্যবস্থার সঙ্গে যুক্ত তা জানা যাবে।
+
 ### তথ্যসূত্র ও আরও পড়ুন
 
 - US FDA. Q7: API উৎপাদনের জন্য Good Manufacturing Practice Guidance।
@@ -7314,6 +7322,8 @@ Impurities can arise from starting materials, reactions, processing or storage. 
 #### Does GMP guarantee that a medicine will never have a quality problem?
 
 No system can guarantee that problems will never occur. GMP establishes controls for consistent production, detection, investigation and prevention of quality issues.
+
+For the wider Bangladesh context, read What is the pharmaceutical industry? to see how APIs fit into the medicine manufacturing and supply chain.
 
 ### References and further reading
 
