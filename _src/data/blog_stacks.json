@@ -882,8 +882,8 @@
     "date": "2026-11-25",
     "kicker": "Pharmaceutical Marketing",
     "title": "Pharmaceutical Marketing Strategy in Bangladesh: A Practical, Ethical Framework",
-    "image": "/assets/img/blog/pharma-marketing-strategy/marketing-strategy-cover.svg",
-    "alt": "Pharmaceutical marketing strategy in Bangladesh: market insight, brand positioning and measured impact",
+    "image": "/assets/img/blog/pharma-marketing-strategy/mk-social-en.jpg",
+    "alt": "A teal glass staircase with a plain white medicine box and stethoscope on the steps and golden scales on top, in front of a Dhaka-style skyline at sunset.",
     "accent": "#2f8f83",
     "read": "12 min",
     "slides": [
@@ -892,8 +892,8 @@
         "p": [
           "Define the category, period, market scope and evidence before choosing activities."
         ],
-        "img": "/assets/img/blog/pharma-marketing-strategy/marketing-strategy-cover.svg",
-        "alt": "Market insight, brand positioning and measured impact in pharmaceutical marketing",
+        "img": "/assets/img/blog/pharma-marketing-strategy/mk-research.webp",
+        "alt": "A magnifying glass over a bar chart on a white board, with teal and coral map pins, a clipboard and a cup of tea on a desk.",
         "r": "A strategy begins with a reliable fact base.",
         "sub": "",
         "fit": "contain"
@@ -903,8 +903,8 @@
         "p": [
           "Use therapeutic context, professional information needs and practical access factors—not private personal assumptions."
         ],
-        "img": "/assets/img/blog/pharma-marketing-strategy/segmentation-framework.svg",
-        "alt": "Three dimensions of pharmaceutical market segmentation",
+        "img": "/assets/img/blog/pharma-marketing-strategy/mk-segmentation.webp",
+        "alt": "Five glass cubes in teal, green, gold, coral and steel blue on a pharmacy counter, with shelves of plain white boxes and a stethoscope behind.",
         "r": "Only use relevant, lawful and necessary information.",
         "sub": "",
         "fit": "contain"
@@ -914,8 +914,8 @@
         "p": [
           "A credible position connects an approved product attribute to a genuine healthcare need and clear limitations."
         ],
-        "img": "/assets/img/blog/pharma-marketing-strategy/positioning-evidence-funnel.svg",
-        "alt": "Evidence-to-positioning framework from product evidence to approved message",
+        "img": "/assets/img/blog/pharma-marketing-strategy/mk-positioning.webp",
+        "alt": "Papers, a teal folder and a stethoscope drop into a glass funnel that ends in a single glowing white capsule.",
         "r": "Evidence before slogans.",
         "sub": "",
         "fit": "contain"
@@ -925,8 +925,8 @@
         "p": [
           "Review business outcomes alongside access, engagement quality, product quality and compliance."
         ],
-        "img": "/assets/img/blog/pharma-marketing-strategy/marketing-scorecard.svg",
-        "alt": "Balanced pharmaceutical marketing scorecard",
+        "img": "/assets/img/blog/pharma-marketing-strategy/mk-scorecard.webp",
+        "alt": "A glass panel with four dial gauges in teal, coral, gold and steel blue stands on a teal base, beside a stethoscope, capsule, clipboard with a ticked checklist and pen.",
         "r": "Define every KPI's source, period and denominator.",
         "sub": "",
         "fit": "contain"
@@ -935,8 +935,8 @@
     "end": {
       "h": "KEY TAKEAWAY",
       "t": "Sustainable pharmaceutical marketing connects market insight, evidence-based positioning, ethical communication, dependable access and balanced measurement.",
-      "img": "/assets/img/blog/pharma-marketing-strategy/marketing-scorecard.svg",
-      "alt": "Balanced scorecard for pharmaceutical marketing"
+      "img": "/assets/img/blog/pharma-marketing-strategy/mk-ethics.webp",
+      "alt": "A glass shield with a scales symbol stands on a bound stack of documents tied with a gold ribbon, beside a stethoscope and pen."
     }
   }
 ]
