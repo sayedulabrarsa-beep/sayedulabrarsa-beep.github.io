@@ -794,6 +794,7 @@ No. Age, kidney and liver function, body size, illness and other medicines can a
 - Drug Metabolism: How Does the Body Process Medicines?
 - Why You Must Complete an Antibiotic Course
 - Drug Distribution: How Medicines Reach Their Target
+Continue learning: How do medicines work in the body? explains how half-life fits into pharmacokinetics and how drug exposure connects with pharmacological effects.
 
 ### References and further reading
 
@@ -1425,6 +1426,7 @@ Excretion শরীর থেকে ওষুধ ও metabolite বের কর
 #### নিজে থেকে পানি বেশি খেয়ে ওষুধ বের করা কি নিরাপদ?
 
 না। অতিরিক্ত পানি ক্ষতিকর হতে পারে এবং ওষুধ দ্রুত বের করার নির্ভরযোগ্য উপায় নয়।
+আরও জানুন: মানবদেহে ওষুধ কীভাবে কাজ করে?—এখানে excretion-এর পাশাপাশি পুরো ADME প্রক্রিয়া ও ওষুধের প্রভাবের সম্পর্ক ব্যাখ্যা করা হয়েছে।
 
 ### তথ্যসূত্র ও আরও পড়ুন
 
@@ -1503,6 +1505,7 @@ No. Some medicines are eliminated mainly through the liver and bile, while other
 #### Can I drink extra water to flush out a medicine?
 
 No. Excessive water intake can be harmful and is not a reliable way to speed up drug elimination.
+Continue learning: How do medicines work in the body? places excretion in the wider ADME process and explains how drug exposure relates to response.
 
 ### References and further reading
 
@@ -2141,6 +2144,7 @@ Metabolism ওষুধের রাসায়নিক পরিবর্ত�
 #### একই ডোজে দুজন মানুষের প্রতিক্রিয়া ভিন্ন হয় কেন?
 
 জিনগত পার্থক্য, বয়স, যকৃত ও কিডনির কার্যক্ষমতা, অসুস্থতা, খাদ্যাভ্যাস, ধূমপান এবং অন্য ওষুধের কারণে মানুষ ওষুধ ভিন্নভাবে প্রক্রিয়াজাত করে। এসব বিষয় ওষুধের বিপাক, রক্তে ঘনত্ব ও চিকিৎসার ফলাফলকে প্রভাবিত করতে পারে। অ্যালকোহলও কিছু ওষুধের বিপাক বা প্রভাব বদলে দিতে পারে।
+আরও জানুন: মানবদেহে ওষুধ কীভাবে কাজ করে?—এখানে metabolism-সহ ADME এবং pharmacokinetics ও pharmacodynamics-এর সম্পর্ক তুলে ধরা হয়েছে।
 
 ### তথ্যসূত্র ও আরও পড়ুন
 
@@ -2218,6 +2222,7 @@ Yes. Liver disease can change how certain medicines are metabolised and eliminat
 #### Why do two people react differently to the same dose?
 
 People can process medicines differently because of genetic variation, age, liver and kidney function, illness, diet, smoking and other medicines. These factors can influence drug metabolism, blood concentrations and treatment response. Alcohol can also affect the metabolism or effects of certain medicines.
+Continue learning: How do medicines work in the body? connects metabolism with the full ADME process and explains pharmacokinetics versus pharmacodynamics.
 
 ### References and further reading
 
@@ -2285,6 +2290,7 @@ Distribution হলো রক্ত ও টিস্যুর মধ্যে �
 #### নিজে থেকে পানি বেশি খেয়ে ওষুধ বের করা কি নিরাপদ?
 
 না। অতিরিক্ত পানি ক্ষতিকর হতে পারে এবং ওষুধ দ্রুত বের করার নির্ভরযোগ্য উপায় নয়।
+আরও জানুন: মানবদেহে ওষুধ কীভাবে কাজ করে?—এখানে distribution-এর সঙ্গে ADME এবং ওষুধের exposure ও biological response-এর সম্পর্ক ব্যাখ্যা করা হয়েছে।
 
 ### তথ্যসূত্র ও আরও পড়ুন
 
@@ -2353,6 +2359,7 @@ No. Some medicines are eliminated mainly through the liver and bile, while other
 #### Can I drink extra water to flush out a medicine?
 
 No. Excessive water intake can be harmful and is not a reliable way to speed up drug elimination.
+Continue learning: How do medicines work in the body? explains how distribution fits into ADME and how drug exposure relates to pharmacological response.
 
 ### References and further reading
 
@@ -2740,6 +2747,8 @@ First-pass metabolism বোঝার মূল পথটি এখানে। 
 
 শিরায় (IV) দেওয়া ওষুধ সরাসরি রক্তে যায়, তাই এর bioavailability ১০০% এবং শোষণ বা first-pass metabolism-এর ধাপ নেই। ট্যাবলেটকে আগে দ্রবীভূত হতে হয়, শোষিত হতে হয় এবং যকৃৎ পার হতে হয়।
 
+আরও জানুন: মানবদেহে ওষুধ কীভাবে কাজ করে?—এখানে শোষণসহ ADME প্রক্রিয়া এবং pharmacokinetics ও pharmacodynamics-এর পার্থক্য একসঙ্গে ব্যাখ্যা করা হয়েছে।
+
 ### তথ্যসূত্র ও আরও পড়ুন
 
 - Alagga AA, Pellegrini MV, Gupta V. Drug Absorption. StatPearls (NCBI Bookshelf), updated 27 February 2024. www.ncbi.nlm.nih.gov — mechanisms of absorption, small intestine, bioavailability.
@@ -2873,6 +2882,8 @@ It is the most common way medicines cross cell membranes. Molecules move from an
 #### Why does a medicine given into a vein work differently from a tablet?
 
 An intravenous (IV) medicine goes straight into the bloodstream, so its bioavailability is 100% and there is no absorption or first-pass step. A tablet must dissolve, be absorbed and pass the liver first.
+
+Continue learning: How do medicines work in the body? connects absorption with distribution, metabolism, excretion and the difference between pharmacokinetics and pharmacodynamics.
 
 ### References and further reading
 
