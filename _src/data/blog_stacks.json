@@ -875,5 +875,68 @@
       "img": "/assets/img/blog/glucosamine/glucosamine-alzheimers-what-patients-should-do-discuss-with-doctor.webp",
       "alt": "What patients should do"
     }
+  },
+  {
+    "slug": "pharmaceutical-marketing-strategy-bangladesh",
+    "bn": "pharmaceutical-marketing-strategy-bangladesh-bangla",
+    "date": "2026-11-25",
+    "kicker": "Pharmaceutical Marketing",
+    "title": "Pharmaceutical Marketing Strategy in Bangladesh: A Practical, Ethical Framework",
+    "image": "/assets/img/blog/pharma-marketing-strategy/marketing-strategy-cover.svg",
+    "alt": "Pharmaceutical marketing strategy in Bangladesh: market insight, brand positioning and measured impact",
+    "accent": "#2f8f83",
+    "read": "12 min",
+    "slides": [
+      {
+        "h": "Start with market insight",
+        "p": [
+          "Define the category, period, market scope and evidence before choosing activities."
+        ],
+        "img": "/assets/img/blog/pharma-marketing-strategy/marketing-strategy-cover.svg",
+        "alt": "Market insight, brand positioning and measured impact in pharmaceutical marketing",
+        "r": "A strategy begins with a reliable fact base.",
+        "sub": "",
+        "fit": "contain"
+      },
+      {
+        "h": "Segment around real needs",
+        "p": [
+          "Use therapeutic context, professional information needs and practical access factors—not private personal assumptions."
+        ],
+        "img": "/assets/img/blog/pharma-marketing-strategy/segmentation-framework.svg",
+        "alt": "Three dimensions of pharmaceutical market segmentation",
+        "r": "Only use relevant, lawful and necessary information.",
+        "sub": "",
+        "fit": "contain"
+      },
+      {
+        "h": "Position with evidence",
+        "p": [
+          "A credible position connects an approved product attribute to a genuine healthcare need and clear limitations."
+        ],
+        "img": "/assets/img/blog/pharma-marketing-strategy/positioning-evidence-funnel.svg",
+        "alt": "Evidence-to-positioning framework from product evidence to approved message",
+        "r": "Evidence before slogans.",
+        "sub": "",
+        "fit": "contain"
+      },
+      {
+        "h": "Measure more than sales",
+        "p": [
+          "Review business outcomes alongside access, engagement quality, product quality and compliance."
+        ],
+        "img": "/assets/img/blog/pharma-marketing-strategy/marketing-scorecard.svg",
+        "alt": "Balanced pharmaceutical marketing scorecard",
+        "r": "Define every KPI's source, period and denominator.",
+        "sub": "",
+        "fit": "contain"
+      }
+    ],
+    "end": {
+      "h": "KEY TAKEAWAY",
+      "t": "Sustainable pharmaceutical marketing connects market insight, evidence-based positioning, ethical communication, dependable access and balanced measurement.",
+      "img": "/assets/img/blog/pharma-marketing-strategy/marketing-scorecard.svg",
+      "alt": "Balanced scorecard for pharmaceutical marketing"
+    }
   }
 ]
