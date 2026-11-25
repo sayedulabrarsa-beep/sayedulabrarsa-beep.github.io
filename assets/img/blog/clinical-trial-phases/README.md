@@ -1,10 +1,8 @@
 # Clinical trial phases visual assets
 
-- **Artwork:** clinical-trial-phases-cover.svg, clinical-trial-phases-roadmap.svg, clinical-trial-phases-questions.svg, clinical-trial-participant-safeguards.svg
-- **Creator:** Sayedul Abrar
-- **Creation date:** 25 November 2026
-- **Source:** Original vector diagrams created for this article; no stock photographs, third-party illustrations, or generated imagery used.
-- **Licence / rights:** Copyright © 2026 Sayedul Abrar. All rights reserved. Reuse requires permission from the site owner; cite SayedulAbrar.site if permission is granted.
-- **Purpose:** Explain the clinical-development sequence, the distinct research question at each phase, and participant-protection safeguards.
-- **Format:** SVG, 16:9 (1600 × 900) except the social-preview graphic (1200 × 630).
-- **Accessibility:** Every SVG includes a title and description; the HTML page supplies descriptive alt text and captions.
+- **Pictures (ct-*.webp, ct-social-*.jpg, ct-card*.webp):** AI-generated text-free illustrations supplied by the site owner on 25 November 2026. Titles, labels and layout were added in code by Sayedul Abrar (source: `_src/ct_images/make_ct.py`, `apply_ct.py`, `seo_ct.py`).
+- **Diagram:** clinical-trial-phases-roadmap.svg is an original vector diagram.
+- **Creator / rights:** Copyright © 2026 Sayedul Abrar. All rights reserved. Reuse requires permission from the site owner.
+- **Purpose:** Explain the clinical-development sequence, the research question at each phase, and participant-protection safeguards. The pictures are illustrative, not photographs of real trials.
+- **Format:** WebP 1600 × 900 for article pictures, JPG 1200 × 630 for social previews; `-bn` files carry Bangla titles.
+- **Accessibility:** The HTML page supplies descriptive alt text, captions and written legends.
