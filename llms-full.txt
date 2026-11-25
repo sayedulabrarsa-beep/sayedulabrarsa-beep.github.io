@@ -3495,6 +3495,18 @@ BIDA-এর সেক্টর প্রোফাইল অনুযায়ী
 - GMP, QA, QC, Regulatory Affairs ও Pharmacovigilance ওষুধের মান ও নিরাপত্তার ভিন্ন ভিন্ন দিক রক্ষা করে।
 - উৎপাদনের পর সঠিক সংরক্ষণ ও বিতরণও ওষুধের মান বজায় রাখার জন্য অপরিহার্য।
 
+### উৎপাদন ও মানব্যবস্থার বিষয়গুলো আরও জানুন
+
+ওষুধশিল্প শুধু প্রস্তুত পণ্য নিয়ে নয়। উৎপাদন ও মানব্যবস্থার গুরুত্বপূর্ণ বিষয়গুলো জানতে পড়ুন:
+
+- Active Pharmaceutical Ingredient (API)
+
+- Good Manufacturing Practices (GMP)
+
+- Quality Assurance vs Quality Control
+
+- ওষুধের স্থিতিশীলতা পরীক্ষা ও মেয়াদ
+
 ### তথ্যসূত্র ও আরও পড়ুন
 
 - U.S. Food and Drug Administration (FDA). The Drug Development Process — আবিষ্কার, প্রি-ক্লিনিক্যাল গবেষণা, ক্লিনিক্যাল গবেষণা, রেগুলেটরি রিভিউ ও বাজার-পরবর্তী পর্যবেক্ষণ।
@@ -3760,6 +3772,18 @@ A medicine sold under a company-selected brand name whose active ingredient is a
 - Innovator, generic, API, biotechnology, CRO and CDMO organisations play different roles, and their activities can overlap.
 - GMP, QA, QC, regulatory affairs and pharmacovigilance protect different parts of medicine quality and safety.
 - Distribution and storage are also essential to preserving product quality.
+
+### Explore manufacturing and quality topics
+
+The pharmaceutical industry depends on more than the finished product. These guides explain key parts of the manufacturing and quality system:
+
+- Active pharmaceutical ingredients (APIs)
+
+- Good Manufacturing Practices (GMP)
+
+- Quality Assurance vs Quality Control
+
+- Medicine stability testing and shelf life
 
 ### References and further reading
 
