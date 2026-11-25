@@ -26,6 +26,19 @@
   "img": "/assets/img/blog/clinical-trial-phases/ct-card.webp"
  },
  {
+  "slug": "bioavailability-explained",
+  "date": "2026-11-25",
+  "tag_en": "Pharma Blog",
+  "tag_bn": "ফার্মা ব্লগ",
+  "title_en": "Bioavailability: How Much Medicine Reaches the Bloodstream?",
+  "title_bn": "ওষুধের কতটুকু রক্তে পৌঁছায়? বায়োঅ্যাভেইলেবিলিটি সহজ ভাষায়",
+  "desc_en": "Bioavailability meaning in simple words: why IV is 100%, what lowers it by mouth, how AUC…",
+  "desc_bn": "বায়োঅ্যাভেইলেবিলিটি সহজ ভাষায়: কেন IV-তে ১০০%, মুখে খেলে কী কারণে কমে, AUC দিয়ে কীভাবে মাপা…",
+  "url_en": "/blog/bioavailability-explained/",
+  "url_bn": "/blog/bioavailability-explained-bangla/",
+  "img": "/assets/img/blog/bioavailability/bioavailability-social-en.jpg"
+ },
+ {
   "slug": "ppi-acid-medicine-market-bangladesh",
   "date": "2026-11-24",
   "tag_en": "Pharmaceutical industry",
