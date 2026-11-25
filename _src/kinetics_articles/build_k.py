@@ -7,6 +7,7 @@ H = pathlib.Path(__file__).resolve().parent
 ROOT = H.parent.parent
 sys.path.insert(0, str(H))
 A = importlib.import_module(sys.argv[1])
+IMGV = getattr(A, "IMGV", "1")  # cache token for article pictures; bump it when a picture is replaced under the same name
 SITE = "https://sayedulabrar.site"
 E = lambda s: html.escape(s, quote=True)
 BND = str.maketrans("0123456789", "০১২৩৪৫৬৭৮৯")
@@ -74,7 +75,7 @@ def build(lang):
     body = (f'<main id="main"><section class="page-head"><div class="wrap"><p class="eyebrow">{d["eyebrow"]}</p><h1>{E(d["h1"])}</h1><p>{d["lead"]}</p></div></section>'
             f'<section class="wrap"><article class="article-content"><nav class="lang-switch" aria-label="Language">'
             f'<a{" class=\"active\"" if not bn else ""} href="/blog/{A.SLUG}/" lang="en">English</a><a{" class=\"active\"" if bn else ""} href="/blog/{A.SLUG}-bangla/" lang="bn">বাংলা</a></nav>'
-            f'<figure class="hero-visual"><a href="{img(A.COVER)}?v=1" target="_blank" rel="noopener"><img src="{img(A.COVER)}?v=1" alt="{E(d["cover_alt"])}" width="1600" height="900" fetchpriority="high" decoding="async"></a><figcaption class="caption">{d["cover_caption"]}</figcaption></figure>'
+            f'<figure class="hero-visual"><a href="{img(A.COVER)}?v={IMGV}" target="_blank" rel="noopener"><img src="{img(A.COVER)}?v={IMGV}" alt="{E(d["cover_alt"])}" width="1600" height="900" fetchpriority="high" decoding="async"></a><figcaption class="caption">{d["cover_caption"]}</figcaption></figure>'
             f'<p class="byline-seo">{"লিখেছেন" if bn else "By"} <a href="/about/" rel="author">{"সাইয়্যেদুল আবরার" if bn else "Sayedul Abrar"}</a>, {"ফার্মাসিস্ট" if bn else "pharmacist"} · <time datetime="{A.DATE}">{datestr}</time></p>'
             f'<div class="quick"><strong>{"সহজভাবে:" if bn else "In simple terms:"}</strong> {d["quick"]}</div>')
     toc = "".join(f'<li><a href="#s{i+1}">{s["h2"]}</a></li>' for i, s in enumerate(d["sections"])) + f'<li><a href="#faq">{"সাধারণ প্রশ্ন" if bn else "Frequently asked questions"}</a></li>'
@@ -84,7 +85,7 @@ def build(lang):
         body += f'<h2 id="{s.get("id") or "s" + str(si + 1)}">{s["h2"]}</h2>{s["html"]}'
         for f in sfigs(s):
             n += 1
-            body += (f'<figure class="article-figure"><a href="{img(f[0])}?v=1" target="_blank" rel="noopener"><img src="{img(f[0])}?v=1" alt="{E(f[1])}" width="1600" height="900" loading="lazy" decoding="async"></a>'
+            body += (f'<figure class="article-figure"><a href="{img(f[0])}?v={IMGV}" target="_blank" rel="noopener"><img src="{img(f[0])}?v={IMGV}" alt="{E(f[1])}" width="1600" height="900" loading="lazy" decoding="async"></a>'
                      f'<figcaption>{"চিত্র" if bn else "Figure"} {str(n).translate(BND) if bn else n} · {f[2]}</figcaption></figure>')
         if s.get("after"):
             body += s["after"]

@@ -147,3 +147,29 @@ CFG.update({
    extra=EB(lambda b: L(1110, 760, ("Wait for the next dose time", "পরের ডোজের সময় পর্যন্ত অপেক্ষা")[b], "ps", 26))),
 })
 NAMES.update({"curvephoto": "onset-of-action-time-to-effect-stopwatch-tablet", "doublephoto": "do-not-double-a-dose-tablets-alarm-clock"})
+
+# ---- 25 Nov: the user's second picture set (9 pictures). Labels re-placed for the new compositions; two new figures. ----
+CFG["window"].update(
+  extra=EB(lambda b: L(1010, 770, ("Inside the window: effective and safe", "উইন্ডোর ভেতরে: কার্যকর ও নিরাপদ")[b], "ps", 26)))
+CFG["routes"].update(
+  title=("Different routes, <i>different speeds</i>", "ভিন্ন পথ, <i>ভিন্ন গতি</i>"),
+  sub=("Into a vein is fastest; tablets, liquids and other forms act at their own pace.", "শিরায় দিলে সবচেয়ে দ্রুত; ট্যাবলেট, তরল ও অন্য রূপ নিজের গতিতে কাজ করে।"),
+  extra=EB(lambda b: L(1096, 40, ("IV drip: fastest", "IV ড্রিপ: সবচেয়ে দ্রুত")[b], "pt", 26) + L(830, 190, ("Syrup", "সিরাপ")[b], "pw", 25)
+                   + L(740, 765, ("Tablet", "ট্যাবলেট")[b], "pw", 25) + L(985, 745, ("Capsule", "ক্যাপসুল")[b], "pw", 25)
+                   + L(1480, 215, ("Inhaler", "ইনহেলার")[b], "pw", 25)))
+CFG["weeks"].update(
+  extra=EB(lambda b: L(1010, 790, ("Same time, every day", "প্রতিদিন একই সময়ে")[b], "ps", 27)))
+CFG["curvephoto"].update(
+  extra=EB(lambda b: L(1195, 40, ("Onset → peak → duration", "শুরু → সর্বোচ্চ → স্থায়িত্ব")[b], "pt", 26) + L(1177, 762, ("Dose taken", "ডোজ নেওয়া হলো")[b], "pw", 26)))
+CFG["doublephoto"].update(
+  extra=EB(lambda b: L(1000, 40, ("Wait for the next dose time", "পরের ডোজের সময় পর্যন্ত অপেক্ষা")[b], "ps", 26)))
+CFG["form"] = dict(kind="photo", bg="on-stomach", a=16, pw=480, ts=(56, 56), src=("MSD Manual; StatPearls", "MSD Manual; StatPearls"),
+   kick=("Form matters", "ওষুধের রূপ"),
+   title=("The form changes <i>the timing</i>", "রূপ বদলালে <i>সময়ও</i> বদলায়"),
+   sub=("A tablet and a capsule release their medicine in different ways.", "ট্যাবলেট ও ক্যাপসুল ভিন্নভাবে ওষুধ ছাড়ে।"),
+   extra=EB(lambda b: L(985, 745, ("Tablet", "ট্যাবলেট")[b], "pw", 26) + L(1470, 690, ("Capsule", "ক্যাপসুল")[b], "pw", 26)))
+CFG["safety"] = dict(kind="photo", bg="on-shield", a=16, pw=480, ts=(56, 56), src=("StatPearls; NHS SPS", "StatPearls; NHS SPS"),
+   kick=("Safety first", "আগে নিরাপত্তা"),
+   title=("Stay inside <i>the safe range</i>", "থাকুন <i>নিরাপদ সীমার</i> ভেতরে"),
+   sub=("Take a medicine exactly as directed; ask before changing dose or timing.", "নির্দেশমতো ওষুধ খান; ডোজ বা সময় বদলানোর আগে জিজ্ঞেস করুন।"))
+NAMES.update({"form": "tablet-and-capsule-form-changes-drug-timing", "safety": "medicine-safety-stay-inside-safe-range"})

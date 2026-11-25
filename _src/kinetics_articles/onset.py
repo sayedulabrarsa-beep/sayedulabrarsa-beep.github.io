@@ -134,3 +134,42 @@ def _layer2(d, F):
 _layer2(EN, EN_FIG); _layer2(BN, BN_FIG)
 EN.update(cover_alt="Onset, peak and duration explained: a white capsule with a glowing light trail beside a wall clock and a glass of water, and the title When a medicine starts and stops.")
 BN.update(cover_alt="অনসেট, পিক ও ডিউরেশন: দেয়ালঘড়ি ও পানির গ্লাসের পাশে আলোর রেখাসহ সাদা ক্যাপসুল, শিরোনাম ‘ওষুধ কখন কাজ শুরু করে, কখন থামে’।")
+
+# ---- 25 Nov: the user's second picture set (9 pictures): new compositions, new alt text, two new figures (form, safety) ----
+def _alt(F, key, alt, cap=None):
+    n, _a, c = F[key]; F[key] = (n, alt, cap or c)
+EN_FIG.update({"form": ("tablet-and-capsule-form-changes-drug-timing", "", ""), "safety": ("medicine-safety-stay-inside-safe-range", "", "")})
+BN_FIG.update({"form": ("tablet-and-capsule-form-changes-drug-timing", "", ""), "safety": ("medicine-safety-stay-inside-safe-range", "", "")})
+for key, alt, cap in [
+ ("curvephoto", "A silver stopwatch with a blank dial beside a glass of water and a white tablet on a linen cloth, with a glowing arc of light above and the labels Dose taken and Onset → peak → duration, showing that the onset of action is timed from the dose.", None),
+ ("window", "A white capsule floating between two glowing golden lines inside a translucent stomach outline, labelled Inside the window: effective and safe, illustrating the therapeutic window between a drug level that is too low and one that is too high.", None),
+ ("safety", "A glowing glass shield behind a cut-away stomach with a blister pack and tablets in front, under the title Stay inside the safe range, a reminder to take medicines as directed and to ask before changing a dose or its timing.", "Take a medicine as directed and ask before changing the dose or timing."),
+ ("routes", "Forms of medicine on a stone tray: an IV drip bag, syrup, a tablet, a capsule, a nasal spray, an inhaler and cream, labelled IV drip: fastest, Syrup, Tablet, Capsule and Inhaler, showing that the route and form of a medicine change its onset and duration of action.", "An IV drip acts fastest; tablets, capsules, syrups and other forms act at their own pace."),
+ ("form", "A cut-away stomach with a white tablet and an open capsule spilling small granules on a stone plate, labelled Tablet and Capsule, showing that the dosage form changes how a medicine is released and how fast it acts.", "Tablet and capsule: the dosage form changes the timing of drug release."),
+ ("weeks", "A desk calendar with a highlighted row and a glowing arrow beside a glass of water, two tablets and a capsule, labelled Same time, every day, showing that some medicines need weeks of regular use for their full effect.", None),
+ ("doublephoto", "A hand holding two white tablets beside a glass of water and an alarm clock with a blank face, labelled Wait for the next dose time, warning not to double a dose when a medicine seems slow.", None),
+ ("takeaways", "Onset, peak and duration key takeaways beside a glass hourglass with teal sand and a white capsule: onset, peak, duration, route and form change timing, and do not double a dose.", None)]:
+    _alt(EN_FIG, key, alt, cap)
+for key, alt, cap in [
+ ("curvephoto", "পানির গ্লাস ও সাদা ট্যাবলেটের পাশে ফাঁকা ডায়ালের স্টপওয়াচ, ওপরে আলোর বাঁকা রেখা; লেখা ‘ডোজ নেওয়া হলো’ ও ‘শুরু → সর্বোচ্চ → স্থায়িত্ব’—ওষুধের কাজ শুরুর সময় ডোজ নেওয়ার মুহূর্ত থেকে মাপা হয়।", None),
+ ("window", "দুটি আলোকিত সোনালি রেখার মাঝখানে ভাসমান সাদা ক্যাপসুল; লেখা ‘উইন্ডোর ভেতরে: কার্যকর ও নিরাপদ’—খুব কম ও খুব বেশি মাত্রার মাঝের থেরাপিউটিক উইন্ডো বোঝাচ্ছে।", None),
+ ("safety", "কাটা পাশ দেখানো পাকস্থলীর পেছনে আলোকিত কাচের ঢাল, সামনে ব্লিস্টার প্যাক ও ট্যাবলেট; শিরোনাম ‘থাকুন নিরাপদ সীমার ভেতরে’—নির্দেশমতো ওষুধ খাওয়া এবং ডোজ বা সময় বদলানোর আগে জিজ্ঞেস করার স্মারক।", "নির্দেশমতো ওষুধ খান; ডোজ বা সময় বদলানোর আগে জিজ্ঞেস করুন।"),
+ ("routes", "পাথরের ট্রেতে ওষুধের বিভিন্ন রূপ: IV ড্রিপের ব্যাগ, সিরাপ, ট্যাবলেট, ক্যাপসুল, নাকের স্প্রে, ইনহেলার ও ক্রিম; লেখা ‘IV ড্রিপ: সবচেয়ে দ্রুত’, ‘সিরাপ’, ‘ট্যাবলেট’, ‘ক্যাপসুল’, ‘ইনহেলার’—পথ ও রূপ বদলালে কাজ শুরু ও স্থায়িত্ব বদলায়।", "IV ড্রিপে সবচেয়ে দ্রুত; ট্যাবলেট, ক্যাপসুল, সিরাপ ও অন্য রূপ নিজের গতিতে কাজ করে।"),
+ ("form", "কাটা পাশ দেখানো পাকস্থলীর সামনে পাথরের প্লেটে একটি সাদা ট্যাবলেট ও খোলা ক্যাপসুল থেকে ছড়িয়ে পড়া ছোট দানা; লেখা ‘ট্যাবলেট’ ও ‘ক্যাপসুল’—ডোজেজ ফর্ম বদলালে ওষুধ ছাড়ার ধরন ও গতি বদলায়।", "ট্যাবলেট ও ক্যাপসুল: ওষুধের রূপ বদলালে সময়ও বদলায়।"),
+ ("weeks", "পানির গ্লাস, দুটি ট্যাবলেট ও একটি ক্যাপসুলের পাশে ডেস্ক ক্যালেন্ডারে একটি সারি চিহ্নিত ও আলোকিত তীর; লেখা ‘প্রতিদিন একই সময়ে’—কিছু ওষুধের পুরো প্রভাবে কয়েক সপ্তাহ নিয়মিত খেতে হয়।", None),
+ ("doublephoto", "পানির গ্লাস ও ফাঁকা মুখের অ্যালার্ম ঘড়ির পাশে হাতে দুটি সাদা ট্যাবলেট; লেখা ‘পরের ডোজের সময় পর্যন্ত অপেক্ষা’—ওষুধ ধীরে কাজ করলেও ডোজ দ্বিগুণ না করার সতর্কতা।", None),
+ ("takeaways", "বালুঘড়ি ও সাদা ক্যাপসুলের পাশে ওষুধের সময়ের পাঁচটি মূল কথা: শুরু, সর্বোচ্চ, স্থায়িত্ব, পথ ও রূপ সময় বদলায়, এবং দ্বিগুণ ডোজ নয়।", None)]:
+    _alt(BN_FIG, key, alt, cap)
+def _layer3(d, F):
+    s = d["sections"]
+    chart = lambda sec, name: next(f for f in s[sec]["figs"] if f[0] == name)
+    c1 = chart(1, "onset-peak-duration-therapeutic-window-curve"); c3 = chart(3, "onset-iv-tablet-slow-release-comparison"); c4 = chart(4, "why-not-double-a-dose-curve")
+    s[1]["figs"] = [F["curvephoto"], c1]
+    s[2]["figs"] = [F["window"], F["safety"]]
+    s[3]["figs"] = [F["routes"], F["form"], c3, F["weeks"]]
+    s[4]["figs"] = [F["doublephoto"], c4]
+    s[5]["figs"] = [F["takeaways"]]
+_layer3(EN, EN_FIG); _layer3(BN, BN_FIG)
+EN.update(cover_alt="Onset, peak and duration of drug action: a white capsule beside a clock with a blank dial and a glowing curve that rises and falls, with the title When a medicine starts and stops.")
+BN.update(cover_alt="অনসেট, পিক ও ডিউরেশন: ফাঁকা ডায়ালের ঘড়ির পাশে সাদা ক্যাপসুল, পেছনে ওঠা-নামা করা আলোর রেখা; শিরোনাম ‘ওষুধ কখন কাজ শুরু করে, কখন থামে’।")
+IMGV = "20261125"
