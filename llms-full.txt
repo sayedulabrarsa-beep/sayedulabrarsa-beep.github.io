@@ -171,6 +171,332 @@ Get in touch ↗Find me on LinkedIn
 
 ## Pharma Blog articles (newest first)
 
+### ক্লিনিক্যাল ট্রায়ালের ধাপগুলো: মানুষের ওপর প্রথম পরীক্ষা থেকে বাজার-পরবর্তী পর্যবেক্ষণ
+URL: https://sayedulabrar.site/blog/clinical-trial-phases-explained-bangla/ · Language: Bangla · Published: 2026-11-25T10:00:00+06:00 · Author: Sayedul Abrar, pharmacist
+Summary: ক্লিনিক্যাল ট্রায়ালের Phase I, II, III ও IV কীভাবে কাজ করে? নিরাপত্তা, কার্যকারিতা, অংশগ্রহণকারীর অধিকার এবং বাংলাদেশের DGDA-এর GCP নির্দেশনা সহজ ভাষায় জানুন।
+
+By Sayedul Abrar, pharmacist · প্রকাশিত ২৫ নভেম্বর ২০২৬
+
+সহজ উত্তর: ক্লিনিক্যাল ট্রায়ালকে কয়েকটি ধাপে ভাগ করা হয়, কারণ গবেষকদের একসঙ্গে সব প্রশ্নের উত্তর খোঁজা যায় না। Phase I-এ প্রধানত নিরাপত্তা ও ডোজ দেখা হয়; Phase II-তে রোগীদের মধ্যে প্রাথমিক কার্যকারিতার সংকেত খোঁজা হয়; Phase III-তে বড় পরিসরে ফল নিশ্চিত করা হয়; আর Phase IV-এর গবেষণা বাজারজাতকরণের অনুমোদনের পরে হয়। এই ধাপগুলো গবেষণাকে পথ দেখায়—অনুমোদন নিশ্চিত করে না, কিংবা ওষুধকে ঝুঁকিমুক্ত প্রমাণ করে না।
+
+### ১. ক্লিনিক্যাল ট্রায়াল ও phase বলতে কী বোঝায়?
+
+ক্লিনিক্যাল ট্রায়াল হলো মানুষের ওপর পরিচালিত পরিকল্পিত গবেষণা। নতুন কোনো ওষুধের ক্ষেত্রে গবেষকেরা জানতে চান, পরীক্ষামূলক ওষুধটি মানবদেহে কীভাবে কাজ করে, শরীর ওষুধটিকে কীভাবে প্রক্রিয়াজাত করে, কোন ডোজ উপযুক্ত হতে পারে এবং কী ধরনের অনাকাঙ্ক্ষিত প্রভাব দেখা দিতে পারে।
+
+Phase বলতে গবেষণার প্রধান লক্ষ্য বা প্রশ্নকে বোঝায়। এটি গবেষণার নকশা (study design)-এর নাম নয়। যেমন randomized, double-blind, placebo-controlled বা parallel-group হলো bias কমানো বা চিকিৎসা তুলনা করার পদ্ধতি; এগুলো আলাদা clinical phase নয়।
+
+এই লেখায় মূলত ওষুধের interventional clinical trial নিয়ে আলোচনা করা হয়েছে। Observational study-তে গবেষকেরা কাউকে নির্দিষ্ট চিকিৎসা দেওয়ার জন্য বরাদ্দ করেন না; বরং স্বাভাবিক চিকিৎসা বা বিদ্যমান exposure পর্যবেক্ষণ করেন। দুই ধরনের গবেষণাই গুরুত্বপূর্ণ, তবে Phase I–IV কাঠামোটি মূলত ওষুধের উন্নয়ন কর্মসূচিতে ব্যবহৃত হয়।
+
+প্রতিটি phase-এর জন্য নির্দিষ্ট কোনো সর্বজনীন অংশগ্রহণকারী সংখ্যা নেই। রোগের ধরন, প্রত্যাশিত প্রভাব, মাপার outcome, গবেষণার নকশা, পরিসংখ্যানগত পরিকল্পনা এবং নিরাপত্তার বিষয় বিবেচনা করে sample size নির্ধারণ করা হয়।
+
+### ২. Phase I-এর আগে: preclinical গবেষণা ও প্রস্তুতি
+
+মানুষের ওপর প্রথম পরীক্ষা শুরু করার আগে গবেষকেরা ল্যাবরেটরি এবং উপযুক্ত non-clinical পরীক্ষার মাধ্যমে প্রাথমিক প্রমাণ সংগ্রহ করেন। এর মধ্যে pharmacology, toxicology, ডোজ-সম্পর্কিত প্রভাব, safety pharmacology এবং ওষুধ কীভাবে তৈরি ও নিয়ন্ত্রণ করা হবে—এসব তথ্য থাকতে পারে।
+
+এই পরীক্ষা মানুষের প্রতিটি প্রতিক্রিয়া আগে থেকে বলে দিতে পারে না। এগুলোর উদ্দেশ্য হলো, সতর্কভাবে নিয়ন্ত্রিত মানব-গবেষণা শুরু করার মতো বৈজ্ঞানিক ভিত্তি আছে কি না এবং কী কী সতর্কতা দরকার তা বোঝা। এরপর একটি clinical protocol তৈরি হয়। এতে গবেষণার প্রশ্ন, কারা অংশ নিতে পারবেন, ডোজ, পরীক্ষা-নিরীক্ষা, পর্যবেক্ষণ, outcome, data analysis এবং কখন গবেষণা থামাতে বা পরিবর্তন করতে হবে—এসব লেখা থাকে।
+
+নিয়ন্ত্রক অনুমোদনের পদ্ধতি দেশভেদে আলাদা। যেমন যুক্তরাষ্ট্রে FDA-এর Investigational New Drug (IND) ব্যবস্থা আছে; এটি যুক্তরাষ্ট্রের পদ্ধতি, সব দেশের জন্য একই ফর্ম নয়। বাংলাদেশে ওষুধের ক্লিনিক্যাল ট্রায়ালের জন্য DGDA-এর জাতীয় GCP নির্দেশিকা স্থানীয় তদারকির কাঠামো নির্ধারণ করে।
+
+### ৩. Phase I: মানুষের ওপর প্রথম পরীক্ষা
+
+Phase I সাধারণত মানুষের শরীরে পরীক্ষামূলক ওষুধের প্রথম, সতর্কভাবে পর্যবেক্ষণ করা ব্যবহার। এখানে প্রধান প্রশ্ন হলো: মানবদেহ ওষুধটিকে কীভাবে প্রক্রিয়াজাত করে? কোন ডোজ সহনীয়? ডোজ বাড়লে কী ধরনের স্বল্পমেয়াদি প্রভাব দেখা দেয়?
+
+গবেষকেরা pharmacokinetics (PK)—শরীর ওষুধের সঙ্গে কী করে—এবং pharmacodynamics (PD)—ওষুধ শরীরের ওপর কী প্রভাব ফেলে—এসব পরীক্ষা করতে পারেন। ওষুধের শোষণ, রক্তে ঘনত্ব, metabolism, elimination, biological effect এবং ডোজ-সম্পর্কিত adverse event দেখা হতে পারে।
+
+অনেক Phase I গবেষণায় সুস্থ স্বেচ্ছাসেবী অংশ নেন। তবে সব ওষুধের ক্ষেত্রে এটি নিয়ম নয়। সম্ভাব্য ঝুঁকি বা রোগের ধরন অনুযায়ী সুস্থ মানুষের ওপর পরীক্ষা উপযুক্ত না হলে রোগীদের অন্তর্ভুক্ত করা হতে পারে। উদাহরণ হিসেবে, কিছু প্রাথমিক ক্যানসার-ওষুধের গবেষণা সংশ্লিষ্ট রোগে আক্রান্ত মানুষের ওপর করা হয়।
+
+Phase I মানে ওষুধটি নিরাপদ—এমন নিশ্চয়তা নয়। বরং বড় পরিসরে পরীক্ষা করার আগে ঝুঁকি চিহ্নিত ও বোঝার জন্য এটি ঘনিষ্ঠ পর্যবেক্ষণের একটি ধাপ। ফল গ্রহণযোগ্য না হলে গবেষণা কর্মসূচি পরিবর্তন, স্থগিত বা বন্ধ হতে পারে।
+
+### ৪. Phase II: রোগীদের মধ্যে প্রাথমিক প্রমাণ
+
+Phase II-তে সাধারণত সেই রোগ বা অবস্থায় আক্রান্ত ব্যক্তিদের অন্তর্ভুক্ত করা হয়, যাদের চিকিৎসার জন্য ওষুধটি তৈরি হচ্ছে। এখানে ওষুধের প্রাথমিক therapeutic activity-এর সংকেত খোঁজা হয় এবং একই সঙ্গে নিরাপত্তা পর্যবেক্ষণ চলতে থাকে। গবেষকেরা বিভিন্ন ডোজ, সময়সূচি বা formulation তুলনা করতে পারেন এবং dose–response সম্পর্ক বোঝার চেষ্টা করেন।
+
+এই গবেষণা Phase III-এর তুলনায় সাধারণত ছোট হয়। Phase II-এর ফল থেকে বোঝা যেতে পারে, বড় confirmatory trial করার মতো প্রমাণ আছে কি না, কোন outcome সবচেয়ে গুরুত্বপূর্ণ এবং পরবর্তী গবেষণার নকশা কেমন হওয়া উচিত।
+
+Phase II-তে ভালো ফল পাওয়া মানেই চূড়ান্ত প্রমাণ নয়। ছোট গবেষণায় ফলের অনিশ্চয়তা থাকতে পারে; বড় গবেষণায় প্রাথমিক সংকেত আর নাও দেখা যেতে পারে। কোনো ওষুধ একটি outcome বা নির্দিষ্ট subgroup-এ প্রভাব দেখালেও সামগ্রিকভাবে তা গুরুত্বপূর্ণ উপকার নাও দিতে পারে।
+
+### ৫. Phase III: বড় পরিসরে ফল নিশ্চিত করা
+
+Phase III-তে সাধারণত আরও বড় এবং বৈচিত্র্যময় অংশগ্রহণকারী দল নেওয়া হয়। উদ্দেশ্য হলো ওষুধের উপকার নিশ্চিত করা, ঝুঁকি আরও ভালোভাবে বোঝা এবং উপযুক্ত control—যেমন standard treatment বা নৈতিকভাবে গ্রহণযোগ্য হলে placebo—এর সঙ্গে সামগ্রিক benefit–risk তুলনা করা।
+
+গবেষণার প্রশ্ন অনুযায়ী trial randomized ও blinded হতে পারে। একাধিক গবেষণা কেন্দ্রে এটি পরিচালিত হতে পারে এবং প্রাথমিক গবেষণার তুলনায় অংশগ্রহণকারীদের দীর্ঘ সময় অনুসরণ করা হতে পারে। এতে ওষুধের ফল কতটা ধারাবাহিক এবং ছোট গবেষণায় ধরা না-পড়া adverse effect আছে কি না—তা বোঝার গুরুত্বপূর্ণ প্রমাণ পাওয়া যায়।
+
+তবে বড় Phase III কর্মসূচিও প্রতিটি বিরল বা দীর্ঘমেয়াদি সমস্যা শনাক্ত করতে পারে না। পুরো জনগোষ্ঠীতে বহু বছর ধরে ওষুধ ব্যবহারের তুলনায় অংশগ্রহণকারী ও পর্যবেক্ষণের সময় এখনও সীমিত। এ কারণেই অনুমোদনের পরও নিরাপত্তা পর্যবেক্ষণ চলতে থাকে।
+
+### ৬. Regulatory review আলাদা সিদ্ধান্ত
+
+প্রয়োজনীয় গবেষণার তথ্য জমা দেওয়ার পর সংশ্লিষ্ট নিয়ন্ত্রক সংস্থা পুরো আবেদন পর্যালোচনা করে। এই পর্যালোচনা শুধু phase-এর নাম দেখে হয় না। ওষুধের গুণমান ও ধারাবাহিকতা, উৎপাদন নিয়ন্ত্রণ, non-clinical ফল, clinical ফলাফল, প্রস্তাবিত ব্যবহার, label এবং সম্ভাব্য উপকারের সঙ্গে জানা বা সম্ভাব্য ঝুঁকির ভারসাম্য বিবেচনা করা হয়।
+
+নিয়ন্ত্রক সংস্থা নির্দিষ্ট ব্যবহারের জন্য অনুমোদন দিতে পারে, অতিরিক্ত তথ্য চাইতে পারে, আরও গবেষণা বাধ্যতামূলক করতে পারে, ব্যবহার সীমিত করতে পারে বা আবেদন নাকচ করতে পারে। Phase III-এর ইতিবাচক ফল গুরুত্বপূর্ণ প্রমাণ, কিন্তু তা সব দেশে বা সব indication-এর জন্য স্বয়ংক্রিয় অনুমোদন নয়।
+
+### ৭. Phase IV: বাজারজাতকরণের অনুমোদনের পর
+
+ওষুধ marketing authorisation পাওয়ার পর Phase IV গবেষণা করা হয়। এতে দীর্ঘমেয়াদি নিরাপত্তা, আরও বিস্তৃত জনগোষ্ঠীতে কার্যকারিতা, নিয়মিত ব্যবহারের ফল, নতুন formulation, ভিন্ন treatment strategy বা নতুন indication পরীক্ষা করা হতে পারে।
+
+Phase IV-এর সঙ্গে pharmacovigilance-এর সম্পর্ক আছে, তবে দুটো একই নয়। Phase IV হলো পরিকল্পিত গবেষণা। Pharmacovigilance হলো ওষুধ-সম্পর্কিত সমস্যা শনাক্ত, মূল্যায়ন, বোঝা ও প্রতিরোধের আরও বিস্তৃত চলমান ব্যবস্থা। এতে spontaneous report, প্রকাশিত গবেষণা, safety database এবং নিয়মিত ব্যবহারের অন্যান্য তথ্য কাজে লাগে। আলাদা করে পড়ুন বাজারজাতকরণের পর ওষুধের নিরাপত্তা কীভাবে পর্যবেক্ষণ করা হয়।
+
+অর্থাৎ অনুমোদন হলো নির্দিষ্ট ব্যবহারের জন্য একটি regulatory decision—ওষুধ সম্পর্কে শেখার শেষ ধাপ নয়।
+
+### ৮. Phase 0 কী? Phase-গুলোর মধ্যে কি ওভারল্যাপ হয়?
+
+কিছু উন্নয়ন কর্মসূচিতে প্রচলিত dose-escalation গবেষণার আগে ঐচ্ছিক Phase 0 বা exploratory study করা হয়। এতে মানুষের শরীরে খুব সীমিত exposure দেওয়া হয়; কখনও microdose ব্যবহার করা হয়। এর উদ্দেশ্য চিকিৎসা দেওয়া বা therapeutic benefit প্রমাণ করা নয়। সব ওষুধের উন্নয়নে Phase 0 লাগে না।
+
+Phase I, II ও III কার্যকর শ্রেণিবিভাগ, কিন্তু এগুলো কঠোরভাবে আলাদা বাক্স নয়। বাংলাদেশ DGDA-এর GCP নির্দেশিকাতেও বলা হয়েছে, phase-গুলোর মধ্যে স্পষ্ট সীমারেখা সব সময় টানা যায় না। কোনো কর্মসূচিতে Phase I/II বা Phase II/III একত্রে নকশা করা হতে পারে; নতুন তথ্য অনুযায়ী গবেষণার পরিকল্পনাও বদলাতে পারে। তবু অংশগ্রহণকারীর সুরক্ষা এবং পরিষ্কার বৈজ্ঞানিক প্রশ্ন বজায় রাখতে হয়।
+
+### ৯. ক্লিনিক্যাল ট্রায়ালে অংশগ্রহণকারী কীভাবে সুরক্ষিত থাকেন?
+
+অংশগ্রহণকারীর সুরক্ষা শুধু গবেষণা শেষে পূরণ করা একটি checklist নয়। Protocol, গবেষণা কেন্দ্র, monitoring plan এবং অংশগ্রহণকারীর সঙ্গে প্রতিটি যোগাযোগে এটি থাকতে হয়। গুরুত্বপূর্ণ সুরক্ষাগুলো হলো:
+
+- স্বাধীন ethics review: Institutional Review Board বা Independent Ethics Committee protocol, consent form এবং অংশগ্রহণকারীর জন্য তৈরি তথ্য পর্যালোচনা করে।
+
+- Informed consent: সিদ্ধান্ত নেওয়ার আগে উদ্দেশ্য, পদ্ধতি, পরীক্ষামূলক অংশ, সম্ভাব্য ঝুঁকি, সম্ভাব্য উপকার, বিকল্প ও খরচ সহজ ভাষায় বুঝিয়ে দিতে হয়।
+
+- স্বেচ্ছায় অংশগ্রহণ: কেউ অংশ নিতে অস্বীকার করতে পারেন বা যেকোনো সময় সরে যেতে পারেন—এতে শাস্তি বা প্রাপ্য সুবিধা হারানোর কথা নয়।
+
+- নিরাপত্তা পর্যবেক্ষণ: adverse event, serious event, protocol deviation এবং নতুন তথ্য নির্ধারিত পদ্ধতিতে মূল্যায়ন ও রিপোর্ট করা হয়।
+
+- গোপনীয়তা ও নির্ভরযোগ্য তথ্য: অংশগ্রহণকারীর পরিচয় সুরক্ষিত রাখা এবং সঠিক রেকর্ড সংরক্ষণ জরুরি।
+
+গবেষণায় অংশ নিলেই ব্যক্তিগত চিকিৎসাগত উপকার হবে—এমন নিশ্চয়তা নেই। গবেষণার ওষুধ কাজ নাও করতে পারে, ক্ষতি করতে পারে, অথবা ভবিষ্যতের রোগীদের উপকারে আসা তথ্য দিতে পারে। কেউ কোনো গবেষণায় অংশ নেওয়ার কথা ভাবলে উদ্দেশ্য, বিকল্প, জানা ঝুঁকি, follow-up, খরচ এবং সমস্যা হলে কার সঙ্গে যোগাযোগ করবেন—এসব গবেষণা দলের কাছে জেনে নেওয়া উচিত।
+
+### ১০. বাংলাদেশের প্রেক্ষাপট
+
+বাংলাদেশে ওষুধের ক্লিনিক্যাল ট্রায়ালের জন্য DGDA-এর প্রকাশিত জাতীয় নথি হলো Guidelines for Good Clinical Practice (GCP) for Trials on Pharmaceutical Products Bangladesh, document NRA-CT-G-001, Version 02। নথিতে কার্যকর হওয়ার তারিখ ডিসেম্বর ২০২৩ এবং Phase I–IV, ethics review, informed consent, safety reporting ও regulatory oversight-এর স্থানীয় কাঠামো বর্ণনা করা হয়েছে।
+
+ওষুধের ক্লিনিক্যাল ট্রায়ালের ক্ষেত্রে নির্দেশিকায় বলা হয়েছে, গবেষণা শুরুর আগে Principal Investigator-কে অনুমোদিত ethical clearance-সহ protocol DGDA-তে জমা দিতে হবে। নথিতে protocol review, GCP inspection, ethics committee-র তদারকি এবং serious adverse event পর্যবেক্ষণে DGDA-এর দায়িত্বও বর্ণিত আছে। অংশগ্রহণকারীর জন্য লিখিত তথ্য ও consent form বাংলায়, সহজবোধ্য ভাষায় দিতে হবে; এতে অংশগ্রহণ স্বেচ্ছামূলক এবং শাস্তি ছাড়া সরে যাওয়ার অধিকার উল্লেখ থাকতে হবে।
+
+এগুলো বাংলাদেশের প্রেক্ষাপটের নির্দেশনা। অন্য দেশের পদ্ধতি দেখে স্থানীয় নিয়ম অনুমান করা উচিত নয়। গবেষক ও sponsor-দের বর্তমান DGDA guideline, প্রযোজ্য আইন এবং সংশ্লিষ্ট ethics committee-র নির্দেশনা অনুসরণ করতে হবে। সরকারি তথ্যের জন্য DGDA-এর ওয়েবসাইট দেখুন।
+
+### মূল কথা
+
+- Phase I: মানুষের ওপর প্রথম পরীক্ষা, নিরাপত্তা, সহনশীলতা, ডোজ ও PK/PD।
+
+- Phase II: রোগীদের মধ্যে প্রাথমিক কার্যকারিতার সংকেত ও ডোজ পরীক্ষা।
+
+- Phase III: বড় পরিসরে উপকার নিশ্চিত করা এবং নিরাপত্তা সম্পর্কে আরও তথ্য সংগ্রহ।
+
+- Regulatory review: সম্পূর্ণ quality, safety ও efficacy তথ্য দেখে আলাদা অনুমোদনের সিদ্ধান্ত।
+
+- Phase IV: marketing authorisation-এর পর পরিকল্পিত গবেষণা; নিরাপত্তা পর্যবেক্ষণ চলতে থাকে।
+
+- Phase-গুলোর মধ্যে ওভারল্যাপ হতে পারে; সীমারেখা সব সময় কঠোর নয়।
+
+- Ethics review, সহজবোধ্য consent, safety monitoring এবং সরে যাওয়ার অধিকার সব ধাপেই জরুরি।
+
+### সাধারণ প্রশ্ন
+
+#### Phase I ট্রায়ালের মূল উদ্দেশ্য কী?
+
+Phase I হলো মানুষের ওপর পরীক্ষামূলক ওষুধের প্রথম, সতর্কভাবে পর্যবেক্ষণ করা ধাপ। এখানে প্রধানত নিরাপত্তা, সহনশীলতা, ডোজ এবং শরীর ওষুধটিকে কীভাবে প্রক্রিয়াজাত করে তা দেখা হয়। এটি সবার ক্ষেত্রে ওষুধ কার্যকর প্রমাণ করার ধাপ নয়।
+
+#### Phase I কি সব সময় সুস্থ স্বেচ্ছাসেবীদের ওপর হয়?
+
+না। অনেক Phase I গবেষণায় সুস্থ স্বেচ্ছাসেবী থাকেন, তবে কিছু ক্ষেত্রে রোগীকে অন্তর্ভুক্ত করাই বেশি উপযুক্ত বা নিরাপদ—যেমন কিছু ক্যানসারের ওষুধের গবেষণায়, অথবা সুস্থ মানুষের ওপর পরীক্ষা ঝুঁকিপূর্ণ হলে।
+
+#### Phase III শেষ হলেই কি ওষুধ অনুমোদন পায়?
+
+না। Phase III গুরুত্বপূর্ণ প্রমাণ দেয়, কিন্তু অনুমোদনের জন্য নিয়ন্ত্রক সংস্থা আলাদা সিদ্ধান্ত নেয়। তারা ওষুধের গুণমান, নন-ক্লিনিক্যাল তথ্য, ক্লিনিক্যাল ফলাফল, উৎপাদনব্যবস্থা এবং সামগ্রিক benefit–risk মূল্যায়ন করে।
+
+#### Phase 0 ক্লিনিক্যাল ট্রায়াল কী?
+
+Phase 0 সাধারণত ঐচ্ছিক, খুব প্রাথমিক exploratory study। এতে মানুষের শরীরে খুব সীমিত পরিমাণ ওষুধ—কখনও microdose—দেওয়া হতে পারে। এর উদ্দেশ্য চিকিৎসা দেওয়া বা উপকার প্রমাণ করা নয়; সব গবেষণা কর্মসূচিতে এটি লাগে না।
+
+#### ক্লিনিক্যাল ট্রায়ালের ধাপগুলো কি একে অন্যের সঙ্গে মিশে যেতে পারে?
+
+হ্যাঁ। ধাপগুলো গবেষণার লক্ষ্য বোঝায়, কঠোর আলাদা বাক্স নয়। কিছু কর্মসূচিতে একাধিক ধাপ একসঙ্গে বা পরস্পর-ওভারল্যাপ করে চলতে পারে। ওষুধ, রোগ, প্রমাণ ও নিয়ন্ত্রক প্রেক্ষাপট অনুযায়ী নকশা নির্ধারিত হয়।
+
+#### Phase IV কি pharmacovigilance-এর একই জিনিস?
+
+না। Phase IV হলো বাজারজাতকরণের অনুমোদনের পর পরিকল্পিত গবেষণা। Pharmacovigilance আরও বিস্তৃত—নিয়মিত ব্যবহারের সময় ওষুধ-সম্পর্কিত নিরাপত্তা সমস্যা সংগ্রহ, মূল্যায়ন ও প্রতিরোধ করার ধারাবাহিক ব্যবস্থা।
+
+#### ClinicalTrials.gov-এ কোনো গবেষণার নাম থাকলেই কি সেটি অনুমোদিত?
+
+না। গবেষণার রেকর্ড সাধারণত sponsor বা investigator জমা দেন। তালিকাভুক্তি তথ্যকে জনসাধারণের কাছে উন্মুক্ত করে, কিন্তু এর অর্থ এই নয় যে যুক্তরাষ্ট্রের সরকার প্রতিটি গবেষণার বিজ্ঞান বা নিরাপত্তা পর্যালোচনা করে অনুমোদন দিয়েছে।
+
+### আরও জানুন
+
+- বায়োসিমিলার কী? মূল বায়োলজিক ওষুধের সঙ্গে এর পার্থক্য কতটুকু?
+
+- বাজারজাতকরণের পর ওষুধের নিরাপত্তা কীভাবে পর্যবেক্ষণ করা হয়?
+
+- GMP: ফার্মাসিউটিক্যাল মানের ভিত্তি
+
+- মানবদেহে ওষুধ কীভাবে কাজ করে?
+
+### তথ্যসূত্র ও আরও পড়ুন
+
+- U.S. FDA — Step 3: Clinical Research
+
+- U.S. FDA — Drug Development and Review Definitions
+
+- U.S. FDA — Exploratory IND Studies Guidance
+- U.S. FDA — Phase 1 IND Frequently Asked Questions
+
+- ICH — E8(R1): General Considerations for Clinical Studies
+
+- Bangladesh DGDA — Guidelines for Good Clinical Practice (GCP) for Trials on Pharmaceutical Products, Version 02, effective December 2023
+
+- ClinicalTrials.gov — Learn About Studies
+
+- ClinicalTrials.gov — About the database
+
+প্রমাণ-সংক্রান্ত নোট: এখানে phase-গুলোর বর্ণনা সহজ ভাষায় সংক্ষেপ করা হয়েছে। বাস্তব গবেষণা কর্মসূচি ওষুধ, রোগ, ঝুঁকি, study design এবং নিয়ন্ত্রক দেশের ওপর নির্ভর করে ভিন্ন হতে পারে। বাংলাদেশের অংশটি DGDA-এর উল্লিখিত GCP নির্দেশিকার ভিত্তিতে লেখা; এটি বর্তমান regulatory বা ethics পরামর্শের বিকল্প নয়।
+
+এই লেখা সাধারণ শিক্ষা ও গবেষণা-সচেতনতার জন্য; এটি চিকিৎসা, আইন বা regulatory পরামর্শ নয়। ক্লিনিক্যাল ট্রায়াল কেবল প্রযোজ্য অনুমোদন ও নৈতিক সুরক্ষার অধীনে পরিচালিত হওয়া উচিত। কোনো গবেষণায় অংশ নেওয়ার আগে গবেষণা দল এবং নিজের healthcare professional-এর সঙ্গে আলোচনা করুন।
+
+### সাইয়্যেদুল আবরার
+
+A Grade Pharmacist · Registration Code: A-22040
+Product Executive, Product Management Department (PMD) · Opsonin Pharma Ltd.
+লেখকের প্রোফাইল · LinkedIn
+
+---
+
+### Clinical Trial Phases Explained: From First-in-Human to Post-Marketing
+URL: https://sayedulabrar.site/blog/clinical-trial-phases-explained/ · Language: English · Published: 2026-11-25T10:00:00+06:00 · Author: Sayedul Abrar, pharmacist
+Summary: A pharmacist explains Phase 1, 2, 3 and 4 clinical trials, optional Phase 0 studies, participant safeguards and Bangladesh’s DGDA Good Clinical Practice guidance.
+
+By Sayedul Abrar, pharmacist · Published 25 November 2026
+
+The simple answer: Clinical trials are often organised into phases because researchers need to answer different questions in a careful sequence. Phase I mainly explores safety and dose; Phase II looks for early activity in patients; Phase III tests the evidence on a larger scale; and Phase IV studies take place after marketing authorisation. The phases guide development—they do not guarantee approval or prove that a medicine is risk-free.
+
+### 1. What is a clinical trial phase?
+
+A clinical trial is a planned research study in people. In a medicine-development programme, researchers use trials to learn how an investigational medicine behaves in the human body, what effects it may have, which dose may be appropriate, and what unwanted effects may occur.
+
+A phase describes the main development question a study is designed to answer. It is not the same as the study design. For example, randomised, double-blind, placebo-controlled and parallel-group describe methods used to reduce bias or compare treatments; they are not separate phases.
+
+This article focuses on interventional trials of medicines. In an observational study, researchers do not assign participants to receive an intervention; they observe what happens under usual care or existing exposure. Both types of research can be valuable, but the familiar Phase I–IV framework is mainly used for medicine development.
+
+There are no universal participant numbers that define a phase. Sample size depends on the disease, expected effect, outcome being measured, study design, statistical assumptions and safety considerations.
+
+### 2. Before Phase I: preclinical research and preparation
+
+Before a new medicine is first given to people, researchers build a body of evidence from laboratory studies and appropriate non-clinical testing. This may include pharmacology, toxicology, dose-related effects, safety pharmacology and information about how the product is made and controlled.
+
+These studies cannot predict every human response. Their purpose is to help decide whether there is a reasonable scientific basis to begin carefully controlled human research and what precautions are needed. A clinical protocol then sets out the research question, eligibility criteria, dose, procedures, monitoring, endpoints, analysis plan and rules for stopping or changing the study.
+
+Regulatory and ethics requirements depend on the country. For example, the U.S. FDA uses an Investigational New Drug (IND) framework; that is a U.S. pathway, not a universal form used by every country. In Bangladesh, the DGDA’s national GCP guideline sets out the local oversight framework for trials on pharmaceutical products.
+
+### 3. Phase I: first-in-human safety and dose
+
+Phase I is usually the first carefully monitored exposure of people to an investigational medicine. The main questions are: How does the human body handle it? What dose can be tolerated? What short-term effects appear as the dose changes?
+
+Researchers may study pharmacokinetics (PK)—what the body does to the medicine—and pharmacodynamics (PD)—what the medicine does to the body. They may measure absorption, blood concentrations, metabolism, elimination, biological effects and dose-related adverse events.
+
+Many Phase I studies enrol healthy volunteers. However, this is not a rule for every medicine. When the expected risk or the nature of the disease makes healthy-volunteer testing unsuitable, patients may be enrolled instead. Some early cancer-drug studies, for example, are conducted in people with the relevant disease.
+
+Phase I is not a promise that a medicine is safe. It is a closely supervised way to identify and understand risks before broader testing. If the findings are not acceptable, the programme may be changed, paused or stopped.
+
+### 4. Phase II: early evidence in patients
+
+Phase II generally moves into people who have the condition the medicine is intended to treat. Researchers look for an early sign of therapeutic activity while continuing to study safety. They may compare doses, schedules or formulations and explore a dose–response relationship.
+
+These studies are often smaller than Phase III. They can help researchers decide whether the evidence is strong enough to justify a larger confirmatory programme, which outcomes matter most and how a later trial should be designed.
+
+An encouraging Phase II result is not final proof. Small studies may produce uncertain estimates, and early signals can fail to appear in larger trials. A medicine may also work for one outcome or subgroup without showing a meaningful overall benefit.
+
+### 5. Phase III: larger-scale confirmation
+
+Phase III trials usually involve larger and often more varied groups of participants. Their purpose is to confirm the medicine’s benefits, further characterise its risks and compare its overall benefit–risk profile with an appropriate control, such as standard treatment or placebo when ethically suitable.
+
+These trials may be randomised and blinded, but the best design depends on the question. They may take place at several research centres and follow participants for longer than early studies. They can provide important evidence about how consistently the medicine works and about adverse effects that were too uncommon to appear in smaller studies.
+
+Even a large Phase III programme cannot identify every rare or very long-term problem. The participants and follow-up period are still limited compared with years of use across a whole population. That is one reason safety monitoring continues after approval.
+
+### 6. Regulatory review is a separate decision
+
+After the required development evidence is submitted, the relevant regulatory authority reviews the whole application. The review is not limited to the phase labels. It considers the quality and consistency of the product, manufacturing controls, non-clinical findings, clinical results, proposed use, labelling and the balance between expected benefits and known or potential risks.
+
+The regulator may approve the medicine for a defined use, request additional information, require further studies, restrict the proposed use or refuse the application. A positive Phase III result is important evidence, but it does not automatically mean that a product will be approved in every country or for every indication.
+
+### 7. Phase IV: research after marketing authorisation
+
+Phase IV studies are conducted after a medicine has received marketing authorisation. They may examine longer-term safety, effectiveness in broader populations, use in routine practice, a new formulation, a different treatment strategy or a new indication.
+
+Phase IV is related to, but not identical with, pharmacovigilance. Phase IV refers to planned studies. Pharmacovigilance is the wider ongoing system for detecting, assessing, understanding and preventing medicine-related problems. It can use spontaneous reports, published research, safety databases and other information from routine use. Read the separate guide to pharmacovigilance and post-marketing medicine safety.
+
+Approval therefore marks a regulatory decision for a defined use—not the end of learning about a medicine.
+
+### 8. What about Phase 0, and can phases overlap?
+
+Some development programmes use an optional Phase 0 or exploratory study before conventional dose-escalation studies. These are very early studies with limited human exposure, sometimes involving a microdose, and are not intended to provide treatment or demonstrate therapeutic benefit. They are not required for every medicine.
+
+Phases I, II and III are useful categories, but they are not rigid boxes. The Bangladesh DGDA GCP guideline itself notes that distinct boundaries between phases cannot always be drawn. Some programmes use combined Phase I/II or Phase II/III designs, and study plans may adapt as evidence emerges. The design must still protect participants and answer a clearly defined scientific question.
+
+### 9. How are clinical-trial participants protected?
+
+Participant protection is not a final checklist added after a study is designed. It should shape the protocol, the site, the monitoring plan and every interaction with participants. Important safeguards include:
+
+- Independent ethics review: an Institutional Review Board or Independent Ethics Committee reviews the protocol, consent materials and participant-facing information.
+
+- Informed consent: people should receive understandable information about the purpose, procedures, experimental aspects, possible risks, possible benefits, alternatives and costs before deciding.
+
+- Voluntary choice: a participant may refuse or withdraw without penalty or loss of benefits to which they are otherwise entitled.
+
+- Ongoing safety monitoring: adverse events, serious events, protocol deviations and new information are assessed and reported through the required pathways.
+
+- Confidentiality and reliable data: participant identity is protected, and records must be accurate enough to support trustworthy conclusions.
+
+Taking part does not guarantee a personal medical benefit. A trial may not work, may cause harm, or may provide information that helps future patients rather than the person enrolled. Anyone considering a study should ask the research team about the purpose, alternatives, known risks, follow-up, costs and whom to contact if a problem occurs.
+
+### 10. What does this mean in Bangladesh?
+
+Bangladesh has a national document titled Guidelines for Good Clinical Practice (GCP) for Trials on Pharmaceutical Products Bangladesh, document NRA-CT-G-001, Version 02. The DGDA document states an effective date of December 2023 and describes the local framework for Phase I–IV trials, ethics review, informed consent, safety reporting and regulatory oversight.
+
+For pharmaceutical-product trials, the guideline says the principal investigator should submit the protocol to DGDA with the approved ethical clearance before the trial begins. It also describes DGDA’s responsibilities for protocol review, GCP inspection, oversight of ethics committees and monitoring of serious adverse events. The guideline specifies that written participant information and consent forms should be in Bangla, use language participants can understand, and explain that participation is voluntary and withdrawal is possible without penalty.
+
+These are Bangladesh-specific requirements. A sponsor or researcher should consult the current DGDA guideline, applicable law and the relevant ethics committee rather than assuming that a process used in another country applies locally. The official DGDA website provides the regulator’s published information.
+
+### Key takeaways
+
+- Phase I: first-in-human safety, tolerability, dose and PK/PD.
+
+- Phase II: early activity and dose exploration in people with the condition.
+
+- Phase III: larger-scale confirmation of benefit and further safety evidence.
+
+- Regulatory review: a separate decision based on the whole quality, safety and efficacy package.
+
+- Phase IV: planned studies after marketing authorisation; broader safety monitoring continues.
+
+- Phases can overlap, and their boundaries are not always rigid.
+
+- Ethics review, understandable consent, safety monitoring and the right to withdraw are essential throughout.
+
+### Frequently asked questions
+
+#### What is the main purpose of Phase 1?
+
+Phase 1 is the first carefully monitored testing of an investigational medicine in people. It mainly studies safety, tolerability, dose and how the body handles the medicine. It is not designed to prove that the medicine works for everyone.
+
+#### Are Phase 1 trials always conducted in healthy volunteers?
+
+No. Healthy volunteers are common in many Phase 1 studies, but patients may be enrolled when that is more appropriate or safer—for example, in some cancer-drug studies or when the medicine’s risks make healthy-volunteer testing unsuitable.
+
+#### Does Phase 3 mean a medicine will be approved?
+
+No. Phase 3 provides important evidence, but a regulator makes a separate decision after reviewing the full evidence package, including quality, nonclinical findings, clinical results, manufacturing and the overall benefit–risk balance.
+
+#### What is a Phase 0 clinical trial?
+
+Phase 0 usually refers to an optional, very early exploratory study with very limited human exposure, sometimes using a microdose. It is not intended to provide treatment or prove benefit and is not a mandatory step in every development programme.
+
+#### Can clinical trial phases overlap?
+
+Yes. The phases are useful descriptions of development goals, not rigid boxes. Some programmes combine phases or conduct studies with overlapping objectives. The design depends on the medicine, disease, evidence and regulatory context.
+
+#### Is Phase 4 the same as pharmacovigilance?
+
+No. Phase 4 refers to planned studies after marketing authorisation. Pharmacovigilance is broader and includes the ongoing collection, assessment and prevention of medicine-related safety problems, including reports from routine use.
+
+#### Does a ClinicalTrials.gov listing mean a study is approved or endorsed?
+
+No. Sponsors and investigators submit study records. A listing helps make information public, but it does not mean the U.S. government has reviewed or approved the science or safety of every listed study.
+
+
+---
+
 ### প্রতি ৮ টাকার ১ টাকা: অ্যাসিড কমানোর ওষুধে (PPI) বাংলাদেশ কত খরচ করে?
 URL: https://sayedulabrar.site/blog/ppi-acid-medicine-market-bangladesh-bangla/ · Language: Bangla · Published: 2026-11-24 · Author: Sayedul Abrar, pharmacist
 Summary: বাংলাদেশে বছরে প্রায় ৪,৯৮৩ কোটি টাকার PPI বা অ্যাসিড কমানোর ওষুধ বিক্রি হয়, যা মোট ওষুধ বিক্রির প্রায় ১২%। কোন PPI এগিয়ে, কত দ্রুত বাড়ছে আর সঠিক ব্যবহার কেন জরুরি—তথ্যভিত্তিক সহজ আলোচনা।
