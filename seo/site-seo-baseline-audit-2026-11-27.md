@@ -100,12 +100,113 @@ Those require connected account data or fresh, page-level technical testing.
 | P2 | Review image alt text, image sitemap quality and social previews | Approve any public content changes |
 | P3 | Connect Search Console/Bing performance data and build a measured query/page opportunity backlog | Account connection required |
 
+
+## 8. Reconciliation of blog routes and sitemap
+
+The earlier 18-route difference is now explained by the editorial calendar:
+
+- The 76 route folders are 38 apparent English/Bangla pairs.
+- The sitemap contains 58 article URLs.
+- The 18 routes absent from the sitemap are exactly nine English/Bangla pairs scheduled for future publication between 28 November and 12 December 2026.
+- Two sampled future pages (`onset-peak-duration-of-drug-action` and `how-to-read-a-medicine-label`) use `noindex,nofollow` while retaining their canonical URLs and future `datePublished` values.
+
+This is consistent with the site's scheduled-release model and is not currently evidence of an accidental sitemap omission. Keep future pages out of the sitemap and search index until their approved release.
+
+## 9. Search Console opportunity snapshot
+
+**Property:** `sc-domain:sayedulabrar.site`  
+**Country filter:** Bangladesh (`bgd`)  
+**Effective data range:** 21–23 November 2026  
+**Access limitation:** The connected Search Console integration currently exposes only the most recent three days, with no comparison period. Treat this as a small diagnostic sample, not a stable performance trend.
+
+### Bangla expiry-date article
+
+Page: https://sayedulabrar.site/blog/expiry-date-vs-manufacturing-date-medicine-bangla/
+
+- 50 impressions, 0 clicks, 0% CTR, average position 7.9.
+- Query `মেয়াদ শেষ হওয়ার তারিখ`: 47 impressions, 0 clicks, average position 8.04.
+- Query `উৎপাদন তারিখ`: 2 impressions, average position 5.5.
+- Query `osud er expiry date`: 1 impression, average position 6.
+
+**Interpretation:** This is the clearest near-term opportunity. The page is already visible around positions 8–9 for a relevant Bangla query, but the short sample has not produced a click. Its current title and meta description already contain the core expiry-date wording and an informative Bangladesh-specific example. Do not rewrite the page based on only three days of data. Monitor a longer period first; if low CTR persists, test a more direct search-result title and concise description while preserving the article's factual meaning.
+
+### Author-name query
+
+Page: https://sayedulabrar.site/about/
+
+- 5 impressions, 1 click, 20% CTR, average position 2.4 for `sayedul abrar`.
+- Search Console also reports four pages appearing for this query: About, homepage, Learning and Achievements.
+
+**Interpretation:** The four-page signal may reflect overlapping personal-brand relevance rather than harmful cannibalisation. The About page should remain the primary biography destination; homepage, Learning and Achievements should serve distinct supporting intents and link clearly to About. The sample is too small to justify removing pages, changing canonicals or consolidating content.
+
+## 10. Representative on-page technical checks
+
+A read-only sample was inspected: homepage, About, Pharma Blog index, English and Bangla expiry-date articles, Drug vs Medicine, Pharmacogenetics and Finix MUPS.
+
+- All sampled pages had one H1 and a self-referencing canonical URL.
+- All sampled pages had an index/follow robots directive, except future scheduled pages checked separately, which correctly had noindex/nofollow.
+- The two sampled bilingual article pairs use reciprocal `hreflang` links for `en` and `bn`, plus `x-default`.
+- The sampled homepage, About page and Pharma Blog landing page do not declare `hreflang`; these are currently English-led landing pages and should only gain alternates if genuine translated counterparts exist.
+- The homepage, About and Pharma Blog descriptions were 149, 156 and 166 characters respectively. The Blog landing description is the clearest candidate for a small future trim; no change has been made.
+- The five sampled pages had no images with missing or empty alt attributes.
+- Sampled article pages include Article/BlogPosting structured data; the expiry-date article includes FAQPage data. The homepage includes Person, Organization, WebSite and WebPage-related data; About includes ProfilePage data.
+- Some structured-data types recur across separate JSON-LD blocks. This is not automatically an error, but the complete graph should be validated for duplicate entities, conflicting values and stable `@id` relationships before changes are proposed.
+
+This is a representative sample, not a full 86-URL crawl. A full technical crawl remains pending.
+
+## 11. Medical-source verification — expiry-date example
+
+The Bangla expiry-date article's core statement that a medicine expiry date shown only as month and year refers to the final day of that month is supported by the Bangladesh Directorate General of Drug Administration's *Guideline on Medical Information for Summary Product Characteristics, Patient Information Leaflet, Packaging and Labeling in Bangladesh*.
+
+- Issued: 3 September 2023.
+- Implementation: 10 September 2023.
+- The guideline states that a month/year expiry date is taken to mean the last day of that month (see the section headed “Manufacturing Date & Expiry Date”, printed page 11; the same instruction appears for small immediate packaging units on printed page 13).
+- Official document: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-dgda/2024/12/f7a2b793f8a6460db4fe809a4cdba158.pdf
+
+The page's example `EXP 07/2027` therefore correctly explains 31 July 2027 as the final day of the stated month, in the context of the cited DGDA guideline. Continue to distinguish expiry-date interpretation from any separate in-use shelf-life after opening, reconstitution or dilution.
+
+## 12. Publishing safeguard — implemented
+
+The author approved manual-only publishing with explicit approval. The change was merged into `main` in commit `9de0128e7c4961d860b1b41dcd62f0eab684f30c`.
+
+The current `.github/workflows/scheduled-articles.yml` now:
+
+- Has only a manual `workflow_dispatch` trigger.
+- Has no daily cron trigger and no push trigger.
+- Requires the `author_approval` boolean input, defaulting to false.
+- Runs the release job only when `inputs.author_approval == true`.
+
+A manual release processes all calendar entries considered due by the release script, so the author must review every due item before checking the approval box. No article was published by merging this safeguard. Existing published content and URLs were not changed.
+
+## 13. Updated priorities
+
+| Priority | Action | Current status |
+|---|---|---|
+| P0 | Manual-only publishing with explicit author approval | Implemented on `main` |
+| P1 | Complete 86-URL crawl and technical issue inventory | Pending; representative sample only |
+| P1 | Extend Search Console access beyond the latest three days | Access limitation; requires a fuller GSC data connection |
+| P1 | Monitor Bangla expiry-date query and snippet CTR over a longer period | Opportunity identified; no content change |
+| P1 | Review the four-page personal-name query cluster | Potential overlap; no consolidation recommended yet |
+| P1 | Validate all medical references and high-risk claims article by article | Pending |
+| P2 | Validate structured-data graphs and entity IDs across the site | Pending |
+| P2 | Trim the Pharma Blog meta description if a full review confirms value | Proposed only |
+| P2 | Audit internal links across the eight content categories | Pending |
+| P3 | Review Bing and AI referral/visibility data where connected | Pending |
+
+## 14. Change and publishing log
+
+- Merged the editorial profile, article-review template, baseline audit and manual-only approval workflow.
+- Merge commit: `9de0128e7c4961d860b1b41dcd62f0eab684f30c`.
+- The publishing workflow is the only production workflow changed.
+- No existing article body, page title, description, URL, canonical, image, CSS, JavaScript, navigation, sitemap or robots file was edited during this SEO review.
+- GSC metrics and technical checks in this addendum are diagnostic findings; proposed on-page changes remain unimplemented pending separate review and approval.
+
 ## Safety and change log
 
 - This audit report is documentation only.
 - No production page, article, URL, image, CSS, JavaScript, sitemap or robots file was changed as part of this report. The publishing workflow change is a proposal on the review branch only and is not active until approved and merged.
-- The business/editorial profile and reusable review template are prepared on the separate review branch.
-- The draft pull request remains unmerged. Production remains on `main` until the author reviews and approves the proposed changes.
+- The business/editorial profile, reusable review template and baseline audit are committed under `seo/`.
+- The manual-only publishing safeguard is active on `main` after the author's approval.
 
 ## Sources inspected
 
