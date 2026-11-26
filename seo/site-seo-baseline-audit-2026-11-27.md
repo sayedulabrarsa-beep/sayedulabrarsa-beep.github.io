@@ -250,3 +250,33 @@ The fine of up to Tk 20,000 is now tied specifically to the official 18 Septembe
 - Bangladesh Gazette, *Drugs and Cosmetics Act 2023*, schedule entry 22 for section 40(d): https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-da-feni/2024/12/4897c3ada3304c38b578594760fc7f1b.pdf
 - Laws of Bangladesh, section 40: https://bdlaws.minlaw.gov.bd/act-print-1447/section-print-52497.html
 - WHO Bangladesh, antibiotic red-label requirement: https://www.who.int/bangladesh/news/detail/07-03-2023-establishing-red-label-of-antibiotics-for-curbing-antimicrobial-resistance-in-bangladesh
+
+## Follow-up review: complete sitemap page-level technical check
+
+**Reviewed:** 27 November 2026  
+**Scope:** All 86 HTML pages listed in the production XML sitemap, plus key excluded utility/redirect pages. This is a static HTML/repository audit, not a browser-based crawl or a full medical-content fact-check.
+
+### Results
+
+- **86 of 86 sitemap URLs** were matched to and checked against the corresponding HTML page in the repository (including the homepage root).
+- All checked sitemap pages had a non-empty page title, meta description, self-referencing canonical URL and robots directive.
+- Every checked page had exactly one H1.
+- No checked image element was missing an `alt` attribute or had an empty `alt` value.
+- All JSON-LD script blocks parsed as valid JSON. This confirms syntax only; it does not validate Schema.org semantics, entity relationships, Google rich-result eligibility or consistency across the graph.
+- No sitemap page showed an accidental `noindex` directive.
+- English/Bangla page pairs were present in the sitemap for the reviewed published article set. A complete reciprocal hreflang graph validation and destination-by-destination internal/external link crawl remain separate tasks.
+- The sitemap contains 86 public page URLs. The 18 future English/Bangla article pages in the repository are intentionally excluded from the sitemap while their release status remains future/scheduled.
+- Utility routes excluded from the sitemap were checked for intent: `/search/` is `noindex,follow`; `/experience/` redirects to the About journey section and is noindex; `/finix/` redirects to the canonical Finix brand page; and `/404.html` is noindex. These are not missing public content pages.
+- The publications page and glucosamine article metadata were inspected directly after an initial automated length check was found to truncate descriptions at apostrophes. Their actual description values are complete and descriptive; no edit was warranted.
+
+### Changes made from this page-level pass
+
+No production HTML or design changes were necessary. The audit report itself was updated to record the completed scope and distinguish static syntax checks from semantic/schema and link validation.
+
+### Remaining work
+
+1. Validate reciprocal hreflang pairs and all local navigation/article links, including link targets and redirects.
+2. Validate structured-data graphs semantically and test eligible rich-result types.
+3. Continue article-by-article medical reference and claim verification, prioritising high-risk medicine-use, dosing, safety, pregnancy, interaction and Bangladesh regulatory claims.
+4. Review image delivery, responsive behaviour, accessibility and performance in a real browser/device environment.
+5. Obtain longer-window Search Console data before changing pages based on short-term impressions or CTR.
