@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="t d">
+<title id="t">From genotype to predicted metabolizer phenotype</title>
+<desc id="d">An example showing CYP2C19 star allele notation translated into a predicted metabolizer phenotype. This is a gene-specific example, not a universal rule for all pharmacogenes.</desc>
+<rect width="1600" height="900" rx="28" fill="#f7f4ec"/>
+<text x="90" y="105" font-family="Arial,sans-serif" font-size="38" font-weight="700" fill="#174f52">FROM GENOTYPE TO PHENOTYPE</text>
+<text x="90" y="150" font-family="Arial,sans-serif" font-size="25" fill="#58706e">জিনের ধরন থেকে সম্ভাব্য কার্যগত শ্রেণি</text>
+<g transform="translate(100 250)">
+<rect width="370" height="300" rx="26" fill="#e8f1ed" stroke="#b9d1c8" stroke-width="3"/>
+<text x="36" y="60" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#174f52">GENE COPIES / জিনের কপি</text>
+<rect x="55" y="110" width="110" height="90" rx="16" fill="#176267"/><text x="110" y="167" text-anchor="middle" font-family="Arial,sans-serif" font-size="36" font-weight="700" fill="#fff">*1</text>
+<rect x="205" y="110" width="110" height="90" rx="16" fill="#d77a55"/><text x="260" y="167" text-anchor="middle" font-family="Arial,sans-serif" font-size="36" font-weight="700" fill="#fff">*2</text>
+<text x="185" y="250" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#405a58">CYP2C19 *1/*2</text>
+<text x="185" y="280" text-anchor="middle" font-family="Arial,sans-serif" font-size="19" fill="#637574">Illustrative diplotype</text>
+</g>
+<path d="M505 400 H640" stroke="#b68b43" stroke-width="12" stroke-linecap="round"/><path d="M620 370 L655 400 L620 430" fill="none" stroke="#b68b43" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<g transform="translate(690 250)">
+<rect width="350" height="300" rx="26" fill="#fff0df" stroke="#e6c49a" stroke-width="3"/>
+<text x="36" y="60" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#174f52">FUNCTION / কার্যক্ষমতা</text>
+<g transform="translate(70 112)"><rect width="210" height="22" rx="11" fill="#d9dfda"/><rect width="105" height="22" rx="11" fill="#d77a55"/><circle cx="105" cy="11" r="24" fill="#d77a55" stroke="#fff" stroke-width="5"/></g>
+<text x="175" y="205" text-anchor="middle" font-family="Arial,sans-serif" font-size="30" font-weight="700" fill="#174f52">Reduced activity</text>
+<text x="175" y="245" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#405a58">কম কার্যক্ষমতা</text>
+<text x="175" y="280" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#637574">Gene-specific interpretation</text>
+</g>
+<path d="M1070 400 H1190" stroke="#b68b43" stroke-width="12" stroke-linecap="round"/><path d="M1170 370 L1205 400 L1170 430" fill="none" stroke="#b68b43" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<g transform="translate(1240 250)">
+<rect width="270" height="300" rx="26" fill="#e9edf5" stroke="#c1cbdc" stroke-width="3"/>
+<text x="135" y="60" text-anchor="middle" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#174f52">PREDICTED</text>
+<text x="135" y="95" text-anchor="middle" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#174f52">PHENOTYPE</text>
+<circle cx="135" cy="170" r="54" fill="#536d9a"/><text x="135" y="181" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#fff">IM</text>
+<text x="135" y="250" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#174f52">Intermediate</text>
+<text x="135" y="280" text-anchor="middle" font-family="Arial,sans-serif" font-size="19" fill="#405a58">মধ্যবর্তী</text>
+</g>
+<rect x="100" y="630" width="1410" height="120" rx="20" fill="#fff" stroke="#d9d4c8" stroke-width="2"/>
+<text x="140" y="680" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#174f52">Important / গুরুত্বপূর্ণ</text>
+<text x="140" y="720" font-family="Arial,sans-serif" font-size="21" fill="#405a58">*1/*2 is an example for CYP2C19. Star-allele meaning and phenotype rules differ by gene; a laboratory report must use a validated gene-specific translation.</text>
+<text x="140" y="750" font-family="Arial,sans-serif" font-size="20" fill="#405a58">এটি CYP2C19-এর একটি উদাহরণ। প্রতিটি জিনের star allele ও phenotype-এর নিয়ম এক নয়।</text>
+<metadata>Original bilingual educational vector diagram created for SayedulAbrar.site by Sayedul Abrar, 26 November 2026. No external image assets used.</metadata>
+</svg>
