@@ -220,3 +220,35 @@ A manual release processes all calendar entries considered due by the release sc
 - Site build notes: `_src/README.md` and `_src/build.py`
 - SEO feed generator: `_src/seo_feeds.py`
 - SEO metadata helper: `_src/seo_meta_tune.py`
+
+
+## Follow-up review: scheduled article quality and Bangladesh OTC legal source
+
+**Reviewed:** 27 November 2026  
+**Scope:** Selected calendar articles and the Bangladesh prescription-versus-OTC explainer. This is a focused source review, not a full medical-content audit.
+
+### Scheduled content spot-check
+
+- The English and Bangla Drug Metabolism pages both exist, are indexable, have self-referencing canonicals and concise language-specific metadata. The English page is approximately 980 words and cites NCBI Bookshelf and Merck Manual.
+- Drug Excretion, Drug Half-Life, Bioavailability and Prescription vs OTC pages were present and indexable in the checked repository snapshot. Their titles, descriptions and canonical URLs were populated.
+- The 28 November Onset, Peak and Duration article and its series hub were present but remained `noindex,nofollow`, as expected before their scheduled release.
+- The 30 November Dosage Forms page was present but remained `noindex,nofollow`, as expected before its scheduled release.
+- The Pharmacogenetics article was present, indexable and included references to MedlinePlus, FDA, CDC and peer-reviewed literature.
+- This was a selected-page check only; it does not establish that all English/Bangla pairs are complete or scientifically verified.
+
+### Action required before revising the published Rx vs OTC article
+
+The current article states that a 2020 news report counted 39 OTC medicines and refers readers to the National Drug Policy 2016 appendices. A more direct and newer primary source is available: DGDA's **National Guideline on Accreditation of Model Pharmacy and Model Medicine Shop in Bangladesh**, authorized 2 June 2024. Annex 5 defines OTC and prescription-only medicines and lists 39 DGDA-authorized allopathic OTC medicine categories (PDF printed pages 21–22). The list includes, among others, omeprazole capsules, metronidazole tablets/suspension and paracetamol formulations. The article should cite this DGDA annex directly and make clear that the list is the DGDA's published list in that 2024 guideline, not a count inferred from a 2020 media report.
+
+The article's statement about a fine of up to Tk 20,000 is consistent with the penalty schedule accompanying the Drugs and Cosmetics Act 2023 for a breach of section 40(d). The strongest citation is the official 18 September 2023 Gazette schedule, not a secondary WHO report. Section 40(d) itself establishes the prescription rule; the schedule sets the penalty. Keep these as distinct citations.
+
+WHO Bangladesh's 7 March 2023 report supports the red-label explanation: the Drug Control Committee endorsed the red identification mark, and the requirement was to show the word “antibiotic” and a warning against use without a registered physician's prescription. The article's current wording is broadly consistent with this source.
+
+**Recommended correction (not applied):** update the Rx vs OTC article's reference list and OTC-list paragraph to cite DGDA's 2024 guideline Annex 5; cite the official Gazette schedule for the Tk 20,000 penalty. Do not edit the published page until the author approves the content correction.
+
+### Primary sources checked
+
+- DGDA, *National Guideline on Accreditation of Model Pharmacy and Model Medicine Shop in Bangladesh* (authorized 2 June 2024), Annex 5, printed pp. 21–22: https://dgda.gov.bd/sites/default/files/files/dgda.portal.gov.bd/policies/538854fb_87f2_4ecd_97a3_22f1f67a6721/2024-11-28-10-09-f124b507dc7aa84fed18c304ade5c3c3.pdf
+- Bangladesh Gazette, *Drugs and Cosmetics Act 2023*, schedule entry 22 for section 40(d): https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-da-feni/2024/12/4897c3ada3304c38b578594760fc7f1b.pdf
+- Laws of Bangladesh, section 40: https://bdlaws.minlaw.gov.bd/act-print-1447/section-print-52497.html
+- WHO Bangladesh, antibiotic red-label requirement: https://www.who.int/bangladesh/news/detail/07-03-2023-establishing-red-label-of-antibiotics-for-curbing-antimicrobial-resistance-in-bangladesh
