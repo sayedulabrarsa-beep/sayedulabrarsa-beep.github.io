@@ -244,7 +244,7 @@ The article's statement about a fine of up to Tk 20,000 is consistent with the p
 
 WHO Bangladesh's 7 March 2023 report supports the red-label explanation: the Drug Control Committee endorsed the red identification mark, and the requirement was to show the word “antibiotic” and a warning against use without a registered physician's prescription. The article's current wording is broadly consistent with this source.
 
-**Recommended correction (not applied):** update the Rx vs OTC article's reference list and OTC-list paragraph to cite DGDA's 2024 guideline Annex 5; cite the official Gazette schedule for the Tk 20,000 penalty. Do not edit the published page until the author approves the content correction.
+**Correction implemented on 27 November 2026:** the English and Bangla Rx vs OTC articles now cite DGDA's 2024 guideline Annex 5 and the official Gazette schedule for section 40(d). Both pages explain that section 40 has an OTC-list exception and avoid the inaccurate blanket statement that every antibiotic is always prescription-only; Annex 5 lists metronidazole tablet/suspension among its 39 entries. The superseded National Drug Policy 2016 / 2020 media-count references were replaced by the direct DGDA primary source. Publication dates remain 26 November 2026; Article JSON-LD `dateModified` is updated to 27 November 2026.
 
 ### Primary sources checked
 
