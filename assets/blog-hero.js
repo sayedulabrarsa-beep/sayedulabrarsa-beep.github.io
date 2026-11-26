@@ -65,11 +65,13 @@
 
   function measure() {
     var w = stage.clientWidth;
-    /* Keep neighbouring article cards apart as the collection grows. The vertical pitch
-       scales with the responsive card size; every new article is included automatically. */
-    var pitch = w < 540 ? 94 : w < 900 ? 118 : 154;
+    /* Fixed breathing room: one card height plus a clear gap at every breakpoint.
+       Because H is based on article count, every newly added article inherits this spacing. */
+    var pitch = w < 540 ? 244 : w < 900 ? 300 : 354;
     R = stage.dataset.r ? +stage.dataset.r : w < 540 ? Math.min(200, w * 0.535) : w < 900 ? Math.min(270, w * 0.36) : Math.min(520, w * 0.36);
     H = Math.max(stage.clientHeight * 1.35, N * pitch);
+    /* Keep vertical travel smooth and consistent as the library grows. */
+    auto = 14 * 720 / (N * pitch);
     push = w < 540 ? 1.15 : 1.05;
   }
   function angle(i) { return i * step + rot; }
