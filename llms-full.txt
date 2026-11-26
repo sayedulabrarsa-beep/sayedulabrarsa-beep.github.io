@@ -8148,9 +8148,9 @@ Educational content only; it does not replace individual medical advice. Example
 
 ---
 
-### ড্রাগ ও মেডিসিনের পার্থক্য কী? ওষুধ আর ড্রাগ কি একই?
+### ড্রাগ ও মেডিসিনের পার্থক্য কী?
 URL: https://sayedulabrar.site/blog/drug-vs-medicine-bangla/ · Language: Bangla · Published:  · Author: Sayedul Abrar, pharmacist
-Summary: ড্রাগ আর মেডিসিন (ওষুধ) কি একই জিনিস? সহজ গল্প, উদাহরণ, তুলনামূলক টেবিল ও সাধারণ প্রশ্নের মাধ্যমে Drug vs Medicine-এর পার্থক্য জানুন।
+Summary: ড্রাগ আর মেডিসিন (ওষুধ) কি একই? উদাহরণ, তুলনামূলক টেবিল, WHO-এর সংজ্ঞা ও বাংলাদেশের আইনের আলোকে পার্থক্য বুঝুন—ফার্মাসিস্টের সহজ ব্যাখ্যাসহ।
 
 Pharmacology Made Simple
 
@@ -8196,6 +8196,7 @@ Medicine বলতে সাধারণভাবে রোগ প্রতি�
 - Active ingredient: যে উপাদানটি মূল ঔষধি কার্যকারিতা তৈরি করে।
 - Excipients: প্রস্তুতির গঠন, স্থায়িত্ব, স্বাদ বা অন্যান্য বৈশিষ্ট্য বজায় রাখতে ব্যবহৃত সহায়ক উপাদান।
 - Dosage form: ওষুধের নির্দিষ্ট রূপ, যেমন Tablet, Capsule, Syrup, Cream বা Injection।
+ওষুধের বিভিন্ন রূপ সম্পর্কে বিস্তারিত জানতে ওষুধের বিভিন্ন Dosage Form নিবন্ধটি পড়ুন।
 
 Medicine বিভিন্ন dosage form-এ তৈরি হতে পারে—যেমন Tablet, Capsule, Syrup বা Cream।
 
@@ -8266,6 +8267,7 @@ Pharmacology ওষুধের কার্যকারিতা, শরীর�
 আমাদের দৈনন্দিন জীবনে জ্বর, মাথাব্যথা, অ্যালার্জি বা অ্যাসিডিটির মতো বিভিন্ন সমস্যায় ওষুধের প্রয়োজন হতে পারে। কিন্তু ওষুধের নাম জানা আর ওষুধ সম্পর্কে সঠিক জ্ঞান থাকা এক বিষয় নয়।
 
 একটি ওষুধের সক্রিয় উপাদান, মাত্রা, ব্যবহারের কারণ, সম্ভাব্য পার্শ্বপ্রতিক্রিয়া এবং অন্যান্য ওষুধের সঙ্গে মিথস্ক্রিয়া সম্পর্কে জানা গুরুত্বপূর্ণ। শুধু পরিচিত ব্র্যান্ডের নাম দেখে ওষুধ নির্বাচন করা, অন্যের প্রেসক্রিপশন অনুসরণ করা অথবা নিজের সিদ্ধান্তে ওষুধের মাত্রা পরিবর্তন করা উচিত নয়। ওষুধ ব্যবহারের ক্ষেত্রে চিকিৎসকের নির্দেশনা এবং নিবন্ধিত ফার্মাসিস্টের পরামর্শ অনুসরণ করুন।
+ওষুধের প্যাকেটে থাকা তথ্য কীভাবে বুঝবেন, তা জানতে ওষুধের লেবেল পড়ার নিয়ম নিবন্ধটি দেখুন।
 
 ### বৈজ্ঞানিক ও আইনগত সংজ্ঞায় Drug ও Medicine-এর ব্যবহার
 
@@ -8288,25 +8290,19 @@ WHO একই সঙ্গে Drug Substance এবং Drug Product-এর ম�
 ৩. Medicine-এর বাংলা অর্থ কী?
 Medicine-এর সাধারণ বাংলা অর্থ ওষুধ বা ঔষধ। চিকিৎসার উদ্দেশ্যে ব্যবহৃত Tablet, Capsule, Syrup এবং অন্যান্য ঔষধি প্রস্তুতিকে Medicine বলা হয়।
 
-৪. Finix কি একটি Drug নাকি Medicine?
-Finix হলো একটি ব্র্যান্ডের নাম। এর Rabeprazole-ভিত্তিক পণ্যগুলো Medicine হিসেবে ব্যবহৃত হয়, আর Rabeprazole হলো সংশ্লিষ্ট সক্রিয় ঔষধি উপাদান। তাই ব্র্যান্ডের নাম ও সক্রিয় উপাদানের নাম আলাদা করে বুঝতে হবে।
-
-৫. Finix MUPS কী?
-Finix MUPS হলো Rabeprazole Sodium-ভিত্তিক একটি MUPS formulation-এর ব্র্যান্ডেড পণ্য। MUPS-এর অর্থ Multiple Unit Pellet System, যেখানে একটি ট্যাবলেটের মধ্যে একাধিক ছোট পেলেট থাকতে পারে।
-
-৬. Generic name আর Brand name-এর মধ্যে পার্থক্য কী?
+৪. Generic name আর Brand name-এর মধ্যে পার্থক্য কী?
 Generic name হলো সক্রিয় ঔষধি উপাদানের স্বীকৃত নাম, আর Brand name হলো কোনো কোম্পানির দেওয়া বাণিজ্যিক নাম। একই Generic ingredient বিভিন্ন ব্র্যান্ডে পাওয়া যেতে পারে; তবে পণ্যের মাত্রা, ফর্মুলেশন বা ব্যবহারের নির্দেশনা এক নাও হতে পারে।
 
-৭. সব Drug কি নেশাজাতীয় পদার্থ?
+৫. সব Drug কি নেশাজাতীয় পদার্থ?
 না। Pharmacology-তে Drug শব্দটি বহু চিকিৎসায় ব্যবহৃত সক্রিয় ঔষধি পদার্থের জন্যও ব্যবহৃত হয়। শব্দটির অর্থ নির্ভর করে প্রসঙ্গের ওপর।
 
-৮. Medicine কি সব সময় Tablet বা Capsule হয়?
+৬. Medicine কি সব সময় Tablet বা Capsule হয়?
 না। Medicine বিভিন্ন রূপে পাওয়া যায়, যেমন Tablet, Capsule, Syrup, Suspension, Cream, Ointment, Drops এবং Injection।
 
-৯. Pharmacology কী নিয়ে আলোচনা করে?
+৭. Pharmacology কী নিয়ে আলোচনা করে?
 Pharmacology ওষুধের কার্যকারিতা, শরীরে ওষুধের গতিপ্রকৃতি, ওষুধের প্রভাব, সম্ভাব্য পার্শ্বপ্রতিক্রিয়া এবং ওষুধ ও জীবদেহের পারস্পরিক সম্পর্ক নিয়ে আলোচনা করে।
 
-১০. ওষুধ সম্পর্কে তথ্য জানার জন্য কী যাচাই করা উচিত?
+৮. ওষুধ সম্পর্কে তথ্য জানার জন্য কী যাচাই করা উচিত?
 ওষুধের Generic name, Brand name, strength, dosage form, অনুমোদিত ব্যবহার, সতর্কতা এবং সম্ভাব্য পার্শ্বপ্রতিক্রিয়া সম্পর্কে নির্ভরযোগ্য তথ্য যাচাই করা উচিত। ব্যক্তিগত চিকিৎসার সিদ্ধান্তের জন্য চিকিৎসক বা নিবন্ধিত ফার্মাসিস্টের পরামর্শ নিন।
 
 ### Drug vs Medicine: মনে রাখার মূল বিষয়
@@ -8316,9 +8312,13 @@ Drug ও Medicine-এর পার্থক্য বোঝা Pharmacology শ�
 ওষুধ সম্পর্কে সঠিক জ্ঞান অর্জন শুরু হোক পরিচিত শব্দগুলোর অর্থ বোঝার মাধ্যমে।
 পরবর্তী পর্ব: Generic Name vs Brand Name—একই সক্রিয় উপাদান বিভিন্ন ব্র্যান্ডে পাওয়া যায় কেন?
 
+ওষুধের পরিভাষা নিয়ে কোনো প্রশ্ন বা নতুন বিষয়ের প্রস্তাব আছে? বিষয় প্রস্তাব করুন বা যোগাযোগ করুন।
+
 ### সম্পর্কিত আর্টিকেল
 
 - জেনেরিক নাম ও ব্র্যান্ড নামের পার্থক্য
+- ওষুধের লেবেল পড়ার নিয়ম
+- ওষুধের বিভিন্ন Dosage Form
 
 ### References
 
@@ -8330,17 +8330,13 @@ Drug ও Medicine-এর পার্থক্য বোঝা Pharmacology শ�
 
 - MedlinePlus
 
-- U.S. Food and Drug Administration (FDA)
-
-- NCBI Bookshelf
-
 For product-specific details, check the approved package insert and the relevant local regulator.
 
 Medical Education Disclaimer: এই লেখাটি সাধারণ শিক্ষামূলক উদ্দেশ্যে তৈরি। এটি ব্যক্তিগত চিকিৎসা, রোগ নির্ণয় বা চিকিৎসকের পরামর্শের বিকল্প নয়। কোনো ওষুধ শুরু, বন্ধ বা তার মাত্রা পরিবর্তন করার আগে চিকিৎসক বা নিবন্ধিত ফার্মাসিস্টের পরামর্শ নিন।
 
 ---
 
-### Drug vs Medicine: Meaning, Differences & Examples
+### Drug vs Medicine: Meaning & Differences
 URL: https://sayedulabrar.site/blog/drug-vs-medicine/ · Language: English · Published:  · Author: Sayedul Abrar, pharmacist
 Summary: Drug vs medicine explained with clear definitions, examples and key differences. Learn how WHO terminology and Bangladesh law use these terms.
 
@@ -8376,6 +8372,7 @@ A medicine is generally a product used to prevent, diagnose, relieve or treat a 
 - Active ingredient: the component responsible for the intended medicinal effect.
 - Excipients: supporting ingredients that help with structure, stability, taste or other properties.
 - Dosage form: the form supplied, such as a tablet, capsule, syrup, cream or injection.
+For a closer look at the forms medicines can take, see our guide to medicine dosage forms.
 Medicines are supplied in dosage forms such as tablets, capsules, syrups and creams.
 Paracetamol is an active medicinal substance. A paracetamol tablet made in a specified strength and formulation is a prepared medicine. The terms still overlap in many medical and regulatory settings, so context matters.
 
@@ -8422,6 +8419,7 @@ Pharmacology helps explain drug effects, movement through the body and safe use.
 
 People may use medicines for fever, headache, allergies, acidity and many other conditions. Knowing a brand name alone is not the same as understanding a medicine.
 Understand the active ingredient, strength, reason for use, possible side effects and interactions with other medicines. Do not change a dose or use another person’s prescription based only on familiarity with a brand. Follow a qualified clinician’s or registered pharmacist’s advice.
+To understand the information printed on a medicine pack, read our guide to how to read a medicine label.
 
 ### How do scientific and legal definitions of drug and medicine differ?
 
@@ -8444,25 +8442,19 @@ Depending on context, it can mean a medicinal substance or another biologically 
 3. What does “medicine” mean?
 Medicine generally refers to a product used to prevent, diagnose, relieve or treat a health condition, in forms such as tablets, capsules and syrups.
 
-4. Is Finix a drug or a medicine?
-Finix is a brand name. Its rabeprazole-based products are medicines; rabeprazole is the active substance name.
-
-5. What is Finix MUPS?
-Finix MUPS is a branded product using a rabeprazole sodium-based MUPS formulation. MUPS stands for Multiple Unit Pellet System.
-
-6. What is the difference between generic and brand names?
+4. What is the difference between generic and brand names?
 A generic name identifies an active substance; a brand name is a commercial name assigned to a product. Products can still differ in strength, formulation or directions.
 
-7. Does every drug cause intoxication or addiction?
+5. Does every drug cause intoxication or addiction?
 No. In pharmacology, “drug” is also used for many active substances with legitimate medical uses. Meaning depends on context.
 
-8. Are medicines always tablets or capsules?
+6. Are medicines always tablets or capsules?
 No. Medicines can be supplied as tablets, capsules, syrups, suspensions, creams, ointments, drops or injections.
 
-9. What does pharmacology study?
+7. What does pharmacology study?
 Pharmacology studies drug actions, how the body handles drugs, possible side effects and interactions between substances and living systems.
 
-10. What should I check when learning about a medicine?
+8. What should I check when learning about a medicine?
 Check its generic and brand names, strength, dosage form, approved uses, warnings and potential side effects. Ask a clinician or registered pharmacist for personal medical decisions.
 
 ### Key takeaway: one-line answer
@@ -8470,9 +8462,13 @@ Check its generic and brand names, strength, dosage form, approved uses, warning
 A drug often refers to the active substance and its biological action; a medicine often refers to a product prepared for therapeutic use. They are closely related terms and may overlap depending on context.
 Quick recall: Drug = substance/action; Medicine = prepared treatment product. Give an example, then mention that this is a useful distinction rather than a universal legal definition.Next topic: Generic Name vs Brand Name — why can the same active ingredient appear under different brands?
 
+Have a question about medicine terminology or a topic you would like explained? Suggest a topic or get in touch.
+
 ### Related articles
 
 - Generic Name vs Brand Name — English
+- How to Read a Medicine Label
+- Different Types of Medicine Dosage Forms
 
 ### References
 
@@ -8480,8 +8476,6 @@ Quick recall: Drug = substance/action; Medicine = prepared treatment product. Gi
 - Bangladesh: Drugs and Cosmetics Act, 2023, section 2
 - Directorate General of Drug Administration (DGDA): Laws
 - MedlinePlus: Drug information
-- U.S. Food and Drug Administration (FDA)
-- NCBI Bookshelf
 For product-specific details, check the approved package insert and relevant local regulator.
 Medical Education Disclaimer: This article is for general education only and is not a substitute for personal medical advice, diagnosis or treatment. Consult a clinician or registered pharmacist before starting, stopping or changing a medicine.
 
