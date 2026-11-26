@@ -171,6 +171,186 @@ Get in touch ↗Find me on LinkedIn
 
 ## Pharma Blog articles (newest first)
 
+### প্রেসক্রিপশন বনাম OTC ওষুধ: বাংলাদেশে পার্থক্য কী?
+URL: https://sayedulabrar.site/blog/prescription-vs-otc-medicines-bangladesh-bangla/ · Language: Bangla · Published: 2026-11-26T20:00:00+06:00 · Author: Sayedul Abrar, pharmacist
+Summary: বাংলাদেশে Rx ও OTC ওষুধের পার্থক্য: সরকারি OTC তালিকা, কেন অ্যান্টিবায়োটিকে প্রেসক্রিপশন লাগে, লাল লেবেল, আর ফার্মাসিস্টকে কী জিজ্ঞেস করবেন।
+
+লিখেছেন সাইয়্যেদুল আবরার, ফার্মাসিস্ট · ২৬ নভেম্বর ২০২৬
+সহজভাবে: প্রেসক্রিপশন (Rx) ওষুধ একজন রেজিস্টার্ড চিকিৎসক একজন নির্দিষ্ট রোগীর জন্য বেছে দেন। ওভার-দ্য-কাউন্টার (OTC) ওষুধ ছোট ও স্বল্পমেয়াদি সমস্যায় প্রেসক্রিপশন ছাড়া কেনা যায়। বাংলাদেশে আইন অনুযায়ী শুধু OTC ওষুধ রেজিস্টার্ড চিকিৎসকের প্রেসক্রিপশন ছাড়া বিক্রি করা যায়; অ্যান্টিবায়োটিকে সবসময় প্রেসক্রিপশন লাগে।
+
+### ১. Rx ও OTC মানে কী?
+
+U.S. FDA সহজভাবে বলে: প্রেসক্রিপশন ওষুধ চিকিৎসক লিখে দেন, ফার্মেসি থেকে কেনা হয়, এবং এটি একজন মানুষের জন্য। ওভার-দ্য-কাউন্টার (OTC) ওষুধ কিনতে চিকিৎসকের প্রেসক্রিপশন লাগে না।
+OTC মানে “নিরীহ” নয়। এর মানে লেবেল মেনে চললে ওষুধটি নিজে ব্যবহারের উপযোগী ধরা হয়। বেশি খেলে, বেশি দিন খেলে বা অন্য ওষুধের সাথে মেশালে এটিও ক্ষতি করতে পারে।
+
+### ২. বাংলাদেশের আইন কী বলে
+
+ঔষধ ও কসমেটিকস আইন, ২০২৩-এর ৪০ ধারা অনুযায়ী OTC ওষুধ ছাড়া রেজিস্টার্ড চিকিৎসকের ব্যবস্থাপত্র ছাড়া কোনো অ্যান্টিবায়োটিক বা অন্য কোনো ওষুধ বিক্রি, মজুত বা বিক্রির জন্য প্রদর্শন করা যাবে না। ৪৫ ধারা অনুযায়ী অ্যালোপ্যাথিক ওষুধের খুচরা বিক্রি ফার্মাসিস্ট, ডিপ্লোমা ফার্মাসিস্ট বা ফার্মেসি টেকনিশিয়ানের ব্যক্তিগত তত্ত্বাবধানে হতে হবে। WHO-র তথ্য অনুযায়ী প্রেসক্রিপশনের এই নিয়ম ভাঙলে ২০,০০০ টাকা পর্যন্ত জরিমানা হতে পারে।
+কোন ওষুধ OTC? জাতীয় ঔষধনীতি ২০১৬ বলে, OTC ওষুধের তালিকা এর পরিশিষ্টে প্রকাশ করা হয়েছে। ২০২০ সালে The Business Standard-এর এক প্রতিবেদনে এই সংখ্যা ৩৯টি ওষুধ বলা হয়েছে। তালিকাটি ছোট: ফার্মেসির তাকের বেশিরভাগ ওষুধই প্রেসক্রিপশন-ওষুধ।
+বাস্তব চিত্র: গবেষণা বলছে আইন সবসময় মানা হয় না। ২০২১ সালে বাংলাদেশের ১২৮টি ফার্মেসিতে এক জরিপে দেখা গেছে, অ্যান্টিবায়োটিকের প্রায় অর্ধেক (৫০.৯%) কোর্স রেজিস্টার্ড চিকিৎসকের প্রেসক্রিপশন ছাড়া বিক্রি হয়েছে (Islam et al., 2022)। ফার্মেসি প্রেসক্রিপশন ছাড়া বিক্রি করলেই ওষুধটি OTC হয়ে যায় না।
+
+### ৩. অ্যান্টিবায়োটিকে কেন প্রেসক্রিপশন লাগে
+
+WHO বলছে, অ্যান্টিমাইক্রোবিয়ালের অপব্যবহার ও অতিরিক্ত ব্যবহার ওষুধ-প্রতিরোধী সংক্রমণ বাড়াচ্ছে, আর ২০২১ সালে ব্যাকটেরিয়ার রেজিস্ট্যান্স ৪৭ লাখের বেশি মৃত্যুর সাথে যুক্ত ছিল। চিকিৎসক দেখেন আদৌ অ্যান্টিবায়োটিক লাগবে কি না (বেশিরভাগ সর্দি-জ্বর ভাইরাসজনিত), কোনটি, কত ডোজে ও কত দিন। আরও পড়ুন কেন অ্যান্টিবায়োটিকের পুরো কোর্স শেষ করতে হয়।
+
+### ৪. অ্যান্টিবায়োটিকের লাল লেবেল
+
+সবাই যেন সহজে অ্যান্টিবায়োটিক চিনতে পারে, সেজন্য ঔষধ প্রশাসন অধিদপ্তর (DGDA) অ্যান্টিবায়োটিকের প্যাকে লাল চিহ্ন, “Antibiotic” শব্দ এবং রেজিস্টার্ড চিকিৎসকের প্রেসক্রিপশন ছাড়া ব্যবহার না করার সতর্কবার্তা বাধ্যতামূলক করেছে। WHO বাংলাদেশ জানায়, নিয়মটি ২০২২ সালের মার্চে অনুমোদিত হয়, নভেম্বর ২০২২-এ চালু হয় এবং ডিসেম্বর ২০২২ থেকে কার্যকর হয়; মানুষ ও পশু, দুই ধরনের ওষুধেই। প্যাকে লাল চিহ্ন দেখলে বুঝবেন, এই ওষুধে প্রেসক্রিপশন লাগে।
+
+### ৫. OTC ওষুধ নিরাপদে ব্যবহারের নিয়ম
+
+- প্রতিবার লেবেল পড়ুন। কাছাকাছি নামের প্রোডাক্টে ভিন্ন সক্রিয় উপাদান থাকতে পারে (FDA)।
+- সক্রিয় উপাদান মিলিয়ে দেখুন। কিছু প্রেসক্রিপশন-ওষুধে OTC ওষুধের একই উপাদান থাকে, ফলে প্রয়োজনের বেশি খাওয়া হয়ে যেতে পারে (MedlinePlus)। পড়ুন জেনেরিক নাম বনাম ব্র্যান্ড নাম।
+- লেবেলে যা লেখা, তার বেশি বা বেশি দিন খাবেন না। উপসর্গ না কমলে চিকিৎসক দেখান।
+- শিশুর ডোজ আন্দাজে দেবেন না। চিকিৎসক বা ফার্মাসিস্টকে জিজ্ঞেস করুন।
+- তারিখ ও সংরক্ষণ দেখুন। পড়ুন মেয়াদোত্তীর্ণের তারিখ বনাম উৎপাদনের তারিখ।
+
+### ৬. ফার্মাসিস্টকে কী জিজ্ঞেস করবেন
+
+অ্যাপয়েন্টমেন্ট ছাড়াই যাঁর কাছে যাওয়া যায়, সেই ওষুধ-বিশেষজ্ঞ হলেন ফার্মাসিস্ট। কাজের প্রশ্নগুলো:
+- এটি কি প্রেসক্রিপশন-ওষুধ, নাকি OTC?
+- সক্রিয় উপাদান কী, আর আমি যা খাচ্ছি তার কোনোটিতে কি এটি আগে থেকেই আছে?
+- কতটুকু, দিনে কতবার, খাবারের আগে না পরে?
+- কোন পার্শ্বপ্রতিক্রিয়া হলে বন্ধ করে চিকিৎসক দেখাব?
+- গর্ভাবস্থা, স্তন্যদান বা কিডনি, যকৃত, হৃদ্‌রোগ থাকলে এটি কি আমার জন্য নিরাপদ?
+যত ওষুধ, ভেষজ ও সাপ্লিমেন্ট খান, সব ফার্মাসিস্টকে জানান। এ কারণেই ২০১৬ সালে শুরু হওয়া DGDA-র মডেল ফার্মেসি উদ্যোগে মডেল ফার্মেসিতে গ্র্যাজুয়েট (A-গ্রেড) ফার্মাসিস্ট রাখার নিয়ম আছে।
+
+### ৭. মূল কথা
+
+OTC তালিকা ছোট; বেশিরভাগ ওষুধে প্রেসক্রিপশন লাগে। অ্যান্টিবায়োটিকে সবসময় লাগে। লেবেল পড়ুন, সক্রিয় উপাদান মিলিয়ে নিন, আর সন্দেহ হলে ফার্মাসিস্টকে জিজ্ঞেস করুন।
+
+- প্রেসক্রিপশন-ওষুধ একজন রেজিস্টার্ড চিকিৎসক একজন মানুষের জন্য বেছে দেন।
+- বাংলাদেশে শুধু সরকারি OTC তালিকার ওষুধ প্রেসক্রিপশন ছাড়া বিক্রি করা যায়।
+- অ্যান্টিবায়োটিকে সবসময় রেজিস্টার্ড চিকিৎসকের প্রেসক্রিপশন লাগে; লাল লেবেল দেখুন।
+- দ্বিগুণ ডোজ এড়াতে লেবেল পড়ুন ও সক্রিয় উপাদান মিলিয়ে নিন।
+- শিশু, গর্ভাবস্থা বা অন্য ওষুধ চললে বিশেষ করে ফার্মাসিস্টকে জিজ্ঞেস করুন।
+
+### সাধারণ প্রশ্ন
+
+#### প্রেসক্রিপশন ও OTC ওষুধের পার্থক্য কী?
+
+প্রেসক্রিপশন-ওষুধ একজন রেজিস্টার্ড চিকিৎসক একজন মানুষের জন্য বেছে দেন এবং সেই প্রেসক্রিপশন দেখে দেওয়া হয়। OTC ওষুধ লেবেল মেনে ছোট ও স্বল্পমেয়াদি সমস্যায় প্রেসক্রিপশন ছাড়া কেনা যায়।
+
+#### বাংলাদেশে কি সরকারি OTC ওষুধের তালিকা আছে?
+
+হ্যাঁ। জাতীয় ঔষধনীতি ২০১৬ অনুযায়ী OTC ওষুধের তালিকা এর পরিশিষ্টে প্রকাশিত। ২০২০ সালের এক সংবাদ প্রতিবেদনে তালিকায় ৩৯টি ওষুধের কথা বলা হয়েছে। বাকি সব ওষুধে রেজিস্টার্ড চিকিৎসকের প্রেসক্রিপশন লাগে।
+
+#### বাংলাদেশে ফার্মেসি কি প্রেসক্রিপশন ছাড়া অ্যান্টিবায়োটিক বিক্রি করতে পারে?
+
+না। ঔষধ ও কসমেটিকস আইন, ২০২৩ অনুযায়ী রেজিস্টার্ড চিকিৎসকের প্রেসক্রিপশন ছাড়া অ্যান্টিবায়োটিক বা OTC নয় এমন কোনো ওষুধ বিক্রি করা যায় না।
+
+#### অ্যান্টিবায়োটিকের প্যাকে লাল লেবেল কী বোঝায়?
+
+২০২২ সাল থেকে DGDA অ্যান্টিবায়োটিকের প্যাকে লাল চিহ্ন, Antibiotic শব্দ এবং রেজিস্টার্ড চিকিৎসকের প্রেসক্রিপশন ছাড়া ব্যবহার না করার সতর্কবার্তা বাধ্যতামূলক করেছে।
+
+#### OTC ওষুধ কি পুরোপুরি নিরাপদ?
+
+কোনো ওষুধই পুরোপুরি নিরাপদ নয়। লেবেল মেনে ব্যবহার করলে OTC ওষুধ নিজে ব্যবহারের উপযোগী, কিন্তু বেশি, বেশি দিন বা অন্য ওষুধের সাথে খেলে ক্ষতি হতে পারে। নিশ্চিত না হলে ফার্মাসিস্টকে জিজ্ঞেস করুন।
+
+
+---
+
+### Prescription vs OTC Medicines in Bangladesh: What Is the Difference?
+URL: https://sayedulabrar.site/blog/prescription-vs-otc-medicines-bangladesh/ · Language: English · Published: 2026-11-26T20:00:00+06:00 · Author: Sayedul Abrar, pharmacist
+Summary: Rx vs OTC medicines in Bangladesh: what each means, the official OTC list, why antibiotics need a prescription, the red label, and what to ask a pharmacist.
+
+By Sayedul Abrar, pharmacist · 26 November 2026
+In simple terms: A prescription (Rx) medicine is chosen by a registered doctor for one person. An over-the-counter (OTC) medicine can be bought without a prescription for minor, short-term problems. In Bangladesh, the law allows sale without a registered physician's prescription only for OTC medicines; antibiotics always need a prescription.
+
+### 1. What do Rx and OTC mean?
+
+The U.S. FDA gives a simple description. Prescription medicines are prescribed by a doctor, bought at a pharmacy, and meant for one person. Over-the-counter (OTC) medicines do not need a doctor's prescription.
+OTC does not mean "harmless". It means the medicine is considered suitable for self-care when the label is followed. Taking too much, taking it for too long, or mixing it with other medicines can still cause harm.
+
+### 2. What the law says in Bangladesh
+
+The Drugs and Cosmetics Act 2023 (ঔষধ ও কসমেটিকস আইন, ২০২৩), section 40, says that, apart from OTC medicines, no antibiotic or other medicine may be sold, stocked or displayed for sale without a registered physician's prescription. Section 45 says retail sale of allopathic medicine must be under the personal supervision of a pharmacist, diploma pharmacist or pharmacy technician. WHO reports that breaking the prescription rule can bring a fine of up to Tk 20,000.
+Which medicines count as OTC? The National Drug Policy 2016 says the OTC medicines have been published in its appendices. A 2020 report in The Business Standard put the number at 39 medicines. The list itself is short: most medicines on a pharmacy shelf are prescription medicines.
+Reality check: studies show the law is not always followed. A 2021 survey of 128 pharmacies in Bangladesh found that about half (50.9%) of antibiotic courses were sold without a registered physician's prescription (Islam et al., 2022). A pharmacy selling a medicine without a prescription does not make it an OTC medicine.
+
+### 3. Why antibiotics need a prescription
+
+WHO says the misuse and overuse of antimicrobials drive drug-resistant infections, and bacterial resistance was associated with more than 4.7 million deaths in 2021. A doctor checks whether you need an antibiotic at all (most colds and flu are viral), and which one, at what dose and for how long. Read more in Why You Must Complete an Antibiotic Course.
+
+### 4. The red antibiotic label
+
+To help everyone spot antibiotics, Bangladesh's Directorate General of Drug Administration (DGDA) requires antibiotic packs to carry a red marking, the word "Antibiotic" and a warning not to use without the prescription of a registered physician. WHO Bangladesh reports that the rule was endorsed in March 2022, launched in November 2022 and enforced from December 2022, for both human and animal medicines. If you see the red marking, the medicine needs a prescription.
+
+### 5. Using OTC medicines safely
+
+- Read the label every time. Products with similar names can contain different active ingredients (FDA).
+- Check the active ingredient. Some prescription medicines contain the same ingredients as OTC medicines, so you could take more than you should (MedlinePlus). See Generic Name vs Brand Name.
+- Do not take more, or for longer, than the label says. If symptoms continue, see a doctor.
+- Do not guess a child's dose. Ask a doctor or pharmacist.
+- Check the dates and storage. See Expiry Date vs Manufacturing Date.
+
+### 6. How to ask your pharmacist
+
+The pharmacist is the medicine expert you can reach without an appointment. Useful questions:
+- Is this a prescription medicine or an OTC medicine?
+- What is the active ingredient, and is it already in anything else I take?
+- How much, how often, and before or after food?
+- What side effects should make me stop and see a doctor?
+- Is it safe for me if I am pregnant, breastfeeding, or have kidney, liver or heart problems?
+Tell the pharmacist about every medicine, herbal product and supplement you take. DGDA's model pharmacy scheme, started in 2016, places graduate (A-grade) pharmacists in model pharmacies for this reason.
+
+### 7. Key takeaways
+
+The OTC list is short; most medicines need a prescription. Antibiotics always do. Read the label, check the active ingredient, and ask the pharmacist when in doubt.
+
+- A prescription medicine is chosen for one person by a registered doctor.
+- In Bangladesh, only medicines on the official OTC list may be sold without a prescription.
+- Antibiotics always need a registered physician's prescription; look for the red label.
+- Read the label and check the active ingredient to avoid double dosing.
+- Ask the pharmacist, especially for children, pregnancy or when you take other medicines.
+
+### Frequently asked questions
+
+#### What is the difference between prescription and OTC medicines?
+
+A prescription medicine is chosen by a registered doctor for one person and dispensed against that prescription. An OTC medicine can be bought without a prescription for minor, short-term problems when the label is followed.
+
+#### Is there an official OTC medicine list in Bangladesh?
+
+Yes. The National Drug Policy 2016 says the OTC medicines are published in its appendices. A 2020 news report counted 39 medicines on the list. All other medicines need a registered physician's prescription.
+
+#### Can a pharmacy sell antibiotics without a prescription in Bangladesh?
+
+No. The Drugs and Cosmetics Act 2023 does not allow antibiotics or other non-OTC medicines to be sold without a registered physician's prescription.
+
+#### What does the red label on antibiotic packs mean?
+
+Since 2022, DGDA has required antibiotic packs to show a red marking, the word Antibiotic and a warning not to use without the prescription of a registered physician.
+
+#### Are OTC medicines completely safe?
+
+No medicine is completely safe. OTC medicines are suitable for self-care when used as the label says, but taking too much, for too long or with other medicines can cause harm. Ask a pharmacist if you are unsure.
+
+### Related reading
+
+- Why You Must Complete an Antibiotic Course
+- Generic Name vs Brand Name
+- Expiry Date vs Manufacturing Date
+- Drug vs Medicine
+
+### References and further reading
+
+- U.S. FDA. Prescription Drugs and Over-the-Counter (OTC) Drugs: Questions and Answers. fda.gov
+- U.S. FDA. OTC Drug Facts Label. fda.gov
+- U.S. FDA. Over-the-Counter Medicines: What's Right for You?. fda.gov
+- MedlinePlus. Using over-the-counter medicines safely. medlineplus.gov
+- Laws of Bangladesh. ঔষধ ও কসমেটিকস আইন, ২০২৩ (Drugs and Cosmetics Act 2023). bdlaws.minlaw.gov.bd
+- Ministry of Health and Family Welfare, Bangladesh. National Drug Policy 2016 (PDF). nimh.gov.bd
+- The Business Standard. Model pharmacies, but only on paper (27 Dec 2020). tbsnews.net
+- WHO Bangladesh. Establishing red label of antibiotics for curbing antimicrobial resistance in Bangladesh (7 Mar 2023). who.int
+- WHO. Utilizing data on antimicrobial use and knowledge to inform regulatory changes to antibiotic packaging in Bangladesh (25 Sep 2024). who.int
+- Islam MA, et al. Antibiotic dispensing in community pharmacies in Bangladesh. Antibiotics (Basel) 2022. doi.org
+- WHO. Antimicrobial resistance fact sheet. who.int
+Educational disclaimer: This article is for general learning and is not personal medical advice. Do not change a medicine or dose without talking to a doctor or pharmacist. In an emergency, get medical help quickly.
+
+
+---
+
 ### ফার্মাকোজেনেটিক্স: আপনার জিন কি ওষুধের প্রতিক্রিয়া বদলে দিতে পারে?
 URL: https://sayedulabrar.site/blog/pharmacogenetics-how-genes-affect-medicine-response-bangla/ · Language: Bangla · Published: 2026-11-26T10:00:00+06:00 · Author: Sayedul Abrar, pharmacist
 Summary: জিনের ভিন্নতা কীভাবে ওষুধের বিপাক, কার্যকারিতা ও পার্শ্বপ্রতিক্রিয়ার ঝুঁকিতে প্রভাব ফেলতে পারে—উদাহরণ ও পরীক্ষার সীমাবদ্ধতাসহ জানুন।
