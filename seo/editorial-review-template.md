@@ -1,15 +1,15 @@
 # Reusable SEO Editorial Review — SayedulAbrar.site
 
-Use this review for one article at a time. Read the editorial profile in `seo/editorial-review-profile.md` first.
+Use this review for one published article at a time. Read `seo/editorial-review-profile.md` first.
 
 ## Inputs to resolve
 
-- **Article URL:** [URL or retrieve from the repository]
-- **Source file:** [`_src/content/blog/<slug>.json` or supplied draft]
+- **Published article URL:** [URL or identify from the live site/repository]
+- **Published page file:** normally `blog/<slug>/index.html`
 - **Primary keyword:** [REQUIRED — use the supplied keyword or an explicitly documented keyword brief; do not guess]
 - **Content brief:** [Relevant approved brief, or "none"]
 - **Search intent:** [Infer from the keyword and current search results only when research is available; label inference]
-- **Draft:** [Retrieve the complete source article, preserving body order and structured elements]
+- **Related language page:** [English/Bangla counterpart, if one exists]
 
 If a required input is unavailable, state what is missing. Do not silently invent a target keyword, brief or draft.
 
@@ -66,20 +66,23 @@ List the most important changes and why they improve accuracy, usefulness, clari
 
 ## Website source workflow
 
-1. Identify the published URL and matching source JSON in `_src/content/blog/`.
-2. Read the full source JSON and any explicitly linked approved content brief.
-3. Identify the exact primary keyword; if missing, ask the author instead of guessing.
-4. Review the article and produce outputs A–E.
-5. Keep the corrected article as a proposal only. Do not write to the production branch.
-6. After explicit approval, prepare a separate branch and pull request containing only the approved article-source changes. Preserve the current slug and unrelated site files.
-7. Do not merge the pull request or publish unless the author explicitly instructs you to do so.
+1. Identify the published URL and matching page file, normally `blog/<slug>/index.html`. The current repository's `_src/content/blog/` directory is empty, and `_src/build.py` explicitly identifies itself as retired; do not assume the README's JSON-source instructions describe the live publishing process.
+2. Read the complete published HTML and inspect relevant repository history and related scripts under `_src/` to determine the actual maintained source for that page. Do not edit generated HTML or a retired generator until the source of truth is confirmed.
+3. Check the English/Bangla counterpart and relevant internal links when they exist.
+4. Identify the exact primary keyword; if missing, ask the author instead of guessing.
+5. Review the article and produce outputs A–E.
+6. Keep the corrected article as a proposal only. Do not write to the production branch.
+7. After explicit approval, prepare a separate branch and pull request containing only the approved source changes. Preserve the current slug and unrelated site files.
+8. Do not merge the pull request or publish unless the author explicitly instructs you to do so.
 
 ## Per-article review record
 
 - Review date:
 - Published URL:
-- Source JSON:
+- Published page file:
+- Verified source of truth:
 - Primary keyword:
 - Content brief:
+- English/Bangla counterpart:
 - Reviewer:
 - Status: Review only / Awaiting author approval / Approved for PR / PR opened
