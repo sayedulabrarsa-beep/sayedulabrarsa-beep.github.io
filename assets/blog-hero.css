@@ -144,3 +144,14 @@
 .pb-hero.bh .bh-card img{pointer-events:none;-webkit-user-drag:none}
 @media(max-width:900px){.pb-hero.bh .bh-stage{perspective:1100px}.pb-hero.bh .bh-card{width:184px;height:264px;margin:-132px 0 0 -92px}}
 @media(max-width:540px){.pb-hero.bh .bh-stage{height:470px;perspective:900px}.pb-hero.bh .bh-card{width:136px;height:210px;margin:-105px 0 0 -68px}}
+
+
+/* Mobile page-scroll priority and improved card legibility. */
+.pb-hero.bh .bh-stage{touch-action:pan-y pinch-zoom!important;overscroll-behavior-y:auto!important}
+.pb-hero.bh .bh-card{filter:drop-shadow(0 12px 18px rgba(0,0,0,.24))}
+.pb-hero.bh .bh-face{transition:opacity .18s ease}
+.pb-hero.bh .bh-card-title{overflow-wrap:anywhere}
+@media(max-width:540px){
+ .pb-hero.bh .bh-stage{height:500px;touch-action:pan-y pinch-zoom!important}
+ .pb-hero.bh .bh-card{filter:drop-shadow(0 9px 14px rgba(0,0,0,.28))}
+}
