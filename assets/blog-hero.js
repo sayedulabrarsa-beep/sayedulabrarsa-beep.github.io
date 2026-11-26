@@ -48,7 +48,7 @@
 
   var N = cards.length, step = 360 / N, R = 900, rot = 0, vel = 0, auto = 8;
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var hovering = false, dragging = false, visible = true, last = 0;
+  var dragging = false, visible = true, last = 0;
 
   function measure() {
     var w = stage.clientWidth;
@@ -78,20 +78,16 @@
     var dt = Math.min(50, t - last) / 1000; last = t;
     if (visible && !dragging) {
       if (Math.abs(vel) > 0.01) { rot += vel * dt; vel *= Math.pow(0.04, dt); }
-      else if (!hovering && !reduce) rot += auto * dt;
+      else if (!reduce) rot += auto * dt;
       render();
     }
     requestAnimationFrame(frame);
   }
 
-  // Pause while the user explores; resume the gentle circular motion afterwards.
-  stage.addEventListener('pointerover', function (e) { if (e.pointerType === 'mouse') hovering = true; });
-  stage.addEventListener('pointerout', function (e) { if (e.pointerType === 'mouse' && !stage.contains(e.relatedTarget)) hovering = false; });
-
-  // Horizontal swipe/drag follows the orbit's arc length, keeping the gesture predictable.
+  // The carousel keeps rotating while the pointer is over the hero; drag remains available.\n\n  // Horizontal swipe/drag follows the orbit's arc length, keeping the gesture predictable.
   var pid = null, sx = 0, sy = 0, sr = 0, moved = 0, lx = 0, lt = 0;
   stage.addEventListener('pointerdown', function (e) {
-    if (e.button !== undefined && e.button !== 0) return;
+    if (e.button !== undefined && e.button !== 0) return;\n    if (e.pointerType === 'mouse' && e.button !== 0) return;
     pid = e.pointerId; sx = lx = e.clientX; sy = e.clientY; sr = rot; moved = 0; lt = e.timeStamp; vel = 0;
   });
   stage.addEventListener('pointermove', function (e) {
