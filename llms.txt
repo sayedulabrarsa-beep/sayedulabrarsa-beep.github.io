@@ -176,9 +176,9 @@ Pharma Blog articles (newest first; each is educational, not medical advice):
   Summary: জেনেরিক নাম ও ব্র্যান্ড নামের পার্থক্য কী? ওষুধের জেনেরিক নাম চেনার উপায়, নাপা-প্যারাসিটামল উদাহরণ ও লেবেল পড়ার নিয়ম জানুন।
 - Generic Name vs Brand Name of Medicine: Easy Guide (2026) — English (2026-10-27): https://sayedulabrar.site/blog/generic-name-vs-brand-name/
   Summary: Generic name vs brand name of medicine: find the active ingredient, why Finix and Rabe share one, what MUPS means, and a 4-step label check.
-- Drug vs Medicine: ওষুধ আর ড্রাগ কি একই জিনিস? — বাংলা (2026-10-27): https://sayedulabrar.site/blog/drug-vs-medicine-bangla/
-  Summary: ড্রাগ আর মেডিসিন (ওষুধ) কি একই জিনিস? সহজ গল্প, উদাহরণ, তুলনামূলক টেবিল ও সাধারণ প্রশ্নের মাধ্যমে Drug vs Medicine-এর পার্থক্য জানুন।
-- Drug vs Medicine: Meaning, Differences, Examples & FAQs — English (2026-10-27): https://sayedulabrar.site/blog/drug-vs-medicine/
+- ড্রাগ ও মেডিসিনের পার্থক্য কী? — বাংলা (2026-10-27): https://sayedulabrar.site/blog/drug-vs-medicine-bangla/
+  Summary: ড্রাগ আর মেডিসিন (ওষুধ) কি একই? উদাহরণ, তুলনামূলক টেবিল, WHO-এর সংজ্ঞা ও বাংলাদেশের আইনের আলোকে পার্থক্য বুঝুন—ফার্মাসিস্টের সহজ ব্যাখ্যাসহ।
+- Drug vs Medicine: Meaning & Differences — English (2026-10-27): https://sayedulabrar.site/blog/drug-vs-medicine/
   Summary: Drug vs medicine explained with clear definitions, examples and key differences. Learn how WHO terminology and Bangladesh law use these terms.
 Feed: https://sayedulabrar.site/blog/feed.xml
 <!--articles:end-->
