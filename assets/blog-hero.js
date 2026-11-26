@@ -1,6 +1,4 @@
-/* Pharma Blog hero: article cards orbiting a vertical axis in a spiral (double-sided: article in
-   front, patterned back behind). Built from the article grid, so new articles join automatically.
-   The ring turns on its own, with page scroll, with a sideways drag/swipe, or the arrow keys. */
+/* Pharma Blog hero: continuously rotating circular carousel. Cards are sourced from the featured article grid. */
 (function () {
   var stage = document.getElementById('bh-stage');
   if (!stage) return;
@@ -84,10 +82,13 @@
     requestAnimationFrame(frame);
   }
 
-  // The carousel keeps rotating while the pointer is over the hero; drag remains available.\n\n  // Horizontal swipe/drag follows the orbit's arc length, keeping the gesture predictable.
+  // The carousel keeps rotating while the pointer is over the hero; drag remains available.
+
+  // Horizontal swipe/drag follows the orbit's arc length, keeping the gesture predictable.
   var pid = null, sx = 0, sy = 0, sr = 0, moved = 0, lx = 0, lt = 0;
   stage.addEventListener('pointerdown', function (e) {
-    if (e.button !== undefined && e.button !== 0) return;\n    if (e.pointerType === 'mouse' && e.button !== 0) return;
+    if (e.button !== undefined && e.button !== 0) return;
+    if (e.pointerType === 'mouse' && e.button !== 0) return;
     pid = e.pointerId; sx = lx = e.clientX; sy = e.clientY; sr = rot; moved = 0; lt = e.timeStamp; vel = 0;
   });
   stage.addEventListener('pointermove', function (e) {
