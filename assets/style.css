@@ -3889,3 +3889,75 @@ body.pf-page footer .cr,body.pf-page footer small{color:#d9c6a2}
 .vlog-rel-card p{margin:0;font-size:15px;line-height:1.45;color:#5d5346}
 .vlog-rel-go{margin-top:auto;padding-top:8px;font-weight:600;color:#a8382a;font-size:15px}
 @media(prefers-reduced-motion:reduce){.vlog-rel-card{transition:none}.vlog-rel-card:hover{transform:none}}
+
+
+/* ── Permanent Pharma Blog reading rhythm (26 Nov 2026) ─────────────────────
+   Shared spacing for every current and future article using the standard
+   .article-content / .pm-article / .article wrappers. Keep a predictable
+   gap between paragraphs, headings, lists, figures and reference sections. */
+.article-content p,
+.pm-article p,
+.article p{
+  margin:0 0 1rem!important;
+}
+.article-content h2,
+.pm-article h2,
+.article h2{
+  margin:2.35rem 0 .8rem!important;
+  line-height:1.35!important;
+  scroll-margin-top:24px;
+}
+.article-content h3,
+.pm-article h3,
+.article h3{
+  margin:1.7rem 0 .6rem!important;
+  line-height:1.4!important;
+}
+.article-content ul,
+.article-content ol,
+.pm-article ul,
+.pm-article ol,
+.article ul,
+.article ol{
+  margin:0 0 1.25rem!important;
+  padding-left:1.5rem;
+}
+.article-content li,
+.pm-article li,
+.article li{
+  margin:.4rem 0!important;
+  line-height:1.7;
+}
+.article-content figure,
+.pm-article figure,
+.article figure,
+.article-content .article-figure,
+.article-content .pv-fig{
+  margin:1.8rem 0!important;
+}
+.article-content figcaption,
+.pm-article figcaption,
+.article figcaption{
+  margin-top:.55rem!important;
+  line-height:1.55;
+}
+.article-content blockquote,
+.pm-article blockquote,
+.article blockquote{
+  margin:1.6rem 0!important;
+}
+.article-content table,
+.pm-article table,
+.article table{
+  margin:1.5rem 0!important;
+}
+.article-content hr,
+.pm-article hr,
+.article hr{
+  margin:2rem 0!important;
+}
+@media(max-width:600px){
+  .article-content h2,.pm-article h2,.article h2{margin-top:2rem!important}
+  .article-content h3,.pm-article h3,.article h3{margin-top:1.45rem!important}
+  .article-content figure,.pm-article figure,.article figure{margin:1.4rem 0!important}
+}
