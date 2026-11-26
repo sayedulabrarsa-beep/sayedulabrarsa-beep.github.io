@@ -2246,7 +2246,7 @@ API retest period ও finished medicine-এর expiry date কি একই?
 Product Executive, Product Management Department · Opsonin Pharma Ltd.
 লেখক সম্পর্কে · LinkedIn
 
-সম্পর্কিত লেখা: Quality Assurance vs Quality Control · Good Manufacturing Practices (GMP) · Active Pharmaceutical Ingredient (API) · Expiry Date vs Manufacturing Date
+সম্পর্কিত লেখা: Quality Assurance vs Quality Control · Good Manufacturing Practices (GMP) · Active Pharmaceutical Ingredient (API) · ওষুধের মেয়াদ শেষ হওয়ার তারিখ ও উৎপাদনের তারিখ
 
 ---
 
@@ -7687,7 +7687,7 @@ Educational content only; it does not replace individual medical advice. Example
 
 ### ওষুধের মেয়াদ শেষ হওয়ার তারিখ (EXP) কীভাবে দেখবেন?
 URL: https://sayedulabrar.site/blog/expiry-date-vs-manufacturing-date-medicine-bangla/ · Language: Bangla · Published:  · Author: Sayedul Abrar, pharmacist
-Summary: ওষুধের গায়ে EXP ও MFG তারিখ কী বোঝায়? EXP 07/2027-এর অর্থ, ব্যাচ নম্বর, মেয়াদ যাচাই ও নিরাপদ সংরক্ষণের নিয়ম জানুন—সহজ বাংলায়।
+Summary: ওষুধের EXP ও MFG তারিখ কী বোঝায়? বাংলাদেশে DGDA অনুযায়ী EXP 07/2027 মানে ৩১ জুলাই পর্যন্ত। ব্যাচ নম্বর ও নিরাপদ সংরক্ষণ জানুন।
 
 ### মেয়াদ শেষের তারিখ আর উৎপাদনের তারিখের পার্থক্য কী?
 
@@ -7699,7 +7699,7 @@ Summary: ওষুধের গায়ে EXP ও MFG তারিখ কী �
 ### আপনার ওষুধের প্যাকে লুকিয়ে আছে ছোট্ট ঘড়ি
 
 যেকোনো ওষুধের প্যাক উল্টে দেখুন, সেখানে ছোট ছাপা একটি “ঘড়ি” লুকিয়ে আছে। এটি থাকে কিনারায় বা নিচের দিকে, খুব ছোট অক্ষরে। তিনটি কোড পুরো গল্প বলে দেয়: MFG (তৈরি), EXP (মেয়াদ শেষ) আর B.No. (কোন ব্যাচ)।
-লেখক: সাইয়্যেদুল আবরার, ফার্মাসিস্ট · প্রকাশ: ২৮ অক্টোবর ২০২৬ · হালনাগাদ: ৭ নভেম্বর ২০২৬
+লেখক: সাইয়্যেদুল আবরার, ফার্মাসিস্ট · প্রকাশ: ২৮ অক্টোবর ২০২৬ · হালনাগাদ: ২৬ নভেম্বর ২০২৬
 পাতার কিনারা, বাক্সের ভাঁজ বা বোতলের নিচে ভালো আলোয় দেখুন। তারিখ পড়তে না পারলে আন্দাজ না করে ফার্মাসিস্টকে জিজ্ঞেস করুন।
 
 #### ৩টি কোডে ট্যাপ করুন
@@ -7732,8 +7732,10 @@ Print rubbed offসিদ্ধান্ত দেখুন
 
 ### মেয়াদ শেষের তারিখ (EXP) কী এবং 07/2027-এর অর্থ কী?
 
-মেয়াদ শেষের তারিখ ছাপা থাকে EXP, Exp. Date, Use before বা Use by নামে। নির্দেশ অনুযায়ী সংরক্ষণ করলে এটিই সেই শেষ তারিখ, যে পর্যন্ত প্রস্তুতকারক ওষুধের পূর্ণ কার্যকারিতা ও নিরাপত্তার নিশ্চয়তা দেয়। প্রস্তুতকারক স্থায়িত্ব পরীক্ষার ভিত্তিতে এটি ঠিক করে।
+মেয়াদ শেষের তারিখ সাধারণত EXP বা Exp. Date নামে ছাপা থাকে। এটি লেবেলে নির্ধারিত শেলফ লাইফের শেষ তারিখ। নির্দেশ অনুযায়ী সংরক্ষণ করলে ওই সময় পর্যন্ত ওষুধের শক্তি, গুণমান ও বিশুদ্ধতার নির্ধারিত মান বজায় থাকার কথা। প্রস্তুতকারক স্থায়িত্ব পরীক্ষার ভিত্তিতে মেয়াদ ঠিক করে। প্যাকে অন্য wording থাকলে লেবেল ও লিফলেট দেখুন; “Use before” বা “Use by” সব দেশে EXP-এর সমার্থক নয়।
 মাস-বছরের নিয়ম: শুধু মাস ও বছর ছাপা থাকলে ওষুধ ওই মাসের শেষ দিন পর্যন্ত ব্যবহারযোগ্য। ০৭/২০২৭ লেখা প্যাক ৩১ জুলাই ২০২৭ পর্যন্ত ঠিক আছে।
+বাংলাদেশের ঔষধ প্রশাসন অধিদপ্তর (DGDA)-এর ২০২৩ সালের Packaging and Labelling Guideline-এ বলা হয়েছে, ওষুধের EXP তারিখে শুধু মাস ও বছর থাকলে সেটি ওই মাসের শেষ দিন বোঝায়। নির্দেশিকাটি ৩ সেপ্টেম্বর ২০২৩-এ জারি এবং ১০ সেপ্টেম্বর ২০২৩ থেকে কার্যকর। DGDA guideline (Manufacturing Date & Expiry Date, page 11) দেখুন।
+ওষুধের মেয়াদ কীভাবে স্থায়িত্ব পরীক্ষার মাধ্যমে নির্ধারিত হয়, তা জানতে ওষুধের স্থায়িত্ব পরীক্ষা নিবন্ধটি পড়ুন।
 |
 | যা ছাপা আছে | কীভাবে পড়বেন | ব্যবহারের শেষ দিন
 | 07/2027 | মাস / বছর | 31 July 2027
@@ -7772,7 +7774,7 @@ MFGEXP
 
 ### মেয়াদ শেষের পর কি ওষুধ ব্যবহার করা যায়?
 
-সংক্ষিপ্ত উত্তর: না। মেয়াদ শেষের পর প্রস্তুতকারক আর কার্যকারিতা বা নিরাপত্তার নিশ্চয়তা দিতে পারে না। ওষুধের শক্তি কমে যেতে পারে, আর দেখে বা গন্ধ শুঁকে তা বোঝা যায় না। পুরোনো তরল ওষুধ, চোখের ড্রপ, ইনজেকশন ও গুরুতর রোগের ওষুধে বাড়তি ঝুঁকি থাকতে পারে।
+সংক্ষিপ্ত উত্তর: না। মেয়াদ শেষ হলে ওষুধটি আর লেবেলে নির্ধারিত শেলফ লাইফের মধ্যে থাকে না। এর শক্তি বা গুণমান কমে যেতে পারে; শুধু দেখে বা গন্ধ শুঁকে তা নির্ভরযোগ্যভাবে বোঝা যায় না। পুরোনো তরল ওষুধ, চোখের ড্রপ, ইনজেকশন ও গুরুতর রোগের ওষুধে বাড়তি ঝুঁকি থাকতে পারে।
 নিরাপদে ফেলার উপায় ফার্মেসিতে জিজ্ঞেস করুন এবং ফেলে দেওয়ার আগে শিশুদের নাগালের বাইরে রাখুন।
 
 ### ঘরে ওষুধ কীভাবে রাখবেন: ৫টি নিয়ম
@@ -7857,7 +7859,7 @@ A) এখনও ঠিক আছেB) ব্যবহার করবেন ন�
 ### সাধারণ প্রশ্নোত্তর
 
 মেয়াদ শেষের তারিখ আর উৎপাদনের তারিখের পার্থক্য কী?
-MFG বলে ওষুধ কবে তৈরি হয়েছে। EXP হলো নির্দেশ অনুযায়ী সংরক্ষণ করলে পূর্ণ কার্যকারিতা ও নিরাপত্তার নিশ্চয়তার শেষ তারিখ।
+MFG বলে ওষুধ কবে তৈরি হয়েছে। EXP লেবেলে নির্ধারিত শেলফ লাইফের শেষ তারিখ; নির্দেশ অনুযায়ী সংরক্ষণ করলে ওই সময় পর্যন্ত ওষুধের শক্তি, গুণমান ও বিশুদ্ধতার নির্ধারিত মান বজায় থাকার কথা।
 
 ওষুধে EXP 07/2027 লেখা থাকলে এর অর্থ কী?
 এর অর্থ ৩১ জুলাই ২০২৭ পর্যন্ত ওষুধটি ঠিক আছে।
@@ -7898,17 +7900,17 @@ MFG বলে ওষুধ কবে তৈরি হয়েছে। EXP হ�
 🛡 তথ্য যাচাই
 |
 | দাবি | অবস্থা | ভিত্তি
-| EXP হলো নির্দেশ অনুযায়ী সংরক্ষণে পূর্ণ কার্যকারিতা ও নিরাপত্তার শেষ তারিখ | যাচাইকৃত | FDA-র মেয়াদ-সংক্রান্ত তথ্য
-| মাস-বছরের তারিখ ওই মাসের শেষ দিন পর্যন্ত ঠিক | যাচাইকৃত | সাধারণ ফার্মেসি নির্দেশনা
+| নির্দেশ অনুযায়ী সংরক্ষণে EXP লেবেলে নির্ধারিত শেলফ লাইফের শেষ তারিখ | যাচাইকৃত | FDA-র stability ও quality guidance
+| শুধু মাস-বছর ছাপা থাকলে EXP ওই মাসের শেষ দিন বোঝায় | যাচাইকৃত | DGDA Packaging and Labelling Guideline 2023, p. 11
 | ব্যাচ নম্বর দিয়ে প্যাক শনাক্ত করা যায় | যাচাইকৃত | উৎপাদন ও প্রত্যাহার ট্রেসিং
 | খোলার পর আরও ছোট সীমা থাকতে পারে | প্যাক দেখুন | পণ্যের লেবেল ও লিফলেট
 | তাপ, আর্দ্রতা ও আলো ওষুধের আয়ু কমাতে পারে | যাচাইকৃত | স্থায়িত্বের নীতি
-সর্বশেষ পর্যালোচনা: অক্টোবর ২০২৬।
+সর্বশেষ পর্যালোচনা: ২৬ নভেম্বর ২০২৬।
 
 ### তথ্যসূত্র
 
 - U.S. FDA: Don't Be Tempted to Use Expired Medicines
-- World Health Organization: official health guidance
+- DGDA: Guideline on Medical Information for Summary Product Characteristics, Patient Information Leaflet, Packaging and Labelling in Bangladesh (2023)
 - সংশ্লিষ্ট ওষুধের নিজস্ব লেবেল ও লিফলেট
 
 এটি শুধুমাত্র শিক্ষামূলক তথ্য; ব্যক্তিগত চিকিৎসা পরামর্শের বিকল্প নয়। উদাহরণগুলো পণ্য ও দেশভেদে ভিন্ন হতে পারে। নির্দিষ্ট কোনো ওষুধ নিয়ে ফার্মাসিস্ট বা চিকিৎসকের পরামর্শ নিন।
@@ -7918,7 +7920,7 @@ MFG বলে ওষুধ কবে তৈরি হয়েছে। EXP হ�
 
 ### Expiry Date vs Manufacturing Date: What EXP & MFG Mean
 URL: https://sayedulabrar.site/blog/expiry-date-vs-manufacturing-date-medicine/ · Language: English · Published:  · Author: Sayedul Abrar, pharmacist
-Summary: What EXP and MFG mean on a medicine pack: how to read EXP 07/2027 (good to the end of that month), the batch number, opened-medicine limits and storage.
+Summary: Learn how to read EXP and MFG dates. Bangladesh’s DGDA says month/year expiry means the month’s last day. Check batch numbers and safe storage.
 
 ### What is the difference between expiry date and manufacturing date?
 
@@ -7930,7 +7932,7 @@ Quick answer: The manufacturing date (MFG) is when the medicine was made. The ex
 ### Your medicine pack is hiding a tiny clock
 
 Turn over any medicine pack and you will find a tiny stamped clock near an edge or on the bottom. Three short codes tell the story: MFG (made), EXP (expires) and B.No. (which batch).
-By Sayedul Abrar, pharmacist · Published 28 October 2026 · Updated 7 November 2026
+By Sayedul Abrar, pharmacist · Published 28 October 2026 · Updated 26 November 2026
 Look at the edge of a strip, the end flap of a box, or the bottom or label of a bottle. Use good light; if you cannot read the date, ask your pharmacist instead of guessing.
 
 #### Tap the 3 codes
@@ -7963,8 +7965,10 @@ The manufacturing date is printed as MFG, Mfg. Date or Manu. Date. It tells you 
 
 ### What is an expiry date (EXP) and what does 07/2027 mean?
 
-The expiry date is printed as EXP, Exp. Date, Use before or Use by. It is the last date the manufacturer guarantees the medicine's full strength and safety when stored as directed. Manufacturers set it using stability testing.
+The expiry date is usually printed as EXP or Exp. Date. It marks the end of the labelled shelf life. When stored as directed, the medicine is expected to meet its stated standards for strength, quality and purity through this date. Manufacturers establish the period using stability testing. Other wording may vary, so check the exact label and leaflet rather than assuming “use before” or “use by” always means the same as EXP.
 The month-year rule: If only a month and year are printed, the medicine is good through the last day of that month. A pack marked 07/2027 is good through 31 July 2027.
+For medicines marketed in Bangladesh, the Directorate General of Drug Administration (DGDA) states in its 2023 Packaging and Labelling Guideline that an expiry date printed with only a month and year means the last day of that month. The guideline was issued on 3 September 2023 and implemented from 10 September 2023. See the DGDA guideline (Manufacturing Date & Expiry Date, page 11).
+For how manufacturers establish shelf life through stability studies, read our guide to medicine stability testing.
 |
 | What is printed | How to read it | Last day to use
 | 07/2027 | Month / year | 31 July 2027
@@ -8003,7 +8007,7 @@ Whichever comes first
 
 ### Can I use medicine after the expiry date?
 
-Short answer: no. After the expiry date the manufacturer can no longer guarantee strength or safety. A medicine may lose strength, and you cannot tell by looking or smelling. Old liquids, eye drops, injections and medicines for serious conditions can carry extra risk.
+Short answer: no. After its expiry date, a medicine is outside its labelled shelf life. It may have lost strength or changed in quality, and you cannot reliably tell by looking or smelling. Old liquids, eye drops, injections and medicines for serious conditions can carry extra risk.
 Ask your pharmacy how to dispose of expired medicine safely, and keep it out of children's reach until it is gone.
 
 ### How to store medicine at home: 5 rules
@@ -8088,7 +8092,7 @@ A) Still fineB) Do not use; the sooner limit winsC) Use a smaller dose
 ### Frequently asked questions
 
 What is the difference between expiry date and manufacturing date?
-MFG is when the medicine was made. EXP is the last date the manufacturer guarantees full strength and safety if stored as directed.
+MFG is when the medicine was made. EXP marks the end of the labelled shelf life; when stored as directed, the product is expected to meet its stated standards for strength, quality and purity through that date.
 
 What does EXP 07/2027 mean on a medicine?
 It is good through 31 July 2027.
@@ -8126,17 +8130,17 @@ Do not use a medicine after expiry, if the pack is damaged, or if it looks, smel
 🛡 Fact-checked
 |
 | Statement | Status | Basis
-| EXP is the last date full strength and safety are guaranteed if stored as directed | Verified | U.S. FDA expiration-date information
-| Month-year date is good through the last day of the month | Verified | Standard pharmacy guidance
+| EXP marks the end of the labelled shelf life when stored as directed | Verified | U.S. FDA stability and quality information
+| A month-year expiry date means the last day of that month | Verified | DGDA Bangladesh Packaging and Labelling Guideline 2023, p. 11
 | Batch numbers help trace packs in quality issues or recalls | Verified | Manufacturing and recall traceability
 | Opened products can have a shorter limit | Check the pack | Product labels and leaflets
 | Heat, humidity and light can shorten useful life | Verified | Stability principles
-Last reviewed: October 2026.
+Last reviewed: 26 November 2026.
 
 ### References
 
 - U.S. FDA: Don't Be Tempted to Use Expired Medicines
-- World Health Organization: official health guidance
+- DGDA: Guideline on Medical Information for Summary Product Characteristics, Patient Information Leaflet, Packaging and Labelling in Bangladesh (2023)
 - The leaflet and label of the medicine itself
 
 Educational content only; it does not replace individual medical advice. Examples are illustrative and may vary by product and country. Ask a pharmacist or prescriber about any specific medicine.
