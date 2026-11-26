@@ -133,7 +133,7 @@
         menu.style.willChange='transform';menu.style.width='max-content';menu.style.flexWrap='nowrap';
         menu.style.justifyContent='flex-start';
         nav.style.overflow='hidden';nav.style.touchAction='pan-y';nav.style.scrollBehavior='auto';
-        var hovering=false;nav.addEventListener('mouseenter',function(){hovering=true});nav.addEventListener('mouseleave',function(){hovering=false});
+        var hovering=false;nav.addEventListener('mouseenter',function(){hovering=true});nav.addEventListener('mouseleave',function(){hovering=false});nav.addEventListener('focusin',function(){hovering=true});nav.addEventListener('focusout',function(e){if(!nav.contains(e.relatedTarget))hovering=false});
         var navOffset=(sv&&isFinite(sv.o))?sv.o:0,navLast=0,dragging=false,dragMoved=false,pid=null,startX=0,startOff=0,pressed=false;
         function fitGap(){
           menu.style.setProperty('gap','0px','important');
@@ -224,12 +224,12 @@
     if(!header||!bar||!menu||document.querySelector('.site-menu-toggle'))return;
     var btn=document.createElement('button');btn.type='button';btn.className='site-menu-toggle';btn.setAttribute('aria-label','Open navigation menu');btn.setAttribute('aria-expanded','false');btn.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"></path></svg>';
     var search=bar.querySelector('.site-search-toggle');if(search&&search.parentNode===bar)search.insertAdjacentElement('afterend',btn);else bar.appendChild(btn);
-    var overlay=document.createElement('div');overlay.className='site-nav-overlay';overlay.id='site-nav-overlay';overlay.setAttribute('aria-hidden','true');
+    var overlay=document.createElement('div');overlay.className='site-nav-overlay';overlay.id='site-nav-overlay';overlay.setAttribute('role','dialog');overlay.setAttribute('aria-modal','true');overlay.setAttribute('aria-labelledby','site-nav-overlay-title');overlay.setAttribute('aria-hidden','true');
     var close=document.createElement('button');close.type='button';close.className='site-nav-overlay-close';close.setAttribute('aria-label','Close navigation menu');close.innerHTML='&times;';
     var card=document.createElement('div');card.className='site-nav-card';
     var profile=document.createElement('div');profile.className='site-nav-overlay-profile';
     var img=document.createElement('img');img.src='/assets/img/sayedul-abrar.jpg';img.alt='Sayedul Abrar';img.loading='lazy';
-    var h=document.createElement('h2');h.textContent="Hello, I'm Sayedul Abrar";
+    var h=document.createElement('h2');h.id='site-nav-overlay-title';h.textContent="Hello, I'm Sayedul Abrar";
     var p=document.createElement('p');p.textContent='Pharmacist · Product Executive · Lifelong learner. Explore my professional journey, pharmacy articles and work.';
     profile.appendChild(img);profile.appendChild(h);profile.appendChild(p);
     var links=document.createElement('nav');links.className='site-nav-overlay-links';links.setAttribute('aria-label','Expanded navigation');
@@ -240,8 +240,8 @@
     function shut(){overlay.classList.remove('is-open');overlay.setAttribute('aria-hidden','true');document.body.classList.remove('nav-overlay-open');btn.setAttribute('aria-expanded','false');btn.setAttribute('aria-label','Open navigation menu');btn.focus()}
     btn.addEventListener('click',function(){overlay.classList.contains('is-open')?shut():open()});close.addEventListener('click',shut);
     overlay.addEventListener('click',function(e){if(e.target===overlay)shut()});
-    overlay.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){overlay.classList.remove('is-open');overlay.setAttribute('aria-hidden','true');document.body.classList.remove('nav-overlay-open')})});
-    document.addEventListener('keydown',function(e){if(e.key==='Escape'&&overlay.classList.contains('is-open'))shut()});
+    overlay.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){overlay.classList.remove('is-open');overlay.setAttribute('aria-hidden','true');document.body.classList.remove('nav-overlay-open');btn.setAttribute('aria-expanded','false');btn.setAttribute('aria-label','Open navigation menu')})});
+    document.addEventListener('keydown',function(e){if(!overlay.classList.contains('is-open'))return;if(e.key==='Escape'){shut();return}if(e.key==='Tab'){var focusable=overlay.querySelectorAll('button:not([disabled]),a[href],input:not([disabled]),select:not([disabled]),textarea:not([disabled]),[tabindex]:not([tabindex="-1"])');var first=focusable[0],last=focusable[focusable.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}}});
   })();
 
   /* copy email */
