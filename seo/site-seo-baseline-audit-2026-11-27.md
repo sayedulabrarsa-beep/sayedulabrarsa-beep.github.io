@@ -280,3 +280,62 @@ No production HTML or design changes were necessary. The audit report itself was
 3. Continue article-by-article medical reference and claim verification, prioritising high-risk medicine-use, dosing, safety, pregnancy, interaction and Bangladesh regulatory claims.
 4. Review image delivery, responsive behaviour, accessibility and performance in a real browser/device environment.
 5. Obtain longer-window Search Console data before changing pages based on short-term impressions or CTR.
+
+## Follow-up: bilingual navigation, structured data, accessibility and medical-label review
+
+**Reviewed:** 27 November 2026  
+**Scope:** Published sitemap pages, all 29 published English/Bangla article pairs, four medicine brand pages, selected complex article fragments, global CSS/JavaScript and connected Search Console data.
+
+### Bilingual navigation and internal links
+
+- Checked all **29 published English/Bangla article pairs (58 article pages)** for reciprocal `hreflang="en"`, `hreflang="bn"` and `hreflang="x-default"`. Each page points to its own canonical URL for its language, the paired page for the other language, and the English canonical for x-default. No mismatches were found.
+- Checked local internal link targets across the 58 article pages and 28 other sitemap pages. No missing local page or asset target was found in the repository.
+- Checked same-page fragment links on eight complex articles with tables/contents and long section navigation. All tested fragment targets resolve to an element ID.
+- Found and removed premature links from published pages to future, noindex articles and a future series hub. A published page should not send readers to a page that is still awaiting its scheduled release and author approval. The affected English/Bangla links were in Drug vs Medicine, Drug Half-Life and Bioavailability pages. The underlying future articles and their manual-only release status were not changed.
+
+### Image delivery and accessibility checks
+
+- The production sitemap contains **927 image entries**. Every image URL (after removing cache query strings) maps to a file present in the repository.
+- The previous 86-page audit found no missing or empty image alt attributes.
+- Representative homepage, article and learning pages use explicit image dimensions. The homepage and article hero images are prioritised; below-the-fold images generally use lazy loading. A complete per-image runtime layout-shift measurement was not available.
+- The global amber text/control accent was darkened from `#C26E00` to `#9A5600` in the shared stylesheet, article-end component and sitemap stylesheet. Calculated contrast is 5.16:1 on the main light background (`#F3F4F9`), 4.72:1 on the secondary light background (`#E8EAF2`) and 5.67:1 on white. The amber appearance is retained while normal-size text and white button labels gain a stronger contrast margin. The dark-theme accent was not changed.
+- Updated the site navigation script so keyboard focus pauses the moving navigation rail. The full-screen navigation overlay now has dialog semantics, an accessible title, a Tab/Shift+Tab focus loop and Escape-to-close behaviour. Existing reduced-motion handling remains in place.
+
+### Structured-data semantic corrections
+
+- Changed the main medicine entity from the generic Schema.org `Substance` type to the more specific `Drug` type on the Finix MUPS, Finix, Finix HP and Malifa pages. The `Drug` type supports the active ingredient, dosage form, proprietary name and manufacturer properties used on these pages. See [Schema.org Drug](https://schema.org/Drug).
+- Removed duplicate Bengali alternate names from the homepage Person entity.
+- Rechecked the edited pages: all JSON-LD blocks parse as valid JSON. This is a syntax check plus targeted type/property review, not a full external Schema.org or Google Rich Results validation of every graph on all 86 pages.
+
+### Medical/product-label accuracy corrections
+
+The following corrections keep the Bangladeshi manufacturer's insert distinct from a US label for another rabeprazole product:
+
+1. **When to Take a PPI** — clarified that Opsonin's published Finix 10 mg information identifies a delayed-release sprinkle capsule but does not specify a method for opening or mixing it. Instructions from a different US rabeprazole sprinkle product are now explicitly labelled as product-specific and must not be treated as Finix instructions. The Finix 20 tablet food-timing statement is similarly qualified.
+2. **Finix MUPS 20 brand page** — updated the English and Bangla visible FAQs and FAQ structured data. The Opsonin Finix MUPS insert lists once-daily dosing for most indications and states that all three medicines in H. pylori triple therapy are taken with morning and evening meals; it does not provide a universal meal-timing rule for other indications. The US ACIPHEX label is now clearly distinguished from the Finix MUPS insert.
+3. **Finix brand page** — updated the visible FAQ and FAQ structured data to distinguish the local Finix insert from US ACIPHEX food-timing instructions.
+
+Primary sources checked:
+- [Opsonin Finix MUPS 20 manufacturer insert](https://www.opsonin-pharma.com/uploads/pdf/pdf_1742274302.pdf)
+- [Opsonin Finix 10 mg manufacturer insert](https://www.opsonin-pharma.com/uploads/pdf/pdf_1762153089.pdf)
+- [DailyMed: US ACIPHEX rabeprazole delayed-release tablet label](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1eb38279-0237-4967-be7a-c53a826c1138)
+- [DailyMed: US rabeprazole delayed-release sprinkle product label](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b1b1530-abc8-487a-b673-2b35cbf14e0c)
+
+### Search Console review
+
+The connected property is `sc-domain:sayedulabrar.site`, with owner access. The available integration currently provides only the three-day window **21–23 November 2026**, with no comparison period.
+
+- Bangla expiry-date article: 50 impressions, 0 clicks, average position 7.9. The query `মেয়াদ শেষ হওয়ার তারিখ` contributed 47 impressions at average position about 8.0.
+- Bangla API article: 8 impressions, 0 clicks, average position 7.
+- Branded query `sayedul abrar` appeared across four pages, but the data volume is too small to establish harmful cannibalisation. The homepage remains the main identity page and About remains the detailed biography page.
+- No title, description or page consolidation change was made from this three-day sample. The Bangla expiry page's current title and description already match the main query intent. Reassess after a longer data window becomes available.
+
+### Remaining limitations and next checks
+
+1. A live mobile/desktop browser session and a completed PageSpeed Insights/Lighthouse run were not available in this audit. CSS breakpoints, reduced-motion rules, image dimensions and navigation code were reviewed statically; this is not a substitute for real-device testing.
+2. Full semantic validation of every structured-data graph with Schema.org Validator and Google's Rich Results Test remains outstanding.
+3. External outbound links have not all been followed and verified individually. Internal route/asset targets were checked against the repository.
+4. Medical references and claims still need a complete article-by-article review. The targeted product-label corrections above do not constitute a clinical review of every article.
+5. Search Console comparisons and trend conclusions must wait until a longer date range is available.
+
+No future article was published and the manual author-approval safeguard remains in force.
