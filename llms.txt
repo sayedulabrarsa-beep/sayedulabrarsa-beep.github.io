@@ -108,8 +108,8 @@ Pharma Blog articles (newest first; each is educational, not medical advice):
   Summary: Long-term, accelerated ও ongoing stability study-এর মাধ্যমে ওষুধের মান, packaging, storage এবং expiry date কীভাবে নির্ধারিত হয় জানুন।
 - Medicine Stability Testing: How Shelf Life Is Set — English (2026-11-22): https://sayedulabrar.site/blog/medicine-stability-testing-how-shelf-life-is-established/
   Summary: Medicine stability testing explained: long-term, accelerated and ongoing studies, packaging, shelf life and expiry dates, with Bangladesh context.
-- কোয়ালিটি অ্যাসিউরেন্স (QA) বনাম কোয়ালিটি কন্ট্রোল (QC): ওষুধশিল্পে পার্থক্য কী? — বাংলা (2026-11-21): https://sayedulabrar.site/blog/quality-assurance-vs-quality-control-bangla/
-  Summary: ফার্মাসিউটিক্যাল শিল্পে QA ও QC-এর পার্থক্য, দায়িত্ব, পরীক্ষা, GMP, OOS investigation, CAPA এবং রোগীর নিরাপত্তায় তাদের ভূমিকা সহজ বাংলায় জানুন।
+- QA vs QC: ওষুধশিল্পে পার্থক্য ও কাজের সহজ ব্যাখ্যা — বাংলা (2026-11-21): https://sayedulabrar.site/blog/quality-assurance-vs-quality-control-bangla/
+  Summary: QA ও QC কী? ওষুধ উৎপাদনে Quality Assurance ও Quality Control-এর কাজ, পার্থক্য, GMP, OOS ও CAPA সহজ বাংলায় বুঝুন।
 - Quality Assurance vs Quality Control: What Is the Difference in Pharmaceuticals? — English (2026-11-21): https://sayedulabrar.site/blog/quality-assurance-vs-quality-control/
   Summary: QA vs QC in pharmaceuticals: Quality Assurance builds the quality system, Quality Control does the sampling and testing. Roles, OOS investigation, CAPA and GMP.
 - ওষুধের নিঃসরণ: শরীর থেকে ওষুধ কীভাবে বের হয়? — বাংলা (2026-11-21): https://sayedulabrar.site/blog/drug-excretion-how-medicines-leave-the-body-bangla/
@@ -124,8 +124,8 @@ Pharma Blog articles (newest first; each is educational, not medical advice):
   Summary: ওষুধের বিপাক কীভাবে হয় জানুন—যকৃত, CYP enzyme, Phase I ও Phase II reaction, first-pass metabolism এবং prodrug activation সহজভাবে ব্যাখ্যা করা হয়েছে।
 - Drug Metabolism: How Does the Body Process Medicines? — English (2026-11-18): https://sayedulabrar.site/blog/drug-metabolism-how-the-body-processes-medicines/
   Summary: Drug metabolism explained: how the liver and CYP enzymes process medicines, what Phase I and Phase II reactions mean, plus first-pass metabolism and prodrugs.
-- অ্যাকটিভ ফার্মাসিউটিক্যাল ইনগ্রেডিয়েন্ট (API): কাঁচামাল থেকে ওষুধ — বাংলা (2026-11-17): https://sayedulabrar.site/blog/active-pharmaceutical-ingredient-api-from-raw-material-to-medicine-bangla/
-  Summary: API কী, কীভাবে তৈরি ও বিশুদ্ধ করা হয়, কীভাবে মান পরীক্ষা হয় এবং কীভাবে এটি ট্যাবলেট বা ক্যাপসুলের মতো প্রস্তুত ওষুধে ব্যবহৃত হয়—সহজ বাংলায় জানুন।
+- API কী? ওষুধ তৈরিতে Active Pharmaceutical Ingredient — বাংলা (2026-11-17): https://sayedulabrar.site/blog/active-pharmaceutical-ingredient-api-from-raw-material-to-medicine-bangla/
+  Summary: API কী এবং ওষুধ তৈরিতে কেন জরুরি? কাঁচামাল, উৎপাদন, বিশুদ্ধকরণ, quality testing ও GMP ধাপে ধাপে সহজ বাংলায় জানুন।
 - Active Pharmaceutical Ingredient (API): From Raw Material to Medicine — English (2026-11-17): https://sayedulabrar.site/blog/active-pharmaceutical-ingredient-api-from-raw-material-to-medicine/
   Summary: What is an active pharmaceutical ingredient (API)? Follow how an API is made, purified, tested and used in a finished medicine, with a simple process diagram.
 - ওষুধের বণ্টন: রক্ত থেকে শরীরের বিভিন্ন টিস্যুতে কীভাবে পৌঁছায়? — বাংলা (2026-11-16): https://sayedulabrar.site/blog/drug-distribution-how-medicines-reach-their-target-bangla/
@@ -156,10 +156,10 @@ Pharma Blog articles (newest first; each is educational, not medical advice):
   Summary: আয়রনের ঘাটতি আর অ্যানিমিয়া এক জিনিস নয়। সহজ ভাষায় পার্থক্য, লক্ষণ, কারণ, ফেরিটিন ও সিবিসি পরীক্ষা, চিকিৎসা এবং কখন ডাক্তার দেখাবেন জানুন।
 - Iron Deficiency vs Anemia: What Is the Difference? — English (2026-11-07): https://sayedulabrar.site/blog/iron-deficiency-vs-anemia/
   Summary: Iron deficiency vs anemia: does low iron mean anemia? Key symptoms, causes, ferritin and CBC tests, treatment basics and when to see a doctor.
-- আয়রন ট্যাবলেট কখন খাবেন? খাবারের আগে না পরে — বাংলা (2026-11-07): https://sayedulabrar.site/blog/how-to-take-iron-tablets-properly-bangla/
-  Summary: আয়রন ওষুধ কখন খেতে হয়—খাবারের আগে না পরে? ভিটামিন C, চা-কফি, দুধ ও ক্যালসিয়াম থেকে ব্যবধান এবং ওষুধের মিথস্ক্রিয়া জানুন।
-- How to Take Iron Tablets Properly: Timing, Food and Interactions — English (2026-11-07): https://sayedulabrar.site/blog/how-to-take-iron-tablets-properly/
-  Summary: Iron tablets: before or after food? Best timing, vitamin C, tea, coffee, dairy and calcium gaps, interactions and missed doses, with NHS and NIH sources.
+- আয়রন ট্যাবলেট কখন খাবেন? খালি পেটে নাকি খাবারের পর? — বাংলা (2026-11-07): https://sayedulabrar.site/blog/how-to-take-iron-tablets-properly-bangla/
+  Summary: আয়রন ট্যাবলেট খালি পেটে নাকি খাবারের পরে খাবেন? চা-কফি, দুধ, ক্যালসিয়াম ও ভিটামিন C-এর ব্যবধান এবং ডোজ বাদ পড়লে কী করবেন জানুন।
+- Iron Tablets: Before or After Food? Best Time — English (2026-11-07): https://sayedulabrar.site/blog/how-to-take-iron-tablets-properly/
+  Summary: Should you take iron tablets before or after food? Learn the best time, vitamin C, 2-hour gaps from tea, coffee and dairy, interactions and missed doses.
 - গ্লুকোসামিন ও আলঝেইমার: নতুন গবেষণা আসলে কী বলছে (আর কী বলছে না) — বাংলা (2026-11-01): https://sayedulabrar.site/blog/glucosamine-alzheimers-nature-metabolism-study-bangla/
   Summary: গ্লুকোসামিন কি আলঝেইমার বাড়ায়? ২০২৬ সালের Nature Metabolism গবেষণার ইঁদুর ও রোগীর তথ্য, সীমাবদ্ধতা ও করণীয়—ফার্মাসিস্টের সহজ পর্যালোচনা।
 - Glucosamine and Alzheimer's: What the New Nature Metabolism Study Really Shows (and What It Doesn't) — English (2026-11-01): https://sayedulabrar.site/blog/glucosamine-alzheimers-nature-metabolism-study/
@@ -172,7 +172,7 @@ Pharma Blog articles (newest first; each is educational, not medical advice):
   Summary: ওষুধের মেয়াদ শেষ হওয়ার তারিখ (EXP) কীভাবে পড়বেন? 07/2027 মানে ৩১ জুলাই পর্যন্ত। MFG, ব্যাচ নম্বর ও নিরাপদ সংরক্ষণ সহজে জানুন।
 - Expiry Date vs Manufacturing Date on Medicine: EXP vs MFG — English (2026-10-28): https://sayedulabrar.site/blog/expiry-date-vs-manufacturing-date-medicine/
   Summary: What do EXP and MFG mean on medicine? Learn how to read expiry dates, why 07/2027 means 31 July, and how to check batch numbers and storage.
-- জেনেরিক নাম কী? জেনেরিক ও ব্র্যান্ড নামের পার্থক্য — বাংলা (2026-10-27): https://sayedulabrar.site/blog/generic-name-vs-brand-name-bangla/
+- জেনেরিক নাম কী? ব্র্যান্ড নামের পার্থক্য — বাংলা (2026-10-27): https://sayedulabrar.site/blog/generic-name-vs-brand-name-bangla/
   Summary: Generic name meaning in Bengali: জেনেরিক নাম কী, ব্র্যান্ড নাম থেকে পার্থক্য, নাপা-প্যারাসিটামলের উদাহরণ ও ওষুধের লেবেল পড়ার নিয়ম জানুন।
 - Generic Name vs Brand Name of Medicine: Easy Guide (2026) — English (2026-10-27): https://sayedulabrar.site/blog/generic-name-vs-brand-name/
   Summary: Generic name vs brand name of medicine: find the active ingredient, why Finix and Rabe share one, what MUPS means, and a 4-step label check.
