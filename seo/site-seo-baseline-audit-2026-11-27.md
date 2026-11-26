@@ -53,7 +53,7 @@ The current `.github/workflows/scheduled-articles.yml`:
 - Runs the scheduled-release script and supporting generators.
 - Commits generated changes and pushes them to `main`.
 
-This is an automatic publishing path. It does not implement a per-article author review/approval gate. **Recommended action:** replace automatic scheduled release with a manual, explicitly authorised release process, or introduce a genuine approval gate. This change should be reviewed with the author because it affects the existing editorial calendar and publishing operations.
+This was an automatic publishing path with no author approval gate. A proposed fix is now included in this review branch: remove automatic cron/push triggers and require a manual workflow dispatch with an explicit author-approval checkbox before the release job can run. This proposal is not active on `main` until the pull request is approved and merged. The manual run releases all calendar items that the release script considers due, so the author should review every due item before checking the approval box.
 
 The separate IndexNow workflow is triggered after selected public HTML or sitemap changes on `main`; it is a notification workflow, not an approval mechanism.
 
@@ -103,7 +103,7 @@ Those require connected account data or fresh, page-level technical testing.
 ## Safety and change log
 
 - This audit report is documentation only.
-- No production page, article, URL, image, CSS, JavaScript, sitemap, robots file or publishing workflow was changed as part of this report.
+- No production page, article, URL, image, CSS, JavaScript, sitemap or robots file was changed as part of this report. The publishing workflow change is a proposal on the review branch only and is not active until approved and merged.
 - The business/editorial profile and reusable review template are prepared on the separate review branch.
 - The draft pull request remains unmerged. Production remains on `main` until the author reviews and approves the proposed changes.
 
