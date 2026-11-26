@@ -171,6 +171,329 @@ Get in touch ↗Find me on LinkedIn
 
 ## Pharma Blog articles (newest first)
 
+### ফার্মাকোজেনেটিক্স: আপনার জিন কি ওষুধের প্রতিক্রিয়া বদলে দিতে পারে?
+URL: https://sayedulabrar.site/blog/pharmacogenetics-how-genes-affect-medicine-response-bangla/ · Language: Bangla · Published: 2026-11-26T10:00:00+06:00 · Author: Sayedul Abrar, pharmacist
+Summary: জিনের ভিন্নতা কীভাবে ওষুধের বিপাক, কার্যকারিতা ও পার্শ্বপ্রতিক্রিয়ার ঝুঁকিতে প্রভাব ফেলতে পারে—উদাহরণ ও পরীক্ষার সীমাবদ্ধতাসহ জানুন।
+
+লেখক: সাইয়্যেদুল আবরার, A Grade Pharmacist · প্রকাশিত ২৬ নভেম্বর ২০২৬
+
+সহজ উত্তর: ফার্মাকোজেনেটিক্সে দেখা হয়, নির্দিষ্ট কিছু জিনের উত্তরাধিকারসূত্রে পাওয়া ভিন্নতা কীভাবে কিছু ওষুধের কার্যকারিতা ও নিরাপত্তায় প্রভাব ফেলতে পারে। কোনো variant ওষুধ কত দ্রুত সক্রিয় বা ভাঙবে, কোষে কীভাবে প্রবেশ করবে, তার target কীভাবে কাজ করবে অথবা নির্দিষ্ট adverse reaction-এর ঝুঁকি কতটা—এসব বদলাতে পারে। কিছু ক্ষেত্রে এই তথ্য চিকিৎসককে ওষুধ বা ডোজ বেছে নিতে সাহায্য করে। তবে এটি সব প্রতিক্রিয়া আগে থেকে বলে দিতে পারে না এবং নিজে থেকে ওষুধ পরিবর্তনের কারণও নয়।
+
+### ১. ফার্মাকোজেনেটিক্স কী?
+
+ফার্মাকোজেনেটিক্স (Pharmacogenetics) হলো নির্দিষ্ট কোনো জিনের উত্তরাধিকারসূত্রে পাওয়া ভিন্নতা একজন মানুষের নির্দিষ্ট ওষুধের প্রতি প্রতিক্রিয়ায় কী প্রভাব ফেলে, তা নিয়ে গবেষণা। এটি ফার্মাকোলজি—ওষুধবিজ্ঞান—এবং জেনেটিক্স—বংশগত তথ্যের বিজ্ঞান—এই দুই ক্ষেত্রকে যুক্ত করে।
+
+আপনি ফার্মাকোজেনোমিক্স (Pharmacogenomics) শব্দটিও দেখতে পারেন। অনেক সময় দুটি শব্দ একই অর্থে ব্যবহৃত হয়। ঐতিহ্যগতভাবে pharmacogenetics নির্দিষ্ট একটি জিন ও ওষুধের সম্পর্ক নিয়ে আলোচনা করে; pharmacogenomics অনেক জিন বা পুরো genome-এর বিস্তৃত প্রভাব বোঝাতে পারে। গবেষণা ও স্বাস্থ্যসেবার বিভিন্ন প্রতিষ্ঠানে ব্যবহারের ধরন কিছুটা ভিন্ন।
+
+এটি কেন গুরুত্বপূর্ণ? একই ওষুধ, একই লেবেল-নির্দেশিত ডোজ নেওয়ার পরও দুই ব্যক্তির শরীরে ওষুধের মাত্রা, উপকার বা পার্শ্বপ্রতিক্রিয়া এক নাও হতে পারে। জিনের ভিন্নতা এর একটি সম্ভাব্য কারণ। তবে বয়স, কিডনি ও যকৃতের কার্যক্ষমতা, রোগের অবস্থা, খাবার, ধূমপান, অন্য ওষুধ এবং নিয়ম মেনে ওষুধ খাওয়াও গুরুত্বপূর্ণ।
+
+তাই pharmacogenetic তথ্য হলো precision medicine-এর একটি অংশ, চিকিৎসকের মূল্যায়নের বিকল্প নয়। নির্দিষ্ট জিন–ওষুধ সম্পর্কের পক্ষে যথেষ্ট প্রমাণ থাকলে এবং ফলটি চিকিৎসার সিদ্ধান্তে কাজে লাগলে এ তথ্য বেশি উপকারী হয়।
+
+### ২. জিন কীভাবে ওষুধের প্রতিক্রিয়ায় প্রভাব ফেলে?
+
+জিনের মধ্যে protein তৈরির নির্দেশনা থাকে। কিছু protein ওষুধ শোষণ, পরিবহন, বিপাক বা শরীর থেকে বের করতে সাহায্য করে। কিছু protein হলো ওষুধের target; আবার immune system-এর কিছু protein নির্দিষ্ট প্রতিক্রিয়ার ঝুঁকিতে ভূমিকা রাখে। DNA variant-এর কারণে কোনো protein-এর পরিমাণ বা কার্যক্ষমতা বদলে যেতে পারে।
+
+- ওষুধ-বিপাককারী enzyme: CYP2C19 ও CYP2D6-এর মতো enzyme কিছু ওষুধ কত দ্রুত সক্রিয় বা ভাঙবে তা প্রভাবিত করতে পারে।
+
+- Transport protein: SLCO1B1-এর মতো জিন থেকে তৈরি protein ওষুধ কোষে ঢোকা বা বের হওয়ার প্রক্রিয়ায় ভূমিকা রাখতে পারে।
+
+- Drug target: কোনো receptor, enzyme বা অন্য target-এর জিনগত ভিন্নতা ওষুধের কাজের ধরন বদলাতে পারে।
+
+- Immune-related protein: কিছু HLA variant নির্দিষ্ট immune-mediated adverse reaction-এর ঝুঁকি বাড়াতে পারে।
+
+প্রভাব কোন দিকে যাবে তা নির্দিষ্ট ওষুধের ওপর নির্ভর করে। কোনো enzyme যদি সক্রিয় ওষুধ ভেঙে দেয়, enzyme-এর কার্যক্ষমতা কমলে ওষুধ শরীরে বেশি থাকতে পারে। কিন্তু কোনো ওষুধ যদি prodrug হয়—অর্থাৎ শরীরে সক্রিয় হতে enzyme দরকার হয়—তাহলে enzyme কম সক্রিয় হলে active metabolite কম তৈরি হতে পারে। তাই “slow” বা “poor metabolizer” মানেই ওষুধ বেশি কাজ করবে বা কম কাজ করবে—এমন নয়।
+
+### ৩. Genotype থেকে predicted phenotype
+
+ল্যাবরেটরি রিপোর্টে genotype লেখা থাকতে পারে—অর্থাৎ নির্দিষ্ট জিনে কোন variant বা allele combination পাওয়া গেছে। কিছু pharmacogene-এ star-allele পদ্ধতি ব্যবহার করা হয়; যেমন CYP2C19*1 বা CYP2C19*2। উত্তরাধিকারসূত্রে পাওয়া দুই কপির সমন্বয়কে অনেক সময় diplotype বলা হয়।
+
+কিছু drug-metabolising enzyme-এর ক্ষেত্রে যাচাই করা genotype-to-phenotype পদ্ধতিতে এই ফলকে সম্ভাব্য কার্যগত শ্রেণিতে রূপান্তর করা হয়। জিনভেদে normal, intermediate, poor, rapid বা ultrarapid metabolizer শব্দ ব্যবহার হতে পারে। অন্য জিনে আলাদা শ্রেণি থাকে—যেমন কোনো high-risk HLA allele আছে কি নেই, সেটি positive/negative হিসেবে রিপোর্ট হতে পারে।
+
+এগুলো ব্যক্তিত্বের পরিচয় নয়, কিংবা চিকিৎসার সফলতা নিশ্চিত করার লেবেলও নয়। এগুলো নির্দিষ্ট জিনের সম্ভাব্য কার্যক্ষমতা বোঝায়, একটি নির্দিষ্ট interpretation system অনুযায়ী। কোনো test panel-এ সব variant নাও থাকতে পারে; কিছু ফল অনিশ্চিতও হতে পারে। তাই প্রতিটি জিনের জন্য আলাদা ব্যাখ্যা জরুরি। একটি জিনের star allele-এর অর্থ অন্য জিনে একই হবে—এমন ধরে নেওয়া যায় না।
+
+### ৪. যেখানে বৈজ্ঞানিক প্রমাণ গুরুত্বপূর্ণ
+
+#### CYP2C19 ও clopidogrel
+
+Clopidogrel একটি prodrug। শরীরে CYP2C19 enzyme এর active metabolite তৈরিতে ভূমিকা রাখে। যাদের CYP2C19 intermediate বা poor metabolizer phenotype আছে, তাদের active metabolite কম তৈরি হতে পারে এবং platelet inhibition কম হতে পারে। ২০২২ সালের Clinical Pharmacogenetics Implementation Consortium (CPIC) update নির্দিষ্ট চিকিৎসা-পরিস্থিতিতে জানা CYP2C19 ফল কীভাবে clopidogrel therapy-তে ব্যবহার করা যায়, তা ব্যাখ্যা করেছে।
+
+এটি দেখায়, “metabolizer” শব্দটি নির্দিষ্ট ওষুধের সঙ্গে মিলিয়ে বুঝতে হয়। এখানে enzyme কম সক্রিয় হলে clopidogrel-এর activation কম হতে পারে। এটি চিকিৎসকদের জন্য guideline; রোগীর নিজের থেকে antiplatelet ওষুধ বন্ধ বা পরিবর্তনের নির্দেশ নয়।
+
+#### TPMT, NUDT15 ও thiopurine
+
+Azathioprine ও mercaptopurine-এর মতো thiopurine ওষুধ bone marrow-এর কার্যক্ষমতা কমাতে পারে। TPMT ও NUDT15 জিনের কিছু variant থাকলে প্রচলিত ডোজে গুরুতর myelosuppression-এর ঝুঁকি বাড়তে পারে। ২০২৫ সালের CPIC update-এ জানা TPMT ও NUDT15 ফলের ভিত্তিতে প্রতিটি ওষুধের জন্য আলাদা সুপারিশ রয়েছে। দুই জিনেই কার্যক্ষমতা কম থাকলে কীভাবে বিবেচনা করতে হবে, সেটিও নতুনভাবে অন্তর্ভুক্ত করা হয়েছে। চিকিৎসার সময় blood count পর্যবেক্ষণ এবং রোগভিত্তিক পরিকল্পনাও জরুরি।
+
+#### HLA-B*57:01 ও abacavir
+
+এটি metabolism-এর উদাহরণ নয়। FDA-এর pharmacogenetic table অনুযায়ী, যাদের HLA-B*57:01 positive, তাদের abacavir-জনিত hypersensitivity reaction-এর ঝুঁকি বেশি; এই allele positive হলে abacavir ব্যবহার করা উচিত নয়। এখানে জিনগত তথ্য ওষুধের মাত্রার চেয়ে নির্দিষ্ট immune-mediated safety risk-এর সঙ্গে সম্পর্কিত।
+
+#### CYP2C19, proton pump inhibitor এবং rabeprazole-এর একটি গবেষণা
+
+CYP2C19-এর ভিন্নতা কয়েকটি proton pump inhibitor (PPI) নিয়ে গবেষণা করা হয়েছে। ২০২০ সালের CPIC নির্দেশিকায় omeprazole, lansoprazole, pantoprazole ও dexlansoprazole-এর জন্য সুপারিশ আছে; rabeprazole-এর ডোজ নির্ধারণের সুপারিশ নেই। কারণ সব PPI-এর বিপাকের পথ এক নয়।
+
+২০০৬ সালের একটি গবেষণায় H. pylori-negative ২০ জন সুস্থ Chinese Han পুরুষকে rabeprazole ২০ mg দেওয়া হয়েছিল। গবেষকেরা CYP2C19 group অনুযায়ী rabeprazole-এর শরীরে উপস্থিতির মাত্রায় কিছু পার্থক্য দেখেন, কিন্তু group-গুলোর median intragastric pH-তে উল্লেখযোগ্য পার্থক্য পাননি। গবেষণাটি ছোট, স্বল্পমেয়াদি এবং সুস্থ স্বেচ্ছাসেবীদের মধ্যে করা; তাই এটি দিয়ে সব রোগীর প্রতিক্রিয়া বা কোনো সর্বজনীন ডোজ-নিয়ম নির্ধারণ করা যায় না। এটি বোঝায়, pharmacokinetic পার্থক্য থাকলেই চিকিৎসার ফলেও গুরুত্বপূর্ণ পার্থক্য আছে—এমন প্রমাণ হয় না।
+
+### ৫. জিন পরীক্ষা কী জানাতে পারে?
+
+সাধারণত রক্ত, লালা বা গালের ভেতরের কোষের নমুনা থেকে DNA পরীক্ষা করা হয়। ল্যাবরেটরি ও পরীক্ষার উদ্দেশ্য অনুযায়ী নির্দিষ্ট পরিচিত variant খোঁজা হতে পারে, অথবা আরও বিস্তৃত জিনগত পরিবর্তন দেখা হতে পারে। রিপোর্টে কোন জিন ও variant পরীক্ষা করা হয়েছে, কী পাওয়া গেছে এবং ফলটি কীভাবে ব্যাখ্যা করা হয়েছে—এসব থাকা উচিত।
+
+কোনো test তখনই কাজে লাগতে পারে, যখন সংশ্লিষ্ট জিন–ওষুধ সম্পর্কের পক্ষে প্রমাণ আছে এবং পরীক্ষার ফল চিকিৎসার সিদ্ধান্তে প্রভাব ফেলতে পারে। বিভিন্ন ল্যাবরেটরির panel এক নাও হতে পারে। কোনো variant পাওয়া যায়নি—এর অর্থ এই নয় যে ওই জিনের সব সম্ভাব্য variant নেই।
+
+জিন পরীক্ষা কোনো রোগ নির্ণয় করে না এবং সব adverse effect আগে থেকে বলে দিতে পারে না। এটি চলমান ওষুধ, ডোজ, কিডনি বা যকৃতের কার্যক্ষমতা, রোগের অবস্থা, allergy, প্রাসঙ্গিক ক্ষেত্রে pregnancy status অথবা চিকিৎসায় এখন পর্যন্ত কেমন সাড়া পাওয়া গেছে—এসব তথ্যের বিকল্প নয়।
+
+### ৬. চিকিৎসায় ফল কীভাবে ব্যবহার করা উচিত?
+
+কিছু পরীক্ষা ওষুধ শুরুর আগেই করা হয়; আবার অপ্রত্যাশিত প্রতিক্রিয়া বা পার্শ্বপ্রতিক্রিয়া দেখা দিলে পরীক্ষা বিবেচনা করা হতে পারে। পরীক্ষা করা যুক্তিযুক্ত কি না তা নির্ভর করে ওষুধ, চিকিৎসার পরিস্থিতি, প্রমাণের শক্তি, test panel এবং ফলটি চিকিৎসা বদলাবে কি না—এসব বিষয়ে।
+
+CPIC guideline মূলত ব্যাখ্যা করে, জেনেটিক ফল আগে থেকেই জানা থাকলে সেটি কীভাবে ব্যবহার করা যায়—প্রত্যেক রোগীর পরীক্ষা করা উচিত কি না, তা নয়। FDA-ও ব্যাখ্যা করেছে, তাদের pharmacogenetic table-এ কোনো gene–drug সম্পর্ক থাকা মানেই প্রতিটি prescription-এর আগে পরীক্ষা করার সুপারিশ নয়। কিছু সম্পর্ক চিকিৎসা ব্যবস্থাপনার সুপারিশ সমর্থন করে; কিছু সম্ভাব্য safety বা response effect দেখায়; আবার কিছু শুধু pharmacokinetic প্রভাবের প্রমাণ দেয়।
+
+বাস্তবে চিকিৎসক বা ফার্মাসিস্টকে বর্তমান guideline ও রোগীর পুরো clinical context মিলিয়ে রিপোর্টটি ব্যাখ্যা করতে হয়। নির্দিষ্ট পরিস্থিতিতে ফলটি অন্য ওষুধ, ডোজ বা monitoring plan বিবেচনায় সাহায্য করতে পারে। তবে নিয়মিত clinical monitoring ও যৌথ সিদ্ধান্ত নেওয়ার বিকল্প নয়।
+
+### ৭. বাংলাদেশে ব্যবহারিক কিছু প্রশ্ন
+
+ফার্মাকোজেনেটিক্স একটি আন্তর্জাতিক গবেষণা ও চিকিৎসাবিজ্ঞানের ক্ষেত্র। এই লেখায় বাংলাদেশে নির্দিষ্ট কোনো পরীক্ষা সারা দেশে নিয়মিত পাওয়া যায় বা প্রতিটি ওষুধের আগে পরীক্ষা বাধ্যতামূলক—এমন দাবি করা হচ্ছে না। কোনো পরীক্ষা বিবেচনা করা হলে চিকিৎসক ও ল্যাবরেটরিকে জিজ্ঞাসা করুন:
+
+- পরীক্ষাটি কোন নির্দিষ্ট gene–drug প্রশ্নের উত্তর দিতে চায়?
+
+- ল্যাবরেটরির test panel-এ কোন variant আছে, আর কোন গুরুত্বপূর্ণ variant বাদ পড়তে পারে?
+
+- ফল থেকে predicted phenotype কীভাবে নির্ধারণ করা হবে এবং কোন হালনাগাদ guideline সেটিকে সমর্থন করে?
+
+- কে ফলটি ব্যাখ্যা করবেন, genetic information-এর গোপনীয়তা কীভাবে রক্ষা হবে এবং চিকিৎসা পরিকল্পনার সঙ্গে কীভাবে যুক্ত হবে?
+
+বড় consumer report-এ অনেক gene–drug সম্পর্কের নাম থাকলেই সবগুলো সমানভাবে প্রমাণিত বা চিকিৎসায় প্রযোজ্য—এমন নয়। প্রমাণের শক্তি, clinical relevance ও পরীক্ষার সীমাবদ্ধতা না বুঝে সিদ্ধান্ত নেওয়া ঠিক নয়। জিন পরীক্ষার রিপোর্ট দেখে একা একা prescription শুরু, বন্ধ বা পরিবর্তন করবেন না।
+
+### মূল কথা
+
+- জিন ওষুধের বিপাক, পরিবহন, target এবং কিছু immune reaction-এর ঝুঁকিতে প্রভাব ফেলতে পারে।
+
+- জেনেটিক ফলের অর্থ নির্দিষ্ট জিন ও ওষুধের ওপর নির্ভর করে; “poor metabolizer” মানেই ওষুধ বেশি কাজ করবে—এমন নয়।
+
+- কিছু gene–drug সম্পর্কের পক্ষে শক্ত clinical guidance আছে; অন্য ক্ষেত্রে শুধু pharmacokinetic প্রভাবের প্রমাণ বা অনিশ্চয়তা থাকতে পারে।
+
+- প্রতিটি ওষুধের জন্য জিন পরীক্ষা দরকার হয় না। নির্ভরযোগ্য পরীক্ষা ও সঠিক ব্যাখ্যা জরুরি।
+
+- জিনগত তথ্য চিকিৎসার একটি অংশ মাত্র। চিকিৎসকের মূল্যায়ন, monitoring ও পেশাগত পরামর্শ অপরিহার্য।
+
+### সাধারণ প্রশ্ন
+
+#### সহজ ভাষায় ফার্মাকোজেনেটিক্স কী?
+
+ফার্মাকোজেনেটিক্স হলো নির্দিষ্ট কিছু জিনের উত্তরাধিকারসূত্রে পাওয়া ভিন্নতা কীভাবে কিছু ওষুধের প্রতি শরীরের প্রতিক্রিয়া বদলে দিতে পারে, তার বিজ্ঞান। জিনের ভিন্নতা ওষুধের বিপাক, পরিবহন, লক্ষ্যবস্তু বা নির্দিষ্ট প্রতিক্রিয়ার ঝুঁকিতে প্রভাব ফেলতে পারে।
+
+#### ফার্মাকোজেনেটিক্স ও ফার্মাকোজেনোমিক্স কি একই?
+
+দুটি শব্দ অনেক সময় একই অর্থে ব্যবহার করা হয়। ঐতিহ্যগতভাবে ফার্মাকোজেনেটিক্স নির্দিষ্ট জিন–ওষুধ সম্পর্ক নিয়ে কাজ করে; ফার্মাকোজেনোমিক্স অনেক জিন বা পুরো জিনোমের বিস্তৃত প্রভাব বোঝাতে পারে। বিভিন্ন প্রতিষ্ঠানে ব্যবহারের ধরন কিছুটা ভিন্ন।
+
+#### প্রত্যেকের কি ওষুধ শুরুর আগে জিন পরীক্ষা দরকার?
+
+না। নির্দিষ্ট কিছু জিন–ওষুধ সম্পর্কের ক্ষেত্রে বৈজ্ঞানিক প্রমাণ ও চিকিৎসাগত প্রেক্ষাপট পরীক্ষা করার যৌক্তিকতা তৈরি করে। প্রতিটি ওষুধ বা প্রত্যেক রোগীর জন্য এ পরীক্ষা নিয়মিতভাবে দরকার হয় না।
+
+#### Poor metabolizer রিপোর্টের অর্থ কী?
+
+নির্দিষ্ট কোনো ওষুধ-বিপাককারী enzyme-এর ক্ষেত্রে এর অর্থ সাধারণত enzyme-এর পূর্বানুমান করা কার্যক্ষমতা খুব কম। এতে মূল ওষুধ শরীরে বেশি সময় থাকতে পারে, অথবা prodrug সক্রিয় হওয়া কমে যেতে পারে। কোনটি হবে তা নির্ভর করে নির্দিষ্ট ওষুধের ওপর।
+
+#### Rabeprazole-এর মতো proton pump inhibitor-এ কি জিনের প্রভাব থাকতে পারে?
+
+CYP2C19-এর ভিন্নতা কয়েকটি proton pump inhibitor-এর শরীরে উপস্থিতির মাত্রায় প্রভাব ফেলতে পারে। ২০২০ সালের CPIC নির্দেশিকায় omeprazole, lansoprazole, pantoprazole ও dexlansoprazole-এর জন্য সুপারিশ আছে; rabeprazole-এর ডোজ নির্ধারণের সুপারিশ নেই। ছোট rabeprazole গবেষণায় রক্তে ওষুধের মাত্রার পার্থক্য দেখা গেলেও acid suppression-এ ধারাবাহিক পার্থক্য পাওয়া যায়নি।
+
+#### ফার্মাকোজেনেটিক পরীক্ষার ফল কি সারাজীবন একই থাকে?
+
+পরীক্ষা করা উত্তরাধিকারসূত্রে পাওয়া DNA variant সাধারণত সারাজীবন একই থাকে। তবে পরীক্ষার panel, বৈজ্ঞানিক প্রমাণ ও চিকিৎসা-নির্দেশিকা সময়ের সঙ্গে বদলাতে পারে। একটি রিপোর্টে সব প্রাসঙ্গিক variant বা সব ওষুধের তথ্য নাও থাকতে পারে।
+
+#### জিন পরীক্ষার রিপোর্ট পাওয়ার পর কি ওষুধ বন্ধ বা পরিবর্তন করব?
+
+না। শুধু রিপোর্ট দেখে নিজে থেকে ওষুধ শুরু, বন্ধ বা পরিবর্তন করবেন না। চিকিৎসক বা যোগ্য ফার্মাসিস্টকে রোগের অবস্থা, অন্য ওষুধ, অঙ্গের কার্যক্ষমতা, চিকিৎসার ফল এবং হালনাগাদ নির্দেশিকার সঙ্গে রিপোর্টটি মিলিয়ে দেখতে হবে।
+
+### তথ্যসূত্র ও আরও পড়ুন
+
+- MedlinePlus Genetics. What is pharmacogenomics?
+
+- MedlinePlus. Pharmacogenetic Tests.
+
+- U.S. Food and Drug Administration. Table of Pharmacogenetic Associations.
+
+- Lee CR et al. CPIC Guideline for CYP2C19 Genotype and Clopidogrel Therapy: 2022 Update. Clinical Pharmacology & Therapeutics.
+
+- Maillard M et al. CPIC Guideline for Thiopurine Dosing Based on TPMT and NUDT15 Genotypes: 2025 Update. Clinical Pharmacology & Therapeutics.
+
+- Lima JJ et al. CPIC Guideline for CYP2C19 and Proton Pump Inhibitor Dosing. Clinical Pharmacology & Therapeutics, 2021.
+
+- Hu YM et al. Pharmacodynamic and kinetic effect of rabeprazole on serum gastrin level in relation to CYP2C19 polymorphism in Chinese Hans. World Journal of Gastroenterology, 2006;12(29):4750–4753.
+
+- Centers for Disease Control and Prevention. Pharmacogenomics.
+
+- PharmVar. Pharmacogene Variation Consortium database.
+
+শিক্ষামূলক সতর্কতা: এই লেখা বৈজ্ঞানিক ধারণা বোঝানোর জন্য; ব্যক্তিগত চিকিৎসা পরামর্শ নয়। জেনেটিক রিপোর্ট দেখে যোগ্য স্বাস্থ্যসেবা পেশাজীবীর সঙ্গে আলোচনা না করে কোনো ওষুধ বা ডোজ শুরু, বন্ধ বা পরিবর্তন করবেন না।
+
+### সাইয়্যেদুল আবরার
+
+A Grade Pharmacist · Registration Code: A-22040
+Product Executive, Product Management Department (PMD) · Opsonin Pharma Ltd.
+লেখকের পরিচিতি · LinkedIn
+
+---
+
+### Pharmacogenetics: Can Your Genes Change How Medicines Work?
+URL: https://sayedulabrar.site/blog/pharmacogenetics-how-genes-affect-medicine-response/ · Language: English · Published: 2026-11-26T10:00:00+06:00 · Author: Sayedul Abrar, pharmacist
+Summary: Learn how inherited gene variants can affect medicine metabolism, benefit and side-effect risk, with clear examples and the limits of pharmacogenetic testing.
+
+By Sayedul Abrar, A Grade Pharmacist · Published 26 November 2026
+
+The simple answer: Pharmacogenetics studies how inherited differences in particular genes can change the way some medicines work in the body. A genetic variant may affect how quickly a medicine is activated or removed, how it reaches its target, or the chance of a specific adverse reaction. The result can sometimes help a healthcare professional choose or adjust treatment—but it does not predict every response, and it is not a reason to change a medicine on your own.
+
+### 1. What is pharmacogenetics?
+
+Pharmacogenetics looks at how inherited differences in a particular gene can influence a person's response to a particular medicine. The field connects pharmacology—the science of medicines—with genetics, which studies inherited information in DNA.
+
+You may also see the word pharmacogenomics. The terms are often used interchangeably. Traditionally, pharmacogenetics has focused on individual gene–drug relationships, while pharmacogenomics can describe a broader analysis involving many genes or the genome. The exact distinction varies across research and healthcare organisations.
+
+Why does this matter? Two people may receive the same medicine at the same labelled dose yet have different drug concentrations, benefits or unwanted effects. Genetic variation is one possible reason. Age, kidney and liver function, illness, diet, smoking, other medicines and adherence also matter.
+
+Pharmacogenetic information is therefore one part of precision medicine, not a replacement for clinical assessment. It is most useful when a specific gene–drug relationship has been studied well enough to support a practical decision.
+
+### 2. How can genes influence a medicine?
+
+Genes contain instructions for making proteins. Some proteins help absorb, transport, break down or remove medicines. Others are drug targets, while some immune-system proteins influence the risk of a particular reaction. A DNA variant can change the amount or activity of a protein.
+
+- Drug-metabolising enzymes: enzymes such as CYP2C19 and CYP2D6 can affect how quickly some medicines are activated or broken down.
+
+- Transport proteins: proteins such as those encoded by SLCO1B1 can influence how a medicine enters or leaves cells.
+
+- Drug targets: genetic differences may alter a receptor, enzyme or other target that a medicine acts on.
+
+- Immune-related proteins: certain HLA variants can increase the risk of a specific immune-mediated adverse reaction.
+
+The direction of the effect depends on the medicine. If an enzyme normally breaks down an active drug, reduced enzyme activity may increase exposure. If the medicine is a prodrug that needs the enzyme for activation, reduced activity may instead reduce the active metabolite. A “slow” or “poor” metaboliser result does not automatically mean a medicine will be stronger or weaker.
+
+### 3. From genotype to predicted phenotype
+
+A laboratory may report a genotype: the variants or allele combination detected in a gene. For some pharmacogenes, variants are grouped using a star-allele system, such as CYP2C19*1 or CYP2C19*2. The combination of the two inherited gene copies is often called a diplotype.
+
+For selected drug-metabolising enzymes, a validated genotype-to-phenotype system translates that result into a predicted functional category. Depending on the gene, these may include normal, intermediate, poor, rapid or ultrarapid metaboliser. Other genes use different categories—for example, a high-risk HLA allele may be reported as present or absent rather than as a metaboliser status.
+
+These categories are not personality labels or a complete prediction of treatment success. They describe a particular gene's predicted function under a defined interpretation system. A test may miss variants that were not included in its panel, and some results remain uncertain. Gene-specific interpretation matters; the same star-allele notation should never be assumed to mean the same thing in every gene.
+
+### 4. Examples where the evidence matters
+
+#### CYP2C19 and clopidogrel
+
+Clopidogrel is a prodrug. The body uses CYP2C19 as one of the enzymes involved in forming its active metabolite. People predicted to be CYP2C19 intermediate or poor metabolisers may form less active metabolite and have reduced platelet inhibition. The 2022 Clinical Pharmacogenetics Implementation Consortium (CPIC) update describes how available CYP2C19 results can inform clopidogrel therapy in relevant clinical settings.
+
+This is a useful example of why the word “metaboliser” must be interpreted for the specific drug: lower enzyme activity can mean less activation of clopidogrel. The guideline is intended for clinical decision-making; it is not an instruction for a patient to stop or replace an antiplatelet medicine.
+
+#### TPMT, NUDT15 and thiopurines
+
+Thiopurine medicines such as azathioprine and mercaptopurine can suppress bone-marrow activity. Variants in TPMT and NUDT15 can increase the risk of severe myelosuppression at standard doses. The 2025 CPIC update provides drug-specific recommendations for known TPMT and NUDT15 results and adds guidance for people with reduced function in both genes. Blood-count monitoring and the disease-specific treatment plan remain important.
+
+#### HLA-B*57:01 and abacavir
+
+This is not a metabolism example. The FDA's pharmacogenetic table states that people who test positive for HLA-B*57:01 have a higher risk of abacavir hypersensitivity and should not receive abacavir. It illustrates how a genetic result can relate to an immune-mediated safety risk rather than drug concentration.
+
+#### CYP2C19, proton pump inhibitors and a rabeprazole research example
+
+CYP2C19 variation has been studied with several proton pump inhibitors (PPIs). The 2020 CPIC guideline provides recommendations for omeprazole, lansoprazole, pantoprazole and dexlansoprazole; it does not provide a rabeprazole dosing recommendation. This distinction matters because the medicines do not all have identical metabolic pathways.
+
+A 2006 study in the research literature examined 20 healthy, H. pylori-negative Chinese Han men who received rabeprazole 20 mg. The investigators reported differences in rabeprazole exposure between some CYP2C19 groups, but did not find significant differences in median intragastric pH between the groups. This small, short study in healthy volunteers cannot establish what every patient will experience or support a universal dosing rule. It is a good example of why a pharmacokinetic difference does not automatically prove a clinically important difference in treatment outcome.
+
+### 5. What can a pharmacogenetic test tell you?
+
+Testing usually analyses DNA from a blood sample, saliva or a cheek swab. Depending on the laboratory and the purpose, the method may look for selected known variants or examine a wider set of genetic changes. The report should identify which genes and variants were tested, what was detected and how the result was interpreted.
+
+A test can be helpful only if the relevant gene–drug relationship is supported by evidence and the result is reliable enough to guide a decision. Different laboratories may test different variant panels. A report that does not detect a variant is not proof that every possible variant in that gene is absent.
+
+Genetic testing does not tell you whether you have a disease, and it cannot predict every adverse effect. It also cannot replace information about current medicines, dose, kidney or liver function, the condition being treated, allergies, pregnancy status where relevant, or how the person has responded so far.
+
+### 6. How should results be used in healthcare?
+
+Some tests are ordered before a medicine is prescribed; others are considered after an unexpected response or adverse effect. Whether testing is worthwhile depends on the drug, the clinical situation, the evidence, the test's coverage and whether the result would change care.
+
+The CPIC guidelines are designed mainly to explain how to use a genetic result when it is already available, rather than to decide whether every patient should be tested. The FDA also explains that listing a gene–drug association in its table does not automatically mean it recommends testing before every prescription. Some associations support a therapeutic-management recommendation; others indicate a potential safety or response effect, or a pharmacokinetic effect only.
+
+In practice, a clinician or pharmacist should interpret the report with the current guideline and the whole patient context. A result may support a different medicine, dose or monitoring plan in selected situations. It does not replace routine monitoring or shared decision-making.
+
+### 7. Practical questions in Bangladesh
+
+Pharmacogenetics is an international research and clinical field. This article does not claim that a particular test is routinely available nationwide in Bangladesh or that testing is required for every medicine. If a test is being considered, ask the treating clinician and laboratory:
+
+- Which exact gene–drug question is the test intended to answer?
+
+- Which variants does the laboratory assay include, and which important variants might it miss?
+
+- How is the result translated into a predicted phenotype, and which current guideline supports the interpretation?
+
+- Who will explain the result, protect the genetic information and connect it to the treatment plan?
+
+Be cautious with broad consumer reports that list many gene–drug associations without explaining evidence strength, clinical relevance or the limits of the test. A genetic report should never be used on its own to start, stop or change a prescription.
+
+### Key takeaways
+
+- Genes can influence drug metabolism, transport, targets and the risk of selected immune reactions.
+
+- The meaning of a genetic result is specific to the gene and medicine; “poor metaboliser” does not always mean more drug effect.
+
+- Some gene–drug pairs have strong clinical guidance, while others show only a pharmacokinetic association or remain uncertain.
+
+- Testing is not needed for every medicine. A validated test and correct interpretation are essential.
+
+- Genetic information is one part of care. Clinical assessment, monitoring and professional advice remain necessary.
+
+### Frequently asked questions
+
+#### What is pharmacogenetics in simple words?
+
+Pharmacogenetics studies how inherited differences in particular genes can change the way a person responds to certain medicines. A gene variant may affect drug metabolism, transport, a drug target or the risk of a specific reaction.
+
+#### Are pharmacogenetics and pharmacogenomics the same?
+
+The terms are often used interchangeably. Pharmacogenetics traditionally focuses on individual gene–drug relationships, while pharmacogenomics can describe a broader view of many genes or the genome. Usage varies between organisations.
+
+#### Does everyone need a pharmacogenetic test before taking medicine?
+
+No. Testing is relevant only for selected gene–drug pairs where the evidence and clinical context support using the result. A test is not a routine requirement for every medicine or every patient.
+
+#### What does a poor metabolizer result mean?
+
+For a particular drug-metabolising enzyme, it usually means the predicted enzyme activity is very low. That may cause a parent drug to remain in the body longer, or it may reduce activation of a prodrug. The direction depends on the medicine.
+
+#### Can genes affect proton pump inhibitors such as rabeprazole?
+
+CYP2C19 variation can affect the exposure of several proton pump inhibitors. The 2020 CPIC guideline gives recommendations for omeprazole, lansoprazole, pantoprazole and dexlansoprazole; it does not provide a rabeprazole dosing recommendation. Small rabeprazole studies have reported pharmacokinetic differences without consistent changes in acid suppression.
+
+#### Are pharmacogenetic results permanent?
+
+The inherited DNA variants tested are generally lifelong. However, laboratory panels, scientific evidence and prescribing guidelines can change, and a result may not cover every relevant variant or every medicine.
+
+#### Should I change or stop a medicine after receiving a genetic report?
+
+No. Do not change, stop or start a medicine based only on a report. A qualified prescriber or pharmacist should interpret the result with your diagnosis, other medicines, organ function, treatment response and current guidance.
+
+### References and further reading
+
+- MedlinePlus Genetics. What is pharmacogenomics?
+
+- MedlinePlus. Pharmacogenetic Tests.
+
+- U.S. Food and Drug Administration. Table of Pharmacogenetic Associations.
+
+- Lee CR et al. CPIC Guideline for CYP2C19 Genotype and Clopidogrel Therapy: 2022 Update. Clinical Pharmacology & Therapeutics.
+
+- Maillard M et al. CPIC Guideline for Thiopurine Dosing Based on TPMT and NUDT15 Genotypes: 2025 Update. Clinical Pharmacology & Therapeutics.
+
+- Lima JJ et al. CPIC Guideline for CYP2C19 and Proton Pump Inhibitor Dosing. Clinical Pharmacology & Therapeutics, 2021.
+
+- Hu YM et al. Pharmacodynamic and kinetic effect of rabeprazole on serum gastrin level in relation to CYP2C19 polymorphism in Chinese Hans. World Journal of Gastroenterology, 2006;12(29):4750–4753.
+
+- Centers for Disease Control and Prevention. Pharmacogenomics.
+
+- PharmVar. Pharmacogene Variation Consortium database.
+
+Educational note: This article explains a scientific field and is not personal medical advice. Do not start, stop or change a medicine or dose based on a genetic report without discussing it with a qualified healthcare professional.
+
+
+---
+
 ### বায়োঅ্যাভেইলেবিলিটি: ওষুধের কতটুকু রক্তে পৌঁছায়?
 URL: https://sayedulabrar.site/blog/bioavailability-explained-bangla/ · Language: Bangla · Published: 2026-11-25T20:00:00+06:00 · Author: Sayedul Abrar, pharmacist
 Summary: বায়োঅ্যাভেইলেবিলিটি সহজ ভাষায়: কেন IV-তে ১০০%, মুখে খেলে কী কারণে কমে, AUC দিয়ে কীভাবে মাপা হয়, আর জেনেরিক ওষুধে বায়োইকুইভ্যালেন্স কী।
