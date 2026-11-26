@@ -115,3 +115,10 @@
   .pb-hero.bh .bh-card{width:184px;height:264px;margin:-132px 0 0 -92px}
 }
 @media(prefers-reduced-motion:reduce){.pb-hero.bh .bh-stage{scroll-behavior:auto}}
+
+
+/* Consistent pointer and touch interaction on desktop, tablets and phones. */
+.pb-hero.bh .bh-stage{cursor:grab;user-select:none;-webkit-user-select:none;-webkit-tap-highlight-color:transparent;touch-action:pan-y pinch-zoom}
+.pb-hero.bh .bh-stage.is-drag{cursor:grabbing}
+.pb-hero.bh .bh-card,.pb-hero.bh .bh-card img{-webkit-user-drag:none;user-select:none;-webkit-user-select:none}
+@media(hover:hover) and (pointer:fine){.pb-hero.bh .bh-stage{cursor:grab}}
