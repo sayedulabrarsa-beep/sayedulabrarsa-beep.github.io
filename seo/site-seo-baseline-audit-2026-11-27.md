@@ -36,12 +36,12 @@ These are useful discovery mechanisms, but they do not guarantee crawling, index
 
 ### 3. Content footprint
 
-- The `blog/` directory contains **76 article route folders**, representing **38 apparent English/Bangla route pairs**.
+- The `blog/` directory contains **76 article route folders**, representing **38 apparent English/Bangla route pairs**. The inspected sitemap lists **58 blog article URLs** (about 29 pairs), so 18 route folders are not represented in the sitemap; this may be intentional for future, hidden or noindex pages, but it should be reconciled against each page's robots/canonical status.
 - The site also has separate brand pages for Finix, Finix MUPS, Finix HP and Malifa.
 - Publicly discoverable examples include medicine safety, pharmacology, GMP, pharmaceutical product management, pharmaceutical marketing and research-review topics.
 - The public blog landing page presents bilingual educational content and a clear general-information disclaimer.
 
-A complete article inventory should next verify each route's canonical URL, language alternate, indexability, metadata, structured data, internal links, image alt text and source references.
+A complete article inventory should next reconcile all 76 route folders against the 58 sitemap article URLs, then verify each route's canonical URL, language alternate, indexability, metadata, structured data, internal links, image alt text and source references.
 
 ### 4. Publishing workflow — priority risk
 
