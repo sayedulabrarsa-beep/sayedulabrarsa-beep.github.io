@@ -50,6 +50,55 @@
       "slug": "how-medicines-work-in-the-body-series",
       "title": "Series hub: How Medicines Work in the Body",
       "status": "scheduled"
+    },
+    {
+      "date": "2026-11-30",
+      "time": "20:00",
+      "slug": "different-types-of-medicine-dosage-forms",
+      "title": "Different Types of Medicine Dosage Forms",
+      "status": "scheduled"
+    },
+    {
+      "date": "2026-12-02",
+      "time": "20:00",
+      "slug": "immediate-sustained-enteric-coated-medicines",
+      "title": "Immediate vs Sustained vs Enteric-Coated Medicines",
+      "status": "scheduled"
+    },
+    {
+      "date": "2026-12-03",
+      "time": "20:00",
+      "slug": "paracetamol-safety-and-proper-use",
+      "title": "Paracetamol: Safe Use and Overdose Prevention",
+      "status": "scheduled"
+    },
+    {
+      "date": "2026-12-05",
+      "time": "20:00",
+      "slug": "routes-of-drug-administration",
+      "title": "Routes of Drug Administration",
+      "status": "scheduled"
+    },
+    {
+      "date": "2026-12-07",
+      "time": "20:00",
+      "slug": "drug-interactions-explained",
+      "title": "Drug Interactions: Why Can One Medicine Affect Another?",
+      "status": "scheduled"
+    },
+    {
+      "date": "2026-12-09",
+      "time": "20:00",
+      "slug": "side-effects-vs-adverse-drug-reactions",
+      "title": "Side Effects vs Adverse Drug Reactions",
+      "status": "scheduled"
+    },
+    {
+      "date": "2026-12-12",
+      "time": "20:00",
+      "slug": "how-to-read-a-medicine-label",
+      "title": "How to Read a Medicine Label",
+      "status": "scheduled"
     }
   ]
 }
