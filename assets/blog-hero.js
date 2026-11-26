@@ -30,120 +30,114 @@
     data.push({ href: link.getAttribute('href'), title: txt(link), img: img && img.getAttribute('src'),
       tag: txt(c.querySelector('.pb-card-meta')).split('·')[0].trim(), bn: !!c.querySelector('.pb-bangla-link') });
   });
-  // the helix: article cards mixed with patterned tiles, wound two turns round a vertical axis
+  // One horizontal circular orbit. Every article occupies a fixed arc-length slot,
+  // so adding articles expands the orbit instead of squeezing existing cards together.
   var cn = document.querySelector('.bh-count-n'); if (cn) cn.textContent = data.length;
-  var list = data.slice();
-  while (list.length < 9) list = list.concat(data);
-  var seq = [];
-  list.forEach(function (d) { seq.push(d); });   // articles only, with open space between them
-
-  var cards = seq.map(function (d, i) {
-    var el;
-    if (d) {
-      el = document.createElement('a');
-      el.className = 'bh-card'; el.href = d.href; el.tabIndex = -1; el.draggable = false; el.setAttribute('aria-label', d.title);
-      el.innerHTML = '<span class="bh-face bh-front">' +
-        (d.img ? '<img src="' + d.img + '" alt="" width="472" height="266" decoding="async">' : '') +
-        '<span class="bh-card-body"><span class="bh-card-tag"></span><span class="bh-card-title"></span>' +
-        '<span class="bh-card-foot"><span>Read article ↗</span><span>' + (d.bn ? 'English + বাংলা' : 'English') + '</span></span></span></span>' +
-        '';
-      el.querySelector('.bh-card-tag').textContent = d.tag;
-      el.querySelector('.bh-card-title').textContent = d.title;
-    } else {
-      el = document.createElement('span');
-      var t = 't' + ((i * 5 % 6) + 1);
-      el.className = 'bh-card bh-tile'; el.setAttribute('aria-hidden', 'true');
-      el.innerHTML = '<span class="bh-face bh-back bh-tf ' + t + '"></span><span class="bh-face bh-back ' + t + '"></span>';
-    }
+  var cards = data.map(function (d) {
+    var el = document.createElement('a');
+    el.className = 'bh-card'; el.href = d.href; el.tabIndex = -1; el.draggable = false; el.setAttribute('aria-label', d.title);
+    el.innerHTML = '<span class="bh-face bh-front">' +
+      (d.img ? '<img src="' + d.img + '" alt="" width="472" height="266" decoding="async">' : '') +
+      '<span class="bh-card-body"><span class="bh-card-tag"></span><span class="bh-card-title"></span>' +
+      '<span class="bh-card-foot"><span>Read article ↗</span><span>' + (d.bn ? 'English + বাংলা' : 'English') + '</span></span></span></span>';
+    el.querySelector('.bh-card-tag').textContent = d.tag;
+    el.querySelector('.bh-card-title').textContent = d.title;
     ring.appendChild(el);
     return el;
   });
 
-  var N = cards.length, TURNS = 2, step = 360 * TURNS / N, R = 430, H = 700, push = 1, rot = 0, vel = 0, auto = 10 /* deg per second */;
+  var N = cards.length, step = 360 / N, R = 900, rot = 0, vel = 0, auto = 8;
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var hovering = false, dragging = false, visible = true, last = 0;
 
   function measure() {
     var w = stage.clientWidth;
-    /* Fixed breathing room: one card height plus a clear gap at every breakpoint.
-       Because H is based on article count, every newly added article inherits this spacing. */
-    var pitch = w < 540 ? 244 : w < 900 ? 300 : 354;
-    R = stage.dataset.r ? +stage.dataset.r : w < 540 ? Math.min(200, w * 0.535) : w < 900 ? Math.min(270, w * 0.36) : Math.min(520, w * 0.36);
-    H = Math.max(stage.clientHeight * 1.35, N * pitch);
-    /* Keep vertical travel smooth and consistent as the library grows. */
-    auto = 14 * 720 / (N * pitch);
-    push = w < 540 ? 1.15 : 1.05;
+    var cardW = w < 540 ? 136 : w < 900 ? 184 : 236;
+    var gap = w < 540 ? 28 : 36;
+    // Circumference = article count × (card width + fixed gap).
+    R = Math.max(1, N * (cardW + gap) / (2 * Math.PI));
   }
   function angle(i) { return i * step + rot; }
-  function facing(i) { return Math.cos(angle(i) * Math.PI / 180); }   // 1 = facing the viewer, -1 = facing away
+  function facing(i) { return Math.cos(angle(i) * Math.PI / 180); }
   function render() {
-    var half = H / 2, fadeZone = H * 0.16;
     for (var i = 0; i < N; i++) {
       var a = angle(i), rad = a * Math.PI / 180;
-      var y = ((i * H / N + rot * H / (360 * TURNS)) % H + H) % H - half;   // cards travel downward as the helix turns
-      var x = Math.sin(rad) * R, z = Math.cos(rad) * R - R * push;
-      var c = cards[i];
-      c.style.transform = 'translate3d(' + x.toFixed(1) + 'px,' + y.toFixed(1) + 'px,' + z.toFixed(1) + 'px) rotateY(' + (a % 360).toFixed(2) + 'deg)';
-      var op = Math.max(0, Math.min(1, (half - Math.abs(y)) / fadeZone)) * Math.min(1, Math.abs(Math.cos(rad)) / 0.22);
+      // A true circular orbit around the vertical axis; no vertical helix or stacking.
+      var x = Math.sin(rad) * R;
+      var z = Math.cos(rad) * R - R;
+      var c = cards[i], f = Math.cos(rad);
+      c.style.transform = 'translate3d(' + x.toFixed(1) + 'px,0,' + z.toFixed(1) + 'px) rotateY(' + a.toFixed(2) + 'deg)';
+      var op = Math.max(0, Math.min(1, (f + 0.12) / 0.32));
       c.style.setProperty('--bh-op', op.toFixed(3));
-      c.style.pointerEvents = op < 0.5 ? 'none' : '';
-      var f = facing(i), b = f > 0.3 ? 1 : f > -0.2 ? 0.78 : 0.5, rev = f < 0;
-      // cards seen from behind show the article itself, mirrored, a little darker
-      if (c._b !== b) { c._b = b; c.style.setProperty('--bh-dim', b); }
+      c.style.pointerEvents = (op < 0.28 || dragging) ? 'none' : '';
+      c.setAttribute('aria-hidden', op < 0.28 ? 'true' : 'false');
     }
   }
   function frame(t) {
     if (!last) last = t;
     var dt = Math.min(50, t - last) / 1000; last = t;
     if (visible && !dragging) {
-      if (Math.abs(vel) > 0.01) { rot += vel * dt; vel *= Math.pow(0.04, dt); }   // glide after a drag or scroll
+      if (Math.abs(vel) > 0.01) { rot += vel * dt; vel *= Math.pow(0.04, dt); }
       else if (!hovering && !reduce) rot += auto * dt;
       render();
     }
     requestAnimationFrame(frame);
   }
 
-  // page scroll turns the ring
-  var ly = window.scrollY || 0;
-  window.addEventListener('scroll', function () {
-    var y = window.scrollY || 0, d = y - ly; ly = y;
-    if (visible) { rot += d * 0.2; vel = d * 2.4; if (reduce) render(); }
-  }, { passive: true });
-
-  // sideways drag / swipe turns it; a drag never opens a link
-  var pid = null, sx = 0, sy = 0, sr = 0, moved = 0, lx = 0, lt = 0;
-  stage.addEventListener('pointerdown', function (e) { if (e.button) return; pid = e.pointerId; sx = lx = e.clientX; sy = e.clientY; sr = rot; moved = 0; lt = e.timeStamp; vel = 0; });
-  stage.addEventListener('pointermove', function (e) {
-    if (pid !== e.pointerId) return;
-    var dx = e.clientX - sx, dy = e.clientY - sy;
-    if (!dragging && Math.abs(dx) > 8 && Math.abs(dx) > Math.abs(dy)) { dragging = true; stage.classList.add('is-drag'); try { stage.setPointerCapture(pid); } catch (err) {} }
-    if (dragging) {
-      moved = Math.abs(dx); rot = sr + dx * 0.22;
-      var dtm = Math.max(1, e.timeStamp - lt); vel = (e.clientX - lx) * 0.22 / dtm * 1000; lx = e.clientX; lt = e.timeStamp;
-      render();
-    }
-  });
-  function end() { pid = null; if (dragging) { dragging = false; stage.classList.remove('is-drag'); } }
-  stage.addEventListener('pointerup', end); stage.addEventListener('pointercancel', end);
-  stage.addEventListener('dragstart', function (e) { e.preventDefault(); });
+  // Pause while the user explores; resume the gentle circular motion afterwards.
   stage.addEventListener('pointerover', function (e) { if (e.pointerType === 'mouse') hovering = true; });
   stage.addEventListener('pointerout', function (e) { if (e.pointerType === 'mouse' && !stage.contains(e.relatedTarget)) hovering = false; });
 
-  // a card facing away is brought to the front instead of opening
+  // Horizontal swipe/drag follows the orbit's arc length, keeping the gesture predictable.
+  var pid = null, sx = 0, sy = 0, sr = 0, moved = 0, lx = 0, lt = 0;
+  stage.addEventListener('pointerdown', function (e) {
+    if (e.button !== undefined && e.button !== 0) return;
+    pid = e.pointerId; sx = lx = e.clientX; sy = e.clientY; sr = rot; moved = 0; lt = e.timeStamp; vel = 0;
+  });
+  stage.addEventListener('pointermove', function (e) {
+    if (pid !== e.pointerId) return;
+    var dx = e.clientX - sx, dy = e.clientY - sy;
+    if (!dragging && Math.abs(dx) > 7 && Math.abs(dx) > Math.abs(dy) * 1.05) {
+      dragging = true; stage.classList.add('is-drag');
+      try { stage.setPointerCapture(pid); } catch (err) {}
+    }
+    if (dragging) {
+      if (e.cancelable) e.preventDefault();
+      moved = Math.abs(dx);
+      var degreesPerPixel = 180 / (Math.PI * R);
+      rot = sr + dx * degreesPerPixel;
+      var dtm = Math.max(1, e.timeStamp - lt);
+      vel = (e.clientX - lx) * degreesPerPixel / dtm * 1000;
+      lx = e.clientX; lt = e.timeStamp; render();
+    }
+  });
+  function end() {
+    pid = null;
+    if (dragging) { dragging = false; stage.classList.remove('is-drag'); render(); }
+  }
+  stage.addEventListener('pointerup', end);
+  stage.addEventListener('pointercancel', end);
+  stage.addEventListener('lostpointercapture', end);
+  stage.addEventListener('dragstart', function (e) { e.preventDefault(); });
+
+  // Tap a visible card to open it; tap a side card to bring it smoothly to the front.
   stage.addEventListener('click', function (e) {
-    if (moved > 8) { e.preventDefault(); e.stopPropagation(); moved = 0; return; }
+    if (moved > 7) { e.preventDefault(); e.stopPropagation(); moved = 0; return; }
     var a = e.target.closest && e.target.closest('.bh-card'); if (!a) return;
     var i = cards.indexOf(a);
-    if (facing(i) < 0.55) {
+    if (facing(i) < 0.72) {
       e.preventDefault();
-      var target = -i * step, diff = ((target - rot) % 360 + 540) % 360 - 180;
-      vel = diff * 3.2;                                           // eases round to this card
+      var target = -i * step;
+      var diff = ((target - rot) % 360 + 540) % 360 - 180;
+      vel = diff * 2.8;
     }
   }, true);
 
-  // arrows / buttons
-  function nudge(dir) { vel = dir * step * 3.2; if (reduce) { rot += dir * step; render(); } }
-  stage.addEventListener('keydown', function (e) { if (e.key === 'ArrowLeft') nudge(1); else if (e.key === 'ArrowRight') nudge(-1); });
+  function nudge(dir) { vel = dir * Math.min(42, step * 2.8); if (reduce) { rot += dir * step; render(); } }
+  stage.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowLeft') nudge(1);
+    else if (e.key === 'ArrowRight') nudge(-1);
+  });
   Array.prototype.forEach.call(document.querySelectorAll('[data-bh-turn]'), function (b) {
     b.addEventListener('click', function () { nudge(b.getAttribute('data-bh-turn') === 'prev' ? 1 : -1); });
   });
@@ -151,7 +145,5 @@
   if ('IntersectionObserver' in window) new IntersectionObserver(function (en) { visible = en[0].isIntersecting; }, { threshold: 0 }).observe(stage);
   document.addEventListener('visibilitychange', function () { last = 0; });
   window.addEventListener('resize', function () { fit(); measure(); render(); });
-
-  measure(); render();
-  requestAnimationFrame(frame);
+  measure(); render(); requestAnimationFrame(frame);
 })();
