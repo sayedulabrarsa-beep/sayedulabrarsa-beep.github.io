@@ -10,7 +10,7 @@
 <title>Sitemap | Sayedul Abrar</title>
 <style>
 :root{--bg:#2B2D3F;--bg2:#232536;--fg:#F2F3F8;--muted:#A9ADC2;--line:#44476A;--accent:#FFA91F}
-@media (prefers-color-scheme:light){:root{--bg:#F3F4F9;--bg2:#E8EAF2;--fg:#1C1E2D;--muted:#5A5F78;--line:#D3D6E4;--accent:#C26E00}}
+@media (prefers-color-scheme:light){:root{--bg:#F3F4F9;--bg2:#E8EAF2;--fg:#1C1E2D;--muted:#5A5F78;--line:#D3D6E4;--accent:#A45B00}}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.6 Poppins,system-ui,sans-serif}
 header{background:var(--bg2);border-bottom:1px solid var(--line);padding:14px 16px}
