@@ -3994,6 +3994,14 @@ Metabolism হলো শরীরের মাধ্যমে ওষুধের
 
 Excretion হলো ওষুধ বা তার metabolite শরীর থেকে বের করে দেওয়া। কিডনি প্রস্রাবের মাধ্যমে অনেক পদার্থ বের করে; পিত্ত ও মল, ফুসফুস, ঘাম এবং বুকের দুধও কিছু পদার্থ বের হওয়ার পথ হতে পারে। কিডনি বা লিভারের কার্যক্ষমতা কমে গেলে ওষুধ শরীরে বেশি সময় থাকতে পারে। তাই ডোজ নির্ধারণে পেশাদার মূল্যায়ন প্রয়োজন হতে পারে।
 
+#### ADME-এর প্রতিটি ধাপ বিস্তারিত পড়ুন
+
+শরীরের ভেতরে ওষুধের যাত্রার প্রতিটি ধাপ আরও ভালোভাবে বুঝতে নিচের আলাদা গাইডগুলো পড়ুন:
+- Drug Absorption: ওষুধ কীভাবে রক্তপ্রবাহে প্রবেশ করে? — ওষুধ গ্রহণের স্থান থেকে রক্তে পৌঁছানোর প্রক্রিয়া।
+- Drug Distribution: ওষুধ কীভাবে শরীরের বিভিন্ন টিস্যুতে পৌঁছায়? — রক্তপ্রবাহ, tissue barrier ও protein binding-এর ভূমিকা।
+- Drug Metabolism: শরীর কীভাবে ওষুধ প্রক্রিয়াজাত করে? — enzyme কীভাবে ওষুধের রাসায়নিক পরিবর্তন ঘটায় এবং metabolite কেন গুরুত্বপূর্ণ।
+- Drug Excretion: শরীর কীভাবে ওষুধ বের করে দেয়? — কিডনি ও অন্যান্য পথের মাধ্যমে ওষুধ ও metabolite বের হওয়ার প্রক্রিয়া।
+এর সঙ্গে সম্পর্কিত দুটি ধারণা হলো Bioavailability—একটি ডোজের কত অংশ রক্তপ্রবাহে পৌঁছায়—এবং Drug Half-Life—রক্তে ওষুধের ঘনত্ব কত সময়ে অর্ধেক হয়।
 মনে রাখুন: ADME শেখার একটি কাঠামো। এটি নির্দিষ্ট সময়সূচি নয়। ওষুধের ধরন, formulation, গ্রহণের পথ এবং ব্যক্তির শারীরিক অবস্থার ওপর প্রক্রিয়া বদলে যায়।
 
 ### ৩. Pharmacodynamics: ওষুধ কীভাবে প্রভাব তৈরি করে?
@@ -4185,6 +4193,14 @@ Metabolism is the chemical modification of a medicine by the body. The liver is 
 
 Excretion is the removal of a medicine or its metabolites. The kidneys commonly remove substances through urine; other routes include bile and faeces, lungs, sweat and breast milk. Kidney or liver impairment can change medicine handling, so dose selection may need professional review.
 
+#### Explore each ADME stage in detail
+
+Use these focused guides to go deeper into each step of a medicine’s journey through the body:
+- Drug Absorption: How Does Medicine Enter the Bloodstream? — how a medicine moves from its administration site into the circulation.
+- Drug Distribution: How Medicines Travel from Blood to Body Tissues — how blood flow, tissue barriers and protein binding influence distribution.
+- Drug Metabolism: How Does the Body Process Medicines? — how enzymes transform medicines and why metabolites matter.
+- Drug Excretion: How Do Medicines Leave the Body? — how kidneys and other routes remove medicines and metabolites.
+Two related concepts build on this foundation: bioavailability explains how much of a dose reaches systemic circulation, while drug half-life describes how quickly the concentration falls.
 Important: ADME is a useful learning framework, not a fixed timetable. The route, formulation, patient and individual medicine all influence what happens.
 
 ### 3. Pharmacodynamics: how medicines create an effect
