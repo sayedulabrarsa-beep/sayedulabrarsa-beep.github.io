@@ -53,7 +53,7 @@
   function measure() {
     var w = stage.clientWidth;
     var cardW = w < 540 ? 136 : w < 900 ? 184 : 236;
-    var gap = w < 540 ? 28 : 36;
+    var gap = w < 540 ? 16 : w < 900 ? 24 : 28;
     // Circumference = article count × (card width + fixed gap).
     R = Math.max(1, N * (cardW + gap) / (2 * Math.PI));
   }
