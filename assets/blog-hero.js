@@ -80,7 +80,7 @@
     }
     stage.addEventListener('pointerdown',function(e){
       if(e.pointerType==='mouse'&&e.button!==0)return;
-      pointer=e.pointerId;sx=ly=e.clientX;sy=e.clientY;lt=e.timeStamp;syaw=yaw;spitch=pitch;moved=0;vyaw=vpitch=0;
+      pointer=e.pointerId;sx=ly=e.clientX;sy=e.clientY;stage._lastY=e.clientY;lt=e.timeStamp;syaw=yaw;spitch=pitch;moved=0;vyaw=vpitch=0;
     });
     stage.addEventListener('pointermove',function(e){
       if(pointer!==e.pointerId)return;
