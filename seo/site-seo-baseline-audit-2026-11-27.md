@@ -339,3 +339,34 @@ The connected property is `sc-domain:sayedulabrar.site`, with owner access. The 
 5. Search Console comparisons and trend conclusions must wait until a longer date range is available.
 
 No future article was published and the manual author-approval safeguard remains in force.
+
+## Follow-up: additional medicine-label safety corrections
+
+**Reviewed:** 27 November 2026  
+**Scope:** Finix, Finix MUPS, Finix HP and Malifa public brand pages, plus the PPI and antibiotic education articles.
+
+### Corrections implemented
+
+- **Antibiotic-course article (English and Bangla):** changed the headline and search/social metadata from a blanket “must complete the course” slogan to “take antibiotics exactly as prescribed”. The article body continues to advise readers not to stop, skip, extend, share or save antibiotics without professional advice; duration remains the prescriber's decision. This better reflects current CDC wording and preserves the article's discussion of stewardship and shorter evidence-based durations.
+- **Finix MUPS paediatric section:** retained the manufacturer-listed 1–11-year GERD doses but added a prominent formulation caution. This page describes the 20 mg MUPS tablet; it must not be split, crushed or chewed to create a lower dose. The insert does not explain how to obtain a 5 mg dose from the 10 mg sprinkle capsule. The English insert gives 12 weeks for the under-15 kg group, while the Bangla section gives 8 weeks; the page now tells readers that the prescriber/manufacturer must confirm the formulation, dose and duration.
+- **Finix brand paediatric section:** removed the unsupported 12-years-and-older regimen extrapolated from a US label. The page now reports the local insert's 1–11-year doses and warns that it does not explain how to measure a 5 mg dose from the 10 mg sprinkle capsule.
+- **Finix / Finix MUPS food instructions:** the English and Bangla blocks of the Opsonin inserts differ. The English sections say food effects have not been evaluated; the Bangla sections say food does not hinder absorption. The pages now disclose this discrepancy, retain the explicit morning/evening-meal instruction for the H. pylori triple regimen, and avoid inventing a universal food-timing rule for other indications.
+- **Finix pregnancy/lactation FAQ:** now distinguishes the Opsonin insert's benefit–risk wording and lack of breast-milk data from animal information in the US ACIPHEX label.
+- **Finix HP course and safety FAQs:** replaced the US-label-derived seven-day statement with the Opsonin insert's 7–14-day instruction, clarified that meal timing is not universally specified, and tells readers to confirm duration and pack count because seven sachets per carton should not be assumed to cover the full prescribed course. Added matching English and Bangla pregnancy/breastfeeding FAQs based on the manufacturer insert.
+- **Malifa pregnancy/lactation:** replaced the US ACCRUFER-style “no fetal/infant exposure expected” statement with the Navana Malifa insert's actual wording: use during pregnancy if necessary and during breastfeeding if clinically needed, subject to individual clinical assessment.
+- **Malifa with PPIs:** softened the specific PPI interaction claim. The Navana insert lists dimercaprol, bisphosphonates, levodopa, thyroid medicines and tetracycline antibiotics; it does not give a specific rabeprazole/PPI instruction. The FAQ now recommends prescriber/pharmacist review rather than telling readers to avoid the combination.
+
+Primary product-label sources:
+- [Opsonin Finix MUPS insert](https://www.opsonin-pharma.com/uploads/pdf/pdf_1742274302.pdf)
+- [Opsonin Finix 10 mg insert](https://www.opsonin-pharma.com/uploads/pdf/pdf_1762153089.pdf)
+- [Opsonin Finix HP insert](https://www.opsonin-pharma.com/uploads/pdf/pdf_1748761563.pdf)
+- [Navana Malifa insert](https://navanapharma.com/upload/label_files/164411133.pdf)
+- [CDC: Antibiotic use and taking antibiotics exactly as prescribed](https://www.cdc.gov/antibiotic-use/about/index.html)
+
+### Manufacturer-document follow-up recommended
+
+The text extracted from the linked Finix MUPS insert shows additional English/Bangla differences beyond the food statement: the English section lists a 50-tablet (10 × 5) pack while the Bangla section lists 60 tablets (10 × 6), and the paediatric duration differs for the under-15 kg group. The current website pack information follows the 60-tablet packaging brief, but the bilingual manufacturer insert should be reconciled by Opsonin Regulatory/Medical Affairs before it is treated as a single consistent source.
+
+Text extraction from the Finix HP PDF also appears to show a possible English/Bangla difference in the ingredient and sachet-count text. Because the PDF could not be visually verified in this audit, this is **not treated as a confirmed label error**. The original artwork and printed carton should be checked by the manufacturer. The public page follows the English insert/product listing and tells readers to confirm the pack count and course with the prescriber or pharmacist.
+
+No manufacturer PDF was edited. No future article was published.
