@@ -370,3 +370,13 @@ The text extracted from the linked Finix MUPS insert shows additional English/Ba
 Text extraction from the Finix HP PDF also appears to show a possible English/Bangla difference in the ingredient and sachet-count text. Because the PDF could not be visually verified in this audit, this is **not treated as a confirmed label error**. The original artwork and printed carton should be checked by the manufacturer. The public page follows the English insert/product listing and tells readers to confirm the pack count and course with the prescriber or pharmacist.
 
 No manufacturer PDF was edited. No future article was published.
+
+## Final verification note: product-label discrepancies and indexing queue
+
+**Reviewed:** 27 November 2026
+
+- The Finix MUPS page now explicitly flags the English/Bangla insert differences on food effects and paediatric duration. The insert text also lists different carton counts: 50 tablets (10 × 5) in the English section and 60 tablets (10 × 6) in the Bangla section. The website retains the current 60-tablet pack information from the product brief; Opsonin should reconcile the bilingual PDF and current printed carton before the insert is reused.
+- The Finix HP PDF text extraction appears to show a possible English/Bangla composition and sachet-count mismatch. This could be an OCR/layout issue and was not visually confirmed, so it is recorded as a manufacturer verification item rather than a confirmed error. The public page follows the English product listing and now cautions readers to confirm the exact pack count and course with the prescriber/pharmacist.
+- The Finix HP FAQ now includes pregnancy and breastfeeding cautions in both languages and in FAQ structured data. The Malifa FAQ and interaction guidance now follow the Navana insert rather than extrapolating a US ferric-maltol label.
+- The IndexNow workflow's concurrency setting was changed so a newer push does not cancel an already-running submission. GitHub still permits only one pending run per concurrency group, so the final affected-page updates were consolidated into a single batch commit. Submission is not marked complete until the queued run finishes after the Pages deployment.
+- The scheduled article workflow remains manual-only with explicit author approval. No scheduled or future article was published.
