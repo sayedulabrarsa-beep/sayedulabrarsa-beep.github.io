@@ -1,16 +1,15 @@
-name: Scheduled pharmacology article releases
+name: Author-approved pharmacology article release
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - '_src/apply_editorial_calendar.py'
-      - '_src/editorial_calendar.json'
-      - 'blog/**'
-      - '.github/workflows/scheduled-articles.yml'
-  schedule:
-    - cron: '0 14 * * *' # 8:00 PM Asia/Dhaka daily
+  # Publishing is deliberately manual. A calendar date or repository push is not
+  # author approval. The author must explicitly confirm approval at dispatch.
   workflow_dispatch:
+    inputs:
+      author_approval:
+        description: "Confirm that every article due for release has been reviewed and approved by Sayedul Abrar."
+        required: true
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -21,6 +20,7 @@ concurrency:
 
 jobs:
   release:
+    if: inputs.author_approval == true
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
