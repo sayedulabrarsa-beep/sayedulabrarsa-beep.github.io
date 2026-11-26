@@ -169,7 +169,7 @@ Pharma Blog articles (newest first; each is educational, not medical advice):
 - Heartburn vs Acid Reflux vs GERD: Symptoms, Triggers and When to See a Doctor — English (2026-10-30): https://sayedulabrar.site/blog/heartburn-vs-acid-reflux-vs-gerd/
   Summary: Heartburn vs acid reflux vs GERD: understand the differences, symptoms, common triggers, 7 lifestyle tips, warning signs and when to see a doctor.
 - ওষুধের মেয়াদ শেষ হওয়ার তারিখ (EXP) কীভাবে দেখবেন? — বাংলা (2026-10-28): https://sayedulabrar.site/blog/expiry-date-vs-manufacturing-date-medicine-bangla/
-  Summary: ওষুধের EXP ও MFG তারিখ কী বোঝায়? বাংলাদেশে DGDA অনুযায়ী EXP 07/2027 মানে ৩১ জুলাই পর্যন্ত। ব্যাচ নম্বর ও নিরাপদ সংরক্ষণ জানুন।
+  Summary: ওষুধের মেয়াদ শেষ হওয়ার তারিখ (EXP) কীভাবে পড়বেন? 07/2027 মানে ৩১ জুলাই পর্যন্ত। MFG, ব্যাচ নম্বর ও নিরাপদ সংরক্ষণ সহজে জানুন।
 - Expiry Date vs Manufacturing Date on Medicine: EXP vs MFG — English (2026-10-28): https://sayedulabrar.site/blog/expiry-date-vs-manufacturing-date-medicine/
   Summary: Expiry date vs manufacturing date on medicine: learn to read EXP, MFG and batch numbers. See Bangladesh’s DGDA month-year rule and safe storage tips.
 - জেনেরিক নাম কী? জেনেরিক ও ব্র্যান্ড নামের পার্থক্য — বাংলা (2026-10-27): https://sayedulabrar.site/blog/generic-name-vs-brand-name-bangla/
@@ -177,7 +177,7 @@ Pharma Blog articles (newest first; each is educational, not medical advice):
 - Generic Name vs Brand Name of Medicine: Easy Guide (2026) — English (2026-10-27): https://sayedulabrar.site/blog/generic-name-vs-brand-name/
   Summary: Generic name vs brand name of medicine: find the active ingredient, why Finix and Rabe share one, what MUPS means, and a 4-step label check.
 - ড্রাগ ও মেডিসিনের পার্থক্য কী? — বাংলা (2026-10-27): https://sayedulabrar.site/blog/drug-vs-medicine-bangla/
-  Summary: ড্রাগ আর মেডিসিন (ওষুধ) কি একই? উদাহরণ, তুলনামূলক টেবিল, WHO-এর সংজ্ঞা ও বাংলাদেশের আইনের আলোকে পার্থক্য বুঝুন—ফার্মাসিস্টের সহজ ব্যাখ্যাসহ।
+  Summary: ড্রাগ ও মেডিসিনের পার্থক্য কী? সহজ উদাহরণ, তুলনামূলক ছক, WHO-এর সংজ্ঞা ও বাংলাদেশের আইনের আলোকে ফার্মাসিস্টের ব্যাখ্যা পড়ুন।
 - Drug vs Medicine: Meaning & Differences — English (2026-10-27): https://sayedulabrar.site/blog/drug-vs-medicine/
   Summary: Drug vs medicine explained with clear definitions, examples and key differences. Learn how WHO terminology and Bangladesh law use these terms.
 Feed: https://sayedulabrar.site/blog/feed.xml
