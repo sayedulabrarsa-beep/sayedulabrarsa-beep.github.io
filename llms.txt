@@ -132,10 +132,10 @@ Pharma Blog articles (newest first; each is educational, not medical advice):
   Summary: রক্তে প্রবেশের পর ওষুধ কীভাবে বিভিন্ন অঙ্গ ও টিস্যুতে পৌঁছায়, রক্তপ্রবাহ, tissue barrier ও protein binding কীভাবে বণ্টনকে প্রভাবিত করে জানুন।
 - Drug Distribution: How Medicines Travel from Blood to Body Tissues — English (2026-11-16): https://sayedulabrar.site/blog/drug-distribution-how-medicines-reach-their-target/
   Summary: Follow a medicine after it enters the bloodstream. Learn how blood flow, tissue barriers and protein binding shape drug distribution.
-- অ্যান্টিবায়োটিক কোর্স শেষ করা কেন জরুরি? — বাংলা (2026-11-13): https://sayedulabrar.site/blog/why-complete-antibiotic-course-antibiotic-resistance-bangla/
-  Summary: ভালো লাগলেও অ্যান্টিবায়োটিক কোর্স কেন শেষ করবেন? রেজিস্ট্যান্স, ডোজ মিস, বাকি ওষুধ, পার্শ্বপ্রতিক্রিয়া ও প্যাকের লাল চিহ্ন নিয়ে ফার্মাসিস্টের সহজ গাইড।
-- Why You Must Complete an Antibiotic Course — English (2026-11-13): https://sayedulabrar.site/blog/why-complete-antibiotic-course-antibiotic-resistance/
-  Summary: Why finish an antibiotic course even if you feel better? A pharmacist explains antibiotic resistance, missed doses, leftovers and Bangladesh's red label.
+- অ্যান্টিবায়োটিক কেন প্রেসক্রিপশন অনুযায়ী খেতে হবে? — বাংলা (2026-11-13): https://sayedulabrar.site/blog/why-complete-antibiotic-course-antibiotic-resistance-bangla/
+  Summary: ভালো লাগলেও নিজে থেকে অ্যান্টিবায়োটিক বন্ধ, ডোজ বাদ বা কোর্স বাড়াবেন না। প্রেসক্রিপশন, রেজিস্ট্যান্স, মিসড ডোজ ও বাকি ওষুধ নিয়ে ফার্মাসিস্টের গাইড।
+- Antibiotics: Take Them Exactly as Prescribed — English (2026-11-13): https://sayedulabrar.site/blog/why-complete-antibiotic-course-antibiotic-resistance/
+  Summary: Why you should not stop, skip, extend or share antibiotics without medical advice. A pharmacist explains prescribed duration, resistance and missed doses.
 - ওষুধের শোষণ: ওষুধ কীভাবে রক্তে প্রবেশ করে? — বাংলা (2026-11-13): https://sayedulabrar.site/blog/drug-absorption-how-medicine-enters-bloodstream-bangla/
   Summary: ওষুধ কীভাবে রক্তে প্রবেশ করে? ছবি ও ডায়াগ্রামসহ সহজ বাংলায় ওষুধের শোষণ: দ্রবীভবন, ভিলাই, প্যাসিভ ডিফিউশন, first-pass metabolism ও bioavailability।
 - Drug Absorption: How Does Medicine Enter the Bloodstream? — English (2026-11-13): https://sayedulabrar.site/blog/drug-absorption-how-medicine-enters-bloodstream/
@@ -170,8 +170,8 @@ Pharma Blog articles (newest first; each is educational, not medical advice):
   Summary: Heartburn vs acid reflux vs GERD: understand the differences, symptoms, common triggers, 7 lifestyle tips, warning signs and when to see a doctor.
 - ওষুধের মেয়াদ শেষ হওয়ার তারিখ (EXP) কীভাবে দেখবেন? — বাংলা (2026-10-28): https://sayedulabrar.site/blog/expiry-date-vs-manufacturing-date-medicine-bangla/
   Summary: ওষুধের EXP ও MFG তারিখ কী বোঝায়? বাংলাদেশে DGDA অনুযায়ী EXP 07/2027 মানে ৩১ জুলাই পর্যন্ত। ব্যাচ নম্বর ও নিরাপদ সংরক্ষণ জানুন।
-- Expiry Date vs Manufacturing Date on Medicine: Read EXP & MFG — English (2026-10-28): https://sayedulabrar.site/blog/expiry-date-vs-manufacturing-date-medicine/
-  Summary: Learn how to read EXP and MFG dates. Bangladesh’s DGDA says month/year expiry means the month’s last day. Check batch numbers and safe storage.
+- Expiry Date vs Manufacturing Date on Medicine: EXP vs MFG — English (2026-10-28): https://sayedulabrar.site/blog/expiry-date-vs-manufacturing-date-medicine/
+  Summary: Expiry date vs manufacturing date on medicine: learn to read EXP, MFG and batch numbers. See Bangladesh’s DGDA month-year rule and safe storage tips.
 - জেনেরিক নাম কী? জেনেরিক ও ব্র্যান্ড নামের পার্থক্য — বাংলা (2026-10-27): https://sayedulabrar.site/blog/generic-name-vs-brand-name-bangla/
   Summary: জেনেরিক নাম ও ব্র্যান্ড নামের পার্থক্য কী? ওষুধের জেনেরিক নাম চেনার উপায়, নাপা-প্যারাসিটামল উদাহরণ ও লেবেল পড়ার নিয়ম জানুন।
 - Generic Name vs Brand Name of Medicine: Easy Guide (2026) — English (2026-10-27): https://sayedulabrar.site/blog/generic-name-vs-brand-name/
