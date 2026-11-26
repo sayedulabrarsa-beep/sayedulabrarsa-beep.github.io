@@ -72,10 +72,10 @@ Pharma Blog articles (newest first; each is educational, not medical advice):
   Summary: জিনের ভিন্নতা কীভাবে ওষুধের বিপাক, কার্যকারিতা ও পার্শ্বপ্রতিক্রিয়ার ঝুঁকিতে প্রভাব ফেলতে পারে—উদাহরণ ও পরীক্ষার সীমাবদ্ধতাসহ জানুন।
 - Pharmacogenetics: Can Your Genes Change How Medicines Work? — English (2026-11-26): https://sayedulabrar.site/blog/pharmacogenetics-how-genes-affect-medicine-response/
   Summary: Learn how inherited gene variants can affect medicine metabolism, benefit and side-effect risk, with clear examples and the limits of pharmacogenetic testing.
-- বাংলাদেশে ফার্মাসিউটিক্যাল মার্কেটিং কৌশল: বাস্তবসম্মত ও নৈতিক পরিকল্পনা — বাংলা (2026-11-25): https://sayedulabrar.site/blog/pharmaceutical-marketing-strategy-bangladesh-bangla/
+- বাংলাদেশে ফার্মাসিউটিক্যাল মার্কেটিং কৌশল — বাংলা (2026-11-25): https://sayedulabrar.site/blog/pharmaceutical-marketing-strategy-bangladesh-bangla/
   Summary: বাংলাদেশে ফার্মাসিউটিক্যাল মার্কেটিং কৌশল কীভাবে তৈরি করবেন? বাজার বিশ্লেষণ, segmentation, positioning, বৈজ্ঞানিক যোগাযোগ, channel planning ও KPI জানুন।
-- Pharmaceutical Marketing Strategy in Bangladesh: A Practical, Ethical Framework — English (2026-11-25): https://sayedulabrar.site/blog/pharmaceutical-marketing-strategy-bangladesh/
-  Summary: Learn how to build a pharmaceutical marketing strategy in Bangladesh through market insight, segmentation, positioning, scientific communication, channel planning and measurable execution.
+- Pharmaceutical Marketing Strategy in Bangladesh — English (2026-11-25): https://sayedulabrar.site/blog/pharmaceutical-marketing-strategy-bangladesh/
+  Summary: Build an ethical pharmaceutical marketing strategy in Bangladesh: market insight, segmentation, positioning, scientific communication and KPIs.
 - ক্লিনিক্যাল ট্রায়ালের ধাপগুলো: মানুষের ওপর প্রথম পরীক্ষা থেকে বাজার-পরবর্তী পর্যবেক্ষণ — বাংলা (2026-11-25): https://sayedulabrar.site/blog/clinical-trial-phases-explained-bangla/
   Summary: ক্লিনিক্যাল ট্রায়ালের Phase I, II, III ও IV কীভাবে কাজ করে? নিরাপত্তা, কার্যকারিতা, অংশগ্রহণকারীর অধিকার এবং বাংলাদেশের DGDA-এর GCP নির্দেশনা সহজ ভাষায় জানুন।
 - Clinical Trial Phases Explained: From First-in-Human to Post-Marketing — English (2026-11-25): https://sayedulabrar.site/blog/clinical-trial-phases-explained/
@@ -88,10 +88,10 @@ Pharma Blog articles (newest first; each is educational, not medical advice):
   Summary: IQVIA তথ্য অনুযায়ী, সেপ্টেম্বর ২০২৬ পর্যন্ত ১২ মাসে বাংলাদেশে PPI বিক্রি প্রায় ৪,৯৮৩ কোটি টাকা—ওষুধের ট্র্যাক করা বাজারের প্রায় ১২%।
 - Bangladesh’s PPI Market: Tk 4,983 Crore in Annual Sales — English (2026-11-24): https://sayedulabrar.site/blog/ppi-acid-medicine-market-bangladesh/
   Summary: IQVIA data show about Tk 4,983 crore in Bangladesh PPI sales in the 12 months to September 2026—around 12% of the tracked medicine market.
-- ফার্মাসিউটিক্যাল প্রোডাক্ট ম্যানেজমেন্ট কী? বাংলাদেশে কাজ, কৌশল ও দায়িত্ব — বাংলা (2026-11-24): https://sayedulabrar.site/blog/pharmaceutical-product-management-bangladesh-bangla/
+- বাংলাদেশে ফার্মাসিউটিক্যাল প্রোডাক্ট ম্যানেজমেন্ট — বাংলা (2026-11-24): https://sayedulabrar.site/blog/pharmaceutical-product-management-bangladesh-bangla/
   Summary: বাংলাদেশের ওষুধ শিল্পে প্রোডাক্ট ম্যানেজমেন্ট কীভাবে কাজ করে? বাজার বিশ্লেষণ, ব্র্যান্ড কৌশল, পণ্য জীবনচক্র, নৈতিক HCP engagement ও KPI সহজভাবে জানুন।
-- Pharmaceutical Product Management in Bangladesh: Strategy, Skills & Responsibilities — English (2026-11-24): https://sayedulabrar.site/blog/pharmaceutical-product-management-bangladesh/
-  Summary: A practical guide to pharmaceutical product management in Bangladesh: market analysis, brand strategy, product lifecycle, ethical HCP engagement, cross-functional work and KPIs.
+- Pharmaceutical Product Management in Bangladesh — English (2026-11-24): https://sayedulabrar.site/blog/pharmaceutical-product-management-bangladesh/
+  Summary: Understand pharmaceutical product management in Bangladesh: market analysis, brand strategy, product lifecycle, ethical HCP engagement and KPIs.
 - বায়োসিমিলার কী? মূল বায়োলজিক ওষুধের সঙ্গে এর পার্থক্য কতটুকু? — বাংলা (2026-11-24): https://sayedulabrar.site/blog/biosimilars-explained-bangla/
   Summary: বায়োসিমিলার কী, কীভাবে তৈরি ও পরীক্ষা করা হয়, জেনেরিক ওষুধের সঙ্গে পার্থক্য এবং বাংলাদেশে DGDA-এর নির্দেশনা সহজ ভাষায় জানুন।
 - Biosimilars Explained: How Similar Are They to Original Biologic Medicines? — English (2026-11-24): https://sayedulabrar.site/blog/biosimilars-explained/
