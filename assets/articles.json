@@ -1,5 +1,18 @@
 [
  {
+  "slug": "pharmacogenetics-how-genes-affect-medicine-response",
+  "date": "2026-11-26",
+  "tag_en": "Pharma Blog",
+  "tag_bn": "ফার্মা ব্লগ",
+  "title_en": "Pharmacogenetics: Can Your Genes Change How Medicines Work?",
+  "title_bn": "ফার্মাকোজেনেটিক্স: আপনার জিন কি ওষুধের প্রতিক্রিয়া বদলে দিতে পারে?",
+  "desc_en": "Learn how inherited gene variants can affect medicine metabolism, benefit and side-effect risk,…",
+  "desc_bn": "জিনের ভিন্নতা কীভাবে ওষুধের বিপাক, কার্যকারিতা ও পার্শ্বপ্রতিক্রিয়ার ঝুঁকিতে প্রভাব ফেলতে…",
+  "url_en": "/blog/pharmacogenetics-how-genes-affect-medicine-response/",
+  "url_bn": "/blog/pharmacogenetics-how-genes-affect-medicine-response-bangla/",
+  "img": "/assets/img/blog/pharmacogenetics/pgx-cover.svg"
+ },
+ {
   "slug": "pharmaceutical-marketing-strategy-bangladesh",
   "date": "2026-11-25",
   "tag_en": "Pharmaceutical Marketing",

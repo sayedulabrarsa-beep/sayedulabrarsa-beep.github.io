@@ -64,6 +64,10 @@ Clinical-content boundaries:
 
 <!--articles:start-->
 Pharma Blog articles (newest first; each is educational, not medical advice):
+- ফার্মাকোজেনেটিক্স: আপনার জিন কি ওষুধের প্রতিক্রিয়া বদলে দিতে পারে? — বাংলা (2026-11-26): https://sayedulabrar.site/blog/pharmacogenetics-how-genes-affect-medicine-response-bangla/
+  Summary: জিনের ভিন্নতা কীভাবে ওষুধের বিপাক, কার্যকারিতা ও পার্শ্বপ্রতিক্রিয়ার ঝুঁকিতে প্রভাব ফেলতে পারে—উদাহরণ ও পরীক্ষার সীমাবদ্ধতাসহ জানুন।
+- Pharmacogenetics: Can Your Genes Change How Medicines Work? — English (2026-11-26): https://sayedulabrar.site/blog/pharmacogenetics-how-genes-affect-medicine-response/
+  Summary: Learn how inherited gene variants can affect medicine metabolism, benefit and side-effect risk, with clear examples and the limits of pharmacogenetic testing.
 - বাংলাদেশে ফার্মাসিউটিক্যাল মার্কেটিং কৌশল: বাস্তবসম্মত ও নৈতিক পরিকল্পনা — বাংলা (2026-11-25): https://sayedulabrar.site/blog/pharmaceutical-marketing-strategy-bangladesh-bangla/
   Summary: বাংলাদেশে ফার্মাসিউটিক্যাল মার্কেটিং কৌশল কীভাবে তৈরি করবেন? বাজার বিশ্লেষণ, segmentation, positioning, বৈজ্ঞানিক যোগাযোগ, channel planning ও KPI জানুন।
 - Pharmaceutical Marketing Strategy in Bangladesh: A Practical, Ethical Framework — English (2026-11-25): https://sayedulabrar.site/blog/pharmaceutical-marketing-strategy-bangladesh/
