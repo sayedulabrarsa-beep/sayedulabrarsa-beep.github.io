@@ -60,13 +60,13 @@
     function draw(){
       cards.forEach(function(card,i){
         var p=rotatePoint(points[i]),x=p.x*radius,y=-p.y*radius,z=p.z*radius;
-        var front=Math.max(0,Math.min(1,(p.z+.02)/.28));
+        var front=Math.max(.22,Math.min(1,(p.z+.42)/.82));
         var scale=.88+.12*((p.z+1)/2);
         card.style.transform='translate3d('+x.toFixed(2)+'px,'+y.toFixed(2)+'px,'+z.toFixed(2)+'px) translate(-50%,-50%) scale('+scale.toFixed(3)+')';
         card.style.opacity=String(front);
         card.style.zIndex=String(Math.round((p.z+1)*1000));
-        card.style.pointerEvents=dragging||p.z<.12?'none':'auto';
-        card.setAttribute('aria-hidden',p.z<.12?'true':'false');
+        card.style.pointerEvents=dragging||p.z<-.02?'none':'auto';
+        card.setAttribute('aria-hidden',p.z<-.02?'true':'false');
       });
     }
     function animate(t){
@@ -85,18 +85,27 @@
     stage.addEventListener('pointermove',function(e){
       if(pointer!==e.pointerId)return;
       var dx=e.clientX-sx,dy=e.clientY-sy;
-      if(!dragging&&(Math.abs(dx)>5||Math.abs(dy)>5)){
+      /* On touch screens, vertical gestures belong to the page scroll.
+         Only a deliberate horizontal swipe rotates the carousel. Desktop mouse
+         dragging continues to rotate the sphere on both axes. */
+      if(e.pointerType==='touch'&&!dragging&&Math.abs(dy)>7&&Math.abs(dy)>Math.abs(dx)*1.12){
+        pointer=null;return;
+      }
+      if(!dragging){
+        var intent=e.pointerType==='touch'?Math.abs(dx)>7&&Math.abs(dx)>Math.abs(dy)*1.12:(Math.abs(dx)>5||Math.abs(dy)>5);
+        if(!intent)return;
         dragging=true;stage.classList.add('is-drag');
         try{stage.setPointerCapture(pointer);}catch(err){}
       }
-      if(!dragging)return;if(e.cancelable)e.preventDefault();
+      if(!dragging)return;
+      if(e.pointerType!=='touch'&&e.cancelable)e.preventDefault();
       moved=Math.max(Math.abs(dx),Math.abs(dy));
       var scale=1/Math.max(180,stage.clientWidth);
       yaw=syaw+dx*scale*2.4;
-      pitch=Math.max(-1.25,Math.min(1.25,spitch+dy*scale*2.4));
+      if(e.pointerType!=='touch')pitch=Math.max(-1.25,Math.min(1.25,spitch+dy*scale*2.4));
       var elapsed=Math.max(1,e.timeStamp-lt);
       vyaw=(e.clientX-ly)*scale*2.4/elapsed*1000;
-      vpitch=(e.clientY-(stage._lastY===undefined?e.clientY:stage._lastY))*scale*2.4/elapsed*1000;
+      if(e.pointerType!=='touch')vpitch=(e.clientY-stage._lastY)*scale*2.4/elapsed*1000;
       ly=e.clientX;stage._lastY=e.clientY;lt=e.timeStamp;draw();
     });
     function end(){
