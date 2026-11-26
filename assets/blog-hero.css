@@ -133,3 +133,14 @@
 .pb-hero.bh .bh-card img{pointer-events:none;-webkit-user-drag:none}
 @media(max-width:900px){.pb-hero.bh .bh-card{width:184px;height:264px;margin:-132px 0 0 -92px}}
 @media(max-width:540px){.pb-hero.bh .bh-stage{height:470px;perspective:1050px}.pb-hero.bh .bh-card{width:136px;height:210px;margin:-105px 0 0 -68px}}
+
+
+/* Two-axis 3D sphere carousel: fixed surface spacing and touch gestures in every direction. */
+.pb-hero.bh .bh-stage{position:relative;overflow:hidden;perspective:1300px;perspective-origin:50% 50%;touch-action:none;overscroll-behavior:contain;cursor:grab;user-select:none;-webkit-user-select:none;-webkit-tap-highlight-color:transparent}
+.pb-hero.bh .bh-stage.is-drag{cursor:grabbing}
+.pb-hero.bh .bh-field{position:absolute;left:50%;top:50%;width:0;height:0;transform-style:preserve-3d}
+.pb-hero.bh .bh-card{position:absolute;left:0;top:0;display:block;opacity:1;visibility:visible;transform-style:preserve-3d;backface-visibility:hidden;-webkit-backface-visibility:hidden;will-change:transform}
+.pb-hero.bh .bh-face{backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.pb-hero.bh .bh-card img{pointer-events:none;-webkit-user-drag:none}
+@media(max-width:900px){.pb-hero.bh .bh-stage{perspective:1100px}.pb-hero.bh .bh-card{width:184px;height:264px;margin:-132px 0 0 -92px}}
+@media(max-width:540px){.pb-hero.bh .bh-stage{height:470px;perspective:900px}.pb-hero.bh .bh-card{width:136px;height:210px;margin:-105px 0 0 -68px}}
