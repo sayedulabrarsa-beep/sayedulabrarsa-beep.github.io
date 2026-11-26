@@ -197,16 +197,16 @@ A manual release processes all calendar entries considered due by the release sc
 
 - Merged the editorial profile, article-review template, baseline audit and manual-only approval workflow.
 - Merge commit: `9de0128e7c4961d860b1b41dcd62f0eab684f30c`.
-- The publishing workflow is the only production workflow changed.
-- No existing article body, page title, description, URL, canonical, image, CSS, JavaScript, navigation, sitemap or robots file was edited during this SEO review.
-- GSC metrics and technical checks in this addendum are diagnostic findings; proposed on-page changes remain unimplemented pending separate review and approval.
+- The scheduled article release workflow was changed to manual-only operation with an explicit `author_approval` input; it no longer has a cron or push publishing trigger.
+- After this baseline review, the English and Bangla Prescription vs OTC pages were separately corrected on 27 November 2026. Their URLs, canonical tags, publication dates, layout and indexability were preserved; JSON-LD `dateModified` was updated.
+- Other proposed on-page changes remain unimplemented unless explicitly recorded as completed below.
 
 ## Safety and change log
 
-- This audit report is documentation only.
-- No production page, article, URL, image, CSS, JavaScript, sitemap or robots file was changed as part of this report. The publishing workflow change is a proposal on the review branch only and is not active until approved and merged.
+- This audit report is documentation; the separately recorded Rx vs OTC correction is live in the repository.
+- The manual-only publishing safeguard is active on `main` after the author's approval and is not a proposal on a review branch.
 - The business/editorial profile, reusable review template and baseline audit are committed under `seo/`.
-- The manual-only publishing safeguard is active on `main` after the author's approval.
+- No scheduled article was released as part of this follow-up verification.
 
 ## Sources inspected
 
@@ -236,13 +236,11 @@ A manual release processes all calendar entries considered due by the release sc
 - The Pharmacogenetics article was present, indexable and included references to MedlinePlus, FDA, CDC and peer-reviewed literature.
 - This was a selected-page check only; it does not establish that all English/Bangla pairs are complete or scientifically verified.
 
-### Action required before revising the published Rx vs OTC article
+### Bangladesh prescription-versus-OTC correction — completed
 
-The current article states that a 2020 news report counted 39 OTC medicines and refers readers to the National Drug Policy 2016 appendices. A more direct and newer primary source is available: DGDA's **National Guideline on Accreditation of Model Pharmacy and Model Medicine Shop in Bangladesh**, authorized 2 June 2024. Annex 5 defines OTC and prescription-only medicines and lists 39 DGDA-authorized allopathic OTC medicine categories (PDF printed pages 21–22). The list includes, among others, omeprazole capsules, metronidazole tablets/suspension and paracetamol formulations. The article should cite this DGDA annex directly and make clear that the list is the DGDA's published list in that 2024 guideline, not a count inferred from a 2020 media report.
+Both published language versions have been corrected using primary Bangladesh sources. DGDA's **National Guideline on Accreditation of Model Pharmacy and Model Medicine Shop in Bangladesh**, authorized 2 June 2024, Annex 5, defines OTC and prescription-only medicines and lists 39 DGDA-authorized allopathic OTC medicine categories (PDF printed pages 21–22). The list includes omeprazole capsules, metronidazole tablets/suspension and paracetamol formulations. The article now cites this Annex directly rather than relying on a 2020 media count or the National Drug Policy 2016 appendices.
 
-The article's statement about a fine of up to Tk 20,000 is consistent with the penalty schedule accompanying the Drugs and Cosmetics Act 2023 for a breach of section 40(d). The strongest citation is the official 18 September 2023 Gazette schedule, not a secondary WHO report. Section 40(d) itself establishes the prescription rule; the schedule sets the penalty. Keep these as distinct citations.
-
-WHO Bangladesh's 7 March 2023 report supports the red-label explanation: the Drug Control Committee endorsed the red identification mark, and the requirement was to show the word “antibiotic” and a warning against use without a registered physician's prescription. The article's current wording is broadly consistent with this source.
+The fine of up to Tk 20,000 is now tied specifically to the official 18 September 2023 Gazette penalty schedule for a breach of section 40(d). The article distinguishes the prescription rule in section 40(d) from the penalty schedule. WHO Bangladesh's 7 March 2023 report remains the supporting source for the red-label explanation.
 
 **Correction implemented on 27 November 2026:** the English and Bangla Rx vs OTC articles now cite DGDA's 2024 guideline Annex 5 and the official Gazette schedule for section 40(d). Both pages explain that section 40 has an OTC-list exception and avoid the inaccurate blanket statement that every antibiotic is always prescription-only; Annex 5 lists metronidazole tablet/suspension among its 39 entries. The superseded National Drug Policy 2016 / 2020 media-count references were replaced by the direct DGDA primary source. Publication dates remain 26 November 2026; Article JSON-LD `dateModified` is updated to 27 November 2026.
 
