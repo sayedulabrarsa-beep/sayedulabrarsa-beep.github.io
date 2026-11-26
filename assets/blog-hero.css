@@ -98,3 +98,20 @@
 @media(min-width:541px) and (max-width:900px){
   .pb-hero.bh .bh-card{width:184px;height:264px;margin:-132px 0 0 -92px}
 }
+
+
+/* True circular article carousel: fixed horizontal arc spacing, no vertical spiral. */
+.pb-hero.bh .bh-stage{perspective:1050px;perspective-origin:50% 50%;overflow:hidden;touch-action:pan-y;overscroll-behavior:contain}
+.pb-hero.bh .bh-field{transform-style:preserve-3d}
+.pb-hero.bh .bh-card{backface-visibility:hidden;-webkit-backface-visibility:hidden;transform-style:preserve-3d;transition:filter .2s ease}
+.pb-hero.bh .bh-front{backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.pb-hero.bh .bh-stage.is-drag{cursor:grabbing}
+@media(max-width:540px){
+  .pb-hero.bh .bh-stage{height:470px;perspective:1050px;touch-action:pan-y}
+  .pb-hero.bh .bh-card{width:136px;height:210px;margin:-105px 0 0 -68px}
+}
+@media(min-width:541px) and (max-width:900px){
+  .pb-hero.bh .bh-stage{height:520px;perspective:1250px}
+  .pb-hero.bh .bh-card{width:184px;height:264px;margin:-132px 0 0 -92px}
+}
+@media(prefers-reduced-motion:reduce){.pb-hero.bh .bh-stage{scroll-behavior:auto}}
