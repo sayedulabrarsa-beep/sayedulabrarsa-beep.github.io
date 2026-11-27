@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="t d">
+<title id="t">Temperature monitoring and a product-specific excursion</title>
+<desc id="d">A schematic temperature chart shows a labelled product-specific acceptable band, a recorded temperature trace and a short excursion above the upper limit. The chart is conceptual, not a real product specification.</desc>
+<rect width="1600" height="900" fill="#fbf7ef"/>
+<text x="100" y="100" fill="#173d43" font-family="Arial,sans-serif" font-size="46" font-weight="700">A logger shows what a spot check can miss</text>
+<text x="100" y="150" fill="#607273" font-family="Arial,sans-serif" font-size="25">Conceptual trace only — the acceptable band must come from the product label.</text>
+<g transform="translate(170 220)">
+<rect x="0" y="0" width="1260" height="500" rx="22" fill="#fffdf8" stroke="#d6dfd9" stroke-width="5"/>
+<rect x="100" y="120" width="1060" height="220" fill="#dcece4"/>
+<path d="M100 120 H1160 M100 340 H1160" stroke="#579487" stroke-width="4" stroke-dasharray="12 10"/>
+<path d="M100 60 V410 H1160" fill="none" stroke="#365d60" stroke-width="6"/>
+<g stroke="#b9c9c2" stroke-width="3" stroke-dasharray="6 10"><path d="M100 230 H1160"/><path d="M365 60 V410"/><path d="M630 60 V410"/><path d="M895 60 V410"/></g>
+<path d="M100 245 L210 250 L320 235 L430 248 L540 238 L650 242 L760 235 L845 230 L900 85 L950 95 L990 235 L1080 248 L1160 240" fill="none" stroke="#d46e4c" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="900" cy="85" r="16" fill="#d46e4c" stroke="#fffdf8" stroke-width="6"/>
+<g font-family="Arial,sans-serif" fill="#173d43" font-size="22">
+<text x="0" y="125" text-anchor="end">Upper limit</text><text x="0" y="345" text-anchor="end">Lower limit</text>
+<text x="100" y="455">Start</text><text x="630" y="455" text-anchor="middle">Transit time</text><text x="1160" y="455" text-anchor="end">Receipt</text>
+</g>
+<rect x="830" y="12" width="300" height="62" rx="14" fill="#f8e5da" stroke="#d46e4c" stroke-width="3"/>
+<text x="980" y="51" text-anchor="middle" fill="#8a412e" font-family="Arial,sans-serif" font-size="22" font-weight="700">RECORDED EXCURSION</text>
+</g>
+<rect x="170" y="770" width="1260" height="70" rx="18" fill="#e6eee8"/>
+<circle cx="220" cy="805" r="12" fill="#579487"/><text x="250" y="814" fill="#36585a" font-family="Arial,sans-serif" font-size="22">Product-specific acceptable band</text>
+<path d="M760 805 H820" stroke="#d46e4c" stroke-width="8" stroke-linecap="round"/><text x="845" y="814" fill="#36585a" font-family="Arial,sans-serif" font-size="22">Measured temperature trace</text>
+</svg>
