@@ -1,0 +1,35 @@
+/* Pharma Blog: Featured articles shown 10 at a time inside one panel, with a pager. */
+.pb-featured .pb-featured-grid{padding:22px;border:1px solid #eadfcd;border-radius:24px;background:linear-gradient(180deg,#fffdf8,#fbf4e8);box-shadow:0 18px 40px -30px #4a3b2466}
+.pb-featured .pb-feature-card.pb-off-page{display:none!important}
+.pb-featured .pb-feature-card{border-radius:16px;overflow:hidden}
+/* the older "main" card no longer spans a whole row in the middle of a page */
+.pb-featured .pb-feature-card-main:not(.pb-lead):not(.pb-off-page){grid-column:auto!important;display:flex!important;flex-direction:column}
+.pb-featured .pb-feature-card-main:not(.pb-lead) .pb-card-image{min-height:0!important;height:auto!important}
+/* desktop: the first article of each page is a wide lead card, then 3 rows of 3 */
+@media(min-width:801px){
+  .pb-featured .pb-feature-card.pb-lead{grid-column:1/-1!important;display:grid!important;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);align-items:stretch}
+  .pb-featured .pb-feature-card.pb-lead{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr)!important}
+  .pb-featured .pb-feature-card.pb-lead .pb-card-image{align-self:center;height:auto!important;min-height:0!important;aspect-ratio:1200/630!important}
+  .pb-featured .pb-feature-card.pb-lead .pb-card-image img{width:100%;height:100%;object-fit:cover}
+  .pb-featured .pb-feature-card.pb-lead .pb-card-copy{padding:30px 34px;display:flex;flex-direction:column;justify-content:center}
+  .pb-featured .pb-feature-card.pb-lead h3{font-size:clamp(24px,2.3vw,32px);line-height:1.2}
+}
+@media(max-width:1100px) and (min-width:801px){
+  .pb-featured .pb-featured-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:800px){
+  .pb-featured .pb-featured-grid{padding:14px;border-radius:20px}
+}
+@media(max-width:540px){
+  .pb-featured .pb-featured-grid{padding:10px;border-radius:16px;background:#fffaf2}
+}
+/* pager */
+.pb-pager{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;margin:22px 0 6px}
+.pb-pager[hidden]{display:none}
+.pb-pager ol{display:flex;gap:6px;margin:0;padding:0;list-style:none}
+.pb-pager button{min-width:44px;min-height:44px;padding:0 16px;border-radius:999px;border:1.5px solid #d9c9ae;background:#fffdf8;color:#2b2219;font:700 13px/1 Poppins,system-ui,sans-serif;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.pb-pager ol button{padding:0}
+.pb-pager button:hover:not(:disabled){border-color:#116b57;color:#116b57}
+.pb-pager button[aria-current="page"]{background:#116b57;border-color:#116b57;color:#fff}
+.pb-pager button:disabled{opacity:.4;cursor:default}
+@media(max-width:540px){.pb-pager{gap:8px}.pb-pager .pb-pg-prev,.pb-pager .pb-pg-next{padding:0 12px;font-size:12px}}

@@ -1,137 +1,149 @@
-/* Pharma Blog: two-axis 3D spherical carousel with fixed card spacing. */
+/* Pharma Blog hero: a calm 3D ring of article cards.
+   One card faces the reader with neighbours either side (at least two articles always readable);
+   every few seconds the ring glides softly to the next card. Swipe/drag, arrows or keys move it;
+   tap a side card to bring it forward, tap the front card to read. Cards are built from the
+   article grid on the page, so every new article joins automatically. */
 (function () {
   'use strict';
   function init() {
-    var stage=document.getElementById('bh-stage');
-    if(!stage||stage.dataset.carouselReady==='sphere')return;
-    var ring=stage.querySelector('.bh-field'),grid=document.querySelector('.pb-featured-grid');
-    if(!ring||!grid)return;
-    var items=Array.prototype.slice.call(grid.querySelectorAll('.pb-feature-card')).map(function(card){
-      var link=card.querySelector('h3 a')||card.querySelector('a[href]');
-      if(!link)return null;
-      var img=card.querySelector('img'),meta=card.querySelector('.pb-card-meta');
-      return {href:link.getAttribute('href'),title:(link.textContent||'').replace(/\s+/g,' ').trim(),
-        img:img?(img.currentSrc||img.getAttribute('src')):'',tag:meta?meta.textContent.split('·')[0].trim():'PHARMA BLOG',
-        bn:!!card.querySelector('.pb-bangla-link')};
-    }).filter(function(x){return x&&x.href&&x.title;});
-    if(!items.length)return;
-    stage.dataset.carouselReady='sphere';ring.innerHTML='';
-    var count=document.querySelector('.bh-count-n');if(count)count.textContent=items.length;
-    var cards=items.map(function(item){
-      var a=document.createElement('a');a.className='bh-card';a.href=item.href;a.draggable=false;a.setAttribute('aria-label',item.title);
-      var face=document.createElement('span');face.className='bh-face bh-front';
-      if(item.img){var image=document.createElement('img');image.src=item.img;image.alt='';image.width=472;image.height=266;image.decoding='async';image.draggable=false;face.appendChild(image);}
-      var body=document.createElement('span');body.className='bh-card-body';
-      var tag=document.createElement('span');tag.className='bh-card-tag';tag.textContent=item.tag;
-      var title=document.createElement('span');title.className='bh-card-title';title.textContent=item.title;
-      var foot=document.createElement('span');foot.className='bh-card-foot';
-      var read=document.createElement('span');read.textContent='Read article ↗';
-      var lang=document.createElement('span');lang.textContent=item.bn?'English + বাংলা':'English';
-      foot.appendChild(read);foot.appendChild(lang);body.appendChild(tag);body.appendChild(title);body.appendChild(foot);
-      face.appendChild(body);a.appendChild(face);ring.appendChild(a);return a;
+    var stage = document.getElementById('bh-stage');
+    if (!stage || stage.dataset.carouselReady === 'ring') return;
+    var ring = stage.querySelector('.bh-field'), grid = document.querySelector('.pb-featured-grid');
+    if (!ring || !grid) return;
+    var items = Array.prototype.slice.call(grid.querySelectorAll('.pb-feature-card')).map(function (card) {
+      var link = card.querySelector('h3 a') || card.querySelector('a[href]');
+      if (!link) return null;
+      var img = card.querySelector('img'), meta = card.querySelector('.pb-card-meta');
+      return { href: link.getAttribute('href'), title: (link.textContent || '').replace(/\s+/g, ' ').trim(),
+        img: img ? img.getAttribute('src') : '', tag: meta ? meta.textContent.split('·')[0].trim() : 'PHARMA BLOG',
+        read: meta && meta.textContent.split('·')[1] ? meta.textContent.split('·')[1].trim() : '',
+        bn: !!card.querySelector('.pb-bangla-link') };
+    }).filter(function (x) { return x && x.href && x.title; });
+    if (!items.length) return;
+    stage.dataset.carouselReady = 'ring'; ring.innerHTML = '';
+    var count = document.querySelector('.bh-count-n'); if (count) count.textContent = items.length;
+
+    var cards = items.map(function (it, i) {
+      var a = document.createElement('a');
+      a.className = 'bh-card'; a.href = it.href; a.draggable = false; a.setAttribute('aria-label', it.title);
+      var face = document.createElement('span'); face.className = 'bh-face bh-front';
+      if (it.img) { var im = document.createElement('img'); im.src = it.img; im.alt = ''; im.width = 472; im.height = 266; im.decoding = 'async'; im.draggable = false; if (i > 4) im.loading = 'lazy'; face.appendChild(im); }
+      var body = document.createElement('span'); body.className = 'bh-card-body';
+      var tag = document.createElement('span'); tag.className = 'bh-card-tag'; tag.textContent = it.tag + (it.read ? ' · ' + it.read : '');
+      var title = document.createElement('span'); title.className = 'bh-card-title'; title.textContent = it.title;
+      var foot = document.createElement('span'); foot.className = 'bh-card-foot';
+      var r = document.createElement('span'); r.textContent = 'Read article ↗';
+      var l = document.createElement('span'); l.textContent = it.bn ? 'English + বাংলা' : 'English';
+      foot.appendChild(r); foot.appendChild(l); body.appendChild(tag); body.appendChild(title); body.appendChild(foot);
+      face.appendChild(body); a.appendChild(face); ring.appendChild(a); return a;
     });
 
-    var n=cards.length,points=[],radius=300,yaw=0,pitch=0,vyaw=0,vpitch=0;
-    var dragging=false,pointer=null,sx=0,sy=0,ly=0,lt=0,syaw=0,spitch=0,moved=0,last=0,visible=true;
-    var reduced=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    // Fibonacci sphere: near-uniform point distribution, independent of article order.
-    var golden=Math.PI*(3-Math.sqrt(5));
-    for(var i=0;i<n;i++){
-      var yy=1-(2*(i+.5)/n),rr=Math.sqrt(Math.max(0,1-yy*yy)),theta=golden*i;
-      points.push({x:Math.cos(theta)*rr,y:yy,z:Math.sin(theta)*rr});
-    }
-    function measure(){
-      var w=stage.clientWidth,cw=w<540?136:w<900?184:236,ch=w<540?210:w<900?264:318;
-      var gap=w<540?20:w<900?28:34;
-      var spacing=Math.max(cw+gap,ch+gap);
-      // Surface area per article determines the sphere radius; adding an article
-      // expands the sphere, preserving the same minimum neighbour spacing.
-      radius=spacing*Math.sqrt(n/(4*Math.PI))*1.16;
-      var heading=document.querySelector('.bh-title'),fit=heading&&heading.querySelector('.bh-fit');
-      if(heading&&fit){var room=heading.clientWidth-36;if(room>20){heading.style.fontSize='100px';var fw=fit.getBoundingClientRect().width;if(fw>room)heading.style.fontSize=Math.max(28,100*room/fw*.96)+'px';else heading.style.fontSize=Math.min(innerWidth>900?168:150,100*room/fw)+'px';}}
+    var n = cards.length, pos = 0, target = 0, R = 700, step = 26 * Math.PI / 180, pxPerCard = 300;
+    var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var HOLD = 3600, held = 0, hover = false, visible = true, last = 0;
+    var counter = stage.querySelector('.bh-index');
+
+    function wrap(d) { d = ((d % n) + n) % n; return d > n / 2 ? d - n : d; }
+    function measure() {
+      var w = stage.clientWidth, cw = cards[0].offsetWidth || 300;
+      step = (w < 540 ? 34 : w < 900 ? 30 : 25) * Math.PI / 180;
+      var gapK = w < 540 ? 1.04 : 1.06;                       // how far the first neighbour sits from the front card
+      R = cw * gapK / Math.sin(step);
+      pxPerCard = Math.sin(step) * R;
       draw();
     }
-    function rotatePoint(p){
-      var cy=Math.cos(yaw),sy=Math.sin(yaw),cp=Math.cos(pitch),sp=Math.sin(pitch);
-      var x=p.x*cy+p.z*sy,z=-p.x*sy+p.z*cy;
-      var y=p.y*cp-z*sp;z=p.y*sp+z*cp;
-      return {x:x,y:y,z:z};
-    }
-    function draw(){
-      cards.forEach(function(card,i){
-        var p=rotatePoint(points[i]),x=p.x*radius,y=-p.y*radius,z=p.z*radius;
-        var front=Math.max(.22,Math.min(1,(p.z+.42)/.82));
-        var scale=.88+.12*((p.z+1)/2);
-        card.style.transform='translate3d('+x.toFixed(2)+'px,'+y.toFixed(2)+'px,'+z.toFixed(2)+'px) translate(-50%,-50%) scale('+scale.toFixed(3)+')';
-        card.style.opacity=String(front);
-        card.style.zIndex=String(Math.round((p.z+1)*1000));
-        card.style.pointerEvents=dragging||p.z<-.02?'none':'auto';
-        card.setAttribute('aria-hidden',p.z<-.02?'true':'false');
-      });
-    }
-    function animate(t){
-      if(!last)last=t;var dt=Math.min(40,t-last)/1000;last=t;
-      if(visible&&!dragging&&!reduced){
-        if(Math.abs(vyaw)>.006||Math.abs(vpitch)>.006){yaw+=vyaw*dt;pitch+=vpitch*dt;var decay=Math.pow(.035,dt);vyaw*=decay;vpitch*=decay;}
-        else {yaw+=.12*dt;pitch+=.035*dt;}
-        draw();
+    function draw() {
+      var front = ((Math.round(pos) % n) + n) % n;
+      for (var i = 0; i < n; i++) {
+        var d = wrap(i - pos), th = d * step, a = Math.abs(th);
+        var c = cards[i];
+        if (a > Math.PI * 0.58) { if (c._on !== false) { c._on = false; c.style.visibility = 'hidden'; c.style.pointerEvents = 'none'; } continue; }
+        if (c._on !== true) { c._on = true; c.style.visibility = ''; }
+        var x = Math.sin(th) * R, z = (Math.cos(th) - 1) * R;
+        var k = Math.max(0, 1 - Math.abs(d));                   // 1 at the front, 0 one card away
+        var sc = 1 + 0.06 * k;
+        c.style.transform = 'translate3d(' + x.toFixed(1) + 'px,0,' + z.toFixed(1) + 'px) rotateY(' + (th * 180 / Math.PI).toFixed(2) + 'deg) scale(' + sc.toFixed(3) + ')';
+        c.style.opacity = Math.max(0, Math.min(1, (Math.PI * 0.58 - a) / (Math.PI * 0.2))).toFixed(3);
+        c.style.setProperty('--bh-dim', (0.62 + 0.38 * Math.max(k, Math.cos(Math.min(a, 1.4)) * 0.75)).toFixed(3));
+        c.style.zIndex = String(1000 - Math.round(Math.abs(d) * 10));
+        c.style.pointerEvents = a < Math.PI * 0.45 ? 'auto' : 'none';
+        c.classList.toggle('is-front', i === front && Math.abs(d) < 0.5);
+        c.tabIndex = i === front ? 0 : -1;
       }
-      requestAnimationFrame(animate);
+      if (counter) counter.textContent = (front + 1) + ' / ' + n;
     }
-    stage.addEventListener('pointerdown',function(e){
-      if(e.pointerType==='mouse'&&e.button!==0)return;
-      pointer=e.pointerId;sx=ly=e.clientX;sy=e.clientY;stage._lastY=e.clientY;lt=e.timeStamp;syaw=yaw;spitch=pitch;moved=0;vyaw=vpitch=0;
-    });
-    stage.addEventListener('pointermove',function(e){
-      if(pointer!==e.pointerId)return;
-      var dx=e.clientX-sx,dy=e.clientY-sy;
-      /* On touch screens, vertical gestures belong to the page scroll.
-         Only a deliberate horizontal swipe rotates the carousel. Desktop mouse
-         dragging continues to rotate the sphere on both axes. */
-      if(e.pointerType==='touch'&&!dragging&&Math.abs(dy)>7&&Math.abs(dy)>Math.abs(dx)*1.12){
-        pointer=null;return;
+    function frame(t) {
+      if (!last) last = t;
+      var dt = Math.min(50, t - last); last = t;
+      if (visible && !dragging) {
+        if (!reduced && !hover && !document.hidden) { held += dt; if (held >= HOLD && Math.abs(target - pos) < 0.02) { target += 1; held = 0; } }
+        var diff = target - pos;
+        if (Math.abs(diff) > 0.0005) { pos += diff * (1 - Math.exp(-dt / (reduced ? 60 : 210))); draw(); }
+        else if (pos !== target) { pos = target; draw(); }
       }
-      if(!dragging){
-        var intent=e.pointerType==='touch'?Math.abs(dx)>7&&Math.abs(dx)>Math.abs(dy)*1.12:(Math.abs(dx)>5||Math.abs(dy)>5);
-        if(!intent)return;
-        dragging=true;stage.classList.add('is-drag');
-        try{stage.setPointerCapture(pointer);}catch(err){}
-      }
-      if(!dragging)return;
-      if(e.pointerType!=='touch'&&e.cancelable)e.preventDefault();
-      moved=Math.max(Math.abs(dx),Math.abs(dy));
-      var scale=1/Math.max(180,stage.clientWidth);
-      yaw=syaw+dx*scale*2.4;
-      if(e.pointerType!=='touch')pitch=Math.max(-1.25,Math.min(1.25,spitch+dy*scale*2.4));
-      var elapsed=Math.max(1,e.timeStamp-lt);
-      vyaw=(e.clientX-ly)*scale*2.4/elapsed*1000;
-      if(e.pointerType!=='touch')vpitch=(e.clientY-stage._lastY)*scale*2.4/elapsed*1000;
-      ly=e.clientX;stage._lastY=e.clientY;lt=e.timeStamp;draw();
-    });
-    function end(){
-      pointer=null;stage._lastY=undefined;
-      if(dragging){dragging=false;stage.classList.remove('is-drag');draw();}
+      requestAnimationFrame(frame);
     }
-    stage.addEventListener('pointerup',end);stage.addEventListener('pointercancel',end);stage.addEventListener('lostpointercapture',end);
-    stage.addEventListener('dragstart',function(e){e.preventDefault();});
-    stage.addEventListener('click',function(e){
-      if(moved>7){e.preventDefault();e.stopPropagation();moved=0;return;}
-      var card=e.target.closest&&e.target.closest('.bh-card');if(!card)return;
-      var i=cards.indexOf(card),p=rotatePoint(points[i]);
-      if(p.z<.72){e.preventDefault();yaw+=Math.atan2(-p.x,p.z);pitch=Math.max(-1.1,Math.min(1.1,pitch+Math.asin(Math.max(-1,Math.min(1,p.y)))));draw();}
-    },true);
-    stage.addEventListener('keydown',function(e){
-      if(e.key==='ArrowLeft')vyaw=.8;else if(e.key==='ArrowRight')vyaw=-.8;
-      else if(e.key==='ArrowUp')vpitch=.55;else if(e.key==='ArrowDown')vpitch=-.55;
+    function goTo(t) { target = t; held = 0; }
+
+    // swipe / drag: follows the finger, then settles on the nearest card
+    var dragging = false, pid = null, sx = 0, sy = 0, spos = 0, moved = 0, lx = 0, lt = 0, vel = 0;
+    stage.addEventListener('pointerdown', function (e) {
+      if (e.pointerType === 'mouse' && e.button !== 0) return;
+      if (e.target.closest && e.target.closest('.bh-nav')) return;
+      pid = e.pointerId; sx = lx = e.clientX; sy = e.clientY; spos = pos; moved = 0; vel = 0; lt = e.timeStamp;
     });
-    Array.prototype.forEach.call(document.querySelectorAll('[data-bh-turn]'),function(b){
-      b.addEventListener('click',function(){vyaw=(b.dataset.bhTurn==='prev'?1:-1)*.7;});
+    stage.addEventListener('pointermove', function (e) {
+      if (pid !== e.pointerId) return;
+      var dx = e.clientX - sx, dy = e.clientY - sy;
+      if (!dragging) {
+        if (Math.abs(dy) > 8 && Math.abs(dy) > Math.abs(dx)) { pid = null; return; }   // vertical = page scroll
+        if (Math.abs(dx) < 7) return;
+        dragging = true; stage.classList.add('is-drag'); try { stage.setPointerCapture(pid); } catch (err) {}
+      }
+      moved = Math.abs(dx);
+      pos = spos - dx / pxPerCard; target = pos;
+      var el = Math.max(1, e.timeStamp - lt); vel = -(e.clientX - lx) / pxPerCard / el * 1000; lx = e.clientX; lt = e.timeStamp;
+      draw();
     });
-    if('IntersectionObserver'in window)new IntersectionObserver(function(es){visible=es[0].isIntersecting;},{threshold:0}).observe(stage);
-    document.addEventListener('visibilitychange',function(){last=0;});
-    window.addEventListener('resize',measure);
-    if('ResizeObserver'in window)new ResizeObserver(measure).observe(stage);
-    measure();requestAnimationFrame(animate);
+    function end() {
+      pid = null;
+      if (!dragging) return;
+      dragging = false; stage.classList.remove('is-drag');
+      goTo(Math.round(pos + Math.max(-2, Math.min(2, vel * 0.18))));
+    }
+    stage.addEventListener('pointerup', end); stage.addEventListener('pointercancel', end);
+    stage.addEventListener('dragstart', function (e) { e.preventDefault(); });
+    stage.addEventListener('click', function (e) {
+      if (moved > 7) { e.preventDefault(); e.stopPropagation(); moved = 0; return; }
+      var c = e.target.closest && e.target.closest('.bh-card'); if (!c) return;
+      var d = wrap(cards.indexOf(c) - pos);
+      if (Math.abs(d) > 0.5) { e.preventDefault(); goTo(Math.round(pos + d)); }   // side card: bring it forward
+    }, true);
+    stage.addEventListener('mouseenter', function () { hover = true; });
+    stage.addEventListener('mouseleave', function () { hover = false; held = 0; });
+    stage.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowLeft') { e.preventDefault(); goTo(Math.round(target) - 1); }
+      else if (e.key === 'ArrowRight') { e.preventDefault(); goTo(Math.round(target) + 1); }
+    });
+    Array.prototype.forEach.call(stage.querySelectorAll('[data-bh-turn]'), function (b) {
+      b.addEventListener('click', function (e) { e.stopPropagation(); goTo(Math.round(target) + (b.dataset.bhTurn === 'prev' ? -1 : 1)); });
+    });
+    if ('IntersectionObserver' in window) new IntersectionObserver(function (es) { visible = es[0].isIntersecting; }, { threshold: 0 }).observe(stage);
+    document.addEventListener('visibilitychange', function () { last = 0; });
+    window.addEventListener('resize', measure);
+
+    // headline fills the width once fonts have loaded
+    var h1 = document.querySelector('.bh-title'), fit = h1 && h1.querySelector('.bh-fit');
+    function fitTitle() {
+      if (!h1 || !fit) return;
+      var cs = getComputedStyle(h1), room = h1.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight) - 24;
+      h1.style.fontSize = '100px'; var fw = fit.getBoundingClientRect().width;
+      if (fw > 0 && room > 20) h1.style.fontSize = Math.max(28, Math.min(innerWidth > 900 ? 150 : 120, 100 * room / fw * 0.97)) + 'px';
+    }
+    fitTitle(); window.addEventListener('resize', fitTitle);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { fitTitle(); measure(); });
+
+    measure(); requestAnimationFrame(frame);
   }
-  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init, { once: true }); else init();
 })();
