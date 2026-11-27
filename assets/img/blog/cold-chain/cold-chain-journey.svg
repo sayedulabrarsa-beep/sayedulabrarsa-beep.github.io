@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="t d">
+<title id="t">The pharmaceutical cold-chain journey</title>
+<desc id="d">Five connected stages show a medicine moving from manufacturer to qualified storage, monitored transport, pharmacy or hospital, and patient, with temperature records continuing across the route.</desc>
+<rect width="1600" height="900" fill="#fbf7ef"/>
+<text x="100" y="105" fill="#173d43" font-family="Arial,sans-serif" font-size="48" font-weight="700">One journey. Every hand-off matters.</text>
+<text x="100" y="155" fill="#627575" font-family="Arial,sans-serif" font-size="26">Temperature control and records must continue across the whole route.</text>
+<path d="M180 430 H1420" stroke="#a7c9bc" stroke-width="18" stroke-linecap="round"/>
+<path d="M1390 400 L1435 430 L1390 460" fill="none" stroke="#1d6664" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<g transform="translate(100 260)">
+<g fill="#e0eee8" stroke="#1e5a5c" stroke-width="7"><circle cx="100" cy="170" r="92"/><circle cx="390" cy="170" r="92"/><circle cx="680" cy="170" r="92"/><circle cx="970" cy="170" r="92"/><circle cx="1260" cy="170" r="92"/></g>
+<g fill="none" stroke="#1e5a5c" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+<path d="M62 202 V145 H138 V202 M78 145 V118 H122 V145 M52 202 H148"/>
+<rect x="352" y="125" width="76" height="90" rx="8"/><path d="M352 155 H428 M390 125 V215 M364 142 H378 M402 142 H416"/>
+<rect x="630" y="140" width="100" height="65" rx="12"/><path d="M645 140 V115 H715 V140 M650 174 H710 M672 174 V194 M700 174 V194"/>
+<path d="M930 205 V140 H1010 V205 M950 140 V118 H990 V140 M920 205 H1020 M970 162 H970"/>
+<circle cx="1260" cy="132" r="25"/><path d="M1218 215 Q1260 160 1302 215 M1260 157 V211"/>
+</g>
+<g font-family="Arial,sans-serif" text-anchor="middle" fill="#173d43">
+<text x="100" y="305" font-size="26" font-weight="700">Manufacturer</text><text x="100" y="340" font-size="20">Product label</text><text x="100" y="368" font-size="20">and stability data</text>
+<text x="390" y="305" font-size="26" font-weight="700">Storage</text><text x="390" y="340" font-size="20">Qualified room</text><text x="390" y="368" font-size="20">or refrigerator</text>
+<text x="680" y="305" font-size="26" font-weight="700">Transport</text><text x="680" y="340" font-size="20">Qualified shipper</text><text x="680" y="368" font-size="20">and logger</text>
+<text x="970" y="305" font-size="26" font-weight="700">Provider</text><text x="970" y="340" font-size="20">Receipt, review</text><text x="970" y="368" font-size="20">and storage</text>
+<text x="1260" y="305" font-size="26" font-weight="700">Patient</text><text x="1260" y="340" font-size="20">Use within</text><text x="1260" y="368" font-size="20">labelled conditions</text>
+</g>
+</g>
+<rect x="100" y="730" width="1400" height="86" rx="20" fill="#e8f0eb"/>
+<path d="M150 772 H1450" stroke="#2b7771" stroke-width="8" stroke-linecap="round"/>
+<g fill="#d46e4c"><circle cx="150" cy="772" r="14"/><circle cx="475" cy="772" r="14"/><circle cx="800" cy="772" r="14"/><circle cx="1125" cy="772" r="14"/><circle cx="1450" cy="772" r="14"/></g>
+<text x="800" y="785" fill="#173d43" font-family="Arial,sans-serif" font-size="24" font-weight="700" text-anchor="middle">TEMPERATURE RECORDS + DOCUMENTED HAND-OFFS</text>
+</svg>
