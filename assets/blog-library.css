@@ -88,3 +88,30 @@
   .pbl-row:after{margin:0 -10px;height:12px}
 }
 @media(prefers-reduced-motion:reduce){.pbl-shelves.is-in .pbl-book{animation:none}.pbl-book{transition:none}}
+
+/* Library room: ceiling slats, a wall of real-looking bookshelves, window light, plants and a wood floor */
+.pb-library{padding-bottom:clamp(26px,3vw,34px);
+ background:
+  linear-gradient(180deg,#2a170acc 0,#2a170a99 190px,#2a170a00 330px),
+  url(/assets/img/library-branch.svg) left -34px top -18px/190px auto no-repeat,
+  url(/assets/img/library-tree.svg) right -46px top 70px/240px auto no-repeat,
+  radial-gradient(260px 420px at 100% 26%,#fff6dcdd,#fff6dc00 72%),
+  linear-gradient(#4a2c1296,#4a2c1296) 0 40px/100% 250px no-repeat,
+  url(/assets/img/library-books.svg) 0 40px/auto 250px repeat-x,
+  repeating-linear-gradient(90deg,#c58a4e 0 54px,#b87d44 54px 56px) 0 0/100% 40px no-repeat,
+  linear-gradient(180deg,#3a210f66,#3a210f00) 0 calc(100% - 170px)/100% 46px no-repeat,
+  repeating-linear-gradient(90deg,#dba868 0 118px,#c9954f 118px 120px) 0 100%/100% 170px no-repeat,
+  linear-gradient(180deg,#a9733c,#c79860)}
+.pbl-count{color:#4a2c12;text-shadow:none}
+.pbl-dots button:before{background:#fffaf0}
+.pbl-dots-text{color:#4a2c12}
+@media(max-width:800px){
+ .pb-library{background:
+  linear-gradient(180deg,#2a170acc 0,#2a170a99 150px,#2a170a00 260px),
+  url(/assets/img/library-branch.svg) left -50px top -22px/130px auto no-repeat,
+  linear-gradient(#4a2c1296,#4a2c1296) 0 30px/100% 190px no-repeat,
+  url(/assets/img/library-books.svg) 0 30px/auto 190px repeat-x,
+  repeating-linear-gradient(90deg,#c58a4e 0 54px,#b87d44 54px 56px) 0 0/100% 30px no-repeat,
+  repeating-linear-gradient(90deg,#dba868 0 90px,#c9954f 90px 92px) 0 100%/100% 120px no-repeat,
+  linear-gradient(180deg,#a9733c,#c79860)}
+}

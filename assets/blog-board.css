@@ -81,3 +81,21 @@ html.ab-lock,html.ab-lock body{overflow:hidden}
 .ab-photo img{object-fit:contain!important;object-position:center;background:#f1f2f4}
 .ab-d-img{background:#f1f2f4}
 .ab-d-img img{object-fit:contain!important;background:#f1f2f4}
+
+/* Board v2: topics sit on top as a row of chips, the right side is free for the drop slot */
+@media(min-width:901px){
+ .ab-tray{height:880px}
+ .ab-how{max-width:300px;font-size:12px}
+ .ab-topics{left:44px;right:44px;top:104px;flex-direction:row;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;padding:4px 2px 8px;align-items:center;justify-content:flex-start;gap:8px}
+ .ab-topics::-webkit-scrollbar{display:none}
+ .ab-topics li{display:block;flex:none}.ab-topics li:before{display:none}
+ .ab-topics button{display:inline-flex;align-items:center;gap:8px;padding:6px 8px;white-space:nowrap;font:600 12px/1.2 Poppins,system-ui,sans-serif;color:#3b2d20;background:#fffaf0b3;border:1.5px solid color-mix(in srgb,var(--tc) 55%,#fffaf0);backdrop-filter:blur(6px);box-shadow:0 6px 14px -10px #5a4125aa}
+ .ab-topics button:before{content:"";width:9px;height:9px;border-radius:50%;background:var(--tc)}
+ .ab-topics button:hover{background:#fffaf0;transform:translateY(-2px)}
+ .ab-topics li.is-on button{background:var(--tc);border-color:var(--tc);color:#fff;box-shadow:0 10px 18px -10px var(--tc)}
+ .ab-topics li.is-on button:before{background:#fff}
+ .ab-head{top:30px}
+}
+.ab-tray:before{content:"";position:absolute;inset:0;pointer-events:none;z-index:1;background:radial-gradient(60% 50% at 30% 45%,#fff8e855,transparent 70%),radial-gradient(80% 70% at 50% 120%,#5a412533,transparent 70%)}
+.ab-pin{box-shadow:0 1px 0 #fff inset,0 14px 22px -8px #4a341e8c,0 3px 6px #4a341e47}
+.ab-cap{font-size:18px}

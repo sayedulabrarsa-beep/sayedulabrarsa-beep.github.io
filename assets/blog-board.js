@@ -23,6 +23,7 @@
     var title = txt(link), short = title.split(/[:?]/)[0].trim();
     if (short.length > 30) short = short.split(' ').slice(0, 4).join(' ');
     var tag = (meta[0] || 'Article').trim();
+    if (window.PBX) { var cc = window.PBX.CATS.filter(function (x) { return x[0] === window.PBX.catOf(c); })[0]; if (cc) tag = cc[1].toUpperCase(); }   // merge look-alike labels into the six topics
     if (!(tag in topicColor)) topicColor[tag] = COLORS[Object.keys(topicColor).length % COLORS.length];
     data.push({ href: link.getAttribute('href'), bn: bn && bn.getAttribute('href'), title: title, short: short, img: img && img.getAttribute('src'),
       tag: tag, read: (meta[1] || '').trim(), desc: desc, bnDesc: bnDesc });
