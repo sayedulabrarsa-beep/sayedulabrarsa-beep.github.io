@@ -7,3 +7,6 @@
 - Third-party imagery: None. No stock photographs or AI-generated images are used.
 - Accuracy note: All diagrams are conceptual teaching aids. The pack-out, temperature trace and process flow are not a validated shipping design, a product specification or a substitute for a manufacturer's instructions.
 - Rights: © 2026 Sayedul Abrar. All rights reserved. Reuse requires permission. Rights information: https://sayedulabrar.site/sayedul-abrar-logo/#copyright
+
+## Photo-style images (27 Nov 2026)
+The cc-*.webp pictures, cc-social-*.jpg and cc-card images are AI-generated photo-style illustrations supplied by Sayedul Abrar; titles and points are drawn in code (_src/cc_images/make_cc.py). The four SVG diagrams remain original vector artwork.
