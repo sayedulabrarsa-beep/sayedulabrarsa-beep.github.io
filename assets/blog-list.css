@@ -46,3 +46,7 @@
 }
 .pb-feature-card.pb-bn-mode h3,.pb-feature-card.pb-bn-mode .pb-bangla{font-family:"Hind Siliguri","Noto Sans Bengali","Kohinoor Bangla","Nirmala UI",system-ui,sans-serif}
 .pb-feature-card.pb-bn-mode .pb-card-copy>p:not(.pb-card-meta):not(.pb-bangla){display:none}
+
+.pb-pager-top{margin:6px 0 14px}
+.pb-pager-top button{min-height:40px}
+@media(max-width:540px){.pb-pager-top .pb-pg-list{display:none}.pb-pager-top:not([hidden]){gap:12px}}

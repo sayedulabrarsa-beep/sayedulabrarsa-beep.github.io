@@ -42,6 +42,12 @@
     var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     var HOLD = 3600, held = 0, hover = false, visible = true, last = 0;
     var counter = stage.querySelector('.bh-index');
+    // start where the reader left off (next article), or at a random one on a first visit
+    var KEY = 'pbHeroNext', saved = -1;
+    try { saved = parseInt(localStorage.getItem(KEY), 10); } catch (e) {}
+    if (!(saved >= 0 && saved < n)) saved = Math.floor(Math.random() * n);
+    pos = target = saved;
+    var lastFront = -1;
 
     function wrap(d) { d = ((d % n) + n) % n; return d > n / 2 ? d - n : d; }
     function measure() {
@@ -71,6 +77,7 @@
         c.tabIndex = i === front ? 0 : -1;
       }
       if (counter) counter.textContent = (front + 1) + ' / ' + n;
+      if (front !== lastFront) { lastFront = front; try { localStorage.setItem(KEY, String((front + 1) % n)); } catch (e) {} }
     }
     function frame(t) {
       if (!last) last = t;

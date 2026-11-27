@@ -26,7 +26,7 @@
     }).filter(function (it) { return it.en.href; });
     if (!items.length) return;
 
-    var L = X.lang || 'en', cat = 'all', query = '', page = 1, cols = 6, per = 12;
+    var L = X.lang || 'en', cat = 'all', query = '', page = 1, cols = 3, rows = 3, per = 9;
 
     function short(t) { var i = t.search(/[:：]/); return i >= 10 ? t.slice(0, i) : t; }
     function el(tag, cls, txt) { var e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; }
@@ -35,16 +35,17 @@
       return items.filter(function (it) { return (cat === 'all' || it.cat === cat) && (!s || it.search.indexOf(s) > -1); });
     }
     function setCols() {
-      var w = root.clientWidth || window.innerWidth; var c = w >= 980 ? 6 : w >= 640 ? 4 : 3;
-      if (c !== cols || !shelves._set) { var first = (page - 1) * per; cols = c; per = c * 2; page = Math.floor(first / per) + 1; shelves._set = true; return true; }
+      var w = root.clientWidth || window.innerWidth; var c = w >= 980 ? 3 : w >= 640 ? 3 : 2, r = w >= 980 ? 3 : w >= 640 ? 2 : 3;
+      if (c !== cols || r !== rows || !shelves._set) { var first = (page - 1) * per; cols = c; rows = r; per = c * r; page = Math.floor(first / per) + 1; shelves._set = true; return true; }
       return false;
     }
+    var CATNAME = {}; X.CATS.forEach(function (c) { CATNAME[c[0]] = c[1]; });
     function book(it, i) {
       var d = it[L], a = el('a', 'pbl-book c-' + it.cat); a.href = d.href; a.style.setProperty('--i', i);
       a.title = d.title; a.setAttribute('aria-label', d.title + (it.mins ? ' (' + it.mins + ')' : ''));
-      var cv = el('span', 'pbl-cover'), t = el('span', 'pbl-title', short(d.title)); if (L === 'bn') t.lang = 'bn';
-      var art = el('span', 'pbl-art'), im = document.createElement('img'); im.src = d.img; im.alt = ''; im.width = 400; im.height = 250; im.loading = 'lazy'; im.decoding = 'async'; art.appendChild(im);
-      cv.appendChild(t); cv.appendChild(art); if (it.mins) cv.appendChild(el('span', 'pbl-mins', it.mins)); a.appendChild(cv); return a;
+      var art = el('span', 'pbl-art'), im = document.createElement('img'); im.src = d.img; im.alt = ''; im.width = 600; im.height = 315; im.loading = 'lazy'; im.decoding = 'async'; art.appendChild(im);
+      var cap = el('span', 'pbl-cap'); cap.appendChild(el('span', 'pbl-cat', CATNAME[it.cat] || '')); if (it.mins) cap.appendChild(el('span', 'pbl-mins', it.mins));
+      a.appendChild(art); a.appendChild(cap); return a;
     }
     function render(animate) {
       var list = filtered(), pages = Math.max(1, Math.ceil(list.length / per));
@@ -52,7 +53,7 @@
       var from = (page - 1) * per, slice = list.slice(from, from + per);
       shelves.style.setProperty('--cols', cols); shelves.innerHTML = '';
       if (!slice.length) { shelves.appendChild(el('p', 'pbl-empty', 'No articles match your search. Try another word or choose All Articles.')); }
-      else for (var r = 0; r < 2; r++) {
+      else for (var r = 0; r < rows; r++) {
         var row = el('div', 'pbl-row'), part = slice.slice(r * cols, (r + 1) * cols);
         if (!part.length) break;
         part.forEach(function (it, k) { row.appendChild(book(it, r * cols + k)); }); shelves.appendChild(row);

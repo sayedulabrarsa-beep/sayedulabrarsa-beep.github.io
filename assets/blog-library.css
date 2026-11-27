@@ -31,26 +31,19 @@
 .pbl-lang button{min-width:84px;min-height:44px;border:0;border-radius:999px;background:transparent;color:#0f6b5c;font:700 15px/1 Poppins,"Hind Siliguri","Noto Sans Bengali","Nirmala UI",system-ui,sans-serif;cursor:pointer;transition:background .2s,color .2s}
 .pbl-lang button[aria-pressed="true"]{background:#0f6b5c;color:#fff}
 .pbl-case{margin-top:16px;padding:6px 14px 0;border:12px solid;border-color:#dfae72 #c58f52 #b57f45 #c58f52;border-radius:12px 12px 4px 4px;background:linear-gradient(180deg,#8a5a2f,#a06a37);box-shadow:inset 0 0 36px #0007,0 22px 30px -22px #000b}
-.pbl-shelves{--cols:6;min-height:200px}
-.pbl-row{display:grid;grid-template-columns:repeat(var(--cols),minmax(0,1fr));gap:clamp(7px,1.2vw,16px);padding:18px 6px 0;align-items:end}
+.pbl-shelves{--cols:3;min-height:200px}
+.pbl-row{display:grid;grid-template-columns:repeat(var(--cols),minmax(0,1fr));gap:clamp(10px,1.6vw,22px);padding:20px 8px 0;align-items:end}
 .pbl-row:after{content:"";grid-column:1/-1;height:15px;margin:0 -20px;background:linear-gradient(#e6b577,#c28a4b 70%,#a4713a);box-shadow:0 8px 12px -4px #000a,inset 0 1px 0 #fff6}
-.pbl-book{display:block;position:relative;aspect-ratio:3/4.2;border-radius:3px 9px 9px 3px;color:#2a2118;text-decoration:none;transform-origin:50% 100%;box-shadow:0 10px 14px -8px #000c;transition:transform .3s cubic-bezier(.2,.8,.2,1),box-shadow .3s;margin-bottom:-1px}
-.pbl-book:before{content:"";position:absolute;inset:0 auto 0 0;width:9%;border-radius:3px 0 0 3px;background:linear-gradient(90deg,#0005,#fff3 60%,#0000);pointer-events:none}
-.pbl-book:hover,.pbl-book:focus-visible{transform:translateY(-10px) rotate(-1.2deg);box-shadow:0 20px 22px -10px #000d;z-index:2}
+.pbl-book{display:block;position:relative;background:#fffaf0;padding:5px 5px 0;border-radius:6px 6px 2px 2px;color:#2a2118;text-decoration:none;transform-origin:50% 100%;box-shadow:0 12px 16px -8px #000c;transition:transform .3s cubic-bezier(.2,.8,.2,1),box-shadow .3s;margin-bottom:-1px}
+.pbl-book:hover,.pbl-book:focus-visible{transform:translateY(-8px) rotate(-.8deg);box-shadow:0 22px 24px -10px #000d;z-index:2}
 .pbl-book:focus-visible{outline:3px solid #f2b233;outline-offset:3px}
-.pbl-cover{container-type:inline-size;position:absolute;inset:0;display:flex;flex-direction:column;padding:9% 8% 7% 15%;overflow:hidden;border-radius:inherit}
-.pbl-title{font:700 clamp(11px,1.15vw,15.5px)/1.18 Poppins,system-ui,sans-serif;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden;letter-spacing:-.005em;hyphens:auto;overflow-wrap:anywhere}
-@supports(font-size:1cqw){.pbl-title{font-size:max(11px,10.2cqw)}.pbl-title[lang=bn]{font-size:max(11px,9.6cqw)}}
-.pbl-title[lang=bn]{font-family:"Hind Siliguri","Noto Sans Bengali","Kohinoor Bangla","Nirmala UI",system-ui,sans-serif;line-height:1.3;font-size:clamp(11px,1.1vw,14.5px)}
-.pbl-art{margin-top:auto;aspect-ratio:16/10;border-radius:6px;overflow:hidden;background:#0002;box-shadow:0 2px 6px -2px #0006}
-.pbl-art img{display:block;width:100%;height:100%;object-fit:cover}
-.pbl-mins{margin-top:6px;font:700 9.5px/1 Poppins,system-ui,sans-serif;letter-spacing:.07em;text-transform:uppercase;opacity:.78}
-.c-pharmacology{background:linear-gradient(135deg,#f8eedb,#eadbbc)}
-.c-basics{background:linear-gradient(135deg,#fdf6e9,#f0e2c8);color:#5b3a12}
-.c-safety{background:linear-gradient(135deg,#149080,#0c5a4d);color:#fff}
-.c-industry{background:linear-gradient(135deg,#3b6288,#26415e);color:#fff}
-.c-marketing{background:linear-gradient(135deg,#9a3a4d,#682233);color:#fff}
-.c-research{background:linear-gradient(135deg,#75529a,#4d3569);color:#fff}
+.pbl-art{display:block;aspect-ratio:1200/630;background:#efe4cf;border-radius:3px;overflow:hidden}
+.pbl-art img{display:block;width:100%;height:100%;object-fit:contain}
+.pbl-cap{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:7px 4px 8px;font:700 10.5px/1.2 Poppins,system-ui,sans-serif;letter-spacing:.04em;text-transform:uppercase}
+.pbl-cat{display:inline-flex;align-items:center;gap:6px;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pbl-cat:before{content:"";flex:0 0 9px;height:9px;border-radius:50%;background:var(--bk,#bbb)}
+.pbl-mins{flex:0 0 auto;color:#7a6a52}
+.c-pharmacology{--bk:#d9b97a}.c-basics{--bk:#f1a64c}.c-safety{--bk:#137a69}.c-industry{--bk:#35577a}.c-marketing{--bk:#8a3445}.c-research{--bk:#6a4a8d}
 .pbl-empty{padding:46px 18px 60px;text-align:center;color:#fdf1dc;font-weight:600}
 .pbl-shelves.is-in .pbl-book{animation:pblIn .45s both;animation-delay:calc(var(--i,0)*28ms)}
 @keyframes pblIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
@@ -69,6 +62,7 @@
 .pbl-full span{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#fffaf0;color:#0f6b5c;font-size:22px;line-height:1;padding-bottom:3px}
 .pbl-noscript{color:#fdf1dc;text-align:center}
 @media(max-width:1000px){.pbl-room{grid-template-columns:220px minmax(0,1fr);gap:16px}}
+@media(max-width:540px){.pbl-cap{font-size:9px;padding:6px 2px 7px}.pbl-mins{display:none}}
 @media(max-width:800px){
   .pb-library{border-radius:22px}
   .pbl-room{display:flex;flex-direction:column;align-items:stretch;gap:14px;margin-top:18px}
