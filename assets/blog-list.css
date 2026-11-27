@@ -33,3 +33,16 @@
 .pb-pager button[aria-current="page"]{background:#116b57;border-color:#116b57;color:#fff}
 .pb-pager button:disabled{opacity:.4;cursor:default}
 @media(max-width:540px){.pb-pager{gap:8px}.pb-pager .pb-pg-prev,.pb-pager .pb-pg-next{padding:0 12px;font-size:12px}}
+
+/* Explore topics: more chips, tighter gap to the list, true Bangla view */
+.bh-topics-wrap{padding-bottom:0!important}
+.pb-featured{margin-top:0!important;padding-top:14px!important}
+.pb-topic-bar a b{font-weight:600;font-size:.84em;opacity:.72;margin-left:2px}
+.pb-topic-bar a[hidden]{display:none}
+@media(max-width:700px){
+  .bh-topics-wrap .pb-topic-bar{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .bh-topics-wrap .pb-topic-bar::-webkit-scrollbar{display:none}
+  .bh-topics-wrap .pb-topic-bar a,.bh-topics-wrap .pb-topic-bar .pb-topic-label{flex:0 0 auto;white-space:nowrap}
+}
+.pb-feature-card.pb-bn-mode h3,.pb-feature-card.pb-bn-mode .pb-bangla{font-family:"Hind Siliguri","Noto Sans Bengali","Kohinoor Bangla","Nirmala UI",system-ui,sans-serif}
+.pb-feature-card.pb-bn-mode .pb-card-copy>p:not(.pb-card-meta):not(.pb-bangla){display:none}

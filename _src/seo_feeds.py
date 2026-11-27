@@ -123,7 +123,33 @@ def write_blog_jsonld(arts):
     p.write_text(s, encoding="utf-8")
 
 
+def stamp_cards():
+    """Adds data-bn-title / data-bn-img to each Featured card on blog/index.html, taken from the
+    matching -bangla article, so the page can show a true Bangla view (titles, covers, links)."""
+    p = R / "blog" / "index.html"; s = p.read_text(encoding="utf-8")
+
+    def fix(m):
+        head, attrs, body = m.group(1), m.group(2), m.group(3)
+        slug = re.search(r'<h3><a href="/blog/([^/"]+)/"', body)
+        if not slug:
+            return m.group(0)
+        bp = R / "blog" / (slug.group(1) + "-bangla") / "index.html"
+        attrs = re.sub(r'\s*data-bn-(?:title|img)="[^"]*"', "", attrs)
+        if bp.exists():
+            b = bp.read_text(encoding="utf-8")
+            t = re.sub(r"\s*\|\s*Sayedul Abrar\s*$", "", meta(b, "property", "og:title")).strip()
+            im = meta(b, "property", "og:image").replace(SITE, "")
+            if t:
+                attrs += ' data-bn-title="%s"' % html.escape(t, quote=True)
+            if im.startswith("/") and (R / im.split("?")[0].lstrip("/")).exists():
+                attrs += ' data-bn-img="%s"' % html.escape(im, quote=True)
+        return "%s%s>%s</article>" % (head, attrs, body)
+    s2 = re.sub(r'(<article class="pb-feature-card[^"]*")([^>]*)>(.*?)</article>', fix, s, flags=re.S)
+    if s2 != s:
+        p.write_text(s2, encoding="utf-8")
+
+
 if __name__ == "__main__":
     a = articles()
-    write_feed(a); write_llms(a); write_blog_jsonld(a)
+    write_feed(a); write_llms(a); write_blog_jsonld(a); stamp_cards()
     print("articles:", len(a))
