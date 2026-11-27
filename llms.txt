@@ -159,7 +159,7 @@ Pharma Blog articles (newest first; each is educational, not medical advice):
 - আয়রন ট্যাবলেট কখন খাবেন? খালি পেটে নাকি খাবারের পর? — বাংলা (2026-11-07): https://sayedulabrar.site/blog/how-to-take-iron-tablets-properly-bangla/
   Summary: আয়রন ট্যাবলেট খালি পেটে নাকি খাবারের পরে খাবেন? চা-কফি, দুধ, ক্যালসিয়াম ও ভিটামিন C-এর ব্যবধান এবং ডোজ বাদ পড়লে কী করবেন জানুন।
 - Iron Tablets: Before or After Food? Best Time — English (2026-11-07): https://sayedulabrar.site/blog/how-to-take-iron-tablets-properly/
-  Summary: Should you take iron tablets before or after food? Learn the best time, vitamin C, 2-hour gaps from tea, coffee and dairy, interactions and missed doses.
+  Summary: Before or after food? Learn the best time to take iron, vitamin C tips, 2-hour gaps from tea, coffee and dairy, interactions and missed doses.
 - গ্লুকোসামিন ও আলঝেইমার: নতুন গবেষণা আসলে কী বলছে (আর কী বলছে না) — বাংলা (2026-11-01): https://sayedulabrar.site/blog/glucosamine-alzheimers-nature-metabolism-study-bangla/
   Summary: গ্লুকোসামিন কি আলঝেইমার বাড়ায়? ২০২৬ সালের Nature Metabolism গবেষণার ইঁদুর ও রোগীর তথ্য, সীমাবদ্ধতা ও করণীয়—ফার্মাসিস্টের সহজ পর্যালোচনা।
 - Glucosamine and Alzheimer's: What the New Nature Metabolism Study Really Shows (and What It Doesn't) — English (2026-11-01): https://sayedulabrar.site/blog/glucosamine-alzheimers-nature-metabolism-study/
@@ -168,7 +168,7 @@ Pharma Blog articles (newest first; each is educational, not medical advice):
   Summary: বুক জ্বালাপোড়া, অ্যাসিড রিফ্লাক্স ও GERD-এর পার্থক্য, লক্ষণ, কারণ, ৭টি অভ্যাস, বিপদ-সংকেত এবং কখন ডাক্তার দেখাবেন—ফার্মাসিস্ট সাইয়্যেদুল আবরারের সহজ গাইড।
 - Heartburn vs Acid Reflux vs GERD: Symptoms, Triggers and When to See a Doctor — English (2026-10-30): https://sayedulabrar.site/blog/heartburn-vs-acid-reflux-vs-gerd/
   Summary: Heartburn vs acid reflux vs GERD: understand the differences, symptoms, common triggers, 7 lifestyle tips, warning signs and when to see a doctor.
-- ওষুধের মেয়াদ শেষ হওয়ার তারিখ: EXP কীভাবে পড়বেন? — বাংলা (2026-10-28): https://sayedulabrar.site/blog/expiry-date-vs-manufacturing-date-medicine-bangla/
+- ওষুধের মেয়াদ শেষ হওয়ার তারিখ (EXP): কীভাবে পড়বেন? — বাংলা (2026-10-28): https://sayedulabrar.site/blog/expiry-date-vs-manufacturing-date-medicine-bangla/
   Summary: ওষুধের মেয়াদ শেষ হওয়ার তারিখ (EXP) কীভাবে পড়বেন? 07/2027 মানে ৩১ জুলাই পর্যন্ত। MFG, ব্যাচ নম্বর ও নিরাপদ সংরক্ষণ সহজে জানুন।
 - Expiry Date vs Manufacturing Date on Medicine: EXP vs MFG — English (2026-10-28): https://sayedulabrar.site/blog/expiry-date-vs-manufacturing-date-medicine/
   Summary: What do EXP and MFG mean on medicine? Learn how to read expiry dates, why 07/2027 means 31 July, and how to check batch numbers and storage.
