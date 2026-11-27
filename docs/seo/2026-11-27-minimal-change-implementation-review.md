@@ -117,3 +117,29 @@ Decision:
 ## Approval gate
 
 This review is not approval to publish. Any production edit must be shown as an exact before/after change and approved by the author. Publish manually only after that approval.
+
+
+## Live search-result verification — 27 November 2026
+
+A live web search result for the English expiry article was retrievable and showed:
+- Displayed title: “Expiry Date vs Manufacturing Date: What EXP & MFG Mean”
+- Displayed description: “Expiry date vs manufacturing date on medicine explained: read EXP, MFG and batch number, the month-year rule, storage tips, myths and FAQs.”
+- The page's first visible answer directly explains MFG, EXP, and the last-day-of-month rule.
+
+This live result is coherent and aligned with the page. It does not support an immediate title rewrite. The result also suggests Google is generating its own snippet rather than simply reproducing the source meta description. Because the source already answers the main intent early, a rushed metadata change would be speculative.
+
+The homepage live result also continues to present the personal-name identity and professional positioning clearly. Protect that branded result; do not change the homepage title or hero to chase unrelated queries.
+
+The other five target URLs were checked in repository source for their current titles/descriptions and page headings. Attempts to retrieve their live pages directly were not consistently accessible through the public search fetch in this review, so do not claim live SERP verification for those pages.
+
+## Execution decision after verification
+
+No source-code change is justified yet for the six target pages:
+- The inspected titles and descriptions already match their principal intents.
+- The English expiry page's live result is clear and Google is already selecting a coherent snippet.
+- The Finix MUPS result is already ranking around position 3–5 in the export; changing its factual product framing would add risk without evidence.
+- The iron article's weaker average position requires content/authority and query-level diagnosis, not cosmetic metadata editing.
+- The Bangla Drug vs Medicine and Generic vs Brand pages need actual live SERP/query review before changing copy.
+
+This is an intentional quality-control decision, not an unfinished rewrite. The appropriate next action is to collect a fresh, page/query-specific GSC comparison and inspect the exact live SERP for the remaining pages. Only then make a narrowly scoped change if a specific mismatch is demonstrated.
+
