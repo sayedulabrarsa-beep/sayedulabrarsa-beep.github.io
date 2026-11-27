@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="t d">
+<title id="t">How to respond to a pharmaceutical temperature excursion</title>
+<desc id="d">A six-step flowchart shows staff identifying an out-of-range reading, quarantining the affected batch, maintaining labelled storage conditions, documenting the event, contacting quality assurance and the manufacturer, and obtaining an authorized stability-based disposition.</desc>
+<rect width="1600" height="900" fill="#f8f3e9"/>
+<text x="90" y="100" fill="#173d43" font-family="Arial,sans-serif" font-size="46" font-weight="700">Temperature excursion: respond, record, assess</text>
+<text x="90" y="150" fill="#607273" font-family="Arial,sans-serif" font-size="25">Do not automatically release or discard affected stock.</text>
+<g font-family="Arial,sans-serif">
+<g fill="#fffdf8" stroke="#1b5a5e" stroke-width="5">
+<rect x="90" y="250" width="410" height="145" rx="22"/><rect x="595" y="250" width="410" height="145" rx="22"/><rect x="1100" y="250" width="410" height="145" rx="22"/>
+<rect x="90" y="545" width="410" height="145" rx="22"/><rect x="595" y="545" width="410" height="145" rx="22"/><rect x="1100" y="545" width="410" height="145" rx="22"/>
+</g>
+<g fill="#173d43" font-size="28" font-weight="700" text-anchor="middle">
+<text x="295" y="305">1. Detect</text><text x="295" y="345" font-size="22" font-weight="400">Out-of-range reading</text><text x="295" y="375" font-size="22" font-weight="400">or alarm</text>
+<text x="800" y="305">2. Hold</text><text x="800" y="345" font-size="22" font-weight="400">Segregate and label</text><text x="800" y="375" font-size="22" font-weight="400">the affected batch</text>
+<text x="1305" y="305">3. Protect</text><text x="1305" y="345" font-size="22" font-weight="400">Maintain labelled</text><text x="1305" y="375" font-size="22" font-weight="400">storage conditions</text>
+<text x="295" y="600">4. Document</text><text x="295" y="640" font-size="22" font-weight="400">Time, min/max, duration,</text><text x="295" y="670" font-size="22" font-weight="400">batch and logger trace</text>
+<text x="800" y="600">5. Escalate</text><text x="800" y="640" font-size="22" font-weight="400">Notify QA and the</text><text x="800" y="670" font-size="22" font-weight="400">manufacturer</text>
+<text x="1305" y="600">6. Decide</text><text x="1305" y="640" font-size="22" font-weight="400">Authorized, documented</text><text x="1305" y="670" font-size="22" font-weight="400">quality disposition</text>
+</g>
+<g fill="none" stroke="#d46e4c" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+<path d="M500 320 H570 M550 300 L570 320 L550 340"/>
+<path d="M1005 320 H1075 M1055 300 L1075 320 L1055 340"/>
+<path d="M1305 395 V500 H295 V525 M275 505 L295 525 L315 505"/>
+<path d="M500 615 H570 M550 595 L570 615 L550 635"/>
+<path d="M1005 615 H1075 M1055 595 L1075 615 L1055 635"/>
+</g>
+</g>
+<rect x="300" y="760" width="1000" height="70" rx="18" fill="#f5e5d9"/>
+<text x="800" y="805" fill="#8a412e" font-family="Arial,sans-serif" font-size="25" font-weight="700" text-anchor="middle">RELEASE ONLY WHEN THE DOCUMENTED EVIDENCE SUPPORTS IT</text>
+</svg>
