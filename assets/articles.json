@@ -1,5 +1,18 @@
 [
  {
+  "slug": "pharmaceutical-cold-chain-medicines-storage-transport",
+  "date": "2026-11-27",
+  "tag_en": "Medicine safety & quality",
+  "tag_bn": "ওষুধের নিরাপত্তা ও গুণগত মান",
+  "title_en": "Pharmaceutical Cold Chain: How Are Temperature-Sensitive Medicines Stored and Transported?",
+  "title_bn": "ফার্মাসিউটিক্যাল কোল্ড চেইন: তাপমাত্রা-সংবেদনশীল ওষুধ কীভাবে সংরক্ষণ ও পরিবহন করা হয়?",
+  "desc_en": "Learn how temperature-sensitive medicines are stored, monitored and transported—and how quality teams assess a temperature excursion.",
+  "desc_bn": "তাপমাত্রা-সংবেদনশীল ওষুধ কীভাবে সংরক্ষণ, পর্যবেক্ষণ ও পরিবহন করা হয় এবং temperature excursion হলে কীভাবে মূল্যায়ন করা হয় জানুন।",
+  "url_en": "/blog/pharmaceutical-cold-chain-medicines-storage-transport/",
+  "url_bn": "/blog/pharmaceutical-cold-chain-medicines-storage-transport-bangla/",
+  "img": "/assets/img/blog/cold-chain/cold-chain-cover.svg"
+ },
+ {
   "slug": "prescription-vs-otc-medicines-bangladesh",
   "date": "2026-11-26",
   "tag_en": "Pharma Blog",

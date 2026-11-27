@@ -64,6 +64,10 @@ Clinical-content boundaries:
 
 <!--articles:start-->
 Pharma Blog articles (newest first; each is educational, not medical advice):
+- ফার্মাসিউটিক্যাল কোল্ড চেইন: তাপমাত্রা-সংবেদনশীল ওষুধ কীভাবে সংরক্ষণ ও পরিবহন করা হয়? — বাংলা (2026-11-27): https://sayedulabrar.site/blog/pharmaceutical-cold-chain-medicines-storage-transport-bangla/
+  Summary: কোল্ড চেইন কী, কোন ওষুধে তাপমাত্রা নিয়ন্ত্রণ দরকার, কীভাবে ডেটা লগার ও পরিবহন ব্যবস্থায় তাপমাত্রা দেখা হয় এবং তাপমাত্রা সীমা ছাড়ালে কী করতে হয়—জানুন।
+- Pharmaceutical Cold Chain: How Are Temperature-Sensitive Medicines Stored and Transported? — English (2026-11-27): https://sayedulabrar.site/blog/pharmaceutical-cold-chain-medicines-storage-transport/
+  Summary: Understand the pharmaceutical cold chain, product-specific storage ranges, temperature monitoring, transport controls and what to do after a temperature excursion.
 - প্রেসক্রিপশন বনাম OTC ওষুধ: বাংলাদেশে পার্থক্য কী? — বাংলা (2026-11-26): https://sayedulabrar.site/blog/prescription-vs-otc-medicines-bangladesh-bangla/
   Summary: বাংলাদেশে Rx ও OTC ওষুধের পার্থক্য: সরকারি OTC তালিকা, কেন অ্যান্টিবায়োটিকে প্রেসক্রিপশন লাগে, লাল লেবেল, আর ফার্মাসিস্টকে কী জিজ্ঞেস করবেন।
 - Prescription vs OTC Medicines in Bangladesh: What Is the Difference? — English (2026-11-26): https://sayedulabrar.site/blog/prescription-vs-otc-medicines-bangladesh/
