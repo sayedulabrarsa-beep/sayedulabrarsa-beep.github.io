@@ -20,6 +20,11 @@ NAME = re.compile(r"(Sayedul Abrar|সাইয়্যেদুল আবর�
 BLOCK = re.compile(r'<script type="application/ld\+json" id="image-credits">.*?</script>', re.S)
 LICENSE = SITE + "/sayedul-abrar-logo/#copyright"
 ACQUIRE = SITE + "/contact/"
+# First-party site images that are deliberately outside OWN (social previews, hero cut-out, SA monogram).
+OWN_SITE = re.compile(r"^/assets/img/(social/|hero-cutout\.|sayedul-abrar-logo\.)")
+# Company packaging / logos: rights stay with the company, so no personal creator is claimed.
+THIRD = re.compile(r"^/assets/img/(products|logos)/")
+LICENSE_PAGE = SITE + "/image-licensing/"
 
 def _is_json(raw):
     try:
@@ -40,7 +45,23 @@ def enrich(node):
         return node
     out = {k: enrich(v) for k, v in node.items()}
     if out.get("@type") == "ImageObject":
+        # Google lists items by contentUrl; nodes that carry only "url" show up as "N/A".
+        if "contentUrl" not in out and isinstance(out.get("url"), str):
+            out["contentUrl"] = out["url"]
         path = image_path(out.get("contentUrl") or out.get("url"))
+        if OWN_SITE.match(path):
+            out.setdefault("creator", PERSON)
+            out.setdefault("creditText", "Sayedul Abrar (sayedulabrar.site)")
+            out.setdefault("copyrightNotice", "© 2026 Sayedul Abrar")
+            out.setdefault("license", LICENSE)
+            out.setdefault("acquireLicensePage", ACQUIRE)
+        elif THIRD.match(path):
+            nm = str(out.get("name", ""))
+            owner = "Navana Pharmaceuticals PLC" if "Navana" in nm else ("Opsonin Pharma Ltd." if "Opsonin" in nm else "")
+            if owner:
+                out.setdefault("creditText", owner + " (product packaging)")
+                out.setdefault("license", LICENSE_PAGE)
+                out.setdefault("acquireLicensePage", ACQUIRE)
         if OWN.match(path) and not SKIP.search(path):
             out.setdefault("creator", PERSON)
             out.setdefault("creditText", "Sayedul Abrar (sayedulabrar.site)")
@@ -64,8 +85,9 @@ def collect_image_objects(node, found):
 changed = total = 0
 for p in sorted(R.glob("**/index.html")):
     rel = p.relative_to(R).as_posix()
-    if rel.startswith(("_src/", "learning/", "portfolio/", "node_modules/")):
+    if rel.startswith(("_src/", "node_modules/")):
         continue
+    light = rel.startswith(("learning/", "portfolio/"))  # JSON-LD enrichment only; nothing else touched
     s = p.read_text(encoding="utf-8")
     if re.search(r'name="robots" content="[^"]*noindex', s) or 'http-equiv="refresh"' in s:
         continue
@@ -83,6 +105,11 @@ for p in sorted(R.glob("**/index.html")):
                 lambda m: m.group(1) + json.dumps(enrich(json.loads(m.group(2))), ensure_ascii=False, separators=(",", ":")) + m.group(3)
                 if _is_json(m.group(2)) else m.group(0), s)
 
+    if light:
+        if s2 != s:
+            p.write_text(s2, encoding="utf-8")
+            changed += 1
+        continue
     base = BLOCK.sub("", s2)
     covered = set()
     for raw in re.findall(r'<script type="application/ld\+json"[^>]*>(.*?)</script>', base, re.S):
