@@ -168,7 +168,7 @@
     "title_bn": "ফার্মাসিউটিক্যাল কোল্ড চেইন: তাপমাত্রা-সংবেদনশীল ওষুধ কীভাবে সংরক্ষণ ও পরিবহন করা হয়?",
     "desc_en": "Learn how temperature-sensitive medicines are stored, monitored and transported—and how quality teams assess a temperature excursion.",
     "desc_bn": "তাপমাত্রা-সংবেদনশীল ওষুধ কীভাবে সংরক্ষণ, পর্যবেক্ষণ ও পরিবহন করা হয় এবং temperature excursion হলে কীভাবে মূল্যায়ন করা হয় জানুন।",
-    "img": "/assets/img/blog/cold-chain/cc-card.webp"
+    "img": "/assets/img/blog/cold-chain/cold-chain-cover.svg"
   },
   "pharmaceutical-product-management-bangladesh": {
     "tag_en": "Pharmaceutical Marketing",
@@ -178,5 +178,14 @@
     "desc_en": "A practical guide to market analysis, brand strategy, product lifecycle, ethical doctor engagement and KPIs.",
     "desc_bn": "বাজার বিশ্লেষণ, ব্র্যান্ড কৌশল, নৈতিক চিকিৎসক-যোগাযোগ ও KPI-সহ প্রোডাক্ট ম্যানেজমেন্টের ব্যবহারিক গাইড।",
     "img": "/assets/img/blog/pharma-product-management/pm-card.webp"
+  },
+  "out-of-specification-oos-results-pharma-investigation": {
+    "tag_en": "Pharmaceutical Quality",
+    "tag_bn": "ফার্মাসিউটিক্যাল গুণগত মান",
+    "title_en": "Out-of-Specification (OOS) Results in Pharma: How Are Failed Tests Investigated?",
+    "title_bn": "ফার্মাসিউটিক্যাল শিল্পে OOS ফলাফল: মানের বাইরে পরীক্ষা হলে কীভাবে তদন্ত করা হয়?",
+    "desc_en": "Understand suspected and confirmed OOS results, laboratory and manufacturing investigations, retesting, resampling and batch disposition.",
+    "desc_bn": "Suspected ও confirmed OOS ফল, ল্যাব ও উৎপাদন তদন্ত, retesting, resampling এবং ব্যাচের সিদ্ধান্ত সহজভাবে জানুন।",
+    "img": "/assets/img/blog/oos-investigation/oos-cover.svg"
   }
 }
