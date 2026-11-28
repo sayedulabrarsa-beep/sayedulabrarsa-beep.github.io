@@ -186,7 +186,7 @@
     "title_bn": "ফার্মাসিউটিক্যাল শিল্পে OOS ফলাফল: মানের বাইরে পরীক্ষা হলে কীভাবে তদন্ত করা হয়?",
     "desc_en": "Understand suspected and confirmed OOS results, laboratory and manufacturing investigations, retesting, resampling and batch disposition.",
     "desc_bn": "Suspected ও confirmed OOS ফল, ল্যাব ও উৎপাদন তদন্ত, retesting, resampling এবং ব্যাচের সিদ্ধান্ত সহজভাবে জানুন।",
-    "img": "/assets/img/blog/oos-investigation/oos-cover.svg"
+    "img": "/assets/img/blog/oos-investigation/oos-card.webp"
   },
   "pharmaceutical-regulatory-inspections-what-inspectors-check": {
     "tag_en": "Pharmaceutical Regulation",
@@ -195,6 +195,6 @@
     "title_bn": "ফার্মাসিউটিক্যাল রেগুলেটরি ইন্সপেকশন: পরিদর্শকেরা কী কী যাচাই করেন?",
     "desc_en": "How regulators plan risk-based inspections, examine facilities and records, document findings and follow up CAPA—with Bangladesh DGDA context.",
     "desc_bn": "ঝুঁকিভিত্তিক পরিদর্শন, DGDA-এর ক্ষমতা, নমুনা সংগ্রহ, finding ও CAPA সহজ ভাষায় জানুন।",
-    "img": "/assets/img/blog/regulatory-inspections/inspection-cover.svg"
+    "img": "/assets/img/blog/regulatory-inspections/ri-card.webp"
   }
 }
