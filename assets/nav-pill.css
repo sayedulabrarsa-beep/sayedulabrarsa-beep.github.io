@@ -112,3 +112,6 @@ html body header .menu>li>a[aria-current="page"]::before{
   html body header .menu>li>a.is-tapped::after{animation:none;opacity:0}
   html body header .menu>li>a[aria-current="page"]::before{animation:none;transform:scaleX(1)}
 }
+
+/* CLS fix: the search and menu buttons are added by JS and are 40px tall. Reserve that row height up front so the header does not grow (and push the page down) when the script runs. */
+html body header .bar>.logo{display:inline-flex!important;align-items:center;min-height:38px}
