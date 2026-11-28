@@ -34,7 +34,9 @@ def run(key):
 
         # 1. cover: replace the borrowed hero figure
         t, k = re.subn(r'<figure class="hero-visual">.*?</figure>', lambda m: fig(img(A["cover"]), L["cover_alt"], L["cover_cap"], 0, bn, True), t, count=1, flags=re.S)
-        assert k == 1, "hero"
+        if k == 0:  # no hero figure yet: place the cover after the language switch (or at the top of the article)
+            m = re.search(r'<nav class="lang-switch".*?</nav>', t, re.S) or re.search(r'<article class="article-content">', t)
+            t = t[:m.end()] + fig(img(A["cover"]), L["cover_alt"], L["cover_cap"], 0, bn, True) + t[m.end():]
         # 2. section figures: insert before the H2 that follows section n
         art_start = t.find('<article class="article-content">')
         objs = [(img(A["cover"]), L["cover_alt"], L["cover_cap"])]
