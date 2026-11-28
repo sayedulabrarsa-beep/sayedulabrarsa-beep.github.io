@@ -9748,7 +9748,6 @@ In pharmacology, the word drug commonly refers to a substance that interacts wit
 - Paracetamol: an active substance used to relieve pain and reduce fever.
 - Rabeprazole: an active substance used to reduce stomach acid secretion.
 - Cetirizine: an active substance used to relieve allergy symptoms.
-Depending on context, “drug” can refer to a medicinal substance or another biologically active substance.
 Drug does not automatically mean an addictive or harmful substance. The term is widely used for substances with legitimate therapeutic uses. Benefits and risks depend on the substance, dose, reason for use and the person taking it.
 
 ### 2. What is a medicine?
@@ -9757,7 +9756,6 @@ A medicine is generally a product used to prevent, diagnose, relieve or treat a 
 - Active ingredient: the component responsible for the intended medicinal effect.
 - Excipients: supporting ingredients that help with structure, stability, taste or other properties.
 - Dosage form: the form supplied, such as a tablet, capsule, syrup, cream or injection.
-Medicines are supplied in dosage forms such as tablets, capsules, syrups and creams.
 Paracetamol is an active medicinal substance. A paracetamol tablet made in a specified strength and formulation is a prepared medicine. The terms still overlap in many medical and regulatory settings, so context matters.
 
 ### 3. Drug vs Medicine: key differences
@@ -9799,7 +9797,6 @@ Even a substance that can be useful in treatment may cause harm if used incorrec
 Pharmacology is the study of how drugs interact with living systems. It helps explain how a substance acts, how the body absorbs and processes it, and what benefits or side effects may occur.
 - Pharmacokinetics (PK): what the body does to a drug—absorption, distribution, metabolism and excretion (ADME).
 - Pharmacodynamics (PD): what a drug does to the body and how it produces an effect.
-Pharmacology helps explain drug effects, movement through the body and safe use.
 
 ### 7. Why does accurate medicine knowledge matter?
 
