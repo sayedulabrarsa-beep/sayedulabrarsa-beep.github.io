@@ -64,6 +64,10 @@ Clinical-content boundaries:
 
 <!--articles:start-->
 Pharma Blog articles (newest first; each is educational, not medical advice):
+- ফার্মাসিউটিক্যাল রেগুলেটরি ইন্সপেকশন: পরিদর্শকেরা কী কী যাচাই করেন? — বাংলা (2026-11-28): https://sayedulabrar.site/blog/pharmaceutical-regulatory-inspections-what-inspectors-check-bangla/
+  Summary: ফার্মাসিউটিক্যাল রেগুলেটরি ইন্সপেকশন কীভাবে হয়, DGDA কী যাচাই করতে পারে, ঝুঁকিভিত্তিক পরিদর্শন, নমুনা সংগ্রহ, finding ও CAPA সহজভাবে জানুন।
+- Pharmaceutical Regulatory Inspections: What Do Inspectors Check? — English (2026-11-28): https://sayedulabrar.site/blog/pharmaceutical-regulatory-inspections-what-inspectors-check/
+  Summary: Learn how pharmaceutical regulators plan risk-based inspections, examine facilities and supply-chain controls, document findings and review CAPA, with Bangladesh DGDA context.
 - ফার্মাসিউটিক্যাল শিল্পে OOS ফলাফল: মানের বাইরে পরীক্ষা হলে কীভাবে তদন্ত করা হয়? — বাংলা (2026-11-28): https://sayedulabrar.site/blog/out-of-specification-oos-results-pharma-investigation-bangla/
   Summary: ওষুধের QC পরীক্ষায় OOS ফলাফল কী বোঝায়? ল্যাব তদন্ত, উৎপাদন-পর্যালোচনা, retesting, resampling, batch rejection ও CAPA সহজভাবে জানুন।
 - Out-of-Specification (OOS) Results in Pharma: How Are Failed Tests Investigated? — English (2026-11-28): https://sayedulabrar.site/blog/out-of-specification-oos-results-pharma-investigation/

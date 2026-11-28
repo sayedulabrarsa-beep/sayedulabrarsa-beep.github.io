@@ -523,6 +523,390 @@ Educational disclaimer: This article explains general pharmaceutical quality con
 
 ---
 
+### ফার্মাসিউটিক্যাল রেগুলেটরি ইন্সপেকশন: পরিদর্শকেরা কী কী যাচাই করেন?
+URL: https://sayedulabrar.site/blog/pharmaceutical-regulatory-inspections-what-inspectors-check-bangla/ · Language: Bangla · Published: 2026-11-28 · Author: Sayedul Abrar, pharmacist
+Summary: ফার্মাসিউটিক্যাল রেগুলেটরি ইন্সপেকশন কীভাবে হয়, DGDA কী যাচাই করতে পারে, ঝুঁকিভিত্তিক পরিদর্শন, নমুনা সংগ্রহ, finding ও CAPA সহজভাবে জানুন।
+
+লেখক: সাইয়্যেদুল আবরার (Sayedul Abrar), ফার্মাসিস্ট · প্রকাশিত ২৮ নভেম্বর ২০২৬
+
+সংক্ষেপে: ফার্মাসিউটিক্যাল রেগুলেটরি ইন্সপেকশন হলো নিয়ন্ত্রক কর্তৃপক্ষ বা অনুমোদিত পরিদর্শকের আনুষ্ঠানিক ও প্রমাণভিত্তিক মূল্যায়ন। কোনো প্রতিষ্ঠান, প্রক্রিয়া, নথি বা সরবরাহ-ব্যবস্থা প্রযোজ্য আইন ও Good Practices মেনে চলছে কি না এবং ওষুধের গুণগত মান বা রোগীর নিরাপত্তার ঝুঁকি তৈরি হচ্ছে কি না—তা যাচাই করা হয়।
+
+### ১. ফার্মাসিউটিক্যাল রেগুলেটরি ইন্সপেকশন কী?
+
+রেগুলেটরি ইন্সপেকশন হলো জাতীয় নিয়ন্ত্রক কর্তৃপক্ষ বা তাদের আইনগতভাবে অনুমোদিত পরিদর্শকের পরিচালিত আনুষ্ঠানিক যাচাই। পণ্য ও প্রতিষ্ঠানের ধরন অনুযায়ী এটি ওষুধ উৎপাদনকারী কারখানা, Active Pharmaceutical Ingredient (API) উৎপাদনস্থল, পরীক্ষাগার, আমদানিকারক, গুদাম, পরিবেশক, ফার্মেসি অথবা ওষুধ সরবরাহ-শৃঙ্খলের অন্য কোনো স্থানে হতে পারে।
+
+পরিদর্শক শুধু ভবন ঘুরে দেখেন না। বাস্তবে কী কাজ হচ্ছে, তা প্রযোজ্য আইন, লাইসেন্সের শর্ত, অনুমোদিত পদ্ধতি এবং Good Practices-এর সঙ্গে মিলিয়ে দেখেন। এ জন্য সরাসরি কাজ পর্যবেক্ষণ, কর্মীদের সাক্ষাৎকার, controlled document, মূল laboratory data, electronic record, equipment log, material status label, batch history এবং storage record পরীক্ষা করা হতে পারে।
+
+একটি কারখানা বাইরে থেকে পরিচ্ছন্ন দেখালেই যে তার সব নিয়ন্ত্রণ সঠিক, তা নয়। যেমন—কক্ষ পরিষ্কার হলেও air-handling system নির্ধারিত অবস্থায় কাজ নাও করতে পারে, যন্ত্রের calibration মেয়াদোত্তীর্ণ হতে পারে, electronic audit trail যথাযথভাবে পর্যালোচনা নাও হতে পারে, অথবা batch record-এ বাস্তব উৎপাদনের সঠিক চিত্র নাও থাকতে পারে। পরিদর্শনের উদ্দেশ্য হলো বাহ্যিক চেহারার আড়ালে থাকা ব্যবস্থাটি যাচাই করা।
+
+### ২. নিয়ন্ত্রক কর্তৃপক্ষ কেন পরিদর্শন করে?
+
+ওষুধ তৈরির ও ব্যবস্থাপনার বিভিন্ন ধাপে contamination, ভুল পণ্য মিশে যাওয়া, ভুল strength, অনির্ভরযোগ্য পরীক্ষা, অনুপযুক্ত সংরক্ষণ বা নকল পণ্যের ঝুঁকি তৈরি হতে পারে। এসব ঝুঁকি নিয়ন্ত্রণে প্রতিষ্ঠান প্রযোজ্য আইন ও Good Practices মেনে চলছে কি না তা মূল্যায়ন করতে নিয়ন্ত্রক কর্তৃপক্ষ পরিদর্শন করে।
+
+WHO-এর ২০২৬ সালের নির্দেশনায় regulatory inspection-কে নিম্নমানের বা falsified medical product শনাক্ত করার বৃহত্তর ব্যবস্থার একটি অংশ হিসেবে ব্যাখ্যা করা হয়েছে। এতে স্থাপনা, প্রক্রিয়া, প্রতিষ্ঠানের নথি ও তথ্যব্যবস্থা, quality management এবং risk management দেখা হতে পারে। অভিযোগ বা সন্দেহজনক পণ্যের সমস্যার তদন্তেও পরিদর্শন সহায়তা করতে পারে।
+
+রেগুলেটরি ইন্সপেকশন এবং প্রতিষ্ঠানের নিজস্ব internal audit এক বিষয় নয়। Internal audit প্রতিষ্ঠান তার নিজস্ব quality system-এর অংশ হিসেবে করে, যাতে দুর্বলতা খুঁজে সংশোধন করা যায়। Regulatory inspection হয় সরকারি নিয়ন্ত্রক ক্ষমতার অধীনে এবং তা লাইসেন্স বা অন্যান্য নিয়ন্ত্রক সিদ্ধান্তে ভূমিকা রাখতে পারে। দুই ক্ষেত্রেই নথি দেখা হলেও উদ্দেশ্য ও আইনগত ভূমিকা আলাদা।
+|
+| রেগুলেটরি ইন্সপেকশন | Internal audit
+| নিয়ন্ত্রক কর্তৃপক্ষ বা অনুমোদিত পরিদর্শক পরিচালনা করেন | প্রতিষ্ঠান নিজে বা নিযুক্ত অডিটর পরিচালনা করেন
+| আইন, লাইসেন্সের শর্ত ও Good Practices যাচাই করে | প্রতিষ্ঠানের নিজস্ব পদ্ধতি ও quality-system control যাচাই করে
+| লাইসেন্স, বিধিনিষেধ বা নিয়ন্ত্রক ব্যবস্থায় প্রভাব ফেলতে পারে | সাধারণত অভ্যন্তরীণ corrective action ও management review-তে যায়
+| নিয়ন্ত্রকের আইনগত ক্ষমতা ও পদ্ধতি অনুসরণ করতে হয় | প্রতিষ্ঠানের audit programme ও প্রযোজ্য নিয়ম অনুসরণ করে
+
+### ৩. কী কী ধরনের নিয়ন্ত্রক পরিদর্শন হতে পারে?
+
+দেশ ও কর্তৃপক্ষভেদে নাম ও পদ্ধতি ভিন্ন হতে পারে। সাধারণ উদ্দেশ্যগুলো হলো:
+
+- Pre-licensing বা pre-authorisation inspection: কোনো নতুন স্থাপনা বা কার্যক্রমের লাইসেন্স বা অনুমোদনের আগে সক্ষমতা যাচাই করা হয়। নতুন dosage form, উৎপাদন-প্রক্রিয়া বা স্থাপনায় গুরুত্বপূর্ণ পরিবর্তনের ক্ষেত্রেও মূল্যায়ন হতে পারে।
+- Routine বা periodic inspection: লাইসেন্সপ্রাপ্ত প্রতিষ্ঠান নিয়মিতভাবে প্রযোজ্য শর্ত মেনে চলছে কি না দেখা হয়। আধুনিক ব্যবস্থায় কোন স্থানে কখন এবং কত বিস্তৃত পরিদর্শন হবে তা নির্ধারণে ঝুঁকির তথ্য ব্যবহার করা হয়।
+- For-cause বা investigative inspection: অভিযোগ, suspected product defect, recall, data-integrity concern, গুরুতর deviation, অস্বাভাবিক পরীক্ষার ফল বা অন্য কোনো বিশ্বাসযোগ্য সংকেতের ভিত্তিতে তদন্ত করা হয়।
+- Follow-up inspection: আগের পরিদর্শনে দেওয়া Corrective and Preventive Action (CAPA) বাস্তবায়িত হয়েছে কি না এবং কার্যকর হয়েছে কি না যাচাই করা হয়।
+- Supply-chain inspection: আমদানি, সংরক্ষণ, পরিবহন, wholesale, distribution বা dispensing কার্যক্রম দেখা হয়। উৎপাদনের পর অনুপযুক্ত সংরক্ষণ বা পরিবহনে ওষুধের গুণগত মান নষ্ট হতে পারে।
+
+প্রতিটি পরিদর্শনে সব কার্যক্রমের পূর্ণাঙ্গ পরীক্ষা হয় না। পরিদর্শনের উদ্দেশ্য, scope এবং আইনগত ভিত্তি অনুযায়ী কী দেখা হবে তা নির্ধারিত হয়। পরিদর্শনের আগে নোটিশ দেওয়া হবে কি না, সেটিও প্রযোজ্য আইন, কর্তৃপক্ষের পদ্ধতি ও পরিদর্শনের কারণের ওপর নির্ভর করে; সব ক্ষেত্রে একই নিয়ম ধরে নেওয়া ঠিক নয়।
+
+### ৪. ঝুঁকিভিত্তিক পরিদর্শন কীভাবে পরিকল্পনা করা হয়?
+
+Risk-based inspection-এর অর্থ হলো নিয়ন্ত্রক কর্তৃপক্ষ তার সীমিত সময় ও দক্ষতা এমন প্রতিষ্ঠান, পণ্য ও কার্যক্রমে বেশি ব্যবহার করবে যেখানে ব্যর্থ হলে রোগীর ক্ষতির সম্ভাবনা বা প্রভাব বেশি হতে পারে। এর অর্থ এই নয় যে কম ঝুঁকির প্রতিষ্ঠানকে চিরতরে পরিদর্শনের বাইরে রাখা হয়।
+
+WHO Technical Report Series 1067 (2026), Annex 9 অনুযায়ী পরিদর্শন পরিকল্পনায় পণ্যের ঝুঁকি এবং প্রতিষ্ঠানের আগের compliance record বিবেচনা করা উচিত। যেমন—আগের inspection finding, অভিযোগ, recall, quality-test result, নিম্নমানের বা falsified পণ্যের ঘটনা, যন্ত্রপাতি বা গুরুত্বপূর্ণ জনবলের পরিবর্তন, স্থাপনার জটিলতা, পণ্যের ধরন এবং রোগীর সম্ভাব্য ক্ষতি। Sterile product, biological medicine ও জটিল উৎপাদন-প্রক্রিয়ার ঝুঁকি সাধারণ oral solid dosage form-এর মতো নাও হতে পারে।
+
+ঝুঁকি মূল্যায়নের ফল পরিদর্শক দলের দক্ষতা ও সদস্যসংখ্যা, পরিদর্শনের সময়, scope এবং follow-up-এর সময় নির্ধারণে সহায়তা করতে পারে। কর্তৃপক্ষের উচিত সিদ্ধান্তের যুক্তি নথিবদ্ধ করা এবং প্রতিষ্ঠানের ধরন অনুযায়ী উপযোগী পদ্ধতি ব্যবহার করা। WHO বিভিন্ন risk-assessment tool-এর উদাহরণ দিয়েছে; এগুলো কোনো সর্বজনীন inspection calendar নয় এবং প্রতিটি দেশের regulator একই scoring system ব্যবহার করে—এমনও নয়।
+
+### ৫. পরিদর্শকেরা বাস্তবে কী কী যাচাই করেন?
+
+পরিদর্শনের scope প্রতিষ্ঠান ও পণ্যের ওপর নির্ভর করে। উৎপাদনস্থলে সাধারণত নিচের বিষয়গুলো দেখা হতে পারে:
+
+- জনবল ও প্রশিক্ষণ: দায়িত্ব কি পরিষ্কার? কর্মীদের কাজের জন্য উপযুক্ত প্রশিক্ষণ, অভিজ্ঞতা, hygiene practice এবং access control আছে কি?
+- ভবন ও utility: কক্ষের বিন্যাস, কর্মপ্রবাহ, ventilation, পানি, পরিবেশ নিয়ন্ত্রণ, cleaning এবং segregation কাজের উপযোগী কি?
+- যন্ত্রপাতি ও system: যন্ত্রপাতি নির্ধারিত কাজের উপযোগী, রক্ষণাবেক্ষণ করা এবং প্রয়োজন অনুযায়ী calibrated বা qualified কি? Computerised system-এ access control ও audit trail আছে কি?
+- উপকরণ ও supplier: raw material ও packaging component শনাক্ত, quarantine, sample, test, approve এবং trace করা যায় কি? সরবরাহকারীর নিয়ন্ত্রণ ঝুঁকির অনুপাতে হচ্ছে কি?
+- উৎপাদন, packaging ও testing: বাস্তব কাজ অনুমোদিত নির্দেশনা মেনে হচ্ছে কি? Process control, line clearance, in-process check, laboratory method ও batch record নির্ভরযোগ্য কি?
+- Quality management ও data: Deviation, complaint, OOS result, change control, validation, self-inspection, CAPA এবং management review কার্যকরভাবে পরিচালিত হচ্ছে কি? মূল data ও audit trail যাচাই করা যায় কি?
+- সংরক্ষণ ও বিতরণ: পণ্যের status, stock rotation, নিরাপত্তা, তাপমাত্রা, পরিবহন, return এবং recall traceability নিয়ন্ত্রিত কি?
+
+পরিদর্শক একটি batch বা material-এর তথ্য উভয় দিকে অনুসরণ করতে পারেন—receipt, sampling ও testing থেকে dispensing, manufacturing, packaging, release এবং distribution পর্যন্ত। এতে বোঝা যায় নথিগুলো পরস্পরের সঙ্গে যুক্ত, সম্পূর্ণ ও সামঞ্জস্যপূর্ণ কি না; শুধু কাগজে procedure আছে কি না তা নয়।
+
+বিষয়গুলো আরও বুঝতে পড়ুন Good Manufacturing Practices (GMP), Quality Assurance বনাম Quality Control এবং OOS investigation বিষয়ক লেখা।
+
+### ৬. একটি পরিদর্শনের সময় কী ঘটে?
+
+সাধারণভাবে পরিদর্শনকে ছয়টি ধাপে বোঝা যায়। এটি শিক্ষামূলক সারাংশ; প্রতিটি কর্তৃপক্ষের checklist বা আইনগত ধাপ এক রকম—এমন দাবি নয়।
+
+- প্রস্তুতি: কর্তৃপক্ষ পরিদর্শনের উদ্দেশ্য ও scope নির্ধারণ করে, উপলব্ধ তথ্য পর্যালোচনা করে এবং ঝুঁকি মূল্যায়ন করে। প্রযোজ্য পদ্ধতিতে site master file বা নির্দিষ্ট নথি চাওয়া হতে পারে।
+- উদ্বোধনী সভা: পরিদর্শকের পরিচয়, ক্ষমতা, উদ্দেশ্য, scope, যোগাযোগের ব্যক্তি এবং প্রয়োজনীয় ব্যবস্থাপনা জানানো হয়। প্রতিষ্ঠানের উচিত সঠিক তথ্য দিতে সক্ষম ব্যক্তিদের নির্ধারণ করা।
+- স্থাপনা পরিদর্শন: সংশ্লিষ্ট এলাকা দেখা, কাজ পর্যবেক্ষণ, কর্মীদের সঙ্গে কথা বলা এবং বাস্তব কাজ অনুমোদিত procedure-এর সঙ্গে মিলিয়ে দেখা হয়। শুধু training record-এ স্বাক্ষর আছে কি না নয়, কর্মী কাজটি কেন ও কীভাবে করেন সেটিও বোঝা হতে পারে।
+- নথি ও ডেটা পর্যালোচনা: Document, original record, electronic data, audit trail, equipment log, batch record এবং investigation file পরীক্ষা করা হয়।
+- নমুনা ও সমাপনী আলোচনা: আইনগতভাবে অনুমোদিত ও যুক্তিসংগত হলে নির্ধারিত পদ্ধতিতে sample সংগ্রহ করা হতে পারে। Closing meeting-এ পর্যবেক্ষণ ও তথ্যগত বিষয় পরিষ্কার করা হয়।
+- রিপোর্ট ও follow-up: Finding-গুলো inspection report-এ নথিবদ্ধ হয়। প্রতিষ্ঠানের কাছে response বা CAPA plan চাওয়া হতে পারে, যা কর্তৃপক্ষ নিজস্ব পদ্ধতিতে পর্যালোচনা করে।
+
+সহযোগিতা করার অর্থ অনুমান করে উত্তর দেওয়া, সমস্যা লুকানো বা ঘটনার পরে নতুন নথি তৈরি করা নয়। কোনো তথ্য সঙ্গে সঙ্গে না পাওয়া গেলে তা স্পষ্টভাবে জানিয়ে নথির দায়িত্বপ্রাপ্ত ব্যক্তি এবং নিয়ন্ত্রিতভাবে তথ্য দেওয়ার সময় উল্লেখ করা ভালো।
+
+### ৭. Finding, inspection report ও CAPA কীভাবে পরিচালিত হয়?
+
+একটি ভালো inspection finding-এ কী দেখা হয়েছে, কোন প্রমাণ পর্যালোচনা করা হয়েছে, কোন requirement বা প্রত্যাশিত পদ্ধতি পূরণ হয়নি এবং সম্ভাব্য ঝুঁকি কী—তা স্পষ্ট থাকে। এতে প্রতিষ্ঠান বুঝতে পারে ঠিক কোন ঘাটতি সংশোধন করতে হবে।
+
+WHO নির্দেশনায় Good Practices থেকে বিচ্যুতি শ্রেণিবদ্ধ করার উদাহরণ হিসেবে critical, major এবং minor শব্দগুলো ব্যবহার করা হয়েছে। তবে সব দেশের regulator একই সংজ্ঞা বা classification system ব্যবহার করে না। আনুষ্ঠানিক শ্রেণিবিন্যাসের ক্ষেত্রে সংশ্লিষ্ট কর্তৃপক্ষের আইন ও procedure অনুসরণ করতে হয়।
+
+- Critical: এমন গুরুতর ঘাটতির উদাহরণ, যা রোগী বা পণ্যের অখণ্ডতার জন্য তাৎক্ষণিক বা বড় ঝুঁকি তৈরি করতে পারে।
+- Major: গুরুত্বপূর্ণ system failure বা পুনরাবৃত্ত দুর্বলতা, যা পণ্যের গুণগত মানে প্রভাব ফেলতে পারে বা পর্যাপ্ত নিয়ন্ত্রণের অভাব দেখায়।
+- Minor: তুলনামূলকভাবে সীমিত ঝুঁকির বিচ্ছিন্ন বিচ্যুতি, যারও সংশোধন প্রয়োজন।
+
+CAPA শুধু তাৎক্ষণিক ভুল ঠিক করার নাম নয়। একটি শক্তিশালী response-এ প্রভাবিত product বা activity শনাক্ত করা, তাৎক্ষণিক ঝুঁকি নিয়ন্ত্রণ, root cause investigation, corrective ও preventive action, দায়িত্বপ্রাপ্ত ব্যক্তি, সময়সীমা এবং effectiveness check থাকা উচিত। শুধু training দেওয়া বা SOP সংশোধন করলেই root cause দূর হয়েছে—এমন প্রমাণ হয় না।
+
+WHO-এর ২০২৬ সালের নির্দেশনা অনুযায়ী regulator-এর উচিত CAPA response পর্যালোচনা করে প্রতিষ্ঠানের চলমান গ্রহণযোগ্যতা, risk rating এবং পরবর্তী পরিদর্শনের পরিকল্পনায় ফলাফল বিবেচনা করা। রিপোর্ট ও response সংশ্লিষ্ট কর্তৃপক্ষের নির্ধারিত সময়সীমা ও পদ্ধতিতে পরিচালিত হতে হবে।
+
+Quality-system-এর দায়িত্ব আরও বুঝতে পড়ুন QA বনাম QC এবং ফার্মাসিউটিক্যাল কোল্ড চেইন বিষয়ক লেখা।
+
+### ৮. বাংলাদেশে DGDA ও আইনি কাঠামো কী বলে?
+
+বাংলাদেশে ঔষধ প্রশাসন অধিদপ্তর (Directorate General of Drug Administration, DGDA) হলো জাতীয় ওষুধ নিয়ন্ত্রক কর্তৃপক্ষ। ঔষধ ও কসমেটিকস আইন, ২০২৩ (২০২৩ সনের ২৯ নং আইন)-এ Good Practices, পরিদর্শক নিয়োগ, পরিদর্শকের ক্ষমতা, sample collection এবং লাইসেন্স-সংক্রান্ত গুরুত্বপূর্ণ বিধান রয়েছে।
+
+ধারা ১৭ অনুযায়ী ওষুধ উৎপাদন বা বিক্রয়কারী প্রতিষ্ঠানকে উৎপাদন, মান নিয়ন্ত্রণ, বিতরণ, সরবরাহ ও সংরক্ষণের ক্ষেত্রে WHO Good Practices (GxP) অনুসরণ করতে হবে। অর্থাৎ গুণগত মান শুধু উৎপাদন লাইনের মধ্যে সীমাবদ্ধ নয়।
+
+ধারা ৪৭ নির্ধারিত যোগ্যতাসম্পন্ন ব্যক্তিকে পরিদর্শক হিসেবে নিয়োগের বিধান দেয়। ওষুধ বা কসমেটিকসের উৎপাদন, আমদানি, রপ্তানি, বিক্রয় বা বিপণনের সঙ্গে আর্থিক স্বার্থ জড়িত থাকলে সেই ব্যক্তিকে এই ধারার অধীনে পরিদর্শক নিয়োগ করা যাবে না।
+
+ধারা ৪৮ পরিদর্শকের ক্ষমতা বর্ণনা করে। নির্ধারিত স্থানীয় অধিক্ষেত্রে এবং প্রয়োজনীয় অনুমতি নিয়ে অন্য এলাকায় পরিদর্শক উৎপাদনস্থল, plant, উৎপাদন সক্ষমতা, প্রক্রিয়া, পরীক্ষা ও বিশ্লেষণে ব্যবহৃত উপকরণ, সংশ্লিষ্ট রেকর্ড ও register যাচাই করতে পারেন। আমদানিকৃত raw material ও packaging material-এর সংরক্ষণাগার এবং ওষুধ বিক্রয়, মজুত বা বিতরণের স্থানও পরিদর্শনের আওতায় আসতে পারে। ধারাটিতে sample collection এবং নির্দিষ্ট পরিস্থিতিতে search, seizure, premises seal করা বা প্রমাণ হিসেবে প্রয়োজনীয় সামগ্রী সরানোর ওপর নিষেধাজ্ঞার ক্ষমতাও বর্ণিত আছে। এগুলো আইনগত শর্তসাপেক্ষ ক্ষমতা—প্রতিটি routine visit-এ search, seizure বা sealing হয়, এমন অর্থ নয়।
+
+ধারা ৫০ জব্দ ও sample collection-এর পদ্ধতি নির্ধারণ করে। নমুনা কীভাবে সংগ্রহ, ভাগ ও সংশ্লিষ্ট পক্ষের কাছে পাঠানো হবে—তার নির্ধারিত পদ্ধতি রয়েছে। কারণ নমুনার পরিচয়, অখণ্ডতা এবং chain of custody পরবর্তী পরীক্ষার নির্ভরযোগ্যতার জন্য গুরুত্বপূর্ণ।
+
+লাইসেন্স-সংক্রান্ত সিদ্ধান্ত আলাদা আইনি ধাপ। ধারা ১৮ নির্দিষ্ট কারণে—যেমন আইন বা লাইসেন্সের শর্ত ভঙ্গ, অথবা GMP অনুসরণে ব্যর্থতা—লাইসেন্সিং কর্তৃপক্ষকে ওষুধের লাইসেন্স বাতিল বা সাময়িকভাবে স্থগিত করার ক্ষমতা দেয়। সিদ্ধান্তের আগে লিখিত নোটিশ ও জবাব দেওয়ার সুযোগের বিধান রয়েছে। ধারা ১৯ নির্দিষ্ট suspension ও production-stop order-এর বিরুদ্ধে ৩০ কর্মদিবসের মধ্যে পুনর্বিবেচনা বা আপিলের সুযোগ দেয়। তাই একটি inspection observation-কে স্বয়ংক্রিয় লাইসেন্স বাতিল হিসেবে বর্ণনা করা ঠিক নয়।
+
+DGDA-hosted Quality Manual, NRA-QM-001 Version 03, কার্যকর মার্চ ২০২৪, inspection, assessment, testing, quality control, quality assurance, market surveillance এবং enforcement-সহ নিয়ন্ত্রক কাজের quality-management framework বর্ণনা করে। এতে manufacturing facility মূল্যায়ন, licensing এবং GMP-সম্পর্কিত উদ্দেশ্যে regulatory inspection-এর পরিধিও উল্লেখ আছে। তবে কোনো প্রতিষ্ঠানের সুনির্দিষ্ট শর্ত জানতে বর্তমান আইন, প্রযোজ্য বিধি, DGDA notice, licence condition এবং পণ্যভিত্তিক নির্দেশনা যাচাই করতে হবে।
+
+WHO-এর technical report আন্তর্জাতিক নির্দেশনা; তা নিজে থেকেই বাংলাদেশের আইনের বিকল্প নয়। WHO TRS 1067 (2026), Annex 9 supply chain জুড়ে risk-based inspection ও market surveillance বোঝার জন্য বিশেষভাবে উপযোগী। জাতীয় আইনে এর প্রয়োগ নির্ভর করে স্থানীয় গ্রহণ ও প্রযোজ্য বিধানের ওপর।
+
+### ৯. পরিদর্শনের পর একটি প্রতিষ্ঠানের কী করা উচিত?
+
+একটি ভালো response তথ্যভিত্তিক, সময়মতো এবং রোগী ও পণ্যের ঝুঁকিকে গুরুত্ব দিয়ে তৈরি হয়। ব্যবহারিকভাবে প্রতিষ্ঠানের উচিত:
+
+- মূল নথি, original data ও প্রাসঙ্গিক sample সংরক্ষণ করা; পরে তারিখ বসানো, overwrite করা বা ঘটনার সময়কার record-এর মতো নতুন তথ্য তৈরি করা যাবে না।
+- প্রয়োজনে প্রভাবিত product, batch, process বা distribution activity-এর তাৎক্ষণিক ঝুঁকি নিয়ন্ত্রণ করা।
+- ঘটনার সঠিক তথ্য যাচাই করে কোন requirement বা procedure পূরণ হয়নি তা চিহ্নিত করা।
+- শুধু ব্যক্তিগত ভুল বলে থেমে না থেকে root cause অনুসন্ধান করা।
+- দায়িত্বপ্রাপ্ত ব্যক্তি, due date, risk assessment এবং effectiveness check-সহ corrective ও preventive action নির্ধারণ করা।
+- নিয়ন্ত্রকের নির্ধারিত পদ্ধতিতে response জমা দিয়ে follow-up-এর traceable record রাখা।
+
+Inspection-কে presentation exercise হিসেবে দেখা উচিত নয়। প্রতিদিন ব্যবহৃত একটি কার্যকর quality system—যেখানে সঠিক নথি, প্রশিক্ষিত জনবল, নিয়ন্ত্রিত পরিবর্তন এবং যথাযথ investigation আছে—সেটিই সবচেয়ে ভালো প্রস্তুতি।
+
+### ১০. রোগী ও স্বাস্থ্যকর্মীদের জন্য বিষয়টি কেন গুরুত্বপূর্ণ?
+
+রোগী নিজে কোনো উৎপাদন প্রতিষ্ঠানের equipment qualification, laboratory data বা distribution record যাচাই করতে পারেন না। তাঁকে নির্ভর করতে হয় manufacturer, regulator, distributor এবং healthcare professional-এর ওপর। Regulatory inspection এই সুরক্ষার একটি স্তর; এর পাশাপাশি product testing, licensing, market surveillance, pharmacovigilance এবং recall system কাজ করে।
+
+একটি inspection বা certificate ভবিষ্যতের প্রতিটি batch নিখুঁত—এমন নিশ্চয়তা দেয় না। গুণগত মান ধারাবাহিকভাবে বজায় রাখতে হয়; উৎপাদনের পর সংরক্ষণ বা পরিবহনেও সমস্যা হতে পারে। স্বাস্থ্যকর্মীদের suspected defect, পণ্যের অস্বাভাবিক চেহারা, damaged packaging বা অন্য উদ্বেগ উপযুক্ত reporting channel-এ জানানো উচিত। রোগী কোনো পণ্যে সন্দেহজনক পরিবর্তন দেখলে pharmacist বা যোগ্য স্বাস্থ্যকর্মীর পরামর্শ নেবেন এবং যথাযথ পরামর্শ ছাড়া দৃশ্যত ক্ষতিগ্রস্ত বা সন্দেহজনক পণ্য ব্যবহার করবেন না।
+
+সম্পর্কিত বিষয় হিসেবে পড়ুন বাংলাদেশের ফার্মাসিউটিক্যাল শিল্প, API থেকে ওষুধ তৈরির যাত্রা এবং ফার্মাকোভিজিল্যান্স।
+
+### মূল কথা
+
+- Regulatory inspection হলো আইন ও Good Practices মেনে চলা হচ্ছে কি না তার আনুষ্ঠানিক যাচাই; এটি শুধু কারখানা ঘুরে দেখা নয়।
+- উৎপাদন, laboratory, storage, distribution এবং supply chain-এর অন্য কার্যক্রমও পরিদর্শনের আওতায় আসতে পারে।
+- পণ্যের ঝুঁকি, আগের finding, অভিযোগ, পণ্যের জটিলতা এবং রোগীর সম্ভাব্য ক্ষতি inspection planning-এ প্রভাব ফেলে।
+- পরিদর্শকেরা জনবল, ভবন, যন্ত্রপাতি, উপকরণ, প্রক্রিয়া, নথি, data এবং quality system যাচাই করতে পারেন।
+- Finding নথিবদ্ধ করে প্রমাণভিত্তিক CAPA ও follow-up-এর মাধ্যমে সমাধান করতে হয়।
+- বাংলাদেশের ঔষধ ও কসমেটিকস আইন, ২০২৩-এ GxP দায়িত্ব, inspector power, sample procedure এবং licensing process বর্ণিত আছে।
+- Inspection হলো চলমান regulatory oversight-এর একটি অংশ; এটি ভবিষ্যতের প্রতিটি batch-এর নিশ্চয়তা নয়।
+
+### সাধারণ প্রশ্ন
+
+রেগুলেটরি ইন্সপেকশন কি শুধু ওষুধ কারখানায় হয়?
+না। কর্তৃপক্ষের আইনগত ক্ষমতা ও ঝুঁকি অনুযায়ী manufacturer, API site, laboratory, importer, warehouse, distributor, pharmacy এবং supply chain-এর অন্য প্রতিষ্ঠানও পরিদর্শনের আওতায় আসতে পারে।
+
+প্রতিটি regulatory inspection-এর আগে কি নোটিশ দেওয়া হয়?
+সব সময় নয়। নোটিশের নিয়ম প্রযোজ্য আইন, কর্তৃপক্ষের procedure এবং পরিদর্শনের উদ্দেশ্যের ওপর নির্ভর করে। সব regulator বা সব ধরনের inspection-এর জন্য একই নিয়ম ধরে নেওয়া ঠিক নয়।
+
+Regulatory inspection ও internal audit-এর পার্থক্য কী?
+Regulatory inspection সরকারি নিয়ন্ত্রক ক্ষমতার অধীনে আইন ও regulatory compliance যাচাই করে। Internal audit হলো প্রতিষ্ঠানের নিজস্ব quality system-এর অংশ। দুই ক্ষেত্রেই একই ধরনের নথি দেখা হতে পারে, কিন্তু ক্ষমতা ও ফলাফল আলাদা।
+
+Critical inspection finding বলতে কী বোঝায়?
+সাধারণভাবে এটি এমন গুরুতর বিচ্যুতি বোঝায়, যা রোগী বা পণ্যের অখণ্ডতার জন্য বড় ঝুঁকি তৈরি করতে পারে। তবে formal definition ও classification system regulator অনুযায়ী ভিন্ন হতে পারে।
+
+বাংলাদেশে DGDA পরিদর্শক কি ওষুধের নমুনা সংগ্রহ করতে পারেন?
+হ্যাঁ। ঔষধ ও কসমেটিকস আইন, ২০২৩-এর ধারা ৪৮-এ sample collection-এর ক্ষমতা রয়েছে। ধারা ৫০-এ নমুনা ব্যবস্থাপনার প্রাসঙ্গিক পদ্ধতি বর্ণিত আছে। আইনগত শর্ত ও নির্ধারিত পদ্ধতি অনুসরণ করতে হয়।
+
+GMP certificate কি প্রতিটি batch-এর নিরাপত্তা নিশ্চিত করে?
+না। Certificate বা inspection outcome নির্দিষ্ট scope ও সময়ের সঙ্গে সম্পর্কিত। Manufacturer-কে প্রতিটি process ও batch-এর গুণগত মান নিয়ন্ত্রণ চালিয়ে যেতে হয়; regulator পরবর্তী inspection বা market surveillance করতে পারে।
+
+Inspection observation পাওয়ার পর প্রতিষ্ঠানের কী করা উচিত?
+প্রমাণ সংরক্ষণ, তাৎক্ষণিক product risk মূল্যায়ন, root cause investigation, দায়িত্ব ও সময়সীমাসহ CAPA তৈরি, কার্যকারিতা যাচাই এবং regulator-এর নির্ধারিত পদ্ধতিতে response জমা দেওয়া উচিত।
+
+### তথ্যসূত্র ও আরও পড়ুন
+
+- বাংলাদেশ সরকার। ঔষধ ও কসমেটিকস আইন, ২০২৩ (২০২৩ সনের ২৯ নং আইন), বিশেষত ধারা ১৭–১৯ ও ৪৭–৫০। সরকারি আইনপাঠ; ধারা ১৭; ধারা ১৮; ধারা ১৯; ধারা ৪৭; ধারা ৪৮; ধারা ৫০।
+
+- ঔষধ প্রশাসন অধিদপ্তর, বাংলাদেশ। Quality Manual, NRA-QM-001, Version 03, কার্যকর মার্চ ২০২৪। DGDA-hosted PDF।
+
+- World Health Organization. Good regulatory practices for market surveillance and control of medical products. WHO Technical Report Series No. 1067, 2026, Annex 9. WHO-এর মূল নথি।
+
+- World Health Organization. Quality management system requirements for national inspectorates. WHO Technical Report Series No. 1025, 2020, Annex 5. WHO publication page।
+
+- World Health Organization. Guidance on good manufacturing practices: inspection report. WHO Technical Report Series No. 996, 2016, Annex 4. WHO publication page।
+
+- World Health Organization. WHO guidelines on quality risk management. WHO Technical Report Series No. 981, 2013, Annex 2. WHO PDF।
+
+- World Health Organization. WHO good manufacturing practices for pharmaceutical products: main principles. WHO Technical Report Series No. 986, 2014, Annex 2. WHO publication page।
+
+শিক্ষামূলক সতর্কতা: এই লেখা সাধারণ ফার্মাসিউটিক্যাল শিক্ষা; এটি আইনি পরামর্শ, DGDA-এর আনুষ্ঠানিক ব্যাখ্যা বা বর্তমান আইন, বিধি, লাইসেন্সের শর্ত ও regulator-এর নির্দেশনার বিকল্প নয়। নিয়ম ও পরিদর্শন-পদ্ধতি পরিবর্তিত হতে পারে; প্রতিষ্ঠানকে প্রযোজ্য বর্তমান নথি যাচাই করতে হবে।
+
+### লেখক পরিচিতি
+
+সাইয়্যেদুল আবরার (Sayedul Abrar) একজন ফার্মাসিস্ট এবং ঢাকার Opsonin Pharma Ltd.-এর Product Management Department-এ Product Executive হিসেবে কর্মরত। তিনি ফার্মাসিউটিক্যাল বিজ্ঞান ও ওষুধ-সম্পর্কিত বিষয় ইংরেজি ও বাংলায় সহজভাবে তুলে ধরেন।
+লেখক সম্পর্কে · LinkedIn
+
+---
+
+### Pharmaceutical Regulatory Inspections: What Do Inspectors Check?
+URL: https://sayedulabrar.site/blog/pharmaceutical-regulatory-inspections-what-inspectors-check/ · Language: English · Published: 2026-11-28 · Author: Sayedul Abrar, pharmacist
+Summary: Learn how pharmaceutical regulators plan risk-based inspections, examine facilities and supply-chain controls, document findings and review CAPA, with Bangladesh DGDA context.
+
+By Sayedul Abrar, pharmacist · Published 28 November 2026
+
+The short answer: A pharmaceutical regulatory inspection is an official, evidence-based assessment by a regulator or authorised inspector. It checks whether a facility, process, record or supply-chain activity complies with applicable law and good practices—and whether weaknesses could put medicine quality or patients at risk.
+
+### 1. What is a pharmaceutical regulatory inspection?
+
+A regulatory inspection is an official examination conducted by a national regulatory authority or an inspector acting within an authorised mandate. Depending on the product and facility, it may assess a pharmaceutical factory, an active pharmaceutical ingredient (API) site, a laboratory, an importer, a warehouse, a distributor, a pharmacy or another point in the medicine supply chain.
+
+The inspector does more than look around a building. They compare what actually happens with the applicable law, licence conditions, approved procedures and relevant good-practice requirements. Evidence may include direct observation, staff interviews, controlled documents, original laboratory data, electronic records, equipment logs, material status labels, batch histories and storage records.
+
+A facility can look clean and still have serious weaknesses. For example, a room may appear tidy while its air-handling system is not performing as qualified, a balance is overdue for calibration, a critical electronic audit trail is not reviewed, or a batch record does not reflect what happened on the production floor. Inspection is designed to test the system behind the appearance.
+
+### 2. Why do regulators inspect pharmaceutical facilities?
+
+Medicines are manufactured and handled through processes that can introduce contamination, mix-ups, incorrect strength, unreliable testing, poor storage or falsified products. Regulators use inspections to assess whether establishments comply with applicable requirements and whether the controls are strong enough to protect patients.
+
+WHO describes regulatory inspection as one part of a wider system for detecting and responding to substandard and falsified medical products. Inspections can examine physical premises, processes, company documents and information systems, quality management and risk management. They can also support investigations into complaints or suspected product problems.
+
+Inspection is not the same as an internal audit. A company's own audit is part of its quality system and is intended to identify and correct weaknesses. A regulatory inspection is carried out under public authority and may contribute to licensing, regulatory decisions or enforcement. Both can be valuable, but their legal roles are different.
+|
+| Regulatory inspection | Internal audit
+| Conducted by a regulator or authorised inspector | Conducted by the organisation or an appointed auditor
+| Assesses compliance with law, licence conditions and applicable good practices | Checks the organisation's own procedures and quality-system controls
+| May inform licensing, restrictions or other regulatory action | Normally leads to internal corrective action and management review
+| Must follow the regulator's legal mandate and procedures | Must follow the company's audit programme and relevant requirements
+
+### 3. What types of regulatory inspections are there?
+
+The name and procedure differ between authorities, but common inspection purposes include:
+
+- Pre-licensing or pre-authorisation inspection: assesses a proposed facility or activity before a licence, approval or other regulatory authorisation is granted. A regulator may also assess significant changes or a new dosage form, process or facility.
+- Routine or periodic inspection: checks whether a licensed establishment continues to comply. Modern inspection programmes increasingly use risk information to decide which sites need attention and how broad an inspection should be.
+- For-cause or investigative inspection: responds to a complaint, suspected defect, recall, data-integrity concern, serious deviation, unusual test result or other credible signal that needs investigation.
+- Follow-up inspection: checks whether promised corrective and preventive actions (CAPA) have been implemented and are effective, and whether the original risk has been reduced.
+- Supply-chain inspection: examines import, storage, transport, wholesale, distribution or dispensing activities. A medicine can lose quality after manufacture if it is stored, handled or transported incorrectly.
+
+Not every inspection is a full review of every activity. The purpose, scope and legal basis should guide what is examined. Whether an inspection is announced or unannounced also depends on the applicable law, authority procedures and reason for the visit; one universal rule should not be assumed.
+
+### 4. How are inspections planned using risk?
+
+Risk-based inspection means that the regulator directs its limited time and expertise towards the facilities, products and activities where a failure could cause the greatest harm. It does not mean that low-risk sites are permanently exempt from oversight.
+
+WHO's 2026 Technical Report Series 1067, Annex 9, recommends that inspection planning consider both product risk and the establishment's compliance history. Relevant factors can include previous inspection findings, complaints, recalls, quality-test results, suspected substandard or falsified incidents, changes to equipment or key personnel, site complexity, product type and potential patient harm. Sterile products, biological medicines and complex processes may require different expertise from a simple non-sterile operation.
+
+The risk assessment can influence the inspection team, duration, scope and timing of follow-up. The authority should document its reasoning and use tools suited to the type of facility. WHO provides examples of risk-assessment tools; these are not a universal inspection calendar or proof that every national regulator uses the same scoring system.
+
+### 5. What do inspectors actually check?
+
+The scope depends on the site and the product. A manufacturing inspection may examine the following connected areas:
+
+- People and training: Are responsibilities clear? Do staff have suitable training, experience, hygiene practices and access controls for their duties?
+- Premises and utilities: Are rooms, flows, ventilation, water, environmental controls, cleaning and segregation suitable for the activities being performed?
+- Equipment and systems: Are equipment and instruments fit for purpose, maintained, calibrated or qualified as appropriate? Are computerised systems controlled and access restricted?
+- Materials and suppliers: Can the site identify, quarantine, sample, test, approve and trace raw materials and packaging components? Are supplier controls proportionate to risk?
+- Manufacturing, packaging and testing: Do actual operations follow approved instructions? Are process controls, line clearance, in-process checks, laboratory methods and batch records reliable?
+- Quality management and data: Are deviations, complaints, out-of-specification results, change control, validation, self-inspection, CAPA and management review handled effectively? Can original data and audit trails be reconstructed?
+- Storage and distribution: Are product status, stock rotation, security, temperature conditions, transport, returns and recall traceability controlled?
+
+Inspectors may follow a batch or material backwards and forwards through the records: from receipt, sampling and testing to dispensing, manufacture, packaging, release and distribution. This tests whether the evidence is connected, complete and consistent—not merely whether a procedure exists on paper.
+
+For more background, see the guides to Good Manufacturing Practices, Quality Assurance vs Quality Control and OOS investigations.
+
+### 6. What happens during an inspection?
+
+A typical inspection can be understood in six broad stages. This is an educational overview, not a claim that every authority uses an identical checklist.
+
+- Preparation: the authority defines the purpose and scope, reviews available information and assesses risk. The establishment may be asked to provide a site master file or selected documents where the applicable procedure requires it.
+- Opening meeting: inspectors explain their identity, mandate, objectives, scope, practical arrangements and key contacts. The site should identify people who can provide accurate information.
+- On-site examination: inspectors tour relevant areas, observe activities, interview personnel and compare actual practice with approved procedures. They may ask staff to explain a task rather than simply show a signed training record.
+- Record and data review: the team examines documents, original records, electronic data, audit trails, equipment logs, batch records and investigation files relevant to the inspection.
+- Sampling and close-out: where legally authorised and justified, samples may be collected using the prescribed procedure. Inspectors discuss observations and clarify factual points at the closing meeting.
+- Report and follow-up: findings are documented in an inspection report. The establishment may be required to submit a response or CAPA plan, which the authority reviews under its own procedures.
+
+Cooperation does not mean guessing, hiding a problem or creating records after the event. If information is not immediately available, it is better to say so, identify the record owner and provide a controlled, traceable response.
+
+### 7. How are findings, inspection reports and CAPA handled?
+
+A useful inspection finding describes what was observed, the evidence reviewed, the requirement or expected practice and the potential risk. It should be clear enough for the establishment to understand the gap and prepare a meaningful response.
+
+WHO guidance gives critical, major and minor as examples of risk-based classifications for departures from good practices. These labels and their definitions are not automatically identical in every country or inspection programme. The authority's applicable rules and procedures determine the formal classification.
+
+- Critical: an example could be a serious failure that creates an immediate or substantial risk to patients or product integrity.
+- Major: an example could be a significant system failure or repeated weakness that may affect quality or indicates inadequate control.
+- Minor: an example could be an isolated departure with a more limited risk, while still requiring correction.
+
+CAPA should go beyond a quick correction. A strong response normally identifies the affected products or activities, contains the immediate risk, investigates the underlying cause, assigns corrective and preventive actions, sets owners and due dates, and checks whether the actions work over time. A completed training session or revised SOP is not automatically proof that the root cause has been removed.
+
+WHO's 2026 guidance recommends that regulators review CAPA responses and use the outcome when considering the site's continuing acceptability, risk rating and next inspection. The report and response should be handled within the timeframes and procedures set by the relevant authority.
+
+For a deeper explanation of quality-system responsibilities, read QA vs QC and the guide to pharmaceutical cold-chain control.
+
+### 8. Bangladesh: what does the DGDA legal framework say?
+
+In Bangladesh, the Directorate General of Drug Administration (DGDA) is the national medicines regulatory authority. The Drugs and Cosmetics Act, 2023 (Act No. 29 of 2023) provides important statutory provisions relevant to good practices, inspector appointments, inspection powers, sampling and licensing decisions.
+
+Section 17 states that establishments manufacturing or selling medicines must follow WHO Good Practices (GxP) guidelines in manufacturing, quality control, distribution, supply and storage. This is broader than a factory-only view of quality.
+
+Section 47 provides for the appointment of suitably qualified inspectors. It also says a person with a financial interest in the production, import, export, sale or marketing of drugs or cosmetics cannot be appointed as an inspector under that provision.
+
+Section 48 describes inspectors' powers within their assigned jurisdiction and, with the required permission, beyond it. The listed powers include inspecting manufacturing premises, plants, capacity, processes, testing and analysis equipment, records and registers; examining storage of imported raw and packaging materials; inspecting places where products are sold, stored or distributed; and collecting samples. The section also describes search, seizure, sealing and restrictions on removing evidence in specified circumstances. These are statutory powers with conditions—not a statement that every routine visit will involve search, seizure or sealing.
+
+Section 50 sets out procedures for seizure and sample collection, including how samples are handled and distributed for testing and other purposes. Formal sampling matters because the identity, integrity and chain of custody of a sample can affect the reliability of later analysis.
+
+Licensing decisions are a separate legal step. Section 18 allows the licensing authority to suspend or cancel a medicine licence on specified grounds, including failure to manufacture in accordance with GMP. It provides for written notice and an opportunity for the licence holder to respond before the relevant decision. Section 19 provides a review or appeal route within 30 working days for the specified suspension and production-stop orders. Therefore, an inspection observation should not be described as an automatic licence cancellation.
+
+DGDA-hosted Quality Manual, NRA-QM-001 Version 03, effective March 2024, describes a quality-management framework for regulatory functions including inspection, assessment, testing, quality control, quality assurance, market surveillance and enforcement. Its regulatory-inspection scope includes assessment of manufacturing facilities for relevant licensing and GMP-related purposes. The exact requirements for an establishment must still be checked against the current Act, applicable rules, DGDA notices, licence conditions and product-specific directions.
+
+WHO technical reports are international guidance, not automatically a substitute for Bangladesh law. WHO TRS 1067 (2026), Annex 9, is especially useful for understanding risk-based inspection and market surveillance across the supply chain; national legal effect depends on local adoption and applicable requirements.
+
+### 9. How should a pharmaceutical company respond?
+
+A sound response is factual, timely and focused on patient and product risk. A practical sequence is:
+
+- Preserve records, original data and relevant samples; do not backdate, overwrite or reconstruct evidence as if it were contemporaneous.
+- Assess whether a product, batch, process or distribution activity needs immediate containment under the applicable procedure.
+- Confirm the facts and identify the exact requirement or procedure that was not met.
+- Investigate the root cause rather than stopping at an individual error or a superficial explanation.
+- Define corrective and preventive actions with responsible owners, due dates, risk assessment and effectiveness checks.
+- Submit the response through the regulator's prescribed channel and maintain a traceable record of follow-up.
+
+Companies should not treat an inspection as a presentation exercise. The strongest preparation is a quality system that is used every day, with accurate records, trained people, controlled changes and effective investigations.
+
+### 10. Why should patients and healthcare professionals care?
+
+Patients cannot personally verify a manufacturer's equipment qualification, laboratory data or distribution records. They depend on manufacturers, regulators, distributors and healthcare professionals to maintain quality throughout the medicine's life cycle. Regulatory inspections are one layer of that protection, alongside product testing, licensing, market surveillance, pharmacovigilance and recall systems.
+
+An inspection or certificate is not a guarantee that every future batch is perfect. Quality must be maintained continuously, and product problems can arise after manufacture during storage or distribution. Healthcare professionals should use authorised reporting routes for suspected defects, unusual product appearance, damaged packaging or other concerns. Patients should ask a pharmacist or qualified healthcare professional when they notice a possible medicine-quality issue and should not use a visibly damaged or suspicious product without appropriate advice.
+
+Explore the broader pharmaceutical industry in Bangladesh, the API-to-medicine journey and pharmacovigilance for related topics.
+
+### Key takeaways
+
+- Regulatory inspections are official assessments of compliance, not simply visual factory visits.
+- They may cover manufacturing, laboratories, storage, distribution and other regulated activities.
+- Risk, previous findings, complaints, product complexity and patient impact can shape inspection planning.
+- Inspectors review people, premises, equipment, materials, processes, records, data and quality systems.
+- Findings should be documented and addressed through evidence-based CAPA and follow-up.
+- Bangladesh's Drugs and Cosmetics Act, 2023 sets out GxP duties, inspector powers, sample procedures and licensing processes.
+- Inspection is one part of continuous regulatory oversight; it does not guarantee every future batch.
+
+### Frequently asked questions
+
+Do regulatory inspections happen only at pharmaceutical factories?
+No. Depending on the authority's mandate and the risk, inspections may cover manufacturers, API sites, laboratories, importers, warehouses, distributors, pharmacies and other facilities in the supply chain.
+
+Is every regulatory inspection announced in advance?
+Not necessarily. Notice arrangements depend on the applicable law, authority procedure and inspection purpose. Do not assume that every regulator or every type of inspection follows the same announcement rule.
+
+What is the difference between a regulatory inspection and an internal audit?
+A regulatory inspection is conducted under public authority to assess legal and regulatory compliance. An internal audit is organised by the company as part of its own quality system. They can examine similar evidence but have different mandates and consequences.
+
+What does a critical inspection finding mean?
+It generally describes a serious departure that may create substantial risk to patients or product integrity. Formal definitions and classification systems vary by regulator, so the applicable authority's rules must be followed.
+
+Can DGDA inspectors collect medicine samples in Bangladesh?
+Yes. Section 48 of the Drugs and Cosmetics Act, 2023 includes sample-collection powers. Section 50 sets out relevant procedures for handling and distributing samples. The statutory conditions and prescribed procedure apply.
+
+Does a GMP certificate guarantee that every batch is safe?
+No. A certificate or inspection outcome relates to a defined scope and point in time. Manufacturers must continue to control each process and batch, and regulators may conduct further inspections or market surveillance.
+
+What should a company do after receiving inspection observations?
+Preserve the evidence, assess immediate product risk, investigate root causes, prepare proportionate CAPA with owners and due dates, check effectiveness and respond through the regulator's prescribed process.
+
+### References and further reading
+
+- Government of Bangladesh. Drugs and Cosmetics Act, 2023 (Act No. 29 of 2023), especially sections 17–19 and 47–50. Official law text; section 17; section 18; section 19; section 47; section 48; section 50.
+
+- Directorate General of Drug Administration, Bangladesh. Quality Manual, NRA-QM-001, Version 03, effective March 2024. DGDA-hosted PDF.
+
+- World Health Organization. Good regulatory practices for market surveillance and control of medical products. WHO Technical Report Series No. 1067, 2026, Annex 9. Official WHO document.
+
+- World Health Organization. Quality management system requirements for national inspectorates. WHO Technical Report Series No. 1025, 2020, Annex 5. WHO publication page.
+
+- World Health Organization. Guidance on good manufacturing practices: inspection report. WHO Technical Report Series No. 996, 2016, Annex 4. WHO publication page.
+
+- World Health Organization. WHO guidelines on quality risk management. WHO Technical Report Series No. 981, 2013, Annex 2. WHO PDF.
+
+- World Health Organization. WHO good manufacturing practices for pharmaceutical products: main principles. WHO Technical Report Series No. 986, 2014, Annex 2. WHO publication page.
+
+Educational note: This article is general pharmaceutical education, not legal advice, an official DGDA interpretation or a substitute for current legislation, rules, licence conditions and regulator instructions. Requirements and inspection procedures can change; establishments should verify the current applicable documents.
+
+### About the author
+
+Sayedul Abrar is a pharmacist and Product Executive in the Product Management Department at Opsonin Pharma Ltd., Dhaka, Bangladesh. He writes the Pharma Blog to make pharmaceutical science and medicine-related topics easier to understand in English and Bangla.
+About the author · LinkedIn
+
+---
+
 ### ফার্মাসিউটিক্যাল কোল্ড চেইন: তাপমাত্রা-সংবেদনশীল ওষুধ কীভাবে সংরক্ষণ ও পরিবহন করা হয়?
 URL: https://sayedulabrar.site/blog/pharmaceutical-cold-chain-medicines-storage-transport-bangla/ · Language: Bangla · Published: 2026-11-27T10:00:00+06:00 · Author: Sayedul Abrar, pharmacist
 Summary: কোল্ড চেইন কী, কোন ওষুধে তাপমাত্রা নিয়ন্ত্রণ দরকার, কীভাবে ডেটা লগার ও পরিবহন ব্যবস্থায় তাপমাত্রা দেখা হয় এবং তাপমাত্রা সীমা ছাড়ালে কী করতে হয়—জানুন।
