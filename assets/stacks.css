@@ -7,27 +7,27 @@
 
 .st-line-wrap{position:relative;margin-top:44px}
 .st-line{position:absolute;left:0;right:0;top:34px;height:2px;background:#126b56;opacity:.35;z-index:0}
-.st-row{list-style:none;margin:0;padding:0 max(24px,calc((100vw - 1220px)/2 + 24px)) 26px;display:flex;gap:34px;overflow-x:auto;scroll-snap-type:x proximity;position:relative;z-index:1;scrollbar-width:thin;scrollbar-color:#126b5666 transparent}
-.st-item{flex:0 0 var(--st-w);scroll-snap-align:start;transform:rotate(var(--tilt));transform-origin:50% 0;transition:transform .25s;padding-top:10px}
+.st-row{list-style:none;margin:0;padding:0 max(24px,calc((100vw - 1220px)/2 + 24px)) 26px;display:flex;gap:34px;overflow-x:auto;scroll-snap-type:x proximity;scroll-padding-inline:max(24px,calc((100vw - 1220px)/2 + 24px));position:relative;z-index:1;scrollbar-width:thin;scrollbar-color:#126b5666 transparent}
+.st-item{display:flex;flex-direction:column;flex:0 0 var(--st-w);scroll-snap-align:start;transform:rotate(var(--tilt));transform-origin:50% 0;transition:transform .25s;padding-top:10px}
 .st-item:hover{transform:rotate(0) translateY(-4px)}
-.st-stack{all:unset;box-sizing:border-box;display:block;position:relative;width:100%;cursor:pointer;margin-top:12px}
+.st-stack{all:unset;box-sizing:border-box;display:block;position:relative;width:100%;flex:1 1 auto;cursor:pointer;margin-top:12px}
 .st-stack:focus-visible{outline:3px solid #e95b4d;outline-offset:6px}
 .st-pin{position:absolute;left:50%;top:-24px;width:15px;height:44px;margin-left:-7px;border-radius:3px;background:linear-gradient(90deg,#c9663a,#e95b4d 45%,#c24a3d);box-shadow:0 2px 4px #0004;z-index:5}
 .st-sheet{position:absolute;inset:0;background:#f3d2bd;border-radius:3px;box-shadow:0 4px 10px #4a3b2426}
 .st-s1{transform:translate(9px,9px) rotate(1.2deg)}.st-s2{transform:translate(17px,15px) rotate(2.4deg);background:#e9bfa5}
-.st-card{position:relative;display:flex;flex-direction:column;background:#fff;padding:7px 7px 0;border-radius:3px;box-shadow:0 10px 24px #4a3b2433;border:1px solid #f0e4d4;aspect-ratio:4/5;overflow:hidden;color:#17211f}
-.st-card img{width:100%;height:auto;object-fit:contain;display:block;border-radius:2px}
+.st-card{position:relative;display:flex;flex-direction:column;background:#fff;padding:7px 7px 0;border-radius:3px;box-shadow:0 10px 24px #4a3b2433;border:1px solid #f0e4d4;height:100%;overflow:hidden;color:#17211f}
+.st-card img{width:100%;height:auto;aspect-ratio:1200/630;object-fit:contain;background:#f4efe4;display:block;border-radius:2px;flex:none}
 .st-new{position:absolute;left:14px;top:14px;background:var(--ac);color:#fff;font:700 9px var(--display);letter-spacing:.12em;padding:5px 8px;border-radius:2px}
 .st-cap{display:flex;flex-direction:column;justify-content:center;padding:12px 7px 8px;flex:1}
 .st-cap small{display:block;font:700 9px var(--display);letter-spacing:.14em;color:var(--ac);margin-bottom:7px}
 .st-cap b{display:block;font:700 19px/1.2 Georgia,'Times New Roman',serif;letter-spacing:-.01em}
 .st-cap em{display:block;font:500 11px var(--display);font-style:normal;color:#52625d;margin-top:8px}
 .st-count{display:block;margin:0 -7px;padding:9px 14px;background:#126b56;color:#fff;font:600 10px var(--display);letter-spacing:.06em}
-.st-link{display:inline-block;margin:20px 0 0 6px;color:#126b56;font:600 11px var(--display);letter-spacing:.04em;text-decoration:none;border-bottom:1px solid #126b5666}
+.st-link{align-self:flex-start;display:inline-block;margin:20px 0 0 6px;color:#126b56;font:600 11px var(--display);letter-spacing:.04em;text-decoration:none;border-bottom:1px solid #126b5666}
 .st-link:hover{color:#e95b4d;border-color:#e95b4d}
 .st-hint{max-width:1220px;margin:4px auto 0;padding:0 24px;font-size:11px;color:#52625d;text-align:right}
 @media(min-width:1300px){.st-hint{display:none}}
-@media(max-width:600px){.st-section{padding:46px 0 40px;--st-w:252px}.st-row{gap:26px;padding-left:20px;padding-right:20px}.st-head{padding:0 18px}.st-cap b{font-size:17px}}
+@media(max-width:600px){.st-section{padding:46px 0 40px;--st-w:252px}.st-row{gap:26px;padding-left:20px;padding-right:20px;scroll-padding-inline:20px}.st-head{padding:0 18px}.st-cap b{font-size:17px}}
 @media(prefers-reduced-motion:reduce){.st-item{transition:none}}
 /* viewer */
 .sv{position:fixed;inset:0;z-index:200;background:#0c0b0bf2;display:none;align-items:center;justify-content:center;touch-action:pan-y}
