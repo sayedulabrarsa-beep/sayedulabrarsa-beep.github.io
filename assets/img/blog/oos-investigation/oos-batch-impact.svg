@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">OOS batch impact and disposition</title><desc id="desc">Bilingual diagram showing that an OOS investigation should consider the affected batch, related batches, materials, process history and already distributed product before documented disposition and corrective action.</desc>
+<rect width="1600" height="900" fill="#f6f2e7"/><rect x="55" y="55" width="1490" height="790" rx="34" fill="#fffdf8" stroke="#d6e2dc" stroke-width="3"/>
+<text x="105" y="145" font-family="Arial,sans-serif" font-size="40" font-weight="700" fill="#173d43">One OOS result can affect more than one batch</text><text x="105" y="198" font-family="Arial,sans-serif" font-size="28" fill="#536966">একটি OOS ফলাফল একাধিক ব্যাচের ঝুঁকি নির্দেশ করতে পারে</text>
+<g font-family="Arial,sans-serif" text-anchor="middle">
+<rect x="110" y="300" width="280" height="150" rx="22" fill="#f9e8e3" stroke="#d56a53" stroke-width="3"/><text x="250" y="360" font-size="32" font-weight="700" fill="#a54d3f">Affected batch</text><text x="250" y="405" font-size="23" fill="#536966">প্রভাবিত ব্যাচ</text>
+<path d="M390 375H485" stroke="#d18a43" stroke-width="8"/><path d="M465 357L488 375L465 393" fill="none" stroke="#d18a43" stroke-width="8" stroke-linejoin="round"/>
+<rect x="510" y="300" width="330" height="150" rx="22" fill="#fff0dc" stroke="#d18a43" stroke-width="3"/><text x="675" y="360" font-size="30" font-weight="700" fill="#173d43">Trace the cause</text><text x="675" y="405" font-size="22" fill="#536966">Materials · Process · Equipment</text>
+<path d="M840 375H935" stroke="#d18a43" stroke-width="8"/><path d="M915 357L938 375L915 393" fill="none" stroke="#d18a43" stroke-width="8" stroke-linejoin="round"/>
+<rect x="960" y="300" width="510" height="150" rx="22" fill="#e4f0ea" stroke="#287c73" stroke-width="3"/><text x="1215" y="360" font-size="30" font-weight="700" fill="#173d43">Review related batches</text><text x="1215" y="405" font-size="22" fill="#536966">একই পণ্য · অন্য পণ্য · distributed stock</text>
+<path d="M1215 450V545" stroke="#287c73" stroke-width="8"/><path d="M1197 525L1215 548L1233 525" fill="none" stroke="#287c73" stroke-width="8" stroke-linejoin="round"/>
+<rect x="960" y="570" width="510" height="145" rx="22" fill="#e4f0ea" stroke="#287c73" stroke-width="3"/><text x="1215" y="625" font-size="30" font-weight="700" fill="#173d43">Documented disposition</text><text x="1215" y="670" font-size="22" fill="#536966">Release only with evidence · Hold · Reject</text>
+<path d="M960 642H840" stroke="#d18a43" stroke-width="8"/><path d="M860 624L837 642L860 660" fill="none" stroke="#d18a43" stroke-width="8" stroke-linejoin="round"/>
+<rect x="510" y="570" width="330" height="145" rx="22" fill="#fff0dc" stroke="#d18a43" stroke-width="3"/><text x="675" y="625" font-size="30" font-weight="700" fill="#173d43">CAPA &amp; trend review</text><text x="675" y="670" font-size="22" fill="#536966">মূল কারণ · সংশোধন · প্রতিরোধ</text>
+<path d="M510 642H390" stroke="#d18a43" stroke-width="8"/><path d="M410 624L387 642L410 660" fill="none" stroke="#d18a43" stroke-width="8" stroke-linejoin="round"/>
+<rect x="110" y="570" width="280" height="145" rx="22" fill="#173d43"/><text x="250" y="625" font-size="30" font-weight="700" fill="#fffdf8">Learn &amp; improve</text><text x="250" y="670" font-size="22" fill="#e4f0ea">শেখা ও উন্নতি</text>
+</g></svg>
