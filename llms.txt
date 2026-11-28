@@ -72,6 +72,14 @@ Pharma Blog articles (newest first; each is educational, not medical advice):
   Summary: ওষুধের QC পরীক্ষায় OOS ফলাফল কী বোঝায়? ল্যাব তদন্ত, উৎপাদন-পর্যালোচনা, retesting, resampling, batch rejection ও CAPA সহজভাবে জানুন।
 - Out-of-Specification (OOS) Results in Pharma: How Are Failed Tests Investigated? — English (2026-11-28): https://sayedulabrar.site/blog/out-of-specification-oos-results-pharma-investigation/
   Summary: What does an OOS result mean in pharmaceutical QC? Learn laboratory and manufacturing investigations, retesting rules, batch decisions and CAPA.
+- ওষুধ কখন কাজ শুরু করে, কখন থামে? অনসেট, পিক ও ডিউরেশন — বাংলা (2026-11-28): https://sayedulabrar.site/blog/onset-peak-duration-of-drug-action-bangla/
+  Summary: ওষুধ কাজ করতে কতক্ষণ লাগে? অনসেট, পিক ও ডিউরেশন সহজ ভাষায়, থেরাপিউটিক উইন্ডো, আর ধীরে কাজ করলে কেন ডোজ দ্বিগুণ করবেন না।
+- Onset, Peak and Duration of Drug Action Explained — English (2026-11-28): https://sayedulabrar.site/blog/onset-peak-duration-of-drug-action/
+  Summary: Onset of action, peak effect and duration of action in simple words, with the therapeutic window and why you should not double a slow dose.
+- শরীরে ওষুধ কীভাবে কাজ করে: ৭ পর্বের সিরিজ — বাংলা (2026-11-28): https://sayedulabrar.site/blog/how-medicines-work-in-the-body-series-bangla/
+  Summary: শরীরে ওষুধ কীভাবে কাজ করে, ৭ পর্বের সহজ গাইড: শোষণ, বণ্টন, বিপাক, নিঃসরণ, হাফ-লাইফ, বায়োঅ্যাভেইলেবিলিটি ও অনসেট।
+- How Medicines Work in the Body: A 7-Part Series — English (2026-11-28): https://sayedulabrar.site/blog/how-medicines-work-in-the-body-series/
+  Summary: A simple 7-part guide to how medicines work in the body: absorption, distribution, metabolism, excretion, half-life, bioavailability and onset.
 - ফার্মাসিউটিক্যাল কোল্ড চেইন: তাপমাত্রা-সংবেদনশীল ওষুধ কীভাবে সংরক্ষণ ও পরিবহন করা হয়? — বাংলা (2026-11-27): https://sayedulabrar.site/blog/pharmaceutical-cold-chain-medicines-storage-transport-bangla/
   Summary: কোল্ড চেইন কী, কোন ওষুধে তাপমাত্রা নিয়ন্ত্রণ দরকার, কীভাবে ডেটা লগার ও পরিবহন ব্যবস্থায় তাপমাত্রা দেখা হয় এবং তাপমাত্রা সীমা ছাড়ালে কী করতে হয়—জানুন।
 - Pharmaceutical Cold Chain: How Are Temperature-Sensitive Medicines Stored and Transported? — English (2026-11-27): https://sayedulabrar.site/blog/pharmaceutical-cold-chain-medicines-storage-transport/

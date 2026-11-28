@@ -26,6 +26,32 @@
   "img": "/assets/img/blog/oos-investigation/oos-card.webp"
  },
  {
+  "slug": "onset-peak-duration-of-drug-action",
+  "date": "2026-11-28",
+  "tag_en": "Pharma Blog",
+  "tag_bn": "ফার্মা ব্লগ",
+  "title_en": "Onset, Peak and Duration of Drug Action Explained",
+  "title_bn": "ওষুধ কখন কাজ শুরু করে, কখন থামে? অনসেট, পিক ও ডিউরেশন সহজ ভাষায়",
+  "desc_en": "Onset of action, peak effect and duration of action in simple words, with the therapeutic…",
+  "desc_bn": "ওষুধ কাজ করতে কতক্ষণ লাগে? অনসেট, পিক ও ডিউরেশন সহজ ভাষায়, থেরাপিউটিক উইন্ডো, আর ধীরে কাজ করলে…",
+  "url_en": "/blog/onset-peak-duration-of-drug-action/",
+  "url_bn": "/blog/onset-peak-duration-of-drug-action-bangla/",
+  "img": "/assets/img/blog/onset-peak-duration/onset-peak-duration-social-en.jpg"
+ },
+ {
+  "slug": "how-medicines-work-in-the-body-series",
+  "date": "2026-11-28",
+  "tag_en": "Pharma Blog",
+  "tag_bn": "ফার্মা ব্লগ",
+  "title_en": "How Medicines Work in the Body: A 7-Part Series",
+  "title_bn": "শরীরে ওষুধ কীভাবে কাজ করে: পুরো সিরিজ",
+  "desc_en": "A simple 7-part guide to how medicines work in the body: absorption, distribution, metabolism,…",
+  "desc_bn": "শরীরে ওষুধ কীভাবে কাজ করে, ৭ পর্বের সহজ গাইড: শোষণ, বণ্টন, বিপাক, নিঃসরণ, হাফ-লাইফ,…",
+  "url_en": "/blog/how-medicines-work-in-the-body-series/",
+  "url_bn": "/blog/how-medicines-work-in-the-body-series-bangla/",
+  "img": "/assets/img/blog/how-medicines-work-series/how-medicines-work-series-social-en.jpg"
+ },
+ {
   "slug": "pharmaceutical-cold-chain-medicines-storage-transport",
   "date": "2026-11-27",
   "tag_en": "Medicine safety & quality",
