@@ -139,6 +139,6 @@ if "<!--stacks:start-->" in s:
 else:
     a = s.index('<section class="ed-blog-section">'); b = s.index("</section>", a) + len("</section>")
     s = s[:a] + section + s[b:]
-    s = s.replace('</head>', '<link rel="stylesheet" href="/assets/stacks.css?v=12"></head>', 1)
-    s = s.replace('</body>', '<script src="/assets/stacks.js?v=10" defer></script></body>', 1)
+    s = s.replace('</head>', '<link rel="stylesheet" href="/assets/stacks.css?v=13"></head>', 1)
+    s = s.replace('</body>', '<script src="/assets/stacks.js?v=11" defer></script></body>', 1)
 p.write_text(s, encoding="utf-8"); print("ok", len(data))

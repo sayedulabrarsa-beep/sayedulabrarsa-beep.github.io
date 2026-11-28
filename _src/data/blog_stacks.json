@@ -168,7 +168,7 @@
     "date": "2026-11-10",
     "kicker": "Industry explainer",
     "title": "Pharmaceutical Industry in Bangladesh: How Does It Work?",
-    "image": "/assets/img/blog/pharma-industry/pharmaceutical-industry-in-bangladesh-how-medicines-reach-you-thumbnail-16x9.webp",
+    "image": "/assets/img/blog/pharma-industry/pi-cover.webp",
     "alt": "Pharmaceutical industry in Bangladesh, how medicines reach you",
     "accent": "#2f8f83",
     "read": "9–11 min",
@@ -178,7 +178,7 @@
         "p": [
           "Research, development, manufacturing, quality checks, regulation and distribution all work together."
         ],
-        "img": "/assets/img/blog/pharma-industry/complete-journey-of-a-medicine-research-to-post-market-monitoring.webp",
+        "img": "/assets/img/blog/pharma-industry/pi-journey.webp",
         "alt": "The complete journey of a medicine in seven stages",
         "r": "A tablet is the last step of a long journey.",
         "sub": "",
@@ -190,7 +190,7 @@
           "Innovator, generic, API, biotech, CRO and CDMO organisations play different roles.",
           "Their activities can overlap."
         ],
-        "img": "/assets/img/blog/pharma-industry/types-of-pharmaceutical-companies-innovator-generic-api-cdmo-cro.webp",
+        "img": "/assets/img/blog/pharma-industry/pi-types.webp",
         "alt": "Seven types of pharmaceutical companies",
         "r": "",
         "sub": "",
@@ -202,7 +202,7 @@
           "The API is the active ingredient.",
           "Excipients and the dosage form turn it into the tablet or capsule you take."
         ],
-        "img": "/assets/img/blog/pharma-industry/api-vs-finished-pharmaceutical-product-fpp.webp",
+        "img": "/assets/img/blog/pharma-industry/pi-api.webp",
         "alt": "API versus finished pharmaceutical product (FPP)",
         "r": "",
         "sub": "",
@@ -213,7 +213,7 @@
         "p": [
           "GMP, QA, QC, regulatory affairs and pharmacovigilance each protect a different part of quality and safety."
         ],
-        "img": "/assets/img/blog/gmp/gmp-good-manufacturing-practices-cover.webp?v=1",
+        "img": "/assets/img/blog/pharma-industry/pi-qual.webp",
         "alt": "Good Manufacturing Practices in pharmaceutical manufacturing, with a cleanroom operator inspecting a tablet production line.",
         "r": "",
         "sub": "",
@@ -225,7 +225,7 @@
           "BIDA’s profile says local manufacturers meet about 98% of domestic medicine demand.",
           "It also says over 85% of API needs are imported."
         ],
-        "img": "/assets/img/blog/pharma-industry/pharmaceutical-supply-chain-in-bangladesh-from-manufacturing-to-patient.webp",
+        "img": "/assets/img/blog/pharma-industry/pi-supply.webp",
         "alt": "Pharmaceutical supply chain in Bangladesh",
         "r": "These profile figures carry no year.",
         "sub": "",
@@ -235,7 +235,7 @@
     "end": {
       "h": "A COMPLETE ECOSYSTEM",
       "t": "Distribution and storage are also essential to preserving product quality.",
-      "img": "/assets/img/blog/pharma-industry/pharmaceutical-industry-in-bangladesh-key-takeaways.webp",
+      "img": "/assets/img/blog/pharma-industry/pi-take.webp",
       "alt": "Key takeaways about the pharmaceutical industry in Bangladesh"
     }
   },
@@ -643,7 +643,7 @@
     "date": "2026-10-27",
     "kicker": "Pharmacy basics",
     "title": "Generic Name vs Brand Name: The Simple Guide",
-    "image": "/assets/img/blog/generic-brand/which-name-is-the-real-medicine-generic-vs-brand-thumbnail.webp",
+    "image": "/assets/img/blog/generic-brand/gb-cover.webp",
     "alt": "Generic name vs brand name of a medicine",
     "accent": "#2f8f83",
     "read": "5 min",
@@ -654,7 +654,7 @@
           "Generic name: the ingredient.",
           "Then strength, dosage form and manufacturer."
         ],
-        "img": "/assets/img/blog/generic-brand/four-parts-of-medicine-box-generic-name-strength-dosage-form-manufacturer.webp",
+        "img": "/assets/img/blog/generic-brand/gb-ten.webp",
         "alt": "Four parts of a medicine box",
         "r": "",
         "sub": "",
@@ -665,7 +665,7 @@
         "p": [
           "Finix 20 and Rabe-20 are different brands that both contain rabeprazole sodium 20 mg."
         ],
-        "img": "/assets/img/blog/generic-brand/finix-vs-rabe-same-rabeprazole-different-brand-names.webp",
+        "img": "/assets/img/blog/generic-brand/gb-secret.webp",
         "alt": "Finix 20 and Rabe-20 packs",
         "r": "Same ingredient, different brand names.",
         "sub": "",
@@ -678,7 +678,7 @@
           "Brand name: the product name.",
           "Formulation: how it is made and released."
         ],
-        "img": "/assets/img/blog/generic-brand/three-layers-generic-name-brand-name-formulation-finix-rabeprazole.webp",
+        "img": "/assets/img/blog/generic-brand/gb-layers.webp",
         "alt": "Three layers of a medicine",
         "r": "",
         "sub": "",
@@ -690,7 +690,7 @@
           "Tablet, capsule, MUPS, sprinkle capsule and more.",
           "Same ingredient does not always mean same strength or form."
         ],
-        "img": "/assets/img/blog/generic-brand/medicine-dosage-forms-tablet-capsule-mups-sprinkle-capsule-hp-kit.webp",
+        "img": "/assets/img/blog/generic-brand/gb-label.webp",
         "alt": "Five dosage forms of the same medicine",
         "r": "",
         "sub": "",
@@ -703,7 +703,7 @@
           "A green tea packet is the brand.",
           "A tea bag is a different formulation."
         ],
-        "img": "/assets/img/blog/generic-brand/generic-brand-formulation-tea-analogy.webp",
+        "img": "/assets/img/blog/generic-brand/gb-tricks.webp",
         "alt": "Tea analogy for medicine names",
         "r": "",
         "sub": "",
@@ -713,7 +713,7 @@
     "end": {
       "h": "READ THE LABEL",
       "t": "Check the generic name, strength and form. Ask a pharmacist if you are unsure.",
-      "img": "/assets/img/blog/generic-brand/four-step-medicine-pack-check-generic-name-strength-dosage-form-manufacturer.webp",
+      "img": "/assets/img/blog/generic-brand/gb-rina.webp",
       "alt": "Four-step pack check"
     }
   },
@@ -723,7 +723,7 @@
     "date": "2026-10-27",
     "kicker": "Pharmacy basics",
     "title": "Drug vs Medicine: Meaning, Differences, Examples",
-    "image": "/assets/img/blog/drug-vs-medicine/drug-vs-medicine-thumbnail.webp",
+    "image": "/assets/img/blog/drug-vs-medicine/dm-cover.webp",
     "alt": "Drug vs medicine meaning and differences",
     "accent": "#6f6bb0",
     "read": "5 min",
@@ -734,7 +734,7 @@
           "The active pharmaceutical ingredient (API) that produces the effect in the body.",
           "Example: rabeprazole."
         ],
-        "img": "/assets/img/blog/drug-vs-medicine/what-is-a-drug-active-pharmaceutical-ingredient.webp",
+        "img": "/assets/img/blog/drug-vs-medicine/dm-drug.webp",
         "alt": "What is a drug",
         "r": "",
         "sub": "",
@@ -746,7 +746,7 @@
           "A prepared product that contains a drug in a specific dose and form.",
           "A tablet, capsule or syrup."
         ],
-        "img": "/assets/img/blog/drug-vs-medicine/what-is-a-medicine-prepared-product-tablet-capsule-syrup.webp",
+        "img": "/assets/img/blog/drug-vs-medicine/dm-medicine.webp",
         "alt": "What is a medicine",
         "r": "",
         "sub": "",
@@ -758,7 +758,7 @@
           "A drug is a chemical substance with biological action.",
           "A medicine is a usable product to prevent, relieve or treat disease."
         ],
-        "img": "/assets/img/blog/drug-vs-medicine/drug-vs-medicine-key-differences-at-a-glance.webp",
+        "img": "/assets/img/blog/drug-vs-medicine/dm-diff.webp",
         "alt": "Key differences at a glance",
         "r": "",
         "sub": "",
@@ -771,7 +771,7 @@
           "Finix is a medicine containing it.",
           "Finix MUPS is the same drug in a MUPS formulation."
         ],
-        "img": "/assets/img/blog/drug-vs-medicine/rabeprazole-finix-finix-mups-real-world-example.webp",
+        "img": "/assets/img/blog/drug-vs-medicine/dm-rabe.webp",
         "alt": "Rabeprazole, Finix and Finix MUPS",
         "r": "",
         "sub": "",
@@ -782,7 +782,7 @@
         "p": [
           "Drug (API), formulation, manufacturing, then a quality check for safety, strength and quality."
         ],
-        "img": "/assets/img/blog/drug-vs-medicine/from-drug-to-medicine-the-journey-formulation-manufacturing-quality-check.webp",
+        "img": "/assets/img/blog/drug-vs-medicine/dm-every.webp",
         "alt": "From drug to medicine",
         "r": "",
         "sub": "",
@@ -792,7 +792,7 @@
     "end": {
       "h": "RELATED, NOT THE SAME",
       "t": "A drug is the active substance. A medicine is a prepared, usable product.",
-      "img": "/assets/img/blog/drug-vs-medicine/drug-vs-medicine-key-takeaways.webp",
+      "img": "/assets/img/blog/drug-vs-medicine/dm-takeaways.webp",
       "alt": "Key takeaways"
     }
   },
