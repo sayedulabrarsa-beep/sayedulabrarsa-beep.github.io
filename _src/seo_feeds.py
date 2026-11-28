@@ -88,13 +88,17 @@ def write_feed(arts):
 
 def write_llms(arts):
     p = R / "llms.txt"; s = p.read_text(encoding="utf-8")
-    lines = ["<!--articles:start-->", "Pharma Blog articles (newest first; each is educational, not medical advice):"]
+    lines = ["<!--articles:start-->", "## Pharma Blog articles", "",
+             "Newest first; each article is educational, not medical advice."]
     for a in arts:
         tag = "বাংলা" if a["lang"].startswith("bn") else "English"
-        lines.append(f"- {a['title']} — {tag} ({a['pub']}): {a['url']}")
-        if a["desc"]:
-            lines.append(f"  Summary: {a['desc']}")
-    lines.append("Feed: " + SITE + "/blog/feed.xml")
+        title = a["title"].replace("[", "(").replace("]", ")")
+        note = f"{tag}, {a['pub']}" + (f". {a['desc']}" if a["desc"] else "")
+        lines.append(f"- [{title}]({a['url']}): {note}")
+    lines.append("")
+    lines.append("## Optional")
+    lines.append("")
+    lines.append(f"- [Pharma Blog RSS feed]({SITE}/blog/feed.xml): feed of all articles")
     lines.append("<!--articles:end-->")
     block = "\n".join(lines)
     if "<!--articles:start-->" in s:

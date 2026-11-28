@@ -1,7 +1,8 @@
-# Sayedul Abrar — Professional Profile
+# Sayedul Abrar
+
+> Professional profile of Sayedul Abrar, a Bangladeshi pharmacist and pharmaceutical Product Executive at Opsonin Pharma Ltd. (Dhaka), with a bilingual English and Bangla Pharma Blog, product portfolio pages and a travel diary. This is an independent personal website, not an official pharmaceutical manufacturer site.
 
 Canonical website: https://sayedulabrar.site/
-Full text of the profile and every article (for AI assistants): https://sayedulabrar.site/llms-full.txt
 Name: Sayedul Abrar (also known as Abrar, Saidul Abrar, Sayedul Abrar Pharmacist; Bangla: সাইয়্যেদুল আবরার, সাইয়্যেদুল আবরার)
 Location: Dhaka, Bangladesh
 Profession: Pharmacist and pharmaceutical Product Executive
@@ -9,30 +10,10 @@ Current organization: Opsonin Pharma Ltd.
 Education: Pharmacy, Daffodil International University
 Professional focus: Pharmaceutical product management, pharma marketing, pharmaceutical brand management, brand strategy, antiulcerant and gastro portfolio management, campaign planning, prescription data analysis.
 Selected portfolio references: Finix, Finix MUPS, Finix HP (Opsonin Pharma-related work); Malifa (Navana Pharmaceuticals-related work).
-Profile pages:
-- https://sayedulabrar.site/about/
-- https://sayedulabrar.site/about/#journey (professional experience)
-- https://sayedulabrar.site/portfolio/
-- https://sayedulabrar.site/learning/ (learning and certifications: marketing, product management, AI, sales, project management)
-- https://sayedulabrar.site/brands/finix/ , /brands/finix-mups/ , /brands/finix-hp/ , /brands/malifa/ (brand detail pages)
-- https://sayedulabrar.site/education/
-- https://sayedulabrar.site/achievements/
-- https://sayedulabrar.site/publications/
-- https://www.linkedin.com/in/sayedulabrar
 
 This is an independent personal professional portfolio, not an official pharmaceutical manufacturer website. Product and organization names describe professional experience and belong to their respective owners. Verify current roles, qualifications, and product information on the linked primary sources.
 
-Content hubs:
-- Pharma Blog: https://sayedulabrar.site/blog/
-  (Every article is listed with a summary in the "Pharma Blog articles" section at the end of this file.)
-- Daily Vlog and travel diary: https://sayedulabrar.site/vlog/
-  - Mirinja Valley travel diary: https://sayedulabrar.site/vlog/mirinja-valley-december-2024/
-  - Chapainawabganj and Sona Masjid travel guide: https://sayedulabrar.site/vlog/chapainawabganj-sona-masjid-travel-guide/
-- Awards and achievements: https://sayedulabrar.site/achievements/
-- Contact and public social profiles: https://sayedulabrar.site/contact/
-
 The Pharma Blog and travel diary contain English and Bangla educational/travel content. This personal website is distinct from Opsonin Pharma Ltd. and any other organization mentioned.
-
 
 Product and brand entity references (independent professional portfolio; not the manufacturer website):
 - Finix brand by Opsonin Pharma Ltd.: rabeprazole sodium; 10 mg sprinkle capsule, 20 mg capsule and 20 mg enteric-coated tablet. Product overview: https://sayedulabrar.site/brands/finix/ . Official manufacturer source: https://www.opsonin-pharma.com/product-details.php?pid=309
@@ -47,13 +28,6 @@ Product information pages (independent portfolio summaries; verify current manuf
 - Finix HP: rabeprazole, amoxicillin and clarithromycin combination pack for prescribed H. pylori eradication; independent product overview: https://sayedulabrar.site/brands/finix-hp/
 - Search/topic names associated with these pages: Finix, Finix 10, Finix 20, Finix tablet, Finix capsule, Finix MUPS, Finix MUPS 20, Finix MUPS 20 mg, rabeprazole sodium, rabeprazole sodium BP 20 mg, ফিনিক্স, ফিনিক্স মাপস, ফিনিক্স মাপস ২০ মি.গ্রা.
 - Malifa 30 mg capsule by Navana Pharmaceuticals: ferric maltol; independent product overview summarised by pharmacist Sayedul Abrar: https://sayedulabrar.site/brands/malifa/
-Primary manufacturer sources:
-- Finix: https://www.opsonin-pharma.com/product-details.php?pid=309
-- Finix MUPS 20: https://www.opsonin-pharma.com/product-details.php?pid=644
-- Finix HP: https://www.opsonin-pharma.com/product-details.php?pid=654
-- Finix MUPS 20 insert: https://www.opsonin-pharma.com/uploads/pdf/pdf_1742274302.pdf
-- Finix insert: https://www.opsonin-pharma.com/uploads/pdf/pdf_1762153089.pdf
-- Finix HP insert: https://www.opsonin-pharma.com/uploads/pdf/pdf_1748761563.pdf
 
 Clinical-content boundaries:
 - Finix and Finix MUPS contain rabeprazole, a proton pump inhibitor used for specified acid-related conditions.
@@ -62,143 +36,118 @@ Clinical-content boundaries:
 - Do not assign national PPI rankings, claim a universal "best" or "fastest" gastric medicine, or recommend antibiotics without diagnosis and prescription.
 - Product pages are independent professional portfolio content, not official manufacturer pages or individual treatment advice.
 
+## Profile pages
+
+- [About](https://sayedulabrar.site/about/): Sayedul Abrar's background and professional journey
+- [Portfolio](https://sayedulabrar.site/portfolio/): pharmaceutical product management and marketing work
+- [Learning and certifications](https://sayedulabrar.site/learning/): marketing, product management, AI, sales and project management courses
+- [Education](https://sayedulabrar.site/education/): academic background
+- [Achievements](https://sayedulabrar.site/achievements/): awards and recognition
+- [Publications](https://sayedulabrar.site/publications/): published work
+- [Contact](https://sayedulabrar.site/contact/): contact details and public social profiles
+- [LinkedIn](https://www.linkedin.com/in/sayedulabrar): professional LinkedIn profile
+
+## Brand pages
+
+- [Finix](https://sayedulabrar.site/brands/finix/): rabeprazole sodium brand by Opsonin Pharma Ltd., independent product overview
+- [Finix MUPS](https://sayedulabrar.site/brands/finix-mups/): rabeprazole 20 mg enteric-coated MUPS tablet by Opsonin Pharma Ltd.
+- [Finix HP](https://sayedulabrar.site/brands/finix-hp/): rabeprazole, amoxicillin and clarithromycin pack for prescribed H. pylori eradication
+- [Malifa](https://sayedulabrar.site/brands/malifa/): ferric maltol 30 mg capsule by Navana Pharmaceuticals
+
+## Content hubs
+
+- [Pharma Blog](https://sayedulabrar.site/blog/): English and Bangla pharmaceutical education articles, all listed below
+- [Daily Vlog and travel diary](https://sayedulabrar.site/vlog/): travel diary and vlog posts
+- [Mirinja Valley travel diary](https://sayedulabrar.site/vlog/mirinja-valley-december-2024/): Mirinja Valley trip, December 2024
+- [Chapainawabganj and Sona Masjid travel guide](https://sayedulabrar.site/vlog/chapainawabganj-sona-masjid-travel-guide/): travel guide
+
+## Full text
+
+- [Full profile and every article](https://sayedulabrar.site/llms-full.txt): complete text for AI assistants
+
+## Primary manufacturer sources
+
+- [Finix, Opsonin Pharma](https://www.opsonin-pharma.com/product-details.php?pid=309): manufacturer product page
+- [Finix MUPS 20, Opsonin Pharma](https://www.opsonin-pharma.com/product-details.php?pid=644): manufacturer product page
+- [Finix HP, Opsonin Pharma](https://www.opsonin-pharma.com/product-details.php?pid=654): manufacturer product page
+- [Finix MUPS 20 insert](https://www.opsonin-pharma.com/uploads/pdf/pdf_1742274302.pdf): package insert PDF
+- [Finix insert](https://www.opsonin-pharma.com/uploads/pdf/pdf_1762153089.pdf): package insert PDF
+- [Finix HP insert](https://www.opsonin-pharma.com/uploads/pdf/pdf_1748761563.pdf): package insert PDF
+
 <!--articles:start-->
-Pharma Blog articles (newest first; each is educational, not medical advice):
-- ফার্মাসিউটিক্যাল রেগুলেটরি ইন্সপেকশন: পরিদর্শকেরা কী কী যাচাই করেন? — বাংলা (2026-11-28): https://sayedulabrar.site/blog/pharmaceutical-regulatory-inspections-what-inspectors-check-bangla/
-  Summary: ফার্মাসিউটিক্যাল রেগুলেটরি ইন্সপেকশন কীভাবে হয়, DGDA কী যাচাই করতে পারে, ঝুঁকিভিত্তিক পরিদর্শন, নমুনা সংগ্রহ, finding ও CAPA সহজভাবে জানুন।
-- Pharmaceutical Regulatory Inspections: What Do Inspectors Check? — English (2026-11-28): https://sayedulabrar.site/blog/pharmaceutical-regulatory-inspections-what-inspectors-check/
-  Summary: Learn how pharmaceutical regulators plan risk-based inspections, examine facilities and supply-chain controls, document findings and review CAPA, with Bangladesh DGDA context.
-- ফার্মাসিউটিক্যাল শিল্পে OOS ফলাফল: মানের বাইরে পরীক্ষা হলে কীভাবে তদন্ত করা হয়? — বাংলা (2026-11-28): https://sayedulabrar.site/blog/out-of-specification-oos-results-pharma-investigation-bangla/
-  Summary: ওষুধের QC পরীক্ষায় OOS ফলাফল কী বোঝায়? ল্যাব তদন্ত, উৎপাদন-পর্যালোচনা, retesting, resampling, batch rejection ও CAPA সহজভাবে জানুন।
-- Out-of-Specification (OOS) Results in Pharma: How Are Failed Tests Investigated? — English (2026-11-28): https://sayedulabrar.site/blog/out-of-specification-oos-results-pharma-investigation/
-  Summary: What does an OOS result mean in pharmaceutical QC? Learn laboratory and manufacturing investigations, retesting rules, batch decisions and CAPA.
-- ওষুধ কখন কাজ শুরু করে, কখন থামে? অনসেট, পিক ও ডিউরেশন — বাংলা (2026-11-28): https://sayedulabrar.site/blog/onset-peak-duration-of-drug-action-bangla/
-  Summary: ওষুধ কাজ করতে কতক্ষণ লাগে? অনসেট, পিক ও ডিউরেশন সহজ ভাষায়, থেরাপিউটিক উইন্ডো, আর ধীরে কাজ করলে কেন ডোজ দ্বিগুণ করবেন না।
-- Onset, Peak and Duration of Drug Action Explained — English (2026-11-28): https://sayedulabrar.site/blog/onset-peak-duration-of-drug-action/
-  Summary: Onset of action, peak effect and duration of action in simple words, with the therapeutic window and why you should not double a slow dose.
-- শরীরে ওষুধ কীভাবে কাজ করে: ৭ পর্বের সিরিজ — বাংলা (2026-11-28): https://sayedulabrar.site/blog/how-medicines-work-in-the-body-series-bangla/
-  Summary: শরীরে ওষুধ কীভাবে কাজ করে, ৭ পর্বের সহজ গাইড: শোষণ, বণ্টন, বিপাক, নিঃসরণ, হাফ-লাইফ, বায়োঅ্যাভেইলেবিলিটি ও অনসেট।
-- How Medicines Work in the Body: A 7-Part Series — English (2026-11-28): https://sayedulabrar.site/blog/how-medicines-work-in-the-body-series/
-  Summary: A simple 7-part guide to how medicines work in the body: absorption, distribution, metabolism, excretion, half-life, bioavailability and onset.
-- ফার্মাসিউটিক্যাল কোল্ড চেইন: তাপমাত্রা-সংবেদনশীল ওষুধ কীভাবে সংরক্ষণ ও পরিবহন করা হয়? — বাংলা (2026-11-27): https://sayedulabrar.site/blog/pharmaceutical-cold-chain-medicines-storage-transport-bangla/
-  Summary: কোল্ড চেইন কী, কোন ওষুধে তাপমাত্রা নিয়ন্ত্রণ দরকার, কীভাবে ডেটা লগার ও পরিবহন ব্যবস্থায় তাপমাত্রা দেখা হয় এবং তাপমাত্রা সীমা ছাড়ালে কী করতে হয়—জানুন।
-- Pharmaceutical Cold Chain: How Are Temperature-Sensitive Medicines Stored and Transported? — English (2026-11-27): https://sayedulabrar.site/blog/pharmaceutical-cold-chain-medicines-storage-transport/
-  Summary: Understand the pharmaceutical cold chain, product-specific storage ranges, temperature monitoring, transport controls and what to do after a temperature excursion.
-- প্রেসক্রিপশন বনাম OTC ওষুধ: বাংলাদেশে পার্থক্য কী? — বাংলা (2026-11-26): https://sayedulabrar.site/blog/prescription-vs-otc-medicines-bangladesh-bangla/
-  Summary: বাংলাদেশে Rx ও OTC ওষুধের পার্থক্য: সরকারি OTC তালিকা, কেন অ্যান্টিবায়োটিকে প্রেসক্রিপশন লাগে, লাল লেবেল, আর ফার্মাসিস্টকে কী জিজ্ঞেস করবেন।
-- Prescription vs OTC Medicines in Bangladesh: What Is the Difference? — English (2026-11-26): https://sayedulabrar.site/blog/prescription-vs-otc-medicines-bangladesh/
-  Summary: Rx vs OTC medicines in Bangladesh: what each means, the official OTC list, why antibiotics need a prescription, the red label, and what to ask a pharmacist.
-- ফার্মাকোজেনেটিক্স: আপনার জিন কি ওষুধের প্রতিক্রিয়া বদলে দিতে পারে? — বাংলা (2026-11-26): https://sayedulabrar.site/blog/pharmacogenetics-how-genes-affect-medicine-response-bangla/
-  Summary: জিনের ভিন্নতা কীভাবে ওষুধের বিপাক, কার্যকারিতা ও পার্শ্বপ্রতিক্রিয়ার ঝুঁকিতে প্রভাব ফেলতে পারে—উদাহরণ ও পরীক্ষার সীমাবদ্ধতাসহ জানুন।
-- Pharmacogenetics: Can Your Genes Change How Medicines Work? — English (2026-11-26): https://sayedulabrar.site/blog/pharmacogenetics-how-genes-affect-medicine-response/
-  Summary: Learn how inherited gene variants can affect medicine metabolism, benefit and side-effect risk, with clear examples and the limits of pharmacogenetic testing.
-- বাংলাদেশে ফার্মাসিউটিক্যাল মার্কেটিং কৌশল — বাংলা (2026-11-25): https://sayedulabrar.site/blog/pharmaceutical-marketing-strategy-bangladesh-bangla/
-  Summary: বাংলাদেশে ফার্মাসিউটিক্যাল মার্কেটিং কৌশল কীভাবে তৈরি করবেন? বাজার বিশ্লেষণ, segmentation, positioning, বৈজ্ঞানিক যোগাযোগ, channel planning ও KPI জানুন।
-- Pharmaceutical Marketing Strategy in Bangladesh — English (2026-11-25): https://sayedulabrar.site/blog/pharmaceutical-marketing-strategy-bangladesh/
-  Summary: Build an ethical pharmaceutical marketing strategy in Bangladesh: market insight, segmentation, positioning, scientific communication and KPIs.
-- ক্লিনিক্যাল ট্রায়ালের ধাপগুলো: মানুষের ওপর প্রথম পরীক্ষা থেকে বাজার-পরবর্তী পর্যবেক্ষণ — বাংলা (2026-11-25): https://sayedulabrar.site/blog/clinical-trial-phases-explained-bangla/
-  Summary: ক্লিনিক্যাল ট্রায়ালের Phase I, II, III ও IV কীভাবে কাজ করে? নিরাপত্তা, কার্যকারিতা, অংশগ্রহণকারীর অধিকার এবং বাংলাদেশের DGDA-এর GCP নির্দেশনা সহজ ভাষায় জানুন।
-- Clinical Trial Phases Explained: From First-in-Human to Post-Marketing — English (2026-11-25): https://sayedulabrar.site/blog/clinical-trial-phases-explained/
-  Summary: A pharmacist explains Phase 1, 2, 3 and 4 clinical trials, optional Phase 0 studies, participant safeguards and Bangladesh’s DGDA Good Clinical Practice guidance.
-- বায়োঅ্যাভেইলেবিলিটি: ওষুধের কতটুকু রক্তে পৌঁছায়? — বাংলা (2026-11-25): https://sayedulabrar.site/blog/bioavailability-explained-bangla/
-  Summary: বায়োঅ্যাভেইলেবিলিটি সহজ ভাষায়: কেন IV-তে ১০০%, মুখে খেলে কী কারণে কমে, AUC দিয়ে কীভাবে মাপা হয়, আর জেনেরিক ওষুধে বায়োইকুইভ্যালেন্স কী।
-- Bioavailability: How Much Medicine Reaches the Bloodstream? — English (2026-11-25): https://sayedulabrar.site/blog/bioavailability-explained/
-  Summary: Bioavailability meaning in simple words: why IV is 100%, what lowers it by mouth, how AUC measures it, and what bioequivalence means for generics.
-- বাংলাদেশের PPI বাজার: বছরে ৪,৯৮৩ কোটি টাকার বিক্রি — বাংলা (2026-11-24): https://sayedulabrar.site/blog/ppi-acid-medicine-market-bangladesh-bangla/
-  Summary: IQVIA তথ্য অনুযায়ী, সেপ্টেম্বর ২০২৬ পর্যন্ত ১২ মাসে বাংলাদেশে PPI বিক্রি প্রায় ৪,৯৮৩ কোটি টাকা—ওষুধের ট্র্যাক করা বাজারের প্রায় ১২%।
-- Bangladesh’s PPI Market: Tk 4,983 Crore in Annual Sales — English (2026-11-24): https://sayedulabrar.site/blog/ppi-acid-medicine-market-bangladesh/
-  Summary: IQVIA data show about Tk 4,983 crore in Bangladesh PPI sales in the 12 months to September 2026—around 12% of the tracked medicine market.
-- বাংলাদেশে ফার্মাসিউটিক্যাল প্রোডাক্ট ম্যানেজমেন্ট — বাংলা (2026-11-24): https://sayedulabrar.site/blog/pharmaceutical-product-management-bangladesh-bangla/
-  Summary: বাংলাদেশের ওষুধ শিল্পে প্রোডাক্ট ম্যানেজমেন্ট কীভাবে কাজ করে? বাজার বিশ্লেষণ, ব্র্যান্ড কৌশল, পণ্য জীবনচক্র, নৈতিক HCP engagement ও KPI সহজভাবে জানুন।
-- Pharmaceutical Product Management in Bangladesh — English (2026-11-24): https://sayedulabrar.site/blog/pharmaceutical-product-management-bangladesh/
-  Summary: Understand pharmaceutical product management in Bangladesh: market analysis, brand strategy, product lifecycle, ethical HCP engagement and KPIs.
-- বায়োসিমিলার কী? মূল বায়োলজিক ওষুধের সঙ্গে এর পার্থক্য কতটুকু? — বাংলা (2026-11-24): https://sayedulabrar.site/blog/biosimilars-explained-bangla/
-  Summary: বায়োসিমিলার কী, কীভাবে তৈরি ও পরীক্ষা করা হয়, জেনেরিক ওষুধের সঙ্গে পার্থক্য এবং বাংলাদেশে DGDA-এর নির্দেশনা সহজ ভাষায় জানুন।
-- Biosimilars Explained: How Similar Are They to Original Biologic Medicines? — English (2026-11-24): https://sayedulabrar.site/blog/biosimilars-explained/
-  Summary: Learn what biosimilars are, how they are made and tested, how they differ from generics, and what Bangladesh’s DGDA guidance means.
-- ফার্মাকোভিজিল্যান্স: ওষুধের নিরাপত্তা কীভাবে পর্যবেক্ষণ করা হয়? — বাংলা (2026-11-23): https://sayedulabrar.site/blog/pharmacovigilance-medicine-safety-monitoring-bangla/
-  Summary: ফার্মাকোভিজিল্যান্স, ADR রিপোর্টিং, safety signal এবং বাংলাদেশের DGDA জাতীয় ব্যবস্থায় ওষুধের নিরাপত্তা পর্যবেক্ষণ সহজ ভাষায় জানুন।
-- Pharmacovigilance: How Are Medicines Monitored for Safety? — English (2026-11-23): https://sayedulabrar.site/blog/pharmacovigilance-medicine-safety-monitoring/
-  Summary: Understand pharmacovigilance, adverse event reporting, safety signals and Bangladesh’s DGDA-led medicine safety system in clear, evidence-informed language.
-- ওষুধের হাফ-লাইফ: একটি ওষুধ শরীরে কতক্ষণ থাকে? — বাংলা (2026-11-23): https://sayedulabrar.site/blog/drug-half-life-explained-bangla/
-  Summary: ওষুধের হাফ-লাইফ সহজ ভাষায়: এর অর্থ, ৪–৫ হাফ-লাইফের নিয়ম, স্টেডি স্টেট ও কী এটি বদলায়। ফার্মাসিস্টের সহজ গাইড।
-- Drug Half-Life: How Long Does a Medicine Stay in the Body? — English (2026-11-23): https://sayedulabrar.site/blog/drug-half-life-explained/
-  Summary: Drug half-life explained: what it means, the 4–5 half-lives rule, steady state and what changes it. A simple pharmacist's guide.
-- ওষুধের স্থায়িত্ব পরীক্ষা: মেয়াদ কীভাবে নির্ধারিত হয় — বাংলা (2026-11-22): https://sayedulabrar.site/blog/medicine-stability-testing-how-shelf-life-is-established-bangla/
-  Summary: Long-term, accelerated ও ongoing stability study-এর মাধ্যমে ওষুধের মান, packaging, storage এবং expiry date কীভাবে নির্ধারিত হয় জানুন।
-- Medicine Stability Testing: How Shelf Life Is Set — English (2026-11-22): https://sayedulabrar.site/blog/medicine-stability-testing-how-shelf-life-is-established/
-  Summary: Medicine stability testing explained: long-term, accelerated and ongoing studies, packaging, shelf life and expiry dates, with Bangladesh context.
-- QA vs QC: ওষুধশিল্পে পার্থক্য ও কাজের সহজ ব্যাখ্যা — বাংলা (2026-11-21): https://sayedulabrar.site/blog/quality-assurance-vs-quality-control-bangla/
-  Summary: QA ও QC কী? ওষুধ উৎপাদনে Quality Assurance ও Quality Control-এর কাজ, পার্থক্য, GMP, OOS ও CAPA সহজ বাংলায় বুঝুন।
-- Quality Assurance vs Quality Control: What Is the Difference in Pharmaceuticals? — English (2026-11-21): https://sayedulabrar.site/blog/quality-assurance-vs-quality-control/
-  Summary: QA vs QC in pharmaceuticals: Quality Assurance builds the quality system, Quality Control does the sampling and testing. Roles, OOS investigation, CAPA and GMP.
-- ওষুধের নিঃসরণ: শরীর থেকে ওষুধ কীভাবে বের হয়? — বাংলা (2026-11-21): https://sayedulabrar.site/blog/drug-excretion-how-medicines-leave-the-body-bangla/
-  Summary: কিডনি, প্রস্রাব, পিত্ত ও clearance—শরীর থেকে ওষুধ কীভাবে বের হয় এবং কিডনির কার্যক্ষমতা কেন ডোজকে প্রভাবিত করে, সহজ ভাষায় জানুন।
-- Drug Excretion: How Do Medicines Leave the Body? — English (2026-11-21): https://sayedulabrar.site/blog/drug-excretion-how-medicines-leave-the-body/
-  Summary: Learn how medicines leave the body: kidney filtration, urine, bile, clearance, and why kidney function affects dosing.
-- গুড ম্যানুফ্যাকচারিং প্র্যাকটিস (GMP): ওষুধের গুণগত মান নিশ্চিত করার ভিত্তি — বাংলা (2026-11-19): https://sayedulabrar.site/blog/good-manufacturing-practices-gmp-pharmaceutical-quality-bangla/
-  Summary: ওষুধশিল্পে GMP কী? কর্মী, কারখানা, যন্ত্রপাতি, নথিপত্র, validation, CAPA এবং বাংলাদেশের DGDA-এর প্রাসঙ্গিক নির্দেশনা কীভাবে ওষুধের মান রক্ষা করে জানুন।
-- Good Manufacturing Practices (GMP): The Foundation of Pharmaceutical Quality — English (2026-11-19): https://sayedulabrar.site/blog/good-manufacturing-practices-gmp-pharmaceutical-quality/
-  Summary: What is GMP in pharmaceuticals? How people, premises, documentation, validation, CAPA and Bangladesh DGDA rules work together to protect medicine quality.
-- ওষুধের বিপাক: শরীর কীভাবে ওষুধকে পরিবর্তন করে? — বাংলা (2026-11-18): https://sayedulabrar.site/blog/drug-metabolism-how-the-body-processes-medicines-bangla/
-  Summary: ওষুধের বিপাক কীভাবে হয় জানুন—যকৃত, CYP enzyme, Phase I ও Phase II reaction, first-pass metabolism এবং prodrug activation সহজভাবে ব্যাখ্যা করা হয়েছে।
-- Drug Metabolism: How Does the Body Process Medicines? — English (2026-11-18): https://sayedulabrar.site/blog/drug-metabolism-how-the-body-processes-medicines/
-  Summary: Drug metabolism explained: how the liver and CYP enzymes process medicines, what Phase I and Phase II reactions mean, plus first-pass metabolism and prodrugs.
-- API কী? ওষুধ তৈরিতে Active Pharmaceutical Ingredient — বাংলা (2026-11-17): https://sayedulabrar.site/blog/active-pharmaceutical-ingredient-api-from-raw-material-to-medicine-bangla/
-  Summary: API কী এবং ওষুধ তৈরিতে কেন জরুরি? কাঁচামাল, উৎপাদন, বিশুদ্ধকরণ, quality testing ও GMP ধাপে ধাপে সহজ বাংলায় জানুন।
-- Active Pharmaceutical Ingredient (API): From Raw Material to Medicine — English (2026-11-17): https://sayedulabrar.site/blog/active-pharmaceutical-ingredient-api-from-raw-material-to-medicine/
-  Summary: What is an active pharmaceutical ingredient (API)? Follow how an API is made, purified, tested and used in a finished medicine, with a simple process diagram.
-- ওষুধের বণ্টন: রক্ত থেকে শরীরের বিভিন্ন টিস্যুতে কীভাবে পৌঁছায়? — বাংলা (2026-11-16): https://sayedulabrar.site/blog/drug-distribution-how-medicines-reach-their-target-bangla/
-  Summary: রক্তে প্রবেশের পর ওষুধ কীভাবে বিভিন্ন অঙ্গ ও টিস্যুতে পৌঁছায়, রক্তপ্রবাহ, tissue barrier ও protein binding কীভাবে বণ্টনকে প্রভাবিত করে জানুন।
-- Drug Distribution: How Medicines Travel from Blood to Body Tissues — English (2026-11-16): https://sayedulabrar.site/blog/drug-distribution-how-medicines-reach-their-target/
-  Summary: Follow a medicine after it enters the bloodstream. Learn how blood flow, tissue barriers and protein binding shape drug distribution.
-- অ্যান্টিবায়োটিক কেন প্রেসক্রিপশন অনুযায়ী খেতে হবে? — বাংলা (2026-11-13): https://sayedulabrar.site/blog/why-complete-antibiotic-course-antibiotic-resistance-bangla/
-  Summary: ভালো লাগলেও নিজে থেকে অ্যান্টিবায়োটিক বন্ধ, ডোজ বাদ বা কোর্স বাড়াবেন না। প্রেসক্রিপশন, রেজিস্ট্যান্স, মিসড ডোজ ও বাকি ওষুধ নিয়ে ফার্মাসিস্টের গাইড।
-- Antibiotics: Take Them Exactly as Prescribed — English (2026-11-13): https://sayedulabrar.site/blog/why-complete-antibiotic-course-antibiotic-resistance/
-  Summary: Why you should not stop, skip, extend or share antibiotics without medical advice. A pharmacist explains prescribed duration, resistance and missed doses.
-- ওষুধের শোষণ: ওষুধ কীভাবে রক্তে প্রবেশ করে? — বাংলা (2026-11-13): https://sayedulabrar.site/blog/drug-absorption-how-medicine-enters-bloodstream-bangla/
-  Summary: ওষুধ কীভাবে রক্তে প্রবেশ করে? ছবি ও ডায়াগ্রামসহ সহজ বাংলায় ওষুধের শোষণ: দ্রবীভবন, ভিলাই, প্যাসিভ ডিফিউশন, first-pass metabolism ও bioavailability।
-- Drug Absorption: How Does Medicine Enter the Bloodstream? — English (2026-11-13): https://sayedulabrar.site/blog/drug-absorption-how-medicine-enters-bloodstream/
-  Summary: How does medicine enter the bloodstream? A pharmacist explains drug absorption with diagrams: dissolution, villi, diffusion, first-pass and bioavailability.
-- মানবদেহে ওষুধ কীভাবে কাজ করে? — বাংলা (2026-11-12): https://sayedulabrar.site/blog/how-do-medicines-work-in-the-body-bangla/
-  Summary: মানবদেহে ওষুধ কীভাবে কাজ করে সহজ বাংলায় জানুন। ADME, pharmacokinetics, pharmacodynamics, receptor ও enzyme-এর ভূমিকা বুঝুন।
-- How Do Medicines Work Inside the Human Body? — English (2026-11-12): https://sayedulabrar.site/blog/how-do-medicines-work-in-the-body/
-  Summary: Learn how medicines work in the human body. Explore pharmacology, ADME, drug absorption, distribution, metabolism, excretion, receptors and drug effects.
-- বাংলাদেশের ওষুধ শিল্প কীভাবে কাজ করে? — বাংলা (2026-11-10): https://sayedulabrar.site/blog/what-is-the-pharmaceutical-industry-bangla/
-  Summary: বাংলাদেশের ওষুধ শিল্প কীভাবে কাজ করে জানুন—API, স্থানীয় উৎপাদন, DGDA, GMP, মান নিয়ন্ত্রণ ও ওষুধ বিতরণ নিয়ে সহজ বাংলা গাইড। লিখেছেন ফার্মাসিস্ট সাইয়্যেদুল আবরার।
-- Pharmaceutical Industry in Bangladesh: How It Works — English (2026-11-10): https://sayedulabrar.site/blog/what-is-the-pharmaceutical-industry/
-  Summary: Learn how Bangladesh’s pharma industry works: APIs, medicine manufacturing, DGDA, GMP, quality control and distribution. By pharmacist Sayedul Abrar.
-- গ্যাসের ওষুধ খাওয়ার সঠিক নিয়ম: খাবারের আগে কখন খাবেন, সাধারণ ভুল (রাবেপ্রাজল, ওমিপ্রাজল) — বাংলা (2026-11-09): https://sayedulabrar.site/blog/when-to-take-ppi-before-meals-bangla/
-  Summary: গ্যাস ও অ্যাসিডের ওষুধ কখন খাবেন, কীভাবে গিলবেন, কী এড়াবেন এবং কখন ডাক্তার দেখাবেন। একজন ফার্মাসিস্টের ব্যাখ্যা, সরকারি উৎসসহ।
-- When to Take a PPI: Before Meals and Common Mistakes — English (2026-11-09): https://sayedulabrar.site/blog/when-to-take-ppi-before-meals/
-  Summary: When to take a PPI such as rabeprazole or omeprazole: before meals, with or without food, MUPS and sprinkle forms, common mistakes and missed doses.
-- আয়রনের ঘাটতি ও অ্যানিমিয়া (রক্তস্বল্পতা): পার্থক্য কী? — বাংলা (2026-11-07): https://sayedulabrar.site/blog/iron-deficiency-vs-anemia-bangla/
-  Summary: আয়রনের ঘাটতি আর অ্যানিমিয়া এক জিনিস নয়। সহজ ভাষায় পার্থক্য, লক্ষণ, কারণ, ফেরিটিন ও সিবিসি পরীক্ষা, চিকিৎসা এবং কখন ডাক্তার দেখাবেন জানুন।
-- Iron Deficiency vs Anemia: What Is the Difference? — English (2026-11-07): https://sayedulabrar.site/blog/iron-deficiency-vs-anemia/
-  Summary: Iron deficiency vs anemia: does low iron mean anemia? Key symptoms, causes, ferritin and CBC tests, treatment basics and when to see a doctor.
-- আয়রন ট্যাবলেট কখন খাবেন? খালি পেটে নাকি খাবারের পর? — বাংলা (2026-11-07): https://sayedulabrar.site/blog/how-to-take-iron-tablets-properly-bangla/
-  Summary: আয়রন ট্যাবলেট খালি পেটে নাকি খাবারের পরে খাবেন? চা-কফি, দুধ, ক্যালসিয়াম ও ভিটামিন C-এর ব্যবধান এবং ডোজ বাদ পড়লে কী করবেন জানুন।
-- Iron Tablets: Before or After Food? Best Time — English (2026-11-07): https://sayedulabrar.site/blog/how-to-take-iron-tablets-properly/
-  Summary: Before or after food? Learn the best time to take iron, vitamin C tips, 2-hour gaps from tea, coffee and dairy, interactions and missed doses.
-- গ্লুকোসামিন ও আলঝেইমার: নতুন গবেষণা আসলে কী বলছে (আর কী বলছে না) — বাংলা (2026-11-01): https://sayedulabrar.site/blog/glucosamine-alzheimers-nature-metabolism-study-bangla/
-  Summary: গ্লুকোসামিন কি আলঝেইমার বাড়ায়? ২০২৬ সালের Nature Metabolism গবেষণার ইঁদুর ও রোগীর তথ্য, সীমাবদ্ধতা ও করণীয়—ফার্মাসিস্টের সহজ পর্যালোচনা।
-- Glucosamine and Alzheimer's: What the New Nature Metabolism Study Really Shows (and What It Doesn't) — English (2026-11-01): https://sayedulabrar.site/blog/glucosamine-alzheimers-nature-metabolism-study/
-  Summary: Does glucosamine worsen Alzheimer's? A pharmacist reviews the 2026 Nature Metabolism study: mouse data, patient records, limits and what it means for you.
-- বুক জ্বালাপোড়া, অ্যাসিড রিফ্লাক্স ও GERD: লক্ষণ, কারণ ও কখন ডাক্তার দেখাবেন — বাংলা (2026-10-30): https://sayedulabrar.site/blog/heartburn-vs-acid-reflux-vs-gerd-bangla/
-  Summary: বুক জ্বালাপোড়া, অ্যাসিড রিফ্লাক্স ও GERD-এর পার্থক্য, লক্ষণ, কারণ, ৭টি অভ্যাস, বিপদ-সংকেত এবং কখন ডাক্তার দেখাবেন—ফার্মাসিস্ট সাইয়্যেদুল আবরারের সহজ গাইড।
-- Heartburn vs Acid Reflux vs GERD: Symptoms, Triggers and When to See a Doctor — English (2026-10-30): https://sayedulabrar.site/blog/heartburn-vs-acid-reflux-vs-gerd/
-  Summary: Heartburn vs acid reflux vs GERD: understand the differences, symptoms, common triggers, 7 lifestyle tips, warning signs and when to see a doctor.
-- ওষুধের মেয়াদ শেষ হওয়ার তারিখ (EXP): কীভাবে পড়বেন? — বাংলা (2026-10-28): https://sayedulabrar.site/blog/expiry-date-vs-manufacturing-date-medicine-bangla/
-  Summary: ওষুধের মেয়াদ শেষ হওয়ার তারিখ (EXP) কীভাবে পড়বেন? 07/2027 মানে ৩১ জুলাই পর্যন্ত। MFG, ব্যাচ নম্বর ও নিরাপদ সংরক্ষণ সহজে জানুন।
-- Expiry Date vs Manufacturing Date on Medicine: EXP vs MFG — English (2026-10-28): https://sayedulabrar.site/blog/expiry-date-vs-manufacturing-date-medicine/
-  Summary: What do EXP and MFG mean on medicine? Learn how to read expiry dates, why 07/2027 means 31 July, and how to check batch numbers and storage.
-- জেনেরিক নাম কী? ব্র্যান্ড নামের পার্থক্য — বাংলা (2026-10-27): https://sayedulabrar.site/blog/generic-name-vs-brand-name-bangla/
-  Summary: Generic name meaning in Bengali: জেনেরিক নাম কী, ব্র্যান্ড নাম থেকে পার্থক্য, নাপা-প্যারাসিটামলের উদাহরণ ও ওষুধের লেবেল পড়ার নিয়ম জানুন।
-- Generic Name vs Brand Name of Medicine: Easy Guide (2026) — English (2026-10-27): https://sayedulabrar.site/blog/generic-name-vs-brand-name/
-  Summary: Generic name vs brand name of medicine: find the active ingredient, why Finix and Rabe share one, what MUPS means, and a 4-step label check.
-- ড্রাগ ও মেডিসিনের পার্থক্য কী? — বাংলা (2026-10-27): https://sayedulabrar.site/blog/drug-vs-medicine-bangla/
-  Summary: ড্রাগ ও মেডিসিনের পার্থক্য কী? সহজ উদাহরণ, তুলনামূলক ছক, WHO-এর সংজ্ঞা ও বাংলাদেশের আইনের আলোকে ফার্মাসিস্টের ব্যাখ্যা পড়ুন।
-- Drug vs Medicine: Meaning & Differences — English (2026-10-27): https://sayedulabrar.site/blog/drug-vs-medicine/
-  Summary: Drug vs medicine explained with clear definitions, examples and key differences. Learn how WHO terminology and Bangladesh law use these terms.
-Feed: https://sayedulabrar.site/blog/feed.xml
+## Pharma Blog articles
+
+Newest first; each article is educational, not medical advice.
+- [ফার্মাসিউটিক্যাল রেগুলেটরি ইন্সপেকশন: পরিদর্শকেরা কী কী যাচাই করেন?](https://sayedulabrar.site/blog/pharmaceutical-regulatory-inspections-what-inspectors-check-bangla/): বাংলা, 2026-11-28. ফার্মাসিউটিক্যাল রেগুলেটরি ইন্সপেকশন কীভাবে হয়, DGDA কী যাচাই করতে পারে, ঝুঁকিভিত্তিক পরিদর্শন, নমুনা সংগ্রহ, finding ও CAPA সহজভাবে জানুন।
+- [Pharmaceutical Regulatory Inspections: What Do Inspectors Check?](https://sayedulabrar.site/blog/pharmaceutical-regulatory-inspections-what-inspectors-check/): English, 2026-11-28. Learn how pharmaceutical regulators plan risk-based inspections, examine facilities and supply-chain controls, document findings and review CAPA, with Bangladesh DGDA context.
+- [ফার্মাসিউটিক্যাল শিল্পে OOS ফলাফল: মানের বাইরে পরীক্ষা হলে কীভাবে তদন্ত করা হয়?](https://sayedulabrar.site/blog/out-of-specification-oos-results-pharma-investigation-bangla/): বাংলা, 2026-11-28. ওষুধের QC পরীক্ষায় OOS ফলাফল কী বোঝায়? ল্যাব তদন্ত, উৎপাদন-পর্যালোচনা, retesting, resampling, batch rejection ও CAPA সহজভাবে জানুন।
+- [Out-of-Specification (OOS) Results in Pharma: How Are Failed Tests Investigated?](https://sayedulabrar.site/blog/out-of-specification-oos-results-pharma-investigation/): English, 2026-11-28. What does an OOS result mean in pharmaceutical QC? Learn laboratory and manufacturing investigations, retesting rules, batch decisions and CAPA.
+- [ওষুধ কখন কাজ শুরু করে, কখন থামে? অনসেট, পিক ও ডিউরেশন](https://sayedulabrar.site/blog/onset-peak-duration-of-drug-action-bangla/): বাংলা, 2026-11-28. ওষুধ কাজ করতে কতক্ষণ লাগে? অনসেট, পিক ও ডিউরেশন সহজ ভাষায়, থেরাপিউটিক উইন্ডো, আর ধীরে কাজ করলে কেন ডোজ দ্বিগুণ করবেন না।
+- [Onset, Peak and Duration of Drug Action Explained](https://sayedulabrar.site/blog/onset-peak-duration-of-drug-action/): English, 2026-11-28. Onset of action, peak effect and duration of action in simple words, with the therapeutic window and why you should not double a slow dose.
+- [শরীরে ওষুধ কীভাবে কাজ করে: ৭ পর্বের সিরিজ](https://sayedulabrar.site/blog/how-medicines-work-in-the-body-series-bangla/): বাংলা, 2026-11-28. শরীরে ওষুধ কীভাবে কাজ করে, ৭ পর্বের সহজ গাইড: শোষণ, বণ্টন, বিপাক, নিঃসরণ, হাফ-লাইফ, বায়োঅ্যাভেইলেবিলিটি ও অনসেট।
+- [How Medicines Work in the Body: A 7-Part Series](https://sayedulabrar.site/blog/how-medicines-work-in-the-body-series/): English, 2026-11-28. A simple 7-part guide to how medicines work in the body: absorption, distribution, metabolism, excretion, half-life, bioavailability and onset.
+- [ফার্মাসিউটিক্যাল কোল্ড চেইন: তাপমাত্রা-সংবেদনশীল ওষুধ কীভাবে সংরক্ষণ ও পরিবহন করা হয়?](https://sayedulabrar.site/blog/pharmaceutical-cold-chain-medicines-storage-transport-bangla/): বাংলা, 2026-11-27. কোল্ড চেইন কী, কোন ওষুধে তাপমাত্রা নিয়ন্ত্রণ দরকার, কীভাবে ডেটা লগার ও পরিবহন ব্যবস্থায় তাপমাত্রা দেখা হয় এবং তাপমাত্রা সীমা ছাড়ালে কী করতে হয়—জানুন।
+- [Pharmaceutical Cold Chain: How Are Temperature-Sensitive Medicines Stored and Transported?](https://sayedulabrar.site/blog/pharmaceutical-cold-chain-medicines-storage-transport/): English, 2026-11-27. Understand the pharmaceutical cold chain, product-specific storage ranges, temperature monitoring, transport controls and what to do after a temperature excursion.
+- [প্রেসক্রিপশন বনাম OTC ওষুধ: বাংলাদেশে পার্থক্য কী?](https://sayedulabrar.site/blog/prescription-vs-otc-medicines-bangladesh-bangla/): বাংলা, 2026-11-26. বাংলাদেশে Rx ও OTC ওষুধের পার্থক্য: সরকারি OTC তালিকা, কেন অ্যান্টিবায়োটিকে প্রেসক্রিপশন লাগে, লাল লেবেল, আর ফার্মাসিস্টকে কী জিজ্ঞেস করবেন।
+- [Prescription vs OTC Medicines in Bangladesh: What Is the Difference?](https://sayedulabrar.site/blog/prescription-vs-otc-medicines-bangladesh/): English, 2026-11-26. Rx vs OTC medicines in Bangladesh: what each means, the official OTC list, why antibiotics need a prescription, the red label, and what to ask a pharmacist.
+- [ফার্মাকোজেনেটিক্স: আপনার জিন কি ওষুধের প্রতিক্রিয়া বদলে দিতে পারে?](https://sayedulabrar.site/blog/pharmacogenetics-how-genes-affect-medicine-response-bangla/): বাংলা, 2026-11-26. জিনের ভিন্নতা কীভাবে ওষুধের বিপাক, কার্যকারিতা ও পার্শ্বপ্রতিক্রিয়ার ঝুঁকিতে প্রভাব ফেলতে পারে—উদাহরণ ও পরীক্ষার সীমাবদ্ধতাসহ জানুন।
+- [Pharmacogenetics: Can Your Genes Change How Medicines Work?](https://sayedulabrar.site/blog/pharmacogenetics-how-genes-affect-medicine-response/): English, 2026-11-26. Learn how inherited gene variants can affect medicine metabolism, benefit and side-effect risk, with clear examples and the limits of pharmacogenetic testing.
+- [বাংলাদেশে ফার্মাসিউটিক্যাল মার্কেটিং কৌশল](https://sayedulabrar.site/blog/pharmaceutical-marketing-strategy-bangladesh-bangla/): বাংলা, 2026-11-25. বাংলাদেশে ফার্মাসিউটিক্যাল মার্কেটিং কৌশল কীভাবে তৈরি করবেন? বাজার বিশ্লেষণ, segmentation, positioning, বৈজ্ঞানিক যোগাযোগ, channel planning ও KPI জানুন।
+- [Pharmaceutical Marketing Strategy in Bangladesh](https://sayedulabrar.site/blog/pharmaceutical-marketing-strategy-bangladesh/): English, 2026-11-25. Build an ethical pharmaceutical marketing strategy in Bangladesh: market insight, segmentation, positioning, scientific communication and KPIs.
+- [ক্লিনিক্যাল ট্রায়ালের ধাপগুলো: মানুষের ওপর প্রথম পরীক্ষা থেকে বাজার-পরবর্তী পর্যবেক্ষণ](https://sayedulabrar.site/blog/clinical-trial-phases-explained-bangla/): বাংলা, 2026-11-25. ক্লিনিক্যাল ট্রায়ালের Phase I, II, III ও IV কীভাবে কাজ করে? নিরাপত্তা, কার্যকারিতা, অংশগ্রহণকারীর অধিকার এবং বাংলাদেশের DGDA-এর GCP নির্দেশনা সহজ ভাষায় জানুন।
+- [Clinical Trial Phases Explained: From First-in-Human to Post-Marketing](https://sayedulabrar.site/blog/clinical-trial-phases-explained/): English, 2026-11-25. A pharmacist explains Phase 1, 2, 3 and 4 clinical trials, optional Phase 0 studies, participant safeguards and Bangladesh’s DGDA Good Clinical Practice guidance.
+- [বায়োঅ্যাভেইলেবিলিটি: ওষুধের কতটুকু রক্তে পৌঁছায়?](https://sayedulabrar.site/blog/bioavailability-explained-bangla/): বাংলা, 2026-11-25. বায়োঅ্যাভেইলেবিলিটি সহজ ভাষায়: কেন IV-তে ১০০%, মুখে খেলে কী কারণে কমে, AUC দিয়ে কীভাবে মাপা হয়, আর জেনেরিক ওষুধে বায়োইকুইভ্যালেন্স কী।
+- [Bioavailability: How Much Medicine Reaches the Bloodstream?](https://sayedulabrar.site/blog/bioavailability-explained/): English, 2026-11-25. Bioavailability meaning in simple words: why IV is 100%, what lowers it by mouth, how AUC measures it, and what bioequivalence means for generics.
+- [বাংলাদেশের PPI বাজার: বছরে ৪,৯৮৩ কোটি টাকার বিক্রি](https://sayedulabrar.site/blog/ppi-acid-medicine-market-bangladesh-bangla/): বাংলা, 2026-11-24. IQVIA তথ্য অনুযায়ী, সেপ্টেম্বর ২০২৬ পর্যন্ত ১২ মাসে বাংলাদেশে PPI বিক্রি প্রায় ৪,৯৮৩ কোটি টাকা—ওষুধের ট্র্যাক করা বাজারের প্রায় ১২%।
+- [Bangladesh’s PPI Market: Tk 4,983 Crore in Annual Sales](https://sayedulabrar.site/blog/ppi-acid-medicine-market-bangladesh/): English, 2026-11-24. IQVIA data show about Tk 4,983 crore in Bangladesh PPI sales in the 12 months to September 2026—around 12% of the tracked medicine market.
+- [বাংলাদেশে ফার্মাসিউটিক্যাল প্রোডাক্ট ম্যানেজমেন্ট](https://sayedulabrar.site/blog/pharmaceutical-product-management-bangladesh-bangla/): বাংলা, 2026-11-24. বাংলাদেশের ওষুধ শিল্পে প্রোডাক্ট ম্যানেজমেন্ট কীভাবে কাজ করে? বাজার বিশ্লেষণ, ব্র্যান্ড কৌশল, পণ্য জীবনচক্র, নৈতিক HCP engagement ও KPI সহজভাবে জানুন।
+- [Pharmaceutical Product Management in Bangladesh](https://sayedulabrar.site/blog/pharmaceutical-product-management-bangladesh/): English, 2026-11-24. Understand pharmaceutical product management in Bangladesh: market analysis, brand strategy, product lifecycle, ethical HCP engagement and KPIs.
+- [বায়োসিমিলার কী? মূল বায়োলজিক ওষুধের সঙ্গে এর পার্থক্য কতটুকু?](https://sayedulabrar.site/blog/biosimilars-explained-bangla/): বাংলা, 2026-11-24. বায়োসিমিলার কী, কীভাবে তৈরি ও পরীক্ষা করা হয়, জেনেরিক ওষুধের সঙ্গে পার্থক্য এবং বাংলাদেশে DGDA-এর নির্দেশনা সহজ ভাষায় জানুন।
+- [Biosimilars Explained: How Similar Are They to Original Biologic Medicines?](https://sayedulabrar.site/blog/biosimilars-explained/): English, 2026-11-24. Learn what biosimilars are, how they are made and tested, how they differ from generics, and what Bangladesh’s DGDA guidance means.
+- [ফার্মাকোভিজিল্যান্স: ওষুধের নিরাপত্তা কীভাবে পর্যবেক্ষণ করা হয়?](https://sayedulabrar.site/blog/pharmacovigilance-medicine-safety-monitoring-bangla/): বাংলা, 2026-11-23. ফার্মাকোভিজিল্যান্স, ADR রিপোর্টিং, safety signal এবং বাংলাদেশের DGDA জাতীয় ব্যবস্থায় ওষুধের নিরাপত্তা পর্যবেক্ষণ সহজ ভাষায় জানুন।
+- [Pharmacovigilance: How Are Medicines Monitored for Safety?](https://sayedulabrar.site/blog/pharmacovigilance-medicine-safety-monitoring/): English, 2026-11-23. Understand pharmacovigilance, adverse event reporting, safety signals and Bangladesh’s DGDA-led medicine safety system in clear, evidence-informed language.
+- [ওষুধের হাফ-লাইফ: একটি ওষুধ শরীরে কতক্ষণ থাকে?](https://sayedulabrar.site/blog/drug-half-life-explained-bangla/): বাংলা, 2026-11-23. ওষুধের হাফ-লাইফ সহজ ভাষায়: এর অর্থ, ৪–৫ হাফ-লাইফের নিয়ম, স্টেডি স্টেট ও কী এটি বদলায়। ফার্মাসিস্টের সহজ গাইড।
+- [Drug Half-Life: How Long Does a Medicine Stay in the Body?](https://sayedulabrar.site/blog/drug-half-life-explained/): English, 2026-11-23. Drug half-life explained: what it means, the 4–5 half-lives rule, steady state and what changes it. A simple pharmacist's guide.
+- [ওষুধের স্থায়িত্ব পরীক্ষা: মেয়াদ কীভাবে নির্ধারিত হয়](https://sayedulabrar.site/blog/medicine-stability-testing-how-shelf-life-is-established-bangla/): বাংলা, 2026-11-22. Long-term, accelerated ও ongoing stability study-এর মাধ্যমে ওষুধের মান, packaging, storage এবং expiry date কীভাবে নির্ধারিত হয় জানুন।
+- [Medicine Stability Testing: How Shelf Life Is Set](https://sayedulabrar.site/blog/medicine-stability-testing-how-shelf-life-is-established/): English, 2026-11-22. Medicine stability testing explained: long-term, accelerated and ongoing studies, packaging, shelf life and expiry dates, with Bangladesh context.
+- [QA vs QC: ওষুধশিল্পে পার্থক্য ও কাজের সহজ ব্যাখ্যা](https://sayedulabrar.site/blog/quality-assurance-vs-quality-control-bangla/): বাংলা, 2026-11-21. QA ও QC কী? ওষুধ উৎপাদনে Quality Assurance ও Quality Control-এর কাজ, পার্থক্য, GMP, OOS ও CAPA সহজ বাংলায় বুঝুন।
+- [Quality Assurance vs Quality Control: What Is the Difference in Pharmaceuticals?](https://sayedulabrar.site/blog/quality-assurance-vs-quality-control/): English, 2026-11-21. QA vs QC in pharmaceuticals: Quality Assurance builds the quality system, Quality Control does the sampling and testing. Roles, OOS investigation, CAPA and GMP.
+- [ওষুধের নিঃসরণ: শরীর থেকে ওষুধ কীভাবে বের হয়?](https://sayedulabrar.site/blog/drug-excretion-how-medicines-leave-the-body-bangla/): বাংলা, 2026-11-21. কিডনি, প্রস্রাব, পিত্ত ও clearance—শরীর থেকে ওষুধ কীভাবে বের হয় এবং কিডনির কার্যক্ষমতা কেন ডোজকে প্রভাবিত করে, সহজ ভাষায় জানুন।
+- [Drug Excretion: How Do Medicines Leave the Body?](https://sayedulabrar.site/blog/drug-excretion-how-medicines-leave-the-body/): English, 2026-11-21. Learn how medicines leave the body: kidney filtration, urine, bile, clearance, and why kidney function affects dosing.
+- [গুড ম্যানুফ্যাকচারিং প্র্যাকটিস (GMP): ওষুধের গুণগত মান নিশ্চিত করার ভিত্তি](https://sayedulabrar.site/blog/good-manufacturing-practices-gmp-pharmaceutical-quality-bangla/): বাংলা, 2026-11-19. ওষুধশিল্পে GMP কী? কর্মী, কারখানা, যন্ত্রপাতি, নথিপত্র, validation, CAPA এবং বাংলাদেশের DGDA-এর প্রাসঙ্গিক নির্দেশনা কীভাবে ওষুধের মান রক্ষা করে জানুন।
+- [Good Manufacturing Practices (GMP): The Foundation of Pharmaceutical Quality](https://sayedulabrar.site/blog/good-manufacturing-practices-gmp-pharmaceutical-quality/): English, 2026-11-19. What is GMP in pharmaceuticals? How people, premises, documentation, validation, CAPA and Bangladesh DGDA rules work together to protect medicine quality.
+- [ওষুধের বিপাক: শরীর কীভাবে ওষুধকে পরিবর্তন করে?](https://sayedulabrar.site/blog/drug-metabolism-how-the-body-processes-medicines-bangla/): বাংলা, 2026-11-18. ওষুধের বিপাক কীভাবে হয় জানুন—যকৃত, CYP enzyme, Phase I ও Phase II reaction, first-pass metabolism এবং prodrug activation সহজভাবে ব্যাখ্যা করা হয়েছে।
+- [Drug Metabolism: How Does the Body Process Medicines?](https://sayedulabrar.site/blog/drug-metabolism-how-the-body-processes-medicines/): English, 2026-11-18. Drug metabolism explained: how the liver and CYP enzymes process medicines, what Phase I and Phase II reactions mean, plus first-pass metabolism and prodrugs.
+- [API কী? ওষুধ তৈরিতে Active Pharmaceutical Ingredient](https://sayedulabrar.site/blog/active-pharmaceutical-ingredient-api-from-raw-material-to-medicine-bangla/): বাংলা, 2026-11-17. API কী এবং ওষুধ তৈরিতে কেন জরুরি? কাঁচামাল, উৎপাদন, বিশুদ্ধকরণ, quality testing ও GMP ধাপে ধাপে সহজ বাংলায় জানুন।
+- [Active Pharmaceutical Ingredient (API): From Raw Material to Medicine](https://sayedulabrar.site/blog/active-pharmaceutical-ingredient-api-from-raw-material-to-medicine/): English, 2026-11-17. What is an active pharmaceutical ingredient (API)? Follow how an API is made, purified, tested and used in a finished medicine, with a simple process diagram.
+- [ওষুধের বণ্টন: রক্ত থেকে শরীরের বিভিন্ন টিস্যুতে কীভাবে পৌঁছায়?](https://sayedulabrar.site/blog/drug-distribution-how-medicines-reach-their-target-bangla/): বাংলা, 2026-11-16. রক্তে প্রবেশের পর ওষুধ কীভাবে বিভিন্ন অঙ্গ ও টিস্যুতে পৌঁছায়, রক্তপ্রবাহ, tissue barrier ও protein binding কীভাবে বণ্টনকে প্রভাবিত করে জানুন।
+- [Drug Distribution: How Medicines Travel from Blood to Body Tissues](https://sayedulabrar.site/blog/drug-distribution-how-medicines-reach-their-target/): English, 2026-11-16. Follow a medicine after it enters the bloodstream. Learn how blood flow, tissue barriers and protein binding shape drug distribution.
+- [অ্যান্টিবায়োটিক কেন প্রেসক্রিপশন অনুযায়ী খেতে হবে?](https://sayedulabrar.site/blog/why-complete-antibiotic-course-antibiotic-resistance-bangla/): বাংলা, 2026-11-13. ভালো লাগলেও নিজে থেকে অ্যান্টিবায়োটিক বন্ধ, ডোজ বাদ বা কোর্স বাড়াবেন না। প্রেসক্রিপশন, রেজিস্ট্যান্স, মিসড ডোজ ও বাকি ওষুধ নিয়ে ফার্মাসিস্টের গাইড।
+- [Antibiotics: Take Them Exactly as Prescribed](https://sayedulabrar.site/blog/why-complete-antibiotic-course-antibiotic-resistance/): English, 2026-11-13. Why you should not stop, skip, extend or share antibiotics without medical advice. A pharmacist explains prescribed duration, resistance and missed doses.
+- [ওষুধের শোষণ: ওষুধ কীভাবে রক্তে প্রবেশ করে?](https://sayedulabrar.site/blog/drug-absorption-how-medicine-enters-bloodstream-bangla/): বাংলা, 2026-11-13. ওষুধ কীভাবে রক্তে প্রবেশ করে? ছবি ও ডায়াগ্রামসহ সহজ বাংলায় ওষুধের শোষণ: দ্রবীভবন, ভিলাই, প্যাসিভ ডিফিউশন, first-pass metabolism ও bioavailability।
+- [Drug Absorption: How Does Medicine Enter the Bloodstream?](https://sayedulabrar.site/blog/drug-absorption-how-medicine-enters-bloodstream/): English, 2026-11-13. How does medicine enter the bloodstream? A pharmacist explains drug absorption with diagrams: dissolution, villi, diffusion, first-pass and bioavailability.
+- [মানবদেহে ওষুধ কীভাবে কাজ করে?](https://sayedulabrar.site/blog/how-do-medicines-work-in-the-body-bangla/): বাংলা, 2026-11-12. মানবদেহে ওষুধ কীভাবে কাজ করে সহজ বাংলায় জানুন। ADME, pharmacokinetics, pharmacodynamics, receptor ও enzyme-এর ভূমিকা বুঝুন।
+- [How Do Medicines Work Inside the Human Body?](https://sayedulabrar.site/blog/how-do-medicines-work-in-the-body/): English, 2026-11-12. Learn how medicines work in the human body. Explore pharmacology, ADME, drug absorption, distribution, metabolism, excretion, receptors and drug effects.
+- [বাংলাদেশের ওষুধ শিল্প কীভাবে কাজ করে?](https://sayedulabrar.site/blog/what-is-the-pharmaceutical-industry-bangla/): বাংলা, 2026-11-10. বাংলাদেশের ওষুধ শিল্প কীভাবে কাজ করে জানুন—API, স্থানীয় উৎপাদন, DGDA, GMP, মান নিয়ন্ত্রণ ও ওষুধ বিতরণ নিয়ে সহজ বাংলা গাইড। লিখেছেন ফার্মাসিস্ট সাইয়্যেদুল আবরার।
+- [Pharmaceutical Industry in Bangladesh: How It Works](https://sayedulabrar.site/blog/what-is-the-pharmaceutical-industry/): English, 2026-11-10. Learn how Bangladesh’s pharma industry works: APIs, medicine manufacturing, DGDA, GMP, quality control and distribution. By pharmacist Sayedul Abrar.
+- [গ্যাসের ওষুধ খাওয়ার সঠিক নিয়ম: খাবারের আগে কখন খাবেন, সাধারণ ভুল (রাবেপ্রাজল, ওমিপ্রাজল)](https://sayedulabrar.site/blog/when-to-take-ppi-before-meals-bangla/): বাংলা, 2026-11-09. গ্যাস ও অ্যাসিডের ওষুধ কখন খাবেন, কীভাবে গিলবেন, কী এড়াবেন এবং কখন ডাক্তার দেখাবেন। একজন ফার্মাসিস্টের ব্যাখ্যা, সরকারি উৎসসহ।
+- [When to Take a PPI: Before Meals and Common Mistakes](https://sayedulabrar.site/blog/when-to-take-ppi-before-meals/): English, 2026-11-09. When to take a PPI such as rabeprazole or omeprazole: before meals, with or without food, MUPS and sprinkle forms, common mistakes and missed doses.
+- [আয়রনের ঘাটতি ও অ্যানিমিয়া (রক্তস্বল্পতা): পার্থক্য কী?](https://sayedulabrar.site/blog/iron-deficiency-vs-anemia-bangla/): বাংলা, 2026-11-07. আয়রনের ঘাটতি আর অ্যানিমিয়া এক জিনিস নয়। সহজ ভাষায় পার্থক্য, লক্ষণ, কারণ, ফেরিটিন ও সিবিসি পরীক্ষা, চিকিৎসা এবং কখন ডাক্তার দেখাবেন জানুন।
+- [Iron Deficiency vs Anemia: What Is the Difference?](https://sayedulabrar.site/blog/iron-deficiency-vs-anemia/): English, 2026-11-07. Iron deficiency vs anemia: does low iron mean anemia? Key symptoms, causes, ferritin and CBC tests, treatment basics and when to see a doctor.
+- [আয়রন ট্যাবলেট কখন খাবেন? খালি পেটে নাকি খাবারের পর?](https://sayedulabrar.site/blog/how-to-take-iron-tablets-properly-bangla/): বাংলা, 2026-11-07. আয়রন ট্যাবলেট খালি পেটে নাকি খাবারের পরে খাবেন? চা-কফি, দুধ, ক্যালসিয়াম ও ভিটামিন C-এর ব্যবধান এবং ডোজ বাদ পড়লে কী করবেন জানুন।
+- [Iron Tablets: Before or After Food? Best Time](https://sayedulabrar.site/blog/how-to-take-iron-tablets-properly/): English, 2026-11-07. Before or after food? Learn the best time to take iron, vitamin C tips, 2-hour gaps from tea, coffee and dairy, interactions and missed doses.
+- [গ্লুকোসামিন ও আলঝেইমার: নতুন গবেষণা আসলে কী বলছে (আর কী বলছে না)](https://sayedulabrar.site/blog/glucosamine-alzheimers-nature-metabolism-study-bangla/): বাংলা, 2026-11-01. গ্লুকোসামিন কি আলঝেইমার বাড়ায়? ২০২৬ সালের Nature Metabolism গবেষণার ইঁদুর ও রোগীর তথ্য, সীমাবদ্ধতা ও করণীয়—ফার্মাসিস্টের সহজ পর্যালোচনা।
+- [Glucosamine and Alzheimer's: What the New Nature Metabolism Study Really Shows (and What It Doesn't)](https://sayedulabrar.site/blog/glucosamine-alzheimers-nature-metabolism-study/): English, 2026-11-01. Does glucosamine worsen Alzheimer's? A pharmacist reviews the 2026 Nature Metabolism study: mouse data, patient records, limits and what it means for you.
+- [বুক জ্বালাপোড়া, অ্যাসিড রিফ্লাক্স ও GERD: লক্ষণ, কারণ ও কখন ডাক্তার দেখাবেন](https://sayedulabrar.site/blog/heartburn-vs-acid-reflux-vs-gerd-bangla/): বাংলা, 2026-10-30. বুক জ্বালাপোড়া, অ্যাসিড রিফ্লাক্স ও GERD-এর পার্থক্য, লক্ষণ, কারণ, ৭টি অভ্যাস, বিপদ-সংকেত এবং কখন ডাক্তার দেখাবেন—ফার্মাসিস্ট সাইয়্যেদুল আবরারের সহজ গাইড।
+- [Heartburn vs Acid Reflux vs GERD: Symptoms, Triggers and When to See a Doctor](https://sayedulabrar.site/blog/heartburn-vs-acid-reflux-vs-gerd/): English, 2026-10-30. Heartburn vs acid reflux vs GERD: understand the differences, symptoms, common triggers, 7 lifestyle tips, warning signs and when to see a doctor.
+- [ওষুধের মেয়াদ শেষ হওয়ার তারিখ (EXP): কীভাবে পড়বেন?](https://sayedulabrar.site/blog/expiry-date-vs-manufacturing-date-medicine-bangla/): বাংলা, 2026-10-28. ওষুধের মেয়াদ শেষ হওয়ার তারিখ (EXP) কীভাবে পড়বেন? 07/2027 মানে ৩১ জুলাই পর্যন্ত। MFG, ব্যাচ নম্বর ও নিরাপদ সংরক্ষণ সহজে জানুন।
+- [Expiry Date vs Manufacturing Date on Medicine: EXP vs MFG](https://sayedulabrar.site/blog/expiry-date-vs-manufacturing-date-medicine/): English, 2026-10-28. What do EXP and MFG mean on medicine? Learn how to read expiry dates, why 07/2027 means 31 July, and how to check batch numbers and storage.
+- [জেনেরিক নাম কী? ব্র্যান্ড নামের পার্থক্য](https://sayedulabrar.site/blog/generic-name-vs-brand-name-bangla/): বাংলা, 2026-10-27. Generic name meaning in Bengali: জেনেরিক নাম কী, ব্র্যান্ড নাম থেকে পার্থক্য, নাপা-প্যারাসিটামলের উদাহরণ ও ওষুধের লেবেল পড়ার নিয়ম জানুন।
+- [Generic Name vs Brand Name of Medicine: Easy Guide (2026)](https://sayedulabrar.site/blog/generic-name-vs-brand-name/): English, 2026-10-27. Generic name vs brand name of medicine: find the active ingredient, why Finix and Rabe share one, what MUPS means, and a 4-step label check.
+- [ড্রাগ ও মেডিসিনের পার্থক্য কী?](https://sayedulabrar.site/blog/drug-vs-medicine-bangla/): বাংলা, 2026-10-27. ড্রাগ ও মেডিসিনের পার্থক্য কী? সহজ উদাহরণ, তুলনামূলক ছক, WHO-এর সংজ্ঞা ও বাংলাদেশের আইনের আলোকে ফার্মাসিস্টের ব্যাখ্যা পড়ুন।
+- [Drug vs Medicine: Meaning & Differences](https://sayedulabrar.site/blog/drug-vs-medicine/): English, 2026-10-27. Drug vs medicine explained with clear definitions, examples and key differences. Learn how WHO terminology and Bangladesh law use these terms.
+
+## Optional
+
+- [Pharma Blog RSS feed](https://sayedulabrar.site/blog/feed.xml): feed of all articles
 <!--articles:end-->
