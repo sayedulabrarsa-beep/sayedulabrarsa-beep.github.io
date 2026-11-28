@@ -171,6 +171,358 @@ Get in touch ↗Find me on LinkedIn
 
 ## Pharma Blog articles (newest first)
 
+### ফার্মাসিউটিক্যাল শিল্পে OOS ফলাফল: মানের বাইরে পরীক্ষা হলে কীভাবে তদন্ত করা হয়?
+URL: https://sayedulabrar.site/blog/out-of-specification-oos-results-pharma-investigation-bangla/ · Language: Bangla · Published: 2026-11-28T09:59:00+06:00 · Author: Sayedul Abrar, pharmacist
+Summary: ওষুধের QC পরীক্ষায় OOS ফলাফল কী বোঝায়? ল্যাব তদন্ত, উৎপাদন-পর্যালোচনা, retesting, resampling, batch rejection ও CAPA সহজভাবে জানুন।
+
+লেখক: Sayedul Abrar, ফার্মাসিস্ট · প্রকাশিত ২৮ নভেম্বর ২০২৬
+
+ফার্মাসিউটিক্যাল Quality Control (QC) পরীক্ষার মূল প্রশ্ন হলো—কাঁচামাল, in-process material বা finished medicine কি অনুমোদিত specification পূরণ করছে? কোনো পরীক্ষার ফল নির্ধারিত acceptance limit-এর বাইরে গেলে সেটিকে Out-of-Specification (OOS) result বলা হয়। এটি গুরুত্বপূর্ণ quality signal, কিন্তু শুধু সংখ্যাটি দেখে সমস্যার কারণ জানা যায় না।
+
+ধরা যাক, একটি ট্যাবলেটের assay specification কাল্পনিকভাবে 95.0–105.0% এবং পরীক্ষার ফল 93.0%। ফলটি নির্ধারিত সীমার বাইরে। এখন দেখতে হবে সমস্যা analytical method, sampling, কাঁচামাল, যন্ত্র, calculation নাকি manufacturing process-এ। শুধু pass ফল পাওয়া পর্যন্ত পরীক্ষা চালিয়ে যাওয়া কোনো গ্রহণযোগ্য সমাধান নয়।
+
+আপনি যদি Quality Assurance ও Quality Control-এর পার্থক্য নিয়ে আগের লেখাটি পড়ে থাকেন, তাহলে এই article সেই ব্যবস্থার একটি নির্দিষ্ট বিষয় আরও গভীরভাবে ব্যাখ্যা করবে—OOS ফল কীভাবে তদন্ত করা হয় এবং ব্যাচের সিদ্ধান্ত কীভাবে নেওয়া হয়।
+
+সহজ উত্তর: OOS হলো এমন পরীক্ষার ফল, যা অনুমোদিত acceptance criterion-এর বাইরে। প্রথম ফলাফলকে সাধারণত suspected OOS হিসেবে দেখা হয়। পূর্ণাঙ্গ ও নথিভুক্ত তদন্তের পর সেটি confirmed OOS হতে পারে, অথবা নির্দিষ্ট laboratory error-এর কারণে ফলটি invalid প্রমাণিত হতে পারে।
+
+### ১. ফার্মাসিউটিক্যাল পরীক্ষায় OOS বলতে কী বোঝায়?
+
+Specification হলো কোনো উপাদান বা ওষুধের গুণগত মান যাচাইয়ের নির্ধারিত সীমা। এটি approved product application, Drug Master File (DMF), official pharmacopoeia অথবা প্রস্তুতকারকের অনুমোদিত specification থেকে আসতে পারে। API, excipients, অন্যান্য components, in-process materials, finished medicine এবং stability sample-এর পরীক্ষাতেও OOS ফল হতে পারে।
+
+WHO-এর ২০২৪ সালের guidance-এ suspected OOS result বলতে এমন প্রথম ফল বোঝায়, যা এখনো তদন্ত করে নিশ্চিত করা হয়নি। আর confirmed OOS result হলো পূর্ণাঙ্গ তদন্তের পরও specification-এর বাইরে থাকা ফল। তাই প্রথম ফল উপেক্ষা করা যাবে না, আবার প্রমাণ যাচাইয়ের আগে একে নিশ্চিত product failure বলাও ঠিক নয়।
+
+উদাহরণ হিসেবে assay নির্ধারিত নিম্নসীমার নিচে আসা, dissolution test-এর acceptance criteria পূরণ না করা, impurity নির্ধারিত limit ছাড়িয়ে যাওয়া অথবা content uniformity-এর ফল specification-এর বাইরে থাকা উল্লেখ করা যায়। এগুলো কেবল উদাহরণ; প্রকৃত specification পণ্য ও পরীক্ষাভেদে আলাদা।
+
+### ২. OOS, OOT ও Deviation-এর পার্থক্য কী?
+
+|
+| শব্দ | অর্থ | কেন গুরুত্বপূর্ণ
+
+| OOS
+Out of specification | পরীক্ষার ফল অনুমোদিত acceptance criterion-এর বাইরে। | নথিভুক্ত তদন্ত ও quality decision প্রয়োজন।
+
+| OOT
+Out of trend | ফল specification-এর মধ্যে থাকতে পারে, কিন্তু আগের ফলাফল বা প্রত্যাশিত trend-এর তুলনায় অস্বাভাবিক। | সীমা অতিক্রমের আগেই process drift শনাক্ত করতে পারে।
+
+| Deviation | অনুমোদিত procedure, instruction বা process থেকে বিচ্যুতি। | OOS-এর কারণ হতে পারে, তবে deviation ও OOS একই বিষয় নয়।
+
+OOT ফল specification-এর মধ্যে থাকলেও গুরুত্বহীন নয়। কোনো ফল ধীরে ধীরে limit-এর দিকে এগোলে method, raw material বা manufacturing process-এ পরিবর্তনের আগাম সংকেত হতে পারে। প্রতিষ্ঠানের অনুমোদিত procedure-এ alert limit ও trend review-এর নিয়ম নির্ধারিত থাকা উচিত।
+
+### ৩. OOS ফল কেন হতে পারে?
+
+OOS-এর কারণ শুধু laboratory-তে সীমাবদ্ধ নয়। তদন্তকারীদের প্রমাণের ভিত্তিতে কারণ খুঁজতে হবে; analyst বা batch-কে আগে থেকেই দোষী ধরে নেওয়া ঠিক নয়।
+
+- Laboratory বা measurement-এর কারণ: sample preparation বা dilution-এর ভুল, calculation-এর ভুল, ভুল standard বা reagent, instrument malfunction, system suitability ব্যর্থ হওয়া, calibration সমস্যা, method performance বা data handling-এর ভুল।
+
+- Sampling ও material-এর কারণ: representative নয় এমন sample, sample mix-up, যথাযথভাবে মিশ্রণ না হওয়া, sample সংরক্ষণের সমস্যা, raw material-এর variability অথবা packaging/component-এর ত্রুটি।
+
+- Manufacturing বা process-এর কারণ: blending, granulation, compression, coating, filling বা অন্য critical operation-এ variation; equipment বা maintenance সমস্যা; পরিবেশগত অবস্থা; অথবা process parameter নিয়ন্ত্রণে ব্যর্থতা।
+
+একটি ফলাফলের একাধিক সম্ভাব্য ব্যাখ্যা থাকতে পারে। ভালো তদন্তে মূল data, batch record এবং বৈজ্ঞানিক তথ্যের সঙ্গে প্রতিটি সম্ভাবনা যাচাই করা হয়।
+
+### ৪. OOS তদন্ত কীভাবে করা হয়?
+
+FDA-এর মে ২০২২ সালের OOS guidance-এ chemistry-based pharmaceutical testing-এর জন্য দুই ধাপের একটি কার্যকর কাঠামো দেখানো হয়েছে। WHO-এর ২০২৪ সালের pharmaceutical QC laboratory guidance-এও suspected OOS ফল যাচাইয়ের ধাপ রয়েছে। “Phase I” ও “Phase II” হলো তদন্ত বোঝানোর একটি কাঠামো; এগুলোকে বাংলাদেশের আলাদা আইনগত procedure হিসেবে ধরে নেওয়া যাবে না। পরিধি সম্পর্কে সতর্কতা: FDA guidance ওষুধের chemistry-based laboratory testing-এর জন্য; এটি biological assay বা microbiology-এর সর্বজনীন procedure নয়। WHO TRS 1052 Annex 4-ও biological-product ও microbiology laboratory-কে এই নথির scope-এর বাইরে রেখেছে এবং এদের জন্য আলাদা guidance-এর কথা বলেছে।
+
+#### ধাপ ১: ব্যাচের নিরাপত্তা নিশ্চিত ও প্রমাণ সংরক্ষণ
+
+প্রতিষ্ঠানের অনুমোদিত পদ্ধতি অনুযায়ী দ্রুত ফল রিপোর্ট করতে হবে। ফলাফলের অবস্থান পরিষ্কার না হওয়া পর্যন্ত সংশ্লিষ্ট batch hold-এ রাখতে হবে। স্থিতিশীল হলে মূল sample preparation, raw data, chromatogram বা spectra, worksheet, calculation, instrument record, audit trail, standard, reagent এবং প্রাসঙ্গিক log সংরক্ষণ করতে হবে। কোনো data মুছে ফেলা, overwrite করা বা বেছে বেছে ভালো ফল নথিভুক্ত করা যাবে না।
+
+#### ধাপ ২: Phase I — Laboratory investigation
+
+অতিরিক্ত পরীক্ষা করার আগে analyst ও laboratory supervisor মূল পরীক্ষাটি পর্যালোচনা করেন। সঠিক method ও procedure অনুসরণ করা হয়েছে কি না, calculation ঠিক কি না, instrument qualified ও calibrated ছিল কি না, system suitability pass করেছে কি না, সঠিক standard, reagent, solvent ও glassware ব্যবহার হয়েছে কি না এবং sample preparation ঠিক ছিল কি না—এসব যাচাই করা হয়। শুধু final result নয়, মূল raw data ও electronic audit trail-ও দেখতে হয়।
+
+নির্দিষ্ট ও বৈজ্ঞানিকভাবে সমর্থিত laboratory error পাওয়া গেলে তা নথিভুক্ত ও review করতে হবে। অনুমোদিত procedure অনুযায়ী তখনই সংশ্লিষ্ট ফল invalid করা এবং প্রয়োজন হলে নিয়ন্ত্রিত retest করা যেতে পারে। শুধু “ল্যাবে ভুল হয়েছে মনে হয়”—এমন ধারণা যথেষ্ট নয়। WHO-এর ২০২৪ guidance অনুযায়ী তদন্তে সিদ্ধান্তে পৌঁছানো না গেলে অন্য প্রশিক্ষিত analyst দিয়ে confirmatory determination করতে হয়। একই ধরনের ফল confirmed OOS-কে সমর্থন করে; ভিন্ন ফল হলে সেই অসামঞ্জস্যও তদন্ত করতে হয়।
+
+#### ধাপ ৩: Phase II — Laboratory cause না পেলে পূর্ণাঙ্গ তদন্ত
+
+প্রাথমিক পর্যালোচনায় স্পষ্ট laboratory cause না পাওয়া গেলে quality unit বিস্তৃত তদন্ত পরিচালনা করে। এতে QC, QA, manufacturing, engineering, maintenance, warehouse, sampling ও supplier quality team যুক্ত হতে পারে। Batch record, process parameter, equipment history, deviation, raw material ও component data, পরিবেশগত record, আগের batch এবং সংশ্লিষ্ট অন্য পণ্য বা manufacturing site পর্যালোচনা করা হয়।
+
+তদন্তে প্রকৃত বা সম্ভাব্য root cause চিহ্নিত করতে হবে, অন্য batch-এ প্রভাব আছে কি না দেখতে হবে এবং corrective and preventive action (CAPA) নির্ধারণ করতে হবে। পণ্য বাজারে চলে গেলে distributed stock-এর প্রভাব এবং প্রযোজ্য স্থানীয় নিয়ম অনুযায়ী পরবর্তী ব্যবস্থা মূল্যায়ন করতে হবে।
+
+### ৫. Retesting ও Resampling কখন করা যায়?
+
+দুটি শব্দের অর্থ আলাদা:
+
+- Retesting: মূল homogeneous sample-এর অন্য অংশ আবার পরীক্ষা করা। Sample preparation বা instrument-সংক্রান্ত কোনো সমস্যা বৈজ্ঞানিকভাবে যাচাই করতে এটি প্রয়োজন হতে পারে।
+- Resampling: মূল sampling plan-এর অতিরিক্ত unit পরীক্ষা করা অথবা ব্যাচ থেকে নতুন representative sample সংগ্রহ করা। এর জন্য নথিভুক্ত কারণ ও উপযুক্ত sampling plan দরকার।
+
+অতিরিক্ত পরীক্ষার সংখ্যা ও উদ্দেশ্য আগে থেকেই অনুমোদিত procedure বা investigation protocol-এ নির্ধারিত থাকা উচিত। ফল খারাপ বলে মাঝপথে পরিকল্পনা বদলানো যাবে না। প্রথম OOS ফলের কোনো বৈজ্ঞানিক কারণ প্রতিষ্ঠিত না হলে পরের একটি pass ফল স্বয়ংক্রিয়ভাবে সেটিকে বাতিল করে না। FDA এইভাবে বারবার পরীক্ষা করে pass ফল বের করে মূল OOS উপেক্ষা করাকে “testing into compliance” বলে—এটি তদন্তের বিকল্প নয়।
+
+মনে রাখুন: Retesting ও resampling হলো তদন্তের উপায়; pass ফল তৈরি করার কৌশল নয়। মূল OOS ফলসহ সব বৈধ data সংরক্ষণ ও রিপোর্ট করতে হবে, যদি না নথিভুক্ত তদন্তে নির্দিষ্ট ফল invalid হওয়ার প্রমাণ পাওয়া যায়।
+
+### ৬. ব্যাচের পরিণতি কী হতে পারে?
+
+সম্পূর্ণ প্রমাণ পর্যালোচনা করে quality unit batch disposition অনুমোদন করে। Confirmed OOS হলে ব্যাচ reject করতে হতে পারে। Reprocessing বা rework কেবল তখনই করা যায়, যখন প্রযোজ্য নিয়ম ও অনুমোদিত procedure তা সমর্থন করে; এবং পরবর্তী ব্যবহারের আগে material-কে প্রযোজ্য specification পূরণ করতে হবে। শুধু pass certificate থাকলেই সম্পূর্ণ batch record review-এর বিকল্প হয় না।
+
+|
+| তদন্তের ফল | সম্ভাব্য quality action
+
+| স্পষ্ট laboratory error প্রমাণিত হয়েছে। | কারণ নথিভুক্ত করুন, সংশ্লিষ্ট data মূল্যায়ন করুন, অনুমোদিত পদ্ধতিতে প্রয়োজনীয় retest করুন এবং সম্পূর্ণ record দেখে ব্যাচের সিদ্ধান্ত নিন।
+
+| Laboratory cause পাওয়া যায়নি এবং OOS নিশ্চিত হয়েছে। | ব্যাচ release করবেন না; প্রযোজ্য নিয়ম ও অনুমোদিত procedure অনুযায়ী reject করুন বা অন্য অনুমোদিত disposition বিবেচনা করুন।
+
+| অন্য ব্যাচ বা বাজারে থাকা পণ্য প্রভাবিত হতে পারে। | তদন্ত বিস্তৃত করুন, সংশ্লিষ্ট lot শনাক্ত করুন এবং প্রযোজ্য নিয়ন্ত্রক নিয়ম অনুযায়ী বাজার-সংক্রান্ত ব্যবস্থা মূল্যায়ন করুন।
+
+যুক্তরাষ্ট্রে 21 CFR 211.192 অনুযায়ী unexplained discrepancy বা specification failure-এর লিখিত তদন্ত করতে হয় এবং সংশ্লিষ্ট অন্য batch-ও পর্যালোচনা করতে হয়। একই দেশের 21 CFR 211.165(f)-এ নির্ধারিত standard বা specification পূরণ না করা finished product reject করার কথা বলা হয়েছে। এগুলো যুক্তরাষ্ট্রের নিয়ম—বাংলাদেশের আইন হিসেবে এখানে উপস্থাপন করা হচ্ছে না।
+
+### ৭. বাংলাদেশের প্রেক্ষাপট কী?
+
+বাংলাদেশের Drugs and Cosmetics Act, 2023-এর ধারা ১৭ অনুযায়ী ওষুধ উৎপাদন, মান নিয়ন্ত্রণ, বিতরণ, সরবরাহ ও সংরক্ষণের ক্ষেত্রে WHO Good Practices (GxP) অনুসরণ করতে হবে। DGDA-এর National Drug Control Laboratory তাদের quality policy-তে ISO/IEC 17025, WHO এবং current GMP-এর সঙ্গে সামঞ্জস্যপূর্ণ পরীক্ষাসেবা দেওয়ার কথা উল্লেখ করেছে।
+
+এই article তৈরির সময় পর্যালোচনা করা DGDA-এর সরকারি উপকরণে FDA guidance-এর মতো আলাদা, প্রকাশ্য OOS investigation flowchart খুঁজে পাইনি। তাই FDA document বা US 21 CFR-কে বাংলাদেশের আইন বলা যাবে না। বাংলাদেশে প্রস্তুতকারকদের প্রযোজ্য DGDA নির্দেশনা, approved product specification, WHO GxP-এর প্রত্যাশা এবং প্রতিষ্ঠানের বর্তমান অনুমোদিত SOP অনুসরণ করতে হবে। পণ্য ও কাজের ধরন অনুযায়ী নির্দিষ্ট আইনগত ও quality-system requirement ভিন্ন হতে পারে।
+
+### ৮. Root-cause analysis ও CAPA কেন জরুরি?
+
+একটি তদন্ত বন্ধ করলেই কাজ শেষ হয় না—একই সমস্যা বারবার হলে তা ঠেকাতে হবে। CAPA-তে প্রমাণিত কারণ অনুযায়ী ব্যবস্থা নিতে হয়; যেমন method robustness, equipment maintenance, analyst training, sampling, raw-material control বা manufacturing parameter উন্নত করা। নেওয়া ব্যবস্থা সত্যিই পুনরাবৃত্তি ঠেকাচ্ছে কি না সেটিও যাচাই করতে হবে। WHO সব test data সংরক্ষণ, সিদ্ধান্ত নথিভুক্ত এবং নির্দিষ্ট সময়ে OOS ফলের ধরন, সংখ্যা ও root cause management review-তে পর্যালোচনার কথা বলে।
+
+ICH Q9(R1) বিজ্ঞানভিত্তিক ও ঝুঁকির অনুপাতে quality decision নিতে উৎসাহ দেয়। অর্থাৎ রোগীর সম্ভাব্য ক্ষতি ও product quality বিবেচনা, প্রমাণ ব্যবহার, অনিশ্চয়তা নথিভুক্ত এবং ঝুঁকির সঙ্গে সামঞ্জস্যপূর্ণ তদন্ত করতে হবে। Risk assessment কোনো ফল উপেক্ষা করা বা প্রযোজ্য নিয়ম এড়িয়ে যাওয়ার অজুহাত হতে পারে না।
+
+### মূল কথাগুলো
+
+- OOS ফল একটি গুরুত্বপূর্ণ সতর্ক সংকেত; নথিভুক্ত তদন্ত দরকার।
+- অতিরিক্ত পরীক্ষা শুরুর আগে মূল sample, raw data ও audit trail সংরক্ষণ করুন।
+- প্রথমে laboratory cause যাচাই করুন; প্রয়োজন হলে sampling, materials ও manufacturing-এ তদন্ত বিস্তৃত করুন।
+- Retesting ও resampling-এর বৈজ্ঞানিক কারণ ও অনুমোদিত পরিকল্পনা থাকতে হবে—testing into compliance নয়।
+- সম্পূর্ণ প্রমাণ ও প্রযোজ্য নিয়ম অনুযায়ী batch disposition ও CAPA নির্ধারণ করতে হবে।
+
+### সাধারণ প্রশ্ন
+
+#### প্রতিটি OOS ফলাফল কি পুরো ব্যাচ নষ্ট হওয়ার প্রমাণ?
+
+না। প্রথম ফলাফল সাধারণত suspected OOS হিসেবে বিবেচিত হয়। ল্যাব, sampling, কাঁচামাল ও উৎপাদন-প্রক্রিয়ার সম্ভাব্য কারণ নথিভুক্তভাবে তদন্ত করতে হয়। পূর্ণ তদন্তের পরও ফলাফল অনুমোদিত সীমার বাইরে থাকলে সেটি confirmed OOS হতে পারে।
+
+#### ল্যাব কি pass ফল না পাওয়া পর্যন্ত বারবার পরীক্ষা করতে পারে?
+
+না। মূল OOS ফল উপেক্ষা করে বারবার পরীক্ষা করে pass ফল বের করাকে testing into compliance বলা হয়; এটি গ্রহণযোগ্য নয়। Retesting-এর বৈজ্ঞানিক কারণ, আগে থেকে নির্ধারিত পদ্ধতি এবং নথিভুক্ত quality-unit oversight থাকতে হবে।
+
+#### Retesting ও resampling-এর পার্থক্য কী?
+
+Retesting হলো মূল homogeneous sample-এর অন্য অংশ আবার পরীক্ষা করা। Resampling হলো ব্যাচ থেকে অতিরিক্ত unit বা নতুন representative sample সংগ্রহ করা। দুই ক্ষেত্রেই কারণ, পরিকল্পনা ও ফলাফল নথিবদ্ধ করতে হয়।
+
+#### OOS তদন্তের দায়িত্ব কার?
+
+প্রথমে analyst ও laboratory supervisor ল্যাব-সংক্রান্ত মূল্যায়ন করেন। স্পষ্ট laboratory cause না পেলে quality unit উৎপাদন, engineering, sampling ও materials-সহ সংশ্লিষ্ট বিভাগকে নিয়ে বিস্তৃত তদন্ত পরিচালনা করে।
+
+#### তদন্ত শেষ হওয়ার আগেই কি ব্যাচ reject করা যায়?
+
+Quality unit ব্যাচ hold করতে পারে এবং প্রমাণের ভিত্তিতে reject করার সিদ্ধান্ত নিতে পারে। তবে ব্যাচ reject করলেও মূল কারণ এবং সংশ্লিষ্ট অন্য ব্যাচ বা পণ্যের ওপর প্রভাব তদন্তের দায়িত্ব শেষ হয় না।
+
+#### OOS ও Out of Trend (OOT) কি একই?
+
+না। OOS মানে ফলাফল অনুমোদিত specification-এর বাইরে। OOT সাধারণত এমন ফল, যা specification-এর ভেতরে থাকলেও আগের ফলাফলের তুলনায় অস্বাভাবিক প্রবণতা দেখায়।
+
+#### বাংলাদেশে কি যুক্তরাষ্ট্রের মতো একই OOS আইন প্রযোজ্য?
+
+না। FDA guidance ও US 21 CFR যুক্তরাষ্ট্রের নিয়ন্ত্রক উপকরণ, বাংলাদেশের আইন নয়। বাংলাদেশের Drugs and Cosmetics Act, 2023-এর ধারা ১৭-তে WHO Good Practices (GxP) অনুসরণের কথা বলা হয়েছে। পাশাপাশি প্রযোজ্য DGDA নির্দেশনা ও অনুমোদিত SOP মানতে হয়।
+
+### তথ্যসূত্র ও আরও পড়ুন
+
+- FDA — Investigating Out-of-Specification (OOS) Test Results for Pharmaceutical Production, Guidance for Industry, May 2022
+
+- WHO — TRS 1052, Annex 4: WHO good practices for pharmaceutical quality control laboratories, 2024 (section 6.9)
+
+- ICH — Q9(R1) Quality Risk Management, 2023
+
+- Bangladesh — Drugs and Cosmetics Act, 2023, section 17
+
+- DGDA — National Drug Control Laboratory: Vision, Mission and Quality Policy
+
+- United States — 21 CFR 211.192, Production record review (US regulation)
+
+- United States — 21 CFR 211.165, Testing and release for distribution (US regulation)
+
+সাইয়্যেদুল আবরার (Sayedul Abrar)
+ফার্মাসিস্ট · Product Executive, Opsonin Pharma Ltd., Dhaka, Bangladesh.লেখক সম্পর্কে
+
+শিক্ষামূলক সতর্কতা: এই লেখা ফার্মাসিউটিক্যাল quality-এর সাধারণ ধারণা ব্যাখ্যা করে। এটি কোনো অনুমোদিত OOS investigation SOP, আইনি পরামর্শ বা বর্তমান DGDA নির্দেশনা, approved specification, validated method কিংবা যোগ্য quality-unit-এর সিদ্ধান্তের বিকল্প নয়।
+
+### সম্পর্কিত লেখা
+
+- Quality Assurance ও Quality Control-এর পার্থক্য
+- Good Manufacturing Practices (GMP)
+- Medicine Stability Testing ও Shelf Life
+- Active Pharmaceutical Ingredient (API)
+- Pharmaceutical Cold Chain
+
+---
+
+### Out-of-Specification (OOS) Results in Pharma: How Are Failed Tests Investigated?
+URL: https://sayedulabrar.site/blog/out-of-specification-oos-results-pharma-investigation/ · Language: English · Published: 2026-11-28T09:59:00+06:00 · Author: Sayedul Abrar, pharmacist
+Summary: What does an OOS result mean in pharmaceutical QC? Learn laboratory and manufacturing investigations, retesting rules, batch decisions and CAPA.
+
+By Sayedul Abrar, pharmacist · Published 28 November 2026
+
+A pharmaceutical quality-control test is designed to answer a precise question: does the material or product meet its approved specification? If a result falls outside that acceptance limit, it is an out-of-specification (OOS) result. It is a serious quality signal—but the number alone does not explain the cause.
+
+For example, imagine a hypothetical tablet assay specification of 95.0–105.0% and a result of 93.0%. The result is outside the stated range. The team must preserve the original evidence and investigate whether the cause is analytical, sampling-related, material-related or linked to the manufacturing process. It must not simply repeat the test until a passing number appears.
+
+If you have read the Quality Assurance vs Quality Control guide, this article takes a deeper look at one important part of that system: how an OOS result is investigated and how a batch decision is reached.
+
+In short: An OOS result is a test result outside an approved acceptance criterion. The first result is generally treated as a suspected OOS result. After a thorough, documented investigation, it may be confirmed as OOS—or shown to have resulted from a clearly identified laboratory error.
+
+### 1. What does OOS mean in pharmaceutical testing?
+
+Specifications set the quality limits a material or product must meet. They may come from an approved product application, a drug master file, an official pharmacopoeia or a manufacturer's approved specification. OOS results can arise during testing of an active pharmaceutical ingredient (API), excipients, other components, in-process material, finished medicine or stability samples.
+
+WHO distinguishes a suspected OOS result—the first result that has not yet been investigated and confirmed—from a confirmed OOS result, which remains outside the acceptance criteria after a thorough investigation. That distinction matters: a suspected result must never be ignored, but it should not be labelled a confirmed product failure before the evidence is assessed.
+
+Examples include an assay result below its lower limit, dissolution that does not meet the approved acceptance criteria, an impurity above its limit, or a content-uniformity result outside its criteria. These are illustrative examples; the actual specification is product- and test-specific.
+
+### 2. OOS, OOT and deviation: what is the difference?
+
+|
+| Term | Meaning | Why it matters
+
+| OOS
+Out of specification | A test result falls outside an approved acceptance criterion. | Requires a documented investigation and a quality decision.
+
+| OOT
+Out of trend | A result may remain within specification but is unusual compared with the historical pattern or expected trend. | May reveal process drift before a formal limit is crossed.
+
+| Deviation | A departure from an approved procedure, instruction or process. | May contribute to an OOS result, but a deviation and an OOS result are not the same thing.
+
+OOT results deserve attention even when they pass. A gradual movement toward a limit may be an early warning that a method, material or process is changing. The exact definitions and alert limits should be set in the site's approved procedures.
+
+### 3. Why can an OOS result happen?
+
+An OOS result can come from more than one part of the testing and manufacturing system. Investigators should follow evidence rather than assume that the analyst or the batch is automatically at fault.
+
+- Laboratory or measurement factors: sample preparation or dilution errors, calculation mistakes, incorrect standards or reagents, instrument malfunction, failed system suitability, calibration problems, method performance or data-handling errors.
+
+- Sampling and material factors: a non-representative sample, mix-up, inadequate mixing, unsuitable sample storage, raw-material variability or a packaging/component issue.
+
+- Manufacturing or process factors: variation in blending, granulation, compression, coating, filling or another critical operation; equipment or maintenance problems; environmental conditions; or an uncontrolled process parameter.
+
+One result may have several plausible explanations. A sound investigation tests those explanations against original data, batch records and scientific knowledge.
+
+### 4. How is an OOS investigation carried out?
+
+FDA's May 2022 OOS guidance describes a useful two-phase framework for chemistry-based pharmaceutical testing. WHO's 2024 good-practice guidance for pharmaceutical quality-control laboratories also sets out checks for suspected OOS results. The labels “Phase I” and “Phase II” are a way to explain the investigation; they should not be mistaken for a separate Bangladesh legal procedure. Scope note: FDA's guidance applies to chemistry-based laboratory testing of drugs; it is not a universal procedure for biological assays or microbiology. WHO TRS 1052 Annex 4 also excludes biological-product and microbiology laboratories and points to separate guidance.
+
+#### Step 1: Protect the batch and preserve evidence
+
+Report the result promptly through the site's approved procedure. The affected batch should remain on hold while its status is unresolved. Preserve original sample preparations when stable, raw data, chromatograms or spectra, worksheets, calculations, instrument records, audit trails, standards, reagents and relevant logs. Do not discard, overwrite or selectively transcribe inconvenient data.
+
+#### Step 2: Phase I — laboratory assessment
+
+The analyst and laboratory supervisor review the test before deciding whether additional testing is justified. They check whether the correct method and procedure were followed, whether calculations are correct, whether the instrument was qualified and calibrated, whether system suitability passed, and whether the correct standards, reagents, solvents, glassware and sample preparation were used. Raw data and electronic audit trails should be examined, not just the final reported number.
+
+If a specific, scientifically supported laboratory error is identified, it must be documented and reviewed. Only then may the affected result be invalidated under the approved procedure, with any justified retest controlled and recorded. A vague suspicion that “the lab made a mistake” is not enough. WHO's 2024 guidance also says that when the investigation is inconclusive, a confirmatory determination should be performed by another trained analyst. Similar results support a confirmed OOS conclusion; inconsistent results need further investigation.
+
+#### Step 3: Phase II — full investigation when no laboratory cause is established
+
+If the initial assessment does not identify a clear laboratory cause, the quality unit coordinates a wider investigation. Relevant teams may include QC, QA, manufacturing, engineering, maintenance, warehouse, sampling and supplier quality. They review the batch record, process parameters, equipment history, deviations, raw-material and component data, environmental records, previous batches and any related products or manufacturing sites.
+
+The investigation should identify an actual or probable root cause, assess whether other batches may be affected, and define corrective and preventive actions (CAPA). If the product has already been distributed, the impact assessment must also consider the distributed stock and any action required under the applicable local requirements.
+
+### 5. Retesting and resampling: when are they appropriate?
+
+These terms are not interchangeable:
+
+- Retesting means testing another portion of the original homogeneous sample. It may help investigate a suspected preparation or instrument issue when scientifically justified.
+- Resampling means testing additional units from the original sampling plan or collecting a new representative sample from the batch. It needs a documented reason and an appropriate sampling plan.
+
+The number and purpose of any additional tests should be defined in advance by an approved procedure or investigation protocol. The plan must not be changed simply because results are inconvenient. If the original OOS result has no scientifically established cause, a later passing result does not automatically erase it. FDA describes repeated testing until a passing result is obtained while disregarding the OOS result as “testing into compliance”; this is not an acceptable substitute for investigation.
+
+Remember: Retest and resample are investigation tools, not a way to manufacture a passing result. Preserve and report all valid results, including the original OOS result, unless a documented investigation establishes why a specific result is invalid.
+
+### 6. What happens to the batch?
+
+The quality unit reviews the complete evidence before authorising a batch disposition. A confirmed OOS result can mean the batch must be rejected. Reprocessing or rework, where permitted, must follow an approved, scientifically justified procedure and the material must meet the applicable specifications before any further use or release. A passing certificate alone cannot replace a complete batch-record review.
+
+|
+| Investigation finding | Possible quality action
+
+| A clear laboratory error is demonstrated. | Document the cause, assess the affected data, conduct any justified retest under the approved procedure and evaluate the batch using the complete record.
+
+| No laboratory cause is found and the OOS is confirmed. | Keep the batch from release and reject it or follow another disposition only where applicable requirements and approved procedures allow.
+
+| Other batches or distributed products may be affected. | Extend the investigation, trace the affected lots and assess market action under the applicable regulatory requirements.
+
+In the United States, 21 CFR 211.192 requires a thorough written investigation of unexplained discrepancies and specification failures, including related batches. Section 211.165(f) requires drug products that fail to meet established standards or specifications to be rejected. These are US requirements; they are cited here as a regulatory example, not as Bangladesh law.
+
+### 7. What is the Bangladesh context?
+
+Section 17 of Bangladesh's Drugs and Cosmetics Act, 2023 states that manufacturers and sellers must follow WHO Good Practices (GxP) for manufacturing, quality control, distribution, supply and storage of medicines. DGDA's National Drug Control Laboratory describes its quality policy as aligned with national and international standards, including ISO/IEC 17025, WHO and current GMP expectations.
+
+In the official DGDA materials reviewed for this article, I did not identify a standalone public OOS investigation flowchart equivalent to the FDA guidance. Therefore, the FDA document and US 21 CFR provisions should not be presented as Bangladesh law. Manufacturers in Bangladesh should follow applicable DGDA directions, approved product specifications, WHO GxP expectations and their current approved SOPs. The exact legal and quality-system requirements depend on the product and activity.
+
+### 8. Why root-cause analysis and CAPA matter
+
+Closing one investigation is not enough if the same failure keeps returning. CAPA should address the demonstrated cause—for example, method robustness, equipment maintenance, training, sampling, raw-material control or a manufacturing parameter—and the organisation should check whether the action actually prevents recurrence. WHO recommends retaining all test data, documenting conclusions and reviewing the nature, number and root causes of OOS results as part of management review.
+
+ICH Q9(R1) encourages science-based, risk-proportionate quality decisions. That means assessing the potential effect on patients and product quality, using the available evidence, documenting uncertainty and applying effort that matches the risk. Risk assessment must never be used to excuse a result or bypass an applicable requirement.
+
+### Key takeaways
+
+- An OOS result is a serious signal that requires a documented investigation.
+- Preserve the original sample, raw data and audit trail before additional testing.
+- Check laboratory causes first; expand to materials, sampling and manufacturing when needed.
+- Retesting and resampling need a scientific reason and an approved plan—never test into compliance.
+- Batch disposition and CAPA must be based on the complete evidence and applicable requirements.
+
+### Frequently asked questions
+
+#### Does every OOS result mean the whole batch is defective?
+
+No. The first result is usually treated as a suspected OOS result. A documented investigation must assess laboratory, sampling, material and manufacturing causes. A confirmed OOS result remains outside the approved criteria after thorough investigation.
+
+#### Can a laboratory repeat the test until it passes?
+
+No. Repeated testing until a passing result appears, while ignoring the original OOS result, is testing into compliance. Retesting must have a scientific purpose, a predefined procedure and documented quality-unit oversight.
+
+#### What is the difference between retesting and resampling?
+
+Retesting analyses another portion of the original homogeneous sample. Resampling collects additional units or a new representative sample from the batch. The reason and plan for either action must be justified and documented.
+
+#### Who is responsible for an OOS investigation?
+
+The analyst and laboratory supervisor begin the laboratory assessment. If no clear laboratory cause is found, the quality unit coordinates a wider investigation with relevant teams such as manufacturing, engineering, sampling and materials.
+
+#### Can a batch be rejected before the investigation is finished?
+
+A quality unit may place a batch on hold and may reject it when the evidence supports that decision. Rejection does not remove the need to investigate the cause or assess related batches and products.
+
+#### Is OOS the same as out of trend (OOT)?
+
+No. OOS means a result is outside an approved acceptance limit. OOT generally describes a result that may still be within specification but is unusual compared with its historical pattern.
+
+#### Does Bangladesh have the same OOS rules as the United States?
+
+No. FDA guidance and US 21 CFR provisions are US materials, not Bangladesh law. Section 17 of Bangladesh’s Drugs and Cosmetics Act, 2023 requires WHO Good Practices (GxP); manufacturers must also follow applicable DGDA requirements and approved procedures.
+
+### References and further reading
+
+- FDA — Investigating Out-of-Specification (OOS) Test Results for Pharmaceutical Production, Guidance for Industry, May 2022
+
+- WHO — TRS 1052, Annex 4: WHO good practices for pharmaceutical quality control laboratories, 2024 (section 6.9)
+
+- ICH — Q9(R1) Quality Risk Management, 2023
+
+- Bangladesh — Drugs and Cosmetics Act, 2023, section 17
+
+- DGDA — National Drug Control Laboratory: Vision, Mission and Quality Policy
+
+- United States — 21 CFR 211.192, Production record review (US regulation)
+
+- United States — 21 CFR 211.165, Testing and release for distribution (US regulation)
+
+Sayedul Abrar
+Pharmacist · Product Executive, Opsonin Pharma Ltd., Dhaka, Bangladesh.About the author
+
+Educational disclaimer: This article explains general pharmaceutical quality concepts. It is not an approved OOS investigation SOP, legal advice or a substitute for current DGDA requirements, approved specifications, validated methods or a qualified quality-unit decision.
+
+### Related reading
+
+- Quality Assurance vs Quality Control
+- Good Manufacturing Practices (GMP)
+- Medicine Stability Testing and Shelf Life
+- Active Pharmaceutical Ingredient (API)
+- Pharmaceutical Cold Chain
+
+---
+
 ### ফার্মাসিউটিক্যাল কোল্ড চেইন: তাপমাত্রা-সংবেদনশীল ওষুধ কীভাবে সংরক্ষণ ও পরিবহন করা হয়?
 URL: https://sayedulabrar.site/blog/pharmaceutical-cold-chain-medicines-storage-transport-bangla/ · Language: Bangla · Published: 2026-11-27T10:00:00+06:00 · Author: Sayedul Abrar, pharmacist
 Summary: কোল্ড চেইন কী, কোন ওষুধে তাপমাত্রা নিয়ন্ত্রণ দরকার, কীভাবে ডেটা লগার ও পরিবহন ব্যবস্থায় তাপমাত্রা দেখা হয় এবং তাপমাত্রা সীমা ছাড়ালে কী করতে হয়—জানুন।
@@ -2983,7 +3335,7 @@ QC: finished product-এর প্রয়োজনীয় পরীক্ষ
 
 ### ৫. পরীক্ষার ফলাফল specification-এর বাইরে গেলে কী হয়?
 
-Out-of-Specification (OOS) ফলাফল পাওয়া গেলে বারবার পরীক্ষা করে সুবিধাজনক একটি “Pass” ফলাফল পাওয়ার চেষ্টা করা সঠিক পদ্ধতি নয়। অনুমোদিত SOP অনুযায়ী নথিভুক্ত, বৈজ্ঞানিক ও যুক্তিসংগত তদন্ত প্রয়োজন। এতে laboratory procedure, calculation, instrument, sample handling এবং উৎপাদন বা কাঁচামালের সম্ভাব্য কারণ বিবেচনা করা হয়। Retesting বা resampling-এর পেছনে বৈজ্ঞানিক যুক্তি ও নিয়ন্ত্রিত অনুমোদন থাকতে হবে; ফলাফল অসুবিধাজনক বলে তা বাদ দেওয়া যায় না।
+Out-of-Specification (OOS) ফলাফল পাওয়া গেলে বারবার পরীক্ষা করে সুবিধাজনক একটি “Pass” ফলাফল পাওয়ার চেষ্টা করা সঠিক পদ্ধতি নয়। অনুমোদিত SOP অনুযায়ী নথিভুক্ত, বৈজ্ঞানিক ও যুক্তিসংগত তদন্ত প্রয়োজন। এতে laboratory procedure, calculation, instrument, sample handling এবং উৎপাদন বা কাঁচামালের সম্ভাব্য কারণ বিবেচনা করা হয়। Retesting বা resampling-এর পেছনে বৈজ্ঞানিক যুক্তি ও নিয়ন্ত্রিত অনুমোদন থাকতে হবে; ফলাফল অসুবিধাজনক বলে তা বাদ দেওয়া যায় না। বিস্তারিত ধাপ জানতে OOS investigation ও batch decision-এর পূর্ণাঙ্গ নির্দেশনাটি পড়ুন।
 
 QC analytical evidence এবং laboratory investigation-এ অবদান রাখে। QA quality-system oversight দেয়, investigation যথাযথভাবে পরিচালিত হচ্ছে কি না দেখে, impact assessment ও follow-up মূল্যায়ন করে এবং CAPA কার্যকর কি না পর্যালোচনা করে। ব্যাচের disposition প্রযোজ্য নিয়ম ও অনুমোদিত পদ্ধতি অনুযায়ী হতে হবে।
 
@@ -3120,7 +3472,7 @@ QC: completes required finished-product testing and reports the results with tra
 
 ### 5. What happens when a test result fails?
 
-An out-of-specification (OOS) result is not a signal to repeat testing until a passing value appears. It requires a documented, scientifically sound investigation under an approved procedure. The investigation should consider laboratory execution, calculations, instruments, sample handling and possible manufacturing or material causes. Retesting or resampling must be justified and controlled; results must not be discarded simply because they are inconvenient.
+An out-of-specification (OOS) result is not a signal to repeat testing until a passing value appears. It requires a documented, scientifically sound investigation under an approved procedure. The investigation should consider laboratory execution, calculations, instruments, sample handling and possible manufacturing or material causes. Retesting or resampling must be justified and controlled; results must not be discarded simply because they are inconvenient. For the full step-by-step process, see our guide to OOS investigations and batch decisions.
 
 QC contributes the analytical evidence and technical investigation. QA provides quality-system oversight, ensures the investigation is appropriately managed, evaluates impact and follow-up, and checks that corrective and preventive actions (CAPA) are effective. Batch disposition must follow applicable requirements and authorised procedures.
 

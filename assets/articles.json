@@ -1,5 +1,18 @@
 [
  {
+  "slug": "out-of-specification-oos-results-pharma-investigation",
+  "date": "2026-11-28",
+  "tag_en": "Pharmaceutical Quality",
+  "tag_bn": "ফার্মাসিউটিক্যাল গুণগত মান",
+  "title_en": "Out-of-Specification (OOS) Results in Pharma: How Are Failed Tests Investigated?",
+  "title_bn": "ফার্মাসিউটিক্যাল শিল্পে OOS ফলাফল: মানের বাইরে পরীক্ষা হলে কীভাবে তদন্ত করা হয়?",
+  "desc_en": "Understand suspected and confirmed OOS results, laboratory and manufacturing investigations, retesting, resampling and batch disposition.",
+  "desc_bn": "Suspected ও confirmed OOS ফল, ল্যাব ও উৎপাদন তদন্ত, retesting, resampling এবং ব্যাচের সিদ্ধান্ত সহজভাবে জানুন।",
+  "url_en": "/blog/out-of-specification-oos-results-pharma-investigation/",
+  "url_bn": "/blog/out-of-specification-oos-results-pharma-investigation-bangla/",
+  "img": "/assets/img/blog/oos-investigation/oos-cover.svg"
+ },
+ {
   "slug": "pharmaceutical-cold-chain-medicines-storage-transport",
   "date": "2026-11-27",
   "tag_en": "Medicine safety & quality",
@@ -10,7 +23,7 @@
   "desc_bn": "তাপমাত্রা-সংবেদনশীল ওষুধ কীভাবে সংরক্ষণ, পর্যবেক্ষণ ও পরিবহন করা হয় এবং temperature excursion হলে কীভাবে মূল্যায়ন করা হয় জানুন।",
   "url_en": "/blog/pharmaceutical-cold-chain-medicines-storage-transport/",
   "url_bn": "/blog/pharmaceutical-cold-chain-medicines-storage-transport-bangla/",
-  "img": "/assets/img/blog/cold-chain/cc-card.webp"
+  "img": "/assets/img/blog/cold-chain/cold-chain-cover.svg"
  },
  {
   "slug": "prescription-vs-otc-medicines-bangladesh",

@@ -6,8 +6,28 @@
     <atom:link href="https://sayedulabrar.site/blog/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Pharmacist-written educational articles in English and Bangla on medicines, pharmacology and the pharmaceutical industry in Bangladesh, by Sayedul Abrar.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 27 Nov 2026 06:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 06:00:00 +0000</lastBuildDate>
     <image><url>https://sayedulabrar.site/assets/img/social/pharma-blog-social-preview.jpg</url><title>Pharma Blog | Sayedul Abrar</title><link>https://sayedulabrar.site/blog/</link></image>
+    <item>
+      <title>ফার্মাসিউটিক্যাল শিল্পে OOS ফলাফল: মানের বাইরে পরীক্ষা হলে কীভাবে তদন্ত করা হয়?</title>
+      <link>https://sayedulabrar.site/blog/out-of-specification-oos-results-pharma-investigation-bangla/</link>
+      <guid isPermaLink="true">https://sayedulabrar.site/blog/out-of-specification-oos-results-pharma-investigation-bangla/</guid>
+      <pubDate>Sat, 28 Nov 2026 06:00:00 +0000</pubDate>
+      <dc:creator>Sayedul Abrar</dc:creator>
+      <dc:language>bn</dc:language>
+      <description>ওষুধের QC পরীক্ষায় OOS ফলাফল কী বোঝায়? ল্যাব তদন্ত, উৎপাদন-পর্যালোচনা, retesting, resampling, batch rejection ও CAPA সহজভাবে জানুন।</description>
+      <enclosure url="https://sayedulabrar.site/assets/img/blog/oos-investigation/oos-cover.svg" type="image/svg+xml" length="3792"/>
+    </item>
+    <item>
+      <title>Out-of-Specification (OOS) Results in Pharma: How Are Failed Tests Investigated?</title>
+      <link>https://sayedulabrar.site/blog/out-of-specification-oos-results-pharma-investigation/</link>
+      <guid isPermaLink="true">https://sayedulabrar.site/blog/out-of-specification-oos-results-pharma-investigation/</guid>
+      <pubDate>Sat, 28 Nov 2026 06:00:00 +0000</pubDate>
+      <dc:creator>Sayedul Abrar</dc:creator>
+      <dc:language>en</dc:language>
+      <description>What does an OOS result mean in pharmaceutical QC? Learn laboratory and manufacturing investigations, retesting rules, batch decisions and CAPA.</description>
+      <enclosure url="https://sayedulabrar.site/assets/img/blog/oos-investigation/oos-cover.svg" type="image/svg+xml" length="3792"/>
+    </item>
     <item>
       <title>ফার্মাসিউটিক্যাল কোল্ড চেইন: তাপমাত্রা-সংবেদনশীল ওষুধ কীভাবে সংরক্ষণ ও পরিবহন করা হয়?</title>
       <link>https://sayedulabrar.site/blog/pharmaceutical-cold-chain-medicines-storage-transport-bangla/</link>
@@ -16,6 +36,7 @@
       <dc:creator>Sayedul Abrar</dc:creator>
       <dc:language>bn</dc:language>
       <description>কোল্ড চেইন কী, কোন ওষুধে তাপমাত্রা নিয়ন্ত্রণ দরকার, কীভাবে ডেটা লগার ও পরিবহন ব্যবস্থায় তাপমাত্রা দেখা হয় এবং তাপমাত্রা সীমা ছাড়ালে কী করতে হয়—জানুন।</description>
+      <enclosure url="https://sayedulabrar.site/assets/img/blog/cold-chain/cold-chain-cover.svg" type="image/svg+xml" length="3996"/>
     </item>
     <item>
       <title>Pharmaceutical Cold Chain: How Are Temperature-Sensitive Medicines Stored and Transported?</title>
@@ -25,6 +46,7 @@
       <dc:creator>Sayedul Abrar</dc:creator>
       <dc:language>en</dc:language>
       <description>Understand the pharmaceutical cold chain, product-specific storage ranges, temperature monitoring, transport controls and what to do after a temperature excursion.</description>
+      <enclosure url="https://sayedulabrar.site/assets/img/blog/cold-chain/cold-chain-cover.svg" type="image/svg+xml" length="3996"/>
     </item>
     <item>
       <title>প্রেসক্রিপশন বনাম OTC ওষুধ: বাংলাদেশে পার্থক্য কী?</title>
@@ -530,6 +552,7 @@
       <dc:creator>Sayedul Abrar</dc:creator>
       <dc:language>bn</dc:language>
       <description>ওষুধের মেয়াদ শেষ হওয়ার তারিখ (EXP) কীভাবে পড়বেন? 07/2027 মানে ৩১ জুলাই পর্যন্ত। MFG, ব্যাচ নম্বর ও নিরাপদ সংরক্ষণ সহজে জানুন।</description>
+      <enclosure url="https://sayedulabrar.site/assets/img/blog/expiry/expiry-cover-original.svg" type="image/svg+xml" length="3998"/>
     </item>
     <item>
       <title>Expiry Date vs Manufacturing Date on Medicine: EXP vs MFG</title>
@@ -539,6 +562,7 @@
       <dc:creator>Sayedul Abrar</dc:creator>
       <dc:language>en</dc:language>
       <description>What do EXP and MFG mean on medicine? Learn how to read expiry dates, why 07/2027 means 31 July, and how to check batch numbers and storage.</description>
+      <enclosure url="https://sayedulabrar.site/assets/img/blog/expiry/expiry-cover-original.svg" type="image/svg+xml" length="3998"/>
     </item>
     <item>
       <title>জেনেরিক নাম কী? ব্র্যান্ড নামের পার্থক্য</title>
