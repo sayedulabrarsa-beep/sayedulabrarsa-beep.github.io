@@ -31,6 +31,19 @@
 <p>ধরা যাক, একটি ট্যাবলেটের assay specification কাল্পনিকভাবে 95.0–105.0% এবং পরীক্ষার ফল 93.0%। ফলটি নির্ধারিত সীমার বাইরে। এখন দেখতে হবে সমস্যা analytical method, sampling, কাঁচামাল, যন্ত্র, calculation নাকি manufacturing process-এ। শুধু pass ফল পাওয়া পর্যন্ত পরীক্ষা চালিয়ে যাওয়া কোনো গ্রহণযোগ্য সমাধান নয়।</p>
 <p>আপনি যদি <a href="/blog/quality-assurance-vs-quality-control-bangla/">Quality Assurance ও Quality Control-এর পার্থক্য</a> নিয়ে আগের লেখাটি পড়ে থাকেন, তাহলে এই article সেই ব্যবস্থার একটি নির্দিষ্ট বিষয় আরও গভীরভাবে ব্যাখ্যা করবে—OOS ফল কীভাবে তদন্ত করা হয় এবং ব্যাচের সিদ্ধান্ত কীভাবে নেওয়া হয়।</p>
 <div class="quick"><strong>সহজ উত্তর:</strong> OOS হলো এমন পরীক্ষার ফল, যা অনুমোদিত acceptance criterion-এর বাইরে। প্রথম ফলাফলকে সাধারণত suspected OOS হিসেবে দেখা হয়। পূর্ণাঙ্গ ও নথিভুক্ত তদন্তের পর সেটি confirmed OOS হতে পারে, অথবা নির্দিষ্ট laboratory error-এর কারণে ফলটি invalid প্রমাণিত হতে পারে।</div>
+<nav class="toc" aria-label="এই লেখায়"><strong>এই লেখায়</strong><ol>
+<li><a href="#what-is-oos">OOS বলতে কী বোঝায়?</a></li>
+<li><a href="#oos-oot-deviation">OOS, OOT ও Deviation-এর পার্থক্য</a></li>
+<li><a href="#why-oos-happens">OOS ফল কেন হয়?</a></li>
+<li><a href="#investigation">OOS তদন্তের ধাপ</a></li>
+<li><a href="#retesting-resampling">Retesting ও Resampling</a></li>
+<li><a href="#batch-disposition">ব্যাচের সিদ্ধান্ত</a></li>
+<li><a href="#bangladesh">বাংলাদেশের প্রেক্ষাপট</a></li>
+<li><a href="#capa-trends">Root cause ও CAPA</a></li>
+<li><a href="#key-takeaways">মূল কথাগুলো</a></li>
+<li><a href="#faq">সাধারণ প্রশ্ন</a></li>
+<li><a href="#references">তথ্যসূত্র</a></li>
+</ol></nav>
 <h2 id="what-is-oos">১. ফার্মাসিউটিক্যাল পরীক্ষায় OOS বলতে কী বোঝায়?</h2>
 <p>Specification হলো কোনো উপাদান বা ওষুধের গুণগত মান যাচাইয়ের নির্ধারিত সীমা। এটি approved product application, Drug Master File (DMF), official pharmacopoeia অথবা প্রস্তুতকারকের অনুমোদিত specification থেকে আসতে পারে। API, excipients, অন্যান্য components, in-process materials, finished medicine এবং stability sample-এর পরীক্ষাতেও OOS ফল হতে পারে।</p>
 <p>WHO-এর ২০২৪ সালের guidance-এ <em>suspected OOS result</em> বলতে এমন প্রথম ফল বোঝায়, যা এখনো তদন্ত করে নিশ্চিত করা হয়নি। আর <em>confirmed OOS result</em> হলো পূর্ণাঙ্গ তদন্তের পরও specification-এর বাইরে থাকা ফল। তাই প্রথম ফল উপেক্ষা করা যাবে না, আবার প্রমাণ যাচাইয়ের আগে একে নিশ্চিত product failure বলাও ঠিক নয়।</p>
