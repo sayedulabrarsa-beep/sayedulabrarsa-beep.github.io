@@ -15,7 +15,7 @@
     "title_bn": "জেনেরিক নাম বনাম ব্র্যান্ড নাম",
     "desc_en": "Find the ingredient name on any medicine pack.",
     "desc_bn": "ওষুধের প্যাকে উপাদানের নাম কোথায় পাবেন।",
-    "img": "/assets/img/blog/generic-brand/which-name-is-the-real-medicine-generic-vs-brand-thumbnail.webp"
+    "img": "/assets/img/blog/generic-brand/gb-card.webp"
   },
   "expiry-date-vs-manufacturing-date-medicine": {
     "tag_en": "Medicine safety",
@@ -78,7 +78,7 @@
     "title_bn": "বাংলাদেশের ফার্মাসিউটিক্যাল শিল্প",
     "desc_en": "How medicines are made and reach patients.",
     "desc_bn": "ওষুধ কীভাবে তৈরি হয়ে রোগীর কাছে পৌঁছায়।",
-    "img": "/assets/img/blog/pharma-industry/pharmaceutical-industry-in-bangladesh-how-medicines-reach-you-thumbnail-16x9.webp"
+    "img": "/assets/img/blog/pharma-industry/pi-card.webp"
   },
   "drug-absorption-how-medicine-enters-bloodstream": {
     "tag_en": "Pharmacology basics",
