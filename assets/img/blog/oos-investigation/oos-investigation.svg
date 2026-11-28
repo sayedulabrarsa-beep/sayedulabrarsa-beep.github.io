@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">OOS investigation workflow</title><desc id="desc">Bilingual flowchart: identify a suspected OOS result, preserve original sample and data and hold the batch, complete a laboratory investigation, expand to a manufacturing investigation if no assignable laboratory cause is found, then document batch disposition and CAPA.</desc>
+<rect width="1600" height="900" fill="#f6f2e7"/><rect x="45" y="45" width="1510" height="810" rx="30" fill="#fffdf8" stroke="#d6e2dc" stroke-width="3"/>
+<text x="95" y="120" font-family="Arial,sans-serif" font-size="34" font-weight="700" fill="#287c73">A CONTROLLED, EVIDENCE-BASED PROCESS · প্রমাণভিত্তিক নিয়ন্ত্রিত প্রক্রিয়া</text>
+<g font-family="Arial,sans-serif" text-anchor="middle">
+<rect x="100" y="190" width="330" height="125" rx="18" fill="#e4f0ea" stroke="#287c73" stroke-width="3"/><text x="265" y="240" font-size="29" font-weight="700" fill="#173d43">Suspected OOS</text><text x="265" y="282" font-size="22" fill="#536966">প্রাথমিক OOS ফলাফল</text>
+<path d="M430 252H500" stroke="#d18a43" stroke-width="7"/><path d="M482 235L503 252L482 269" fill="none" stroke="#d18a43" stroke-width="7" stroke-linejoin="round"/>
+<rect x="520" y="190" width="460" height="125" rx="18" fill="#fff0dc" stroke="#d18a43" stroke-width="3"/><text x="750" y="240" font-size="28" font-weight="700" fill="#173d43">Hold batch · Preserve data</text><text x="750" y="282" font-size="22" fill="#536966">ব্যাচ আটকে রাখুন · মূল তথ্য সংরক্ষণ</text>
+<path d="M980 252H1050" stroke="#d18a43" stroke-width="7"/><path d="M1032 235L1053 252L1032 269" fill="none" stroke="#d18a43" stroke-width="7" stroke-linejoin="round"/>
+<rect x="1070" y="190" width="430" height="125" rx="18" fill="#e4f0ea" stroke="#287c73" stroke-width="3"/><text x="1285" y="240" font-size="28" font-weight="700" fill="#173d43">Phase I · Lab review</text><text x="1285" y="282" font-size="22" fill="#536966">পরীক্ষা-পদ্ধতি, কাঁচা তথ্য, যন্ত্র</text>
+<path d="M1285 315V385" stroke="#d18a43" stroke-width="7"/><path d="M1268 367L1285 388L1302 367" fill="none" stroke="#d18a43" stroke-width="7" stroke-linejoin="round"/>
+<rect x="970" y="405" width="530" height="130" rx="18" fill="#f9e8e3" stroke="#d56a53" stroke-width="3"/><text x="1235" y="455" font-size="28" font-weight="700" fill="#173d43">Assignable lab cause?</text><text x="1235" y="495" font-size="22" fill="#536966">পরীক্ষাগারে নির্দিষ্ট কারণ পাওয়া গেছে?</text>
+<path d="M970 470H850" stroke="#287c73" stroke-width="7"/><path d="M868 453L847 470L868 487" fill="none" stroke="#287c73" stroke-width="7" stroke-linejoin="round"/>
+<rect x="500" y="405" width="330" height="130" rx="18" fill="#e4f0ea" stroke="#287c73" stroke-width="3"/><text x="665" y="455" font-size="26" font-weight="700" fill="#173d43">Yes · Document</text><text x="665" y="495" font-size="21" fill="#536966">কারণ নথিবদ্ধ · SOP অনুযায়ী</text>
+<path d="M1235 535V610" stroke="#d18a43" stroke-width="7"/><path d="M1218 592L1235 613L1252 592" fill="none" stroke="#d18a43" stroke-width="7" stroke-linejoin="round"/>
+<rect x="970" y="630" width="530" height="130" rx="18" fill="#fff0dc" stroke="#d18a43" stroke-width="3"/><text x="1235" y="680" font-size="27" font-weight="700" fill="#173d43">Phase II · Full investigation</text><text x="1235" y="720" font-size="21" fill="#536966">উৎপাদন, উপকরণ, sampling ও related batch</text>
+<path d="M970 695H850" stroke="#d18a43" stroke-width="7"/><path d="M868 678L847 695L868 712" fill="none" stroke="#d18a43" stroke-width="7" stroke-linejoin="round"/>
+<rect x="500" y="630" width="330" height="130" rx="18" fill="#e4f0ea" stroke="#287c73" stroke-width="3"/><text x="665" y="680" font-size="26" font-weight="700" fill="#173d43">Quality decision</text><text x="665" y="720" font-size="21" fill="#536966">ব্যাচের সিদ্ধান্ত · CAPA</text>
+<text x="665" y="805" font-size="22" font-weight="700" fill="#173d43">No result is discarded without evidence. · প্রমাণ ছাড়া কোনো ফল বাদ নয়।</text>
+</g></svg>
