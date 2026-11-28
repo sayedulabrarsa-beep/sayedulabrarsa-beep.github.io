@@ -6711,7 +6711,7 @@ Summary: বাংলাদেশে ফার্মাসিউটিক্য�
 
 ### ২. বাংলাদেশের বাজারে স্থানীয় বাস্তবতা কেন জরুরি
 
-বাংলাদেশের ফার্মাসিউটিক্যাল শিল্পের দেশীয় উৎপাদনভিত্তি শক্তিশালী এবং রপ্তানি বাজারও বিস্তৃত হচ্ছে। BIDA-র বর্তমান Pharmaceuticals & API খাত-প্রোফাইলে বলা হয়েছে, স্থানীয় উৎপাদকরা দেশের প্রায় ৯৮% ওষুধের চাহিদা পূরণ করে এবং ১৫০টির বেশি গন্তব্যে রপ্তানি হয়। এগুলো পুরো শিল্পের সূচক; নির্দিষ্ট থেরাপিউটিক ক্যাটাগরি বা ব্র্যান্ডের বাজার বিশ্লেষণের বিকল্প নয়। BIDA-র খাত-প্রোফাইল দেখুন।
+বাংলাদেশে একই জেনেরিক উপাদানের অনেক ব্র্যান্ড প্রতিযোগিতা করে, তাই অন্য বাজারের পরিকল্পনা হুবহু এখানে মেলে না। এখানকার মার্কেটিং তিনটি স্থানীয় বাস্তবতায় গড়ে ওঠে: নিয়ন্ত্রক সংস্থার প্রচার-বিধি, চিকিৎসকের মাধ্যমে রোগীর কাছে পৌঁছানো এবং খুচরা ফার্মেসি নেটওয়ার্ক, যেখানে প্রাপ্যতা ও দামের তুলনা বার্তার মতোই গুরুত্বপূর্ণ। পরিকল্পনা শুরু করুন এগুলো থেকে, তারপর নিজের থেরাপিউটিক ক্যাটাগরির সাম্প্রতিক তথ্যে যাচাই করুন। শিল্পের প্রেক্ষাপট (স্থানীয় উৎপাদন ও রপ্তানি) জানতে প্রোডাক্ট ম্যানেজমেন্ট নিবন্ধ দেখুন, যেখানে BIDA-র খাত-প্রোফাইল উদ্ধৃত আছে।
 Therapeutic area, সরকারি-বেসরকারি স্বাস্থ্যসেবা, geography, affordability, distribution এবং চিকিৎসকদের তথ্য-প্রয়োজন ভিন্ন হতে পারে। তাই সবার চাহিদা এক ধরে নয়, নির্দিষ্ট সংজ্ঞা ও সময়সীমাসহ বর্তমান তথ্য দিয়ে পরিকল্পনা শুরু করুন।
 
 ### ৩. বাজার ও পরিস্থিতি বিশ্লেষণ দিয়ে শুরু করুন
@@ -6829,7 +6829,7 @@ A useful strategy answers five questions: Which market are we serving? Whose pro
 
 ### 2. Why Bangladesh needs a market-specific approach
 
-Bangladesh has a substantial domestic pharmaceutical manufacturing base and a growing export footprint. BIDA’s current Pharmaceuticals & API profile reports that local manufacturers meet about 98% of domestic medicinal demand and export to more than 150 destinations. These are sector-level indicators, not a substitute for a current therapeutic-category or brand-level audit. Read BIDA’s sector profile.
+In Bangladesh, many brands compete on the same generic molecule, so a plan borrowed from another market rarely fits. Marketing here is shaped by three local facts: promotion rules set by the regulator, a prescriber-led route to the patient, and a retail pharmacy network where availability and price comparison matter as much as the message. Start the plan from these, then test them against current data for your own therapeutic category. For sector background (local manufacturing share and exports), see the product management article, which cites the BIDA sector profile.
 Therapeutic areas, public and private care settings, geography, affordability, distribution and professional information needs differ. Start with current, clearly defined data—not assumptions about what every prescriber or patient wants.
 
 ### 3. Start with market and situation analysis
