@@ -55,9 +55,9 @@ def write_feed(arts):
     e = html.escape
     items = []
     for a in arts:
-        f = R / a["img"].replace(SITE + "/", "") if a["img"].startswith(SITE + "/") else None
+        f = R / a["img"].split("?")[0].replace(SITE + "/", "") if a["img"].startswith(SITE + "/") else None
         size = f.stat().st_size if f and f.exists() else 0
-        kind = "svg+xml" if a["img"].endswith(".svg") else "webp" if a["img"].endswith(".webp") else "png" if a["img"].endswith(".png") else "jpeg"
+        _u = a["img"].split("?")[0]; kind = "svg+xml" if _u.endswith(".svg") else "webp" if _u.endswith(".webp") else "png" if _u.endswith(".png") else "jpeg"
         enc = f'\n      <enclosure url="{e(a["img"])}" type="image/{kind}" length="{size}"/>' if size else ""
         items.append(f"""    <item>
       <title>{e(a['title'])}</title>
