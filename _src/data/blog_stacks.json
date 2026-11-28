@@ -938,5 +938,68 @@
       "img": "/assets/img/blog/pharma-marketing-strategy/mk-ethics.webp",
       "alt": "A glass shield with a scales symbol stands on a bound stack of documents tied with a gold ribbon, beside a stethoscope and pen."
     }
+  },
+  {
+    "slug": "pharmaceutical-product-management-bangladesh",
+    "bn": "pharmaceutical-product-management-bangladesh-bangla",
+    "date": "2026-11-24",
+    "kicker": "Pharmaceutical Marketing",
+    "title": "Pharmaceutical Product Management in Bangladesh: From Market Insight to Brand Growth",
+    "image": "/assets/img/blog/pharma-product-management/pm-social-en.jpg",
+    "alt": "A pharmacist in a white coat looks out of a glass office window at a Dhaka-style skyline at sunset, with a tablet, a plain white medicine box and a blister pack on the desk.",
+    "accent": "#2f8f83",
+    "read": "10 min",
+    "slides": [
+      {
+        "h": "More than promotion",
+        "p": [
+          "Product management connects healthcare need, market data, positioning, availability and ethical execution."
+        ],
+        "img": "/assets/img/blog/pharma-product-management/pm-what.webp",
+        "alt": "A white medicine box, blister pack, amber bottle, brass compass and a closed notebook arranged on a wooden desk in warm window light.",
+        "r": "A brand is built by more than promotion.",
+        "sub": "",
+        "fit": "contain"
+      },
+      {
+        "h": "Plan in six steps",
+        "p": [
+          "Move from insight to positioning, objectives, planning, execution and review."
+        ],
+        "img": "/assets/img/blog/pharma-product-management/pm-framework.webp",
+        "alt": "A man in smart casual clothes carrying a folder walks up wide sunlit stone steps toward a glass office building.",
+        "r": "Plan the brand step by step.",
+        "sub": "",
+        "fit": "contain"
+      },
+      {
+        "h": "Engage ethically",
+        "p": [
+          "Use approved, current information and respect the doctor’s time and judgement."
+        ],
+        "img": "/assets/img/blog/pharma-product-management/pm-hcp.webp",
+        "alt": "A doctor in a white coat and a medical representative with a closed folder talk calmly across a desk in a bright clinic office.",
+        "r": "Science, not inducements.",
+        "sub": "",
+        "fit": "contain"
+      },
+      {
+        "h": "Measure beyond sales",
+        "p": [
+          "Track growth, availability, engagement quality and compliance together."
+        ],
+        "img": "/assets/img/blog/pharma-product-management/pm-kpi.webp",
+        "alt": "A man looks at a monitor showing a line chart, bar chart and donut chart without labels, with a cup of tea and a notebook on the desk.",
+        "r": "Choose KPIs that answer the strategy’s questions.",
+        "sub": "",
+        "fit": "contain"
+      }
+    ],
+    "end": {
+      "h": "KEY TAKEAWAY",
+      "t": "A strong pharmaceutical brand combines market insight, quality, ethical engagement and measurable follow-through.",
+      "img": "/assets/img/blog/pharma-product-management/pm-review.webp",
+      "alt": "A presenter in a teal jacket explains charts on a wall screen to three colleagues seated at a table with laptops."
+    }
   }
 ]

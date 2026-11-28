@@ -93,15 +93,15 @@
  {
   "slug": "pharmaceutical-product-management-bangladesh",
   "date": "2026-11-24",
-  "tag_en": "Pharma Blog",
-  "tag_bn": "ফার্মা ব্লগ",
+  "tag_en": "Pharmaceutical Marketing",
+  "tag_bn": "ফার্মাসিউটিক্যাল মার্কেটিং",
   "title_en": "Pharmaceutical Product Management in Bangladesh",
   "title_bn": "বাংলাদেশে ফার্মাসিউটিক্যাল প্রোডাক্ট ম্যানেজমেন্ট: কাজ, কৌশল ও দায়িত্ব",
-  "desc_en": "Understand pharmaceutical product management in Bangladesh: market analysis, brand strategy,…",
-  "desc_bn": "বাংলাদেশের ওষুধ শিল্পে প্রোডাক্ট ম্যানেজমেন্ট কীভাবে কাজ করে? বাজার বিশ্লেষণ, ব্র্যান্ড কৌশল,…",
+  "desc_en": "A practical guide to market analysis, brand strategy, product lifecycle, ethical doctor engagement and KPIs.",
+  "desc_bn": "বাজার বিশ্লেষণ, ব্র্যান্ড কৌশল, নৈতিক চিকিৎসক-যোগাযোগ ও KPI-সহ প্রোডাক্ট ম্যানেজমেন্টের ব্যবহারিক গাইড।",
   "url_en": "/blog/pharmaceutical-product-management-bangladesh/",
   "url_bn": "/blog/pharmaceutical-product-management-bangladesh-bangla/",
-  "img": ""
+  "img": "/assets/img/blog/pharma-product-management/pm-card.webp"
  },
  {
   "slug": "biosimilars-explained",
